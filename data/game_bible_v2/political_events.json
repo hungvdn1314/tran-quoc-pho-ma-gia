@@ -1,0 +1,607 @@
+[
+  {
+    "chapter": 1,
+    "event_name": "Câu Đối Định Bang Giao & Vũ Hoàng Ban Thưởng",
+    "type": "Bang Giao & Tứ Hôn",
+    "involved_parties": [
+      "Quý Bình An",
+      "Vũ Hoàng",
+      "Sứ giả Tây Lăng",
+      "Hứa Hòa Lâm"
+    ],
+    "description": "Vũ Hoàng đưa ra vế đối hòng thử tài quan lại và ứng phó sức ép từ Tây Lăng. Quý Bình An đối đáp chuẩn xác áp đảo sứ đoàn ngoại bang, nhận thưởng ngàn vàng và củng cố danh phận Phò mã Đại Vũ.",
+    "impact": "Nâng cao vị thế của phò mã phế vật trong mắt hoàng đế, mở ra cánh cửa tiếp cận nguồn lực quốc gia.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 15,
+    "event_name": "Sắc Phong Chinh Bắc Đại Tướng Quân (Phân Hóa Binh Quyền)",
+    "type": "Sắc Phong & Đấu Đá Binh Quyền",
+    "involved_parties": [
+      "Vũ Hoàng",
+      "Quý Bình An",
+      "Tô Kiến Phong",
+      "Tô Vân"
+    ],
+    "description": "Vũ Hoàng ban thánh chỉ phong Tô Vân làm Bắc Chinh Đại Tướng Quân, phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, mỗi bên 3 vạn quân đi thu phục Bắc Cảnh tam châu.",
+    "impact": "Âm mưu phân hóa và mượn đao giết người của hoàng đế nhằm triệt tiêu thế hệ trẻ hai đại gia tộc Tô - Quý.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 24,
+    "event_name": "Bán Quân Công 10 Vạn Kim & Hố Vũ Hoàng",
+    "type": "Tống Tiền Triều Đình & Quyền Mưu",
+    "involved_parties": [
+      "Quý Bình An",
+      "Vũ Hoàng",
+      "Tử Ngọc Sùng"
+    ],
+    "description": "Quý Bình An yêu cầu mang Thập Tam hoàng tử đi cùng và ép Vũ Hoàng chi 10 vạn kim mua quân công, kết hợp với các khoản phụ thu vét sạch 200.000 lượng vàng từ quốc khố.",
+    "impact": "Lần đầu tiên một phò mã dám 'hố' hoàng đế trắng trợn, tạo nguồn vốn khổng lồ để triệu hoán Độc Sĩ Giả Hủ.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 69,
+    "event_name": "Minh Thăng Ám Hàng: Quý Bình An Thụ Phong Điển Nông Trung Lang Tướng",
+    "type": "Bổ Nhiệm Chức Quan & Cân Bằng Triều Chính",
+    "involved_parties": [
+      "Quý Bình An",
+      "Vũ Hoàng",
+      "Ninh An công chúa"
+    ],
+    "description": "Sau đại thắng Bắc Cảnh, Vũ Hoàng tước binh quyền nhưng phong Quý Bình An làm Điển Nông Trung Lang Tướng phụ trách thuế lương cả nước và ban áo Tử Kinh Y.",
+    "impact": "Tạo điều kiện để Quý Bình An thâm nhập và kiểm soát toàn bộ huyết mạch kinh tế, kho lương của vương triều Đại Vũ.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 84,
+    "event_name": "Sứ Đoàn Tây Lăng Đòi Mua Quý Bình An Bằng Trăm Vạn Kim",
+    "type": "Đàm Phán Ngoại Giao & Chiêu Dụ",
+    "involved_parties": [
+      "Hề Nhan công chúa",
+      "Phó Dĩnh Thăng",
+      "Quý Bình An",
+      "Vũ Hoàng"
+    ],
+    "description": "Tây Lăng đưa ra đề nghị trao đổi trăm vạn kim để đưa Quý Bình An về Tây Lăng làm thượng khách, đồng thời ký kết minh ước chống Nam Ly.",
+    "impact": "Lộ rõ dã tâm liên kết Đông Thương đánh úp Nam Quan của Tây Lăng; đẩy giá trị chính trị của Quý Bình An lên đỉnh điểm.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 113,
+    "event_name": "Vũ Hoàng Lập Thái Tử Tử Ngọc Trạch & Băng Hà",
+    "type": "Lập Trữ Quân & Hoàng Đế Băng Hà",
+    "involved_parties": [
+      "Vũ Hoàng",
+      "Tử Ngọc Trạch",
+      "Quý Vô Song",
+      "Hứa Hòa Lâm"
+    ],
+    "description": "Sau khi dẹp yên cuộc binh biến của Tô Kiến Phong, Vũ Hoàng nhận thấy chỉ có Đại hoàng tử liên minh với Quý gia mới giữ được triều đình; ban chiếu lập Tử Ngọc Trạch làm Thái tử rồi băng hà.",
+    "impact": "Kết thúc triều đại cũ; bắt đầu thời kỳ chuyển giao quyền lực hỗn loạn tại Đại Vũ.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 117,
+    "event_name": "Tân Hoàng Đăng Cơ Sắc Phong Bách Quan",
+    "type": "Đăng Cơ Kế Vị",
+    "involved_parties": [
+      "Tử Ngọc Trạch",
+      "Quý Bình An",
+      "An thị",
+      "Bách quan"
+    ],
+    "description": "Tử Ngọc Trạch chính thức lên ngôi hoàng đế, lập An thị (người An gia) làm Hoàng hậu, ban thưởng công thần và phong quan tiến tước.",
+    "impact": "Thế lực ngoại thích Đông Thương An gia chính thức thâm nhập sâu vào hậu cung Đại Vũ.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 120,
+    "event_name": "Thanh Trừng Toàn Tộc Ngao Gia Bất Chấp Hoàng Mệnh",
+    "type": "Diệt Tộc & Khẳng Định Quyền Lực Độc Lập",
+    "involved_parties": [
+      "Quý Bình An",
+      "Tử Ngọc Trạch",
+      "Ngao Khâm"
+    ],
+    "description": "Quý Bình An tự mình ra lệnh cho Triệu Vân tru diệt toàn bộ Ngao phủ mà không cần thông qua chiếu chỉ của triều đình, sau đó ép Tân Hoàng phải hợp thức hóa bằng một chiếu chỉ trừng phạt tội thần.",
+    "impact": "Cho thấy Quý Bình An đã đứng trên luật pháp triều đình, Tân Hoàng hoàn toàn bất lực không dám can thiệp.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 240,
+    "event_name": "Vụ Án Cần Chính Điện: Đình Chiến Bắt Buộc Giữa Hoàng Đế & Quý Gia",
+    "type": "Binh Biến Cung Đình Thất Bại",
+    "involved_parties": [
+      "Tử Ngọc Trạch",
+      "Tử Triệu Phong",
+      "Tô Kiến Phong",
+      "Triệu Vân",
+      "Quý Bình An"
+    ],
+    "description": "Tân Hoàng Tử Ngọc Trạch mưu sát Triệu Vân tại ngự điện thất bại nhục nhã trước sức mạnh Bán Thánh của Triệu Tử Long; buộc phải nén giận tuyên bố hiểu lầm và đình chiến.",
+    "impact": "Đánh dấu sự sụp đổ hoàn toàn uy quyền của hoàng đế đối với Quý gia; triều đình rơi vào thế phòng ngự bị động.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 255,
+    "event_name": "Sắc Phong Trấn Quốc Công & Tuân Úc Tiếp Quản Chức Vị Thừa Tướng",
+    "type": "Bức Cung & Thâu Tóm Triều Chính",
+    "involved_parties": [
+      "Quý Bình An",
+      "Tử Ngọc Trạch",
+      "Tuân Úc",
+      "Hoàng Trung"
+    ],
+    "description": "Quý Bình An đem đại quân kiểm soát hoàng cung, ép Tử Ngọc Trạch ban chiếu phong Quý Bình An làm Trấn Quốc Công (quyền ngang quân vương) và bãi miễn chức Thừa tướng của Hứa Hòa Lâm để phong cho Tuân Úc.",
+    "impact": "Chính thức hoàn thành bước thâu tóm toàn diện bộ máy hành chính và quân sự của Đại Vũ; họ Quý nắm thực quyền thống trị.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "chapter": 296,
+    "event_name": "Khởi Động Đại Kế 'Mưu Quốc' Chuyển Giao Hoàng Vị",
+    "type": "Phế Lập Triều Đại & Soán Vị",
+    "involved_parties": [
+      "Giả Hủ",
+      "Tuân Úc",
+      "Lý Nho",
+      "Hí Chí Tài",
+      "Quý Bình An"
+    ],
+    "description": "Bốn đại tuyệt thế mưu thần cùng ngồi lại vạch ra lộ trình 'Mưu Quốc': lợi dụng tình trạng hôn mê của Tử Ngọc Trạch, mở kho cứu tế thu phục dân tâm, mở rộng bờ cõi đánh chiếm Nam Quan và Tây Lăng để danh chính ngôn thuận bước lên ngai vàng.",
+    "impact": "Định hình hồi kết cho triều đại Tử Triệu và sự ra đời tất yếu của triều đại Đại Hán / Quý thị do Quý Bình An sáng lập.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "POL_TINH_KIEN_VUONG",
+    "title": "Tử Ngọc Trạch Sắc Phong Quý Bình An Làm Tịnh Kiên Vương",
+    "chapter": 303,
+    "parties_involved": [
+      "Vũ Hoàng Tử Ngọc Trạch",
+      "Quý Bình An"
+    ],
+    "nature": "Trao quyền nhiếp chính tối cao",
+    "outcome": "Quý Bình An chính thức nắm binh quyền Đại Vũ, đứng ngang hàng với hoàng đế.",
+    "impact": "Tạo bước đệm pháp lý trực tiếp để Quý Bình An dần thâu tóm toàn bộ bộ máy triều chính.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_HOA_UOC_VAN_NINH",
+    "title": "Thỏa Thuận Trao Đổi Bán Thánh Vân Ninh & Tống Tiền Tây Lăng",
+    "chapter": 349,
+    "parties_involved": [
+      "Quý Bình An",
+      "Hề Nhan công chúa",
+      "Tây Lăng triều đình"
+    ],
+    "nature": "Tống tiền chiến tranh & Mua chuộc danh tướng",
+    "outcome": "Tây Lăng trả 1.2 triệu vàng chuộc Vân Ninh; Hề Nhan thuyết phục Vân Ninh quy thuận về phe mình.",
+    "impact": "Quý Bình An có đủ vàng triệu hoán Mã Siêu; Hề Nhan xây dựng lực lượng riêng tại Tây Lăng.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_TAM_NHUONG_DE_VI",
+    "title": "Mưu Sách 'Tam Nhượng Đế Vị' & Thu Nhận Toàn Bộ Dân Tâm",
+    "chapter": 375,
+    "parties_involved": [
+      "Quý Bình An",
+      "Tuân Úc",
+      "Quách Gia",
+      "Giả Hủ"
+    ],
+    "nature": "Màn kịch chính trị soán ngôi danh chính ngôn thuận",
+    "outcome": "Quý Bình An ba lần từ chối lời mời lên ngôi của triều thần, buộc bách tính toàn quốc phải tự phát ký đơn thỉnh nguyện.",
+    "impact": "Tránh tiếng xấu cướp ngôi, biến việc đoạt vị thành hành động hy sinh vì thiên hạ vạn dân.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_DANG_CO_HOANG_DE",
+    "title": "Đại Điển Đăng Cơ Hoàng Đế & Ban Bố Bốn Chính Lệnh",
+    "chapter": 386,
+    "parties_involved": [
+      "Quý Bình An",
+      "Văn võ bá quan",
+      "10 vạn tướng sĩ"
+    ],
+    "nature": "Lập triều đại mới",
+    "outcome": "Quý Bình An chính thức xưng đế, ban bố giảm thuế 30%, lập tân châu, trợ cấp binh sĩ và Chiêu Hiền Lệnh.",
+    "impact": "Kích hoạt toàn bộ hệ thống Anh Linh Điểm quốc gia, khởi động guồng quay chiến tranh thống nhất thiên hạ.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_DOI_QUOC_HIEU_DAI_HAN",
+    "title": "Chính Thức Đổi Quốc Hiệu Đại Hán & Định Niên Hiệu Định Quốc Năm Đầu",
+    "chapter": 411,
+    "parties_involved": [
+      "Hoàng Đế Quý Bình An",
+      "Đại Hán Triều Đình"
+    ],
+    "nature": "Xóa bỏ triều đại cũ Đại Vũ, kiến lập triều đại Đại Hán",
+    "outcome": "Đại Vũ chính thức đi vào dĩ vãng; Đại Hán xuất hiện với Long Kỳ và cơ cấu mới.",
+    "impact": "Thống nhất ý thức hệ quốc gia, đoạn tuyệt hoàn toàn tàn dư của hoàng tộc họ Tử.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_LAP_HAU_VA_THAI_TU",
+    "title": "Sắc Phong Điêu Thuyền Làm Quốc Hậu, Quý Sơn Hà Làm Hoàng Thái Tử",
+    "chapter": 427,
+    "parties_involved": [
+      "Quý Bình An",
+      "Điêu Thuyền",
+      "Quý Sơn Hà"
+    ],
+    "nature": "Củng cố quyền lực hậu cung và kế vị",
+    "outcome": "Điêu Thuyền trở thành mẫu nghi thiên hạ, mở khóa thiên phú Hồng Nhan; Quý Sơn Hà (1 tuổi) được định danh thái tử.",
+    "impact": "Dẹp tan mọi âm mưu chia rẽ nội bộ triều đình Đại Hán và tạo điểm tựa ổn định lâu dài.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_DIET_MON_TAN_GIA",
+    "title": "Diệt Môn Thế Gia Tần Tứ Nghiệp & Tần Ức Đầu Hàng Đại Hán",
+    "chapter": 526,
+    "parties_involved": [
+      "Vương Việt",
+      "Tần Tứ Nghiệp",
+      "Tần Ức",
+      "Trương Bất Minh"
+    ],
+    "nature": "Thanh trừng thế gia quân phiệt & Quy hàng",
+    "outcome": "Tần Tứ Nghiệp bị ám sát; Tần gia bị gán tội phản quốc tại Tây Lăng; tướng trẻ Tần Ức dẫn quân đầu quân Đại Hán.",
+    "impact": "Tây Lăng mất đi trụ cột quân sự mạnh nhất; Đại Hán tiếp nhận thêm một tướng tài am hiểu địa hình Tây Lăng.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_THUYET_PHUC_PHO_DINH_THANG",
+    "title": "Truyền Bá 'Hiếu Kinh' Lôi Kéo Đại Nho Phó Dĩnh Thăng",
+    "chapter": 535,
+    "parties_involved": [
+      "Quý Bình An",
+      "Phó Dĩnh Thăng"
+    ],
+    "nature": "Chiến tranh văn hóa & Ngoại giao văn đàn",
+    "outcome": "Tác phẩm Nho gia kinh điển 'Hiếu Kinh' gây chấn động Tây Lăng, Phó Dĩnh Thăng nhận lời sang giảng dạy tại Học Cung Đại Hán.",
+    "impact": "Đoạt lấy ngọn cờ chính thống Nho học từ Tây Lăng, nâng tầm uy tín văn hóa của Đại Hán lên hàng đầu.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_CHINH_BIEN_NAM_LY",
+    "title": "Cung Ngạo Ám Hại Thái Tử Phó Thương Quân, Tiếm Quyền Nam Ly",
+    "chapter": 582,
+    "parties_involved": [
+      "Cung Ngạo",
+      "Tri Mặc Bạch",
+      "Phó Thương Quân"
+    ],
+    "nature": "Đảo chính quân sự đẫm máu & Phản bội",
+    "outcome": "Phó Thương Quân bị trừ khử; Cung Ngạo thâu tóm thực quyền Nam Ly, chuẩn bị tự lập làm quốc chủ.",
+    "impact": "Làm Nam Ly suy yếu nghiêm trọng do đấu đá nội bộ, tạo thời cơ thuận lợi cho liên minh Đại Hán khai chiến.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_HOI_TAY_LANG",
+    "title": "Đại Hội Tụ Phong Vân Chư Quốc Tại Tây Hoàng Thành",
+    "chapter": 600,
+    "parties_involved": [
+      "Trương Bất Minh",
+      "Quỷ Thánh",
+      "Văn Nhân Mục",
+      "Ninh Thâm",
+      "Đại Hán"
+    ],
+    "nature": "Hội minh đa phương & Chuẩn bị chiến tranh tổng lực",
+    "outcome": "Các thế lực lớn nhất Trung Thổ đồng loạt quy tụ về Tây Lăng để đàm phán và phân chia lại bản đồ quyền lực.",
+    "impact": "Mở ra cao trào chiến tranh mới giữa Đại Hán của Quý Bình An với liên minh chư quốc.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "POL_01_GIAO_DICH_THIEN_CO_DO",
+    "title": "Giao Dịch Thiên Cơ Đồ Giữa Quý Bình An & Văn Nhân Mục",
+    "chapters": [
+      629,
+      630
+    ],
+    "factions_involved": [
+      "Đại Hán",
+      "Tây Lăng",
+      "Thiên Cơ"
+    ],
+    "key_figures": [
+      "Quý Bình An",
+      "Văn Nhân Mục",
+      "Trương Bất Minh"
+    ],
+    "description": "Các bên thương lượng việc hoán đổi thông tin về Thiên Cơ Đồ để bảo toàn tính mạng cho hoàng tộc Tây Lăng và công chúa Bất Hối.",
+    "outcome": "Đại Hán nắm giữ chìa khóa giải mã bí mật cấm thuật của Thiên Cơ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_02_DONG_THUONG_DIET_BUI_GIA",
+    "title": "Đông Thương Diệt Môn Bùi Gia",
+    "chapters": [
+      650,
+      651,
+      652
+    ],
+    "factions_involved": [
+      "Đông Thương (An gia)",
+      "Bùi gia",
+      "Đại Hán"
+    ],
+    "key_figures": [
+      "An Quân Thương",
+      "Bùi Thế An",
+      "Quý Vô Song",
+      "Hoàng Trung"
+    ],
+    "description": "Sau khi Bùi gia có ý định ngả theo Đại Hán tại Bùi An Hà, gia tộc An thị của Đông Thương đã ra tay tàn sát diệt môn Bùi thị.",
+    "outcome": "Bùi gia bị xóa sổ khỏi vũ đài lịch sử; An Quân Thương bị Hoàng Trung bắn chết; Đông Thương mất đi bức tường phòng ngự phía tây.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_03_LAY_NUOC_DOI_NUOC_NAM_LY",
+    "title": "Đại Thỏa Thuận 'Lấy Nước Đổi Nước' & Thanh Trừng Cung Ngạo",
+    "chapters": [
+      700,
+      713,
+      715,
+      720
+    ],
+    "factions_involved": [
+      "Nam Ly",
+      "Đại Hán",
+      "Tây Lăng"
+    ],
+    "key_figures": [
+      "Cung Ngạo",
+      "Quý Bình An",
+      "Vương Việt"
+    ],
+    "description": "Cung Ngạo chuyển giao trọn vẹn 55 vạn quân và toàn bộ cương thổ Nam Ly cho Đại Hán để đổi lấy tước vị Trấn Tây Vương và vùng đất Tây Lăng. Quý Bình An ngoài mặt đồng ý nhưng ngầm phái Vương Việt ám sát Cung Ngạo trên đường đi.",
+    "outcome": "Đại Hán sáp nhập trọn vẹn Nam Ly mà không đổ máu, đồng thời diệt cỏ tận gốc mầm họa cát cứ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_04_TAY_LANG_CHINH_THUC_DAU_HANG",
+    "title": "Tây Lăng Vương Dâng Biểu Quy Thuận",
+    "chapters": [
+      733,
+      734
+    ],
+    "factions_involved": [
+      "Tây Lăng Hoàng Thất",
+      "Đại Hán"
+    ],
+    "key_figures": [
+      "Văn Nhân Mục",
+      "Quý Bình An"
+    ],
+    "description": "Sau khi Phi Mã Thành và tuyến phòng thủ cuối cùng bị đập tan, Văn Nhân Mục dẫn bách quan quỳ gối xin hàng ngoài cửa Tây Hoàng Thành.",
+    "outcome": "Xóa sổ vương triều Tây Lăng, toàn bộ lãnh thổ phương Tây thuộc về Đại Hán.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_05_NHAT_THONG_TU_QUOC_DAI_HAN",
+    "title": "Đại Hán Nhất Thống Thiên Hạ Tứ Quốc",
+    "chapters": [
+      764,
+      768,
+      769,
+      770,
+      771
+    ],
+    "factions_involved": [
+      "Đại Hán",
+      "Đại Vũ",
+      "Tây Lăng",
+      "Nam Ly",
+      "Đông Thương"
+    ],
+    "key_figures": [
+      "Hán Đế Quý Bình An",
+      "Toàn thể triều thần"
+    ],
+    "description": "Đông Thương đầu hàng sau khi Quý Vô Song buông vũ khí, 4 nước hợp nhất thành Hoàng triều Đại Hán duy nhất, thiết lập Hán Luật và đồng tiền thống nhất.",
+    "outcome": "Chấm dứt thời đại phân tranh cát cứ, xác lập địa vị bá chủ tuyệt đối của triều Hán.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_06_DUONG_MUU_PHAN_HOA_DAI_LA",
+    "title": "Dương Mưu Rút Quân Phân Hóa Đại La",
+    "chapters": [
+      886,
+      887,
+      891,
+      894
+    ],
+    "factions_involved": [
+      "Đại Hán",
+      "Quốc Giáo Đại La",
+      "Thánh Nữ Giáo",
+      "Thế lực A Bố"
+    ],
+    "key_figures": [
+      "Quý Bình An",
+      "Giả Hủ",
+      "Quách Gia",
+      "Lỗ Túc",
+      "Ninh Không Lâu",
+      "An Khinh Ngôn"
+    ],
+    "description": "Đại Hán chủ động rút quân khỏi 37 thành U Châu, trao trả vùng đất hoang tàn đầy nạn dân đói kém cho Thánh Nữ Giáo và Quốc Giáo nhằm ép hai thế lực này phải chém giết lẫn nhau để giành giật lương thảo.",
+    "outcome": "Đại Hán bảo toàn tuyệt đối nguyên vẹn lực lượng viễn chinh, biến nội bộ Đại La thành bãi chiến trường tương tàn suy kiệt.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "event_id": "POL_07_NGA_BAI_HUYET_THONG_QUY_THI",
+    "title": "Ngả Bài Chân Tướng Huyết Thống Quý Gia Tại Chương 900",
+    "chapters": [
+      899,
+      900
+    ],
+    "factions_involved": [
+      "Quý Gia Đại La",
+      "Hiên Gia",
+      "Quốc Giáo",
+      "Thánh Nữ Giáo"
+    ],
+    "key_figures": [
+      "Quý Bình An",
+      "Quý Vô Song",
+      "Trương Bất Minh",
+      "Quý Vô Danh",
+      "Hiên Nguyệt"
+    ],
+    "description": "Quý Vô Song tiết lộ thân phận chú ruột, giải mã mối thù diệt tộc giữa Quý gia và Hiên gia tại Đại La, cũng như nguồn gốc con lai giữa đại ca Quý Vô Danh và Thánh Nữ Hiên Nguyệt.",
+    "outcome": "Quý Bình An nắm giữ nguồn gốc xuất thân thực sự và quyền thừa kế bí mật Trường Sinh Đồ để chuẩn bị cho giai đoạn chinh phục tối cao tiếp theo.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "POL_LIEN_MINH_THANH_NU_GIAO",
+    "name": "Liên Minh Tạm Thời và Sự Khống Chế Thánh Nữ Giáo",
+    "factions_involved": [
+      "Đại Hán (Quý Bình An)",
+      "Thánh Nữ Giáo (Hiên Thanh Nguyệt)"
+    ],
+    "chapter": 1009,
+    "nature": "Liên minh quân sự biến chất thành khống chế quyền lực",
+    "summary": "Ban đầu Thánh Nữ Giáo cử 20 vạn quân tiếp viện Kinh Bắc Thành nhằm liên thủ chống Quốc Giáo. Tuy nhiên, nhận thấy Hiên Thanh Nguyệt có dã tâm ngầm, Quý Bình An đã tương kế tựu kế, dùng mưu bắt giữ Hiên Thanh Nguyệt và nắm trọn quyền điều động Thánh Nữ Giáo.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_SOAN_QUYEN_QUY_VUONG",
+    "name": "Quỷ Vương Đoạt Quyền Lãnh Đạo Quốc Giáo",
+    "factions_involved": [
+      "Quỷ Tộc (Quỷ Vương)",
+      "Quốc Giáo (Ninh Không Lâu)"
+    ],
+    "chapter": 978,
+    "nature": "Chính biến đảo chính tôn giáo & Phản bội nội bộ",
+    "summary": "Lợi dụng lúc Ninh Không Lâu dốc toàn lực tham chiến tại Ca Bỉ Hoàng Thành, Quỷ Vương dẫn thuộc hạ đột kích các cơ sở tôn giáo trọng yếu, sát hại các đại tế ti và tuyên bố nắm quyền điều hành Quốc Giáo, biến tổ chức này thành công cụ phục vụ dã tâm cá nhân.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_NINH_KHONG_LAU_A_BO_MUU_DO",
+    "name": "Âm Mưu Phân Chia Đại La Giữa Ninh Không Lâu và A Bố",
+    "factions_involved": [
+      "Quốc Giáo (Ninh Không Lâu)",
+      "Ca Bỉ (A Bố)"
+    ],
+    "chapter": 1054,
+    "nature": "Thỏa thuận bí mật phân chia thế giới (Bị phát giác)",
+    "summary": "Ninh Không Lâu bí mật tiếp xúc và thỏa thuận với Tôn Chủ A Bố nhằm hợp lực xóa sổ Đại Hán và Thánh Nữ Giáo, sau đó chia đôi toàn bộ cương thổ Đại La. Toàn bộ kế hoạch đen tối này bị Vương Sơ tiết lộ cho Quý Bình An trước khi chết.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_XU_TU_NINH_AN_BINH",
+    "name": "Án Hành Quyết Ninh An Bình (Tru Tâm Quốc Giáo)",
+    "factions_involved": [
+      "Đại Hán (Quý Bình An, Quan Vũ, Quách Gia)",
+      "Quốc Giáo (Ninh Không Lâu)"
+    ],
+    "chapter": 1036,
+    "nature": "Đòn tâm lý chiến và trả thù chính trị",
+    "summary": "Quan Vũ công khai chém đầu Ninh An Bình (kẻ đội lốt tam công tử Quý Bình Xuyên suốt hàng chục năm) ngay trước mặt hai quân. Hành động này không chỉ trút giận cho các tướng lĩnh mà còn giáng đòn chí mạng phá vỡ tâm lý của Giáo Hoàng Ninh Không Lâu.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_CAU_HOA_DOAT_GIAO_HOANG",
+    "name": "Cầu Hòa Thay Thế Ninh Không Lâu Chấp Chưởng Quốc Giáo",
+    "factions_involved": [
+      "Cầu Hòa",
+      "Ninh Không Lâu",
+      "Ngân Giải Tướng Quân"
+    ],
+    "chapter": 1186,
+    "nature": "Soán ngôi tôn giáo nội bộ",
+    "summary": "Dựa vào bí thuật liên thể thần bí, Cầu Hòa đã phong tỏa và áp chế hoàn toàn ý thức của Ninh Không Lâu, chính thức bước lên ngôi vị tối cao của Quốc Giáo. Cầu Hòa ban bố lệnh tái tổ chức phòng thủ 33 thành nòng cốt và tuyên chiến tới cùng với Đại Hán.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_DAM_PHAN_BAC_MINH_46_THANH",
+    "name": "Đàm Phán Hòa Bình Đại Hán - Bắc Minh: Thu Hồi 46 Thành Tây Bắc",
+    "factions_involved": [
+      "Đại Hán (Quý Bình An)",
+      "Thiên Bắc Thị (Bắc Minh)"
+    ],
+    "chapter": 1193,
+    "nature": "Hiệp ước ngoại giao nhượng đất đỉnh cao",
+    "summary": "Tại Thành Chủ Phủ Thiên Thạch Thành, Quý Bình An đối diện với Thánh Tử Bắc Minh. Bằng sự am hiểu tường tận về nguồn gốc Thần Khí trong mi tâm và sức mạnh quân sự áp đảo, Quý Bình An đã buộc Bắc Minh phải ký thỏa ước nhượng lại 46 tòa thành trì chiến lược vùng Tây Bắc cho Đại Hán.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "POL_HAC_MA_QUY_PHAN_BOI",
+    "name": "Hắc Ma Quỷ Phản Bội Quỷ Vương Đầu Hàng A Bố",
+    "factions_involved": [
+      "Hắc Ma Quỷ",
+      "Quỷ Vương",
+      "A Bố"
+    ],
+    "chapter": 1101,
+    "nature": "Phản bội hạ cấp và cấu kết thế lực ngoại bang",
+    "summary": "Hắc Ma Quỷ dùng thế thân qua mặt Ninh Không Lâu, bí mật gặp A Bố để bán đứng thông tin của Quỷ Vương nhằm đổi lấy quyền cai trị Thánh Nữ Giáo, tạo ra thêm một rạn nứt sâu sắc trong khối liên minh tà đạo.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "chapter": 1241,
+    "title": "Bắc Minh và Quý Vô Sinh Đàm Phán Chia Cắt Tây Lũng Thành",
+    "context": "Bắc Minh đem quân uy hiếp Tây Lũng Thành, ép Quý Vô Sinh phải chấp nhận nhượng bộ quyền kiểm soát thành và phân chia lãnh thổ.",
+    "consequences": "Quý gia tạm thời bảo toàn lực lượng nhưng ngày càng nhận rõ dã tâm nuốt chửng của các thế lực Đại La, thúc đẩy Quý gia quay về quy phục Đại Hán.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1279,
+    "title": "Hòa Ước Hiểm Độc Giữa Phượng Hoàng và Tử Ngọc Sùng",
+    "context": "Phượng Hoàng cứu mạng Tử Ngọc Sùng bằng cách loại bỏ Băng Giáp Yêu Chi Tâm nhưng gieo vào người hắn Đốt Tâm Liệt Diễm độc dược.",
+    "consequences": "Tử Ngọc Sùng hoàn toàn trở thành con cờ phụ thuộc vào mệnh lệnh của Đồ Đằng Chi Thần Phượng Hoàng.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1285,
+    "title": "Tam Đại Quân Sư Hội Đàm (Gia Cát Lượng, Quách Gia, Bàng Thống)",
+    "context": "Ba bộ óc mưu lược đỉnh cao của Đại Hán tụ họp vạch ra chiến lược 'Nhất Thống Toàn Cục': chia quân các hướng, diệt Quốc Giáo trước, bình định Thiên Bắc Thị, cô lập Thiên A Thị.",
+    "consequences": "Định hình toàn bộ lộ trình chiến thắng của Đại Hán trong suốt nửa sau Arc 5.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1338,
+    "title": "Xung Đột Tiềm Tàng Giữa Thái Tử Quý Sơn Hà và Hoàng Tử Quý Thiên Tứ",
+    "context": "Cẩm Y Vệ bẩm báo mối lo ngại về việc Quý Thiên Tứ nắm giữ thực lực và danh vọng quá lớn tại Đại La có thể đe dọa vị trí người kế vị của Thái Tử Quý Sơn Hà.",
+    "consequences": "Khiến Quách Gia phải tính toán nước cờ tàn nhẫn để bảo vệ sự ổn định lâu dài cho vương triều Đại Hán.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1417,
+    "title": "Tử Ngọc Sùng Bại Trận Đầu Hàng A Bố",
+    "context": "Sau khi mất Tây Môn Quan và Thiên Thạch Thành, Tử Ngọc Sùng không còn đường lui, quyết định cúi đầu quy thuận Tôn Chủ Thiên A Thị A Bố.",
+    "consequences": "Hợp nhất toàn bộ tàn dư Thiên Bắc Thị vào guồng máy chiến tranh của Thiên A Thị cho trận quyết chiến cuối cùng.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1421,
+    "title": "Quý Thiên Tứ Ngửa Bài Lòng Trung Trinh Với Phụ Hoàng",
+    "context": "Tử Ngọc Sùng và Cầu Hòa tìm cách lôi kéo Quý Thiên Tứ làm phản Quý Bình An. Quý Thiên Tứ khẳng khái tuyên bố mình là Đại Hán Hoàng Tử và ra tay diệt địch.",
+    "consequences": "Đập tan mọi âm mưu chia rẽ hoàng gia Đại Hán từ bên trong.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1482,
+    "title": "Quách Gia Hy Sinh Vì Đại Cục Quốc Gia",
+    "context": "Quách Gia quyết định hy sinh cùng Kinh Bắc Thành để vừa tiêu diệt viện quân Thiên A Thị vừa hóa giải vĩnh viễn mối nguy cốt nhục tương tàn giữa hai hoàng tử.",
+    "consequences": "Hành động bi tráng bảo vệ thái bình thịnh trị đời đời cho Đại Hán.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1507,
+    "title": "Giao Ước 10 Năm Hòa Bình Giữa Quý Bình An và Phượng Hoàng",
+    "context": "Sau khi Thiên A Thị bị tiêu diệt, Quý Bình An gặp gỡ Phượng Hoàng tại Tuyết Sơn Bắc U, cam kết trong 10 năm sẽ giúp Phượng Hoàng có được đức tin thờ phụng của toàn dân nếu thần thú thuần phục hộ quốc.",
+    "consequences": "Thu phục thành công Đồ Đằng Chi Thần mà không cần tốn thêm xương máu của quân sĩ.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "chapter": 1509,
+    "title": "Chiếu Chỉ Đại Hán Thịnh Thế & Thống Nhất Văn Tự - Kinh Tế",
+    "context": "Quý Bình An đăng cơ thống nhất thiên hạ, ban chiếu phong thưởng tam quân, đổi tên Thánh Đức Đại Sâm Lâm thành Quốc An Thành, ban bố luật thuế Hán Thương và phổ cập chữ Hán trên toàn cõi Đại La.",
+    "consequences": "Chính thức khép lại thời kỳ phân tranh loạn lạc, mở ra kỷ nguyên Đại Hán Thịnh Thế - Đại Hán Truyền Kỳ rực rỡ nhất lịch sử.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  }
+]

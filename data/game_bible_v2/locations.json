@@ -1,0 +1,576 @@
+[
+  {
+    "id": "LOC_DE_DO_DAI_VU",
+    "name": "Đế Đô Đại Vũ (Kinh Đô)",
+    "type": "Kinh Đô / Hoàng Thành",
+    "description": "Trung tâm chính trị, quân sự và kinh tế của vương triều Đại Vũ, nơi đặt Hoàng cung, các dinh thự vương công đại thần và hoa lâu sầm uất.",
+    "strategic_importance": "Nắm giữ Đế đô là nắm giữ ngai vàng và huyết mạch điều hành cả nước; nơi diễn ra các cuộc binh biến cung đình ác liệt.",
+    "chapters_mentioned": [
+      1,
+      5,
+      10,
+      15,
+      66,
+      69,
+      104,
+      114,
+      238,
+      251
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_CAN_CHINH_DIEN",
+    "name": "Cần Chính Điện",
+    "type": "Đại Điện Hoàng Cung",
+    "description": "Nơi hoàng đế thiết triều, ban bố thánh chỉ và tiếp kiến các sứ đoàn ngoại quốc.",
+    "strategic_importance": "Biểu tượng tối cao của quyền lực vương triều Đại Vũ; nơi diễn ra trận đối chất câu đối trắng và trận huyết chiến Tam Đế vây công Triệu Vân.",
+    "chapters_mentioned": [
+      1,
+      2,
+      69,
+      117,
+      238,
+      251
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_PHO_MA_PHU",
+    "name": "Phò Mã Phủ (Trấn Quốc Công Phủ)",
+    "type": "Phủ Đệ",
+    "description": "Dinh thự ban đầu của Quý Bình An và Ninh An công chúa, sau nâng cấp thành Trấn Quốc Công Phủ nguy nga tráng lệ.",
+    "strategic_importance": "Đại bản doanh đầu não của Quý Bình An tại kinh thành, nơi đặt mật thất triệu hoán anh linh và xưởng nghiên cứu cơ quan - độc dược.",
+    "chapters_mentioned": [
+      5,
+      10,
+      27,
+      63,
+      134,
+      140,
+      203,
+      255,
+      285
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_THIEN_KIM_LAU",
+    "name": "Thiên Kim Lâu",
+    "type": "Tửu Lâu / Hoa Lâu",
+    "description": "Tửu lầu đệ nhất hoàng đô với kiến trúc đình đài nhà thủy tạ lộng lẫy, quy tụ hàng trăm ca kỹ tài sắc.",
+    "strategic_importance": "Cỗ máy in tiền độc quyền sản phẩm Thấu Hoa Cao và là bình phong che giấu mạng lưới tình báo Hồng Nhan.",
+    "chapters_mentioned": [
+      7,
+      8,
+      14,
+      17,
+      18,
+      156,
+      196
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_DINH_UY_PHU",
+    "name": "Đình Úy Phủ",
+    "type": "Nha Môn Tư Pháp & Đại Lao",
+    "description": "Cơ quan tư pháp tối cao và nhà giam kiên cố nhất Đại Vũ, chuyên giam giữ trọng phạm và cao thủ võ lâm.",
+    "strategic_importance": "Cứ điểm trấn áp đối lập; nơi Quý Bình An cướp ngục giải cứu Cơ Vô Pháp và Điển Vi.",
+    "chapters_mentioned": [
+      134,
+      136,
+      137,
+      260,
+      296
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_KHAI_NGUYEN_HUYEN",
+    "name": "Khai Nguyên Huyện",
+    "type": "Huyện Lỵ Cửa Ngõ",
+    "description": "Huyện thành chiến lược nằm giữa kinh đô và Bắc Cảnh tam châu, có kho dự trữ lương thảo dồi dào.",
+    "strategic_importance": "Bàn đạp huyết mạch tiếp tế lương thảo; kiểm soát Khai Nguyên là mở toang cánh cửa tiến vào Bắc Cảnh.",
+    "chapters_mentioned": [
+      42,
+      44,
+      45,
+      66
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_LIEU_CHAU",
+    "name": "Liễu Châu Thành",
+    "type": "Thành Trì Trọng Yếu",
+    "description": "Thủ phủ hành chính và quân sự của Bắc Cảnh tam châu, tường thành kiên cố, dân cư đông đúc.",
+    "strategic_importance": "Đại bản doanh căn cứ địa ngoài kinh thành của Quý Bình An, nơi Trương Liêu và Cao Thuận đóng quân chặn đứng đại quân Nam Ly.",
+    "chapters_mentioned": [
+      48,
+      50,
+      145,
+      152,
+      178,
+      183
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_THANH_CHAU",
+    "name": "Thanh Châu Thành",
+    "type": "Thành Trì Phòng Ngự Hẻm Núi",
+    "description": "Thành trì hiểm yếu có cấu trúc cửa sắt ngăn nước và đập chắn lũ tự nhiên bao quanh.",
+    "strategic_importance": "Nơi diễn ra trận xả lũ lịch sử của Giả Hủ dìm chết 2 vạn quân Nam Ly của Địch Hỏa.",
+    "chapters_mentioned": [
+      48,
+      51,
+      52,
+      175
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_TAN_CHAU",
+    "name": "Tần Châu Thành",
+    "type": "Thành Trì Biên Phòng",
+    "description": "Một trong ba châu của Bắc Cảnh, giữ vai trò hậu cần và tiếp tế dự bị.",
+    "strategic_importance": "Khóa chặt sườn đông của tuyến phòng thủ Bắc Cảnh.",
+    "chapters_mentioned": [
+      48,
+      50,
+      54
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_BAC_CO_SON",
+    "name": "Dãy Núi Bắc Cô Sơn",
+    "type": "Dãy Núi Địa Hình Tử Địa",
+    "description": "Dãy núi hiểm trở với các thung lũng lòng chảo dễ vào khó ra, cây cối rậm rạp.",
+    "strategic_importance": "Vị trí bẫy quân hoàn hảo nơi Giả Hủ hỏa công thiêu rụi 30 vạn đại quân Nam Ly của Cung Sinh và Chu Bất Ninh.",
+    "chapters_mentioned": [
+      28,
+      29,
+      151,
+      174
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_NAM_QUAN",
+    "name": "Cửa Ải Nam Quan",
+    "type": "Hùng Quan Biên Giới",
+    "description": "Quan ải phòng thủ hiểm trở nhất phía nam Đại Vũ, án ngữ con đường tiến vào Hồn Huyết Sơn và biên giới Đông Thương.",
+    "strategic_importance": "Lá chắn bảo vệ sườn nam Đại Vũ; nơi diễn ra trận chiến trảm sát tướng Đông Thương Triệu Văn Dụ.",
+    "chapters_mentioned": [
+      85,
+      124,
+      210,
+      243,
+      269,
+      272,
+      281
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_HON_HUYET_SON",
+    "name": "Trăm Dặm Hồn Huyết Sơn",
+    "type": "Dãy Núi Khoáng Sản Chiến Lược",
+    "description": "Dãy núi trải dài trăm dặm giáp ranh Nam Quan, ẩn chứa trữ lượng mỏ vàng và mỏ Tiêu Thạch khổng lồ.",
+    "strategic_importance": "Nguồn tài nguyên vàng và thuốc súng vô tận, tâm điểm tranh chấp đẫm máu giữa Đại Vũ, Đông Thương và An gia.",
+    "chapters_mentioned": [
+      85,
+      265,
+      269,
+      274,
+      277,
+      283
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_TAY_KINH_THANH",
+    "name": "Tây Kinh Thành",
+    "type": "Kinh Đô Ngoại Quốc",
+    "description": "Kinh thành tráng lệ của Tây Lăng Quốc, nổi tiếng với nền văn hóa phát triển và các viện thủ công cơ quan.",
+    "strategic_importance": "Trung tâm đầu não Tây Lăng; nơi Triệu Vân một người một ngựa xông thẳng cổng thành bức hàng triều đình Tây Lăng.",
+    "chapters_mentioned": [
+      77,
+      88,
+      222
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_QUY_QUAT",
+    "name": "Tây Lăng Quỷ Quật",
+    "type": "Căn Cứ Sát Thủ Ngầm",
+    "description": "Hệ thống hang động u tối lòng đất tại vùng núi Tây Lăng, nơi đào tạo sát thủ dị dạng.",
+    "strategic_importance": "Căn cứ xuất phát của các thích khách độn thổ mưu sát Quý Bình An.",
+    "chapters_mentioned": [
+      204,
+      205,
+      216,
+      300
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_NGUU_KHANH_CHAU",
+    "name": "Ngưu Khánh Châu",
+    "type": "Châu Huyện Biên Giới",
+    "description": "Vùng đệm chiến lược nằm gần Nam Quan, nơi tập kết quân mã trước khi đánh chiếm Hồn Huyết Sơn.",
+    "strategic_importance": "Trạm dừng chân và hậu cứ tiếp tế cho chiến dịch thu phục Nam Quan của Quý Bình An.",
+    "chapters_mentioned": [
+      267,
+      268,
+      269
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_HOAI_HA",
+    "name": "Sông Hoài Hà (Tần Hoài Hà)",
+    "type": "Lưu Vực Đường Thủy",
+    "description": "Con sông lớn chảy qua biên giới kết nối các vùng lãnh thổ Đại Vũ và Tây Lăng.",
+    "strategic_importance": "Tuyến giao thông thủy huyết mạch được Chu Du quy hoạch để phát triển hạm đội thủy chiến tiến đánh Tây Lăng.",
+    "chapters_mentioned": [
+      199,
+      200,
+      219
+    ],
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "LOC_DAI_HAN_DE_DO",
+    "name": "Đại Hán Đế Đô (Nguyên Đại Vũ Kinh Đô)",
+    "description": "Trung tâm chính trị, kinh tế của Đại Hán; gồm Cần Chính Điện, Phượng Tê Cung, Di Tâm Viện, Đình Úy Phủ, Thiên Cung Học Viện và 3 tòa Học Cung.",
+    "strategic_importance": "Đầu não chỉ huy toàn bộ chiến dịch bành trướng lãnh thổ và cải cách xã hội.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_BAC_CANH_TAM_CHAU",
+    "name": "Bắc Cảnh Tam Châu (Liễu Châu, Thanh Châu, Tần Châu)",
+    "description": "Vùng đất cơ bản nguyên thủy của Quý Bình An, nơi tôi luyện Chinh Bắc quân, Bạch Mã Nghĩa Tòng và các xưởng chế tác sơ khai.",
+    "strategic_importance": "Hậu phương vững chắc nhất cung cấp lương thảo, quân đội và kim ngân cho các chiến dịch.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_BAC_CO_SON",
+    "name": "Bắc Cô Sơn Quan Ải",
+    "description": "Cửa ải hiểm trở nằm bên ngoài thành Liễu Châu, địa thế một người giữ ải vạn người khôn qua.",
+    "strategic_importance": "Lá chắn thép ngăn cách Liễu Châu với Đông Thương và Nam Ly, nơi chôn vùi 5 vạn quân Bùi Nguyên và chặn đứng Lạc Thiên Thanh.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_UAN_CHAU_THANH",
+    "name": "Uyển Châu Thành",
+    "description": "Vùng đồng bằng màu mỡ vốn là kho lúa chiến lược của Nam Ly, sau đổi chủ về Đại Hán; có cửa thành bọc thép Thiết Giáp Môn.",
+    "strategic_importance": "Căn cứ tiền tiêu nối liền Đại Hán với Nam Ly và Tây Lăng; kho cung ứng lương thực khổng lồ.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_TAN_MON_THANH",
+    "name": "Tân Môn Thành",
+    "description": "Thành trì nằm ở vị trí yết hầu phía sau Uyển Châu Thành.",
+    "strategic_importance": "Vị trí then chốt chặn đường rút lui của quân đội Tây Lăng; nơi Trương Liêu cắt đứt đường lui của Mạc Thiên Tinh.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_LINH_KHE_THANH",
+    "name": "Linh Khê Thành",
+    "description": "Thành trì biên giới Tây Lăng từng bị tổn hại sau hỏa hoạn.",
+    "strategic_importance": "Nơi Quý Bình An đánh úp bắt sống Bán Thánh Vân Ninh thu về 1.2 triệu kim.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_DONG_SON_THANH",
+    "name": "Đông Sơn Thành",
+    "description": "Cửa ngõ Tây Bắc của Đông Thương, tựa lưng vào sông Bùi An Hà.",
+    "strategic_importance": "Nơi Quý Bình Sinh và Lý Nho đại phá 10 vạn quân An gia mở ra đường Đông Chinh.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_BUI_AN_HA",
+    "name": "Bùi An Hà",
+    "description": "Con sông lớn phân định ranh giới tự nhiên giữa các châu thành Đông Bắc Đông Thương.",
+    "strategic_importance": "Tuyến giao thông đường thủy và chiến trường Lý Nho chôn sống tù binh gây chấn động.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_LAM_QUAN_THANH",
+    "name": "Lâm Quan Thành (Đến Quan Thành / Trực Quan Thành)",
+    "description": "Cửa khẩu quân sự kiên cố trên tuyến Đại Vũ Quốc Giới nhìn sang Tây Lăng.",
+    "strategic_importance": "Nơi hội quân của Quý Bình An và Quý Bình Xuyên, địa điểm Triệu Vân đánh bại Tần Tứ Nghiệp.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_TAY_KINH_THANH",
+    "name": "Tây Kinh Thành (Tây Lăng)",
+    "description": "Thành trì lớn thứ hai của Tây Lăng, do Thành chủ Văn Nhân Húc cai quản; sầm uất với các sòng bạc và hãng buôn vải.",
+    "strategic_importance": "Bàn đạp xâm nhập kinh tế và tình báo của Đại Hán vào nội địa Tây Lăng.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_TAY_HOANG_THANH",
+    "name": "Tây Hoàng Thành",
+    "description": "Hoàng thành kinh đô của quốc gia Tây Lăng, nơi tọa lạc cung điện Tây Lăng Vương và Thuyền Hoa.",
+    "strategic_importance": "Trung tâm quyền lực Tây Lăng, điểm hẹn hội tụ của các thế lực chư quốc tại Ch.600.",
+    "_source_arc": "extraction_arc2_ch301_600.json",
+    "category": "Cố Đô Tây Lăng"
+  },
+  {
+    "id": "LOC_THAN_HOA_THANH",
+    "name": "Thần Hỏa Thành (Nam Ly)",
+    "description": "Kinh thành và trung tâm chế tạo vũ khí hỏa dược của Nam Ly, nơi đặt đại bản doanh Thần Hỏa Quân.",
+    "strategic_importance": "Căn cứ sản xuất vũ khí công phá hàng đầu phương Nam.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_NAM_THIEN_THANH",
+    "name": "Nam Thiên Thành (Nam Ly)",
+    "description": "Quốc môn biên cương kiên cố của Nam Ly nối sang Đại Hán.",
+    "strategic_importance": "Cửa ải huyết mạch phòng thủ của Nam Ly, nơi diễn ra vụ ám sát Phó Thương Quân của Tri Mặc Bạch.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "LOC_NHAT_TUYEN_THIEN",
+    "name": "Hẻm Núi Nhất Tuyến Thiên",
+    "description": "Hẻm núi dựng đứng hẹp dài, một đường độc đạo cực kỳ hiểm trở.",
+    "strategic_importance": "Địa điểm Quý Bình Thường mai phục tập sát Quý Bình An và Trương Phi bộc phát Thánh Giả hộ giá.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "name": "Thần Châu Trường An",
+    "category": "Kinh Đô Hoàng Triều",
+    "description": "Kinh đô mới của Đại Hán do công trình sư Đào Nhã quy hoạch và thiết kế. Được xây dựng với hệ thống tháp canh cao ngút tầm mắt kết nối liên hoàn, khống chế toàn bộ hoạt động bên trong và bên ngoài thành. Là trung tâm chính trị, văn hóa, tài chính lớn nhất thiên hạ.",
+    "strategic_importance": "Pháo đài bất khả xâm phạm, nơi đặt triều đình trung ương của Hán Đế Quý Bình An và đóng quân của 3.000 Thần Cơ Doanh tinh nhuệ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Phi Mã Thành",
+    "category": "Yết Hầu Quân Sự Tây Lăng",
+    "description": "Cửa ngõ quân sự quan trọng bậc nhất của Tây Lăng, nơi tập kết của 14 vạn Tây Lăng Thiết Kỵ.",
+    "strategic_importance": "Địa điểm diễn ra trận đại quyết chiến giữa công nghệ khí giới Hán triều (xe nỏ, thừng gạt ngựa, bán mã thung) và thiết kỵ thảo nguyên.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Núi Ngưu Giác (Ngưu Giác Sơn)",
+    "category": "Hiểm Địa & Kho Báu Chiến Lược",
+    "description": "Dãy núi trùng điệp hình sừng bò nằm ở biên giới phía đông Nam Ly. Nơi cất giấu kho báu hơn 3 triệu lượng vàng ròng của thiên hạ.",
+    "strategic_importance": "Cung cấp nguồn ngân lượng khổng lồ cho Quý Bình An triệu hoán thần tướng, đồng thời là chiến trường Lữ Bố miểu sát Bán Tiên Côn Sơn.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Ất Tuyên Thành",
+    "category": "Cửa Ngõ Phòng Thủ Phía Đông Nam Ly",
+    "description": "Thành trì hiểm yếu che chắn trực tiếp cho kinh đô Thần Hỏa Thành của Nam Ly.",
+    "strategic_importance": "Địa điểm Gia Cát Lượng thi triển Không Thành Kế và bẫy sập hầm ngầm tiêu diệt 15 vạn quân An gia.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Hàn Tinh Thành",
+    "category": "Tiền Tiêu Biên Giới Vũ Châu",
+    "description": "Thành trì nằm ở vùng cực bắc Vũ Châu, tiếp giáp trực tiếp với cửa biển sông băng.",
+    "strategic_importance": "Căn cứ phòng ngự bờ biển và trạm xuất phát của hạm đội hải quân Đại Hán trong đại hải chiến và viễn chinh Đại La.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Bắc Cực Băng Xuyên",
+    "category": "Hải Ngoại Thông Đạo",
+    "description": "Vùng biển băng vĩnh cửu ngàn năm chia cắt Trung Nguyên và đại lục Đại La.",
+    "strategic_importance": "Khi băng vỡ nát tại chương 767, nơi đây trở thành đại chiến trường thủy quân giữa hạm đội Chu Du và 300 vạn quân Đại La.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Hoa Ước Thành",
+    "category": "Thành Cảng Tiền Tiêu Đại La",
+    "description": "Thành trì bờ biển đầu tiên trên đại lục Đại La do Bán Tiên Đặc Phổ trấn thủ.",
+    "strategic_importance": "Bàn đạp quân sự đầu tiên của quân Hán tại tân đại lục sau khi đánh bại Đặc Phổ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Thâm Uyên",
+    "category": "Cấm Địa Đại La",
+    "description": "Khu vực hang động vực thẳm u tối bí ẩn sâu trong lòng đất Đại La, nơi cư ngụ của Thánh Nữ Hiên Thanh Nguyệt.",
+    "strategic_importance": "Nơi cất giấu những bí mật rợn người về công nghệ Thi Khôi của A Bố và nguồn gốc huyết thống Hiên gia.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "U Châu (Đại La)",
+    "category": "Đại Địa Hạt 37 Thành",
+    "description": "Vùng đất rộng lớn gồm 37 tòa thành trì tại Đại La bị quân Hán càn quét trước khi thi hành 'Dương Mưu Rút Quân'.",
+    "strategic_importance": "Tâm điểm của cuộc khủng hoảng nạn dân và tranh chấp sinh tử giữa Quốc Giáo và Thánh Nữ Giáo.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "LOC_KINH_BAC_THANH",
+    "name": "Kinh Bắc Thành",
+    "description": "Đại đô thị kiên cố đóng vai trò là đại bản doanh đầu não và tổng hành dinh tiền tuyến của Đại Hán tại Đại La. Nơi đây quy tụ Thiên Cung Học Viện của Mã Quân và Y Quán của Hoa Đà.",
+    "strategic_importance": "Trái tim hậu cần và quân sự của Đại Hán tại Đại La. Mất Kinh Bắc Thành đồng nghĩa với việc toàn bộ U Châu quân bị cắt đứt đường lui về mẫu quốc. Từng đứng vững sau hai đợt vây hãm lớn (đợt 3 Bán Tiên Ch.946 và đợt A Bố vây thành Ch.1175).",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_THIEN_HON_THANH",
+    "name": "Thiên Hồn Thành",
+    "description": "Thành trì hùng vĩ án ngữ cửa ngõ tiến vào lãnh địa trung tâm của Quốc Giáo, hai bên sườn là dãy núi hiểm trở che chắn.",
+    "strategic_importance": "Chốt chặn sống còn của Quốc Giáo. Ai làm chủ Thiên Hồn Thành sẽ nắm quyền chủ động tiến thoái vào sâu nội địa Quốc Giáo hoặc Doanh Kinh. Bị Gia Cát Lượng chiếm đóng và gia cố bằng Tiên Đăng tử sĩ.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_LINH_ICH_THANH",
+    "name": "Linh Ích Thành",
+    "description": "Thành trì trung chuyển nằm ở phía Nam Thiên Hồn Thành và phía Đông Bách Khổng Thành, nằm trên trục giao thông huyết mạch Tây Nam.",
+    "strategic_importance": "Nút thắt chiến lược liên kết ba thành nòng cốt. Từng đổi chủ nhiều lần giữa Đại Hán và Quốc Giáo; nơi Gia Cát Lượng bố trí 50 vạn quân cùng Phan Phượng, Hình Đạo Vinh đón đánh quân Cầu Hòa.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_BACH_KHONG_THANH",
+    "name": "Bách Khổng Thành",
+    "description": "Thành trì biên giới có hàng trăm hẻm núi và hang động tự nhiên xung quanh, nối từ Doanh Kinh vào thẳng trung tâm Quốc Giáo.",
+    "strategic_importance": "Hành lang tấn công đường bộ từ Doanh Kinh vào Quốc Giáo. Bị Lý Nho dùng hỏa công tiêu diệt và chiếm đóng làm bàn đạp chiến dịch.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_THIEN_SON_THANH",
+    "name": "Thiên Sơn Thành",
+    "description": "Thành trì được xây dựng giữa ngàn tòa sơn mạch trập trùng tại vùng Tây Nam nhiều mưa gió của Quốc Giáo.",
+    "strategic_importance": "Nơi hiểm yếu che chở ít nhất 10 thành trì hậu phương của Quốc Giáo. Là mục tiêu Tả Từ và Đào Nhã xây đê đập tích thủy để thi triển đại kế thủy công dìm ngập thành.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_THANH_NU_THANH",
+    "name": "Thánh Nữ Thành",
+    "description": "Đô thành linh thiêng và là căn cứ địa tối cao của Thánh Nữ Giáo, có hệ thống phòng thủ tinh xảo do nữ binh trấn giữ.",
+    "strategic_importance": "Trung tâm tôn giáo độc lập lớn thứ hai sau Quốc Giáo. Nơi Bàng Thống đến du thuyết, Quỷ Vương dùng kế thành trống rút lui và A Bố từng đem quân chiếm đóng.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_CA_BI_HOANG_THANH",
+    "name": "Ca Bỉ Hoàng Thành",
+    "description": "Kinh đô khổng lồ và hoa lệ của thế lực A Bố, quản hạt 9 đại phân khu và 231 thành trì khắp cõi Đại La.",
+    "strategic_importance": "Trung tâm chính trị và quân sự của người Cự Nhân An Tức. Nơi diễn ra trận hỗn chiến long trời lở đất giữa các đại Nhân Tiên Lữ Bố, Triệu Vân, Ninh Không Lâu, Cầu Hòa, A Bố.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_DOANH_KINH_KHU",
+    "name": "Doanh Kinh Khu Vực & Hải Phận Doanh Kinh",
+    "description": "Vùng đồng bằng duyên hải rộng lớn trù phú từng thuộc quyền quản lý của thống soái Đức Bất Nhân.",
+    "strategic_importance": "Nguồn cung cấp lương thảo dồi dào với hàng chục thành trì lớn. Sau khi được Đại Hán giải phóng, nơi đây trở thành hậu phương vững chắc với các giống cây trồng Long Nha Mễ và khoai tây.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_DUONG_HOA_LONG_SA",
+    "name": "Dương Hoa Thành & Long Sa Thành",
+    "description": "Cặp thành trì tiền đồn kiên cố tại Doanh Kinh, nơi Thác Hạp từng đồn trú 30 vạn quân tinh nhuệ.",
+    "strategic_importance": "Cửa ngõ bảo vệ Doanh Kinh từ hướng biển; nơi diễn ra trận đánh tan quân Thác Hạp của Gia Cát Lượng và là tổng hành dinh của Tư Mã Ý - Giả Hủ.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_QUANG_HOA_VIEM_HOA",
+    "name": "Quang Hoa Thành & Viêm Hỏa Thành",
+    "description": "Hai thành phố trung tâm tôn giáo giàu có của Quốc Giáo, nơi tập trung đông đảo giáo đồ và các vị Đại Tế Ti.",
+    "strategic_importance": "Cứ điểm hậu cần và truyền đạo của Quốc Giáo; bị Quỷ Vương tấn công, phóng hỏa và sát hại Thánh Quang Đại Tế Ti.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_BAC_U_CHI_DIA",
+    "name": "Bắc U Chi Địa (Cực Bắc Hoang Mạc)",
+    "description": "Vùng đất hoang mạc băng giá quanh năm cát bay gió rít ở phương Bắc Đại La. Nơi sinh sống kiên cường của bộ tộc Thiên Bắc Thị.",
+    "strategic_importance": "Kho tàng quặng sắt và kỹ nghệ rèn đúc binh khí, áo giáp số một Đại La. Cung cấp trang bị thượng thặng cho các quân đoàn tinh nhuệ.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_THIEN_THACH_THANH",
+    "name": "Thiên Thạch Thành",
+    "description": "Thành trì trung tâm của Cực Bắc U Châu, ẩn giấu Thánh Địa ngọn lửa Tân Hỏa của tộc Thiên Bắc Thị.",
+    "strategic_importance": "Thánh địa tinh thần của Thiên Bắc Thị; nơi Bắc Minh xuất quan và diễn ra trận huyết chiến Triệu Vân cắt thịt bài độc.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_TAY_LUNG_THANH",
+    "name": "Tây Lũng Thành & Tây Môn Quan",
+    "description": "Pháo đài cửa ải phía Tây hiểm trở do đại tông sư kiếm đạo Quý Vô Sinh trấn thủ.",
+    "strategic_importance": "Yết hầu giao thông nối liền phương Tây với trung nguyên Đại La. Bị Vương Việt và đại quân Đại Hán công phá ở Ch.1184.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_BAC_DUYEN_THANH",
+    "name": "Bắc Duyên Thành",
+    "description": "Thành trì biên giới giáp ranh giữa khu vực ảnh hưởng của Quý gia và Thánh Nữ Giáo.",
+    "strategic_importance": "Nơi diễn ra trận huyết chiến của Trầm Hạo và là mục tiêu tiến công phản công của Quý Bình An ở Chương 1200.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "LOC_THANH_DUC_DAI_SAM_LAM",
+    "name": "Thánh Đức Đại Sâm Lâm (Đổi tên thành Quốc An Thành Mới)",
+    "description": "Khu rừng rậm thiêng liêng cổ xưa rộng lớn bậc nhất Đại La, nơi tọa lạc của Sinh Mệnh Thần Thụ nghìn năm và từng là trái tim tôn giáo của Quốc Giáo.",
+    "strategic_importance": "Sau đại chiến, nơi đây được Quý Bình An san phẳng và tái thiết thành kinh đô mới của Đại Hán tại Đại La, trung tâm cai trị toàn cõi phương nam.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_TAY_MON_QUAN",
+    "name": "Tây Môn Quan",
+    "description": "Hùng quan hiểm trở bậc nhất án ngữ tuyến giao thông huyết mạch giữa lãnh thổ Đại Hán, Thiên A Thị và Quốc Giáo.",
+    "strategic_importance": "Cửa ngõ quân sự quyết định; ai làm chủ Tây Môn Quan sẽ nắm quyền chủ động tiến thoái trên chiến trường Đại La.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_TAY_LUNG_THANH",
+    "name": "Tây Lũng Thành",
+    "description": "Căn cứ địa lâu đời của phân nhánh Quý gia Đại La do Quý Vô Sinh đứng đầu.",
+    "strategic_importance": "Vùng đệm chiến lược giữa Thiên Bắc Thị, Bắc U chi địa và vùng kiểm soát của Đại Hán.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_BAC_DUYEN_THANH_HA",
+    "name": "Bắc Duyên Thành & Sông Bắc Duyên Hà",
+    "description": "Hệ thống thành quách nằm dọc theo con sông lớn Bắc Duyên Hà mang dòng chảy xiết.",
+    "strategic_importance": "Tuyến phòng thủ tự nhiên quan trọng của Quốc Giáo; nơi Cầu Hòa tháo chạy và Bàng Thống chịu chết kích hoạt Niết Bàn.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_THIEN_SON_THANH_DOANH_KINH",
+    "name": "Thiên Sơn Thành & Dãy Núi Doanh Kinh",
+    "description": "Khu vực núi cao hiểm trở, là nơi trữ nước suối nguồn nuôi sống toàn bộ cư dân Thiên Sơn Thành.",
+    "strategic_importance": "Nơi Đào Nhã và Lý Nho thực hiện kế hoạch bộc phá đê đập thủy công tiêu diệt hơn 10 vạn quân địch.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_QUOC_AN_THANH_CU_DINH_THANH",
+    "name": "Quốc An Thành (Cũ) & Định Thánh Thành",
+    "description": "Cặp thành lũy tiền đồn kiên cố bảo vệ lối vào Thánh Đức Đại Sâm Lâm.",
+    "strategic_importance": "Bị Lữ Bố và Quý Thiên Tứ công phá trong các chiến dịch giải phóng cửa ngõ Quốc Giáo.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_HOANG_THANH_THIEN_A",
+    "name": "Hoàng Thành Thiên A Thị",
+    "description": "Kinh đô tráng lệ, lâu đời hàng trăm năm của hoàng tộc Thiên A Thị tại cực nam Đại La.",
+    "strategic_importance": "Đầu não chính trị, kinh tế và quân sự của A Bố; nơi tập trung hơn 60 vạn quân đồn trú.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_HOANG_HON_CHI_SAM",
+    "name": "Hoàng Hôn Chi Sâm",
+    "description": "Khu rừng rậm âm u che phủ ánh mặt trời quanh năm.",
+    "strategic_importance": "Chiến trường phục kích tiêu diệt Bắc U chi chủ Bắc Minh.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_BAC_U_TUYET_SON",
+    "name": "Bắc U Chi Địa & Tuyết Sơn Bắc U",
+    "description": "Vùng đất băng giá tuyết phủ vạn dặm tại cực bắc Đại La, nơi ngự trị cây Ngô Đồng khổng lồ.",
+    "strategic_importance": "Thánh địa tu hành của Phượng Hoàng; nơi Quý Bình An thiết lập đền thờ Đồ Đằng sau hòa ước 10 năm.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "LOC_NAM_HUNG_QUAN",
+    "name": "Nam Hùng Quan",
+    "description": "Phòng tuyến hiểm trở che chắn mặt bắc của hoàng thành Thiên A Thị.",
+    "strategic_importance": "Lá chắn cuối cùng của Kim Khuê và quân Thiên A Thị trước khi bị Đại Hán chọc thủng.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  }
+]

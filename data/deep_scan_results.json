@@ -1,0 +1,6894 @@
+{
+  "scan_summary": {
+    "summoned_heroes": {
+      "triệu vân": {
+        "total_mentions": 3229,
+        "chapters_appeared": 514,
+        "first_chapter": 1,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1100,
+            "title": "#1100. Chương 1100: Triệu Vân cắt thịt",
+            "count": 52
+          },
+          {
+            "chapter": 1160,
+            "title": "#1160. Chương 1160: Triệu Vân liều mạng chiến Bắc Minh",
+            "count": 48
+          },
+          {
+            "chapter": 1161,
+            "title": "#1161. Chương 1161: Quan Vũ Trương Phi lại đánh tới",
+            "count": 40
+          },
+          {
+            "chapter": 1387,
+            "title": "#1387. Chương 1389: Triệu Vân đại chiến A Bố Tử Ngọc Sùng",
+            "count": 39
+          },
+          {
+            "chapter": 709,
+            "title": "#709. Chương 709: Cầm xuống Tây Hoàng Thành",
+            "count": 38
+          }
+        ]
+      },
+      "lữ bố": {
+        "total_mentions": 3138,
+        "chapters_appeared": 315,
+        "first_chapter": 1,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 817,
+            "title": "#817. Chương 817: Nhân Tiên Lữ Bố",
+            "count": 47
+          },
+          {
+            "chapter": 1437,
+            "title": "#1437. Chương 1439: Lữ Bố phản sát",
+            "count": 44
+          },
+          {
+            "chapter": 834,
+            "title": "#834. Chương 834: Lữ Bố bại Đặc Phổ",
+            "count": 40
+          },
+          {
+            "chapter": 1036,
+            "title": "#1036. Chương 1036: Quý Bình Xuyên cái chết",
+            "count": 39
+          },
+          {
+            "chapter": 1470,
+            "title": "#1470. Chương 1472: Không để ý hết thảy truy sát",
+            "count": 37
+          }
+        ]
+      },
+      "giả hủ": {
+        "total_mentions": 2246,
+        "chapters_appeared": 330,
+        "first_chapter": 27,
+        "last_chapter": 1501,
+        "peak_chapters": [
+          {
+            "chapter": 28,
+            "title": "#28. Chương 28: Giả Hủ chi độc",
+            "count": 38
+          },
+          {
+            "chapter": 438,
+            "title": "#438. Chương 438: Cưỡng ép Trương Hiên Chính",
+            "count": 32
+          },
+          {
+            "chapter": 439,
+            "title": "#439. Chương 439: Bạch Thúc Băng cản đường",
+            "count": 31
+          },
+          {
+            "chapter": 421,
+            "title": "#421. Chương 421: Chạy trốn",
+            "count": 27
+          },
+          {
+            "chapter": 33,
+            "title": "#33. Chương 33: Một mồi lửa đốt",
+            "count": 23
+          }
+        ]
+      },
+      "quách gia": {
+        "total_mentions": 2189,
+        "chapters_appeared": 271,
+        "first_chapter": 1,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1480,
+            "title": "#1480. Chương 1482: Quách Gia đồng quy vu tận",
+            "count": 32
+          },
+          {
+            "chapter": 1261,
+            "title": "#1261. Chương 1263: Cam Ninh tiến về cứu giá",
+            "count": 27
+          },
+          {
+            "chapter": 1281,
+            "title": "#1281. Chương 1283: Lập kế hoạch diệt quốc dạy",
+            "count": 27
+          },
+          {
+            "chapter": 1481,
+            "title": "#1481. Chương 1483: Kinh Bắc Thành hủy diệt bắt đầu",
+            "count": 27
+          },
+          {
+            "chapter": 383,
+            "title": "#383. Chương 383: Quách Gia suy đoán",
+            "count": 25
+          }
+        ]
+      },
+      "điển vi": {
+        "total_mentions": 1895,
+        "chapters_appeared": 348,
+        "first_chapter": 1,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 448,
+            "title": "#448. Chương 448: Lưỡng bại câu thương",
+            "count": 33
+          },
+          {
+            "chapter": 1110,
+            "title": "#1110. Chương 1110: Cầm xuống cửa tây",
+            "count": 33
+          },
+          {
+            "chapter": 1147,
+            "title": "#1147. Chương 1147: Bắc Minh lấy một địch hai",
+            "count": 31
+          },
+          {
+            "chapter": 129,
+            "title": "#129. Chương 129: Tử Ngọc Trạch ra mặt",
+            "count": 30
+          },
+          {
+            "chapter": 136,
+            "title": "#136. Chương 136: Điển Vi giết ra lao ngục",
+            "count": 28
+          }
+        ]
+      },
+      "lý nho": {
+        "total_mentions": 1869,
+        "chapters_appeared": 268,
+        "first_chapter": 97,
+        "last_chapter": 1343,
+        "peak_chapters": [
+          {
+            "chapter": 719,
+            "title": "#719. Chương 719: Ăn miếng trả miếng",
+            "count": 36
+          },
+          {
+            "chapter": 97,
+            "title": "#97. Chương 97: Lý Nho tàn nhẫn",
+            "count": 35
+          },
+          {
+            "chapter": 1064,
+            "title": "#1064. Chương 1064: Quốc Giáo công Bách Khổng Thành",
+            "count": 31
+          },
+          {
+            "chapter": 404,
+            "title": "#404. Chương 404: Lý Nho nguy cơ",
+            "count": 29
+          },
+          {
+            "chapter": 721,
+            "title": "#721. Chương 721: Đông Thương họa loạn mục đích",
+            "count": 29
+          }
+        ]
+      },
+      "chu du": {
+        "total_mentions": 1677,
+        "chapters_appeared": 241,
+        "first_chapter": 199,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 665,
+            "title": "#665. Chương 665: Chu Du mưu Bùi gia quân",
+            "count": 38
+          },
+          {
+            "chapter": 800,
+            "title": "#800. Chương 800: Chu Du đánh Cam Ninh",
+            "count": 34
+          },
+          {
+            "chapter": 678,
+            "title": "#678. Chương 678: Trừ hậu hoạn",
+            "count": 30
+          },
+          {
+            "chapter": 1180,
+            "title": "#1180. Chương 1180: Bàng Thống Trương Liêu đuổi tới",
+            "count": 30
+          },
+          {
+            "chapter": 1168,
+            "title": "#1168. Chương 1168: Quý Vô Song sớm có sắp xếp",
+            "count": 29
+          }
+        ]
+      },
+      "tuân úc": {
+        "total_mentions": 1295,
+        "chapters_appeared": 206,
+        "first_chapter": 201,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 508,
+            "title": "#508. Chương 508: Tuân Úc mưu Đình Úy Phủ",
+            "count": 30
+          },
+          {
+            "chapter": 202,
+            "title": "#202. Chương 202: Tuân Úc tam vấn",
+            "count": 26
+          },
+          {
+            "chapter": 201,
+            "title": "#201. Chương 201: Tuyệt thế năng thần: Tuân Úc",
+            "count": 25
+          },
+          {
+            "chapter": 489,
+            "title": "#489. Chương 489: Hắn là công thần",
+            "count": 25
+          },
+          {
+            "chapter": 758,
+            "title": "#758. Chương 758: Chết so sống tốt",
+            "count": 25
+          }
+        ]
+      },
+      "gia cát lượng": {
+        "total_mentions": 1186,
+        "chapters_appeared": 157,
+        "first_chapter": 1,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 725,
+            "title": "#725. Chương 725: Thuận theo thiên mệnh: Gia Cát Lượng",
+            "count": 33
+          },
+          {
+            "chapter": 1047,
+            "title": "#1047. Chương 1047: Lữ Bố nhẫn nại",
+            "count": 25
+          },
+          {
+            "chapter": 949,
+            "title": "#949. Chương 949: Thác Hạp điên cuồng",
+            "count": 23
+          },
+          {
+            "chapter": 1142,
+            "title": "#1142. Chương 1142: A Bố động tác",
+            "count": 23
+          },
+          {
+            "chapter": 1433,
+            "title": "#1433. Chương 1435: Gia Cát Lượng điều giáo Bàng Thống",
+            "count": 23
+          }
+        ]
+      },
+      "quan vũ": {
+        "total_mentions": 1166,
+        "chapters_appeared": 154,
+        "first_chapter": 149,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1238,
+            "title": "#1238. Chương 1238: Quan Vũ dương bại",
+            "count": 41
+          },
+          {
+            "chapter": 1159,
+            "title": "#1159. Chương 1159: Triệu Vân đuổi tới",
+            "count": 40
+          },
+          {
+            "chapter": 984,
+            "title": "#984. Chương 984: Nghĩa chỗ hướng",
+            "count": 37
+          },
+          {
+            "chapter": 615,
+            "title": "#615. Chương 615: Quan Vũ trảm Khôn Tự",
+            "count": 34
+          },
+          {
+            "chapter": 1239,
+            "title": "#1239. Chương 1239: Quan Vũ trảm Ngân Giải",
+            "count": 33
+          }
+        ]
+      },
+      "vương việt": {
+        "total_mentions": 1159,
+        "chapters_appeared": 182,
+        "first_chapter": 520,
+        "last_chapter": 1505,
+        "peak_chapters": [
+          {
+            "chapter": 520,
+            "title": "#520. Chương 520: Kiếm Thánh xuất thế (thứ mười bốn càng )",
+            "count": 42
+          },
+          {
+            "chapter": 680,
+            "title": "#680. Chương 680: Ám sát Văn Nhân Hạo (",
+            "count": 37
+          },
+          {
+            "chapter": 1225,
+            "title": "#1225. Chương 1225: Vương Việt chi thương",
+            "count": 31
+          },
+          {
+            "chapter": 1501,
+            "title": "#1501. Chương 1503: Đồng quy vu tận",
+            "count": 29
+          },
+          {
+            "chapter": 728,
+            "title": "#728. Chương 728: Tàng Bảo",
+            "count": 27
+          }
+        ]
+      },
+      "hoàng trung": {
+        "total_mentions": 1006,
+        "chapters_appeared": 178,
+        "first_chapter": 110,
+        "last_chapter": 1506,
+        "peak_chapters": [
+          {
+            "chapter": 1041,
+            "title": "#1041. Chương 1041: Hoàng Trung bắn giết Quý Dương",
+            "count": 48
+          },
+          {
+            "chapter": 1028,
+            "title": "#1028. Chương 1028: Hoàng Trung Chiến Quỷ vương",
+            "count": 44
+          },
+          {
+            "chapter": 1040,
+            "title": "#1040. Chương 1040: Bắc Duyên Thành đại chiến",
+            "count": 41
+          },
+          {
+            "chapter": 1044,
+            "title": "#1044. Chương 1044: A Bố xuất hiện",
+            "count": 39
+          },
+          {
+            "chapter": 1029,
+            "title": "#1029. Chương 1029: Hiên Thanh Thu cái chết",
+            "count": 37
+          }
+        ]
+      },
+      "bàng thống": {
+        "total_mentions": 1004,
+        "chapters_appeared": 121,
+        "first_chapter": 1,
+        "last_chapter": 1507,
+        "peak_chapters": [
+          {
+            "chapter": 1008,
+            "title": "#1008. Chương 1008: Không cam lòng phản công",
+            "count": 35
+          },
+          {
+            "chapter": 1062,
+            "title": "#1062. Chương 1062: Bàng Thống an toàn trở về",
+            "count": 29
+          },
+          {
+            "chapter": 1038,
+            "title": "#1038. Chương 1038: Bàng Thống thử Quý gia",
+            "count": 27
+          },
+          {
+            "chapter": 1042,
+            "title": "#1042. Chương 1042: Quý Vô Sinh kiếm",
+            "count": 26
+          },
+          {
+            "chapter": 999,
+            "title": "#999. Chương 999: Bàng Thống chi mưu",
+            "count": 23
+          }
+        ]
+      },
+      "mã siêu": {
+        "total_mentions": 814,
+        "chapters_appeared": 104,
+        "first_chapter": 350,
+        "last_chapter": 1313,
+        "peak_chapters": [
+          {
+            "chapter": 756,
+            "title": "#756. Chương 756: Chưởng khống cục diện",
+            "count": 42
+          },
+          {
+            "chapter": 1213,
+            "title": "#1213. Chương 1213: Tử Ngọc Sùng lấy một địch hai",
+            "count": 40
+          },
+          {
+            "chapter": 1134,
+            "title": "#1134. Chương 1134: Mã Siêu trảm bạch bào tế tự",
+            "count": 39
+          },
+          {
+            "chapter": 350,
+            "title": "#350. Chương 350: Tuyệt thế võ tướng: Mã Siêu",
+            "count": 38
+          },
+          {
+            "chapter": 1135,
+            "title": "#1135. Chương 1135: Bạch bào tế tự cái chết",
+            "count": 37
+          }
+        ]
+      },
+      "trương liêu": {
+        "total_mentions": 801,
+        "chapters_appeared": 161,
+        "first_chapter": 150,
+        "last_chapter": 1180,
+        "peak_chapters": [
+          {
+            "chapter": 150,
+            "title": "#150. Chương 150: Tuyệt thế danh tướng: Trương Liêu",
+            "count": 32
+          },
+          {
+            "chapter": 326,
+            "title": "#326. Chương 326: Trương Liêu chặn giết, Chu Du ở phía sau",
+            "count": 24
+          },
+          {
+            "chapter": 188,
+            "title": "#188. Chương 188: Kích hoạt bản mệnh tọa kỵ",
+            "count": 23
+          },
+          {
+            "chapter": 389,
+            "title": "#389. Chương 389: Đại chiến",
+            "count": 23
+          },
+          {
+            "chapter": 574,
+            "title": "#574. Chương 574: Tây Kinh Thành dưới Tây Lăng Thiết Kỵ",
+            "count": 23
+          }
+        ]
+      },
+      "cam ninh": {
+        "total_mentions": 707,
+        "chapters_appeared": 96,
+        "first_chapter": 555,
+        "last_chapter": 1500,
+        "peak_chapters": [
+          {
+            "chapter": 555,
+            "title": "#555. Chương 555: Cam Ninh xuất thế",
+            "count": 41
+          },
+          {
+            "chapter": 806,
+            "title": "#806. Chương 806: Xích sắt khóa thuyền",
+            "count": 35
+          },
+          {
+            "chapter": 575,
+            "title": "#575. Chương 575: Vận chuyển người kế hoạch bắt đầu",
+            "count": 23
+          },
+          {
+            "chapter": 591,
+            "title": "#591. Chương 591: Cung Ngạo tùy tiện",
+            "count": 22
+          },
+          {
+            "chapter": 781,
+            "title": "#781. Chương 781: Mục tiêu: Quý Sơn Hà",
+            "count": 22
+          }
+        ]
+      },
+      "trương phi": {
+        "total_mentions": 694,
+        "chapters_appeared": 111,
+        "first_chapter": 63,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 458,
+            "title": "#458. Chương 458: Manh mối sơ hiện",
+            "count": 34
+          },
+          {
+            "chapter": 467,
+            "title": "#467. Chương 467: Quý Bình An giết tới",
+            "count": 31
+          },
+          {
+            "chapter": 792,
+            "title": "#792. Chương 792: Để bọn hắn táng thân đáy biển",
+            "count": 29
+          },
+          {
+            "chapter": 444,
+            "title": "#444. Chương 444: Tây Lăng Đông Chinh",
+            "count": 25
+          },
+          {
+            "chapter": 667,
+            "title": "#667. Chương 667: Quan Vũ kéo đao",
+            "count": 25
+          }
+        ]
+      },
+      "hứa chử": {
+        "total_mentions": 599,
+        "chapters_appeared": 122,
+        "first_chapter": 149,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1115,
+            "title": "#1115. Chương 1115: Hứa Chử bị cưỡng ép",
+            "count": 21
+          },
+          {
+            "chapter": 601,
+            "title": "#601. Chương 601: Điển Vi lại động đầu óc",
+            "count": 20
+          },
+          {
+            "chapter": 1110,
+            "title": "#1110. Chương 1110: Cầm xuống cửa tây",
+            "count": 20
+          },
+          {
+            "chapter": 1113,
+            "title": "#1113. Chương 1113: Hứa Chử công thánh địa",
+            "count": 20
+          },
+          {
+            "chapter": 1147,
+            "title": "#1147. Chương 1147: Bắc Minh lấy một địch hai",
+            "count": 19
+          }
+        ]
+      },
+      "cao thuận": {
+        "total_mentions": 599,
+        "chapters_appeared": 144,
+        "first_chapter": 200,
+        "last_chapter": 1500,
+        "peak_chapters": [
+          {
+            "chapter": 1006,
+            "title": "#1006. Chương 1006: Vô song chiến tướng lại lập công",
+            "count": 26
+          },
+          {
+            "chapter": 1140,
+            "title": "#1140. Chương 1140: Lữ Bố thuấn sát Bán Tiên",
+            "count": 21
+          },
+          {
+            "chapter": 1137,
+            "title": "#1137. Chương 1137: Lữ Bố xuất chiến",
+            "count": 18
+          },
+          {
+            "chapter": 1213,
+            "title": "#1213. Chương 1213: Tử Ngọc Sùng lấy một địch hai",
+            "count": 17
+          },
+          {
+            "chapter": 1207,
+            "title": "#1207. Chương 1207: Chiến cục nghiền ép",
+            "count": 16
+          }
+        ]
+      },
+      "hệ thống": {
+        "total_mentions": 552,
+        "chapters_appeared": 147,
+        "first_chapter": 1,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 382,
+            "title": "#382. Chương 382: Thiên mệnh mưu thần chi nghịch thiên cải mệnh",
+            "count": 18
+          },
+          {
+            "chapter": 1339,
+            "title": "#1339. Chương 1341: Hệ thống lại lần nữa kích hoạt",
+            "count": 16
+          },
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 14
+          },
+          {
+            "chapter": 825,
+            "title": "#825. Chương 825: Triệu hoán tiếp tục",
+            "count": 14
+          },
+          {
+            "chapter": 1051,
+            "title": "#1051. Chương 1051: Anh Hồn Châu",
+            "count": 14
+          }
+        ]
+      },
+      "điêu thuyền": {
+        "total_mentions": 499,
+        "chapters_appeared": 73,
+        "first_chapter": 140,
+        "last_chapter": 906,
+        "peak_chapters": [
+          {
+            "chapter": 522,
+            "title": "#522. Chương 522: Đại La sơ hiện manh mối",
+            "count": 24
+          },
+          {
+            "chapter": 140,
+            "title": "#140. Chương 140: Triệu Vân đề bạt, Điêu Thuyền xuất thế",
+            "count": 19
+          },
+          {
+            "chapter": 427,
+            "title": "#427. Chương 427: Anh linh đột phá",
+            "count": 19
+          },
+          {
+            "chapter": 144,
+            "title": "#144. Chương 144: Điêu Thuyền khẽ múa Bế Nguyệt mở (",
+            "count": 18
+          },
+          {
+            "chapter": 149,
+            "title": "#149. Chương 149: Liên chiêu hai tên vạn kim võ tướng",
+            "count": 18
+          }
+        ]
+      },
+      "khúc nghĩa": {
+        "total_mentions": 472,
+        "chapters_appeared": 119,
+        "first_chapter": 149,
+        "last_chapter": 1485,
+        "peak_chapters": [
+          {
+            "chapter": 1067,
+            "title": "#1067. Chương 1067: Đánh chiếm Bắc U chi địa",
+            "count": 23
+          },
+          {
+            "chapter": 164,
+            "title": "#164. Chương 164: Bắt giặc phải bắt vua trước",
+            "count": 15
+          },
+          {
+            "chapter": 1065,
+            "title": "#1065. Chương 1065: Tư Mã Ý bố cục",
+            "count": 15
+          },
+          {
+            "chapter": 470,
+            "title": "#470. Chương 470: Thủ thành chi chiến",
+            "count": 14
+          },
+          {
+            "chapter": 689,
+            "title": "#689. Chương 689: Quyết chiến Tây Lăng Thiết Kỵ",
+            "count": 14
+          }
+        ]
+      },
+      "hoa đà": {
+        "total_mentions": 468,
+        "chapters_appeared": 84,
+        "first_chapter": 140,
+        "last_chapter": 1427,
+        "peak_chapters": [
+          {
+            "chapter": 1125,
+            "title": "#1125. Chương 1125: Hoa Đà hoán huyết",
+            "count": 42
+          },
+          {
+            "chapter": 419,
+            "title": "#419. Chương 419: Mổ sọ",
+            "count": 33
+          },
+          {
+            "chapter": 361,
+            "title": "#361. Chương 361: Triệu hoán đặc thù loại anh linh",
+            "count": 27
+          },
+          {
+            "chapter": 693,
+            "title": "#693. Chương 693: Quyết định cứu Cơ Vô Thiên",
+            "count": 26
+          },
+          {
+            "chapter": 997,
+            "title": "#997. Chương 997: Cạo xương liệu độc",
+            "count": 19
+          }
+        ]
+      },
+      "triệu hoán": {
+        "total_mentions": 454,
+        "chapters_appeared": 89,
+        "first_chapter": 1,
+        "last_chapter": 1425,
+        "peak_chapters": [
+          {
+            "chapter": 825,
+            "title": "#825. Chương 825: Triệu hoán tiếp tục",
+            "count": 25
+          },
+          {
+            "chapter": 409,
+            "title": "#409. Chương 409: 50 ngàn kim triệu hoán",
+            "count": 24
+          },
+          {
+            "chapter": 654,
+            "title": "#654. Chương 654: An bài năm người",
+            "count": 22
+          },
+          {
+            "chapter": 824,
+            "title": "#824. Chương 824: Văn thần triệu hoán",
+            "count": 19
+          },
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 16
+          }
+        ]
+      },
+      "vạn kim": {
+        "total_mentions": 417,
+        "chapters_appeared": 99,
+        "first_chapter": 1,
+        "last_chapter": 951,
+        "peak_chapters": [
+          {
+            "chapter": 27,
+            "title": "#27. Chương 27: Triệu hoán Độc Sĩ Giả Hủ",
+            "count": 24
+          },
+          {
+            "chapter": 26,
+            "title": "#26. Chương 26: 200 ngàn kim",
+            "count": 22
+          },
+          {
+            "chapter": 409,
+            "title": "#409. Chương 409: 50 ngàn kim triệu hoán",
+            "count": 21
+          },
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 17
+          },
+          {
+            "chapter": 824,
+            "title": "#824. Chương 824: Văn thần triệu hoán",
+            "count": 16
+          }
+        ]
+      },
+      "tả từ": {
+        "total_mentions": 414,
+        "chapters_appeared": 53,
+        "first_chapter": 996,
+        "last_chapter": 1495,
+        "peak_chapters": [
+          {
+            "chapter": 996,
+            "title": "#996. Chương 996: Kỳ nhân dị sĩ: Tả Từ",
+            "count": 52
+          },
+          {
+            "chapter": 1199,
+            "title": "#1199. Chương 1199: Tả Từ mưu đê đập",
+            "count": 31
+          },
+          {
+            "chapter": 1175,
+            "title": "#1175. Chương 1175: Kinh Bắc Thành phá",
+            "count": 21
+          },
+          {
+            "chapter": 1216,
+            "title": "#1216. Chương 1216: Doanh Kinh đê đập chi chiến",
+            "count": 19
+          },
+          {
+            "chapter": 1174,
+            "title": "#1174. Chương 1174: Tả Từ chuẩn bị bố trận",
+            "count": 16
+          }
+        ]
+      },
+      "anh linh": {
+        "total_mentions": 347,
+        "chapters_appeared": 87,
+        "first_chapter": 1,
+        "last_chapter": 1222,
+        "peak_chapters": [
+          {
+            "chapter": 1051,
+            "title": "#1051. Chương 1051: Anh Hồn Châu",
+            "count": 20
+          },
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 16
+          },
+          {
+            "chapter": 427,
+            "title": "#427. Chương 427: Anh linh đột phá",
+            "count": 13
+          },
+          {
+            "chapter": 725,
+            "title": "#725. Chương 725: Thuận theo thiên mệnh: Gia Cát Lượng",
+            "count": 12
+          },
+          {
+            "chapter": 1,
+            "title": "#1. Chương 1 : Xuyên việt thành đệ nhất người ở rể",
+            "count": 10
+          }
+        ]
+      },
+      "hoa hùng": {
+        "total_mentions": 304,
+        "chapters_appeared": 77,
+        "first_chapter": 149,
+        "last_chapter": 1088,
+        "peak_chapters": [
+          {
+            "chapter": 162,
+            "title": "#162. Chương 162: Phá trận",
+            "count": 30
+          },
+          {
+            "chapter": 704,
+            "title": "#704. Chương 704: Binh đến đông dưới hoàng thành",
+            "count": 14
+          },
+          {
+            "chapter": 164,
+            "title": "#164. Chương 164: Bắt giặc phải bắt vua trước",
+            "count": 13
+          },
+          {
+            "chapter": 928,
+            "title": "#928. Chương 928: Chắp tay để thành",
+            "count": 13
+          },
+          {
+            "chapter": 988,
+            "title": "#988. Chương 988: An Khinh Ngôn mang theo tử tới gặp",
+            "count": 13
+          }
+        ]
+      },
+      "chu thái": {
+        "total_mentions": 272,
+        "chapters_appeared": 56,
+        "first_chapter": 200,
+        "last_chapter": 1494,
+        "peak_chapters": [
+          {
+            "chapter": 337,
+            "title": "#337. Chương 337: Điêu Thuyền đánh trống",
+            "count": 21
+          },
+          {
+            "chapter": 591,
+            "title": "#591. Chương 591: Cung Ngạo tùy tiện",
+            "count": 20
+          },
+          {
+            "chapter": 338,
+            "title": "#338. Chương 338: Lui binh",
+            "count": 19
+          },
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 14
+          },
+          {
+            "chapter": 336,
+            "title": "#336. Chương 336: Liều chết phòng thủ",
+            "count": 14
+          }
+        ]
+      },
+      "anh linh điểm": {
+        "total_mentions": 223,
+        "chapters_appeared": 64,
+        "first_chapter": 360,
+        "last_chapter": 1222,
+        "peak_chapters": [
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 11
+          },
+          {
+            "chapter": 725,
+            "title": "#725. Chương 725: Thuận theo thiên mệnh: Gia Cát Lượng",
+            "count": 11
+          },
+          {
+            "chapter": 393,
+            "title": "#393. Chương 393: Hoang mang mê ly",
+            "count": 9
+          },
+          {
+            "chapter": 567,
+            "title": "#567. Chương 567: Đánh hạ Tân Môn Thành (",
+            "count": 9
+          },
+          {
+            "chapter": 816,
+            "title": "#816. Chương 816: Triệu hoán: Thiên mệnh võ tướng",
+            "count": 7
+          }
+        ]
+      },
+      "liêu hóa": {
+        "total_mentions": 184,
+        "chapters_appeared": 42,
+        "first_chapter": 200,
+        "last_chapter": 816,
+        "peak_chapters": [
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 17
+          },
+          {
+            "chapter": 341,
+            "title": "#341. Chương 341: Liền ngồi (",
+            "count": 16
+          },
+          {
+            "chapter": 336,
+            "title": "#336. Chương 336: Liều chết phòng thủ",
+            "count": 11
+          },
+          {
+            "chapter": 481,
+            "title": "#481. Chương 481: Bắc cảnh tam châu đồ sát",
+            "count": 9
+          },
+          {
+            "chapter": 335,
+            "title": "#335. Chương 335: Công thành (thứ mười càng )",
+            "count": 8
+          }
+        ]
+      },
+      "chu thương": {
+        "total_mentions": 152,
+        "chapters_appeared": 37,
+        "first_chapter": 200,
+        "last_chapter": 1155,
+        "peak_chapters": [
+          {
+            "chapter": 1065,
+            "title": "#1065. Chương 1065: Tư Mã Ý bố cục",
+            "count": 19
+          },
+          {
+            "chapter": 1067,
+            "title": "#1067. Chương 1067: Đánh chiếm Bắc U chi địa",
+            "count": 14
+          },
+          {
+            "chapter": 1072,
+            "title": "#1072. Chương 1072: Lấy lực phá xảo",
+            "count": 13
+          },
+          {
+            "chapter": 1129,
+            "title": "#1129. Chương 1129: Quốc Giáo tấn công Bách Khổng Thành",
+            "count": 12
+          },
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 9
+          }
+        ]
+      },
+      "triệu hoán thành công": {
+        "total_mentions": 2,
+        "chapters_appeared": 2,
+        "first_chapter": 219,
+        "last_chapter": 220,
+        "peak_chapters": [
+          {
+            "chapter": 219,
+            "title": "#219. Chương 219: 10 vạn kim võ tướng: Chu Du",
+            "count": 1
+          },
+          {
+            "chapter": 220,
+            "title": "#220. Chương 220: 10 vạn kim võ tướng: Hoàng Trung",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "world_characters": {
+      "quý bình an": {
+        "total_mentions": 18675,
+        "chapters_appeared": 1118,
+        "first_chapter": 1,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 38,
+            "title": "#38. Chương 38: Quý Bình An tính toán",
+            "count": 45
+          },
+          {
+            "chapter": 766,
+            "title": "#766. Chương 766: Phế bỏ Quý Vô Song",
+            "count": 44
+          },
+          {
+            "chapter": 1502,
+            "title": "#1502. Chương 1504: Quý Bình An quyết chiến A Bố",
+            "count": 44
+          },
+          {
+            "chapter": 8,
+            "title": "#8. Chương 8: Mỹ nhân kế",
+            "count": 42
+          },
+          {
+            "chapter": 18,
+            "title": "#18. Chương 18: Cao nâng Mã Tắc",
+            "count": 42
+          }
+        ]
+      },
+      "a bố": {
+        "total_mentions": 2945,
+        "chapters_appeared": 390,
+        "first_chapter": 1,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1492,
+            "title": "#1492. Chương 1494: Phượng Hoàng chạy trốn",
+            "count": 42
+          },
+          {
+            "chapter": 982,
+            "title": "#982. Chương 982: Phân công hợp tác",
+            "count": 41
+          },
+          {
+            "chapter": 1170,
+            "title": "#1170. Chương 1170: Lữ Bố đuổi tới",
+            "count": 39
+          },
+          {
+            "chapter": 1488,
+            "title": "#1488. Chương 1490: Lữ Bố lại chế A Bố",
+            "count": 39
+          },
+          {
+            "chapter": 1071,
+            "title": "#1071. Chương 1071: A Bố thiệt thòi lớn",
+            "count": 38
+          }
+        ]
+      },
+      "tử ngọc": {
+        "total_mentions": 2433,
+        "chapters_appeared": 248,
+        "first_chapter": 24,
+        "last_chapter": 1428,
+        "peak_chapters": [
+          {
+            "chapter": 1239,
+            "title": "#1239. Chương 1239: Quan Vũ trảm Ngân Giải",
+            "count": 39
+          },
+          {
+            "chapter": 1359,
+            "title": "#1359. Chương 1361: Bắc Minh thu Tây Môn Quan",
+            "count": 36
+          },
+          {
+            "chapter": 1418,
+            "title": "#1418. Chương 1420: Tử Ngọc Sùng lựa chọn cuối cùng",
+            "count": 35
+          },
+          {
+            "chapter": 1402,
+            "title": "#1402. Chương 1404: Rời đi",
+            "count": 34
+          },
+          {
+            "chapter": 1421,
+            "title": "#1421. Chương 1423: Quý Thiên Tứ chiến Tử Ngọc Sùng",
+            "count": 34
+          }
+        ]
+      },
+      "quỷ vương": {
+        "total_mentions": 1808,
+        "chapters_appeared": 135,
+        "first_chapter": 194,
+        "last_chapter": 1202,
+        "peak_chapters": [
+          {
+            "chapter": 1011,
+            "title": "#1011. Chương 1011: Quỷ Vương át chủ bài ra hết",
+            "count": 52
+          },
+          {
+            "chapter": 1010,
+            "title": "#1010. Chương 1010: Ninh Không Lâu chạy về",
+            "count": 44
+          },
+          {
+            "chapter": 1117,
+            "title": "#1117. Chương 1117: Quỷ Vương trảm Bắc Mạch Sơn",
+            "count": 39
+          },
+          {
+            "chapter": 1029,
+            "title": "#1029. Chương 1029: Hiên Thanh Thu cái chết",
+            "count": 38
+          },
+          {
+            "chapter": 1070,
+            "title": "#1070. Chương 1070: Liền chỉ thiếu một chút",
+            "count": 37
+          }
+        ]
+      },
+      "thánh nữ": {
+        "total_mentions": 1442,
+        "chapters_appeared": 204,
+        "first_chapter": 754,
+        "last_chapter": 1361,
+        "peak_chapters": [
+          {
+            "chapter": 999,
+            "title": "#999. Chương 999: Bàng Thống chi mưu",
+            "count": 45
+          },
+          {
+            "chapter": 839,
+            "title": "#839. Chương 839: Đánh Thánh Nữ Giáo chủ ý",
+            "count": 41
+          },
+          {
+            "chapter": 923,
+            "title": "#923. Chương 923: Lục Tốn đi sứ Thánh Nữ Giáo",
+            "count": 37
+          },
+          {
+            "chapter": 874,
+            "title": "#874. Chương 874: Thánh Nữ chi tranh",
+            "count": 36
+          },
+          {
+            "chapter": 944,
+            "title": "#944. Chương 944: Lỗ Túc Lục Tốn du thuyết An Khinh Ngôn",
+            "count": 36
+          }
+        ]
+      },
+      "tử ngọc sùng": {
+        "total_mentions": 1369,
+        "chapters_appeared": 134,
+        "first_chapter": 24,
+        "last_chapter": 1428,
+        "peak_chapters": [
+          {
+            "chapter": 1239,
+            "title": "#1239. Chương 1239: Quan Vũ trảm Ngân Giải",
+            "count": 39
+          },
+          {
+            "chapter": 1359,
+            "title": "#1359. Chương 1361: Bắc Minh thu Tây Môn Quan",
+            "count": 36
+          },
+          {
+            "chapter": 1418,
+            "title": "#1418. Chương 1420: Tử Ngọc Sùng lựa chọn cuối cùng",
+            "count": 35
+          },
+          {
+            "chapter": 1402,
+            "title": "#1402. Chương 1404: Rời đi",
+            "count": 34
+          },
+          {
+            "chapter": 1421,
+            "title": "#1421. Chương 1423: Quý Thiên Tứ chiến Tử Ngọc Sùng",
+            "count": 34
+          }
+        ]
+      },
+      "bắc minh": {
+        "total_mentions": 1365,
+        "chapters_appeared": 109,
+        "first_chapter": 1079,
+        "last_chapter": 1417,
+        "peak_chapters": [
+          {
+            "chapter": 1100,
+            "title": "#1100. Chương 1100: Triệu Vân cắt thịt",
+            "count": 37
+          },
+          {
+            "chapter": 1115,
+            "title": "#1115. Chương 1115: Hứa Chử bị cưỡng ép",
+            "count": 37
+          },
+          {
+            "chapter": 1099,
+            "title": "#1099. Chương 1099: Triệu Vân đại chiến Bắc Minh",
+            "count": 35
+          },
+          {
+            "chapter": 1162,
+            "title": "#1162. Chương 1162: Ba người chiến Bắc Minh",
+            "count": 34
+          },
+          {
+            "chapter": 1358,
+            "title": "#1358. Chương 1360: Phượng Hoàng cử động",
+            "count": 34
+          }
+        ]
+      },
+      "hề nhan": {
+        "total_mentions": 1241,
+        "chapters_appeared": 150,
+        "first_chapter": 77,
+        "last_chapter": 771,
+        "peak_chapters": [
+          {
+            "chapter": 84,
+            "title": "#84. Chương 84: Giá trị trăm vạn kim Quý Bình An",
+            "count": 38
+          },
+          {
+            "chapter": 401,
+            "title": "#401. Chương 401: Hề Nhan chi bối rối",
+            "count": 37
+          },
+          {
+            "chapter": 671,
+            "title": "#671. Chương 671: Thích khách tập sát",
+            "count": 35
+          },
+          {
+            "chapter": 79,
+            "title": "#79. Chương 79: Lấy bất biến ứng vạn biến",
+            "count": 31
+          },
+          {
+            "chapter": 408,
+            "title": "#408. Chương 408: Trao đổi",
+            "count": 27
+          }
+        ]
+      },
+      "quý vô song": {
+        "total_mentions": 1225,
+        "chapters_appeared": 208,
+        "first_chapter": 2,
+        "last_chapter": 1414,
+        "peak_chapters": [
+          {
+            "chapter": 1106,
+            "title": "#1106. Chương 1106: Quý Vô Song đoạt Quý gia",
+            "count": 42
+          },
+          {
+            "chapter": 739,
+            "title": "#739. Chương 739: Mưa gió nổi lên",
+            "count": 36
+          },
+          {
+            "chapter": 476,
+            "title": "#476. Chương 475: Hội tụ An Hà Thành",
+            "count": 29
+          },
+          {
+            "chapter": 667,
+            "title": "#667. Chương 667: Quan Vũ kéo đao",
+            "count": 27
+          },
+          {
+            "chapter": 73,
+            "title": "#73. Chương 73: Quý Vô Song chỉ điểm",
+            "count": 26
+          }
+        ]
+      },
+      "quý bình sinh": {
+        "total_mentions": 1212,
+        "chapters_appeared": 165,
+        "first_chapter": 82,
+        "last_chapter": 1168,
+        "peak_chapters": [
+          {
+            "chapter": 649,
+            "title": "#649. Chương 649: Không có gì cả Quý Bình Sinh",
+            "count": 35
+          },
+          {
+            "chapter": 225,
+            "title": "#225. Chương 225: Quý Bình Sinh đao",
+            "count": 32
+          },
+          {
+            "chapter": 351,
+            "title": "#351. Chương 351: Tấn công Đông Sơn thành",
+            "count": 32
+          },
+          {
+            "chapter": 352,
+            "title": "#352. Chương 352: Phá thành mà vào",
+            "count": 31
+          },
+          {
+            "chapter": 245,
+            "title": "#245. Chương 245: Quý Bình Sinh chiến Bán Thánh",
+            "count": 27
+          }
+        ]
+      },
+      "ninh an": {
+        "total_mentions": 980,
+        "chapters_appeared": 187,
+        "first_chapter": 1,
+        "last_chapter": 1499,
+        "peak_chapters": [
+          {
+            "chapter": 12,
+            "title": "#12. Chương 12: Từ đó tính toán rõ ràng",
+            "count": 42
+          },
+          {
+            "chapter": 308,
+            "title": "#308. Chương 308: Hoa lê dưới cây xích đu đỡ",
+            "count": 24
+          },
+          {
+            "chapter": 87,
+            "title": "#87. Chương 87: Ninh An công chúa tâm tư",
+            "count": 23
+          },
+          {
+            "chapter": 120,
+            "title": "#120. Chương 120: Ta tự mình làm chủ",
+            "count": 22
+          },
+          {
+            "chapter": 230,
+            "title": "#230. Chương 230: Tử độc chiếm thiên hạ nên kết thúc",
+            "count": 22
+          }
+        ]
+      },
+      "tử ngọc trạch": {
+        "total_mentions": 949,
+        "chapters_appeared": 101,
+        "first_chapter": 75,
+        "last_chapter": 507,
+        "peak_chapters": [
+          {
+            "chapter": 237,
+            "title": "#237. Chương 237: Bạch Hổ Hung Tinh luận",
+            "count": 29
+          },
+          {
+            "chapter": 99,
+            "title": "#99. Chương 99: Tử Ngọc Trạch nói nói thẳng",
+            "count": 28
+          },
+          {
+            "chapter": 198,
+            "title": "#198. Chương 198: An gia từng bước ép sát",
+            "count": 27
+          },
+          {
+            "chapter": 263,
+            "title": "#263. Chương 263: Thiên hạ này vẫn là trẫm sao? (thứ mười tám càng )",
+            "count": 26
+          },
+          {
+            "chapter": 116,
+            "title": "#116. Chương 116: Tử Ngọc Trạch tàn nhẫn",
+            "count": 25
+          }
+        ]
+      },
+      "vũ hoàng": {
+        "total_mentions": 915,
+        "chapters_appeared": 166,
+        "first_chapter": 2,
+        "last_chapter": 831,
+        "peak_chapters": [
+          {
+            "chapter": 84,
+            "title": "#84. Chương 84: Giá trị trăm vạn kim Quý Bình An",
+            "count": 36
+          },
+          {
+            "chapter": 25,
+            "title": "#25. Chương 25: Chọc giận Vũ Hoàng",
+            "count": 33
+          },
+          {
+            "chapter": 101,
+            "title": "#101. Chương 101: Vũ Hoàng Tứ Hôn",
+            "count": 27
+          },
+          {
+            "chapter": 113,
+            "title": "#113. Chương 113: Lập Thái Tử",
+            "count": 25
+          },
+          {
+            "chapter": 110,
+            "title": "#110. Chương 110: Hứa Hòa Lâm mắt trợn tròn",
+            "count": 23
+          }
+        ]
+      },
+      "thiên a thị": {
+        "total_mentions": 745,
+        "chapters_appeared": 171,
+        "first_chapter": 1079,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1490,
+            "title": "#1490. Chương 1492: Các nơi chiến báo dồn dập đến",
+            "count": 22
+          },
+          {
+            "chapter": 1495,
+            "title": "#1495. Chương 1497: Thiên A Thị cuối cùng đại quân xuất hiện",
+            "count": 17
+          },
+          {
+            "chapter": 1374,
+            "title": "#1374. Chương 1376: Hai phương khai chiến",
+            "count": 16
+          },
+          {
+            "chapter": 1320,
+            "title": "#1320. Chương 1322: Táng diệt kế hoạch",
+            "count": 15
+          },
+          {
+            "chapter": 1322,
+            "title": "#1322. Chương 1324: Bốn người đồng mưu",
+            "count": 14
+          }
+        ]
+      },
+      "tô kiến phong": {
+        "total_mentions": 703,
+        "chapters_appeared": 115,
+        "first_chapter": 13,
+        "last_chapter": 460,
+        "peak_chapters": [
+          {
+            "chapter": 249,
+            "title": "#249. Chương 249: Tô Kiến Phong cầm Hứa Hòa Lâm",
+            "count": 36
+          },
+          {
+            "chapter": 250,
+            "title": "#250. Chương 250: Tô Kiến Phong cầm bách quan",
+            "count": 32
+          },
+          {
+            "chapter": 137,
+            "title": "#137. Chương 137: Đình Úy Phủ đại chiến (Chương 05: )",
+            "count": 30
+          },
+          {
+            "chapter": 106,
+            "title": "#106. Chương 106: Phá vây",
+            "count": 29
+          },
+          {
+            "chapter": 159,
+            "title": "#159. Chương 159: Ninh An công chúa vào cuộc",
+            "count": 28
+          }
+        ]
+      },
+      "vệ ti vũ": {
+        "total_mentions": 674,
+        "chapters_appeared": 109,
+        "first_chapter": 7,
+        "last_chapter": 772,
+        "peak_chapters": [
+          {
+            "chapter": 8,
+            "title": "#8. Chương 8: Mỹ nhân kế",
+            "count": 37
+          },
+          {
+            "chapter": 552,
+            "title": "#552. Chương 552: Hình phạt (thứ mười càng )",
+            "count": 25
+          },
+          {
+            "chapter": 762,
+            "title": "#762. Chương 762: Tồn tại giá trị",
+            "count": 22
+          },
+          {
+            "chapter": 757,
+            "title": "#757. Chương 757: Mới quân cờ",
+            "count": 20
+          },
+          {
+            "chapter": 553,
+            "title": "#553. Chương 553: Hoang mang mê ly Thiên Cơ",
+            "count": 19
+          }
+        ]
+      },
+      "trầm hạo": {
+        "total_mentions": 643,
+        "chapters_appeared": 101,
+        "first_chapter": 315,
+        "last_chapter": 1454,
+        "peak_chapters": [
+          {
+            "chapter": 1049,
+            "title": "#1049. Chương 1049: Trong tuyệt cảnh đề bạt",
+            "count": 40
+          },
+          {
+            "chapter": 1125,
+            "title": "#1125. Chương 1125: Hoa Đà hoán huyết",
+            "count": 38
+          },
+          {
+            "chapter": 1045,
+            "title": "#1045. Chương 1045: Trầm Hạo đuổi tới",
+            "count": 34
+          },
+          {
+            "chapter": 364,
+            "title": "#364. Chương 364: Đế đô nghênh đón",
+            "count": 28
+          },
+          {
+            "chapter": 1056,
+            "title": "#1056. Chương 1056: Trọng thương khó lành",
+            "count": 25
+          }
+        ]
+      },
+      "quý bình xuyên": {
+        "total_mentions": 641,
+        "chapters_appeared": 111,
+        "first_chapter": 56,
+        "last_chapter": 1052,
+        "peak_chapters": [
+          {
+            "chapter": 61,
+            "title": "#61. Chương 61: Quý Bình Xuyên nguy hiểm",
+            "count": 32
+          },
+          {
+            "chapter": 762,
+            "title": "#762. Chương 762: Tồn tại giá trị",
+            "count": 26
+          },
+          {
+            "chapter": 518,
+            "title": "#518. Chương 518: Quý Bình An thấy Quý Bình Xuyên (thứ mười hai càng )",
+            "count": 25
+          },
+          {
+            "chapter": 714,
+            "title": "#714. Chương 714: Hàn Tinh thành đối thoại",
+            "count": 23
+          },
+          {
+            "chapter": 776,
+            "title": "#776. Chương 776: Ngả bài",
+            "count": 22
+          }
+        ]
+      },
+      "phượng hoàng": {
+        "total_mentions": 634,
+        "chapters_appeared": 77,
+        "first_chapter": 122,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1413,
+            "title": "#1413. Chương 1415: Phượng Hoàng bị bắt",
+            "count": 31
+          },
+          {
+            "chapter": 1279,
+            "title": "#1279. Chương 1281: Hỏa Phượng Hoàng giao dịch",
+            "count": 25
+          },
+          {
+            "chapter": 1409,
+            "title": "#1409. Chương 1411: Ngươi quả nhiên đến",
+            "count": 24
+          },
+          {
+            "chapter": 1172,
+            "title": "#1172. Chương 1172: Phượng Hoàng xuất thủ tương trợ",
+            "count": 23
+          },
+          {
+            "chapter": 1411,
+            "title": "#1411. Chương 1413: Phượng Hoàng vào bẫy",
+            "count": 23
+          }
+        ]
+      },
+      "hồng hồ": {
+        "total_mentions": 468,
+        "chapters_appeared": 78,
+        "first_chapter": 6,
+        "last_chapter": 673,
+        "peak_chapters": [
+          {
+            "chapter": 209,
+            "title": "#209. Chương 209: Hồng Hồ thẳng thắn",
+            "count": 23
+          },
+          {
+            "chapter": 233,
+            "title": "#233. Chương 233: Hồng Hồ biết gì nói nấy",
+            "count": 23
+          },
+          {
+            "chapter": 11,
+            "title": "#11. Chương 11: Vào cung thấy công chúa đến",
+            "count": 20
+          },
+          {
+            "chapter": 96,
+            "title": "#96. Chương 96: Lại triệu 10 vạn kim mưu thần",
+            "count": 19
+          },
+          {
+            "chapter": 6,
+            "title": "#6. Chương 6: Quý Bình An ngàn vàng mua xương ngựa",
+            "count": 17
+          }
+        ]
+      },
+      "đức bất nhân": {
+        "total_mentions": 368,
+        "chapters_appeared": 81,
+        "first_chapter": 801,
+        "last_chapter": 1277,
+        "peak_chapters": [
+          {
+            "chapter": 940,
+            "title": "#940. Chương 940: Vây giết Đức Bất Nhân",
+            "count": 38
+          },
+          {
+            "chapter": 941,
+            "title": "#941. Chương 941: Đức Bất Nhân cái chết",
+            "count": 35
+          },
+          {
+            "chapter": 879,
+            "title": "#879. Chương 879: Lữ Bố đại chiến Đức Bất Nhân",
+            "count": 33
+          },
+          {
+            "chapter": 881,
+            "title": "#881. Chương 881: Đức Bất Nhân bại trận",
+            "count": 23
+          },
+          {
+            "chapter": 939,
+            "title": "#939. Chương 939: Trì hoãn thời gian",
+            "count": 23
+          }
+        ]
+      },
+      "mạc thiên tinh": {
+        "total_mentions": 323,
+        "chapters_appeared": 37,
+        "first_chapter": 207,
+        "last_chapter": 689,
+        "peak_chapters": [
+          {
+            "chapter": 578,
+            "title": "#578. Chương 578: Thánh giả Mạc Thiên Tinh (",
+            "count": 43
+          },
+          {
+            "chapter": 573,
+            "title": "#573. Chương 573: Bạn bè Mạc Thiên Tinh",
+            "count": 29
+          },
+          {
+            "chapter": 570,
+            "title": "#570. Chương 570: Uyển Châu thành đại thắng (thứ tám càng )",
+            "count": 22
+          },
+          {
+            "chapter": 527,
+            "title": "#527. Chương 527: Tần thị hủy diệt (",
+            "count": 21
+          },
+          {
+            "chapter": 561,
+            "title": "#561. Chương 561: Uyển Châu thành đại chiến bắt đầu (thứ chín càng )",
+            "count": 19
+          }
+        ]
+      },
+      "kim khuê": {
+        "total_mentions": 253,
+        "chapters_appeared": 35,
+        "first_chapter": 1292,
+        "last_chapter": 1500,
+        "peak_chapters": [
+          {
+            "chapter": 1374,
+            "title": "#1374. Chương 1376: Hai phương khai chiến",
+            "count": 25
+          },
+          {
+            "chapter": 1493,
+            "title": "#1493. Chương 1495: Nam Hùng Quan Thành lá chắn phá",
+            "count": 21
+          },
+          {
+            "chapter": 1499,
+            "title": "#1499. Chương 1501: Kim Khuê chi tử",
+            "count": 21
+          },
+          {
+            "chapter": 1308,
+            "title": "#1308. Chương 1310: Quốc Giáo, đem diệt",
+            "count": 16
+          },
+          {
+            "chapter": 1485,
+            "title": "#1485. Chương 1487: Đại Hán toàn diện tiến công",
+            "count": 14
+          }
+        ]
+      },
+      "văn nhân hạo": {
+        "total_mentions": 250,
+        "chapters_appeared": 25,
+        "first_chapter": 641,
+        "last_chapter": 740,
+        "peak_chapters": [
+          {
+            "chapter": 663,
+            "title": "#663. Chương 663: Văn Nhân Hạo chuẩn bị đến Phi Mã Thành",
+            "count": 27
+          },
+          {
+            "chapter": 679,
+            "title": "#679. Chương 679: Lân giáp yêu nhân (",
+            "count": 25
+          },
+          {
+            "chapter": 681,
+            "title": "#681. Chương 681: Tâm khó an",
+            "count": 24
+          },
+          {
+            "chapter": 710,
+            "title": "#710. Chương 710: Vương Việt tái chiến Văn Nhân Hạo",
+            "count": 24
+          },
+          {
+            "chapter": 655,
+            "title": "#655. Chương 655: Cẩm y truyền tin",
+            "count": 22
+          }
+        ]
+      },
+      "thác hạp": {
+        "total_mentions": 152,
+        "chapters_appeared": 12,
+        "first_chapter": 920,
+        "last_chapter": 956,
+        "peak_chapters": [
+          {
+            "chapter": 953,
+            "title": "#953. Chương 953: Gia Cát Lượng mượn đao giết người",
+            "count": 34
+          },
+          {
+            "chapter": 949,
+            "title": "#949. Chương 949: Thác Hạp điên cuồng",
+            "count": 24
+          },
+          {
+            "chapter": 920,
+            "title": "#920. Chương 920: Không sợ chết Bàng Thống",
+            "count": 21
+          },
+          {
+            "chapter": 938,
+            "title": "#938. Chương 938: Khích tướng",
+            "count": 20
+          },
+          {
+            "chapter": 948,
+            "title": "#948. Chương 948: Thác Hạp lửa giận",
+            "count": 19
+          }
+        ]
+      },
+      "bùi an hà": {
+        "total_mentions": 136,
+        "chapters_appeared": 63,
+        "first_chapter": 199,
+        "last_chapter": 764,
+        "peak_chapters": [
+          {
+            "chapter": 356,
+            "title": "#356. Chương 356: Đại chiến An Quân Thương",
+            "count": 9
+          },
+          {
+            "chapter": 422,
+            "title": "#422. Chương 422: Nam Ly Đông Thương động tác",
+            "count": 7
+          },
+          {
+            "chapter": 453,
+            "title": "#453. Chương 453: Vân Ninh công thành",
+            "count": 7
+          },
+          {
+            "chapter": 476,
+            "title": "#476. Chương 475: Hội tụ An Hà Thành",
+            "count": 6
+          },
+          {
+            "chapter": 371,
+            "title": "#371. Chương 371: Tân thiên đổi cựu thiên",
+            "count": 5
+          }
+        ]
+      },
+      "an hàn khôi": {
+        "total_mentions": 120,
+        "chapters_appeared": 12,
+        "first_chapter": 491,
+        "last_chapter": 760,
+        "peak_chapters": [
+          {
+            "chapter": 712,
+            "title": "#712. Chương 712: An Vũ Hi thấy An Hàn Khôi",
+            "count": 23
+          },
+          {
+            "chapter": 492,
+            "title": "#492. Chương 492: Đông Thương Tân Quốc chủ (thứ mười sáu càng )",
+            "count": 20
+          },
+          {
+            "chapter": 549,
+            "title": "#549. Chương 549: Quý Bình Thường du thuyết An Vũ Hi (",
+            "count": 18
+          },
+          {
+            "chapter": 493,
+            "title": "#493. Chương 493: Mẹ con nói chuyện (thứ mười bảy càng )",
+            "count": 14
+          },
+          {
+            "chapter": 736,
+            "title": "#736. Chương 736: Kế trong kế",
+            "count": 10
+          }
+        ]
+      },
+      "tử ngọc hằng": {
+        "total_mentions": 100,
+        "chapters_appeared": 23,
+        "first_chapter": 34,
+        "last_chapter": 299,
+        "peak_chapters": [
+          {
+            "chapter": 66,
+            "title": "#66. Chương 66: Tử Ngọc Hằng ngăn cản",
+            "count": 29
+          },
+          {
+            "chapter": 34,
+            "title": "#34. Chương 34: Tứ Hoàng Tử Tử Ngọc Hằng",
+            "count": 20
+          },
+          {
+            "chapter": 35,
+            "title": "#35. Chương 35: Liễu Khinh Ngôn thân thế",
+            "count": 10
+          },
+          {
+            "chapter": 67,
+            "title": "#67. Chương 67: Trực Thần Quý Bình An",
+            "count": 10
+          },
+          {
+            "chapter": 45,
+            "title": "#45. Chương 45: Tử Ngọc Hằng cáo trạng",
+            "count": 6
+          }
+        ]
+      },
+      "long vân": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 983,
+        "last_chapter": 983,
+        "peak_chapters": [
+          {
+            "chapter": 983,
+            "title": "#983. Chương 983: Lữ Bố lấy một địch hai",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "factions_orgs": {
+      "tây lăng": {
+        "total_mentions": 3026,
+        "chapters_appeared": 467,
+        "first_chapter": 1,
+        "last_chapter": 1201,
+        "peak_chapters": [
+          {
+            "chapter": 551,
+            "title": "#551. Chương 551: Cảnh vương Mạc Thiên Tinh (thứ chín càng )",
+            "count": 35
+          },
+          {
+            "chapter": 77,
+            "title": "#77. Chương 77: Tây Lăng công chúa Hề Nhan",
+            "count": 31
+          },
+          {
+            "chapter": 187,
+            "title": "#187. Chương 187: Nắm chắc sân nhà đàm phán",
+            "count": 31
+          },
+          {
+            "chapter": 501,
+            "title": "#501. Chương 501: Các được nửa bên thiên hạ (",
+            "count": 28
+          },
+          {
+            "chapter": 2,
+            "title": "#2. Chương 2 : Vì kiếm lời vàng",
+            "count": 26
+          }
+        ]
+      },
+      "nam ly": {
+        "total_mentions": 2286,
+        "chapters_appeared": 449,
+        "first_chapter": 2,
+        "last_chapter": 1435,
+        "peak_chapters": [
+          {
+            "chapter": 715,
+            "title": "#715. Chương 715: Chiêu hàng Nam Ly",
+            "count": 33
+          },
+          {
+            "chapter": 431,
+            "title": "#431. Chương 431: Nam Ly truyền kỳ Thái tử",
+            "count": 31
+          },
+          {
+            "chapter": 61,
+            "title": "#61. Chương 61: Quý Bình Xuyên nguy hiểm",
+            "count": 26
+          },
+          {
+            "chapter": 57,
+            "title": "#57. Chương 57: Nam Ly động tác",
+            "count": 25
+          },
+          {
+            "chapter": 701,
+            "title": "#701. Chương 701: Thành viên tổ chức",
+            "count": 22
+          }
+        ]
+      },
+      "quốc giáo": {
+        "total_mentions": 2035,
+        "chapters_appeared": 364,
+        "first_chapter": 801,
+        "last_chapter": 1495,
+        "peak_chapters": [
+          {
+            "chapter": 1282,
+            "title": "#1282. Chương 1284: Mặt khác chính thức an bài",
+            "count": 28
+          },
+          {
+            "chapter": 893,
+            "title": "#893. Chương 893: Kẻ chết thay",
+            "count": 25
+          },
+          {
+            "chapter": 1277,
+            "title": "#1277. Chương 1279: Cầu Hòa công tâm",
+            "count": 24
+          },
+          {
+            "chapter": 883,
+            "title": "#883. Chương 883: Kinh Bắc Thành bên ngoài chi loạn",
+            "count": 22
+          },
+          {
+            "chapter": 944,
+            "title": "#944. Chương 944: Lỗ Túc Lục Tốn du thuyết An Khinh Ngôn",
+            "count": 22
+          }
+        ]
+      },
+      "đại vũ": {
+        "total_mentions": 1809,
+        "chapters_appeared": 386,
+        "first_chapter": 1,
+        "last_chapter": 1401,
+        "peak_chapters": [
+          {
+            "chapter": 84,
+            "title": "#84. Chương 84: Giá trị trăm vạn kim Quý Bình An",
+            "count": 30
+          },
+          {
+            "chapter": 387,
+            "title": "#387. Chương 387: Đăng vị bốn chính lệnh",
+            "count": 25
+          },
+          {
+            "chapter": 163,
+            "title": "#163. Chương 163: An gia mục đích",
+            "count": 23
+          },
+          {
+            "chapter": 386,
+            "title": "#386. Chương 386: Trèo lên đến đế vị, thiên hàng dị tượng",
+            "count": 23
+          },
+          {
+            "chapter": 376,
+            "title": "#376. Chương 376: Thiên hạ quy tâm",
+            "count": 22
+          }
+        ]
+      },
+      "đông thương": {
+        "total_mentions": 1715,
+        "chapters_appeared": 409,
+        "first_chapter": 22,
+        "last_chapter": 830,
+        "peak_chapters": [
+          {
+            "chapter": 451,
+            "title": "#451. Chương 451: Đông Thương Nữ Đế",
+            "count": 32
+          },
+          {
+            "chapter": 562,
+            "title": "#562. Chương 562: Đông Thương Ngao Gia (thứ mười càng )",
+            "count": 31
+          },
+          {
+            "chapter": 759,
+            "title": "#759. Chương 759: Quý Vô Song đầu hàng",
+            "count": 29
+          },
+          {
+            "chapter": 485,
+            "title": "#485. Chương 485: Ngôn ngữ tru nhân tâm",
+            "count": 28
+          },
+          {
+            "chapter": 491,
+            "title": "#491. Chương 491: Bùi Khuyết nhập hoàng cung (thứ mười lăm càng )",
+            "count": 26
+          }
+        ]
+      },
+      "quý gia": {
+        "total_mentions": 1019,
+        "chapters_appeared": 236,
+        "first_chapter": 1,
+        "last_chapter": 1426,
+        "peak_chapters": [
+          {
+            "chapter": 1241,
+            "title": "#1241. Chương 1241: Bắc Minh cùng Quý Vô Sinh đàm phán",
+            "count": 31
+          },
+          {
+            "chapter": 1203,
+            "title": "#1203. Chương 1203: Khám phá hết thảy A Bố",
+            "count": 29
+          },
+          {
+            "chapter": 1063,
+            "title": "#1063. Chương 1063: Để Quý Vô Song",
+            "count": 28
+          },
+          {
+            "chapter": 1107,
+            "title": "#1107. Chương 1107: Quý gia tách ra",
+            "count": 21
+          },
+          {
+            "chapter": 224,
+            "title": "#224. Chương 224: Phóng thích Quý Bình Sinh",
+            "count": 19
+          }
+        ]
+      },
+      "cẩm y": {
+        "total_mentions": 814,
+        "chapters_appeared": 322,
+        "first_chapter": 13,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 13,
+            "title": "#13. Chương 13: Ngươi có thể thử nhìn một chút",
+            "count": 11
+          },
+          {
+            "chapter": 1180,
+            "title": "#1180. Chương 1180: Bàng Thống Trương Liêu đuổi tới",
+            "count": 11
+          },
+          {
+            "chapter": 611,
+            "title": "#611. Chương 611: Nháo sự",
+            "count": 9
+          },
+          {
+            "chapter": 655,
+            "title": "#655. Chương 655: Cẩm y truyền tin",
+            "count": 9
+          },
+          {
+            "chapter": 438,
+            "title": "#438. Chương 438: Cưỡng ép Trương Hiên Chính",
+            "count": 8
+          }
+        ]
+      },
+      "thiên a": {
+        "total_mentions": 755,
+        "chapters_appeared": 180,
+        "first_chapter": 158,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1490,
+            "title": "#1490. Chương 1492: Các nơi chiến báo dồn dập đến",
+            "count": 22
+          },
+          {
+            "chapter": 1495,
+            "title": "#1495. Chương 1497: Thiên A Thị cuối cùng đại quân xuất hiện",
+            "count": 17
+          },
+          {
+            "chapter": 1374,
+            "title": "#1374. Chương 1376: Hai phương khai chiến",
+            "count": 16
+          },
+          {
+            "chapter": 1320,
+            "title": "#1320. Chương 1322: Táng diệt kế hoạch",
+            "count": 15
+          },
+          {
+            "chapter": 1322,
+            "title": "#1322. Chương 1324: Bốn người đồng mưu",
+            "count": 14
+          }
+        ]
+      },
+      "bạch mã nghĩa tòng": {
+        "total_mentions": 479,
+        "chapters_appeared": 188,
+        "first_chapter": 196,
+        "last_chapter": 1485,
+        "peak_chapters": [
+          {
+            "chapter": 820,
+            "title": "#820. Chương 820: Miểu sát Bán Tiên",
+            "count": 15
+          },
+          {
+            "chapter": 318,
+            "title": "#318. Chương 318: Quý Bình An đại quân giết tới",
+            "count": 14
+          },
+          {
+            "chapter": 720,
+            "title": "#720. Chương 720: Cung Ngạo cái chết",
+            "count": 13
+          },
+          {
+            "chapter": 689,
+            "title": "#689. Chương 689: Quyết chiến Tây Lăng Thiết Kỵ",
+            "count": 9
+          },
+          {
+            "chapter": 690,
+            "title": "#690. Chương 690: Vân Ninh mưu Bạch Mã Nghĩa Tòng",
+            "count": 9
+          }
+        ]
+      },
+      "mật thám": {
+        "total_mentions": 401,
+        "chapters_appeared": 195,
+        "first_chapter": 69,
+        "last_chapter": 1490,
+        "peak_chapters": [
+          {
+            "chapter": 823,
+            "title": "#823. Chương 823: Hai đậu bỉ",
+            "count": 7
+          },
+          {
+            "chapter": 809,
+            "title": "#809. Chương 809: Thiên tai đột biến",
+            "count": 6
+          },
+          {
+            "chapter": 1035,
+            "title": "#1035. Chương 1035: Lữ Bố đến Linh Ích Thành",
+            "count": 6
+          },
+          {
+            "chapter": 1096,
+            "title": "#1096. Chương 1096: Doanh Kinh cầu viện",
+            "count": 6
+          },
+          {
+            "chapter": 1146,
+            "title": "#1146. Chương 1146: Bắc Minh lần nữa đánh tới",
+            "count": 6
+          }
+        ]
+      },
+      "chiến hổ quân": {
+        "total_mentions": 337,
+        "chapters_appeared": 129,
+        "first_chapter": 107,
+        "last_chapter": 753,
+        "peak_chapters": [
+          {
+            "chapter": 108,
+            "title": "#108. Chương 108: Quý Bình Sinh, Chiến Hổ quân",
+            "count": 15
+          },
+          {
+            "chapter": 246,
+            "title": "#246. Chương 246: Triệu Vân giết tới",
+            "count": 14
+          },
+          {
+            "chapter": 472,
+            "title": "#472. Chương 472: Nước ngập Chiến Hổ quân",
+            "count": 11
+          },
+          {
+            "chapter": 414,
+            "title": "#414. Chương 413: Nhất cử bốn có được sách",
+            "count": 10
+          },
+          {
+            "chapter": 468,
+            "title": "#468. Chương 468: Ẩn tàng binh mã",
+            "count": 10
+          }
+        ]
+      },
+      "hoàng thất": {
+        "total_mentions": 271,
+        "chapters_appeared": 145,
+        "first_chapter": 2,
+        "last_chapter": 1356,
+        "peak_chapters": [
+          {
+            "chapter": 84,
+            "title": "#84. Chương 84: Giá trị trăm vạn kim Quý Bình An",
+            "count": 7
+          },
+          {
+            "chapter": 242,
+            "title": "#242. Chương 242: Thiên Cơ Lâu thủ lĩnh ám ảnh",
+            "count": 6
+          },
+          {
+            "chapter": 262,
+            "title": "#262. Chương 262: Đại Vũ thiên hạ (Chương 17: )",
+            "count": 6
+          },
+          {
+            "chapter": 431,
+            "title": "#431. Chương 431: Nam Ly truyền kỳ Thái tử",
+            "count": 6
+          },
+          {
+            "chapter": 535,
+            "title": "#535. Chương 535: Hiếu Kinh truyền vào Tây Lăng (",
+            "count": 6
+          }
+        ]
+      },
+      "cấm vệ": {
+        "total_mentions": 236,
+        "chapters_appeared": 96,
+        "first_chapter": 91,
+        "last_chapter": 1460,
+        "peak_chapters": [
+          {
+            "chapter": 672,
+            "title": "#672. Chương 672: Đào Nhã rời đi",
+            "count": 15
+          },
+          {
+            "chapter": 91,
+            "title": "#91. Chương 91: Lần nữa 200 ngàn kim",
+            "count": 13
+          },
+          {
+            "chapter": 122,
+            "title": "#122. Chương 122: Giết vào ngao phủ",
+            "count": 9
+          },
+          {
+            "chapter": 671,
+            "title": "#671. Chương 671: Thích khách tập sát",
+            "count": 9
+          },
+          {
+            "chapter": 124,
+            "title": "#124. Chương 124: Đông Thương loạn nam quan",
+            "count": 7
+          }
+        ]
+      },
+      "an tức vệ": {
+        "total_mentions": 207,
+        "chapters_appeared": 77,
+        "first_chapter": 104,
+        "last_chapter": 760,
+        "peak_chapters": [
+          {
+            "chapter": 377,
+            "title": "#377. Chương 377: Ở lần ranh sinh tử",
+            "count": 18
+          },
+          {
+            "chapter": 108,
+            "title": "#108. Chương 108: Quý Bình Sinh, Chiến Hổ quân",
+            "count": 12
+          },
+          {
+            "chapter": 699,
+            "title": "#699. Chương 699: Các phương an bài",
+            "count": 9
+          },
+          {
+            "chapter": 158,
+            "title": "#158. Chương 158: Ta nói là thật, nó liền là thật",
+            "count": 8
+          },
+          {
+            "chapter": 170,
+            "title": "#170. Chương 170: Nửa đường đoạn Ninh An công chúa (",
+            "count": 7
+          }
+        ]
+      },
+      "thiên cơ lâu": {
+        "total_mentions": 203,
+        "chapters_appeared": 85,
+        "first_chapter": 7,
+        "last_chapter": 846,
+        "peak_chapters": [
+          {
+            "chapter": 170,
+            "title": "#170. Chương 170: Nửa đường đoạn Ninh An công chúa (",
+            "count": 11
+          },
+          {
+            "chapter": 301,
+            "title": "#301. Chương 301: Chém giết Hoa Chấn Viễn Huyết Tùng (",
+            "count": 10
+          },
+          {
+            "chapter": 302,
+            "title": "#302. Chương 302: Triệt để thu phục hai huynh đệ (",
+            "count": 9
+          },
+          {
+            "chapter": 399,
+            "title": "#399. Chương 399: Đào Nhã gặp nguy hiểm",
+            "count": 9
+          },
+          {
+            "chapter": 431,
+            "title": "#431. Chương 431: Nam Ly truyền kỳ Thái tử",
+            "count": 9
+          }
+        ]
+      },
+      "phi báo quân": {
+        "total_mentions": 198,
+        "chapters_appeared": 46,
+        "first_chapter": 105,
+        "last_chapter": 369,
+        "peak_chapters": [
+          {
+            "chapter": 252,
+            "title": "#252. Chương 252: Hoàng Trung Thần Tiễn thuật",
+            "count": 17
+          },
+          {
+            "chapter": 248,
+            "title": "#248. Chương 248: Tô Kiến Phong lại chưởng hoàng cung",
+            "count": 16
+          },
+          {
+            "chapter": 251,
+            "title": "#251. Chương 251: Quý Bình An giết vào hoàng cung",
+            "count": 14
+          },
+          {
+            "chapter": 136,
+            "title": "#136. Chương 136: Điển Vi giết ra lao ngục",
+            "count": 13
+          },
+          {
+            "chapter": 249,
+            "title": "#249. Chương 249: Tô Kiến Phong cầm Hứa Hòa Lâm",
+            "count": 11
+          }
+        ]
+      },
+      "hãm trận doanh": {
+        "total_mentions": 164,
+        "chapters_appeared": 86,
+        "first_chapter": 200,
+        "last_chapter": 1485,
+        "peak_chapters": [
+          {
+            "chapter": 294,
+            "title": "#294. Chương 294: Quý Bình An bị tập kích giết (thứ mười bốn càng )",
+            "count": 11
+          },
+          {
+            "chapter": 280,
+            "title": "#280. Chương 280: Thề sống chết đi theo (thứ mười lăm càng )",
+            "count": 7
+          },
+          {
+            "chapter": 323,
+            "title": "#323. Chương 323: Cận kề cái chết không buông tay (thứ tám càng )",
+            "count": 6
+          },
+          {
+            "chapter": 253,
+            "title": "#253. Chương 253: Có ta vô địch, giết",
+            "count": 5
+          },
+          {
+            "chapter": 390,
+            "title": "#390. Chương 390: Đường lui",
+            "count": 5
+          }
+        ]
+      },
+      "hồng nhan": {
+        "total_mentions": 123,
+        "chapters_appeared": 48,
+        "first_chapter": 143,
+        "last_chapter": 773,
+        "peak_chapters": [
+          {
+            "chapter": 197,
+            "title": "#197. Chương 197: Hồng Nhan tức sắp xuất thế",
+            "count": 17
+          },
+          {
+            "chapter": 426,
+            "title": "#426. Chương 426: Điêu Thuyền Tiểu Sơn Hà vào cung",
+            "count": 7
+          },
+          {
+            "chapter": 158,
+            "title": "#158. Chương 158: Ta nói là thật, nó liền là thật",
+            "count": 5
+          },
+          {
+            "chapter": 211,
+            "title": "#211. Chương 211: Đối Ninh An sát cơ",
+            "count": 5
+          },
+          {
+            "chapter": 219,
+            "title": "#219. Chương 219: 10 vạn kim võ tướng: Chu Du",
+            "count": 5
+          }
+        ]
+      },
+      "triều đình": {
+        "total_mentions": 116,
+        "chapters_appeared": 77,
+        "first_chapter": 2,
+        "last_chapter": 1460,
+        "peak_chapters": [
+          {
+            "chapter": 2,
+            "title": "#2. Chương 2 : Vì kiếm lời vàng",
+            "count": 5
+          },
+          {
+            "chapter": 23,
+            "title": "#23. Chương 23: Giải tỏa Long Đảm Lượng Ngân Thương",
+            "count": 5
+          },
+          {
+            "chapter": 205,
+            "title": "#205. Chương 205: Tuân Úc năm bước chiến lược (",
+            "count": 4
+          },
+          {
+            "chapter": 231,
+            "title": "#231. Chương 231: Quý Sơn Hà, chữ xã tắc",
+            "count": 4
+          },
+          {
+            "chapter": 242,
+            "title": "#242. Chương 242: Thiên Cơ Lâu thủ lĩnh ám ảnh",
+            "count": 4
+          }
+        ]
+      },
+      "thích khách": {
+        "total_mentions": 60,
+        "chapters_appeared": 35,
+        "first_chapter": 10,
+        "last_chapter": 1476,
+        "peak_chapters": [
+          {
+            "chapter": 671,
+            "title": "#671. Chương 671: Thích khách tập sát",
+            "count": 9
+          },
+          {
+            "chapter": 672,
+            "title": "#672. Chương 672: Đào Nhã rời đi",
+            "count": 6
+          },
+          {
+            "chapter": 141,
+            "title": "#141. Chương 141: Cơ Vô Pháp thành quả",
+            "count": 3
+          },
+          {
+            "chapter": 1449,
+            "title": "#1449. Chương 1451: Đảm nhiệm thiên chi chết",
+            "count": 3
+          },
+          {
+            "chapter": 1451,
+            "title": "#1451. Chương 1453: Cùng nhau trở lại",
+            "count": 3
+          }
+        ]
+      },
+      "sát thủ": {
+        "total_mentions": 25,
+        "chapters_appeared": 20,
+        "first_chapter": 12,
+        "last_chapter": 1444,
+        "peak_chapters": [
+          {
+            "chapter": 275,
+            "title": "#275. Chương 275: Đông Thương bí mật vũ khí",
+            "count": 3
+          },
+          {
+            "chapter": 864,
+            "title": "#864. Chương 864: Ngươi mới là đòn sát thủ cuối cùng",
+            "count": 2
+          },
+          {
+            "chapter": 1118,
+            "title": "#1118. Chương 1118: Chuẩn bị tiến vào thánh địa",
+            "count": 2
+          },
+          {
+            "chapter": 1257,
+            "title": "#1257. Chương 1259: Thiên Bắc Thị công Tây Lũng Thành",
+            "count": 2
+          },
+          {
+            "chapter": 12,
+            "title": "#12. Chương 12: Từ đó tính toán rõ ràng",
+            "count": 1
+          }
+        ]
+      },
+      "văn học viện": {
+        "total_mentions": 19,
+        "chapters_appeared": 11,
+        "first_chapter": 1,
+        "last_chapter": 513,
+        "peak_chapters": [
+          {
+            "chapter": 306,
+            "title": "#306. Chương 306: Thổ huyết hôn mê",
+            "count": 4
+          },
+          {
+            "chapter": 380,
+            "title": "#380. Chương 380: Đồ cưới",
+            "count": 4
+          },
+          {
+            "chapter": 1,
+            "title": "#1. Chương 1 : Xuyên việt thành đệ nhất người ở rể",
+            "count": 2
+          },
+          {
+            "chapter": 311,
+            "title": "#311. Chương 311: Một lưới bắt (",
+            "count": 2
+          },
+          {
+            "chapter": 22,
+            "title": "#22. Chương 22: Đế Vương Tâm Thuật",
+            "count": 1
+          }
+        ]
+      },
+      "liên minh": {
+        "total_mentions": 13,
+        "chapters_appeared": 12,
+        "first_chapter": 22,
+        "last_chapter": 877,
+        "peak_chapters": [
+          {
+            "chapter": 385,
+            "title": "#385. Chương 385: Thiên hạ tập thể nguyện",
+            "count": 2
+          },
+          {
+            "chapter": 22,
+            "title": "#22. Chương 22: Đế Vương Tâm Thuật",
+            "count": 1
+          },
+          {
+            "chapter": 139,
+            "title": "#139. Chương 139: Hệ thống trở lại chủ mở ra (Chương 7: )",
+            "count": 1
+          },
+          {
+            "chapter": 156,
+            "title": "#156. Chương 156: Đao nhọn \"Hồng nhan \"",
+            "count": 1
+          },
+          {
+            "chapter": 187,
+            "title": "#187. Chương 187: Nắm chắc sân nhà đàm phán",
+            "count": 1
+          }
+        ]
+      },
+      "hắc y nhân": {
+        "total_mentions": 8,
+        "chapters_appeared": 8,
+        "first_chapter": 127,
+        "last_chapter": 1486,
+        "peak_chapters": [
+          {
+            "chapter": 127,
+            "title": "#127. Chương 127: Cắt cỏ, muốn trừ tận gốc",
+            "count": 1
+          },
+          {
+            "chapter": 204,
+            "title": "#204. Chương 204: Tây Lăng Quỷ Quật Chu Nho thích khách",
+            "count": 1
+          },
+          {
+            "chapter": 239,
+            "title": "#239. Chương 239: Tam đế chiến Triệu Vân",
+            "count": 1
+          },
+          {
+            "chapter": 295,
+            "title": "#295. Chương 295: Thích khách thân phận (thứ mười lăm càng )",
+            "count": 1
+          },
+          {
+            "chapter": 1135,
+            "title": "#1135. Chương 1135: Bạch bào tế tự cái chết",
+            "count": 1
+          }
+        ]
+      },
+      "tây lương thiết kỵ": {
+        "total_mentions": 2,
+        "chapters_appeared": 1,
+        "first_chapter": 350,
+        "last_chapter": 350,
+        "peak_chapters": [
+          {
+            "chapter": 350,
+            "title": "#350. Chương 350: Tuyệt thế võ tướng: Mã Siêu",
+            "count": 2
+          }
+        ]
+      },
+      "bắc cương": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 2,
+        "last_chapter": 2,
+        "peak_chapters": [
+          {
+            "chapter": 2,
+            "title": "#2. Chương 2 : Vì kiếm lời vàng",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "tech_economy": {
+      "vạn kim": {
+        "total_mentions": 417,
+        "chapters_appeared": 99,
+        "first_chapter": 1,
+        "last_chapter": 951,
+        "peak_chapters": [
+          {
+            "chapter": 27,
+            "title": "#27. Chương 27: Triệu hoán Độc Sĩ Giả Hủ",
+            "count": 24
+          },
+          {
+            "chapter": 26,
+            "title": "#26. Chương 26: 200 ngàn kim",
+            "count": 22
+          },
+          {
+            "chapter": 409,
+            "title": "#409. Chương 409: 50 ngàn kim triệu hoán",
+            "count": 21
+          },
+          {
+            "chapter": 200,
+            "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+            "count": 17
+          },
+          {
+            "chapter": 824,
+            "title": "#824. Chương 824: Văn thần triệu hoán",
+            "count": 16
+          }
+        ]
+      },
+      "lưu hỏa": {
+        "total_mentions": 397,
+        "chapters_appeared": 122,
+        "first_chapter": 275,
+        "last_chapter": 1505,
+        "peak_chapters": [
+          {
+            "chapter": 1288,
+            "title": "#1288. Chương 1290: Rút quân Tây Lũng Thành",
+            "count": 18
+          },
+          {
+            "chapter": 1289,
+            "title": "#1289. Chương 1291: Đại Hán tây rút lui",
+            "count": 12
+          },
+          {
+            "chapter": 745,
+            "title": "#745. Chương 745: Lưu Hỏa nổ không ra",
+            "count": 11
+          },
+          {
+            "chapter": 1480,
+            "title": "#1480. Chương 1482: Quách Gia đồng quy vu tận",
+            "count": 11
+          },
+          {
+            "chapter": 277,
+            "title": "#277. Chương 277: Mỏ vàng (thứ mười hai càng )",
+            "count": 9
+          }
+        ]
+      },
+      "rượu": {
+        "total_mentions": 330,
+        "chapters_appeared": 144,
+        "first_chapter": 1,
+        "last_chapter": 1455,
+        "peak_chapters": [
+          {
+            "chapter": 258,
+            "title": "#258. Chương 258: Kinh tâm động phách đối thoại",
+            "count": 14
+          },
+          {
+            "chapter": 191,
+            "title": "#191. Chương 191: Quý Bình An Điêu Thuyền đại hôn",
+            "count": 12
+          },
+          {
+            "chapter": 384,
+            "title": "#384. Chương 384: Bái sư",
+            "count": 10
+          },
+          {
+            "chapter": 119,
+            "title": "#119. Chương 119: Diệt nhất tộc (",
+            "count": 8
+          },
+          {
+            "chapter": 519,
+            "title": "#519. Chương 519: Thần Hỏa Quân đến Liễu Châu thành (thứ mười ba càng )",
+            "count": 8
+          }
+        ]
+      },
+      "cơ quan": {
+        "total_mentions": 88,
+        "chapters_appeared": 40,
+        "first_chapter": 22,
+        "last_chapter": 1498,
+        "peak_chapters": [
+          {
+            "chapter": 608,
+            "title": "#608. Chương 608: Trương Bất Minh tính toán",
+            "count": 10
+          },
+          {
+            "chapter": 612,
+            "title": "#612. Chương 612: Quan Vũ giết tới",
+            "count": 6
+          },
+          {
+            "chapter": 748,
+            "title": "#748. Chương 748: Đều đến đông đủ",
+            "count": 6
+          },
+          {
+            "chapter": 1467,
+            "title": "#1467. Chương 1469: Để cho hắn cứu khỏi",
+            "count": 5
+          },
+          {
+            "chapter": 729,
+            "title": "#729. Chương 729: Hơn 3 triệu kim",
+            "count": 4
+          }
+        ]
+      },
+      "lương thảo": {
+        "total_mentions": 62,
+        "chapters_appeared": 30,
+        "first_chapter": 40,
+        "last_chapter": 1477,
+        "peak_chapters": [
+          {
+            "chapter": 42,
+            "title": "#42. Chương 42: Giả Hủ chi mưu",
+            "count": 6
+          },
+          {
+            "chapter": 40,
+            "title": "#40. Chương 40: Sớm xuất phát",
+            "count": 5
+          },
+          {
+            "chapter": 41,
+            "title": "#41. Chương 41: Xuất phát Bắc cảnh tam châu",
+            "count": 5
+          },
+          {
+            "chapter": 161,
+            "title": "#161. Chương 161: Đại chiến sắp nổi",
+            "count": 4
+          },
+          {
+            "chapter": 46,
+            "title": "#46. Chương 46: Giả Hủ an bài",
+            "count": 3
+          }
+        ]
+      },
+      "ngân lượng": {
+        "total_mentions": 28,
+        "chapters_appeared": 19,
+        "first_chapter": 15,
+        "last_chapter": 563,
+        "peak_chapters": [
+          {
+            "chapter": 262,
+            "title": "#262. Chương 262: Đại Vũ thiên hạ (Chương 17: )",
+            "count": 3
+          },
+          {
+            "chapter": 267,
+            "title": "#267. Chương 267: Tử Ngọc Trạch lại hôn mê",
+            "count": 3
+          },
+          {
+            "chapter": 67,
+            "title": "#67. Chương 67: Trực Thần Quý Bình An",
+            "count": 2
+          },
+          {
+            "chapter": 219,
+            "title": "#219. Chương 219: 10 vạn kim võ tướng: Chu Du",
+            "count": 2
+          },
+          {
+            "chapter": 259,
+            "title": "#259. Chương 259: Mở quốc khố cứu trợ thiên tai",
+            "count": 2
+          }
+        ]
+      },
+      "kinh doanh": {
+        "total_mentions": 25,
+        "chapters_appeared": 20,
+        "first_chapter": 9,
+        "last_chapter": 1186,
+        "peak_chapters": [
+          {
+            "chapter": 13,
+            "title": "#13. Chương 13: Ngươi có thể thử nhìn một chút",
+            "count": 3
+          },
+          {
+            "chapter": 9,
+            "title": "#9. Chương 9: Người thần bí xuất hiện?",
+            "count": 2
+          },
+          {
+            "chapter": 156,
+            "title": "#156. Chương 156: Đao nhọn \"Hồng nhan \"",
+            "count": 2
+          },
+          {
+            "chapter": 157,
+            "title": "#157. Chương 157: Ta, mới là bọn họ chủ công",
+            "count": 2
+          },
+          {
+            "chapter": 15,
+            "title": "#15. Chương 15: Vũ Hoàng ý chỉ",
+            "count": 1
+          }
+        ]
+      },
+      "thương nghiệp": {
+        "total_mentions": 18,
+        "chapters_appeared": 12,
+        "first_chapter": 138,
+        "last_chapter": 1431,
+        "peak_chapters": [
+          {
+            "chapter": 1425,
+            "title": "#1425. Chương 1427: Mi tâm sợ hãi",
+            "count": 4
+          },
+          {
+            "chapter": 1431,
+            "title": "#1431. Chương 1433: Ngày mai buổi trưa lúc canh ba",
+            "count": 3
+          },
+          {
+            "chapter": 650,
+            "title": "#650. Chương 650: Đông Thương diệt Bùi gia",
+            "count": 2
+          },
+          {
+            "chapter": 138,
+            "title": "#138. Chương 138: Triệu hồi Triệu Vân (Chương 6: )",
+            "count": 1
+          },
+          {
+            "chapter": 170,
+            "title": "#170. Chương 170: Nửa đường đoạn Ninh An công chúa (",
+            "count": 1
+          }
+        ]
+      },
+      "muối": {
+        "total_mentions": 4,
+        "chapters_appeared": 4,
+        "first_chapter": 14,
+        "last_chapter": 803,
+        "peak_chapters": [
+          {
+            "chapter": 14,
+            "title": "#14. Chương 14: Trọng chỉnh Thiên Kim Lâu",
+            "count": 1
+          },
+          {
+            "chapter": 52,
+            "title": "#52. Chương 52: Bắt sống bắt sống Địch Hỏa",
+            "count": 1
+          },
+          {
+            "chapter": 634,
+            "title": "#634. Chương 634: Nhân Trệ chi hình",
+            "count": 1
+          },
+          {
+            "chapter": 803,
+            "title": "#803. Chương 803: Vương Sơ mùa xuân",
+            "count": 1
+          }
+        ]
+      },
+      "quân nhu": {
+        "total_mentions": 4,
+        "chapters_appeared": 4,
+        "first_chapter": 71,
+        "last_chapter": 520,
+        "peak_chapters": [
+          {
+            "chapter": 71,
+            "title": "#71. Chương 71: Phía sau Đại Hoàng Tử",
+            "count": 1
+          },
+          {
+            "chapter": 267,
+            "title": "#267. Chương 267: Tử Ngọc Trạch lại hôn mê",
+            "count": 1
+          },
+          {
+            "chapter": 382,
+            "title": "#382. Chương 382: Thiên mệnh mưu thần chi nghịch thiên cải mệnh",
+            "count": 1
+          },
+          {
+            "chapter": 520,
+            "title": "#520. Chương 520: Kiếm Thánh xuất thế (thứ mười bốn càng )",
+            "count": 1
+          }
+        ]
+      },
+      "thiết giáp": {
+        "total_mentions": 3,
+        "chapters_appeared": 3,
+        "first_chapter": 605,
+        "last_chapter": 689,
+        "peak_chapters": [
+          {
+            "chapter": 605,
+            "title": "#605. Chương 605: Tuyệt cảnh",
+            "count": 1
+          },
+          {
+            "chapter": 684,
+            "title": "#684. Chương 684: Biểu thị Tân Thần khí",
+            "count": 1
+          },
+          {
+            "chapter": 689,
+            "title": "#689. Chương 689: Quyết chiến Tây Lăng Thiết Kỵ",
+            "count": 1
+          }
+        ]
+      },
+      "xà phòng": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 397,
+        "last_chapter": 397,
+        "peak_chapters": [
+          {
+            "chapter": 397,
+            "title": "#397. Chương 397: Đào Nhã đại lễ",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "key_events": {
+      "bốn nước": {
+        "total_mentions": 125,
+        "chapters_appeared": 72,
+        "first_chapter": 111,
+        "last_chapter": 906,
+        "peak_chapters": [
+          {
+            "chapter": 741,
+            "title": "#741. Chương 741: Toàn bộ nói thẳng ra",
+            "count": 8
+          },
+          {
+            "chapter": 182,
+            "title": "#182. Chương 182: Chém giết Chu Bất Ninh",
+            "count": 6
+          },
+          {
+            "chapter": 641,
+            "title": "#641. Chương 641: Thiên Cơ nguyên lai mưu đồ",
+            "count": 5
+          },
+          {
+            "chapter": 742,
+            "title": "#742. Chương 742: Chuẩn bị dời đô",
+            "count": 5
+          },
+          {
+            "chapter": 308,
+            "title": "#308. Chương 308: Hoa lê dưới cây xích đu đỡ",
+            "count": 4
+          }
+        ]
+      },
+      "tứ phương": {
+        "total_mentions": 94,
+        "chapters_appeared": 65,
+        "first_chapter": 3,
+        "last_chapter": 1501,
+        "peak_chapters": [
+          {
+            "chapter": 3,
+            "title": "#3. Chương 3: Tuyệt đối ra",
+            "count": 7
+          },
+          {
+            "chapter": 161,
+            "title": "#161. Chương 161: Đại chiến sắp nổi",
+            "count": 6
+          },
+          {
+            "chapter": 162,
+            "title": "#162. Chương 162: Phá trận",
+            "count": 6
+          },
+          {
+            "chapter": 165,
+            "title": "#165. Chương 165: Triệu Thiên Tứ đánh tới",
+            "count": 3
+          },
+          {
+            "chapter": 1313,
+            "title": "#1313. Chương 1315: Quốc Giáo đem che",
+            "count": 3
+          }
+        ]
+      },
+      "phản bội": {
+        "total_mentions": 62,
+        "chapters_appeared": 48,
+        "first_chapter": 1,
+        "last_chapter": 1412,
+        "peak_chapters": [
+          {
+            "chapter": 499,
+            "title": "#499. Chương 499: Không nổi lên được sóng gió Đế đô",
+            "count": 4
+          },
+          {
+            "chapter": 156,
+            "title": "#156. Chương 156: Đao nhọn \"Hồng nhan \"",
+            "count": 3
+          },
+          {
+            "chapter": 233,
+            "title": "#233. Chương 233: Hồng Hồ biết gì nói nấy",
+            "count": 2
+          },
+          {
+            "chapter": 473,
+            "title": "#473. Chương 473: Lý Tiểu Đao cái chết",
+            "count": 2
+          },
+          {
+            "chapter": 644,
+            "title": "#644. Chương 644: Hắn đã từng phản bội qua một lần",
+            "count": 2
+          }
+        ]
+      },
+      "chân tướng": {
+        "total_mentions": 59,
+        "chapters_appeared": 46,
+        "first_chapter": 10,
+        "last_chapter": 1357,
+        "peak_chapters": [
+          {
+            "chapter": 212,
+            "title": "#212. Chương 212: Đặc thù khoáng thạch",
+            "count": 3
+          },
+          {
+            "chapter": 405,
+            "title": "#405. Chương 405: Quý Bình Xuyên bắc đến",
+            "count": 3
+          },
+          {
+            "chapter": 487,
+            "title": "#487. Chương 487: Lạc Thiên Thanh lựa chọn",
+            "count": 3
+          },
+          {
+            "chapter": 898,
+            "title": "#898. Chương 898: Gặp lại Trương Bất Minh",
+            "count": 3
+          },
+          {
+            "chapter": 96,
+            "title": "#96. Chương 96: Lại triệu 10 vạn kim mưu thần",
+            "count": 2
+          }
+        ]
+      },
+      "chiêu binh": {
+        "total_mentions": 48,
+        "chapters_appeared": 40,
+        "first_chapter": 16,
+        "last_chapter": 1424,
+        "peak_chapters": [
+          {
+            "chapter": 267,
+            "title": "#267. Chương 267: Tử Ngọc Trạch lại hôn mê",
+            "count": 3
+          },
+          {
+            "chapter": 206,
+            "title": "#206. Chương 206: Đến tìm Ninh An",
+            "count": 2
+          },
+          {
+            "chapter": 229,
+            "title": "#229. Chương 229: An bài cùng chuẩn bị",
+            "count": 2
+          },
+          {
+            "chapter": 546,
+            "title": "#546. Chương 546: Tần Ức lựa chọn",
+            "count": 2
+          },
+          {
+            "chapter": 824,
+            "title": "#824. Chương 824: Văn thần triệu hoán",
+            "count": 2
+          }
+        ]
+      },
+      "đăng cơ": {
+        "total_mentions": 42,
+        "chapters_appeared": 29,
+        "first_chapter": 95,
+        "last_chapter": 742,
+        "peak_chapters": [
+          {
+            "chapter": 393,
+            "title": "#393. Chương 393: Hoang mang mê ly",
+            "count": 4
+          },
+          {
+            "chapter": 394,
+            "title": "#394. Chương 394: Đốt hương tế thiên, ngôn xuất pháp tùy",
+            "count": 4
+          },
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 3
+          },
+          {
+            "chapter": 388,
+            "title": "#388. Chương 388: Mở mang",
+            "count": 3
+          },
+          {
+            "chapter": 403,
+            "title": "#403. Chương 403: Hạch tâm tề tụ thủ",
+            "count": 2
+          }
+        ]
+      },
+      "đàm phán": {
+        "total_mentions": 19,
+        "chapters_appeared": 16,
+        "first_chapter": 55,
+        "last_chapter": 1241,
+        "peak_chapters": [
+          {
+            "chapter": 1241,
+            "title": "#1241. Chương 1241: Bắc Minh cùng Quý Vô Sinh đàm phán",
+            "count": 3
+          },
+          {
+            "chapter": 345,
+            "title": "#345. Chương 345: Liễu Khinh Ngôn tin",
+            "count": 2
+          },
+          {
+            "chapter": 55,
+            "title": "#55. Chương 55: Đổi vàng",
+            "count": 1
+          },
+          {
+            "chapter": 57,
+            "title": "#57. Chương 57: Nam Ly động tác",
+            "count": 1
+          },
+          {
+            "chapter": 88,
+            "title": "#88. Chương 88: Hề Nhan công chúa thẳng thắn",
+            "count": 1
+          }
+        ]
+      },
+      "xuyên việt": {
+        "total_mentions": 18,
+        "chapters_appeared": 11,
+        "first_chapter": 1,
+        "last_chapter": 1420,
+        "peak_chapters": [
+          {
+            "chapter": 432,
+            "title": "#432. Chương 432: Người mặc kim sắc long bào nữ nhân (",
+            "count": 4
+          },
+          {
+            "chapter": 1,
+            "title": "#1. Chương 1 : Xuyên việt thành đệ nhất người ở rể",
+            "count": 3
+          },
+          {
+            "chapter": 399,
+            "title": "#399. Chương 399: Đào Nhã gặp nguy hiểm",
+            "count": 2
+          },
+          {
+            "chapter": 1419,
+            "title": "#1419. Chương 1421: Phượng Hoàng lời nói kinh người",
+            "count": 2
+          },
+          {
+            "chapter": 9,
+            "title": "#9. Chương 9: Người thần bí xuất hiện?",
+            "count": 1
+          }
+        ]
+      },
+      "thiên hạ đại thế": {
+        "total_mentions": 14,
+        "chapters_appeared": 13,
+        "first_chapter": 86,
+        "last_chapter": 1452,
+        "peak_chapters": [
+          {
+            "chapter": 1403,
+            "title": "#1403. Chương 1405: Tiêu diệt Bắc U chi địa bắt đầu",
+            "count": 2
+          },
+          {
+            "chapter": 86,
+            "title": "#86. Chương 86: Tây Lăng mưu đồ",
+            "count": 1
+          },
+          {
+            "chapter": 282,
+            "title": "#282. Chương 282: Nhổ Hắc Ma",
+            "count": 1
+          },
+          {
+            "chapter": 379,
+            "title": "#379. Chương 379: Cái nào công chúa?",
+            "count": 1
+          },
+          {
+            "chapter": 383,
+            "title": "#383. Chương 383: Quách Gia suy đoán",
+            "count": 1
+          }
+        ]
+      },
+      "liên minh": {
+        "total_mentions": 13,
+        "chapters_appeared": 12,
+        "first_chapter": 22,
+        "last_chapter": 877,
+        "peak_chapters": [
+          {
+            "chapter": 385,
+            "title": "#385. Chương 385: Thiên hạ tập thể nguyện",
+            "count": 2
+          },
+          {
+            "chapter": 22,
+            "title": "#22. Chương 22: Đế Vương Tâm Thuật",
+            "count": 1
+          },
+          {
+            "chapter": 139,
+            "title": "#139. Chương 139: Hệ thống trở lại chủ mở ra (Chương 7: )",
+            "count": 1
+          },
+          {
+            "chapter": 156,
+            "title": "#156. Chương 156: Đao nhọn \"Hồng nhan \"",
+            "count": 1
+          },
+          {
+            "chapter": 187,
+            "title": "#187. Chương 187: Nắm chắc sân nhà đàm phán",
+            "count": 1
+          }
+        ]
+      },
+      "xưng đế": {
+        "total_mentions": 12,
+        "chapters_appeared": 9,
+        "first_chapter": 376,
+        "last_chapter": 885,
+        "peak_chapters": [
+          {
+            "chapter": 376,
+            "title": "#376. Chương 376: Thiên hạ quy tâm",
+            "count": 3
+          },
+          {
+            "chapter": 412,
+            "title": "#412. Chương 412: Định quốc hào năm đầu",
+            "count": 2
+          },
+          {
+            "chapter": 377,
+            "title": "#377. Chương 377: Ở lần ranh sinh tử",
+            "count": 1
+          },
+          {
+            "chapter": 384,
+            "title": "#384. Chương 384: Bái sư",
+            "count": 1
+          },
+          {
+            "chapter": 394,
+            "title": "#394. Chương 394: Đốt hương tế thiên, ngôn xuất pháp tùy",
+            "count": 1
+          }
+        ]
+      },
+      "chiêu mộ": {
+        "total_mentions": 11,
+        "chapters_appeared": 9,
+        "first_chapter": 41,
+        "last_chapter": 885,
+        "peak_chapters": [
+          {
+            "chapter": 704,
+            "title": "#704. Chương 704: Binh đến đông dưới hoàng thành",
+            "count": 2
+          },
+          {
+            "chapter": 885,
+            "title": "#885. Chương 885: Thiên mệnh tụ về: Tư Mã Ý",
+            "count": 2
+          },
+          {
+            "chapter": 41,
+            "title": "#41. Chương 41: Xuất phát Bắc cảnh tam châu",
+            "count": 1
+          },
+          {
+            "chapter": 339,
+            "title": "#339. Chương 339: 72 vạn kim",
+            "count": 1
+          },
+          {
+            "chapter": 358,
+            "title": "#358. Chương 358: Trương Hiên Chính ngay thẳng",
+            "count": 1
+          }
+        ]
+      },
+      "đại hôn": {
+        "total_mentions": 5,
+        "chapters_appeared": 4,
+        "first_chapter": 191,
+        "last_chapter": 906,
+        "peak_chapters": [
+          {
+            "chapter": 191,
+            "title": "#191. Chương 191: Quý Bình An Điêu Thuyền đại hôn",
+            "count": 2
+          },
+          {
+            "chapter": 198,
+            "title": "#198. Chương 198: An gia từng bước ép sát",
+            "count": 1
+          },
+          {
+            "chapter": 506,
+            "title": "#506. Chương 506: Bùi gia đại hỉ (thứ mười càng )",
+            "count": 1
+          },
+          {
+            "chapter": 906,
+            "title": "#906. Chương 906: Dân gian truyền kỳ cố sự",
+            "count": 1
+          }
+        ]
+      },
+      "bái sư": {
+        "total_mentions": 5,
+        "chapters_appeared": 2,
+        "first_chapter": 384,
+        "last_chapter": 541,
+        "peak_chapters": [
+          {
+            "chapter": 384,
+            "title": "#384. Chương 384: Bái sư",
+            "count": 4
+          },
+          {
+            "chapter": 541,
+            "title": "#541. Chương 541: Thần Hỏa Quân tín niệm",
+            "count": 1
+          }
+        ]
+      },
+      "kết hôn": {
+        "total_mentions": 4,
+        "chapters_appeared": 4,
+        "first_chapter": 190,
+        "last_chapter": 1008,
+        "peak_chapters": [
+          {
+            "chapter": 190,
+            "title": "#190. Chương 190: Đặc thù An Tức Vệ cùng cường đại Thiên Công Thần Tượng",
+            "count": 1
+          },
+          {
+            "chapter": 191,
+            "title": "#191. Chương 191: Quý Bình An Điêu Thuyền đại hôn",
+            "count": 1
+          },
+          {
+            "chapter": 659,
+            "title": "#659. Chương 659: Ninh thị hãng buôn vải thấy Hề Nhan",
+            "count": 1
+          },
+          {
+            "chapter": 1008,
+            "title": "#1008. Chương 1008: Không cam lòng phản công",
+            "count": 1
+          }
+        ]
+      },
+      "ám sát": {
+        "total_mentions": 2,
+        "chapters_appeared": 2,
+        "first_chapter": 527,
+        "last_chapter": 680,
+        "peak_chapters": [
+          {
+            "chapter": 527,
+            "title": "#527. Chương 527: Tần thị hủy diệt (",
+            "count": 1
+          },
+          {
+            "chapter": 680,
+            "title": "#680. Chương 680: Ám sát Văn Nhân Hạo (",
+            "count": 1
+          }
+        ]
+      },
+      "truyền ngôi": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 291,
+        "last_chapter": 291,
+        "peak_chapters": [
+          {
+            "chapter": 291,
+            "title": "#291. Chương 291: Cuối cùng điên cuồng (thứ mười một càng )",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "locations": {
+      "u châu": {
+        "total_mentions": 1177,
+        "chapters_appeared": 311,
+        "first_chapter": 28,
+        "last_chapter": 1490,
+        "peak_chapters": [
+          {
+            "chapter": 933,
+            "title": "#933. Chương 933: Quốc Giáo, Thánh Nữ Giáo tề động",
+            "count": 24
+          },
+          {
+            "chapter": 876,
+            "title": "#876. Chương 876: Quách Gia mưu nạn dân",
+            "count": 20
+          },
+          {
+            "chapter": 874,
+            "title": "#874. Chương 874: Thánh Nữ chi tranh",
+            "count": 17
+          },
+          {
+            "chapter": 917,
+            "title": "#917. Chương 917: Đến U Châu",
+            "count": 17
+          },
+          {
+            "chapter": 934,
+            "title": "#934. Chương 934: Gặp lại Đặc Phổ",
+            "count": 17
+          }
+        ]
+      },
+      "kinh bắc thành": {
+        "total_mentions": 931,
+        "chapters_appeared": 239,
+        "first_chapter": 874,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1211,
+            "title": "#1211. Chương 1211: Nhân Tiên Quan Vũ",
+            "count": 16
+          },
+          {
+            "chapter": 1181,
+            "title": "#1181. Chương 1181: Thu thập tàn cục",
+            "count": 15
+          },
+          {
+            "chapter": 919,
+            "title": "#919. Chương 919: Vây quét Đức Bất Nhân đại quân",
+            "count": 14
+          },
+          {
+            "chapter": 1462,
+            "title": "#1462. Chương 1464: Chu Du câu cá lớn",
+            "count": 14
+          },
+          {
+            "chapter": 1472,
+            "title": "#1472. Chương 1474: Mục tiêu: Thiên A Thị Hoàng Thành",
+            "count": 13
+          }
+        ]
+      },
+      "đế đô": {
+        "total_mentions": 904,
+        "chapters_appeared": 323,
+        "first_chapter": 29,
+        "last_chapter": 805,
+        "peak_chapters": [
+          {
+            "chapter": 229,
+            "title": "#229. Chương 229: An bài cùng chuẩn bị",
+            "count": 17
+          },
+          {
+            "chapter": 168,
+            "title": "#168. Chương 168: Đế đô chi loạn bắt đầu tại bệ hạ băng hà",
+            "count": 13
+          },
+          {
+            "chapter": 296,
+            "title": "#296. Chương 296: Giả Hủ mưu quốc",
+            "count": 13
+          },
+          {
+            "chapter": 230,
+            "title": "#230. Chương 230: Tử độc chiếm thiên hạ nên kết thúc",
+            "count": 12
+          },
+          {
+            "chapter": 297,
+            "title": "#297. Chương 297: Quý bình an trở về",
+            "count": 12
+          }
+        ]
+      },
+      "hoàng cung": {
+        "total_mentions": 497,
+        "chapters_appeared": 228,
+        "first_chapter": 1,
+        "last_chapter": 1309,
+        "peak_chapters": [
+          {
+            "chapter": 499,
+            "title": "#499. Chương 499: Không nổi lên được sóng gió Đế đô",
+            "count": 9
+          },
+          {
+            "chapter": 104,
+            "title": "#104. Chương 104: Giương Đông kích Tây, mục tiêu hoàng cung",
+            "count": 8
+          },
+          {
+            "chapter": 105,
+            "title": "#105. Chương 105: Tô Kiến Phong đánh vào hoàng cung",
+            "count": 8
+          },
+          {
+            "chapter": 661,
+            "title": "#661. Chương 661: Hai tay chuẩn bị",
+            "count": 8
+          },
+          {
+            "chapter": 662,
+            "title": "#662. Chương 662: Hề Nhan mang Đào Nhã vào cung",
+            "count": 8
+          }
+        ]
+      },
+      "an hà": {
+        "total_mentions": 488,
+        "chapters_appeared": 179,
+        "first_chapter": 36,
+        "last_chapter": 1495,
+        "peak_chapters": [
+          {
+            "chapter": 712,
+            "title": "#712. Chương 712: An Vũ Hi thấy An Hàn Khôi",
+            "count": 25
+          },
+          {
+            "chapter": 492,
+            "title": "#492. Chương 492: Đông Thương Tân Quốc chủ (thứ mười sáu càng )",
+            "count": 21
+          },
+          {
+            "chapter": 477,
+            "title": "#477. Chương 477: Hồ Lô Cốc vây giết",
+            "count": 19
+          },
+          {
+            "chapter": 549,
+            "title": "#549. Chương 549: Quý Bình Thường du thuyết An Vũ Hi (",
+            "count": 18
+          },
+          {
+            "chapter": 493,
+            "title": "#493. Chương 493: Mẹ con nói chuyện (thứ mười bảy càng )",
+            "count": 15
+          }
+        ]
+      },
+      "bắc u": {
+        "total_mentions": 441,
+        "chapters_appeared": 131,
+        "first_chapter": 1067,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1079,
+            "title": "#1079. Chương 1079: Thiên Bắc Thị nhất tộc",
+            "count": 18
+          },
+          {
+            "chapter": 1105,
+            "title": "#1105. Chương 1105: Ngự giá thân chinh Bắc U chi địa",
+            "count": 17
+          },
+          {
+            "chapter": 1345,
+            "title": "#1345. Chương 1347: Bắc rút lui",
+            "count": 17
+          },
+          {
+            "chapter": 1068,
+            "title": "#1068. Chương 1068: Đế Tâm khó dò",
+            "count": 16
+          },
+          {
+            "chapter": 1078,
+            "title": "#1078. Chương 1077: Đại Hán công Bắc U chi địa",
+            "count": 14
+          }
+        ]
+      },
+      "liễu châu": {
+        "total_mentions": 406,
+        "chapters_appeared": 111,
+        "first_chapter": 28,
+        "last_chapter": 722,
+        "peak_chapters": [
+          {
+            "chapter": 177,
+            "title": "#177. Chương 177: Triệu Vân trở về",
+            "count": 16
+          },
+          {
+            "chapter": 49,
+            "title": "#49. Chương 49: Bắc cảnh tam châu phá",
+            "count": 14
+          },
+          {
+            "chapter": 48,
+            "title": "#48. Chương 48: Nam Ly đánh vào",
+            "count": 12
+          },
+          {
+            "chapter": 152,
+            "title": "#152. Chương 152: Liễu Châu ngoài thành giao đấu",
+            "count": 12
+          },
+          {
+            "chapter": 161,
+            "title": "#161. Chương 161: Đại chiến sắp nổi",
+            "count": 12
+          }
+        ]
+      },
+      "thiên hồn thành": {
+        "total_mentions": 320,
+        "chapters_appeared": 78,
+        "first_chapter": 925,
+        "last_chapter": 1284,
+        "peak_chapters": [
+          {
+            "chapter": 1072,
+            "title": "#1072. Chương 1072: Lấy lực phá xảo",
+            "count": 21
+          },
+          {
+            "chapter": 1065,
+            "title": "#1065. Chương 1065: Tư Mã Ý bố cục",
+            "count": 17
+          },
+          {
+            "chapter": 928,
+            "title": "#928. Chương 928: Chắp tay để thành",
+            "count": 15
+          },
+          {
+            "chapter": 925,
+            "title": "#925. Chương 925: Binh đến Thiên Hồn Thành dưới",
+            "count": 13
+          },
+          {
+            "chapter": 1022,
+            "title": "#1022. Chương 1022: Gia Cát Lượng công phá Thiên Hồn Thành",
+            "count": 12
+          }
+        ]
+      },
+      "bắc duyên thành": {
+        "total_mentions": 303,
+        "chapters_appeared": 67,
+        "first_chapter": 1003,
+        "last_chapter": 1466,
+        "peak_chapters": [
+          {
+            "chapter": 1224,
+            "title": "#1224. Chương 1224: Gấp rút tiếp viện",
+            "count": 24
+          },
+          {
+            "chapter": 1327,
+            "title": "#1327. Chương 1329: Bắc Duyên Thành phá  Triệu Vân chạy tới",
+            "count": 23
+          },
+          {
+            "chapter": 1226,
+            "title": "#1226. Chương 1226: Thánh Nữ Thành tụ hợp",
+            "count": 21
+          },
+          {
+            "chapter": 1223,
+            "title": "#1223. Chương 1223: Ngõ hẹp gặp nhau",
+            "count": 19
+          },
+          {
+            "chapter": 1020,
+            "title": "#1020. Chương 1020: Người Quý gia đến Bắc Duyên Thành",
+            "count": 14
+          }
+        ]
+      },
+      "tây hoàng thành": {
+        "total_mentions": 246,
+        "chapters_appeared": 60,
+        "first_chapter": 521,
+        "last_chapter": 742,
+        "peak_chapters": [
+          {
+            "chapter": 708,
+            "title": "#708. Chương 708: Giết vào Tây Hoàng Thành",
+            "count": 17
+          },
+          {
+            "chapter": 608,
+            "title": "#608. Chương 608: Trương Bất Minh tính toán",
+            "count": 15
+          },
+          {
+            "chapter": 610,
+            "title": "#610. Chương 610: Quan Vũ đến Tây Hoàng Thành",
+            "count": 15
+          },
+          {
+            "chapter": 705,
+            "title": "#705. Chương 705: Tiễn giết An Vũ Hi",
+            "count": 12
+          },
+          {
+            "chapter": 703,
+            "title": "#703. Chương 703: Đáp ứng hợp tác",
+            "count": 11
+          }
+        ]
+      },
+      "thánh nữ thành": {
+        "total_mentions": 246,
+        "chapters_appeared": 58,
+        "first_chapter": 1003,
+        "last_chapter": 1361,
+        "peak_chapters": [
+          {
+            "chapter": 1076,
+            "title": "#1076. Chương 1076: Ninh Không Lâu công Thánh Nữ Thành",
+            "count": 21
+          },
+          {
+            "chapter": 1227,
+            "title": "#1227. Chương 1227: Thánh Nữ Thành chi mưu",
+            "count": 17
+          },
+          {
+            "chapter": 1026,
+            "title": "#1026. Chương 1026: Bàng Thống an bài hỗn loạn",
+            "count": 15
+          },
+          {
+            "chapter": 1077,
+            "title": "#1077. Chương 1077: Quỷ Vương rút quân",
+            "count": 14
+          },
+          {
+            "chapter": 1226,
+            "title": "#1226. Chương 1226: Thánh Nữ Thành tụ hợp",
+            "count": 13
+          }
+        ]
+      },
+      "thanh châu": {
+        "total_mentions": 210,
+        "chapters_appeared": 74,
+        "first_chapter": 39,
+        "last_chapter": 911,
+        "peak_chapters": [
+          {
+            "chapter": 51,
+            "title": "#51. Chương 51: Nam Ly công thành",
+            "count": 15
+          },
+          {
+            "chapter": 48,
+            "title": "#48. Chương 48: Nam Ly đánh vào",
+            "count": 14
+          },
+          {
+            "chapter": 53,
+            "title": "#53. Chương 53: Trấn an dân tâm",
+            "count": 12
+          },
+          {
+            "chapter": 47,
+            "title": "#47. Chương 47: Hoả tốc gấp rút tiếp viện",
+            "count": 10
+          },
+          {
+            "chapter": 50,
+            "title": "#50. Chương 50: Vây quét Nam Ly đại quân",
+            "count": 10
+          }
+        ]
+      },
+      "tần châu": {
+        "total_mentions": 173,
+        "chapters_appeared": 65,
+        "first_chapter": 39,
+        "last_chapter": 720,
+        "peak_chapters": [
+          {
+            "chapter": 48,
+            "title": "#48. Chương 48: Nam Ly đánh vào",
+            "count": 14
+          },
+          {
+            "chapter": 211,
+            "title": "#211. Chương 211: Đối Ninh An sát cơ",
+            "count": 14
+          },
+          {
+            "chapter": 50,
+            "title": "#50. Chương 50: Vây quét Nam Ly đại quân",
+            "count": 12
+          },
+          {
+            "chapter": 47,
+            "title": "#47. Chương 47: Hoả tốc gấp rút tiếp viện",
+            "count": 7
+          },
+          {
+            "chapter": 49,
+            "title": "#49. Chương 49: Bắc cảnh tam châu phá",
+            "count": 7
+          }
+        ]
+      },
+      "phò mã phủ": {
+        "total_mentions": 154,
+        "chapters_appeared": 73,
+        "first_chapter": 5,
+        "last_chapter": 727,
+        "peak_chapters": [
+          {
+            "chapter": 129,
+            "title": "#129. Chương 129: Tử Ngọc Trạch ra mặt",
+            "count": 9
+          },
+          {
+            "chapter": 6,
+            "title": "#6. Chương 6: Quý Bình An ngàn vàng mua xương ngựa",
+            "count": 6
+          },
+          {
+            "chapter": 123,
+            "title": "#123. Chương 123: Ngao Phủ diệt môn",
+            "count": 5
+          },
+          {
+            "chapter": 133,
+            "title": "#133. Chương 133: Bố cục bắt",
+            "count": 5
+          },
+          {
+            "chapter": 727,
+            "title": "#727. Chương 727: Núi Ngưu Giác dưới",
+            "count": 5
+          }
+        ]
+      },
+      "bùi an hà": {
+        "total_mentions": 136,
+        "chapters_appeared": 63,
+        "first_chapter": 199,
+        "last_chapter": 764,
+        "peak_chapters": [
+          {
+            "chapter": 356,
+            "title": "#356. Chương 356: Đại chiến An Quân Thương",
+            "count": 9
+          },
+          {
+            "chapter": 422,
+            "title": "#422. Chương 422: Nam Ly Đông Thương động tác",
+            "count": 7
+          },
+          {
+            "chapter": 453,
+            "title": "#453. Chương 453: Vân Ninh công thành",
+            "count": 7
+          },
+          {
+            "chapter": 476,
+            "title": "#476. Chương 475: Hội tụ An Hà Thành",
+            "count": 6
+          },
+          {
+            "chapter": 371,
+            "title": "#371. Chương 371: Tân thiên đổi cựu thiên",
+            "count": 5
+          }
+        ]
+      },
+      "đông sơn": {
+        "total_mentions": 94,
+        "chapters_appeared": 29,
+        "first_chapter": 346,
+        "last_chapter": 1417,
+        "peak_chapters": [
+          {
+            "chapter": 351,
+            "title": "#351. Chương 351: Tấn công Đông Sơn thành",
+            "count": 22
+          },
+          {
+            "chapter": 347,
+            "title": "#347. Chương 347: Không nể mặt mũi (",
+            "count": 9
+          },
+          {
+            "chapter": 355,
+            "title": "#355. Chương 355: Một trận chiến phân thắng thua",
+            "count": 9
+          },
+          {
+            "chapter": 348,
+            "title": "#348. Chương 348: Vân Ninh giá trị",
+            "count": 8
+          },
+          {
+            "chapter": 356,
+            "title": "#356. Chương 356: Đại chiến An Quân Thương",
+            "count": 5
+          }
+        ]
+      },
+      "việt thành": {
+        "total_mentions": 26,
+        "chapters_appeared": 11,
+        "first_chapter": 1,
+        "last_chapter": 811,
+        "peak_chapters": [
+          {
+            "chapter": 759,
+            "title": "#759. Chương 759: Quý Vô Song đầu hàng",
+            "count": 8
+          },
+          {
+            "chapter": 739,
+            "title": "#739. Chương 739: Mưa gió nổi lên",
+            "count": 5
+          },
+          {
+            "chapter": 754,
+            "title": "#754. Chương 754: Đông Thương bại cục đã định",
+            "count": 3
+          },
+          {
+            "chapter": 760,
+            "title": "#760. Chương 760: Pháp Chính mưu Đông Thương Hoàng Thành",
+            "count": 2
+          },
+          {
+            "chapter": 761,
+            "title": "#761. Chương 761: Quý Bình An suy đoán",
+            "count": 2
+          }
+        ]
+      },
+      "kinh đô": {
+        "total_mentions": 23,
+        "chapters_appeared": 14,
+        "first_chapter": 228,
+        "last_chapter": 769,
+        "peak_chapters": [
+          {
+            "chapter": 755,
+            "title": "#755. Chương 755: Quý Bình Sinh xuất hiện",
+            "count": 5
+          },
+          {
+            "chapter": 752,
+            "title": "#752. Chương 752: Bố cục cầm quỷ",
+            "count": 4
+          },
+          {
+            "chapter": 751,
+            "title": "#751. Chương 751: Tiểu quỷ sống loạn",
+            "count": 2
+          },
+          {
+            "chapter": 754,
+            "title": "#754. Chương 754: Đông Thương bại cục đã định",
+            "count": 2
+          },
+          {
+            "chapter": 228,
+            "title": "#228. Chương 228: Hài tử xuất sinh",
+            "count": 1
+          }
+        ]
+      },
+      "an lộ": {
+        "total_mentions": 15,
+        "chapters_appeared": 9,
+        "first_chapter": 356,
+        "last_chapter": 515,
+        "peak_chapters": [
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 4
+          },
+          {
+            "chapter": 358,
+            "title": "#358. Chương 358: Trương Hiên Chính ngay thẳng",
+            "count": 3
+          },
+          {
+            "chapter": 356,
+            "title": "#356. Chương 356: Đại chiến An Quân Thương",
+            "count": 2
+          },
+          {
+            "chapter": 371,
+            "title": "#371. Chương 371: Tân thiên đổi cựu thiên",
+            "count": 1
+          },
+          {
+            "chapter": 373,
+            "title": "#373. Chương 373: Đến nhà",
+            "count": 1
+          }
+        ]
+      },
+      "hoàng hôn": {
+        "total_mentions": 12,
+        "chapters_appeared": 6,
+        "first_chapter": 113,
+        "last_chapter": 1380,
+        "peak_chapters": [
+          {
+            "chapter": 1379,
+            "title": "#1379. Chương 1381: Sắp gặp nhau",
+            "count": 5
+          },
+          {
+            "chapter": 1380,
+            "title": "#1380. Chương 1382: Hoàng hôn chi sâm đại chiến bắt đầu",
+            "count": 3
+          },
+          {
+            "chapter": 113,
+            "title": "#113. Chương 113: Lập Thái Tử",
+            "count": 1
+          },
+          {
+            "chapter": 363,
+            "title": "#363. Chương 363: Sau lưng tên",
+            "count": 1
+          },
+          {
+            "chapter": 522,
+            "title": "#522. Chương 522: Đại La sơ hiện manh mối",
+            "count": 1
+          }
+        ]
+      },
+      "đại giang": {
+        "total_mentions": 2,
+        "chapters_appeared": 2,
+        "first_chapter": 521,
+        "last_chapter": 545,
+        "peak_chapters": [
+          {
+            "chapter": 521,
+            "title": "#521. Chương 521: Tụ hợp",
+            "count": 1
+          },
+          {
+            "chapter": 545,
+            "title": "#545. Chương 545: Đại La phương hướng",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "battles_wars": {
+      "trận": {
+        "total_mentions": 1636,
+        "chapters_appeared": 696,
+        "first_chapter": 6,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 165,
+            "title": "#165. Chương 165: Triệu Thiên Tứ đánh tới",
+            "count": 20
+          },
+          {
+            "chapter": 1304,
+            "title": "#1304. Chương 1306: Không sống qua tối nay",
+            "count": 20
+          },
+          {
+            "chapter": 162,
+            "title": "#162. Chương 162: Phá trận",
+            "count": 19
+          },
+          {
+            "chapter": 161,
+            "title": "#161. Chương 161: Đại chiến sắp nổi",
+            "count": 16
+          },
+          {
+            "chapter": 155,
+            "title": "#155. Chương 155: Ta hiện tại cần cùng hắn bàn giao?",
+            "count": 14
+          }
+        ]
+      },
+      "công thành": {
+        "total_mentions": 1233,
+        "chapters_appeared": 345,
+        "first_chapter": 51,
+        "last_chapter": 1503,
+        "peak_chapters": [
+          {
+            "chapter": 863,
+            "title": "#863. Chương 863: Đánh vào Phong Hỏa Thành",
+            "count": 21
+          },
+          {
+            "chapter": 1291,
+            "title": "#1291. Chương 1293: Lưu bao nhiêu, bảo đảm bao nhiêu",
+            "count": 21
+          },
+          {
+            "chapter": 1109,
+            "title": "#1109. Chương 1109: Trình Dục công thành",
+            "count": 20
+          },
+          {
+            "chapter": 704,
+            "title": "#704. Chương 704: Binh đến đông dưới hoàng thành",
+            "count": 18
+          },
+          {
+            "chapter": 1375,
+            "title": "#1375. Chương 1377: Thiên Thạch Thành có thể phá",
+            "count": 18
+          }
+        ]
+      },
+      "thủ thành": {
+        "total_mentions": 596,
+        "chapters_appeared": 263,
+        "first_chapter": 11,
+        "last_chapter": 1503,
+        "peak_chapters": [
+          {
+            "chapter": 1469,
+            "title": "#1469. Chương 1471: Lữ Bố chẳng thèm ngó tới",
+            "count": 13
+          },
+          {
+            "chapter": 236,
+            "title": "#236. Chương 236: Mang binh vào cung (Chương 05: )",
+            "count": 11
+          },
+          {
+            "chapter": 1472,
+            "title": "#1472. Chương 1474: Mục tiêu: Thiên A Thị Hoàng Thành",
+            "count": 11
+          },
+          {
+            "chapter": 1022,
+            "title": "#1022. Chương 1022: Gia Cát Lượng công phá Thiên Hồn Thành",
+            "count": 10
+          },
+          {
+            "chapter": 1349,
+            "title": "#1349. Chương 1351: Quan Vũ công thành",
+            "count": 10
+          }
+        ]
+      },
+      "chiếm": {
+        "total_mentions": 584,
+        "chapters_appeared": 364,
+        "first_chapter": 8,
+        "last_chapter": 1507,
+        "peak_chapters": [
+          {
+            "chapter": 1281,
+            "title": "#1281. Chương 1283: Lập kế hoạch diệt quốc dạy",
+            "count": 9
+          },
+          {
+            "chapter": 382,
+            "title": "#382. Chương 382: Thiên mệnh mưu thần chi nghịch thiên cải mệnh",
+            "count": 8
+          },
+          {
+            "chapter": 873,
+            "title": "#873. Chương 873: Tại Đại La trưng binh",
+            "count": 8
+          },
+          {
+            "chapter": 1450,
+            "title": "#1450. Chương 1452: Quân sư ở giữa ăn ý",
+            "count": 8
+          },
+          {
+            "chapter": 1456,
+            "title": "#1456. Chương 1458: Quý Bình An dẫn xà xuất động",
+            "count": 7
+          }
+        ]
+      },
+      "đại chiến": {
+        "total_mentions": 378,
+        "chapters_appeared": 259,
+        "first_chapter": 16,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 562,
+            "title": "#562. Chương 562: Đông Thương Ngao Gia (thứ mười càng )",
+            "count": 5
+          },
+          {
+            "chapter": 858,
+            "title": "#858. Chương 858: Tay cụt, kết thúc",
+            "count": 5
+          },
+          {
+            "chapter": 1319,
+            "title": "#1319. Chương 1321: A Bố đại quân đến",
+            "count": 5
+          },
+          {
+            "chapter": 210,
+            "title": "#210. Chương 210: Chiến sự sắp nổi (",
+            "count": 4
+          },
+          {
+            "chapter": 217,
+            "title": "#217. Chương 217: Tâm tư dị biệt",
+            "count": 4
+          }
+        ]
+      },
+      "rút quân": {
+        "total_mentions": 286,
+        "chapters_appeared": 97,
+        "first_chapter": 277,
+        "last_chapter": 1494,
+        "peak_chapters": [
+          {
+            "chapter": 1345,
+            "title": "#1345. Chương 1347: Bắc rút lui",
+            "count": 16
+          },
+          {
+            "chapter": 888,
+            "title": "#888. Chương 888: Chinh phục bọn họ văn hóa",
+            "count": 13
+          },
+          {
+            "chapter": 1097,
+            "title": "#1097. Chương 1097: Triệu Vân rút quân",
+            "count": 11
+          },
+          {
+            "chapter": 1179,
+            "title": "#1179. Chương 1179: A Bố rút quân",
+            "count": 8
+          },
+          {
+            "chapter": 1268,
+            "title": "#1268. Chương 1270: Quốc Giáo, là nên diệt",
+            "count": 8
+          }
+        ]
+      },
+      "liều mạng": {
+        "total_mentions": 191,
+        "chapters_appeared": 116,
+        "first_chapter": 30,
+        "last_chapter": 1503,
+        "peak_chapters": [
+          {
+            "chapter": 1161,
+            "title": "#1161. Chương 1161: Quan Vũ Trương Phi lại đánh tới",
+            "count": 6
+          },
+          {
+            "chapter": 852,
+            "title": "#852. Chương 852: Burton hai công Hoa Ước Thành",
+            "count": 5
+          },
+          {
+            "chapter": 976,
+            "title": "#976. Chương 976: Lân giáp yêu nhân điên cuồng",
+            "count": 5
+          },
+          {
+            "chapter": 1160,
+            "title": "#1160. Chương 1160: Triệu Vân liều mạng chiến Bắc Minh",
+            "count": 5
+          },
+          {
+            "chapter": 1413,
+            "title": "#1413. Chương 1415: Phượng Hoàng bị bắt",
+            "count": 5
+          }
+        ]
+      },
+      "tiến công": {
+        "total_mentions": 179,
+        "chapters_appeared": 131,
+        "first_chapter": 28,
+        "last_chapter": 1500,
+        "peak_chapters": [
+          {
+            "chapter": 1433,
+            "title": "#1433. Chương 1435: Gia Cát Lượng điều giáo Bàng Thống",
+            "count": 7
+          },
+          {
+            "chapter": 887,
+            "title": "#887. Chương 887: Rút quân",
+            "count": 6
+          },
+          {
+            "chapter": 657,
+            "title": "#657. Chương 657: Tiến công tại tiếp tục",
+            "count": 4
+          },
+          {
+            "chapter": 778,
+            "title": "#778. Chương 778: Mong muốn còn sống",
+            "count": 4
+          },
+          {
+            "chapter": 1206,
+            "title": "#1206. Chương 1206: Linh Ích Thành đại chiến mở mang",
+            "count": 4
+          }
+        ]
+      },
+      "tiêu diệt": {
+        "total_mentions": 174,
+        "chapters_appeared": 109,
+        "first_chapter": 28,
+        "last_chapter": 1509,
+        "peak_chapters": [
+          {
+            "chapter": 1338,
+            "title": "#1338. Chương 1340: Quý Sơn Hà trù mưu",
+            "count": 6
+          },
+          {
+            "chapter": 1343,
+            "title": "#1343. Chương 1345: Đại Hán thế yếu",
+            "count": 6
+          },
+          {
+            "chapter": 1315,
+            "title": "#1315. Chương 1317: Diệt thế",
+            "count": 5
+          },
+          {
+            "chapter": 1341,
+            "title": "#1341. Chương 1343: Rút quân trở về Kinh Bắc Thành",
+            "count": 5
+          },
+          {
+            "chapter": 235,
+            "title": "#235. Chương 235: Tâm ngoan Tử Ngọc Trạch",
+            "count": 4
+          }
+        ]
+      },
+      "mai phục": {
+        "total_mentions": 167,
+        "chapters_appeared": 90,
+        "first_chapter": 17,
+        "last_chapter": 1504,
+        "peak_chapters": [
+          {
+            "chapter": 1251,
+            "title": "#1251. Chương 1253: Tháp Ngân tiến quân",
+            "count": 15
+          },
+          {
+            "chapter": 1378,
+            "title": "#1. Chương 1380: Song phương chuẩn bị",
+            "count": 9
+          },
+          {
+            "chapter": 52,
+            "title": "#52. Chương 52: Bắt sống bắt sống Địch Hỏa",
+            "count": 6
+          },
+          {
+            "chapter": 1073,
+            "title": "#1073. Chương 1073: Quỷ Vương chờ Ninh Không Lâu",
+            "count": 6
+          },
+          {
+            "chapter": 1379,
+            "title": "#1379. Chương 1381: Sắp gặp nhau",
+            "count": 6
+          }
+        ]
+      },
+      "đầu hàng": {
+        "total_mentions": 140,
+        "chapters_appeared": 58,
+        "first_chapter": 44,
+        "last_chapter": 1466,
+        "peak_chapters": [
+          {
+            "chapter": 734,
+            "title": "#734. Chương 734: An Vũ Hi mang Quân giết tới",
+            "count": 8
+          },
+          {
+            "chapter": 1022,
+            "title": "#1022. Chương 1022: Gia Cát Lượng công phá Thiên Hồn Thành",
+            "count": 7
+          },
+          {
+            "chapter": 1466,
+            "title": "#1466. Chương 1468: A Bố tự mình lại công Kinh Bắc Thành",
+            "count": 7
+          },
+          {
+            "chapter": 766,
+            "title": "#766. Chương 766: Phế bỏ Quý Vô Song",
+            "count": 6
+          },
+          {
+            "chapter": 791,
+            "title": "#791. Chương 791: Trương Phi phát uy",
+            "count": 6
+          }
+        ]
+      },
+      "viện quân": {
+        "total_mentions": 114,
+        "chapters_appeared": 55,
+        "first_chapter": 46,
+        "last_chapter": 1477,
+        "peak_chapters": [
+          {
+            "chapter": 1179,
+            "title": "#1179. Chương 1179: A Bố rút quân",
+            "count": 8
+          },
+          {
+            "chapter": 1335,
+            "title": "#1335. Chương 1337: Bàng Thống chịu chết",
+            "count": 8
+          },
+          {
+            "chapter": 1303,
+            "title": "#1303. Chương 1305: Đen sườn núi tuyệt cảnh",
+            "count": 7
+          },
+          {
+            "chapter": 1328,
+            "title": "#1328. Chương 1330: Vây giết Cầu Hòa",
+            "count": 6
+          },
+          {
+            "chapter": 467,
+            "title": "#467. Chương 467: Quý Bình An giết tới",
+            "count": 4
+          }
+        ]
+      },
+      "hành quân": {
+        "total_mentions": 108,
+        "chapters_appeared": 75,
+        "first_chapter": 16,
+        "last_chapter": 1477,
+        "peak_chapters": [
+          {
+            "chapter": 1251,
+            "title": "#1251. Chương 1253: Tháp Ngân tiến quân",
+            "count": 6
+          },
+          {
+            "chapter": 148,
+            "title": "#148. Chương 148: Bắt đầu mới triệu hoán",
+            "count": 5
+          },
+          {
+            "chapter": 246,
+            "title": "#246. Chương 246: Triệu Vân giết tới",
+            "count": 5
+          },
+          {
+            "chapter": 57,
+            "title": "#57. Chương 57: Nam Ly động tác",
+            "count": 4
+          },
+          {
+            "chapter": 465,
+            "title": "#465. Chương 465: Hoàng Trung lấy một địch hai",
+            "count": 4
+          }
+        ]
+      },
+      "phá thành": {
+        "total_mentions": 80,
+        "chapters_appeared": 62,
+        "first_chapter": 49,
+        "last_chapter": 1494,
+        "peak_chapters": [
+          {
+            "chapter": 336,
+            "title": "#336. Chương 336: Liều chết phòng thủ",
+            "count": 3
+          },
+          {
+            "chapter": 735,
+            "title": "#735. Chương 735: Thành trống không bố cục",
+            "count": 3
+          },
+          {
+            "chapter": 853,
+            "title": "#853. Chương 853: Vẫn là nhịn một chút đi",
+            "count": 3
+          },
+          {
+            "chapter": 1288,
+            "title": "#1288. Chương 1290: Rút quân Tây Lũng Thành",
+            "count": 3
+          },
+          {
+            "chapter": 51,
+            "title": "#51. Chương 51: Nam Ly công thành",
+            "count": 2
+          }
+        ]
+      },
+      "đánh tan": {
+        "total_mentions": 71,
+        "chapters_appeared": 61,
+        "first_chapter": 29,
+        "last_chapter": 1456,
+        "peak_chapters": [
+          {
+            "chapter": 1100,
+            "title": "#1100. Chương 1100: Triệu Vân cắt thịt",
+            "count": 3
+          },
+          {
+            "chapter": 251,
+            "title": "#251. Chương 251: Quý Bình An giết vào hoàng cung",
+            "count": 2
+          },
+          {
+            "chapter": 275,
+            "title": "#275. Chương 275: Đông Thương bí mật vũ khí",
+            "count": 2
+          },
+          {
+            "chapter": 360,
+            "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+            "count": 2
+          },
+          {
+            "chapter": 362,
+            "title": "#362. Chương 362: Hồng Nhan cùng Vệ Ti Vũ",
+            "count": 2
+          }
+        ]
+      },
+      "xuất chinh": {
+        "total_mentions": 63,
+        "chapters_appeared": 45,
+        "first_chapter": 15,
+        "last_chapter": 1457,
+        "peak_chapters": [
+          {
+            "chapter": 145,
+            "title": "#145. Chương 145: Nam Ly công Bắc cảnh tam châu",
+            "count": 6
+          },
+          {
+            "chapter": 824,
+            "title": "#824. Chương 824: Văn thần triệu hoán",
+            "count": 4
+          },
+          {
+            "chapter": 16,
+            "title": "#16. Chương 16: Quý Bình An dã vọng",
+            "count": 3
+          },
+          {
+            "chapter": 21,
+            "title": "#21. Chương 21: Mã Tắc Miễn Tử Lệnh",
+            "count": 3
+          },
+          {
+            "chapter": 831,
+            "title": "#831. Chương 831: Viễn chinh Đại La: Xuất phát",
+            "count": 3
+          }
+        ]
+      },
+      "tử chiến": {
+        "total_mentions": 49,
+        "chapters_appeared": 39,
+        "first_chapter": 30,
+        "last_chapter": 1501,
+        "peak_chapters": [
+          {
+            "chapter": 949,
+            "title": "#949. Chương 949: Thác Hạp điên cuồng",
+            "count": 3
+          },
+          {
+            "chapter": 1074,
+            "title": "#1074. Chương 1074: Quỷ Vương tâm ngoan",
+            "count": 3
+          },
+          {
+            "chapter": 127,
+            "title": "#127. Chương 127: Cắt cỏ, muốn trừ tận gốc",
+            "count": 2
+          },
+          {
+            "chapter": 440,
+            "title": "#440. Chương 440: Cuối cùng lựa chọn",
+            "count": 2
+          },
+          {
+            "chapter": 793,
+            "title": "#793. Chương 793: Đục thuyền",
+            "count": 2
+          }
+        ]
+      },
+      "vây thành": {
+        "total_mentions": 27,
+        "chapters_appeared": 17,
+        "first_chapter": 167,
+        "last_chapter": 1428,
+        "peak_chapters": [
+          {
+            "chapter": 948,
+            "title": "#948. Chương 948: Thác Hạp lửa giận",
+            "count": 5
+          },
+          {
+            "chapter": 1347,
+            "title": "#1347. Chương 1349: Hư thực ở giữa",
+            "count": 4
+          },
+          {
+            "chapter": 646,
+            "title": "#646. Chương 646: Triệu Thiên Lỗi công thành",
+            "count": 2
+          },
+          {
+            "chapter": 1259,
+            "title": "#1259. Chương 1261: Nhân Thể Tạc Đạn",
+            "count": 2
+          },
+          {
+            "chapter": 1377,
+            "title": "#1377. Chương 1379: Tử Ngọc Sùng hai mưu Quý Bình An",
+            "count": 2
+          }
+        ]
+      },
+      "giải cứu": {
+        "total_mentions": 21,
+        "chapters_appeared": 17,
+        "first_chapter": 28,
+        "last_chapter": 1503,
+        "peak_chapters": [
+          {
+            "chapter": 1472,
+            "title": "#1472. Chương 1474: Mục tiêu: Thiên A Thị Hoàng Thành",
+            "count": 3
+          },
+          {
+            "chapter": 860,
+            "title": "#860. Chương 860: Ngự giá thẳng hướng thâm uyên",
+            "count": 2
+          },
+          {
+            "chapter": 1263,
+            "title": "#1263. Chương 1265: Tử Ngọc Sùng du thuyết Bắc Minh",
+            "count": 2
+          },
+          {
+            "chapter": 28,
+            "title": "#28. Chương 28: Giả Hủ chi độc",
+            "count": 1
+          },
+          {
+            "chapter": 152,
+            "title": "#152. Chương 152: Liễu Châu ngoài thành giao đấu",
+            "count": 1
+          }
+        ]
+      },
+      "hỏa công": {
+        "total_mentions": 19,
+        "chapters_appeared": 15,
+        "first_chapter": 28,
+        "last_chapter": 1494,
+        "peak_chapters": [
+          {
+            "chapter": 51,
+            "title": "#51. Chương 51: Nam Ly công thành",
+            "count": 2
+          },
+          {
+            "chapter": 340,
+            "title": "#340. Chương 340: Về Bắc cảnh tam châu (",
+            "count": 2
+          },
+          {
+            "chapter": 570,
+            "title": "#570. Chương 570: Uyển Châu thành đại thắng (thứ tám càng )",
+            "count": 2
+          },
+          {
+            "chapter": 1272,
+            "title": "#1272. Chương 1274: Cầu Hòa cùng yêu cầu sống giằng co",
+            "count": 2
+          },
+          {
+            "chapter": 28,
+            "title": "#28. Chương 28: Giả Hủ chi độc",
+            "count": 1
+          }
+        ]
+      },
+      "thắng lợi": {
+        "total_mentions": 18,
+        "chapters_appeared": 18,
+        "first_chapter": 134,
+        "last_chapter": 1504,
+        "peak_chapters": [
+          {
+            "chapter": 134,
+            "title": "#134. Chương 134: Mang đi Cơ Vô Pháp",
+            "count": 1
+          },
+          {
+            "chapter": 180,
+            "title": "#180. Chương 180: Phân tích Cung Thư Sinh",
+            "count": 1
+          },
+          {
+            "chapter": 181,
+            "title": "#181. Chương 181: Chiêu hàng",
+            "count": 1
+          },
+          {
+            "chapter": 264,
+            "title": "#264. Chương 264: Chém giết Trầm Lưu Lương (Chương 19: )",
+            "count": 1
+          },
+          {
+            "chapter": 291,
+            "title": "#291. Chương 291: Cuối cùng điên cuồng (thứ mười một càng )",
+            "count": 1
+          }
+        ]
+      },
+      "cứu viện": {
+        "total_mentions": 15,
+        "chapters_appeared": 14,
+        "first_chapter": 353,
+        "last_chapter": 1457,
+        "peak_chapters": [
+          {
+            "chapter": 1307,
+            "title": "#1307. Chương 1309: Kim Khuê, Kim Ô giáp",
+            "count": 2
+          },
+          {
+            "chapter": 353,
+            "title": "#353. Chương 353: Hề Nhan du thuyết Vân Ninh",
+            "count": 1
+          },
+          {
+            "chapter": 589,
+            "title": "#589. Chương 589: An bài",
+            "count": 1
+          },
+          {
+            "chapter": 618,
+            "title": "#618. Chương 618: Sư môn gặp lại",
+            "count": 1
+          },
+          {
+            "chapter": 690,
+            "title": "#690. Chương 690: Vân Ninh mưu Bạch Mã Nghĩa Tòng",
+            "count": 1
+          }
+        ]
+      },
+      "dạ tập": {
+        "total_mentions": 12,
+        "chapters_appeared": 6,
+        "first_chapter": 930,
+        "last_chapter": 1298,
+        "peak_chapters": [
+          {
+            "chapter": 1297,
+            "title": "#1297. Chương 1299: Cầu sinh phục sát",
+            "count": 4
+          },
+          {
+            "chapter": 1295,
+            "title": "#1295. Chương 1297: Dạ tập Thánh Đức Đại Sâm Lâm",
+            "count": 3
+          },
+          {
+            "chapter": 931,
+            "title": "#931. Chương 931: Giết vào Dương Hoa Thành",
+            "count": 2
+          },
+          {
+            "chapter": 930,
+            "title": "#930. Chương 930: Dạ tập kế sách",
+            "count": 1
+          },
+          {
+            "chapter": 1236,
+            "title": "#1236. Chương 1236: Tử Ngọc Sùng binh đến Bách Khổng Thành",
+            "count": 1
+          }
+        ]
+      },
+      "bại trận": {
+        "total_mentions": 9,
+        "chapters_appeared": 9,
+        "first_chapter": 39,
+        "last_chapter": 1500,
+        "peak_chapters": [
+          {
+            "chapter": 39,
+            "title": "#39. Chương 39: Nhìn không thấu Giả Hủ",
+            "count": 1
+          },
+          {
+            "chapter": 46,
+            "title": "#46. Chương 46: Giả Hủ an bài",
+            "count": 1
+          },
+          {
+            "chapter": 54,
+            "title": "#54. Chương 54: Chưởng khống Bắc cảnh tam châu",
+            "count": 1
+          },
+          {
+            "chapter": 56,
+            "title": "#56. Chương 56: Vũ Hoàng tâm sâu",
+            "count": 1
+          },
+          {
+            "chapter": 77,
+            "title": "#77. Chương 77: Tây Lăng công chúa Hề Nhan",
+            "count": 1
+          }
+        ]
+      },
+      "phục kích": {
+        "total_mentions": 9,
+        "chapters_appeared": 6,
+        "first_chapter": 293,
+        "last_chapter": 1385,
+        "peak_chapters": [
+          {
+            "chapter": 293,
+            "title": "#293. Chương 293: Hoàng Trung ôm cây đợi thỏ (thứ mười ba càng )",
+            "count": 2
+          },
+          {
+            "chapter": 1092,
+            "title": "#1092. Chương 1092: Hậu trường hắc thủ Trương Bất Minh",
+            "count": 2
+          },
+          {
+            "chapter": 1385,
+            "title": "#1385. Chương 1387: Trúng kế",
+            "count": 2
+          },
+          {
+            "chapter": 295,
+            "title": "#295. Chương 295: Thích khách thân phận (thứ mười lăm càng )",
+            "count": 1
+          },
+          {
+            "chapter": 1090,
+            "title": "#1090. Chương 1090: Trầm Hạo trúng độc",
+            "count": 1
+          }
+        ]
+      },
+      "chiến dịch": {
+        "total_mentions": 5,
+        "chapters_appeared": 5,
+        "first_chapter": 111,
+        "last_chapter": 493,
+        "peak_chapters": [
+          {
+            "chapter": 111,
+            "title": "#111. Chương 111: Vũ Hoàng cuối cùng nhìn thấu",
+            "count": 1
+          },
+          {
+            "chapter": 153,
+            "title": "#153. Chương 153: Long đằng cửu thiên, làm uy đến thiên hạ (lễ vật tăng thêm )",
+            "count": 1
+          },
+          {
+            "chapter": 340,
+            "title": "#340. Chương 340: Về Bắc cảnh tam châu (",
+            "count": 1
+          },
+          {
+            "chapter": 461,
+            "title": "#461. Chương 461: Triệu Vân bại lui",
+            "count": 1
+          },
+          {
+            "chapter": 493,
+            "title": "#493. Chương 493: Mẹ con nói chuyện (thứ mười bảy càng )",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "power_realms": {
+      "nhân tiên": {
+        "total_mentions": 691,
+        "chapters_appeared": 253,
+        "first_chapter": 343,
+        "last_chapter": 1507,
+        "peak_chapters": [
+          {
+            "chapter": 1286,
+            "title": "#1286. Chương 1288: Ba người liên thủ",
+            "count": 14
+          },
+          {
+            "chapter": 1099,
+            "title": "#1099. Chương 1099: Triệu Vân đại chiến Bắc Minh",
+            "count": 13
+          },
+          {
+            "chapter": 861,
+            "title": "#861. Chương 861: Thi Khôi Đặc Phổ",
+            "count": 10
+          },
+          {
+            "chapter": 1308,
+            "title": "#1308. Chương 1310: Quốc Giáo, đem diệt",
+            "count": 10
+          },
+          {
+            "chapter": 821,
+            "title": "#821. Chương 821: Cuối cùng sát lục",
+            "count": 9
+          }
+        ]
+      },
+      "bán tiên": {
+        "total_mentions": 598,
+        "chapters_appeared": 204,
+        "first_chapter": 540,
+        "last_chapter": 1503,
+        "peak_chapters": [
+          {
+            "chapter": 946,
+            "title": "#946. Chương 946: Ba tôn Bán Tiên giết vào Kinh Bắc Thành",
+            "count": 16
+          },
+          {
+            "chapter": 1009,
+            "title": "#1009. Chương 1009: Bắt Hiên Thanh Nguyệt",
+            "count": 13
+          },
+          {
+            "chapter": 837,
+            "title": "#837. Chương 837: Đặc Phổ bại lui Hoa Ước Thành",
+            "count": 11
+          },
+          {
+            "chapter": 1006,
+            "title": "#1006. Chương 1006: Vô song chiến tướng lại lập công",
+            "count": 11
+          },
+          {
+            "chapter": 1137,
+            "title": "#1137. Chương 1137: Lữ Bố xuất chiến",
+            "count": 11
+          }
+        ]
+      },
+      "thánh giả": {
+        "total_mentions": 450,
+        "chapters_appeared": 157,
+        "first_chapter": 207,
+        "last_chapter": 1435,
+        "peak_chapters": [
+          {
+            "chapter": 523,
+            "title": "#523. Chương 523: Triệu Vân Trương Phi giết tới",
+            "count": 13
+          },
+          {
+            "chapter": 578,
+            "title": "#578. Chương 578: Thánh giả Mạc Thiên Tinh (",
+            "count": 13
+          },
+          {
+            "chapter": 530,
+            "title": "#530. Chương 530: Từ Thiên Huyền giết ra đến (thứ mười càng )",
+            "count": 11
+          },
+          {
+            "chapter": 475,
+            "title": "#475. Chương 475: Ta nói, tính toán",
+            "count": 10
+          },
+          {
+            "chapter": 532,
+            "title": "#532. Chương 532: Tần Ức nhập Đại Hán",
+            "count": 10
+          }
+        ]
+      },
+      "bán thánh": {
+        "total_mentions": 267,
+        "chapters_appeared": 139,
+        "first_chapter": 194,
+        "last_chapter": 1435,
+        "peak_chapters": [
+          {
+            "chapter": 248,
+            "title": "#248. Chương 248: Tô Kiến Phong lại chưởng hoàng cung",
+            "count": 8
+          },
+          {
+            "chapter": 837,
+            "title": "#837. Chương 837: Đặc Phổ bại lui Hoa Ước Thành",
+            "count": 8
+          },
+          {
+            "chapter": 349,
+            "title": "#349. Chương 349: 1 triệu 200 ngàn kim",
+            "count": 7
+          },
+          {
+            "chapter": 491,
+            "title": "#491. Chương 491: Bùi Khuyết nhập hoàng cung (thứ mười lăm càng )",
+            "count": 7
+          },
+          {
+            "chapter": 348,
+            "title": "#348. Chương 348: Vân Ninh giá trị",
+            "count": 6
+          }
+        ]
+      },
+      "đột phá": {
+        "total_mentions": 224,
+        "chapters_appeared": 100,
+        "first_chapter": 10,
+        "last_chapter": 1482,
+        "peak_chapters": [
+          {
+            "chapter": 989,
+            "title": "#989. Chương 989: Nhân Tiên Triệu Vân, đại chiến kết thúc",
+            "count": 14
+          },
+          {
+            "chapter": 427,
+            "title": "#427. Chương 427: Anh linh đột phá",
+            "count": 11
+          },
+          {
+            "chapter": 428,
+            "title": "#428. Chương 428: Đột phá Quách Gia",
+            "count": 9
+          },
+          {
+            "chapter": 520,
+            "title": "#520. Chương 520: Kiếm Thánh xuất thế (thứ mười bốn càng )",
+            "count": 9
+          },
+          {
+            "chapter": 817,
+            "title": "#817. Chương 817: Nhân Tiên Lữ Bố",
+            "count": 9
+          }
+        ]
+      },
+      "đế cảnh": {
+        "total_mentions": 126,
+        "chapters_appeared": 65,
+        "first_chapter": 11,
+        "last_chapter": 836,
+        "peak_chapters": [
+          {
+            "chapter": 295,
+            "title": "#295. Chương 295: Thích khách thân phận (thứ mười lăm càng )",
+            "count": 13
+          },
+          {
+            "chapter": 225,
+            "title": "#225. Chương 225: Quý Bình Sinh đao",
+            "count": 9
+          },
+          {
+            "chapter": 370,
+            "title": "#370. Chương 370: An thị lựa chọn",
+            "count": 8
+          },
+          {
+            "chapter": 294,
+            "title": "#294. Chương 294: Quý Bình An bị tập kích giết (thứ mười bốn càng )",
+            "count": 6
+          },
+          {
+            "chapter": 240,
+            "title": "#240. Chương 240: Vững vàng chiếm thượng phong",
+            "count": 4
+          }
+        ]
+      },
+      "thăng cấp": {
+        "total_mentions": 62,
+        "chapters_appeared": 21,
+        "first_chapter": 336,
+        "last_chapter": 1508,
+        "peak_chapters": [
+          {
+            "chapter": 1222,
+            "title": "#1222. Chương 1222: Cầm xuống Quốc An Thành",
+            "count": 7
+          },
+          {
+            "chapter": 1508,
+            "title": "#1508. Chương 1510: Phân mà quản lý thiên hạ",
+            "count": 7
+          },
+          {
+            "chapter": 817,
+            "title": "#817. Chương 817: Nhân Tiên Lữ Bố",
+            "count": 6
+          },
+          {
+            "chapter": 884,
+            "title": "#884. Chương 884: Cuối cùng 1 cái thiên mệnh mưu thần",
+            "count": 6
+          },
+          {
+            "chapter": 354,
+            "title": "#354. Chương 354: Hệ thống thăng cấp",
+            "count": 4
+          }
+        ]
+      },
+      "cảnh giới": {
+        "total_mentions": 39,
+        "chapters_appeared": 26,
+        "first_chapter": 7,
+        "last_chapter": 1213,
+        "peak_chapters": [
+          {
+            "chapter": 538,
+            "title": "#538. Chương 538: Võ lực đỉnh phong cảnh giới (thứ tám càng )",
+            "count": 7
+          },
+          {
+            "chapter": 540,
+            "title": "#540. Chương 540: Bắt sống Bí Đao",
+            "count": 4
+          },
+          {
+            "chapter": 64,
+            "title": "#64. Chương 64: Quý Bình An an bài",
+            "count": 3
+          },
+          {
+            "chapter": 245,
+            "title": "#245. Chương 245: Quý Bình Sinh chiến Bán Thánh",
+            "count": 3
+          },
+          {
+            "chapter": 7,
+            "title": "#7. Chương 7: Thiên Kim Lâu chủ Vệ Ti Vũ",
+            "count": 1
+          }
+        ]
+      },
+      "tu luyện": {
+        "total_mentions": 10,
+        "chapters_appeared": 8,
+        "first_chapter": 650,
+        "last_chapter": 1358,
+        "peak_chapters": [
+          {
+            "chapter": 650,
+            "title": "#650. Chương 650: Đông Thương diệt Bùi gia",
+            "count": 3
+          },
+          {
+            "chapter": 1002,
+            "title": "#1002. Chương 1002: Lý Nho tấn công Bách Khổng Thành",
+            "count": 1
+          },
+          {
+            "chapter": 1028,
+            "title": "#1028. Chương 1028: Hoàng Trung Chiến Quỷ vương",
+            "count": 1
+          },
+          {
+            "chapter": 1084,
+            "title": "#1084. Chương 1084: A Bố phân tích",
+            "count": 1
+          },
+          {
+            "chapter": 1107,
+            "title": "#1107. Chương 1107: Quý gia tách ra",
+            "count": 1
+          }
+        ]
+      },
+      "chân khí": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 25,
+        "last_chapter": 25,
+        "peak_chapters": [
+          {
+            "chapter": 25,
+            "title": "#25. Chương 25: Chọc giận Vũ Hoàng",
+            "count": 1
+          }
+        ]
+      },
+      "vương cảnh": {
+        "total_mentions": 1,
+        "chapters_appeared": 1,
+        "first_chapter": 1011,
+        "last_chapter": 1011,
+        "peak_chapters": [
+          {
+            "chapter": 1011,
+            "title": "#1011. Chương 1011: Quỷ Vương át chủ bài ra hết",
+            "count": 1
+          }
+        ]
+      }
+    }
+  },
+  "high_density_chapters": [
+    {
+      "chapter": 360,
+      "title": "#360. Chương 360: Hệ thống thăng cấp thành công",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 51
+    },
+    {
+      "chapter": 339,
+      "title": "#339. Chương 339: 72 vạn kim",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 37
+    },
+    {
+      "chapter": 210,
+      "title": "#210. Chương 210: Chiến sự sắp nổi (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 36
+    },
+    {
+      "chapter": 267,
+      "title": "#267. Chương 267: Tử Ngọc Trạch lại hôn mê",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 32
+    },
+    {
+      "chapter": 393,
+      "title": "#393. Chương 393: Hoang mang mê ly",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 31
+    },
+    {
+      "chapter": 423,
+      "title": "#423. Chương 423: Mổ sọ thành công",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 31
+    },
+    {
+      "chapter": 151,
+      "title": "#151. Chương 151: Hủy nó lương thảo, đoạn phía sau đường",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 30
+    },
+    {
+      "chapter": 290,
+      "title": "#290. Chương 290: Nát thấu",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 30
+    },
+    {
+      "chapter": 427,
+      "title": "#427. Chương 427: Anh linh đột phá",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 30
+    },
+    {
+      "chapter": 199,
+      "title": "#199. Chương 199: Thuỷ quân tưởng tượng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 229,
+      "title": "#229. Chương 229: An bài cùng chuẩn bị",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 232,
+      "title": "#232. Chương 232: Chuẩn bị trở về Đế đô",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 316,
+      "title": "#316. Chương 316: Toàn diện chuẩn bị",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 460,
+      "title": "#460. Chương 460: Ngưu Khánh Châu đại chiến bắt đầu",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 1215,
+      "title": "#1215. Chương 1215: Tuân Úc sắp tới",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 29
+    },
+    {
+      "chapter": 169,
+      "title": "#169. Chương 169: Tử Ngọc Trạch giáng tội",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 28
+    },
+    {
+      "chapter": 310,
+      "title": "#310. Chương 310: Đại Vũ Thiên Cơ thân phận",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 28
+    },
+    {
+      "chapter": 647,
+      "title": "#647. Chương 647: Cầm xuống Tây Kinh Thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy"
+      ],
+      "total_hits": 28
+    },
+    {
+      "chapter": 1283,
+      "title": "#1283. Chương 1285: Tam quân sư hội đàm",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 28
+    },
+    {
+      "chapter": 119,
+      "title": "#119. Chương 119: Diệt nhất tộc (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 138,
+      "title": "#138. Chương 138: Triệu hồi Triệu Vân (Chương 6: )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 223,
+      "title": "#223. Chương 223: Ngao Phỉ biết rõ nói ra chân tướng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 354,
+      "title": "#354. Chương 354: Hệ thống thăng cấp",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 373,
+      "title": "#373. Chương 373: Đến nhà",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 396,
+      "title": "#396. Chương 396: Tứ phương đến chúc",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 517,
+      "title": "#517. Chương 517: Hề Nhan về Tây Lăng (thứ mười một càng )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 1210,
+      "title": "#1210. Chương 1210: Xóa bỏ Phan Phượng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 27
+    },
+    {
+      "chapter": 264,
+      "title": "#264. Chương 264: Chém giết Trầm Lưu Lương (Chương 19: )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 403,
+      "title": "#403. Chương 403: Hạch tâm tề tụ thủ",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 557,
+      "title": "#557. Chương 557: Giai đoạn thứ ba đặc thù thiên phú cộng minh (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 685,
+      "title": "#685. Chương 685: Đề bạt Triệu Vân (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 835,
+      "title": "#835. Chương 835: Công thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 967,
+      "title": "#967. Chương 967: Bản đồ địa hình hoàn thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 1324,
+      "title": "#1324. Chương 1326: Gia Cát Lượng mưu toàn cục",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 26
+    },
+    {
+      "chapter": 201,
+      "title": "#201. Chương 201: Tuyệt thế năng thần: Tuân Úc",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 216,
+      "title": "#216. Chương 216: Rốt cục bắt đầu",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 248,
+      "title": "#248. Chương 248: Tô Kiến Phong lại chưởng hoàng cung",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 287,
+      "title": "#287. Chương 287: Tuyết Cưu ngựa",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 311,
+      "title": "#311. Chương 311: Một lưới bắt (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 443,
+      "title": "#443. Chương 443: Tuyệt thế võ tướng: Trương Phi",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 562,
+      "title": "#562. Chương 562: Đông Thương Ngao Gia (thứ mười càng )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 594,
+      "title": "#594. Chương 594: Các phương chuẩn bị",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 668,
+      "title": "#668. Chương 668: Bốn nước, nên nhất thống",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 764,
+      "title": "#764. Chương 764: Đại Hán nhất thống thiên hạ",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 824,
+      "title": "#824. Chương 824: Văn thần triệu hoán",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 827,
+      "title": "#827. Chương 827: Giải tỏa Bàng Thống thiên phú",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 932,
+      "title": "#932. Chương 932: Giáp công Long Sa thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 1325,
+      "title": "#1325. Chương 1327: A Bố không cam lòng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 25
+    },
+    {
+      "chapter": 112,
+      "title": "#112. Chương 112: Cuối cùng ngả bài",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 150,
+      "title": "#150. Chương 150: Tuyệt thế danh tướng: Trương Liêu",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 156,
+      "title": "#156. Chương 156: Đao nhọn \"Hồng nhan \"",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 161,
+      "title": "#161. Chương 161: Đại chiến sắp nổi",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 211,
+      "title": "#211. Chương 211: Đối Ninh An sát cơ",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 277,
+      "title": "#277. Chương 277: Mỏ vàng (thứ mười hai càng )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 296,
+      "title": "#296. Chương 296: Giả Hủ mưu quốc",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 385,
+      "title": "#385. Chương 385: Thiên hạ tập thể nguyện",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 450,
+      "title": "#450. Chương 450: Cung gia tính toán",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 994,
+      "title": "#994. Chương 994: Phá cục hi vọng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 1096,
+      "title": "#1096. Chương 1096: Doanh Kinh cầu viện",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 1155,
+      "title": "#1155. Chương 1155: Động đứng lên Đại Hán",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 1354,
+      "title": "#1354. Chương 1356: Thi quân ân",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 24
+    },
+    {
+      "chapter": 1,
+      "title": "#1. Chương 1 : Xuyên việt thành đệ nhất người ở rể",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 88,
+      "title": "#88. Chương 88: Hề Nhan công chúa thẳng thắn",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 147,
+      "title": "#147. Chương 147: Đều có tính kế",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 148,
+      "title": "#148. Chương 148: Bắt đầu mới triệu hoán",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 157,
+      "title": "#157. Chương 157: Ta, mới là bọn họ chủ công",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 200,
+      "title": "#200. Chương 200: Liền triệu bốn tên vạn kim võ tướng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 219,
+      "title": "#219. Chương 219: 10 vạn kim võ tướng: Chu Du",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 231,
+      "title": "#231. Chương 231: Quý Sơn Hà, chữ xã tắc",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 234,
+      "title": "#234. Chương 234: To lớn Thiên Cơ",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 244,
+      "title": "#244. Chương 244: Quỷ đòi mạng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "power_realms",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 314,
+      "title": "#314. Chương 314: Chuẩn bị Tây Chinh (thứ chín càng )",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 328,
+      "title": "#328. Chương 328: Để Tần Tứ Nghiệp rời đi",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 340,
+      "title": "#340. Chương 340: Về Bắc cảnh tam châu (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 388,
+      "title": "#388. Chương 388: Mở mang",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 399,
+      "title": "#399. Chương 399: Đào Nhã gặp nguy hiểm",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 407,
+      "title": "#407. Chương 407: Quý Bình An bất an",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "power_realms",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 428,
+      "title": "#428. Chương 428: Đột phá Quách Gia",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "tech_economy"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 437,
+      "title": "#437. Chương 437: Giải tỏa Chu Du thiên phú",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 468,
+      "title": "#468. Chương 468: Ẩn tàng binh mã",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 479,
+      "title": "#479. Chương 479: Trẫm liền đánh vào đến",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 631,
+      "title": "#631. Chương 631: Mưu đồ Cẩm Quan Thành (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 692,
+      "title": "#692. Chương 692: Song phương chuẩn bị (",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 705,
+      "title": "#705. Chương 705: Tiễn giết An Vũ Hi",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 731,
+      "title": "#731. Chương 731: Tuyết nương thân phận",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 743,
+      "title": "#743. Chương 743: Tam Quốc các phương chuẩn bị",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 754,
+      "title": "#754. Chương 754: Đông Thương bại cục đã định",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 907,
+      "title": "#907. Chương 907: Hệ thống thăng cấp hoàn thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 912,
+      "title": "#912. Chương 912: Chuẩn bị hai chinh Đại La",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 985,
+      "title": "#985. Chương 985: Hiểu rõ mưu đồ",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 1218,
+      "title": "#1218. Chương 1218: Cầu nối Kiến Thành",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 1294,
+      "title": "#1294. Chương 1296: Cuối cùng tụ hợp",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 1319,
+      "title": "#1319. Chương 1321: A Bố đại quân đến",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 1364,
+      "title": "#1364. Chương 1366: Bắc Minh Tử Ngọc Sùng đánh tới",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 1435,
+      "title": "#1435. Chương 1437: Cướp ưu thế",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 23
+    },
+    {
+      "chapter": 46,
+      "title": "#46. Chương 46: Giả Hủ an bài",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 22
+    },
+    {
+      "chapter": 127,
+      "title": "#127. Chương 127: Cắt cỏ, muốn trừ tận gốc",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "locations"
+      ],
+      "total_hits": 22
+    },
+    {
+      "chapter": 145,
+      "title": "#145. Chương 145: Nam Ly công Bắc cảnh tam châu",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "tech_economy",
+        "locations"
+      ],
+      "total_hits": 22
+    },
+    {
+      "chapter": 190,
+      "title": "#190. Chương 190: Đặc thù An Tức Vệ cùng cường đại Thiên Công Thần Tượng",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "tech_economy",
+        "key_events",
+        "locations"
+      ],
+      "total_hits": 22
+    },
+    {
+      "chapter": 217,
+      "title": "#217. Chương 217: Tâm tư dị biệt",
+      "categories_hit": [
+        "summoned_heroes",
+        "world_characters",
+        "factions_orgs",
+        "battles_wars",
+        "power_realms",
+        "locations"
+      ],
+      "total_hits": 22
+    }
+  ]
+}

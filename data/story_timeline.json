@@ -1,0 +1,4479 @@
+{
+  "total_acts": 21,
+  "total_timeline_events": 265,
+  "acts": [
+    {
+      "act_number": 1,
+      "title": "Xuyên Việt & Sinh Tồn",
+      "description": "Quý Bình An xuyên việt, triệu hoán Triệu Vân, chiến đấu sinh tồn trong hoàng cung",
+      "chapter_range": "Ch.1-50",
+      "start_chapter": 1,
+      "end_chapter": 50,
+      "num_events": 14,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Xuyên Việt & Phá Giải Câu Đối Hoàng Cung",
+          "description": "Quý Bình An xuyên không nhập thể vào phò mã gia ăn chơi, giải vế đối hiểm hóc 'Thiên đương kỳ bàn tinh tác tử...' bằng vế đối 'Địa tác tỳ bà lộ tác huyền...', giành trọn trăm lượng vàng và chấn động t",
+          "start_chapter": 1,
+          "end_chapter": 1,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Câu Đối Định Bang Giao & Vũ Hoàng Ban Thưởng",
+          "description": "Vũ Hoàng đưa ra vế đối hòng thử tài quan lại và ứng phó sức ép từ Tây Lăng. Quý Bình An đối đáp chuẩn xác áp đảo sứ đoàn ngoại bang, nhận thưởng ngàn vàng và củng cố danh phận Phò mã Đại Vũ.",
+          "start_chapter": 1,
+          "end_chapter": 1,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Triệu Vân & Thiên Kim Mãi Mã Cốt",
+          "description": "Dùng Anh Hồn Lệnh kích hoạt Triệu Vân; giải tỏa Bách Điểu Triều Phượng Thương bằng 3.000 kim; cho Triệu Vân mua xác ngựa chết với giá ngàn vàng để che giấu tài năng thực sự.",
+          "start_chapter": 5,
+          "end_chapter": 5,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Chế Tạo Thấu Hoa Cao & Thu Phục Thiên Kim Lâu",
+          "description": "Quý Bình An dùng kiến thức hiện đại chế tạo xà phòng thơm cao cấp (Thấu Hoa Cao), bắt tay cùng Lâu chủ Vệ Ti Vũ độc quyền kinh doanh.",
+          "start_chapter": 8,
+          "end_chapter": 8,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thấu Hoa Cao (Xà Phòng Tinh Chế)",
+          "description": "",
+          "start_chapter": 8,
+          "end_chapter": 8,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Thích Sát Phò Mã Phủ (Quý Vô Song thử thách)",
+          "description": "Phe Quý Bình An toàn thắng, toàn bộ thích khách bị đẩy lui; Quý Vô Song thừa nhận thực lực Hoàng Cảnh đỉnh phong của Triệu Vân",
+          "start_chapter": 10,
+          "end_chapter": 10,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vũ Hoàng Hạ Chỉ Bắc Chinh (Kế Mượn Đao)",
+          "description": "Vũ Hoàng sắc phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, phong Tô Vân làm Bắc Chinh Tướng Quân cùng dẫn 30.000 quân đi dẹp Bắc Cảnh.",
+          "start_chapter": 15,
+          "end_chapter": 15,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Sắc Phong Chinh Bắc Đại Tướng Quân (Phân Hóa Binh Quyền)",
+          "description": "Vũ Hoàng ban thánh chỉ phong Tô Vân làm Bắc Chinh Đại Tướng Quân, phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, mỗi bên 3 vạn quân đi thu phục Bắc Cảnh tam châu.",
+          "start_chapter": 15,
+          "end_chapter": 15,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Vạn Kim Mưu Sĩ Mã Tắc",
+          "description": "Quý Bình An tích đủ 10.000 kim triệu hoán được Mã Tắc. Nhận thấy bản tính bàn việc binh trên giấy của Mã Tắc, Quý Bình An liền nảy ra kế đưa Mã Tắc sang phe đối thủ.",
+          "start_chapter": 17,
+          "end_chapter": 17,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Bán Quân Công 10 Vạn Kim & Hố Vũ Hoàng",
+          "description": "Quý Bình An yêu cầu mang Thập Tam hoàng tử đi cùng và ép Vũ Hoàng chi 10 vạn kim mua quân công, kết hợp với các khoản phụ thu vét sạch 200.000 lượng vàng từ quốc khố.",
+          "start_chapter": 24,
+          "end_chapter": 24,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Độc Sĩ Giả Hủ & Tiếp Quản Huyết Y Doanh",
+          "description": "Lấy 10 vạn kim từ triều đình triệu hoán Giả Hủ; mở khóa thiên phú Triệu Vân. Giả Hủ khuyên xin tân binh Huyết Y Doanh để tự tay xây dựng đội quân trung thành tuyệt đối.",
+          "start_chapter": 27,
+          "end_chapter": 27,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Đột Phá Cửa Ngõ Khai Nguyên Huyện",
+          "description": "Phe Quý Bình An toàn thắng mà không tổn thất binh mã",
+          "start_chapter": 42,
+          "end_chapter": 45,
+          "chapter_span": 4
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Giả Trúng Độc Đoạt Cửa Ngõ Khai Nguyên Huyện",
+          "description": "Quý Bình An giả vờ bị hạ độc để Triệu Vân xông vào thành bắt sống Lưu Nguyên, tước đoạt toàn bộ kho lương của Tứ hoàng tử.",
+          "start_chapter": 43,
+          "end_chapter": 43,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Bắc Cảnh Tam Châu Lần Thứ Nhất (Xả Lũ Diệt Địch Hỏa)",
+          "description": "2 vạn quân Nam Ly bị xóa sổ hoàn toàn; Triệu Vân bắt sống Đại tướng Địch Hỏa",
+          "start_chapter": 48,
+          "end_chapter": 54,
+          "chapter_span": 7
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "title": "Đế Đô Quyền Mưu",
+      "description": "Điển Vi xuất thế, đối đầu Tô Kiến Phong, Vũ Hoàng trúng độc băng hà, Tân Hoàng đăng cơ",
+      "chapter_range": "Ch.51-110",
+      "start_chapter": 51,
+      "end_chapter": 110,
+      "num_events": 12,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Xả Lũ Thanh Châu Bắt Sống Địch Hỏa",
+          "description": "Giả Hủ dùng kế đóng cửa xả lũ tiêu diệt 2 vạn quân Nam Ly trong hẻm thành; Triệu Vân bắt sống Địch Hỏa giải về kinh đô.",
+          "start_chapter": 52,
+          "end_chapter": 52,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Cổ Chi Ác Lai Điển Vi",
+          "description": "Dùng 10 vạn kim triệu hoán Điển Vi; giải tỏa Tấn Thiết Song Kích và hệ thống Lục Kỹ.",
+          "start_chapter": 63,
+          "end_chapter": 63,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Chiến Cổng Thành Đế Đô (Điển Vi xuất thế)",
+          "description": "Trong 10 nhịp thở, toàn bộ 50 vệ binh bị đánh gục la liệt; Tử Ngọc Hằng hoảng sợ rút lui",
+          "start_chapter": 66,
+          "end_chapter": 67,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Trực Thần Đối Câu Đối Trắng Kinh Động Triều Đình",
+          "description": "Quý Bình An mặc áo tang đối câu đối trắng ngay tại điện, tự phong làm trực thần dám nói thẳng, khiến Vũ Hoàng không thể trừng phạt mà phải ban thưởng chức Điển Nông Trung Lang Tướng.",
+          "start_chapter": 69,
+          "end_chapter": 69,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Minh Thăng Ám Hàng: Quý Bình An Thụ Phong Điển Nông Trung Lang Tướng",
+          "description": "Sau đại thắng Bắc Cảnh, Vũ Hoàng tước binh quyền nhưng phong Quý Bình An làm Điển Nông Trung Lang Tướng phụ trách thuế lương cả nước và ban áo Tử Kinh Y.",
+          "start_chapter": 69,
+          "end_chapter": 69,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tỉ Võ Tam Quan & Đoạt Huyết Long Lệnh",
+          "description": "Điển Vi hạ gục cao thủ Tây Lăng; Quý Bình An đối thơ thắng tuyệt đối, đoạt lấy Huyết Long Lệnh từ tay sứ đoàn Tây Lăng.",
+          "start_chapter": 80,
+          "end_chapter": 80,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
+          "description": "Đại Vũ toàn thắng cả 3 cửa ải",
+          "start_chapter": 80,
+          "end_chapter": 83,
+          "chapter_span": 4
+        },
+        {
+          "category": "political_events",
+          "name": "Sứ Đoàn Tây Lăng Đòi Mua Quý Bình An Bằng Trăm Vạn Kim",
+          "description": "Tây Lăng đưa ra đề nghị trao đổi trăm vạn kim để đưa Quý Bình An về Tây Lăng làm thượng khách, đồng thời ký kết minh ước chống Nam Ly.",
+          "start_chapter": 84,
+          "end_chapter": 84,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vũ Hoàng Trúng Độc Thực Tâm Bách Cốt Trùng",
+          "description": "Vũ Hoàng bị đầu độc bằng cổ độc Thực Tâm Bách Cốt Trùng cực kỳ nguy hiểm, nội tạng suy kiệt dần.",
+          "start_chapter": 90,
+          "end_chapter": 90,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Tuyệt Thế Mưu Thần Lý Nho",
+          "description": "Dùng 10 vạn kim triệu hoán Lý Nho; Lý Nho đề xuất kế sách liên kết Đại hoàng tử Tử Ngọc Trạch và diệt trừ toàn bộ đối thủ ngầm.",
+          "start_chapter": 97,
+          "end_chapter": 97,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Biến Cung Đình: Dẹp Loạn Cấm Vệ Quân Tô Kiến Phong",
+          "description": "Phe Quý gia đại thắng; Tô Kiến Phong bại trận bị bắt; Hứa Hòa Lâm bị giam giữ",
+          "start_chapter": 104,
+          "end_chapter": 110,
+          "chapter_span": 7
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Điển Vi Đánh Bại Tô Kiến Phong Dẹp Tan Binh Biến",
+          "description": "Tô Kiến Phong đánh vào hoàng cung bị Điển Vi dùng Song Thiết Kích đâm xuyên hai vai phế bỏ; Chiến Hổ Quân bắt trọn bè lũ phản loạn.",
+          "start_chapter": 109,
+          "end_chapter": 109,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "title": "Bắc Cảnh Dựng Cờ",
+      "description": "Xây dựng lực lượng tại Bắc Cảnh, Hỏa công Bắc Cô Sơn, phát minh Lưu Hỏa, Cơ Quan Nỏ",
+      "chapter_range": "Ch.111-190",
+      "start_chapter": 111,
+      "end_chapter": 190,
+      "num_events": 17,
+      "events": [
+        {
+          "category": "political_events",
+          "name": "Vũ Hoàng Lập Thái Tử Tử Ngọc Trạch & Băng Hà",
+          "description": "Sau khi dẹp yên cuộc binh biến của Tô Kiến Phong, Vũ Hoàng nhận thấy chỉ có Đại hoàng tử liên minh với Quý gia mới giữ được triều đình; ban chiếu lập Tử Ngọc Trạch làm Thái tử rồi băng hà.",
+          "start_chapter": 113,
+          "end_chapter": 113,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vũ Hoàng Băng Hà & Tân Hoàng Kế Vị",
+          "description": "Quốc chung vang 9 tiếng, Vũ Hoàng băng hà; Quý Vô Song giả chết lui vào bóng tối; Tử Ngọc Trạch kế vị hoàng đế.",
+          "start_chapter": 114,
+          "end_chapter": 114,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Tân Hoàng Đăng Cơ Sắc Phong Bách Quan",
+          "description": "Tử Ngọc Trạch chính thức lên ngôi hoàng đế, lập An thị (người An gia) làm Hoàng hậu, ban thưởng công thần và phong quan tiến tước.",
+          "start_chapter": 117,
+          "end_chapter": 117,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Thanh Trừng Toàn Tộc Ngao Gia Bất Chấp Hoàng Mệnh",
+          "description": "Quý Bình An tự mình ra lệnh cho Triệu Vân tru diệt toàn bộ Ngao phủ mà không cần thông qua chiếu chỉ của triều đình, sau đó ép Tân Hoàng phải hợp thức hóa bằng một chiếu chỉ trừng phạt tội thần.",
+          "start_chapter": 120,
+          "end_chapter": 120,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đêm Huyết Tẩy Ngao Phủ",
+          "description": "Toàn bộ gia tộc Ngao thị bị diệt môn trong một đêm",
+          "start_chapter": 121,
+          "end_chapter": 123,
+          "chapter_span": 3
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tru Diệt Toàn Bộ Gia Tộc Ngao Thị",
+          "description": "Quý Bình An dẫn quân diệt môn Ngao phủ trong đêm vì tội phản trắc và mưu hại Quý gia.",
+          "start_chapter": 123,
+          "end_chapter": 123,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Cứu Kỳ Nhân Cơ Vô Pháp & Cơ Vô Thiên",
+          "description": "Quý Bình An cướp ngục Đình Úy Phủ giải cứu quỷ y Cơ Vô Pháp và cao thủ khinh công Cơ Vô Thiên.",
+          "start_chapter": 134,
+          "end_chapter": 134,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Náo Đình Úy Phủ Giải Cứu Điển Vi Và Cơ Vô Pháp",
+          "description": "Giải cứu thành công Điển Vi và kỳ nhân Cơ Vô Pháp an toàn",
+          "start_chapter": 136,
+          "end_chapter": 137,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Tuyệt Thế Mỹ Nhân Điêu Thuyền",
+          "description": "Sử dụng Thẻ Anh Hồn đặc thù triệu hoán Điêu Thuyền; mở khóa kỹ năng mị hoặc Bế Nguyệt.",
+          "start_chapter": 140,
+          "end_chapter": 140,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thuốc Giải Thực Tâm Bách Cốt Trùng",
+          "description": "",
+          "start_chapter": 141,
+          "end_chapter": 141,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Tuyệt Thế Danh Tướng Trương Liêu",
+          "description": "Triệu hoán Trương Liêu (10 vạn kim), Hoa Hùng và Khúc Nghĩa (mỗi người 1 vạn kim); mở khóa binh chủng Tiên Đăng Tử Sĩ.",
+          "start_chapter": 150,
+          "end_chapter": 150,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
+          "description": "Đại thắng; 30 vạn quân Nam Ly đại bại tháo chạy; Chu Bất Ninh bị trảm thủ; Cung Sinh nhận thất bại đầu tiên trong đời",
+          "start_chapter": 151,
+          "end_chapter": 182,
+          "chapter_span": 32
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Chính Thức Thành Lập Mạng Lưới Sát Thủ 'Hồng Nhan'",
+          "description": "Quý Bình An trao toàn quyền thanh đao Hồng Nhan cho Điêu Thuyền quản lý nhằm tạo mạng lưới tình báo nữ bao trùm thiên hạ.",
+          "start_chapter": 156,
+          "end_chapter": 156,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Hỏa Bắc Cô Sơn Thiêu Rụi Đại Quân Nam Ly",
+          "description": "Giả Hủ dùng kế dụ 30 vạn quân Nam Ly vào thung lũng Bắc Cô Sơn rồi phóng hỏa thiêu rụi toàn bộ lương thảo và trang bị địch.",
+          "start_chapter": 174,
+          "end_chapter": 174,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triển Lãm Móng Ngựa Sắt & Đột Phá Kỵ Binh",
+          "description": "Quý Bình An đưa ra phát minh móng ngựa sắt đóng vào vó ngựa chiến, giúp kỵ binh vượt mọi địa hình đá nhọn không bị tổn hại.",
+          "start_chapter": 176,
+          "end_chapter": 176,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Móng Ngựa Sắt (Thiết Đề / Thiết Đạp)",
+          "description": "",
+          "start_chapter": 176,
+          "end_chapter": 176,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Nỏ Liên Hoàn Cơ Quan",
+          "description": "",
+          "start_chapter": 190,
+          "end_chapter": 190,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 4,
+      "title": "Trấn Quốc Công",
+      "description": "Đại hôn Điêu Thuyền, bức cung phong Trấn Quốc Công, Tuân Úc làm Thừa Tướng",
+      "chapter_range": "Ch.191-260",
+      "start_chapter": 191,
+      "end_chapter": 260,
+      "num_events": 12,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Tuyệt Thế Năng Thần Tuân Úc & Ngũ Bộ Chiến Lược",
+          "description": "Triệu hoán Tuân Úc bằng 10 vạn kim; Tuân Úc đề xuất kế hoạch 5 bước thâu tóm toàn diện kinh tế, quân đội và chính quyền Đại Vũ.",
+          "start_chapter": 201,
+          "end_chapter": 201,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Chặn Đứng Thích Khách Tây Lăng Quỷ Quật",
+          "description": "Thích khách bị tiêu diệt tại chỗ; Điển Vi được Cơ Vô Pháp giải độc cứu sống",
+          "start_chapter": 203,
+          "end_chapter": 204,
+          "chapter_span": 2
+        },
+        {
+          "category": "technologies",
+          "name": "Bộ Giáp Trọng Thiết Phản Chấn",
+          "description": "",
+          "start_chapter": 205,
+          "end_chapter": 205,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Triệu Vân Đơn Thương Độc Mã Bức Hàng Tây Kinh",
+          "description": "Triệu Vân áp sát hoàng cung Tây Lăng không ai dám cản; Tây Lăng hoảng sợ chấp nhận thả Quý Bình Sinh",
+          "start_chapter": 222,
+          "end_chapter": 222,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Hỏa Dược & Ống Trúc Phát Nổ",
+          "description": "",
+          "start_chapter": 227,
+          "end_chapter": 227,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Trưởng Tử Quý Sơn Hà Xuất Sinh",
+          "description": "Điêu Thuyền hạ sinh con trai đầu lòng, Quý Bình An đặt tên là Quý Sơn Hà, tự Xã Tắc.",
+          "start_chapter": 228,
+          "end_chapter": 228,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long)",
+          "description": "Triệu Vân thương phong áp đảo, Tử Triệu Phong và Tô Kiến Phong bị thương; Trần Hải can ngăn đình chiến",
+          "start_chapter": 238,
+          "end_chapter": 240,
+          "chapter_span": 3
+        },
+        {
+          "category": "political_events",
+          "name": "Vụ Án Cần Chính Điện: Đình Chiến Bắt Buộc Giữa Hoàng Đế & Quý Gia",
+          "description": "Tân Hoàng Tử Ngọc Trạch mưu sát Triệu Vân tại ngự điện thất bại nhục nhã trước sức mạnh Bán Thánh của Triệu Tử Long; buộc phải nén giận tuyên bố hiểu lầm và đình chiến.",
+          "start_chapter": 240,
+          "end_chapter": 240,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Tiêu Diệt Phi Báo Quân",
+          "description": "Phi Báo Quân bị xóa sổ hoàn toàn; Bán Thánh phe địch bị thương bỏ chạy",
+          "start_chapter": 245,
+          "end_chapter": 247,
+          "chapter_span": 3
+        },
+        {
+          "category": "battles",
+          "name": "Quý Bình An Mang Quân Công Phá Hoàng Cung",
+          "description": "Toàn bộ cấm vệ buông vũ khí quy hàng; Quý Bình An kiểm soát tuyệt đối hoàng cung",
+          "start_chapter": 251,
+          "end_chapter": 253,
+          "chapter_span": 3
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Bình An Thụ Phong Trấn Quốc Công & Tuân Úc Làm Thừa Tướng",
+          "description": "Sau khi đánh chiếm hoàng cung dẹp loạn, Quý Bình An ép Tân Hoàng ban chiếu phong y làm Trấn Quốc Công và phong Tuân Úc làm Thừa Tướng Đại Vũ.",
+          "start_chapter": 255,
+          "end_chapter": 255,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Sắc Phong Trấn Quốc Công & Tuân Úc Tiếp Quản Chức Vị Thừa Tướng",
+          "description": "Quý Bình An đem đại quân kiểm soát hoàng cung, ép Tử Ngọc Trạch ban chiếu phong Quý Bình An làm Trấn Quốc Công (quyền ngang quân vương) và bãi miễn chức Thừa tướng của Hứa Hòa Lâm để phong cho Tuân Úc",
+          "start_chapter": 255,
+          "end_chapter": 255,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 5,
+      "title": "Chinh Phạt Biên Giới",
+      "description": "Huyết chiến Hồn Huyết Sơn, chiến dịch Lâm Quan Thành, bẻ gãy Tây Lăng Thiết Kỵ",
+      "chapter_range": "Ch.261-325",
+      "start_chapter": 261,
+      "end_chapter": 325,
+      "num_events": 11,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
+          "description": "Đại thắng toàn diện; Triệu Văn Dụ bị chém đầu; Tử Triệu Phong trúng độc Toái Mệnh Đan chết; quân An gia thảm bại rút lui",
+          "start_chapter": 269,
+          "end_chapter": 279,
+          "chapter_span": 11
+        },
+        {
+          "category": "technologies",
+          "name": "Toái Mệnh Đan & Độc Dược Phá Tạng",
+          "description": "",
+          "start_chapter": 274,
+          "end_chapter": 274,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Vũ Khí Lưu Hỏa (Hỏa Khí Công Thành)",
+          "description": "",
+          "start_chapter": 276,
+          "end_chapter": 276,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Thắng Hồn Huyết Sơn Thu Hoạch Trăm Xe Mỏ Vàng",
+          "description": "Dùng vũ khí hỏa công Lưu Hỏa phá nát quân An gia tại Hồn Huyết Sơn, trảm sát tướng Đông Thương Triệu Văn Dụ, tịch thu hơn 100 xe mỏ vàng (trị giá 75 vạn kim).",
+          "start_chapter": 277,
+          "end_chapter": 277,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Khởi Động Đại Kế 'Mưu Quốc' Chuyển Giao Hoàng Vị",
+          "description": "Bốn đại tuyệt thế mưu thần cùng ngồi lại vạch ra lộ trình 'Mưu Quốc': lợi dụng tình trạng hôn mê của Tử Ngọc Trạch, mở kho cứu tế thu phục dân tâm, mở rộng bờ cõi đánh chiếm Nam Quan và Tây Lăng để da",
+          "start_chapter": 296,
+          "end_chapter": 296,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Chém giết Hoa Chấn Viễn và Huyết Tùng, Thu phục Cơ Vô Pháp",
+          "description": "Quý Bình An phát hiện và xử tử hai gián điệp nội gián nguy hiểm là Hoa Chấn Viễn và Huyết Tùng, dùng ân uy thu phục hoàn toàn Cơ Vô Pháp làm mật thám trung thành.",
+          "start_chapter": 301,
+          "end_chapter": 301,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Sắc phong Tịnh Kiên Vương & Khẩu quyết 'Một lời mà vì thiên hạ pháp'",
+          "description": "Vũ Hoàng Tử Ngọc Trạch bất ngờ phong Quý Bình An làm Tịnh Kiên Vương, Thiên Uy Thượng Tướng Quân. Tại Ch.305, hai người đàm đạo và Quý Bình An đưa ra tôn chỉ 'Nhất ngôn nhi vi thiên hạ pháp'.",
+          "start_chapter": 303,
+          "end_chapter": 303,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Tử Ngọc Trạch Sắc Phong Quý Bình An Làm Tịnh Kiên Vương",
+          "description": "Quý Bình An chính thức nắm binh quyền Đại Vũ, đứng ngang hàng với hoàng đế.",
+          "start_chapter": 303,
+          "end_chapter": 303,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Ninh An Công Chúa Trúng Độc Qua Đời Dưới Gốc Hoa Lê",
+          "description": "Ninh An công chúa trúng độc bí ẩn, ngồi trên xích đu dưới gốc cây hoa lê và qua đời, ứng nghiệm chính xác lời sấm truyền của Đại Vũ Thiên Cơ.",
+          "start_chapter": 307,
+          "end_chapter": 307,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vạch Trần Thân Phận Đại Vũ Thiên Cơ: Bắt Giữ Vu Văn Châu",
+          "description": "Quý Bình An phong tỏa cổng Tây Đế đô, chặn bắt cỗ xe ngựa định đào tẩu của Ám Ảnh, vạch trần Viện sĩ Hàn Lâm Viện Vu Văn Châu chính là 'Đại Vũ Thiên Cơ'.",
+          "start_chapter": 310,
+          "end_chapter": 310,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Cửa Ải Lâm Quan Thành (Đến Quan Thành)",
+          "description": "Đại Hán đại thắng; Đổng Vệ Đông trọng thương bị bắt; Tần Tứ Nghiệp đại bại tháo lui.",
+          "start_chapter": 321,
+          "end_chapter": 325,
+          "chapter_span": 5
+        }
+      ]
+    },
+    {
+      "act_number": 6,
+      "title": "Đăng Cơ Hoàng Đế",
+      "description": "Hệ thống Tranh Bá, Mã Siêu triệu hoán, Đăng cơ Hoàng Đế Đại Hán, Bốn Chính Lệnh",
+      "chapter_range": "Ch.326-386",
+      "start_chapter": 326,
+      "end_chapter": 386,
+      "num_events": 10,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Trận Phục Kích Hoài Hà - Nghiệp Thành",
+          "description": "Tần Tứ Nghiệp bị dồn vào đường cùng nhưng Quý Bình An hạ lệnh cố tình để Tần Tứ Nghiệp sống sót rời đi.",
+          "start_chapter": 326,
+          "end_chapter": 328,
+          "chapter_span": 3
+        },
+        {
+          "category": "battles",
+          "name": "Trận Phòng Thủ Bắc Cô Sơn Quan Ải",
+          "description": "Quân Đông Thương đại bại thương vong vô số; Bùi Nguyên bị Điển Vi bắt sống tại chỗ.",
+          "start_chapter": 334,
+          "end_chapter": 338,
+          "chapter_span": 5
+        },
+        {
+          "category": "battles",
+          "name": "Trận Tập Kích Đánh Úp Linh Khê Thành",
+          "description": "Thành vỡ; bắt sống Bán Thánh Vân Ninh.",
+          "start_chapter": 346,
+          "end_chapter": 348,
+          "chapter_span": 3
+        },
+        {
+          "category": "political_events",
+          "name": "Thỏa Thuận Trao Đổi Bán Thánh Vân Ninh & Tống Tiền Tây Lăng",
+          "description": "Tây Lăng trả 1.2 triệu vàng chuộc Vân Ninh; Hề Nhan thuyết phục Vân Ninh quy thuận về phe mình.",
+          "start_chapter": 349,
+          "end_chapter": 349,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Đông Sơn Thành & Bùi An Hà",
+          "description": "Đông Sơn thành thất thủ; quân An gia tan vỡ hoàn toàn. Lý Nho đào hố chôn sống hàng ngàn tù binh trước mặt hai thành An Hà - An Lộ.",
+          "start_chapter": 351,
+          "end_chapter": 357,
+          "chapter_span": 7
+        },
+        {
+          "category": "technologies",
+          "name": "Lưu Hỏa Đạn / Thần Hỏa Lôi",
+          "description": "",
+          "start_chapter": 356,
+          "end_chapter": 356,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hệ Thống Thăng Cấp Toàn Diện: Mở Ra Giai Đoạn Tranh Bá",
+          "description": "Hệ thống chính thức nâng cấp thành công sau chiến tích Tây Chinh và Đông Khống. Hủy bỏ triệu hoán thiên kim, mở cấp 10k, 50k, 100k, 500k, và hệ thống Anh Linh Điểm dựa trên chinh phạt và công thành.",
+          "start_chapter": 360,
+          "end_chapter": 360,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Mưu Sách 'Tam Nhượng Đế Vị' & Thu Nhận Toàn Bộ Dân Tâm",
+          "description": "Quý Bình An ba lần từ chối lời mời lên ngôi của triều thần, buộc bách tính toàn quốc phải tự phát ký đơn thỉnh nguyện.",
+          "start_chapter": 375,
+          "end_chapter": 375,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Vũ Vạn Dân & Bách Quan Tập Thể Cầu Xin: Đăng Cơ Hoàng Đế",
+          "description": "Sau 3 lần từ chối hoàng vị (tam nhượng đế vị), đại diện bách tính khắp các châu và 10 vạn tướng sĩ tề tựu ngoài cổng Tây quỳ rạp cầu xin Tịnh Kiên Vương đăng cơ. Quý Bình An chính thức lên ngôi, xuất ",
+          "start_chapter": 385,
+          "end_chapter": 385,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Đại Điển Đăng Cơ Hoàng Đế & Ban Bố Bốn Chính Lệnh",
+          "description": "Quý Bình An chính thức xưng đế, ban bố giảm thuế 30%, lập tân châu, trợ cấp binh sĩ và Chiêu Hiền Lệnh.",
+          "start_chapter": 386,
+          "end_chapter": 386,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 7,
+      "title": "Định Quốc Năm Đầu",
+      "description": "Quách Gia đột phá Dự Phán, Đại chiến Ngưu Khánh Châu, Chu Du hỏa thiêu",
+      "chapter_range": "Ch.387-460",
+      "start_chapter": 387,
+      "end_chapter": 460,
+      "num_events": 10,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Ban Bố Bốn Chính Lệnh Định Giang Sơn",
+          "description": "Ngay khi bước lên đế vị, Quý Bình An ban hành 4 quốc chỉ: (1) Giảm 30% thuế vĩnh viễn; (2) Di dân lập tân châu thành tại 3 khu vực hiểm nghèo; (3) Tăng 30% quân hưởng, bảo hộ trọn đời gia đình liệt sĩ",
+          "start_chapter": 387,
+          "end_chapter": 387,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Tái Chiếm Uyển Châu & Chặn Đánh Lạc Thiên Thanh",
+          "description": "Quân Nam Ly bị cắt đứt đường lui như cá trong chậu, thương vong nặng nề, Lạc Thiên Thanh phải tháo chạy.",
+          "start_chapter": 388,
+          "end_chapter": 392,
+          "chapter_span": 5
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đổi Quốc Hiệu Đại Hán, Dựng Long Kỳ, Định Niên Hiệu Định Quốc Năm Đầu",
+          "description": "Quý Bình An tuyên bố bãi bỏ quốc hiệu Đại Vũ, chính thức cải thành ĐẠI HÁN, lấy niên hiệu Định Quốc năm đầu, dựng lá cờ rồng Long Kỳ và kế hoạch Cẩm Y thiên hạ.",
+          "start_chapter": 411,
+          "end_chapter": 411,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Chính Thức Đổi Quốc Hiệu Đại Hán & Định Niên Hiệu Định Quốc Năm Đầu",
+          "description": "Đại Vũ chính thức đi vào dĩ vãng; Đại Hán xuất hiện với Long Kỳ và cơ cấu mới.",
+          "start_chapter": 411,
+          "end_chapter": 411,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Kỹ Thuật Phẫu Thuật Mổ Sọ & Ma Phế Tán",
+          "description": "",
+          "start_chapter": 419,
+          "end_chapter": 419,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hoa Đà Đại Phẫu Thuật Mổ Sọ Thành Công Cứu Sống Lý Nho",
+          "description": "Lý Nho trúng kỳ cổ Thực Não Trùng ăn mòn đại não. Hoa Đà thi triển Ma Phế Tán và kỹ năng Hồi Xuân, thực hiện ca mổ sọ mở hộp não gắp cổ trùng thành công.",
+          "start_chapter": 423,
+          "end_chapter": 423,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Sắc Phong Điêu Thuyền Làm Quốc Hậu, Quý Sơn Hà Làm Hoàng Thái Tử",
+          "description": "Điêu Thuyền trở thành mẫu nghi thiên hạ, mở khóa thiên phú Hồng Nhan; Quý Sơn Hà (1 tuổi) được định danh thái tử.",
+          "start_chapter": 427,
+          "end_chapter": 427,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đột Phá Thiên Mệnh Mưu Thần Quách Gia & Tăng 50 Năm Thọ Mệnh",
+          "description": "Quý Bình An tiêu tốn 10 vạn anh linh điểm mở thiên phú Dự Phán (+1 trí lực) và đột phá Quách Gia (+4 trí lực đạt 104), Nghịch thiên cải mệnh tăng thêm 50 năm tuổi thọ, kích hoạt hệ thống Thiên Mệnh Võ",
+          "start_chapter": 428,
+          "end_chapter": 428,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Tập Sát Nhất Tuyến Thiên: Trương Phi Hộ Giá",
+          "description": "Trương Phi nổi giận bộc phát chiến lực cấp Thánh Giả gạt phăng kiếm kích, Quý Bình Thường bị thương thối lui; Quý Vô Song xuất hiện rồi rút lui.",
+          "start_chapter": 456,
+          "end_chapter": 457,
+          "chapter_span": 2
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Ngưu Khánh Châu (Hỏa Thiêu Thành Trống)",
+          "description": "Toàn bộ Ngưu Khánh Châu biến thành biển lửa; liên quân Nam Ly - Đông Thương tổn thất hơn chục vạn quân, tan rã hoàn toàn.",
+          "start_chapter": 460,
+          "end_chapter": 468,
+          "chapter_span": 9
+        }
+      ]
+    },
+    {
+      "act_number": 8,
+      "title": "Kiếm Thánh & Diệt Tần",
+      "description": "Vương Việt thu phục Huyết Y Các, Mã Quân chế Thiết Giáp Môn, diệt môn Tần gia Tây Lăng",
+      "chapter_range": "Ch.461-530",
+      "start_chapter": 461,
+      "end_chapter": 530,
+      "num_events": 11,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Trận Thủy Phá Chiến Hổ Quân & Phá Đê Khai Hồng",
+          "description": "Nước ngập cuốn trôi doanh trại địch; dũng tướng Lý Tiểu Đao tử trận; Chiến Hổ quân tan tác.",
+          "start_chapter": 471,
+          "end_chapter": 473,
+          "chapter_span": 3
+        },
+        {
+          "category": "battles",
+          "name": "Trận Bao Vây Hồ Lô Cốc & Hội Tụ An Hà Thành",
+          "description": "Toàn thắng; bắt gọn các tướng lĩnh tàn quân; Quý Bình An đối diện cha Quý Vô Song.",
+          "start_chapter": 476,
+          "end_chapter": 482,
+          "chapter_span": 7
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Vân Đột Phá Thánh Giả & Đánh Bại Xích Hồng Y",
+          "description": "Triệu Vân chính thức phá vỡ xiềng xích Bán Thánh, bước vào cảnh giới Thánh Giả (võ lực 132-134), mở khóa thiên phú Nhai Giác, một thương kích bại sát thủ đệ nhất thiên hạ Xích Hồng Y.",
+          "start_chapter": 502,
+          "end_chapter": 502,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Kỹ Thuật Thú Nhân Hóa Thể",
+          "description": "",
+          "start_chapter": 505,
+          "end_chapter": 505,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Cơ Quan Nỏ Liên Châu",
+          "description": "",
+          "start_chapter": 516,
+          "end_chapter": 516,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Cường Hóa Tấn Thiết Song Kích",
+          "description": "",
+          "start_chapter": 516,
+          "end_chapter": 516,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Vương Việt & Diệt Môn Tần Gia Tây Lăng",
+          "description": "Quý Bình An dùng Anh Hồn Lệnh ngẫu nhiên triệu hoán Đệ Nhất Kiếm Sư Vương Việt (võ lực 134, Thừa Ảnh Kiếm). Vương Việt cùng Cơ Vô Thiên sang Tây Lăng trảm sát Tần Tứ Nghiệp, hủy diệt hoàn toàn Tần gia",
+          "start_chapter": 520,
+          "end_chapter": 520,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Diệt Môn Thế Gia Tần Tứ Nghiệp & Tần Ức Đầu Hàng Đại Hán",
+          "description": "Tần Tứ Nghiệp bị ám sát; Tần gia bị gán tội phản quốc tại Tây Lăng; tướng trẻ Tần Ức dẫn quân đầu quân Đại Hán.",
+          "start_chapter": 526,
+          "end_chapter": 526,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Tập Sát Diệt Môn Tần Phủ Tây Lăng",
+          "description": "Tần Tứ Nghiệp bị Vương Việt một kiếm đoạt mạng; toàn bộ quyền lực Tần gia tại Tây Lăng sụp đổ.",
+          "start_chapter": 526,
+          "end_chapter": 527,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đào Nhã Nhậm Chức Nữ Công Bộ Thượng Thư & Đại Đồ Án Giao Thông",
+          "description": "Đào Nhã sau khi hồi phục dâng bản đồ địa hình và kiến nghị đại công trình 'gặp núi mở đường, gặp nước bắc cầu'. Quý Bình An phong nàng làm Nữ Công Bộ Thượng Thư đầu tiên.",
+          "start_chapter": 528,
+          "end_chapter": 528,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Đồ Án Giao Thông Toàn Quốc 'Gặp Núi Mở Đường, Gặp Nước Bắc Cầu'",
+          "description": "",
+          "start_chapter": 528,
+          "end_chapter": 528,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 9,
+      "title": "Tứ Quốc Phong Vân",
+      "description": "Đào Nhã quy hoạch giao thông, chiêu hiền Phó Dĩnh Thăng, Quan Vũ triệu hoán, Tây Lăng đại hội",
+      "chapter_range": "Ch.531-600",
+      "start_chapter": 531,
+      "end_chapter": 600,
+      "num_events": 9,
+      "events": [
+        {
+          "category": "political_events",
+          "name": "Truyền Bá 'Hiếu Kinh' Lôi Kéo Đại Nho Phó Dĩnh Thăng",
+          "description": "Tác phẩm Nho gia kinh điển 'Hiếu Kinh' gây chấn động Tây Lăng, Phó Dĩnh Thăng nhận lời sang giảng dạy tại Học Cung Đại Hán.",
+          "start_chapter": 535,
+          "end_chapter": 535,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thiết Giáp Môn (Cửa Thành Bọc Thép Nguyên Khối)",
+          "description": "",
+          "start_chapter": 558,
+          "end_chapter": 558,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Phòng Thủ Uyển Châu & Đoạt Tân Môn Thành",
+          "description": "Mạc Thiên Tinh đại bại, mất sạch binh mã, trốn chạy tán loạn.",
+          "start_chapter": 561,
+          "end_chapter": 570,
+          "chapter_span": 10
+        },
+        {
+          "category": "battles",
+          "name": "Trận Đấu Kiếm Đế Đô: Vương Việt Phá Xích Hồng Y",
+          "description": "Vương Việt chém gãy vũ khí, đánh trọng thương Xích Hồng Y chỉ trong tích tắc.",
+          "start_chapter": 568,
+          "end_chapter": 571,
+          "chapter_span": 4
+        },
+        {
+          "category": "political_events",
+          "name": "Cung Ngạo Ám Hại Thái Tử Phó Thương Quân, Tiếm Quyền Nam Ly",
+          "description": "Phó Thương Quân bị trừ khử; Cung Ngạo thâu tóm thực quyền Nam Ly, chuẩn bị tự lập làm quốc chủ.",
+          "start_chapter": 582,
+          "end_chapter": 582,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chính Biến Nam Thiên Thành & Cái Chết Phó Thương Quân",
+          "description": "Phó Thương Quân tử trận; Cung Ngạo tự phong Hộ Quốc Đại Tướng Quân thâu tóm chính quyền Nam Ly; Xích Hồng Y kịch chiến Tri Mặc Bạch rồi rút lui.",
+          "start_chapter": 582,
+          "end_chapter": 585,
+          "chapter_span": 4
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Thiên Mệnh Võ Tướng Quan Vũ: Kích Hoạt Toàn Bộ Ngũ Hổ Tướng",
+          "description": "Quý Bình An tiêu tốn 2 triệu kim triệu hoán Thiên Mệnh Võ Tướng Quan Vân Trường (võ lực 139). Toàn bộ Ngũ Hổ Tướng kích hoạt hoàn chỉnh (5/5), mở lĩnh vực Ngũ Hổ Tuyệt Thế, Quý Bình An nhận Thiên Tử K",
+          "start_chapter": 598,
+          "end_chapter": 598,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Hội Tụ Phong Vân Tây Lăng",
+          "description": "Trương Bất Minh cùng Thánh Giả Thăng và Triệu Thiên Lỗi dịch dung đến Tây Hoàng Thành; Quỷ Thánh xuất hiện tại Thuyền Hoa; Văn Nhân Mục và Ninh Thâm tụ họp.",
+          "start_chapter": 600,
+          "end_chapter": 600,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Đại Hội Tụ Phong Vân Chư Quốc Tại Tây Hoàng Thành",
+          "description": "Các thế lực lớn nhất Trung Thổ đồng loạt quy tụ về Tây Lăng để đàm phán và phân chia lại bản đồ quyền lực.",
+          "start_chapter": 600,
+          "end_chapter": 600,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 10,
+      "title": "Chinh Phục Tây Lăng",
+      "description": "Cẩm Quan Thành, Phi Mã Thành, sự kiện Lấy Nước Đổi Nước thâu tóm Nam Ly 55 vạn quân",
+      "chapter_range": "Ch.601-700",
+      "start_chapter": 601,
+      "end_chapter": 700,
+      "num_events": 14,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Đột Kích Địa Lao Hoàng Cung Tây Lăng: Giải Cứu Trương Bất Minh",
+          "description": "Quan Vũ trảm sát Khôn Tự bằng một đao chấn động; toàn đội giải cứu Trương Bất Minh thoát ly an toàn về lãnh thổ Đại Hán.",
+          "start_chapter": 609,
+          "end_chapter": 616,
+          "chapter_span": 8
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Giải cứu Trương Bất Minh tại hoàng cung Tây Lăng",
+          "description": "Quan Vũ và Vương Việt đột kích giải cứu cựu quốc chủ Nam Ly bị giam cầm nhiều năm dưới lòng đất Tây Hoàng Thành.",
+          "start_chapter": 613,
+          "end_chapter": 613,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thiên Cơ Đồ & Trường Sinh Đồ",
+          "description": "Mục tiêu tranh đoạt xuyên suốt của Thiên Cơ, các vương triều và dòng họ Quý thị.",
+          "start_chapter": 629,
+          "end_chapter": 629,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Giao Dịch Thiên Cơ Đồ Giữa Quý Bình An & Văn Nhân Mục",
+          "description": "Các bên thương lượng việc hoán đổi thông tin về Thiên Cơ Đồ để bảo toàn tính mạng cho hoàng tộc Tây Lăng và công chúa Bất Hối.",
+          "start_chapter": 629,
+          "end_chapter": 630,
+          "chapter_span": 2
+        },
+        {
+          "category": "technologies",
+          "name": "Cự Khôi Xe Nỏ (Nỏ Xa Liên Phát Cải Tiến)",
+          "description": "Vũ khí chủ lực giúp quân Hán áp đảo Tây Lăng Thiết Kỵ tại Phi Mã Thành và bắn phá chiến thuyền địch.",
+          "start_chapter": 633,
+          "end_chapter": 633,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Cẩm Quan Thành: Thần Uy Yển Nguyệt",
+          "description": "Đại Hán toàn thắng chiếm trọn Cẩm Quan Thành, tướng giữ thành An Mạt Tề tự vẫn/tử trận.",
+          "start_chapter": 636,
+          "end_chapter": 638,
+          "chapter_span": 3
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hoàn thiện Cự Khôi Xe Nỏ và Lưu Hỏa cải tiến",
+          "description": "Thiên Cung Học Viện chế tạo thành công Xe Nỏ liên phát bắn Phá Giáp Tiễn và viện nghiên cứu chế tạo thành công chất nổ Lưu Hỏa uy lực cao.",
+          "start_chapter": 639,
+          "end_chapter": 639,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Lưu Hỏa Nổ (Hỏa Dược Cải Tiến)",
+          "description": "Thần khí thay đổi cục diện các trận hỏa thiêu, nền tảng cho trận biển lửa thiêu rụi hạm đội Đại La.",
+          "start_chapter": 639,
+          "end_chapter": 639,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Tây Kinh Thành & Diệt Tộc Bùi Gia",
+          "description": "Tây Kinh Thành thất thủ rơi vào tay Hán triều; gia tộc Bùi thị bị Đông Thương thanh trừng tận diệt, dập tắt mầm họa phân tranh ở Bùi An Hà.",
+          "start_chapter": 646,
+          "end_chapter": 652,
+          "chapter_span": 7
+        },
+        {
+          "category": "political_events",
+          "name": "Đông Thương Diệt Môn Bùi Gia",
+          "description": "Sau khi Bùi gia có ý định ngả theo Đại Hán tại Bùi An Hà, gia tộc An thị của Đông Thương đã ra tay tàn sát diệt môn Bùi thị.",
+          "start_chapter": 650,
+          "end_chapter": 652,
+          "chapter_span": 3
+        },
+        {
+          "category": "technologies",
+          "name": "Bán Mã Thung & Thừng Gạt Ngựa Cơ Quan",
+          "description": "Bảo bối chiến thuật bẻ gãy hoàn toàn uy lực xung phong bất khả chiến bại của 14 vạn Tây Lăng Thiết Kỵ.",
+          "start_chapter": 683,
+          "end_chapter": 683,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Quyết Chiến Phi Mã Thành: Bẻ Gãy Tây Lăng Thiết Kỵ",
+          "description": "Đại phá hoàn toàn 14 vạn thiết kỵ Tây Lăng, tướng soái Vân Ninh đại bại, Phi Mã Thành hoàn toàn thất thủ về tay Hán triều.",
+          "start_chapter": 683,
+          "end_chapter": 696,
+          "chapter_span": 14
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Sự kiện lịch sử 'Lấy Nước Đổi Nước'",
+          "description": "Cung Ngạo vạch trần môn sinh Lý Hoành là nội gián Thiên Cơ khiến Cung Sinh thổ huyết sụp đổ; sau đó đề nghị giao trọn vương triều Nam Ly và 55 vạn quân cho Quý Bình An để đổi lấy đất Tây Lăng độc lập.",
+          "start_chapter": 700,
+          "end_chapter": 700,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Đại Thỏa Thuận 'Lấy Nước Đổi Nước' & Thanh Trừng Cung Ngạo",
+          "description": "Cung Ngạo chuyển giao trọn vẹn 55 vạn quân và toàn bộ cương thổ Nam Ly cho Đại Hán để đổi lấy tước vị Trấn Tây Vương và vùng đất Tây Lăng. Quý Bình An ngoài mặt đồng ý nhưng ngầm phái Vương Việt ám sá",
+          "start_chapter": 700,
+          "end_chapter": 720,
+          "chapter_span": 21
+        }
+      ]
+    },
+    {
+      "act_number": 11,
+      "title": "Nhất Thống Tứ Quốc",
+      "description": "Gia Cát Lượng Không Thành Kế, Tây Lăng đầu hàng, Đông Thương sụp đổ, dời đô Thần Châu Trường An",
+      "chapter_range": "Ch.701-777",
+      "start_chapter": 701,
+      "end_chapter": 777,
+      "num_events": 10,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Công Chiếm Tây Hoàng Thành: Thần Tiễn Diệt Vũ Hi",
+          "description": "An Vũ Hi tử trận, Văn Nhân Hạo trọng thương đào tẩu, Tây Lăng Vương Văn Nhân Mục dẫn bách quan dâng biểu đầu hàng.",
+          "start_chapter": 704,
+          "end_chapter": 734,
+          "chapter_span": 31
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thiên Mệnh quy vị: Triệu hoán Ngọa Long Gia Cát Lượng",
+          "description": "Quý Bình An tiêu hao 500k anh linh điểm triệu hoán Thiên Mệnh Mưu Thần Gia Cát Lượng với kỹ năng Thống Ngự và Cẩm Nang diệu kế.",
+          "start_chapter": 725,
+          "end_chapter": 725,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Khai quật kho báu hơn 3 triệu lượng vàng tại Núi Ngưu Giác",
+          "description": "Giả Hủ phát hiện kho vàng bí mật khổng lồ hơn 3.000.000 lượng kim được chôn giấu trong lòng Núi Ngưu Giác.",
+          "start_chapter": 728,
+          "end_chapter": 728,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Tây Lăng Vương Dâng Biểu Quy Thuận",
+          "description": "Sau khi Phi Mã Thành và tuyến phòng thủ cuối cùng bị đập tan, Văn Nhân Mục dẫn bách quan quỳ gối xin hàng ngoài cửa Tây Hoàng Thành.",
+          "start_chapter": 733,
+          "end_chapter": 734,
+          "chapter_span": 2
+        },
+        {
+          "category": "battles",
+          "name": "Trận Phục Kích Ất Tuyên Thành: Kế Trong Kế Gia Cát Lượng",
+          "description": "Hơn phân nửa quân An gia bị chôn sống và tiêu diệt; An Hàn Khôi và Trương Hiên Chính tháo chạy thảm hại.",
+          "start_chapter": 734,
+          "end_chapter": 737,
+          "chapter_span": 4
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Hán nhất thống bốn nước và dời đô Thần Châu Trường An",
+          "description": "Quý Vô Song đầu hàng, Đông Thương và Tây Lăng diệt vong, Nam Ly quy phục; Đại Hán hoàn thành đại nghiệp nhất thống thiên hạ và dời đô về Trường An do Đào Nhã thiết kế.",
+          "start_chapter": 764,
+          "end_chapter": 764,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Đại Hán Nhất Thống Thiên Hạ Tứ Quốc",
+          "description": "Đông Thương đầu hàng sau khi Quý Vô Song buông vũ khí, 4 nước hợp nhất thành Hoàng triều Đại Hán duy nhất, thiết lập Hán Luật và đồng tiền thống nhất.",
+          "start_chapter": 764,
+          "end_chapter": 771,
+          "chapter_span": 8
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Phế bỏ võ công Quý Vô Song",
+          "description": "Quý Bình An quyết đoán phế bỏ toàn bộ tu vi Bán Tiên của Quý Vô Song nhằm triệt tiêu nguy cơ uy hiếp hoàng quyền, giao cho Hoa Đà châm cứu duy trì mạng sống.",
+          "start_chapter": 766,
+          "end_chapter": 766,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Bắc Cực Băng Xuyên tan vỡ - Cánh cổng nối liền Đại La",
+          "description": "Dòng sông băng vĩnh cửu ngàn năm tại cực bắc vỡ nát, thông đạo đường biển nối liền thế giới Đại La hải ngoại với lục địa Đại Hán được khai thông.",
+          "start_chapter": 767,
+          "end_chapter": 767,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chặn Giết Miệng Lớn Cốc: Trảm Thân Đoạt Khí Vận",
+          "description": "Trương Hiên Chính bị giết tại chỗ; hệ thống thưởng Quý Bình An 0.5 phần Thiên Địa Khí Vận.",
+          "start_chapter": 774,
+          "end_chapter": 775,
+          "chapter_span": 2
+        }
+      ]
+    },
+    {
+      "act_number": 12,
+      "title": "Đại Hải Chiến",
+      "description": "Chu Du đánh Cam Ninh, hỏa thiêu hạm đội Đại La, Lữ Bố Nhân Tiên triệu hoán, miểu sát Bán Tiên",
+      "chapter_range": "Ch.778-830",
+      "start_chapter": 778,
+      "end_chapter": 830,
+      "num_events": 6,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Đại Hải Chiến Bắc Cực Băng Xuyên: Khổ Nhục Kế & Biển Lửa Hỏa Thiêu Hạm Đội Đại La",
+          "description": "Toàn bộ hạm đội hải quân Đại La bị biến thành biển lửa khổng lồ chìm xuống đáy biển; Bái Đăng thảm bại tháo chạy.",
+          "start_chapter": 790,
+          "end_chapter": 810,
+          "chapter_span": 21
+        },
+        {
+          "category": "technologies",
+          "name": "Kỹ Thuật Đục Thuyền & Thợ Lặn Cảm Tử",
+          "description": "Cách đánh du kích dưới nước độc đáo khiến quân Đại La hoang mang cực độ.",
+          "start_chapter": 793,
+          "end_chapter": 793,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Kế sách kinh điển: 'Chu Du đánh Cam Ninh'",
+          "description": "Chu Du và Cam Ninh bí mật thống nhất thực hiện khổ nhục kế, Cam Ninh chấp nhận đòn roi rách da nát thịt trước mắt toàn quân để trá hàng Bái Đăng.",
+          "start_chapter": 800,
+          "end_chapter": 800,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Xích Sắt Khóa Thuyền (Chiến Thuật Giang Hải)",
+          "description": "Chiến thuật kinh điển thời Tam Quốc được tái hiện hoàn hảo trên biển Bắc Cực, tiêu diệt 300 vạn quân xâm lược.",
+          "start_chapter": 806,
+          "end_chapter": 806,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Núi Ngưu Giác: Lữ Bố Miểu Sát Bán Tiên",
+          "description": "Bán Tiên Côn Sơn bị miểu sát trong 1 hiệp; quân đoàn 200 vạn của Quinto tan rã kinh hoàng, Quinto bị bắt sống.",
+          "start_chapter": 815,
+          "end_chapter": 821,
+          "chapter_span": 7
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Nhân Tiên Lữ Bố xuất thế và Thiên Mệnh Võ Tướng quy vị",
+          "description": "Quý Bình An chi 500k anh linh điểm triệu hoán Lữ Bố, giải tỏa trang bị và phá giới đạt cảnh giới Nhân Tiên; kích hoạt hiệu ứng Thiên Mệnh quy vị tăng 3 võ lực cho toàn bộ tướng Thánh Giả.",
+          "start_chapter": 817,
+          "end_chapter": 817,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 13,
+      "title": "Viễn Chinh Đại La",
+      "description": "Đánh chiếm Hoa Ước Thành, Lữ Bố vs Đức Bất Nhân, triệu hoán Tư Mã Ý, chân tướng Quý Vô Song",
+      "chapter_range": "Ch.831-900",
+      "start_chapter": 831,
+      "end_chapter": 900,
+      "num_events": 9,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Viễn Chinh Đại La: Công Phá Hoa Ước Thành & Bại Đặc Phổ",
+          "description": "Chiếm trọn Hoa Ước Thành, Đặc Phổ ôm hận tháo lui về thỉnh cầu A Bố viện binh.",
+          "start_chapter": 833,
+          "end_chapter": 837,
+          "chapter_span": 5
+        },
+        {
+          "category": "battles",
+          "name": "Trận Thủ Thành Hoa Ước: Bẻ Gãy Burton & Vây Chặt Tay Đặc Phổ",
+          "description": "Đặc Phổ cụt tay tàn phế chạy trốn (sau bị A Bố biến thành Thi Khôi); quân Burton bị đẩy lui hoàn toàn.",
+          "start_chapter": 850,
+          "end_chapter": 858,
+          "chapter_span": 9
+        },
+        {
+          "category": "technologies",
+          "name": "Bí Kỹ Luyện Chế Thi Khôi",
+          "description": "Bí thuật hắc ám của A Bố tạo nên một chủng loại quái vật chiến tranh mới tại Đại La.",
+          "start_chapter": 861,
+          "end_chapter": 861,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Quyết Đấu Đỉnh Cao: Lữ Bố Đả Bại Nhân Tiên Đức Bất Nhân",
+          "description": "Đức Bất Nhân trọng thương bại trận rút lui, uy danh Lữ Bố chấn động toàn cõi Đại La.",
+          "start_chapter": 878,
+          "end_chapter": 881,
+          "chapter_span": 4
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Trủng Hổ quy vị: Triệu hoán Tư Mã Ý & Hệ thống đếm ngược đóng băng",
+          "description": "Ngay trước khi hết hạn chót 180 ngày, Quý Bình An triệu hoán Thiên Mệnh Mưu Thần cuối cùng Tư Mã Ý, toàn bộ mưu thần trí lực +3, hệ thống tiến vào chu kỳ cưỡng chế thăng cấp.",
+          "start_chapter": 885,
+          "end_chapter": 885,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Dương Mưu Rút Quân Phân Hóa Đại La",
+          "description": "Đại Hán chủ động rút quân khỏi 37 thành U Châu, trao trả vùng đất hoang tàn đầy nạn dân đói kém cho Thánh Nữ Giáo và Quốc Giáo nhằm ép hai thế lực này phải chém giết lẫn nhau để giành giật lương thảo.",
+          "start_chapter": 886,
+          "end_chapter": 894,
+          "chapter_span": 9
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Dương Mưu Rút Quân: Rút củi dưới đáy nồi để lại thảm họa Đại La",
+          "description": "Quý Bình An không sa lầy chiếm đất mà quyết định rút toàn bộ quân Hán về nước; bỏ lại 37 thành U Châu hoang tàn cùng hàng vạn nạn dân đói khổ trao cho Quốc Giáo và Thánh Nữ Giáo.",
+          "start_chapter": 887,
+          "end_chapter": 887,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Ngả Bài Chân Tướng Huyết Thống Quý Gia Tại Chương 900",
+          "description": "Quý Vô Song tiết lộ thân phận chú ruột, giải mã mối thù diệt tộc giữa Quý gia và Hiên gia tại Đại La, cũng như nguồn gốc con lai giữa đại ca Quý Vô Danh và Thánh Nữ Hiên Nguyệt.",
+          "start_chapter": 899,
+          "end_chapter": 900,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Bí mật thân thế Quý thị và truyền thừa Trường Sinh Đồ",
+          "description": "Quý Vô Song thừa nhận mình chỉ là 'thân tiểu thúc', cha đẻ thực sự của Quý Bình An là Quý Vô Danh (gia chủ trẻ nhất Quý gia Đại La), mẹ là Thánh Nữ Hiên Nguyệt; trao truyền toàn bộ bí mật về Trường Si",
+          "start_chapter": 900,
+          "end_chapter": 900,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 14,
+      "title": "Quỷ Vương & Thiên Hồn",
+      "description": "Công phá Thiên Hồn Thành, Thác Hạp điên cuồng, Nhân Tiên hỗn chiến Ca Bỉ Hoàng Thành",
+      "chapter_range": "Ch.901-975",
+      "start_chapter": 901,
+      "end_chapter": 975,
+      "num_events": 16,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Trường Sinh Truyền Thuyết & Khởi Đầu Đại Chiến",
+          "description": "Mở ra chiến dịch toàn diện tiến đánh Doanh Kinh và xâm nhập Quốc Giáo.",
+          "start_chapter": 901,
+          "end_chapter": 901,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vương Sơ Nhậm Chức Bạch Bào Tế Tự",
+          "description": "Đặt nền móng cho tuyến nhân vật gián điệp nội bộ Quốc Giáo.",
+          "start_chapter": 909,
+          "end_chapter": 909,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "U Châu Quân Áp Sát Thiên Hồn Thành",
+          "description": "Chiến sự chính thức bùng nổ giữa Đại Hán và Quốc Giáo.",
+          "start_chapter": 925,
+          "end_chapter": 925,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Công Phá Thiên Hồn Thành Lần 1 (Gia Cát Lượng Dùng Mê Vụ)",
+          "description": "Đại Hán chiếm Thiên Hồn Thành, đặt bàn đạp tiến vào nội địa Quốc Giáo.",
+          "start_chapter": 925,
+          "end_chapter": 929,
+          "chapter_span": 5
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Sự Xuất Hiện Của Thi Khôi Vương",
+          "description": "Quái vật chiến tranh đáng sợ nhất của Quốc Giáo chính thức lộ diện.",
+          "start_chapter": 926,
+          "end_chapter": 926,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Gia Cát Lượng Dùng Mê Vụ Hạ Thiên Hồn Thành",
+          "description": "Đại Hán chính thức sở hữu cửa ngõ tiến vào lãnh địa Quốc Giáo.",
+          "start_chapter": 929,
+          "end_chapter": 929,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Mê Vụ Trận Pháp (Trận Sương Mù Ngụy Trang)",
+          "description": "Giúp Gia Cát Lượng tiếp quản Thiên Hồn Thành và che giấu đường hành quân của 137 vạn U Châu quân.",
+          "start_chapter": 929,
+          "end_chapter": 929,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Dạ Tập Vượt Biển Đến Doanh Kinh",
+          "description": "Mở màn chiến dịch chinh phục Doanh Kinh của Đại Hán.",
+          "start_chapter": 930,
+          "end_chapter": 930,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Chiến Hạm Thiết Tỏa Hoành Giang (Khóa Xích Chiến Thuyền)",
+          "description": "Đưa đại quân Đại Hán vượt biển Doanh Kinh an toàn tuyệt đối trong đêm tối.",
+          "start_chapter": 930,
+          "end_chapter": 930,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Doanh Kinh & Đại Chiến Long Sa Thành",
+          "description": "Quân Doanh Kinh tan vỡ hoàn toàn, Thác Hạp thảm bại, Đại Hán làm chủ hàng chục thành trì Doanh Kinh, cấp phát Long Nha Mễ và khoai tây vỗ an dân chúng.",
+          "start_chapter": 930,
+          "end_chapter": 949,
+          "chapter_span": 20
+        },
+        {
+          "category": "battles",
+          "name": "Trận Thủ Hộ Kinh Bắc Thành: Quý Bình An Trảm 3 Bán Tiên",
+          "description": "Đại Hán toàn thắng, Kinh Bắc Thành đứng vững, quân Quốc Giáo mất sạch Bán Tiên phải tháo lui trong hoảng loạn.",
+          "start_chapter": 942,
+          "end_chapter": 947,
+          "chapter_span": 6
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Bình An Dùng Bá Vương Thương Trảm 3 Bán Tiên",
+          "description": "Bẻ gãy mũi nhọn tấn công của Quốc Giáo, uy danh Quý Bình An chấn động toàn cõi.",
+          "start_chapter": 947,
+          "end_chapter": 947,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thác Hạp Nổi Điên Tử Chiến Tại Long Sa",
+          "description": "Quân Doanh Kinh bị đánh tan hoàn toàn, Đại Hán thu phục toàn bộ Doanh Kinh.",
+          "start_chapter": 949,
+          "end_chapter": 949,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đào Nhã Hoàn Thành Bản Đồ Địa Hình Quốc Giáo",
+          "description": "Đại Hán nắm giữ chìa khóa địa lý để mở các chiến dịch quân sự chính xác.",
+          "start_chapter": 967,
+          "end_chapter": 967,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Ca Bỉ Hoàng Thành: Nhân Tiên Hỗn Chiến & Triệu Vân Đột Phá",
+          "description": "Lữ Bố và Triệu Vân phá tan vòng vây an toàn, Quốc Giáo thất bại trong âm mưu diệt tướng, Quỷ Vương nhân cơ hội soán quyền Quốc Giáo.",
+          "start_chapter": 973,
+          "end_chapter": 989,
+          "chapter_span": 17
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Nhân Tiên Hỗn Chiến Tại Ca Bỉ Hoàng Thành",
+          "description": "Cục diện Đại La biến động dữ dội, các đại Nhân Tiên trực tiếp đối đầu sinh tử.",
+          "start_chapter": 975,
+          "end_chapter": 975,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 15,
+      "title": "Bốn Mưu Sĩ Hiến Kế",
+      "description": "Tả Từ triệu hoán, Lý Nho hỏa thiêu Bách Khổng Thành, Trầm Hạo đọa ma đột phá",
+      "chapter_range": "Ch.976-1050",
+      "start_chapter": 976,
+      "end_chapter": 1050,
+      "num_events": 24,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Quỷ Vương Chấp Chưởng Quốc Giáo",
+          "description": "Nội bộ Quốc Giáo bị chia rẽ sâu sắc giữa các phe phái.",
+          "start_chapter": 978,
+          "end_chapter": 978,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Quỷ Vương Đoạt Quyền Lãnh Đạo Quốc Giáo",
+          "description": "Lợi dụng lúc Ninh Không Lâu dốc toàn lực tham chiến tại Ca Bỉ Hoàng Thành, Quỷ Vương dẫn thuộc hạ đột kích các cơ sở tôn giáo trọng yếu, sát hại các đại tế ti và tuyên bố nắm quyền điều hành Quốc Giáo",
+          "start_chapter": 978,
+          "end_chapter": 978,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Nhân Tiên Triệu Vân Xuất Thế",
+          "description": "Đại Hán sở hữu đại tướng Nhân Tiên thứ hai bên cạnh Lữ Bố, cán cân quyền lực nghiêng hẳn về Đại Hán.",
+          "start_chapter": 989,
+          "end_chapter": 989,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Bình An Gặp Lại An Khinh Ngôn & Thiên Tứ",
+          "description": "Gắn kết mối quan hệ gia đình và thế lực Tây Lăng/Thánh Nữ với Đại Hán.",
+          "start_chapter": 990,
+          "end_chapter": 990,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quyết Định Triệu Hoán Kỳ Nhân Dị Sĩ",
+          "description": "Mở ra sự xuất hiện của các nhân vật đạo thuật thần tiên Tam Quốc.",
+          "start_chapter": 995,
+          "end_chapter": 995,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Kỳ Nhân Dị Sĩ Tả Từ Xuất Thế",
+          "description": "Đại Hán có được một bậc thầy đạo pháp ngũ hành, trận pháp và phong thủy thần sầu.",
+          "start_chapter": 996,
+          "end_chapter": 996,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tả Từ Nhìn Thấu Mộc Độn Quốc Giáo",
+          "description": "Hóa giải toàn bộ bí mật chiến thuật ẩn nấp rừng cây của Quốc Giáo.",
+          "start_chapter": 997,
+          "end_chapter": 997,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Cường Công Viêm Hỏa & Hỏa Thiêu Bách Khổng Thành",
+          "description": "Đại Hán chiếm trọn Bách Khổng Thành, bẻ gãy hành lang phòng thủ phía Tây của Quốc Giáo.",
+          "start_chapter": 998,
+          "end_chapter": 1003,
+          "chapter_span": 6
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Bốn Mưu Sĩ Hiến Kế & Bản Án Ninh An Bình",
+          "description": "Định hình toàn bộ kế hoạch tác chiến tru tâm và tiến công Quốc Giáo.",
+          "start_chapter": 1000,
+          "end_chapter": 1000,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Lưu Hỏa & Ống Dầu Trơn Tác Chiến",
+          "description": "Bàng Thống mang Lưu Hỏa uy hiếp Thánh Nữ Thành; Lý Nho dùng hỏa công thiêu rụi Bách Khổng Thành; Ninh Không Lâu cũng tìm cách cài người đánh cắp công nghệ này (Ch.1186).",
+          "start_chapter": 1000,
+          "end_chapter": 1000,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Lý Nho Phóng Hỏa Thiêu Bách Khổng Thành",
+          "description": "Bách Khổng Thành rơi vào tay Đại Hán, gây chấn động tâm lý toàn cõi Quốc Giáo.",
+          "start_chapter": 1003,
+          "end_chapter": 1003,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Bắt Giữ Thánh Nữ Hiên Thanh Nguyệt",
+          "description": "Thánh Nữ Giáo hoàn toàn chịu sự thao túng và kiểm soát của Đại Hán.",
+          "start_chapter": 1009,
+          "end_chapter": 1009,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Liên Minh Tạm Thời và Sự Khống Chế Thánh Nữ Giáo",
+          "description": "Ban đầu Thánh Nữ Giáo cử 20 vạn quân tiếp viện Kinh Bắc Thành nhằm liên thủ chống Quốc Giáo. Tuy nhiên, nhận thấy Hiên Thanh Nguyệt có dã tâm ngầm, Quý Bình An đã tương kế tựu kế, dùng mưu bắt giữ Hiê",
+          "start_chapter": 1009,
+          "end_chapter": 1009,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Gạo Nếp Vôi Tương (Vữa Hồ Nếp Vôi Xây Thành)",
+          "description": "Được thử nghiệm thành công tại Chương 1015 dưới sự chứng kiến của Tả Từ. Quý Bình An lập tức ra lệnh cho Công Bộ Thượng Thư Đào Nhã đem công nghệ này ứng dụng đại trà gia cố toàn bộ hệ thống thành trì",
+          "start_chapter": 1014,
+          "end_chapter": 1014,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thử Nghiệm Thành Công Gạo Nếp Vôi Tương",
+          "description": "Đại Hán sở hữu công nghệ xây thành kiên cố nhất lịch sử, vô hiệu hóa các vũ khí công thành thông thường.",
+          "start_chapter": 1015,
+          "end_chapter": 1015,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Công Phá Thiên Hồn Thành Lần 2 (Tiên Đăng Tử Sĩ Trèo Tường)",
+          "description": "Thành vỡ trong thời gian ngắn, Đại Hán hoàn toàn làm chủ Thiên Hồn Thành.",
+          "start_chapter": 1021,
+          "end_chapter": 1022,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Gia Cát Lượng Công Phá Thiên Hồn Thành",
+          "description": "Thiên Hồn Thành chính thức thuộc về Đại Hán, giải phóng quân lực cho các hướng khác.",
+          "start_chapter": 1022,
+          "end_chapter": 1022,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quỷ Vương Sát Hại Thánh Quang Đại Tế Ti",
+          "description": "Quang Hoa Thành chìm trong biển lửa, Quốc Giáo mất thêm một lãnh đạo tinh thần cấp cao.",
+          "start_chapter": 1025,
+          "end_chapter": 1025,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Quang Hoa Thành & Hoàng Trung Phục Kích Quỷ Vương",
+          "description": "Quỷ Vương bị trọng thương nặng phải lẩn trốn, kế hoạch chiếm trọn Quang Hoa Thành của Quỷ Vương phá sản.",
+          "start_chapter": 1025,
+          "end_chapter": 1028,
+          "chapter_span": 4
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hoàng Trung Bắn Trọng Thương Quỷ Vương",
+          "description": "Quỷ Vương suy giảm chiến lực nghiêm trọng, phải lẩn trốn điều trị.",
+          "start_chapter": 1027,
+          "end_chapter": 1027,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Cái Chết Của Quý Bình Xuyên (Ninh An Bình)",
+          "description": "Giáng đòn tru tâm tàn khốc vào Giáo Hoàng Ninh Không Lâu.",
+          "start_chapter": 1036,
+          "end_chapter": 1036,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Án Hành Quyết Ninh An Bình (Tru Tâm Quốc Giáo)",
+          "description": "Quan Vũ công khai chém đầu Ninh An Bình (kẻ đội lốt tam công tử Quý Bình Xuyên suốt hàng chục năm) ngay trước mặt hai quân. Hành động này không chỉ trút giận cho các tướng lĩnh mà còn giáng đòn chí mạ",
+          "start_chapter": 1036,
+          "end_chapter": 1036,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Huyết Chiến Bắc Duyên Thành: Trầm Hạo Đọa Ma Quyết Chiến Thi Khôi Vương",
+          "description": "Đẩy lui đợt tập kích của đối phương, Trầm Hạo trọng thương ngất lịm vì nhiễm kịch độc hàn thi.",
+          "start_chapter": 1040,
+          "end_chapter": 1050,
+          "chapter_span": 11
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Trầm Hạo Đọa Ma Liều Mạng Chiến Thi Khôi Vương",
+          "description": "Trầm Hạo cứu vãn cục diện nhưng hôn mê sâu vì trúng hàn độc thi khôi.",
+          "start_chapter": 1050,
+          "end_chapter": 1050,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 16,
+      "title": "Cực Bắc Thiên Thạch",
+      "description": "Triệu Vân cắt thịt bài độc, Bắc Minh xuất hiện, Quỷ Vương bị trảm",
+      "chapter_range": "Ch.1051-1120",
+      "start_chapter": 1051,
+      "end_chapter": 1120,
+      "num_events": 11,
+      "events": [
+        {
+          "category": "key_plot_events",
+          "name": "Vương Sơ Khai Manh Mối & Cái Chết",
+          "description": "Đại Hán nắm rõ toàn bộ bố cục chiến lược của các đối thủ lớn.",
+          "start_chapter": 1054,
+          "end_chapter": 1054,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Âm Mưu Phân Chia Đại La Giữa Ninh Không Lâu và A Bố",
+          "description": "Ninh Không Lâu bí mật tiếp xúc và thỏa thuận với Tôn Chủ A Bố nhằm hợp lực xóa sổ Đại Hán và Thánh Nữ Giáo, sau đó chia đôi toàn bộ cương thổ Đại La. Toàn bộ kế hoạch đen tối này bị Vương Sơ tiết lộ c",
+          "start_chapter": 1054,
+          "end_chapter": 1054,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quỷ Vương Rút Quân Bằng Kế Thành Trống",
+          "description": "Quỷ Vương bảo toàn lực lượng rút về vùng Cực Bắc Bắc U.",
+          "start_chapter": 1077,
+          "end_chapter": 1077,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thế Lực Thiên Bắc Thị Xuất Hiện Tại Bắc U",
+          "description": "Mở ra chiến trường mới tại vùng Cực Bắc hoang vu.",
+          "start_chapter": 1079,
+          "end_chapter": 1079,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Thiên Thạch Thành: Triệu Vân Cắt Thịt Đấu Bắc Minh",
+          "description": "Bắc Minh kinh hãi trước dũng khí của Triệu Vân nên lui về thành; Triệu Vân bảo toàn tính mạng nhưng kiệt sức hôn mê, quân Hán tạm lui lập trại phòng thủ.",
+          "start_chapter": 1080,
+          "end_chapter": 1100,
+          "chapter_span": 21
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Hoán Tuyệt Thế Chiến Tướng Văn Ương",
+          "description": "Bổ sung một mãnh tướng xung trận siêu việt vào hàng ngũ Đại Hán.",
+          "start_chapter": 1089,
+          "end_chapter": 1089,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thuật Hoán Huyết Cứu Mệnh (Đại Phẫu Thay Toàn Bộ Máu)",
+          "description": "Được Hoa Đà thực hiện thành công cứu sống Trầm Hạo khỏi cái chết chắc chắn sau khi huyết chiến với Thi Khôi Vương (hoàn tất ở Ch.1195).",
+          "start_chapter": 1090,
+          "end_chapter": 1090,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thánh Tử Bắc Minh Xuất Quan",
+          "description": "Cực Bắc xuất hiện một cự đầu võ đạo có khả năng làm xoay chuyển chiến cuộc.",
+          "start_chapter": 1098,
+          "end_chapter": 1098,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Vân Cắt Thịt Trừ Độc",
+          "description": "Triệu Vân giữ được tính mạng nhưng kiệt sức hôn mê; biểu tượng cho ý chí bất khuất của tướng lĩnh Đại Hán.",
+          "start_chapter": 1100,
+          "end_chapter": 1100,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Hắc Ma Quỷ Phản Bội Quỷ Vương Đầu Hàng A Bố",
+          "description": "Hắc Ma Quỷ dùng thế thân qua mặt Ninh Không Lâu, bí mật gặp A Bố để bán đứng thông tin của Quỷ Vương nhằm đổi lấy quyền cai trị Thánh Nữ Giáo, tạo ra thêm một rạn nứt sâu sắc trong khối liên minh tà đ",
+          "start_chapter": 1101,
+          "end_chapter": 1101,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quỷ Vương Trảm Sát Bắc Mạch Sơn",
+          "description": "Gia tăng mối thù sâu sắc giữa Thiên Bắc Thị và Quỷ Vương, đồng thời làm trống vị trí chỉ huy Thiên Thạch Thành.",
+          "start_chapter": 1117,
+          "end_chapter": 1117,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 17,
+      "title": "Đại Phản Công",
+      "description": "Thu hồi Linh Ích Thành, vây hãm Kinh Bắc Thành, Tả Từ đắp đập thủy công",
+      "chapter_range": "Ch.1121-1200",
+      "start_chapter": 1121,
+      "end_chapter": 1200,
+      "num_events": 19,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Trận Thu Hồi Linh Ích Thành: Lữ Bố Thuấn Sát Bán Tiên",
+          "description": "Đại Hán thu hồi Linh Ích Thành nhanh chóng, tiêu diệt toàn bộ nhóm chỉ huy của Quốc Giáo.",
+          "start_chapter": 1137,
+          "end_chapter": 1141,
+          "chapter_span": 5
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Lữ Bố Thuấn Sát Bán Tiên Thu Hồi Linh Ích",
+          "description": "Thiết lập lại quyền kiểm soát của Đại Hán trên tuyến đường huyết mạch Tây Nam.",
+          "start_chapter": 1140,
+          "end_chapter": 1140,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Đại Chiến Thảo Nguyên Cực Bắc: Triệu Vân - Quan Vũ - Trương Phi Đấu Bắc Minh",
+          "description": "Bắc Minh không thể bứt phá, buộc phải đình chiến rút lui; giữ vững tuyệt đối phòng tuyến U Châu.",
+          "start_chapter": 1160,
+          "end_chapter": 1162,
+          "chapter_span": 3
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tam Tướng Hán Hợp Chiến Bắc Minh",
+          "description": "Khống chế và phong tỏa hoàn toàn đà tiến của thiên tài Cực Bắc.",
+          "start_chapter": 1162,
+          "end_chapter": 1162,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Phòng Ngự Kinh Bắc Thành: Tả Từ Bố Trận, Văn Ương Tác Chiến & Cam Ninh Chi Viện",
+          "description": "Quân A Bố thương vong nặng nề không thể phá thành, A Bố hạ lệnh rút lui toàn diện.",
+          "start_chapter": 1163,
+          "end_chapter": 1179,
+          "chapter_span": 17
+        },
+        {
+          "category": "battles",
+          "name": "Huyết Chiến Tây Lũng Thành: Vương Việt Chiến Quý Vô Sinh",
+          "description": "Quý Vô Sinh bị thương phải rút lui, Đại Hán đánh chiếm Tây Lũng Thành và làm chủ Tây Môn Quan.",
+          "start_chapter": 1166,
+          "end_chapter": 1184,
+          "chapter_span": 19
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vương Việt Đại Chiến Quý Vô Sinh",
+          "description": "Đè bẹp ý chí kháng cự của kiếm sĩ Quý gia, mở đường đánh chiếm Tây Môn Quan.",
+          "start_chapter": 1169,
+          "end_chapter": 1169,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Bát Quái Cửu Cung Trận Pháp Phòng Ngự (Máy Bắn Đá & Cường Nỗ Xa)",
+          "description": "Được Tả Từ trực tiếp thiết kế và chỉ huy tại Kinh Bắc Thành Chương 1174-1175, giúp đẩy lùi cuộc tổng tấn công vây thành dữ dội của A Bố và Thi Khôi Vương.",
+          "start_chapter": 1174,
+          "end_chapter": 1174,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tả Từ Bố Trận Cứu Nguy Kinh Bắc Thành",
+          "description": "Giữ vững thành lũy Kinh Bắc Thành trước sự vây hãm dữ dội nhất.",
+          "start_chapter": 1175,
+          "end_chapter": 1175,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Cam Ninh Dẫn Thủy Quân Đuổi Tới",
+          "description": "Giải tỏa hoàn toàn vòng vây Kinh Bắc Thành.",
+          "start_chapter": 1178,
+          "end_chapter": 1178,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Cầu Hòa Chính Thức Chấp Chưởng Quốc Giáo",
+          "description": "Quốc Giáo bước vào thời kỳ độc tài của Cầu Hòa với đường lối quân sự cứng rắn hơn.",
+          "start_chapter": 1186,
+          "end_chapter": 1186,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Cầu Hòa Thay Thế Ninh Không Lâu Chấp Chưởng Quốc Giáo",
+          "description": "Dựa vào bí thuật liên thể thần bí, Cầu Hòa đã phong tỏa và áp chế hoàn toàn ý thức của Ninh Không Lâu, chính thức bước lên ngôi vị tối cao của Quốc Giáo. Cầu Hòa ban bố lệnh tái tổ chức phòng thủ 33 t",
+          "start_chapter": 1186,
+          "end_chapter": 1186,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Bình An Đòi 46 Thành Tây Bắc Từ Bắc Minh",
+          "description": "Đại Hán giành được 46 thành trì rộng lớn mà không tốn một mũi tên hòn đạn.",
+          "start_chapter": 1193,
+          "end_chapter": 1193,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Đàm Phán Hòa Bình Đại Hán - Bắc Minh: Thu Hồi 46 Thành Tây Bắc",
+          "description": "Tại Thành Chủ Phủ Thiên Thạch Thành, Quý Bình An đối diện với Thánh Tử Bắc Minh. Bằng sự am hiểu tường tận về nguồn gốc Thần Khí trong mi tâm và sức mạnh quân sự áp đảo, Quý Bình An đã buộc Bắc Minh p",
+          "start_chapter": 1193,
+          "end_chapter": 1193,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Trầm Hạo Bình Phục Sau Ca Hoán Huyết",
+          "description": "Đại Hán có thêm một mãnh tướng Nhân Tiên sung sức sẵn sàng xung trận.",
+          "start_chapter": 1195,
+          "end_chapter": 1195,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tư Mã Ý & Giả Hủ Bổ Sung Viện Binh Mã Siêu",
+          "description": "Khóa chặt mọi khe hở chiến thuật của Quốc Giáo tại Linh Ích Thành.",
+          "start_chapter": 1198,
+          "end_chapter": 1198,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tả Từ Lập Kế Đắp Đê Đập Thủy Công Thiên Sơn Thành",
+          "description": "Chuẩn bị một đòn sấm sét quyết định phá vỡ cửa ngõ phòng ngự 33 thành của Quốc Giáo.",
+          "start_chapter": 1199,
+          "end_chapter": 1199,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Công Trình Đê Đập Thủy Công Thiên Sơn",
+          "description": "Tả Từ giải thích cho Đào Nhã về tầm quan trọng của việc khống chế nguồn nước để tiêu diệt 10 thành trì phía sau Thiên Sơn Thành mà không cần tốn quá nhiều xương máu binh sĩ.",
+          "start_chapter": 1199,
+          "end_chapter": 1199,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hợp Thành Quân Thẳng Hướng Kinh Bắc & Bắc Duyên",
+          "description": "Khép lại Arc 4 bằng tư thế sẵn sàng cho đại chiến tổng lực phản công A Bố.",
+          "start_chapter": 1200,
+          "end_chapter": 1200,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 18,
+      "title": "Toàn Diện Công Quốc",
+      "description": "Quan Vũ lên Nhân Tiên, chiến dịch bộc phá Doanh Kinh, nhân thể tạc đạn",
+      "chapter_range": "Ch.1201-1300",
+      "start_chapter": 1201,
+      "end_chapter": 1300,
+      "num_events": 22,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Đại Chiến Linh Ích Thành & Thiên Hồn Thành",
+          "description": "Phan Phượng tử trận. Quý Bình An xóa bỏ Phan Phượng trong hệ thống, thu được 6 Anh Hồn Châu chuyển giao cho Quan Vũ đột phá cảnh giới Nhân Tiên.",
+          "start_chapter": 1206,
+          "end_chapter": 1210,
+          "chapter_span": 5
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Phan Phượng Vẫn Lạc & Chuyển Hóa Anh Hồn Châu",
+          "description": "Quý Bình An dùng 6 Anh Hồn Châu này bồi dưỡng cho Quan Vũ, mở đường cho Quan Vũ đột phá cảnh giới Nhân Tiên ở chương tiếp theo (Ch.1211).",
+          "start_chapter": 1209,
+          "end_chapter": 1209,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quan Vũ Đột Phá Nhân Tiên Cảnh",
+          "description": "Cán cân sức mạnh cao cấp nghiêng về phía Đại Hán, chuẩn bị cho màn đà đao trảm Ngân Giải.",
+          "start_chapter": 1211,
+          "end_chapter": 1211,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thiên Tử Kiếm & Bá Vương Thương",
+          "description": "Song binh khí hộ thân giúp Quý Bình An tự tin đối đầu với các đại Nhân Tiên như Tử Ngọc Sùng và A Bố.",
+          "start_chapter": 1211,
+          "end_chapter": 1211,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Bách Khổng Thành: Quan Vũ Trảm Ngân Giải",
+          "description": "Đại tướng Bán Tiên Ngân Giải bị chém chết tại chỗ. Tử Ngọc Sùng kinh hãi trước sức mạnh Nhân Tiên của Quan Vũ, hạ lệnh toàn quân lui binh.",
+          "start_chapter": 1212,
+          "end_chapter": 1240,
+          "chapter_span": 29
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tuân Úc Vận Chuyển Lưu Hỏa Mới Vượt Tây Hải",
+          "description": "Tạo tiền đề vũ khí bộc phá mang tính cách mạng cho các chiến dịch công thành và bẫy nổ sau này.",
+          "start_chapter": 1215,
+          "end_chapter": 1215,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Hoàn Toàn Mới Lưu Hỏa (Lưu Hỏa Cải Tiến Đệ Nhị Đại)",
+          "description": "Vũ khí mang tính quyết định giúp Đại Hán tạc sơn Doanh Kinh, triển khai Nhân Thể Tạc Đạn và tạo nên vụ nổ Thiên Băng Địa Liệt tiêu diệt Thiên A Thị.",
+          "start_chapter": 1215,
+          "end_chapter": 1215,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Kỹ Thuật Thủy Lợi & Đê Đập Bê Tông Bộc Phá",
+          "description": "Kỹ thuật được áp dụng xuất sắc tại Doanh Kinh đê đập nhấn chìm Thiên Sơn Thành.",
+          "start_chapter": 1216,
+          "end_chapter": 1216,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Đột Kích Quốc An Thành",
+          "description": "Đại Hán chiếm trọn Quốc An Thành nhanh chóng mà không cho quân địch kịp cứu viện.",
+          "start_chapter": 1221,
+          "end_chapter": 1222,
+          "chapter_span": 2
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quan Vũ Dùng Đà Đao Kế Trảm Đại Tướng Ngân Giải",
+          "description": "Tiêu diệt viên Bán Tiên mạnh nhất của Thiên Bắc Thị, ép Tử Ngọc Sùng phải lui binh bảo toàn lực lượng.",
+          "start_chapter": 1239,
+          "end_chapter": 1239,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Bắc Minh và Quý Vô Sinh Đàm Phán Chia Cắt Tây Lũng Thành",
+          "description": "Quý gia tạm thời bảo toàn lực lượng nhưng ngày càng nhận rõ dã tâm nuốt chửng của các thế lực Đại La, thúc đẩy Quý gia quay về quy phục Đại Hán.",
+          "start_chapter": 1241,
+          "end_chapter": 1241,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Huyết Chiến Phá Vây: Nhân Thể Tạc Đạn",
+          "description": "Quý Bình An và Lữ Bố phá tan vòng vây 20 vạn quân thoát ra an toàn; Cam Ninh kịp thời đưa quân tới ứng cứu.",
+          "start_chapter": 1251,
+          "end_chapter": 1267,
+          "chapter_span": 17
+        },
+        {
+          "category": "technologies",
+          "name": "Sinh Mệnh Thần Thụ Đại La",
+          "description": "Bảo vật cốt lõi duy trì sự sống cho Cầu Sinh và Cầu Hòa hàng trăm năm, sau này bị Quý Thiên Tứ dùng để tế luyện bản thân và chôn vùi trong biển lửa.",
+          "start_chapter": 1254,
+          "end_chapter": 1254,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Chiến Thuật Nhân Thể Tạc Đạn (Bom Cảm Tử Phá Vây)",
+          "description": "Chiến thuật cảm tử táo bạo phá tan thế trận bao vây 20 vạn Hộ Giáo Vệ của Cầu Sinh tại Thánh Đức Đại Sâm Lâm.",
+          "start_chapter": 1259,
+          "end_chapter": 1259,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Chiến Thuật Nhân Thể Tạc Đạn Phá Vỡ 20 Vạn Hộ Giáo Vệ",
+          "description": "Quý Bình An và Lữ Bố thoát khỏi tuyệt cảnh Thánh Đức Đại Sâm Lâm; đập tan âm mưu ép hợp thể của Cầu Sinh.",
+          "start_chapter": 1262,
+          "end_chapter": 1262,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Thủy Công: Doanh Kinh Đê Đập Tạc Sơn",
+          "description": "Thiên Sơn Thành ngập trong biển nước, quân Quốc Giáo bị tiêu diệt hoàn toàn; Lý Nho chỉ đạo hỏa thiêu thi thể tránh đại dịch.",
+          "start_chapter": 1271,
+          "end_chapter": 1275,
+          "chapter_span": 5
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Tạc Núi Doanh Kinh Nhấn Chìm Thiên Sơn Thành",
+          "description": "Toàn bộ quân địch tại Thiên Sơn Thành bị tiêu diệt; Lý Nho ra lệnh hỏa thiêu ngăn chặn nguy cơ dịch bệnh bùng phát.",
+          "start_chapter": 1273,
+          "end_chapter": 1273,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Phượng Hoàng Xuất Thế Khống Chế Tử Ngọc Sùng",
+          "description": "Đưa yếu tố thần thú Đồ Đằng vào bàn cờ tranh bá; Tử Ngọc Sùng trở thành con rối của Phượng Hoàng.",
+          "start_chapter": 1279,
+          "end_chapter": 1279,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Hòa Ước Hiểm Độc Giữa Phượng Hoàng và Tử Ngọc Sùng",
+          "description": "Tử Ngọc Sùng hoàn toàn trở thành con cờ phụ thuộc vào mệnh lệnh của Đồ Đằng Chi Thần Phượng Hoàng.",
+          "start_chapter": 1279,
+          "end_chapter": 1279,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Hỏa Hồng Sắc Tinh Thạch (Đồ Đằng Chi Tinh)",
+          "description": "Tử Ngọc Sùng và Quý Thiên Tứ từng sở hữu tinh thạch này để gia tăng tu vi võ đạo.",
+          "start_chapter": 1279,
+          "end_chapter": 1279,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Tam Đại Quân Sư Hội Đàm (Gia Cát Lượng, Quách Gia, Bàng Thống)",
+          "description": "Định hình toàn bộ lộ trình chiến thắng của Đại Hán trong suốt nửa sau Arc 5.",
+          "start_chapter": 1285,
+          "end_chapter": 1285,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Diệt Quốc Giáo tại Thánh Đức Đại Sâm Lâm",
+          "description": "Quốc Giáo chính thức sụp đổ; Ninh Không Lâu bị Cầu Hòa thôn phệ; Bàng Thống chịu chết kích hoạt Niết Bàn tái sinh; Cầu Hòa mang tàn quân chạy trốn.",
+          "start_chapter": 1292,
+          "end_chapter": 1337,
+          "chapter_span": 46
+        }
+      ]
+    },
+    {
+      "act_number": 19,
+      "title": "A Bố Song Sinh Ngũ Thân",
+      "description": "A Bố lộ diện, Lữ Bố đột phá 160, Triệu Vân tử chiến & phục sinh",
+      "chapter_range": "Ch.1301-1400",
+      "start_chapter": 1301,
+      "end_chapter": 1400,
+      "num_events": 12,
+      "events": [
+        {
+          "category": "technologies",
+          "name": "Kim Ô Giáp",
+          "description": "Bộ giáp trứ danh khiến Kim Khuê trở thành pháo đài di động, chỉ bị phá vỡ trong đại quyết chiến cuối cùng.",
+          "start_chapter": 1307,
+          "end_chapter": 1307,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Cầu Hòa Thôn Phệ Quốc Hoàng Ninh Không Lâu",
+          "description": "Quốc Giáo chính thức mất đi người đứng đầu hợp pháp, nội bộ hoàn toàn rạn nứt dẫn tới sụp đổ.",
+          "start_chapter": 1334,
+          "end_chapter": 1334,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Bàng Thống Chịu Chết Kích Hoạt Thiên Phú Niết Bàn",
+          "description": "Bàng Thống kích hoạt thành công thiên phú Niết Bàn, bí mật hồi sinh nguyên vẹn tại Ch.1391.",
+          "start_chapter": 1337,
+          "end_chapter": 1337,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Xung Đột Tiềm Tàng Giữa Thái Tử Quý Sơn Hà và Hoàng Tử Quý Thiên Tứ",
+          "description": "Khiến Quách Gia phải tính toán nước cờ tàn nhẫn để bảo vệ sự ổn định lâu dài cho vương triều Đại Hán.",
+          "start_chapter": 1338,
+          "end_chapter": 1338,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Huyết Chiến Kinh Bắc Thành: Lữ Bố Đột Phá Nhân Tiên",
+          "description": "Đại Hán toàn thắng phòng thủ Kinh Bắc Thành; bẻ gãy ý chí của Bắc Minh và Tử Ngọc Sùng.",
+          "start_chapter": 1364,
+          "end_chapter": 1369,
+          "chapter_span": 6
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hệ Thống Cộng Điểm: Lữ Bố Đạt 160 Võ Lực Đột Phá Nhân Tiên",
+          "description": "Lữ Bố áp đảo toàn diện Bắc Minh, bẻ gãy ma đao của hắn và thiết lập vị thế Chiến Thần đệ nhất Đại Hán.",
+          "start_chapter": 1367,
+          "end_chapter": 1367,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Trận Hoàng Hôn Chi Sâm: Tam Cường Vây Giết Bắc Minh",
+          "description": "Bắc Minh bị đánh trọng thương phế bỏ hoàn toàn công lực, thế lực Bắc U tan rã.",
+          "start_chapter": 1380,
+          "end_chapter": 1383,
+          "chapter_span": 4
+        },
+        {
+          "category": "battles",
+          "name": "Trận Thiên Thạch Thành: Tử Long Ngã Xuống & Tái Sinh",
+          "description": "Triệu Vân tử chiến. Quý Bình An thu hồi thi thể và dùng thần y Hoa Đà thi triển 'Xuân Về Linh Hồn' hồi sinh Triệu Vân hoàn mỹ.",
+          "start_chapter": 1387,
+          "end_chapter": 1395,
+          "chapter_span": 9
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Triệu Vân Tử Chiến Sừng Sững Giữa Vạn Quân",
+          "description": "Lòng dũng cảm của Triệu Vân khiến kẻ thù khiếp sợ; Quý Bình An quyết tâm đoạt lại thi thể bằng mọi giá.",
+          "start_chapter": 1389,
+          "end_chapter": 1389,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Thần Y Hoa Đà Dùng 'Xuân Về Linh Hồn' Hồi Sinh Triệu Vân",
+          "description": "Triệu Vân hồi sinh thần kỳ, lập tức dẫn quân tái chiếm Tây Môn Quan và diệt sạch Bắc U chi địa.",
+          "start_chapter": 1395,
+          "end_chapter": 1395,
+          "chapter_span": 1
+        },
+        {
+          "category": "technologies",
+          "name": "Thi Khôi Chi Thuật & Thi Khôi Vương",
+          "description": "Công cụ chiến tranh phi nhân tính của các thế lực phản diện tại Đại La nhằm chống lại đại quân Đại Hán.",
+          "start_chapter": 1396,
+          "end_chapter": 1396,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Thiên Tứ Ngửa Bài & Tế Sát Cầu Hòa Trong Thần Thụ",
+          "description": "Cầu Hòa chết trong uất hận; Quý Thiên Tứ đột phá Nhân Tiên và hoàn toàn làm chủ nguồn năng lượng Sinh Mệnh Thần Thụ.",
+          "start_chapter": 1400,
+          "end_chapter": 1400,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 20,
+      "title": "Thiên Hạ Quyết Chiến",
+      "description": "Quý Thiên Tứ hy sinh, Quách Gia tuẫn quốc, Vương Việt đồng quy vu tận",
+      "chapter_range": "Ch.1401-1485",
+      "start_chapter": 1401,
+      "end_chapter": 1485,
+      "num_events": 9,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Chiến Dịch Tái Chiếm Tây Môn Quan & Bắt Phượng Hoàng",
+          "description": "Đại Hán tái chiếm trọn vẹn Tây Môn Quan; Phượng Hoàng bị giam cầm; Tử Ngọc Sùng tháo chạy đầu hàng A Bố.",
+          "start_chapter": 1403,
+          "end_chapter": 1415,
+          "chapter_span": 13
+        },
+        {
+          "category": "political_events",
+          "name": "Tử Ngọc Sùng Bại Trận Đầu Hàng A Bố",
+          "description": "Hợp nhất toàn bộ tàn dư Thiên Bắc Thị vào guồng máy chiến tranh của Thiên A Thị cho trận quyết chiến cuối cùng.",
+          "start_chapter": 1417,
+          "end_chapter": 1417,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Quý Thiên Tứ Ngửa Bài Lòng Trung Trinh Với Phụ Hoàng",
+          "description": "Đập tan mọi âm mưu chia rẽ hoàng gia Đại Hán từ bên trong.",
+          "start_chapter": 1421,
+          "end_chapter": 1421,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quý Thiên Tứ Huyết Chiến Đả Thương Tử Ngọc Sùng",
+          "description": "Làm phá sản toàn bộ toan tính của Tử Ngọc Sùng, ép hắn phải tháo chạy và đầu hàng A Bố.",
+          "start_chapter": 1423,
+          "end_chapter": 1423,
+          "chapter_span": 1
+        },
+        {
+          "category": "battles",
+          "name": "Đại Chiến Định Thánh Thành",
+          "description": "A Bố buộc phải rút lui; Đại Hán chiếm hoàn toàn Định Thánh Thành.",
+          "start_chapter": 1426,
+          "end_chapter": 1445,
+          "chapter_span": 20
+        },
+        {
+          "category": "battles",
+          "name": "Trận Cửa Tây Thiên A: Lữ Bố Trảm Nhân Tiên",
+          "description": "Lữ Bố một kích đâm xuyên ngực chém chết Hoàng Thành Vệ Thống Lĩnh (Nhân Tiên) ngay giữa quân địch.",
+          "start_chapter": 1470,
+          "end_chapter": 1473,
+          "chapter_span": 4
+        },
+        {
+          "category": "battles",
+          "name": "Bi kịch Kinh Bắc Thành: Quách Gia & Quý Thiên Tứ Hy Sinh",
+          "description": "Kinh Bắc Thành hóa thành tro bụi; Quách Gia và Quý Thiên Tứ anh dũng hy sinh; A Bố và Phượng Hoàng chật vật đào thoát.",
+          "start_chapter": 1480,
+          "end_chapter": 1486,
+          "chapter_span": 7
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Quách Gia Đồng Quy Vu Tận Tại Kinh Bắc Thành",
+          "description": "Quách Gia và Quý Thiên Tứ hi sinh kiêu hùng; Đại Hán loại bỏ được hiểm họa nội loạn tương lai.",
+          "start_chapter": 1482,
+          "end_chapter": 1482,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Quách Gia Hy Sinh Vì Đại Cục Quốc Gia",
+          "description": "Hành động bi tráng bảo vệ thái bình thịnh trị đời đời cho Đại Hán.",
+          "start_chapter": 1482,
+          "end_chapter": 1482,
+          "chapter_span": 1
+        }
+      ]
+    },
+    {
+      "act_number": 21,
+      "title": "Đại Hán Thịnh Thế",
+      "description": "Thiên Băng Địa Liệt, chôn vùi 60 vạn quân, thu phục Phượng Hoàng, thống nhất thiên hạ",
+      "chapter_range": "Ch.1486-1509",
+      "start_chapter": 1486,
+      "end_chapter": 1509,
+      "num_events": 7,
+      "events": [
+        {
+          "category": "battles",
+          "name": "Đại Quyết Chiến Thánh Đức Đại Sâm Lâm: Táng Diệt Thiên A Thị",
+          "description": "Đại quân 60 vạn Thiên A Thị và toàn bộ các phân thân A Bố bị chôn vùi hoàn toàn; Vương Việt và Kim Khuê tử trận; Lữ Bố hộ giá Quý Bình An an toàn.",
+          "start_chapter": 1496,
+          "end_chapter": 1507,
+          "chapter_span": 12
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Hé Lộ Bí Mật Ngũ Thể Đồng Sinh Của A Bố",
+          "description": "Giải mã sức mạnh bí ẩn của chúa tể Thiên A Thị, buộc Quý Bình An phải dùng đại kế bộc phá diện rộng.",
+          "start_chapter": 1498,
+          "end_chapter": 1498,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Vương Việt Dĩ Mệnh Hoán Mệnh Trảm Sát A Bố",
+          "description": "Tiêu diệt 1 thực thể nguy hiểm của A Bố, giảm bớt áp lực khổng lồ cho Quý Bình An.",
+          "start_chapter": 1501,
+          "end_chapter": 1501,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Địa Chấn Bộc Phá San Phẳng 60 Vạn Quân Thiên A Thị",
+          "description": "Thiên A Thị hoàn toàn bị xóa sổ; cuộc chiến thống nhất Đại La đi đến hồi kết thắng lợi.",
+          "start_chapter": 1507,
+          "end_chapter": 1507,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Giao Ước 10 Năm Hòa Bình Giữa Quý Bình An và Phượng Hoàng",
+          "description": "Thu phục thành công Đồ Đằng Chi Thần mà không cần tốn thêm xương máu của quân sĩ.",
+          "start_chapter": 1507,
+          "end_chapter": 1507,
+          "chapter_span": 1
+        },
+        {
+          "category": "key_plot_events",
+          "name": "Đại Điển Sắc Phong & Kiến Tạo Đại Hán Thịnh Thế",
+          "description": "Toàn cõi Đại Vũ và Đại La quy về một mối; mở ra thời kỳ Đại Hán Thịnh Thế vĩnh viễn lưu danh trong sử sách.",
+          "start_chapter": 1509,
+          "end_chapter": 1509,
+          "chapter_span": 1
+        },
+        {
+          "category": "political_events",
+          "name": "Chiếu Chỉ Đại Hán Thịnh Thế & Thống Nhất Văn Tự - Kinh Tế",
+          "description": "Chính thức khép lại thời kỳ phân tranh loạn lạc, mở ra kỷ nguyên Đại Hán Thịnh Thế - Đại Hán Truyền Kỳ rực rỡ nhất lịch sử.",
+          "start_chapter": 1509,
+          "end_chapter": 1509,
+          "chapter_span": 1
+        }
+      ]
+    }
+  ],
+  "full_timeline": [
+    {
+      "category": "key_plot_events",
+      "name": "Xuyên Việt & Phá Giải Câu Đối Hoàng Cung",
+      "description": "Quý Bình An xuyên không nhập thể vào phò mã gia ăn chơi, giải vế đối hiểm hóc 'Thiên đương kỳ bàn tinh tác tử...' bằng vế đối 'Địa tác tỳ bà lộ tác huyền...', giành trọn trăm lượng vàng và chấn động t",
+      "start_chapter": 1,
+      "end_chapter": 1,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Câu Đối Định Bang Giao & Vũ Hoàng Ban Thưởng",
+      "description": "Vũ Hoàng đưa ra vế đối hòng thử tài quan lại và ứng phó sức ép từ Tây Lăng. Quý Bình An đối đáp chuẩn xác áp đảo sứ đoàn ngoại bang, nhận thưởng ngàn vàng và củng cố danh phận Phò mã Đại Vũ.",
+      "start_chapter": 1,
+      "end_chapter": 1,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Triệu Vân & Thiên Kim Mãi Mã Cốt",
+      "description": "Dùng Anh Hồn Lệnh kích hoạt Triệu Vân; giải tỏa Bách Điểu Triều Phượng Thương bằng 3.000 kim; cho Triệu Vân mua xác ngựa chết với giá ngàn vàng để che giấu tài năng thực sự.",
+      "start_chapter": 5,
+      "end_chapter": 5,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Chế Tạo Thấu Hoa Cao & Thu Phục Thiên Kim Lâu",
+      "description": "Quý Bình An dùng kiến thức hiện đại chế tạo xà phòng thơm cao cấp (Thấu Hoa Cao), bắt tay cùng Lâu chủ Vệ Ti Vũ độc quyền kinh doanh.",
+      "start_chapter": 8,
+      "end_chapter": 8,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thấu Hoa Cao (Xà Phòng Tinh Chế)",
+      "description": "",
+      "start_chapter": 8,
+      "end_chapter": 8,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thích Sát Phò Mã Phủ (Quý Vô Song thử thách)",
+      "description": "Phe Quý Bình An toàn thắng, toàn bộ thích khách bị đẩy lui; Quý Vô Song thừa nhận thực lực Hoàng Cảnh đỉnh phong của Triệu Vân",
+      "start_chapter": 10,
+      "end_chapter": 10,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vũ Hoàng Hạ Chỉ Bắc Chinh (Kế Mượn Đao)",
+      "description": "Vũ Hoàng sắc phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, phong Tô Vân làm Bắc Chinh Tướng Quân cùng dẫn 30.000 quân đi dẹp Bắc Cảnh.",
+      "start_chapter": 15,
+      "end_chapter": 15,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Sắc Phong Chinh Bắc Đại Tướng Quân (Phân Hóa Binh Quyền)",
+      "description": "Vũ Hoàng ban thánh chỉ phong Tô Vân làm Bắc Chinh Đại Tướng Quân, phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, mỗi bên 3 vạn quân đi thu phục Bắc Cảnh tam châu.",
+      "start_chapter": 15,
+      "end_chapter": 15,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Vạn Kim Mưu Sĩ Mã Tắc",
+      "description": "Quý Bình An tích đủ 10.000 kim triệu hoán được Mã Tắc. Nhận thấy bản tính bàn việc binh trên giấy của Mã Tắc, Quý Bình An liền nảy ra kế đưa Mã Tắc sang phe đối thủ.",
+      "start_chapter": 17,
+      "end_chapter": 17,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Bán Quân Công 10 Vạn Kim & Hố Vũ Hoàng",
+      "description": "Quý Bình An yêu cầu mang Thập Tam hoàng tử đi cùng và ép Vũ Hoàng chi 10 vạn kim mua quân công, kết hợp với các khoản phụ thu vét sạch 200.000 lượng vàng từ quốc khố.",
+      "start_chapter": 24,
+      "end_chapter": 24,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Độc Sĩ Giả Hủ & Tiếp Quản Huyết Y Doanh",
+      "description": "Lấy 10 vạn kim từ triều đình triệu hoán Giả Hủ; mở khóa thiên phú Triệu Vân. Giả Hủ khuyên xin tân binh Huyết Y Doanh để tự tay xây dựng đội quân trung thành tuyệt đối.",
+      "start_chapter": 27,
+      "end_chapter": 27,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Đột Phá Cửa Ngõ Khai Nguyên Huyện",
+      "description": "Phe Quý Bình An toàn thắng mà không tổn thất binh mã",
+      "start_chapter": 42,
+      "end_chapter": 45,
+      "chapter_span": 4
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Giả Trúng Độc Đoạt Cửa Ngõ Khai Nguyên Huyện",
+      "description": "Quý Bình An giả vờ bị hạ độc để Triệu Vân xông vào thành bắt sống Lưu Nguyên, tước đoạt toàn bộ kho lương của Tứ hoàng tử.",
+      "start_chapter": 43,
+      "end_chapter": 43,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Bắc Cảnh Tam Châu Lần Thứ Nhất (Xả Lũ Diệt Địch Hỏa)",
+      "description": "2 vạn quân Nam Ly bị xóa sổ hoàn toàn; Triệu Vân bắt sống Đại tướng Địch Hỏa",
+      "start_chapter": 48,
+      "end_chapter": 54,
+      "chapter_span": 7
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Xả Lũ Thanh Châu Bắt Sống Địch Hỏa",
+      "description": "Giả Hủ dùng kế đóng cửa xả lũ tiêu diệt 2 vạn quân Nam Ly trong hẻm thành; Triệu Vân bắt sống Địch Hỏa giải về kinh đô.",
+      "start_chapter": 52,
+      "end_chapter": 52,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Cổ Chi Ác Lai Điển Vi",
+      "description": "Dùng 10 vạn kim triệu hoán Điển Vi; giải tỏa Tấn Thiết Song Kích và hệ thống Lục Kỹ.",
+      "start_chapter": 63,
+      "end_chapter": 63,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Chiến Cổng Thành Đế Đô (Điển Vi xuất thế)",
+      "description": "Trong 10 nhịp thở, toàn bộ 50 vệ binh bị đánh gục la liệt; Tử Ngọc Hằng hoảng sợ rút lui",
+      "start_chapter": 66,
+      "end_chapter": 67,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trực Thần Đối Câu Đối Trắng Kinh Động Triều Đình",
+      "description": "Quý Bình An mặc áo tang đối câu đối trắng ngay tại điện, tự phong làm trực thần dám nói thẳng, khiến Vũ Hoàng không thể trừng phạt mà phải ban thưởng chức Điển Nông Trung Lang Tướng.",
+      "start_chapter": 69,
+      "end_chapter": 69,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Minh Thăng Ám Hàng: Quý Bình An Thụ Phong Điển Nông Trung Lang Tướng",
+      "description": "Sau đại thắng Bắc Cảnh, Vũ Hoàng tước binh quyền nhưng phong Quý Bình An làm Điển Nông Trung Lang Tướng phụ trách thuế lương cả nước và ban áo Tử Kinh Y.",
+      "start_chapter": 69,
+      "end_chapter": 69,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tỉ Võ Tam Quan & Đoạt Huyết Long Lệnh",
+      "description": "Điển Vi hạ gục cao thủ Tây Lăng; Quý Bình An đối thơ thắng tuyệt đối, đoạt lấy Huyết Long Lệnh từ tay sứ đoàn Tây Lăng.",
+      "start_chapter": 80,
+      "end_chapter": 80,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
+      "description": "Đại Vũ toàn thắng cả 3 cửa ải",
+      "start_chapter": 80,
+      "end_chapter": 83,
+      "chapter_span": 4
+    },
+    {
+      "category": "political_events",
+      "name": "Sứ Đoàn Tây Lăng Đòi Mua Quý Bình An Bằng Trăm Vạn Kim",
+      "description": "Tây Lăng đưa ra đề nghị trao đổi trăm vạn kim để đưa Quý Bình An về Tây Lăng làm thượng khách, đồng thời ký kết minh ước chống Nam Ly.",
+      "start_chapter": 84,
+      "end_chapter": 84,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vũ Hoàng Trúng Độc Thực Tâm Bách Cốt Trùng",
+      "description": "Vũ Hoàng bị đầu độc bằng cổ độc Thực Tâm Bách Cốt Trùng cực kỳ nguy hiểm, nội tạng suy kiệt dần.",
+      "start_chapter": 90,
+      "end_chapter": 90,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Tuyệt Thế Mưu Thần Lý Nho",
+      "description": "Dùng 10 vạn kim triệu hoán Lý Nho; Lý Nho đề xuất kế sách liên kết Đại hoàng tử Tử Ngọc Trạch và diệt trừ toàn bộ đối thủ ngầm.",
+      "start_chapter": 97,
+      "end_chapter": 97,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Biến Cung Đình: Dẹp Loạn Cấm Vệ Quân Tô Kiến Phong",
+      "description": "Phe Quý gia đại thắng; Tô Kiến Phong bại trận bị bắt; Hứa Hòa Lâm bị giam giữ",
+      "start_chapter": 104,
+      "end_chapter": 110,
+      "chapter_span": 7
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Điển Vi Đánh Bại Tô Kiến Phong Dẹp Tan Binh Biến",
+      "description": "Tô Kiến Phong đánh vào hoàng cung bị Điển Vi dùng Song Thiết Kích đâm xuyên hai vai phế bỏ; Chiến Hổ Quân bắt trọn bè lũ phản loạn.",
+      "start_chapter": 109,
+      "end_chapter": 109,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Vũ Hoàng Lập Thái Tử Tử Ngọc Trạch & Băng Hà",
+      "description": "Sau khi dẹp yên cuộc binh biến của Tô Kiến Phong, Vũ Hoàng nhận thấy chỉ có Đại hoàng tử liên minh với Quý gia mới giữ được triều đình; ban chiếu lập Tử Ngọc Trạch làm Thái tử rồi băng hà.",
+      "start_chapter": 113,
+      "end_chapter": 113,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vũ Hoàng Băng Hà & Tân Hoàng Kế Vị",
+      "description": "Quốc chung vang 9 tiếng, Vũ Hoàng băng hà; Quý Vô Song giả chết lui vào bóng tối; Tử Ngọc Trạch kế vị hoàng đế.",
+      "start_chapter": 114,
+      "end_chapter": 114,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Tân Hoàng Đăng Cơ Sắc Phong Bách Quan",
+      "description": "Tử Ngọc Trạch chính thức lên ngôi hoàng đế, lập An thị (người An gia) làm Hoàng hậu, ban thưởng công thần và phong quan tiến tước.",
+      "start_chapter": 117,
+      "end_chapter": 117,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Thanh Trừng Toàn Tộc Ngao Gia Bất Chấp Hoàng Mệnh",
+      "description": "Quý Bình An tự mình ra lệnh cho Triệu Vân tru diệt toàn bộ Ngao phủ mà không cần thông qua chiếu chỉ của triều đình, sau đó ép Tân Hoàng phải hợp thức hóa bằng một chiếu chỉ trừng phạt tội thần.",
+      "start_chapter": 120,
+      "end_chapter": 120,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đêm Huyết Tẩy Ngao Phủ",
+      "description": "Toàn bộ gia tộc Ngao thị bị diệt môn trong một đêm",
+      "start_chapter": 121,
+      "end_chapter": 123,
+      "chapter_span": 3
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tru Diệt Toàn Bộ Gia Tộc Ngao Thị",
+      "description": "Quý Bình An dẫn quân diệt môn Ngao phủ trong đêm vì tội phản trắc và mưu hại Quý gia.",
+      "start_chapter": 123,
+      "end_chapter": 123,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Cứu Kỳ Nhân Cơ Vô Pháp & Cơ Vô Thiên",
+      "description": "Quý Bình An cướp ngục Đình Úy Phủ giải cứu quỷ y Cơ Vô Pháp và cao thủ khinh công Cơ Vô Thiên.",
+      "start_chapter": 134,
+      "end_chapter": 134,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Náo Đình Úy Phủ Giải Cứu Điển Vi Và Cơ Vô Pháp",
+      "description": "Giải cứu thành công Điển Vi và kỳ nhân Cơ Vô Pháp an toàn",
+      "start_chapter": 136,
+      "end_chapter": 137,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Tuyệt Thế Mỹ Nhân Điêu Thuyền",
+      "description": "Sử dụng Thẻ Anh Hồn đặc thù triệu hoán Điêu Thuyền; mở khóa kỹ năng mị hoặc Bế Nguyệt.",
+      "start_chapter": 140,
+      "end_chapter": 140,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thuốc Giải Thực Tâm Bách Cốt Trùng",
+      "description": "",
+      "start_chapter": 141,
+      "end_chapter": 141,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Tuyệt Thế Danh Tướng Trương Liêu",
+      "description": "Triệu hoán Trương Liêu (10 vạn kim), Hoa Hùng và Khúc Nghĩa (mỗi người 1 vạn kim); mở khóa binh chủng Tiên Đăng Tử Sĩ.",
+      "start_chapter": 150,
+      "end_chapter": 150,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
+      "description": "Đại thắng; 30 vạn quân Nam Ly đại bại tháo chạy; Chu Bất Ninh bị trảm thủ; Cung Sinh nhận thất bại đầu tiên trong đời",
+      "start_chapter": 151,
+      "end_chapter": 182,
+      "chapter_span": 32
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Chính Thức Thành Lập Mạng Lưới Sát Thủ 'Hồng Nhan'",
+      "description": "Quý Bình An trao toàn quyền thanh đao Hồng Nhan cho Điêu Thuyền quản lý nhằm tạo mạng lưới tình báo nữ bao trùm thiên hạ.",
+      "start_chapter": 156,
+      "end_chapter": 156,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Hỏa Bắc Cô Sơn Thiêu Rụi Đại Quân Nam Ly",
+      "description": "Giả Hủ dùng kế dụ 30 vạn quân Nam Ly vào thung lũng Bắc Cô Sơn rồi phóng hỏa thiêu rụi toàn bộ lương thảo và trang bị địch.",
+      "start_chapter": 174,
+      "end_chapter": 174,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triển Lãm Móng Ngựa Sắt & Đột Phá Kỵ Binh",
+      "description": "Quý Bình An đưa ra phát minh móng ngựa sắt đóng vào vó ngựa chiến, giúp kỵ binh vượt mọi địa hình đá nhọn không bị tổn hại.",
+      "start_chapter": 176,
+      "end_chapter": 176,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Móng Ngựa Sắt (Thiết Đề / Thiết Đạp)",
+      "description": "",
+      "start_chapter": 176,
+      "end_chapter": 176,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Nỏ Liên Hoàn Cơ Quan",
+      "description": "",
+      "start_chapter": 190,
+      "end_chapter": 190,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Tuyệt Thế Năng Thần Tuân Úc & Ngũ Bộ Chiến Lược",
+      "description": "Triệu hoán Tuân Úc bằng 10 vạn kim; Tuân Úc đề xuất kế hoạch 5 bước thâu tóm toàn diện kinh tế, quân đội và chính quyền Đại Vũ.",
+      "start_chapter": 201,
+      "end_chapter": 201,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Chặn Đứng Thích Khách Tây Lăng Quỷ Quật",
+      "description": "Thích khách bị tiêu diệt tại chỗ; Điển Vi được Cơ Vô Pháp giải độc cứu sống",
+      "start_chapter": 203,
+      "end_chapter": 204,
+      "chapter_span": 2
+    },
+    {
+      "category": "technologies",
+      "name": "Bộ Giáp Trọng Thiết Phản Chấn",
+      "description": "",
+      "start_chapter": 205,
+      "end_chapter": 205,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Triệu Vân Đơn Thương Độc Mã Bức Hàng Tây Kinh",
+      "description": "Triệu Vân áp sát hoàng cung Tây Lăng không ai dám cản; Tây Lăng hoảng sợ chấp nhận thả Quý Bình Sinh",
+      "start_chapter": 222,
+      "end_chapter": 222,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Hỏa Dược & Ống Trúc Phát Nổ",
+      "description": "",
+      "start_chapter": 227,
+      "end_chapter": 227,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trưởng Tử Quý Sơn Hà Xuất Sinh",
+      "description": "Điêu Thuyền hạ sinh con trai đầu lòng, Quý Bình An đặt tên là Quý Sơn Hà, tự Xã Tắc.",
+      "start_chapter": 228,
+      "end_chapter": 228,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long)",
+      "description": "Triệu Vân thương phong áp đảo, Tử Triệu Phong và Tô Kiến Phong bị thương; Trần Hải can ngăn đình chiến",
+      "start_chapter": 238,
+      "end_chapter": 240,
+      "chapter_span": 3
+    },
+    {
+      "category": "political_events",
+      "name": "Vụ Án Cần Chính Điện: Đình Chiến Bắt Buộc Giữa Hoàng Đế & Quý Gia",
+      "description": "Tân Hoàng Tử Ngọc Trạch mưu sát Triệu Vân tại ngự điện thất bại nhục nhã trước sức mạnh Bán Thánh của Triệu Tử Long; buộc phải nén giận tuyên bố hiểu lầm và đình chiến.",
+      "start_chapter": 240,
+      "end_chapter": 240,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Tiêu Diệt Phi Báo Quân",
+      "description": "Phi Báo Quân bị xóa sổ hoàn toàn; Bán Thánh phe địch bị thương bỏ chạy",
+      "start_chapter": 245,
+      "end_chapter": 247,
+      "chapter_span": 3
+    },
+    {
+      "category": "battles",
+      "name": "Quý Bình An Mang Quân Công Phá Hoàng Cung",
+      "description": "Toàn bộ cấm vệ buông vũ khí quy hàng; Quý Bình An kiểm soát tuyệt đối hoàng cung",
+      "start_chapter": 251,
+      "end_chapter": 253,
+      "chapter_span": 3
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Bình An Thụ Phong Trấn Quốc Công & Tuân Úc Làm Thừa Tướng",
+      "description": "Sau khi đánh chiếm hoàng cung dẹp loạn, Quý Bình An ép Tân Hoàng ban chiếu phong y làm Trấn Quốc Công và phong Tuân Úc làm Thừa Tướng Đại Vũ.",
+      "start_chapter": 255,
+      "end_chapter": 255,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Sắc Phong Trấn Quốc Công & Tuân Úc Tiếp Quản Chức Vị Thừa Tướng",
+      "description": "Quý Bình An đem đại quân kiểm soát hoàng cung, ép Tử Ngọc Trạch ban chiếu phong Quý Bình An làm Trấn Quốc Công (quyền ngang quân vương) và bãi miễn chức Thừa tướng của Hứa Hòa Lâm để phong cho Tuân Úc",
+      "start_chapter": 255,
+      "end_chapter": 255,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
+      "description": "Đại thắng toàn diện; Triệu Văn Dụ bị chém đầu; Tử Triệu Phong trúng độc Toái Mệnh Đan chết; quân An gia thảm bại rút lui",
+      "start_chapter": 269,
+      "end_chapter": 279,
+      "chapter_span": 11
+    },
+    {
+      "category": "technologies",
+      "name": "Toái Mệnh Đan & Độc Dược Phá Tạng",
+      "description": "",
+      "start_chapter": 274,
+      "end_chapter": 274,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Vũ Khí Lưu Hỏa (Hỏa Khí Công Thành)",
+      "description": "",
+      "start_chapter": 276,
+      "end_chapter": 276,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Thắng Hồn Huyết Sơn Thu Hoạch Trăm Xe Mỏ Vàng",
+      "description": "Dùng vũ khí hỏa công Lưu Hỏa phá nát quân An gia tại Hồn Huyết Sơn, trảm sát tướng Đông Thương Triệu Văn Dụ, tịch thu hơn 100 xe mỏ vàng (trị giá 75 vạn kim).",
+      "start_chapter": 277,
+      "end_chapter": 277,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Khởi Động Đại Kế 'Mưu Quốc' Chuyển Giao Hoàng Vị",
+      "description": "Bốn đại tuyệt thế mưu thần cùng ngồi lại vạch ra lộ trình 'Mưu Quốc': lợi dụng tình trạng hôn mê của Tử Ngọc Trạch, mở kho cứu tế thu phục dân tâm, mở rộng bờ cõi đánh chiếm Nam Quan và Tây Lăng để da",
+      "start_chapter": 296,
+      "end_chapter": 296,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Chém giết Hoa Chấn Viễn và Huyết Tùng, Thu phục Cơ Vô Pháp",
+      "description": "Quý Bình An phát hiện và xử tử hai gián điệp nội gián nguy hiểm là Hoa Chấn Viễn và Huyết Tùng, dùng ân uy thu phục hoàn toàn Cơ Vô Pháp làm mật thám trung thành.",
+      "start_chapter": 301,
+      "end_chapter": 301,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Sắc phong Tịnh Kiên Vương & Khẩu quyết 'Một lời mà vì thiên hạ pháp'",
+      "description": "Vũ Hoàng Tử Ngọc Trạch bất ngờ phong Quý Bình An làm Tịnh Kiên Vương, Thiên Uy Thượng Tướng Quân. Tại Ch.305, hai người đàm đạo và Quý Bình An đưa ra tôn chỉ 'Nhất ngôn nhi vi thiên hạ pháp'.",
+      "start_chapter": 303,
+      "end_chapter": 303,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Tử Ngọc Trạch Sắc Phong Quý Bình An Làm Tịnh Kiên Vương",
+      "description": "Quý Bình An chính thức nắm binh quyền Đại Vũ, đứng ngang hàng với hoàng đế.",
+      "start_chapter": 303,
+      "end_chapter": 303,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Ninh An Công Chúa Trúng Độc Qua Đời Dưới Gốc Hoa Lê",
+      "description": "Ninh An công chúa trúng độc bí ẩn, ngồi trên xích đu dưới gốc cây hoa lê và qua đời, ứng nghiệm chính xác lời sấm truyền của Đại Vũ Thiên Cơ.",
+      "start_chapter": 307,
+      "end_chapter": 307,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vạch Trần Thân Phận Đại Vũ Thiên Cơ: Bắt Giữ Vu Văn Châu",
+      "description": "Quý Bình An phong tỏa cổng Tây Đế đô, chặn bắt cỗ xe ngựa định đào tẩu của Ám Ảnh, vạch trần Viện sĩ Hàn Lâm Viện Vu Văn Châu chính là 'Đại Vũ Thiên Cơ'.",
+      "start_chapter": 310,
+      "end_chapter": 310,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Cửa Ải Lâm Quan Thành (Đến Quan Thành)",
+      "description": "Đại Hán đại thắng; Đổng Vệ Đông trọng thương bị bắt; Tần Tứ Nghiệp đại bại tháo lui.",
+      "start_chapter": 321,
+      "end_chapter": 325,
+      "chapter_span": 5
+    },
+    {
+      "category": "battles",
+      "name": "Trận Phục Kích Hoài Hà - Nghiệp Thành",
+      "description": "Tần Tứ Nghiệp bị dồn vào đường cùng nhưng Quý Bình An hạ lệnh cố tình để Tần Tứ Nghiệp sống sót rời đi.",
+      "start_chapter": 326,
+      "end_chapter": 328,
+      "chapter_span": 3
+    },
+    {
+      "category": "battles",
+      "name": "Trận Phòng Thủ Bắc Cô Sơn Quan Ải",
+      "description": "Quân Đông Thương đại bại thương vong vô số; Bùi Nguyên bị Điển Vi bắt sống tại chỗ.",
+      "start_chapter": 334,
+      "end_chapter": 338,
+      "chapter_span": 5
+    },
+    {
+      "category": "battles",
+      "name": "Trận Tập Kích Đánh Úp Linh Khê Thành",
+      "description": "Thành vỡ; bắt sống Bán Thánh Vân Ninh.",
+      "start_chapter": 346,
+      "end_chapter": 348,
+      "chapter_span": 3
+    },
+    {
+      "category": "political_events",
+      "name": "Thỏa Thuận Trao Đổi Bán Thánh Vân Ninh & Tống Tiền Tây Lăng",
+      "description": "Tây Lăng trả 1.2 triệu vàng chuộc Vân Ninh; Hề Nhan thuyết phục Vân Ninh quy thuận về phe mình.",
+      "start_chapter": 349,
+      "end_chapter": 349,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Đông Sơn Thành & Bùi An Hà",
+      "description": "Đông Sơn thành thất thủ; quân An gia tan vỡ hoàn toàn. Lý Nho đào hố chôn sống hàng ngàn tù binh trước mặt hai thành An Hà - An Lộ.",
+      "start_chapter": 351,
+      "end_chapter": 357,
+      "chapter_span": 7
+    },
+    {
+      "category": "technologies",
+      "name": "Lưu Hỏa Đạn / Thần Hỏa Lôi",
+      "description": "",
+      "start_chapter": 356,
+      "end_chapter": 356,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hệ Thống Thăng Cấp Toàn Diện: Mở Ra Giai Đoạn Tranh Bá",
+      "description": "Hệ thống chính thức nâng cấp thành công sau chiến tích Tây Chinh và Đông Khống. Hủy bỏ triệu hoán thiên kim, mở cấp 10k, 50k, 100k, 500k, và hệ thống Anh Linh Điểm dựa trên chinh phạt và công thành.",
+      "start_chapter": 360,
+      "end_chapter": 360,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Mưu Sách 'Tam Nhượng Đế Vị' & Thu Nhận Toàn Bộ Dân Tâm",
+      "description": "Quý Bình An ba lần từ chối lời mời lên ngôi của triều thần, buộc bách tính toàn quốc phải tự phát ký đơn thỉnh nguyện.",
+      "start_chapter": 375,
+      "end_chapter": 375,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Vũ Vạn Dân & Bách Quan Tập Thể Cầu Xin: Đăng Cơ Hoàng Đế",
+      "description": "Sau 3 lần từ chối hoàng vị (tam nhượng đế vị), đại diện bách tính khắp các châu và 10 vạn tướng sĩ tề tựu ngoài cổng Tây quỳ rạp cầu xin Tịnh Kiên Vương đăng cơ. Quý Bình An chính thức lên ngôi, xuất ",
+      "start_chapter": 385,
+      "end_chapter": 385,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Đại Điển Đăng Cơ Hoàng Đế & Ban Bố Bốn Chính Lệnh",
+      "description": "Quý Bình An chính thức xưng đế, ban bố giảm thuế 30%, lập tân châu, trợ cấp binh sĩ và Chiêu Hiền Lệnh.",
+      "start_chapter": 386,
+      "end_chapter": 386,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Ban Bố Bốn Chính Lệnh Định Giang Sơn",
+      "description": "Ngay khi bước lên đế vị, Quý Bình An ban hành 4 quốc chỉ: (1) Giảm 30% thuế vĩnh viễn; (2) Di dân lập tân châu thành tại 3 khu vực hiểm nghèo; (3) Tăng 30% quân hưởng, bảo hộ trọn đời gia đình liệt sĩ",
+      "start_chapter": 387,
+      "end_chapter": 387,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Tái Chiếm Uyển Châu & Chặn Đánh Lạc Thiên Thanh",
+      "description": "Quân Nam Ly bị cắt đứt đường lui như cá trong chậu, thương vong nặng nề, Lạc Thiên Thanh phải tháo chạy.",
+      "start_chapter": 388,
+      "end_chapter": 392,
+      "chapter_span": 5
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đổi Quốc Hiệu Đại Hán, Dựng Long Kỳ, Định Niên Hiệu Định Quốc Năm Đầu",
+      "description": "Quý Bình An tuyên bố bãi bỏ quốc hiệu Đại Vũ, chính thức cải thành ĐẠI HÁN, lấy niên hiệu Định Quốc năm đầu, dựng lá cờ rồng Long Kỳ và kế hoạch Cẩm Y thiên hạ.",
+      "start_chapter": 411,
+      "end_chapter": 411,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Chính Thức Đổi Quốc Hiệu Đại Hán & Định Niên Hiệu Định Quốc Năm Đầu",
+      "description": "Đại Vũ chính thức đi vào dĩ vãng; Đại Hán xuất hiện với Long Kỳ và cơ cấu mới.",
+      "start_chapter": 411,
+      "end_chapter": 411,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Kỹ Thuật Phẫu Thuật Mổ Sọ & Ma Phế Tán",
+      "description": "",
+      "start_chapter": 419,
+      "end_chapter": 419,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hoa Đà Đại Phẫu Thuật Mổ Sọ Thành Công Cứu Sống Lý Nho",
+      "description": "Lý Nho trúng kỳ cổ Thực Não Trùng ăn mòn đại não. Hoa Đà thi triển Ma Phế Tán và kỹ năng Hồi Xuân, thực hiện ca mổ sọ mở hộp não gắp cổ trùng thành công.",
+      "start_chapter": 423,
+      "end_chapter": 423,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Sắc Phong Điêu Thuyền Làm Quốc Hậu, Quý Sơn Hà Làm Hoàng Thái Tử",
+      "description": "Điêu Thuyền trở thành mẫu nghi thiên hạ, mở khóa thiên phú Hồng Nhan; Quý Sơn Hà (1 tuổi) được định danh thái tử.",
+      "start_chapter": 427,
+      "end_chapter": 427,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đột Phá Thiên Mệnh Mưu Thần Quách Gia & Tăng 50 Năm Thọ Mệnh",
+      "description": "Quý Bình An tiêu tốn 10 vạn anh linh điểm mở thiên phú Dự Phán (+1 trí lực) và đột phá Quách Gia (+4 trí lực đạt 104), Nghịch thiên cải mệnh tăng thêm 50 năm tuổi thọ, kích hoạt hệ thống Thiên Mệnh Võ",
+      "start_chapter": 428,
+      "end_chapter": 428,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Tập Sát Nhất Tuyến Thiên: Trương Phi Hộ Giá",
+      "description": "Trương Phi nổi giận bộc phát chiến lực cấp Thánh Giả gạt phăng kiếm kích, Quý Bình Thường bị thương thối lui; Quý Vô Song xuất hiện rồi rút lui.",
+      "start_chapter": 456,
+      "end_chapter": 457,
+      "chapter_span": 2
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Ngưu Khánh Châu (Hỏa Thiêu Thành Trống)",
+      "description": "Toàn bộ Ngưu Khánh Châu biến thành biển lửa; liên quân Nam Ly - Đông Thương tổn thất hơn chục vạn quân, tan rã hoàn toàn.",
+      "start_chapter": 460,
+      "end_chapter": 468,
+      "chapter_span": 9
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thủy Phá Chiến Hổ Quân & Phá Đê Khai Hồng",
+      "description": "Nước ngập cuốn trôi doanh trại địch; dũng tướng Lý Tiểu Đao tử trận; Chiến Hổ quân tan tác.",
+      "start_chapter": 471,
+      "end_chapter": 473,
+      "chapter_span": 3
+    },
+    {
+      "category": "battles",
+      "name": "Trận Bao Vây Hồ Lô Cốc & Hội Tụ An Hà Thành",
+      "description": "Toàn thắng; bắt gọn các tướng lĩnh tàn quân; Quý Bình An đối diện cha Quý Vô Song.",
+      "start_chapter": 476,
+      "end_chapter": 482,
+      "chapter_span": 7
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Vân Đột Phá Thánh Giả & Đánh Bại Xích Hồng Y",
+      "description": "Triệu Vân chính thức phá vỡ xiềng xích Bán Thánh, bước vào cảnh giới Thánh Giả (võ lực 132-134), mở khóa thiên phú Nhai Giác, một thương kích bại sát thủ đệ nhất thiên hạ Xích Hồng Y.",
+      "start_chapter": 502,
+      "end_chapter": 502,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Kỹ Thuật Thú Nhân Hóa Thể",
+      "description": "",
+      "start_chapter": 505,
+      "end_chapter": 505,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Cơ Quan Nỏ Liên Châu",
+      "description": "",
+      "start_chapter": 516,
+      "end_chapter": 516,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Cường Hóa Tấn Thiết Song Kích",
+      "description": "",
+      "start_chapter": 516,
+      "end_chapter": 516,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Vương Việt & Diệt Môn Tần Gia Tây Lăng",
+      "description": "Quý Bình An dùng Anh Hồn Lệnh ngẫu nhiên triệu hoán Đệ Nhất Kiếm Sư Vương Việt (võ lực 134, Thừa Ảnh Kiếm). Vương Việt cùng Cơ Vô Thiên sang Tây Lăng trảm sát Tần Tứ Nghiệp, hủy diệt hoàn toàn Tần gia",
+      "start_chapter": 520,
+      "end_chapter": 520,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Diệt Môn Thế Gia Tần Tứ Nghiệp & Tần Ức Đầu Hàng Đại Hán",
+      "description": "Tần Tứ Nghiệp bị ám sát; Tần gia bị gán tội phản quốc tại Tây Lăng; tướng trẻ Tần Ức dẫn quân đầu quân Đại Hán.",
+      "start_chapter": 526,
+      "end_chapter": 526,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Tập Sát Diệt Môn Tần Phủ Tây Lăng",
+      "description": "Tần Tứ Nghiệp bị Vương Việt một kiếm đoạt mạng; toàn bộ quyền lực Tần gia tại Tây Lăng sụp đổ.",
+      "start_chapter": 526,
+      "end_chapter": 527,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đào Nhã Nhậm Chức Nữ Công Bộ Thượng Thư & Đại Đồ Án Giao Thông",
+      "description": "Đào Nhã sau khi hồi phục dâng bản đồ địa hình và kiến nghị đại công trình 'gặp núi mở đường, gặp nước bắc cầu'. Quý Bình An phong nàng làm Nữ Công Bộ Thượng Thư đầu tiên.",
+      "start_chapter": 528,
+      "end_chapter": 528,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Đồ Án Giao Thông Toàn Quốc 'Gặp Núi Mở Đường, Gặp Nước Bắc Cầu'",
+      "description": "",
+      "start_chapter": 528,
+      "end_chapter": 528,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Truyền Bá 'Hiếu Kinh' Lôi Kéo Đại Nho Phó Dĩnh Thăng",
+      "description": "Tác phẩm Nho gia kinh điển 'Hiếu Kinh' gây chấn động Tây Lăng, Phó Dĩnh Thăng nhận lời sang giảng dạy tại Học Cung Đại Hán.",
+      "start_chapter": 535,
+      "end_chapter": 535,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thiết Giáp Môn (Cửa Thành Bọc Thép Nguyên Khối)",
+      "description": "",
+      "start_chapter": 558,
+      "end_chapter": 558,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Phòng Thủ Uyển Châu & Đoạt Tân Môn Thành",
+      "description": "Mạc Thiên Tinh đại bại, mất sạch binh mã, trốn chạy tán loạn.",
+      "start_chapter": 561,
+      "end_chapter": 570,
+      "chapter_span": 10
+    },
+    {
+      "category": "battles",
+      "name": "Trận Đấu Kiếm Đế Đô: Vương Việt Phá Xích Hồng Y",
+      "description": "Vương Việt chém gãy vũ khí, đánh trọng thương Xích Hồng Y chỉ trong tích tắc.",
+      "start_chapter": 568,
+      "end_chapter": 571,
+      "chapter_span": 4
+    },
+    {
+      "category": "political_events",
+      "name": "Cung Ngạo Ám Hại Thái Tử Phó Thương Quân, Tiếm Quyền Nam Ly",
+      "description": "Phó Thương Quân bị trừ khử; Cung Ngạo thâu tóm thực quyền Nam Ly, chuẩn bị tự lập làm quốc chủ.",
+      "start_chapter": 582,
+      "end_chapter": 582,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chính Biến Nam Thiên Thành & Cái Chết Phó Thương Quân",
+      "description": "Phó Thương Quân tử trận; Cung Ngạo tự phong Hộ Quốc Đại Tướng Quân thâu tóm chính quyền Nam Ly; Xích Hồng Y kịch chiến Tri Mặc Bạch rồi rút lui.",
+      "start_chapter": 582,
+      "end_chapter": 585,
+      "chapter_span": 4
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Thiên Mệnh Võ Tướng Quan Vũ: Kích Hoạt Toàn Bộ Ngũ Hổ Tướng",
+      "description": "Quý Bình An tiêu tốn 2 triệu kim triệu hoán Thiên Mệnh Võ Tướng Quan Vân Trường (võ lực 139). Toàn bộ Ngũ Hổ Tướng kích hoạt hoàn chỉnh (5/5), mở lĩnh vực Ngũ Hổ Tuyệt Thế, Quý Bình An nhận Thiên Tử K",
+      "start_chapter": 598,
+      "end_chapter": 598,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Hội Tụ Phong Vân Tây Lăng",
+      "description": "Trương Bất Minh cùng Thánh Giả Thăng và Triệu Thiên Lỗi dịch dung đến Tây Hoàng Thành; Quỷ Thánh xuất hiện tại Thuyền Hoa; Văn Nhân Mục và Ninh Thâm tụ họp.",
+      "start_chapter": 600,
+      "end_chapter": 600,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Đại Hội Tụ Phong Vân Chư Quốc Tại Tây Hoàng Thành",
+      "description": "Các thế lực lớn nhất Trung Thổ đồng loạt quy tụ về Tây Lăng để đàm phán và phân chia lại bản đồ quyền lực.",
+      "start_chapter": 600,
+      "end_chapter": 600,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đột Kích Địa Lao Hoàng Cung Tây Lăng: Giải Cứu Trương Bất Minh",
+      "description": "Quan Vũ trảm sát Khôn Tự bằng một đao chấn động; toàn đội giải cứu Trương Bất Minh thoát ly an toàn về lãnh thổ Đại Hán.",
+      "start_chapter": 609,
+      "end_chapter": 616,
+      "chapter_span": 8
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Giải cứu Trương Bất Minh tại hoàng cung Tây Lăng",
+      "description": "Quan Vũ và Vương Việt đột kích giải cứu cựu quốc chủ Nam Ly bị giam cầm nhiều năm dưới lòng đất Tây Hoàng Thành.",
+      "start_chapter": 613,
+      "end_chapter": 613,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thiên Cơ Đồ & Trường Sinh Đồ",
+      "description": "Mục tiêu tranh đoạt xuyên suốt của Thiên Cơ, các vương triều và dòng họ Quý thị.",
+      "start_chapter": 629,
+      "end_chapter": 629,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Giao Dịch Thiên Cơ Đồ Giữa Quý Bình An & Văn Nhân Mục",
+      "description": "Các bên thương lượng việc hoán đổi thông tin về Thiên Cơ Đồ để bảo toàn tính mạng cho hoàng tộc Tây Lăng và công chúa Bất Hối.",
+      "start_chapter": 629,
+      "end_chapter": 630,
+      "chapter_span": 2
+    },
+    {
+      "category": "technologies",
+      "name": "Cự Khôi Xe Nỏ (Nỏ Xa Liên Phát Cải Tiến)",
+      "description": "Vũ khí chủ lực giúp quân Hán áp đảo Tây Lăng Thiết Kỵ tại Phi Mã Thành và bắn phá chiến thuyền địch.",
+      "start_chapter": 633,
+      "end_chapter": 633,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Cẩm Quan Thành: Thần Uy Yển Nguyệt",
+      "description": "Đại Hán toàn thắng chiếm trọn Cẩm Quan Thành, tướng giữ thành An Mạt Tề tự vẫn/tử trận.",
+      "start_chapter": 636,
+      "end_chapter": 638,
+      "chapter_span": 3
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hoàn thiện Cự Khôi Xe Nỏ và Lưu Hỏa cải tiến",
+      "description": "Thiên Cung Học Viện chế tạo thành công Xe Nỏ liên phát bắn Phá Giáp Tiễn và viện nghiên cứu chế tạo thành công chất nổ Lưu Hỏa uy lực cao.",
+      "start_chapter": 639,
+      "end_chapter": 639,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Lưu Hỏa Nổ (Hỏa Dược Cải Tiến)",
+      "description": "Thần khí thay đổi cục diện các trận hỏa thiêu, nền tảng cho trận biển lửa thiêu rụi hạm đội Đại La.",
+      "start_chapter": 639,
+      "end_chapter": 639,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Tây Kinh Thành & Diệt Tộc Bùi Gia",
+      "description": "Tây Kinh Thành thất thủ rơi vào tay Hán triều; gia tộc Bùi thị bị Đông Thương thanh trừng tận diệt, dập tắt mầm họa phân tranh ở Bùi An Hà.",
+      "start_chapter": 646,
+      "end_chapter": 652,
+      "chapter_span": 7
+    },
+    {
+      "category": "political_events",
+      "name": "Đông Thương Diệt Môn Bùi Gia",
+      "description": "Sau khi Bùi gia có ý định ngả theo Đại Hán tại Bùi An Hà, gia tộc An thị của Đông Thương đã ra tay tàn sát diệt môn Bùi thị.",
+      "start_chapter": 650,
+      "end_chapter": 652,
+      "chapter_span": 3
+    },
+    {
+      "category": "technologies",
+      "name": "Bán Mã Thung & Thừng Gạt Ngựa Cơ Quan",
+      "description": "Bảo bối chiến thuật bẻ gãy hoàn toàn uy lực xung phong bất khả chiến bại của 14 vạn Tây Lăng Thiết Kỵ.",
+      "start_chapter": 683,
+      "end_chapter": 683,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Quyết Chiến Phi Mã Thành: Bẻ Gãy Tây Lăng Thiết Kỵ",
+      "description": "Đại phá hoàn toàn 14 vạn thiết kỵ Tây Lăng, tướng soái Vân Ninh đại bại, Phi Mã Thành hoàn toàn thất thủ về tay Hán triều.",
+      "start_chapter": 683,
+      "end_chapter": 696,
+      "chapter_span": 14
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Sự kiện lịch sử 'Lấy Nước Đổi Nước'",
+      "description": "Cung Ngạo vạch trần môn sinh Lý Hoành là nội gián Thiên Cơ khiến Cung Sinh thổ huyết sụp đổ; sau đó đề nghị giao trọn vương triều Nam Ly và 55 vạn quân cho Quý Bình An để đổi lấy đất Tây Lăng độc lập.",
+      "start_chapter": 700,
+      "end_chapter": 700,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Đại Thỏa Thuận 'Lấy Nước Đổi Nước' & Thanh Trừng Cung Ngạo",
+      "description": "Cung Ngạo chuyển giao trọn vẹn 55 vạn quân và toàn bộ cương thổ Nam Ly cho Đại Hán để đổi lấy tước vị Trấn Tây Vương và vùng đất Tây Lăng. Quý Bình An ngoài mặt đồng ý nhưng ngầm phái Vương Việt ám sá",
+      "start_chapter": 700,
+      "end_chapter": 720,
+      "chapter_span": 21
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Công Chiếm Tây Hoàng Thành: Thần Tiễn Diệt Vũ Hi",
+      "description": "An Vũ Hi tử trận, Văn Nhân Hạo trọng thương đào tẩu, Tây Lăng Vương Văn Nhân Mục dẫn bách quan dâng biểu đầu hàng.",
+      "start_chapter": 704,
+      "end_chapter": 734,
+      "chapter_span": 31
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thiên Mệnh quy vị: Triệu hoán Ngọa Long Gia Cát Lượng",
+      "description": "Quý Bình An tiêu hao 500k anh linh điểm triệu hoán Thiên Mệnh Mưu Thần Gia Cát Lượng với kỹ năng Thống Ngự và Cẩm Nang diệu kế.",
+      "start_chapter": 725,
+      "end_chapter": 725,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Khai quật kho báu hơn 3 triệu lượng vàng tại Núi Ngưu Giác",
+      "description": "Giả Hủ phát hiện kho vàng bí mật khổng lồ hơn 3.000.000 lượng kim được chôn giấu trong lòng Núi Ngưu Giác.",
+      "start_chapter": 728,
+      "end_chapter": 728,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Tây Lăng Vương Dâng Biểu Quy Thuận",
+      "description": "Sau khi Phi Mã Thành và tuyến phòng thủ cuối cùng bị đập tan, Văn Nhân Mục dẫn bách quan quỳ gối xin hàng ngoài cửa Tây Hoàng Thành.",
+      "start_chapter": 733,
+      "end_chapter": 734,
+      "chapter_span": 2
+    },
+    {
+      "category": "battles",
+      "name": "Trận Phục Kích Ất Tuyên Thành: Kế Trong Kế Gia Cát Lượng",
+      "description": "Hơn phân nửa quân An gia bị chôn sống và tiêu diệt; An Hàn Khôi và Trương Hiên Chính tháo chạy thảm hại.",
+      "start_chapter": 734,
+      "end_chapter": 737,
+      "chapter_span": 4
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Hán nhất thống bốn nước và dời đô Thần Châu Trường An",
+      "description": "Quý Vô Song đầu hàng, Đông Thương và Tây Lăng diệt vong, Nam Ly quy phục; Đại Hán hoàn thành đại nghiệp nhất thống thiên hạ và dời đô về Trường An do Đào Nhã thiết kế.",
+      "start_chapter": 764,
+      "end_chapter": 764,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Đại Hán Nhất Thống Thiên Hạ Tứ Quốc",
+      "description": "Đông Thương đầu hàng sau khi Quý Vô Song buông vũ khí, 4 nước hợp nhất thành Hoàng triều Đại Hán duy nhất, thiết lập Hán Luật và đồng tiền thống nhất.",
+      "start_chapter": 764,
+      "end_chapter": 771,
+      "chapter_span": 8
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Phế bỏ võ công Quý Vô Song",
+      "description": "Quý Bình An quyết đoán phế bỏ toàn bộ tu vi Bán Tiên của Quý Vô Song nhằm triệt tiêu nguy cơ uy hiếp hoàng quyền, giao cho Hoa Đà châm cứu duy trì mạng sống.",
+      "start_chapter": 766,
+      "end_chapter": 766,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Bắc Cực Băng Xuyên tan vỡ - Cánh cổng nối liền Đại La",
+      "description": "Dòng sông băng vĩnh cửu ngàn năm tại cực bắc vỡ nát, thông đạo đường biển nối liền thế giới Đại La hải ngoại với lục địa Đại Hán được khai thông.",
+      "start_chapter": 767,
+      "end_chapter": 767,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chặn Giết Miệng Lớn Cốc: Trảm Thân Đoạt Khí Vận",
+      "description": "Trương Hiên Chính bị giết tại chỗ; hệ thống thưởng Quý Bình An 0.5 phần Thiên Địa Khí Vận.",
+      "start_chapter": 774,
+      "end_chapter": 775,
+      "chapter_span": 2
+    },
+    {
+      "category": "battles",
+      "name": "Đại Hải Chiến Bắc Cực Băng Xuyên: Khổ Nhục Kế & Biển Lửa Hỏa Thiêu Hạm Đội Đại La",
+      "description": "Toàn bộ hạm đội hải quân Đại La bị biến thành biển lửa khổng lồ chìm xuống đáy biển; Bái Đăng thảm bại tháo chạy.",
+      "start_chapter": 790,
+      "end_chapter": 810,
+      "chapter_span": 21
+    },
+    {
+      "category": "technologies",
+      "name": "Kỹ Thuật Đục Thuyền & Thợ Lặn Cảm Tử",
+      "description": "Cách đánh du kích dưới nước độc đáo khiến quân Đại La hoang mang cực độ.",
+      "start_chapter": 793,
+      "end_chapter": 793,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Kế sách kinh điển: 'Chu Du đánh Cam Ninh'",
+      "description": "Chu Du và Cam Ninh bí mật thống nhất thực hiện khổ nhục kế, Cam Ninh chấp nhận đòn roi rách da nát thịt trước mắt toàn quân để trá hàng Bái Đăng.",
+      "start_chapter": 800,
+      "end_chapter": 800,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Xích Sắt Khóa Thuyền (Chiến Thuật Giang Hải)",
+      "description": "Chiến thuật kinh điển thời Tam Quốc được tái hiện hoàn hảo trên biển Bắc Cực, tiêu diệt 300 vạn quân xâm lược.",
+      "start_chapter": 806,
+      "end_chapter": 806,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Núi Ngưu Giác: Lữ Bố Miểu Sát Bán Tiên",
+      "description": "Bán Tiên Côn Sơn bị miểu sát trong 1 hiệp; quân đoàn 200 vạn của Quinto tan rã kinh hoàng, Quinto bị bắt sống.",
+      "start_chapter": 815,
+      "end_chapter": 821,
+      "chapter_span": 7
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Nhân Tiên Lữ Bố xuất thế và Thiên Mệnh Võ Tướng quy vị",
+      "description": "Quý Bình An chi 500k anh linh điểm triệu hoán Lữ Bố, giải tỏa trang bị và phá giới đạt cảnh giới Nhân Tiên; kích hoạt hiệu ứng Thiên Mệnh quy vị tăng 3 võ lực cho toàn bộ tướng Thánh Giả.",
+      "start_chapter": 817,
+      "end_chapter": 817,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Viễn Chinh Đại La: Công Phá Hoa Ước Thành & Bại Đặc Phổ",
+      "description": "Chiếm trọn Hoa Ước Thành, Đặc Phổ ôm hận tháo lui về thỉnh cầu A Bố viện binh.",
+      "start_chapter": 833,
+      "end_chapter": 837,
+      "chapter_span": 5
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thủ Thành Hoa Ước: Bẻ Gãy Burton & Vây Chặt Tay Đặc Phổ",
+      "description": "Đặc Phổ cụt tay tàn phế chạy trốn (sau bị A Bố biến thành Thi Khôi); quân Burton bị đẩy lui hoàn toàn.",
+      "start_chapter": 850,
+      "end_chapter": 858,
+      "chapter_span": 9
+    },
+    {
+      "category": "technologies",
+      "name": "Bí Kỹ Luyện Chế Thi Khôi",
+      "description": "Bí thuật hắc ám của A Bố tạo nên một chủng loại quái vật chiến tranh mới tại Đại La.",
+      "start_chapter": 861,
+      "end_chapter": 861,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Quyết Đấu Đỉnh Cao: Lữ Bố Đả Bại Nhân Tiên Đức Bất Nhân",
+      "description": "Đức Bất Nhân trọng thương bại trận rút lui, uy danh Lữ Bố chấn động toàn cõi Đại La.",
+      "start_chapter": 878,
+      "end_chapter": 881,
+      "chapter_span": 4
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trủng Hổ quy vị: Triệu hoán Tư Mã Ý & Hệ thống đếm ngược đóng băng",
+      "description": "Ngay trước khi hết hạn chót 180 ngày, Quý Bình An triệu hoán Thiên Mệnh Mưu Thần cuối cùng Tư Mã Ý, toàn bộ mưu thần trí lực +3, hệ thống tiến vào chu kỳ cưỡng chế thăng cấp.",
+      "start_chapter": 885,
+      "end_chapter": 885,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Dương Mưu Rút Quân Phân Hóa Đại La",
+      "description": "Đại Hán chủ động rút quân khỏi 37 thành U Châu, trao trả vùng đất hoang tàn đầy nạn dân đói kém cho Thánh Nữ Giáo và Quốc Giáo nhằm ép hai thế lực này phải chém giết lẫn nhau để giành giật lương thảo.",
+      "start_chapter": 886,
+      "end_chapter": 894,
+      "chapter_span": 9
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Dương Mưu Rút Quân: Rút củi dưới đáy nồi để lại thảm họa Đại La",
+      "description": "Quý Bình An không sa lầy chiếm đất mà quyết định rút toàn bộ quân Hán về nước; bỏ lại 37 thành U Châu hoang tàn cùng hàng vạn nạn dân đói khổ trao cho Quốc Giáo và Thánh Nữ Giáo.",
+      "start_chapter": 887,
+      "end_chapter": 887,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Ngả Bài Chân Tướng Huyết Thống Quý Gia Tại Chương 900",
+      "description": "Quý Vô Song tiết lộ thân phận chú ruột, giải mã mối thù diệt tộc giữa Quý gia và Hiên gia tại Đại La, cũng như nguồn gốc con lai giữa đại ca Quý Vô Danh và Thánh Nữ Hiên Nguyệt.",
+      "start_chapter": 899,
+      "end_chapter": 900,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Bí mật thân thế Quý thị và truyền thừa Trường Sinh Đồ",
+      "description": "Quý Vô Song thừa nhận mình chỉ là 'thân tiểu thúc', cha đẻ thực sự của Quý Bình An là Quý Vô Danh (gia chủ trẻ nhất Quý gia Đại La), mẹ là Thánh Nữ Hiên Nguyệt; trao truyền toàn bộ bí mật về Trường Si",
+      "start_chapter": 900,
+      "end_chapter": 900,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trường Sinh Truyền Thuyết & Khởi Đầu Đại Chiến",
+      "description": "Mở ra chiến dịch toàn diện tiến đánh Doanh Kinh và xâm nhập Quốc Giáo.",
+      "start_chapter": 901,
+      "end_chapter": 901,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vương Sơ Nhậm Chức Bạch Bào Tế Tự",
+      "description": "Đặt nền móng cho tuyến nhân vật gián điệp nội bộ Quốc Giáo.",
+      "start_chapter": 909,
+      "end_chapter": 909,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "U Châu Quân Áp Sát Thiên Hồn Thành",
+      "description": "Chiến sự chính thức bùng nổ giữa Đại Hán và Quốc Giáo.",
+      "start_chapter": 925,
+      "end_chapter": 925,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Công Phá Thiên Hồn Thành Lần 1 (Gia Cát Lượng Dùng Mê Vụ)",
+      "description": "Đại Hán chiếm Thiên Hồn Thành, đặt bàn đạp tiến vào nội địa Quốc Giáo.",
+      "start_chapter": 925,
+      "end_chapter": 929,
+      "chapter_span": 5
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Sự Xuất Hiện Của Thi Khôi Vương",
+      "description": "Quái vật chiến tranh đáng sợ nhất của Quốc Giáo chính thức lộ diện.",
+      "start_chapter": 926,
+      "end_chapter": 926,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Gia Cát Lượng Dùng Mê Vụ Hạ Thiên Hồn Thành",
+      "description": "Đại Hán chính thức sở hữu cửa ngõ tiến vào lãnh địa Quốc Giáo.",
+      "start_chapter": 929,
+      "end_chapter": 929,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Mê Vụ Trận Pháp (Trận Sương Mù Ngụy Trang)",
+      "description": "Giúp Gia Cát Lượng tiếp quản Thiên Hồn Thành và che giấu đường hành quân của 137 vạn U Châu quân.",
+      "start_chapter": 929,
+      "end_chapter": 929,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Dạ Tập Vượt Biển Đến Doanh Kinh",
+      "description": "Mở màn chiến dịch chinh phục Doanh Kinh của Đại Hán.",
+      "start_chapter": 930,
+      "end_chapter": 930,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Chiến Hạm Thiết Tỏa Hoành Giang (Khóa Xích Chiến Thuyền)",
+      "description": "Đưa đại quân Đại Hán vượt biển Doanh Kinh an toàn tuyệt đối trong đêm tối.",
+      "start_chapter": 930,
+      "end_chapter": 930,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Doanh Kinh & Đại Chiến Long Sa Thành",
+      "description": "Quân Doanh Kinh tan vỡ hoàn toàn, Thác Hạp thảm bại, Đại Hán làm chủ hàng chục thành trì Doanh Kinh, cấp phát Long Nha Mễ và khoai tây vỗ an dân chúng.",
+      "start_chapter": 930,
+      "end_chapter": 949,
+      "chapter_span": 20
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thủ Hộ Kinh Bắc Thành: Quý Bình An Trảm 3 Bán Tiên",
+      "description": "Đại Hán toàn thắng, Kinh Bắc Thành đứng vững, quân Quốc Giáo mất sạch Bán Tiên phải tháo lui trong hoảng loạn.",
+      "start_chapter": 942,
+      "end_chapter": 947,
+      "chapter_span": 6
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Bình An Dùng Bá Vương Thương Trảm 3 Bán Tiên",
+      "description": "Bẻ gãy mũi nhọn tấn công của Quốc Giáo, uy danh Quý Bình An chấn động toàn cõi.",
+      "start_chapter": 947,
+      "end_chapter": 947,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thác Hạp Nổi Điên Tử Chiến Tại Long Sa",
+      "description": "Quân Doanh Kinh bị đánh tan hoàn toàn, Đại Hán thu phục toàn bộ Doanh Kinh.",
+      "start_chapter": 949,
+      "end_chapter": 949,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đào Nhã Hoàn Thành Bản Đồ Địa Hình Quốc Giáo",
+      "description": "Đại Hán nắm giữ chìa khóa địa lý để mở các chiến dịch quân sự chính xác.",
+      "start_chapter": 967,
+      "end_chapter": 967,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Ca Bỉ Hoàng Thành: Nhân Tiên Hỗn Chiến & Triệu Vân Đột Phá",
+      "description": "Lữ Bố và Triệu Vân phá tan vòng vây an toàn, Quốc Giáo thất bại trong âm mưu diệt tướng, Quỷ Vương nhân cơ hội soán quyền Quốc Giáo.",
+      "start_chapter": 973,
+      "end_chapter": 989,
+      "chapter_span": 17
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Nhân Tiên Hỗn Chiến Tại Ca Bỉ Hoàng Thành",
+      "description": "Cục diện Đại La biến động dữ dội, các đại Nhân Tiên trực tiếp đối đầu sinh tử.",
+      "start_chapter": 975,
+      "end_chapter": 975,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quỷ Vương Chấp Chưởng Quốc Giáo",
+      "description": "Nội bộ Quốc Giáo bị chia rẽ sâu sắc giữa các phe phái.",
+      "start_chapter": 978,
+      "end_chapter": 978,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Quỷ Vương Đoạt Quyền Lãnh Đạo Quốc Giáo",
+      "description": "Lợi dụng lúc Ninh Không Lâu dốc toàn lực tham chiến tại Ca Bỉ Hoàng Thành, Quỷ Vương dẫn thuộc hạ đột kích các cơ sở tôn giáo trọng yếu, sát hại các đại tế ti và tuyên bố nắm quyền điều hành Quốc Giáo",
+      "start_chapter": 978,
+      "end_chapter": 978,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Nhân Tiên Triệu Vân Xuất Thế",
+      "description": "Đại Hán sở hữu đại tướng Nhân Tiên thứ hai bên cạnh Lữ Bố, cán cân quyền lực nghiêng hẳn về Đại Hán.",
+      "start_chapter": 989,
+      "end_chapter": 989,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Bình An Gặp Lại An Khinh Ngôn & Thiên Tứ",
+      "description": "Gắn kết mối quan hệ gia đình và thế lực Tây Lăng/Thánh Nữ với Đại Hán.",
+      "start_chapter": 990,
+      "end_chapter": 990,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quyết Định Triệu Hoán Kỳ Nhân Dị Sĩ",
+      "description": "Mở ra sự xuất hiện của các nhân vật đạo thuật thần tiên Tam Quốc.",
+      "start_chapter": 995,
+      "end_chapter": 995,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Kỳ Nhân Dị Sĩ Tả Từ Xuất Thế",
+      "description": "Đại Hán có được một bậc thầy đạo pháp ngũ hành, trận pháp và phong thủy thần sầu.",
+      "start_chapter": 996,
+      "end_chapter": 996,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tả Từ Nhìn Thấu Mộc Độn Quốc Giáo",
+      "description": "Hóa giải toàn bộ bí mật chiến thuật ẩn nấp rừng cây của Quốc Giáo.",
+      "start_chapter": 997,
+      "end_chapter": 997,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Cường Công Viêm Hỏa & Hỏa Thiêu Bách Khổng Thành",
+      "description": "Đại Hán chiếm trọn Bách Khổng Thành, bẻ gãy hành lang phòng thủ phía Tây của Quốc Giáo.",
+      "start_chapter": 998,
+      "end_chapter": 1003,
+      "chapter_span": 6
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Bốn Mưu Sĩ Hiến Kế & Bản Án Ninh An Bình",
+      "description": "Định hình toàn bộ kế hoạch tác chiến tru tâm và tiến công Quốc Giáo.",
+      "start_chapter": 1000,
+      "end_chapter": 1000,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Lưu Hỏa & Ống Dầu Trơn Tác Chiến",
+      "description": "Bàng Thống mang Lưu Hỏa uy hiếp Thánh Nữ Thành; Lý Nho dùng hỏa công thiêu rụi Bách Khổng Thành; Ninh Không Lâu cũng tìm cách cài người đánh cắp công nghệ này (Ch.1186).",
+      "start_chapter": 1000,
+      "end_chapter": 1000,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Lý Nho Phóng Hỏa Thiêu Bách Khổng Thành",
+      "description": "Bách Khổng Thành rơi vào tay Đại Hán, gây chấn động tâm lý toàn cõi Quốc Giáo.",
+      "start_chapter": 1003,
+      "end_chapter": 1003,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Bắt Giữ Thánh Nữ Hiên Thanh Nguyệt",
+      "description": "Thánh Nữ Giáo hoàn toàn chịu sự thao túng và kiểm soát của Đại Hán.",
+      "start_chapter": 1009,
+      "end_chapter": 1009,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Liên Minh Tạm Thời và Sự Khống Chế Thánh Nữ Giáo",
+      "description": "Ban đầu Thánh Nữ Giáo cử 20 vạn quân tiếp viện Kinh Bắc Thành nhằm liên thủ chống Quốc Giáo. Tuy nhiên, nhận thấy Hiên Thanh Nguyệt có dã tâm ngầm, Quý Bình An đã tương kế tựu kế, dùng mưu bắt giữ Hiê",
+      "start_chapter": 1009,
+      "end_chapter": 1009,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Gạo Nếp Vôi Tương (Vữa Hồ Nếp Vôi Xây Thành)",
+      "description": "Được thử nghiệm thành công tại Chương 1015 dưới sự chứng kiến của Tả Từ. Quý Bình An lập tức ra lệnh cho Công Bộ Thượng Thư Đào Nhã đem công nghệ này ứng dụng đại trà gia cố toàn bộ hệ thống thành trì",
+      "start_chapter": 1014,
+      "end_chapter": 1014,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thử Nghiệm Thành Công Gạo Nếp Vôi Tương",
+      "description": "Đại Hán sở hữu công nghệ xây thành kiên cố nhất lịch sử, vô hiệu hóa các vũ khí công thành thông thường.",
+      "start_chapter": 1015,
+      "end_chapter": 1015,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Công Phá Thiên Hồn Thành Lần 2 (Tiên Đăng Tử Sĩ Trèo Tường)",
+      "description": "Thành vỡ trong thời gian ngắn, Đại Hán hoàn toàn làm chủ Thiên Hồn Thành.",
+      "start_chapter": 1021,
+      "end_chapter": 1022,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Gia Cát Lượng Công Phá Thiên Hồn Thành",
+      "description": "Thiên Hồn Thành chính thức thuộc về Đại Hán, giải phóng quân lực cho các hướng khác.",
+      "start_chapter": 1022,
+      "end_chapter": 1022,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quỷ Vương Sát Hại Thánh Quang Đại Tế Ti",
+      "description": "Quang Hoa Thành chìm trong biển lửa, Quốc Giáo mất thêm một lãnh đạo tinh thần cấp cao.",
+      "start_chapter": 1025,
+      "end_chapter": 1025,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Quang Hoa Thành & Hoàng Trung Phục Kích Quỷ Vương",
+      "description": "Quỷ Vương bị trọng thương nặng phải lẩn trốn, kế hoạch chiếm trọn Quang Hoa Thành của Quỷ Vương phá sản.",
+      "start_chapter": 1025,
+      "end_chapter": 1028,
+      "chapter_span": 4
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hoàng Trung Bắn Trọng Thương Quỷ Vương",
+      "description": "Quỷ Vương suy giảm chiến lực nghiêm trọng, phải lẩn trốn điều trị.",
+      "start_chapter": 1027,
+      "end_chapter": 1027,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Cái Chết Của Quý Bình Xuyên (Ninh An Bình)",
+      "description": "Giáng đòn tru tâm tàn khốc vào Giáo Hoàng Ninh Không Lâu.",
+      "start_chapter": 1036,
+      "end_chapter": 1036,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Án Hành Quyết Ninh An Bình (Tru Tâm Quốc Giáo)",
+      "description": "Quan Vũ công khai chém đầu Ninh An Bình (kẻ đội lốt tam công tử Quý Bình Xuyên suốt hàng chục năm) ngay trước mặt hai quân. Hành động này không chỉ trút giận cho các tướng lĩnh mà còn giáng đòn chí mạ",
+      "start_chapter": 1036,
+      "end_chapter": 1036,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Huyết Chiến Bắc Duyên Thành: Trầm Hạo Đọa Ma Quyết Chiến Thi Khôi Vương",
+      "description": "Đẩy lui đợt tập kích của đối phương, Trầm Hạo trọng thương ngất lịm vì nhiễm kịch độc hàn thi.",
+      "start_chapter": 1040,
+      "end_chapter": 1050,
+      "chapter_span": 11
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trầm Hạo Đọa Ma Liều Mạng Chiến Thi Khôi Vương",
+      "description": "Trầm Hạo cứu vãn cục diện nhưng hôn mê sâu vì trúng hàn độc thi khôi.",
+      "start_chapter": 1050,
+      "end_chapter": 1050,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vương Sơ Khai Manh Mối & Cái Chết",
+      "description": "Đại Hán nắm rõ toàn bộ bố cục chiến lược của các đối thủ lớn.",
+      "start_chapter": 1054,
+      "end_chapter": 1054,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Âm Mưu Phân Chia Đại La Giữa Ninh Không Lâu và A Bố",
+      "description": "Ninh Không Lâu bí mật tiếp xúc và thỏa thuận với Tôn Chủ A Bố nhằm hợp lực xóa sổ Đại Hán và Thánh Nữ Giáo, sau đó chia đôi toàn bộ cương thổ Đại La. Toàn bộ kế hoạch đen tối này bị Vương Sơ tiết lộ c",
+      "start_chapter": 1054,
+      "end_chapter": 1054,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quỷ Vương Rút Quân Bằng Kế Thành Trống",
+      "description": "Quỷ Vương bảo toàn lực lượng rút về vùng Cực Bắc Bắc U.",
+      "start_chapter": 1077,
+      "end_chapter": 1077,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thế Lực Thiên Bắc Thị Xuất Hiện Tại Bắc U",
+      "description": "Mở ra chiến trường mới tại vùng Cực Bắc hoang vu.",
+      "start_chapter": 1079,
+      "end_chapter": 1079,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Thiên Thạch Thành: Triệu Vân Cắt Thịt Đấu Bắc Minh",
+      "description": "Bắc Minh kinh hãi trước dũng khí của Triệu Vân nên lui về thành; Triệu Vân bảo toàn tính mạng nhưng kiệt sức hôn mê, quân Hán tạm lui lập trại phòng thủ.",
+      "start_chapter": 1080,
+      "end_chapter": 1100,
+      "chapter_span": 21
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Hoán Tuyệt Thế Chiến Tướng Văn Ương",
+      "description": "Bổ sung một mãnh tướng xung trận siêu việt vào hàng ngũ Đại Hán.",
+      "start_chapter": 1089,
+      "end_chapter": 1089,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thuật Hoán Huyết Cứu Mệnh (Đại Phẫu Thay Toàn Bộ Máu)",
+      "description": "Được Hoa Đà thực hiện thành công cứu sống Trầm Hạo khỏi cái chết chắc chắn sau khi huyết chiến với Thi Khôi Vương (hoàn tất ở Ch.1195).",
+      "start_chapter": 1090,
+      "end_chapter": 1090,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thánh Tử Bắc Minh Xuất Quan",
+      "description": "Cực Bắc xuất hiện một cự đầu võ đạo có khả năng làm xoay chuyển chiến cuộc.",
+      "start_chapter": 1098,
+      "end_chapter": 1098,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Vân Cắt Thịt Trừ Độc",
+      "description": "Triệu Vân giữ được tính mạng nhưng kiệt sức hôn mê; biểu tượng cho ý chí bất khuất của tướng lĩnh Đại Hán.",
+      "start_chapter": 1100,
+      "end_chapter": 1100,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Hắc Ma Quỷ Phản Bội Quỷ Vương Đầu Hàng A Bố",
+      "description": "Hắc Ma Quỷ dùng thế thân qua mặt Ninh Không Lâu, bí mật gặp A Bố để bán đứng thông tin của Quỷ Vương nhằm đổi lấy quyền cai trị Thánh Nữ Giáo, tạo ra thêm một rạn nứt sâu sắc trong khối liên minh tà đ",
+      "start_chapter": 1101,
+      "end_chapter": 1101,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quỷ Vương Trảm Sát Bắc Mạch Sơn",
+      "description": "Gia tăng mối thù sâu sắc giữa Thiên Bắc Thị và Quỷ Vương, đồng thời làm trống vị trí chỉ huy Thiên Thạch Thành.",
+      "start_chapter": 1117,
+      "end_chapter": 1117,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thu Hồi Linh Ích Thành: Lữ Bố Thuấn Sát Bán Tiên",
+      "description": "Đại Hán thu hồi Linh Ích Thành nhanh chóng, tiêu diệt toàn bộ nhóm chỉ huy của Quốc Giáo.",
+      "start_chapter": 1137,
+      "end_chapter": 1141,
+      "chapter_span": 5
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Lữ Bố Thuấn Sát Bán Tiên Thu Hồi Linh Ích",
+      "description": "Thiết lập lại quyền kiểm soát của Đại Hán trên tuyến đường huyết mạch Tây Nam.",
+      "start_chapter": 1140,
+      "end_chapter": 1140,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Đại Chiến Thảo Nguyên Cực Bắc: Triệu Vân - Quan Vũ - Trương Phi Đấu Bắc Minh",
+      "description": "Bắc Minh không thể bứt phá, buộc phải đình chiến rút lui; giữ vững tuyệt đối phòng tuyến U Châu.",
+      "start_chapter": 1160,
+      "end_chapter": 1162,
+      "chapter_span": 3
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tam Tướng Hán Hợp Chiến Bắc Minh",
+      "description": "Khống chế và phong tỏa hoàn toàn đà tiến của thiên tài Cực Bắc.",
+      "start_chapter": 1162,
+      "end_chapter": 1162,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Phòng Ngự Kinh Bắc Thành: Tả Từ Bố Trận, Văn Ương Tác Chiến & Cam Ninh Chi Viện",
+      "description": "Quân A Bố thương vong nặng nề không thể phá thành, A Bố hạ lệnh rút lui toàn diện.",
+      "start_chapter": 1163,
+      "end_chapter": 1179,
+      "chapter_span": 17
+    },
+    {
+      "category": "battles",
+      "name": "Huyết Chiến Tây Lũng Thành: Vương Việt Chiến Quý Vô Sinh",
+      "description": "Quý Vô Sinh bị thương phải rút lui, Đại Hán đánh chiếm Tây Lũng Thành và làm chủ Tây Môn Quan.",
+      "start_chapter": 1166,
+      "end_chapter": 1184,
+      "chapter_span": 19
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vương Việt Đại Chiến Quý Vô Sinh",
+      "description": "Đè bẹp ý chí kháng cự của kiếm sĩ Quý gia, mở đường đánh chiếm Tây Môn Quan.",
+      "start_chapter": 1169,
+      "end_chapter": 1169,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Bát Quái Cửu Cung Trận Pháp Phòng Ngự (Máy Bắn Đá & Cường Nỗ Xa)",
+      "description": "Được Tả Từ trực tiếp thiết kế và chỉ huy tại Kinh Bắc Thành Chương 1174-1175, giúp đẩy lùi cuộc tổng tấn công vây thành dữ dội của A Bố và Thi Khôi Vương.",
+      "start_chapter": 1174,
+      "end_chapter": 1174,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tả Từ Bố Trận Cứu Nguy Kinh Bắc Thành",
+      "description": "Giữ vững thành lũy Kinh Bắc Thành trước sự vây hãm dữ dội nhất.",
+      "start_chapter": 1175,
+      "end_chapter": 1175,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Cam Ninh Dẫn Thủy Quân Đuổi Tới",
+      "description": "Giải tỏa hoàn toàn vòng vây Kinh Bắc Thành.",
+      "start_chapter": 1178,
+      "end_chapter": 1178,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Cầu Hòa Chính Thức Chấp Chưởng Quốc Giáo",
+      "description": "Quốc Giáo bước vào thời kỳ độc tài của Cầu Hòa với đường lối quân sự cứng rắn hơn.",
+      "start_chapter": 1186,
+      "end_chapter": 1186,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Cầu Hòa Thay Thế Ninh Không Lâu Chấp Chưởng Quốc Giáo",
+      "description": "Dựa vào bí thuật liên thể thần bí, Cầu Hòa đã phong tỏa và áp chế hoàn toàn ý thức của Ninh Không Lâu, chính thức bước lên ngôi vị tối cao của Quốc Giáo. Cầu Hòa ban bố lệnh tái tổ chức phòng thủ 33 t",
+      "start_chapter": 1186,
+      "end_chapter": 1186,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Bình An Đòi 46 Thành Tây Bắc Từ Bắc Minh",
+      "description": "Đại Hán giành được 46 thành trì rộng lớn mà không tốn một mũi tên hòn đạn.",
+      "start_chapter": 1193,
+      "end_chapter": 1193,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Đàm Phán Hòa Bình Đại Hán - Bắc Minh: Thu Hồi 46 Thành Tây Bắc",
+      "description": "Tại Thành Chủ Phủ Thiên Thạch Thành, Quý Bình An đối diện với Thánh Tử Bắc Minh. Bằng sự am hiểu tường tận về nguồn gốc Thần Khí trong mi tâm và sức mạnh quân sự áp đảo, Quý Bình An đã buộc Bắc Minh p",
+      "start_chapter": 1193,
+      "end_chapter": 1193,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Trầm Hạo Bình Phục Sau Ca Hoán Huyết",
+      "description": "Đại Hán có thêm một mãnh tướng Nhân Tiên sung sức sẵn sàng xung trận.",
+      "start_chapter": 1195,
+      "end_chapter": 1195,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tư Mã Ý & Giả Hủ Bổ Sung Viện Binh Mã Siêu",
+      "description": "Khóa chặt mọi khe hở chiến thuật của Quốc Giáo tại Linh Ích Thành.",
+      "start_chapter": 1198,
+      "end_chapter": 1198,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tả Từ Lập Kế Đắp Đê Đập Thủy Công Thiên Sơn Thành",
+      "description": "Chuẩn bị một đòn sấm sét quyết định phá vỡ cửa ngõ phòng ngự 33 thành của Quốc Giáo.",
+      "start_chapter": 1199,
+      "end_chapter": 1199,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Công Trình Đê Đập Thủy Công Thiên Sơn",
+      "description": "Tả Từ giải thích cho Đào Nhã về tầm quan trọng của việc khống chế nguồn nước để tiêu diệt 10 thành trì phía sau Thiên Sơn Thành mà không cần tốn quá nhiều xương máu binh sĩ.",
+      "start_chapter": 1199,
+      "end_chapter": 1199,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hợp Thành Quân Thẳng Hướng Kinh Bắc & Bắc Duyên",
+      "description": "Khép lại Arc 4 bằng tư thế sẵn sàng cho đại chiến tổng lực phản công A Bố.",
+      "start_chapter": 1200,
+      "end_chapter": 1200,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Linh Ích Thành & Thiên Hồn Thành",
+      "description": "Phan Phượng tử trận. Quý Bình An xóa bỏ Phan Phượng trong hệ thống, thu được 6 Anh Hồn Châu chuyển giao cho Quan Vũ đột phá cảnh giới Nhân Tiên.",
+      "start_chapter": 1206,
+      "end_chapter": 1210,
+      "chapter_span": 5
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Phan Phượng Vẫn Lạc & Chuyển Hóa Anh Hồn Châu",
+      "description": "Quý Bình An dùng 6 Anh Hồn Châu này bồi dưỡng cho Quan Vũ, mở đường cho Quan Vũ đột phá cảnh giới Nhân Tiên ở chương tiếp theo (Ch.1211).",
+      "start_chapter": 1209,
+      "end_chapter": 1209,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quan Vũ Đột Phá Nhân Tiên Cảnh",
+      "description": "Cán cân sức mạnh cao cấp nghiêng về phía Đại Hán, chuẩn bị cho màn đà đao trảm Ngân Giải.",
+      "start_chapter": 1211,
+      "end_chapter": 1211,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thiên Tử Kiếm & Bá Vương Thương",
+      "description": "Song binh khí hộ thân giúp Quý Bình An tự tin đối đầu với các đại Nhân Tiên như Tử Ngọc Sùng và A Bố.",
+      "start_chapter": 1211,
+      "end_chapter": 1211,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Bách Khổng Thành: Quan Vũ Trảm Ngân Giải",
+      "description": "Đại tướng Bán Tiên Ngân Giải bị chém chết tại chỗ. Tử Ngọc Sùng kinh hãi trước sức mạnh Nhân Tiên của Quan Vũ, hạ lệnh toàn quân lui binh.",
+      "start_chapter": 1212,
+      "end_chapter": 1240,
+      "chapter_span": 29
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tuân Úc Vận Chuyển Lưu Hỏa Mới Vượt Tây Hải",
+      "description": "Tạo tiền đề vũ khí bộc phá mang tính cách mạng cho các chiến dịch công thành và bẫy nổ sau này.",
+      "start_chapter": 1215,
+      "end_chapter": 1215,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Hoàn Toàn Mới Lưu Hỏa (Lưu Hỏa Cải Tiến Đệ Nhị Đại)",
+      "description": "Vũ khí mang tính quyết định giúp Đại Hán tạc sơn Doanh Kinh, triển khai Nhân Thể Tạc Đạn và tạo nên vụ nổ Thiên Băng Địa Liệt tiêu diệt Thiên A Thị.",
+      "start_chapter": 1215,
+      "end_chapter": 1215,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Kỹ Thuật Thủy Lợi & Đê Đập Bê Tông Bộc Phá",
+      "description": "Kỹ thuật được áp dụng xuất sắc tại Doanh Kinh đê đập nhấn chìm Thiên Sơn Thành.",
+      "start_chapter": 1216,
+      "end_chapter": 1216,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Đột Kích Quốc An Thành",
+      "description": "Đại Hán chiếm trọn Quốc An Thành nhanh chóng mà không cho quân địch kịp cứu viện.",
+      "start_chapter": 1221,
+      "end_chapter": 1222,
+      "chapter_span": 2
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quan Vũ Dùng Đà Đao Kế Trảm Đại Tướng Ngân Giải",
+      "description": "Tiêu diệt viên Bán Tiên mạnh nhất của Thiên Bắc Thị, ép Tử Ngọc Sùng phải lui binh bảo toàn lực lượng.",
+      "start_chapter": 1239,
+      "end_chapter": 1239,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Bắc Minh và Quý Vô Sinh Đàm Phán Chia Cắt Tây Lũng Thành",
+      "description": "Quý gia tạm thời bảo toàn lực lượng nhưng ngày càng nhận rõ dã tâm nuốt chửng của các thế lực Đại La, thúc đẩy Quý gia quay về quy phục Đại Hán.",
+      "start_chapter": 1241,
+      "end_chapter": 1241,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Huyết Chiến Phá Vây: Nhân Thể Tạc Đạn",
+      "description": "Quý Bình An và Lữ Bố phá tan vòng vây 20 vạn quân thoát ra an toàn; Cam Ninh kịp thời đưa quân tới ứng cứu.",
+      "start_chapter": 1251,
+      "end_chapter": 1267,
+      "chapter_span": 17
+    },
+    {
+      "category": "technologies",
+      "name": "Sinh Mệnh Thần Thụ Đại La",
+      "description": "Bảo vật cốt lõi duy trì sự sống cho Cầu Sinh và Cầu Hòa hàng trăm năm, sau này bị Quý Thiên Tứ dùng để tế luyện bản thân và chôn vùi trong biển lửa.",
+      "start_chapter": 1254,
+      "end_chapter": 1254,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Chiến Thuật Nhân Thể Tạc Đạn (Bom Cảm Tử Phá Vây)",
+      "description": "Chiến thuật cảm tử táo bạo phá tan thế trận bao vây 20 vạn Hộ Giáo Vệ của Cầu Sinh tại Thánh Đức Đại Sâm Lâm.",
+      "start_chapter": 1259,
+      "end_chapter": 1259,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Chiến Thuật Nhân Thể Tạc Đạn Phá Vỡ 20 Vạn Hộ Giáo Vệ",
+      "description": "Quý Bình An và Lữ Bố thoát khỏi tuyệt cảnh Thánh Đức Đại Sâm Lâm; đập tan âm mưu ép hợp thể của Cầu Sinh.",
+      "start_chapter": 1262,
+      "end_chapter": 1262,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Thủy Công: Doanh Kinh Đê Đập Tạc Sơn",
+      "description": "Thiên Sơn Thành ngập trong biển nước, quân Quốc Giáo bị tiêu diệt hoàn toàn; Lý Nho chỉ đạo hỏa thiêu thi thể tránh đại dịch.",
+      "start_chapter": 1271,
+      "end_chapter": 1275,
+      "chapter_span": 5
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Tạc Núi Doanh Kinh Nhấn Chìm Thiên Sơn Thành",
+      "description": "Toàn bộ quân địch tại Thiên Sơn Thành bị tiêu diệt; Lý Nho ra lệnh hỏa thiêu ngăn chặn nguy cơ dịch bệnh bùng phát.",
+      "start_chapter": 1273,
+      "end_chapter": 1273,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Phượng Hoàng Xuất Thế Khống Chế Tử Ngọc Sùng",
+      "description": "Đưa yếu tố thần thú Đồ Đằng vào bàn cờ tranh bá; Tử Ngọc Sùng trở thành con rối của Phượng Hoàng.",
+      "start_chapter": 1279,
+      "end_chapter": 1279,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Hòa Ước Hiểm Độc Giữa Phượng Hoàng và Tử Ngọc Sùng",
+      "description": "Tử Ngọc Sùng hoàn toàn trở thành con cờ phụ thuộc vào mệnh lệnh của Đồ Đằng Chi Thần Phượng Hoàng.",
+      "start_chapter": 1279,
+      "end_chapter": 1279,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Hỏa Hồng Sắc Tinh Thạch (Đồ Đằng Chi Tinh)",
+      "description": "Tử Ngọc Sùng và Quý Thiên Tứ từng sở hữu tinh thạch này để gia tăng tu vi võ đạo.",
+      "start_chapter": 1279,
+      "end_chapter": 1279,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Tam Đại Quân Sư Hội Đàm (Gia Cát Lượng, Quách Gia, Bàng Thống)",
+      "description": "Định hình toàn bộ lộ trình chiến thắng của Đại Hán trong suốt nửa sau Arc 5.",
+      "start_chapter": 1285,
+      "end_chapter": 1285,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Diệt Quốc Giáo tại Thánh Đức Đại Sâm Lâm",
+      "description": "Quốc Giáo chính thức sụp đổ; Ninh Không Lâu bị Cầu Hòa thôn phệ; Bàng Thống chịu chết kích hoạt Niết Bàn tái sinh; Cầu Hòa mang tàn quân chạy trốn.",
+      "start_chapter": 1292,
+      "end_chapter": 1337,
+      "chapter_span": 46
+    },
+    {
+      "category": "technologies",
+      "name": "Kim Ô Giáp",
+      "description": "Bộ giáp trứ danh khiến Kim Khuê trở thành pháo đài di động, chỉ bị phá vỡ trong đại quyết chiến cuối cùng.",
+      "start_chapter": 1307,
+      "end_chapter": 1307,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Cầu Hòa Thôn Phệ Quốc Hoàng Ninh Không Lâu",
+      "description": "Quốc Giáo chính thức mất đi người đứng đầu hợp pháp, nội bộ hoàn toàn rạn nứt dẫn tới sụp đổ.",
+      "start_chapter": 1334,
+      "end_chapter": 1334,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Bàng Thống Chịu Chết Kích Hoạt Thiên Phú Niết Bàn",
+      "description": "Bàng Thống kích hoạt thành công thiên phú Niết Bàn, bí mật hồi sinh nguyên vẹn tại Ch.1391.",
+      "start_chapter": 1337,
+      "end_chapter": 1337,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Xung Đột Tiềm Tàng Giữa Thái Tử Quý Sơn Hà và Hoàng Tử Quý Thiên Tứ",
+      "description": "Khiến Quách Gia phải tính toán nước cờ tàn nhẫn để bảo vệ sự ổn định lâu dài cho vương triều Đại Hán.",
+      "start_chapter": 1338,
+      "end_chapter": 1338,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Huyết Chiến Kinh Bắc Thành: Lữ Bố Đột Phá Nhân Tiên",
+      "description": "Đại Hán toàn thắng phòng thủ Kinh Bắc Thành; bẻ gãy ý chí của Bắc Minh và Tử Ngọc Sùng.",
+      "start_chapter": 1364,
+      "end_chapter": 1369,
+      "chapter_span": 6
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hệ Thống Cộng Điểm: Lữ Bố Đạt 160 Võ Lực Đột Phá Nhân Tiên",
+      "description": "Lữ Bố áp đảo toàn diện Bắc Minh, bẻ gãy ma đao của hắn và thiết lập vị thế Chiến Thần đệ nhất Đại Hán.",
+      "start_chapter": 1367,
+      "end_chapter": 1367,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Trận Hoàng Hôn Chi Sâm: Tam Cường Vây Giết Bắc Minh",
+      "description": "Bắc Minh bị đánh trọng thương phế bỏ hoàn toàn công lực, thế lực Bắc U tan rã.",
+      "start_chapter": 1380,
+      "end_chapter": 1383,
+      "chapter_span": 4
+    },
+    {
+      "category": "battles",
+      "name": "Trận Thiên Thạch Thành: Tử Long Ngã Xuống & Tái Sinh",
+      "description": "Triệu Vân tử chiến. Quý Bình An thu hồi thi thể và dùng thần y Hoa Đà thi triển 'Xuân Về Linh Hồn' hồi sinh Triệu Vân hoàn mỹ.",
+      "start_chapter": 1387,
+      "end_chapter": 1395,
+      "chapter_span": 9
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Triệu Vân Tử Chiến Sừng Sững Giữa Vạn Quân",
+      "description": "Lòng dũng cảm của Triệu Vân khiến kẻ thù khiếp sợ; Quý Bình An quyết tâm đoạt lại thi thể bằng mọi giá.",
+      "start_chapter": 1389,
+      "end_chapter": 1389,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Thần Y Hoa Đà Dùng 'Xuân Về Linh Hồn' Hồi Sinh Triệu Vân",
+      "description": "Triệu Vân hồi sinh thần kỳ, lập tức dẫn quân tái chiếm Tây Môn Quan và diệt sạch Bắc U chi địa.",
+      "start_chapter": 1395,
+      "end_chapter": 1395,
+      "chapter_span": 1
+    },
+    {
+      "category": "technologies",
+      "name": "Thi Khôi Chi Thuật & Thi Khôi Vương",
+      "description": "Công cụ chiến tranh phi nhân tính của các thế lực phản diện tại Đại La nhằm chống lại đại quân Đại Hán.",
+      "start_chapter": 1396,
+      "end_chapter": 1396,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Thiên Tứ Ngửa Bài & Tế Sát Cầu Hòa Trong Thần Thụ",
+      "description": "Cầu Hòa chết trong uất hận; Quý Thiên Tứ đột phá Nhân Tiên và hoàn toàn làm chủ nguồn năng lượng Sinh Mệnh Thần Thụ.",
+      "start_chapter": 1400,
+      "end_chapter": 1400,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Chiến Dịch Tái Chiếm Tây Môn Quan & Bắt Phượng Hoàng",
+      "description": "Đại Hán tái chiếm trọn vẹn Tây Môn Quan; Phượng Hoàng bị giam cầm; Tử Ngọc Sùng tháo chạy đầu hàng A Bố.",
+      "start_chapter": 1403,
+      "end_chapter": 1415,
+      "chapter_span": 13
+    },
+    {
+      "category": "political_events",
+      "name": "Tử Ngọc Sùng Bại Trận Đầu Hàng A Bố",
+      "description": "Hợp nhất toàn bộ tàn dư Thiên Bắc Thị vào guồng máy chiến tranh của Thiên A Thị cho trận quyết chiến cuối cùng.",
+      "start_chapter": 1417,
+      "end_chapter": 1417,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Quý Thiên Tứ Ngửa Bài Lòng Trung Trinh Với Phụ Hoàng",
+      "description": "Đập tan mọi âm mưu chia rẽ hoàng gia Đại Hán từ bên trong.",
+      "start_chapter": 1421,
+      "end_chapter": 1421,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quý Thiên Tứ Huyết Chiến Đả Thương Tử Ngọc Sùng",
+      "description": "Làm phá sản toàn bộ toan tính của Tử Ngọc Sùng, ép hắn phải tháo chạy và đầu hàng A Bố.",
+      "start_chapter": 1423,
+      "end_chapter": 1423,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Chiến Định Thánh Thành",
+      "description": "A Bố buộc phải rút lui; Đại Hán chiếm hoàn toàn Định Thánh Thành.",
+      "start_chapter": 1426,
+      "end_chapter": 1445,
+      "chapter_span": 20
+    },
+    {
+      "category": "battles",
+      "name": "Trận Cửa Tây Thiên A: Lữ Bố Trảm Nhân Tiên",
+      "description": "Lữ Bố một kích đâm xuyên ngực chém chết Hoàng Thành Vệ Thống Lĩnh (Nhân Tiên) ngay giữa quân địch.",
+      "start_chapter": 1470,
+      "end_chapter": 1473,
+      "chapter_span": 4
+    },
+    {
+      "category": "battles",
+      "name": "Bi kịch Kinh Bắc Thành: Quách Gia & Quý Thiên Tứ Hy Sinh",
+      "description": "Kinh Bắc Thành hóa thành tro bụi; Quách Gia và Quý Thiên Tứ anh dũng hy sinh; A Bố và Phượng Hoàng chật vật đào thoát.",
+      "start_chapter": 1480,
+      "end_chapter": 1486,
+      "chapter_span": 7
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Quách Gia Đồng Quy Vu Tận Tại Kinh Bắc Thành",
+      "description": "Quách Gia và Quý Thiên Tứ hi sinh kiêu hùng; Đại Hán loại bỏ được hiểm họa nội loạn tương lai.",
+      "start_chapter": 1482,
+      "end_chapter": 1482,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Quách Gia Hy Sinh Vì Đại Cục Quốc Gia",
+      "description": "Hành động bi tráng bảo vệ thái bình thịnh trị đời đời cho Đại Hán.",
+      "start_chapter": 1482,
+      "end_chapter": 1482,
+      "chapter_span": 1
+    },
+    {
+      "category": "battles",
+      "name": "Đại Quyết Chiến Thánh Đức Đại Sâm Lâm: Táng Diệt Thiên A Thị",
+      "description": "Đại quân 60 vạn Thiên A Thị và toàn bộ các phân thân A Bố bị chôn vùi hoàn toàn; Vương Việt và Kim Khuê tử trận; Lữ Bố hộ giá Quý Bình An an toàn.",
+      "start_chapter": 1496,
+      "end_chapter": 1507,
+      "chapter_span": 12
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Hé Lộ Bí Mật Ngũ Thể Đồng Sinh Của A Bố",
+      "description": "Giải mã sức mạnh bí ẩn của chúa tể Thiên A Thị, buộc Quý Bình An phải dùng đại kế bộc phá diện rộng.",
+      "start_chapter": 1498,
+      "end_chapter": 1498,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Vương Việt Dĩ Mệnh Hoán Mệnh Trảm Sát A Bố",
+      "description": "Tiêu diệt 1 thực thể nguy hiểm của A Bố, giảm bớt áp lực khổng lồ cho Quý Bình An.",
+      "start_chapter": 1501,
+      "end_chapter": 1501,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Địa Chấn Bộc Phá San Phẳng 60 Vạn Quân Thiên A Thị",
+      "description": "Thiên A Thị hoàn toàn bị xóa sổ; cuộc chiến thống nhất Đại La đi đến hồi kết thắng lợi.",
+      "start_chapter": 1507,
+      "end_chapter": 1507,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Giao Ước 10 Năm Hòa Bình Giữa Quý Bình An và Phượng Hoàng",
+      "description": "Thu phục thành công Đồ Đằng Chi Thần mà không cần tốn thêm xương máu của quân sĩ.",
+      "start_chapter": 1507,
+      "end_chapter": 1507,
+      "chapter_span": 1
+    },
+    {
+      "category": "key_plot_events",
+      "name": "Đại Điển Sắc Phong & Kiến Tạo Đại Hán Thịnh Thế",
+      "description": "Toàn cõi Đại Vũ và Đại La quy về một mối; mở ra thời kỳ Đại Hán Thịnh Thế vĩnh viễn lưu danh trong sử sách.",
+      "start_chapter": 1509,
+      "end_chapter": 1509,
+      "chapter_span": 1
+    },
+    {
+      "category": "political_events",
+      "name": "Chiếu Chỉ Đại Hán Thịnh Thế & Thống Nhất Văn Tự - Kinh Tế",
+      "description": "Chính thức khép lại thời kỳ phân tranh loạn lạc, mở ra kỷ nguyên Đại Hán Thịnh Thế - Đại Hán Truyền Kỳ rực rỡ nhất lịch sử.",
+      "start_chapter": 1509,
+      "end_chapter": 1509,
+      "chapter_span": 1
+    }
+  ]
+}

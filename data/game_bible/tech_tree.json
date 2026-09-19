@@ -1,0 +1,100 @@
+[
+  {
+    "id": "TECH_XAPHONG",
+    "name": "Thấu Hoa Cao (Xà Phòng Tinh Chế)",
+    "category": "Thương Nghiệp & Tích Lũy Vàng",
+    "research_cost_gold": 100,
+    "research_time_days": 1,
+    "invented_chapter": 8,
+    "unlocked_cards": [
+      "Kinh Thương: Độc Quyền Xà Phòng"
+    ],
+    "economic_yield": "+500 Vàng mỗi lượt nội chính",
+    "description": "Phát minh thương nghiệp đầu tiên đem lại lợi nhuận khổng lồ, là bàn đạp để Quý Bình An tích lũy vàng triệu hoán danh tướng."
+  },
+  {
+    "id": "TECH_BACHTUY",
+    "name": "Bạch Tửu (Chưng Cất Rượu Nồng Độ Cao)",
+    "category": "Thương Nghiệp & Ngoại Giao",
+    "research_cost_gold": 500,
+    "research_time_days": 2,
+    "invented_chapter": 24,
+    "unlocked_cards": [
+      "Kinh Thương: Mở Tửu Lâu Vạn Kim",
+      "Tiệc Rượu Kích Lệ Sĩ Khí"
+    ],
+    "economic_yield": "+1.200 Vàng mỗi lượt nội chính",
+    "description": "Kỹ thuật chưng cất rượu mạnh thượng hạng làm say mê vương tôn quý tộc và tướng sĩ."
+  },
+  {
+    "id": "TECH_LUU_HOA",
+    "name": "Lưu Hỏa (Dầu Lửa & Hỏa Dược Cháy Trên Nước)",
+    "category": "Vũ Khí Chiến Thuật Cốt Lõi",
+    "research_cost_gold": 5000,
+    "research_time_days": 3,
+    "invented_chapter": 120,
+    "unlocked_cards": [
+      "Lưu Hỏa Tiễn",
+      "Hỏa Thiêu Liên Doanh",
+      "Lưu Hỏa Đạn"
+    ],
+    "economic_yield": null,
+    "description": "Thần khí thay đổi hoàn toàn cục diện chiến tranh phong kiến: dầu cháy không thể dập bằng nước, thiêu rụi thành trì và kỵ binh."
+  },
+  {
+    "id": "TECH_GIACAT_THANNOR",
+    "name": "Gia Cát Thần Nỏ (Nỏ Máy Liên Châu)",
+    "category": "Binh Khí Viễn Trình",
+    "research_cost_gold": 15000,
+    "research_time_days": 4,
+    "invented_chapter": 190,
+    "unlocked_cards": [
+      "Nỏ Liên Châu Tề Xạ",
+      "Mưa Tên Xuyên Giáp"
+    ],
+    "economic_yield": null,
+    "description": "Nỏ máy bắn liên tiếp 10 mũi tên thép, khắc tinh số một của kỵ binh thiết giáp và lính cảm tử."
+  },
+  {
+    "id": "TECH_THIEN_CONG_CO_QUAN",
+    "name": "Thiên Công Thần Tượng & Cơ Quan Khí Giới",
+    "category": "Công Thành & Hộ Thành Khí Giới",
+    "research_cost_gold": 30000,
+    "research_time_days": 5,
+    "invented_chapter": 190,
+    "unlocked_cards": [
+      "Phá Cổng Thần Xung",
+      "Ném Đá Cự Nỏ"
+    ],
+    "economic_yield": null,
+    "description": "Máy móc cơ quan xảo đoạt thiên công, dễ dàng san phẳng cổng thành kiên cố và tường thành đá tảng."
+  },
+  {
+    "id": "TECH_CHIEN_THUYEN_MONG_DONG",
+    "name": "Chiến Hạm Mông Đồng & Lâu Thuyền",
+    "category": "Thủy Chiến Trường Giang",
+    "research_cost_gold": 50000,
+    "research_time_days": 7,
+    "invented_chapter": 380,
+    "unlocked_cards": [
+      "Lâu Thuyền Pháo Kích",
+      "Mông Đồng Thiết Xung"
+    ],
+    "economic_yield": "Thu thuế đường thủy và kiểm soát thương cảng",
+    "description": "Chiến hạm bọc sắt kết hợp kỹ thuật đóng tàu Giang Đông, điều kiện tiên quyết để Chu Du làm chủ sông ngòi."
+  },
+  {
+    "id": "TECH_HAC_THIET_TRONG_GIAP",
+    "name": "Luyện Kim Hắc Thiết (Trọng Giáp Toàn Thân)",
+    "category": "Phòng Ngự Binh Chủng",
+    "research_cost_gold": 40000,
+    "research_time_days": 5,
+    "invented_chapter": 220,
+    "unlocked_cards": [
+      "Bá Thể Thiết Giáp",
+      "Lũy Thép Bất Hoại"
+    ],
+    "economic_yield": null,
+    "description": "Áo giáp thép rèn nguội tinh xảo trang bị cho Hãm Trận Doanh và Chiến Hổ Quân, miễn nhiễm đao kiếm thường."
+  }
+]

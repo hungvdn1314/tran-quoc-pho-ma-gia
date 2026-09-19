@@ -1,0 +1,649 @@
+[
+  {
+    "id": "ORG_HUYET_Y_DOANH",
+    "name": "Huyết Y Doanh",
+    "leader": "Quý Bình An (Chủ công), Trương Liêu (Thống soái), Hoa Hùng (Phó soái)",
+    "purpose": "Đạo quân bộ binh chính quy nòng cốt bảo vệ căn cứ và viễn chinh của Quý Bình An",
+    "members": "Ban đầu gồm 30.000 tân binh do triều đình giao, sau mở rộng lên 50.000 quân tinh nhuệ",
+    "base_of_operations": "Liễu Châu Thành - Bắc Cảnh Tam Châu & Đế Đô",
+    "specialty": "Chiến đấu kỷ luật thép dưới sự chỉ huy của Trương Liêu, trang bị giáp trụ đồng bộ, nỏ liên hoàn và thương kích",
+    "first_appearance": 29,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_HONG_NHAN",
+    "name": "Hồng Nhan",
+    "leader": "Điêu Thuyền (Tối cao chưởng quản), Vệ Ti Vũ (Điều hành tác nghiệp)",
+    "purpose": "Mạng lưới tình báo, trinh sát, mê hoặc và sát thủ toàn nữ nhân",
+    "members": "Hàng trăm ca kỹ, vũ nữ, tài nữ ẩn náu trong các hoa lầu, phủ đệ quý tộc khắp bốn nước",
+    "base_of_operations": "Thiên Kim Lâu (Đế Đô) & Bách Hoa Các (Liễu Châu)",
+    "specialty": "Thu thập tin tức mật, dùng nhan sắc mị hoặc, sử dụng đoản đao Băng Tàm, ám khí độc dược, thâm nhập các tầng lớp thượng lưu",
+    "first_appearance": 156,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_AN_TUC_VE",
+    "name": "An Tức Vệ",
+    "leader": "Cơ Vô Thiên (sau khi tiếp quản từ Cẩu Phú Quý / An gia)",
+    "purpose": "Ám vệ bảo vệ thân cận, hành quyết bí mật và trinh sát tiền phương",
+    "members": "200 chiến binh sát thủ tinh nhuệ được tôi luyện khắc nghiệt",
+    "base_of_operations": "Phò Mã Phủ / Trấn Quốc Công Phủ",
+    "specialty": "Sử dụng mê hương chiết xuất từ cây cánh kiến trắng, thuật ẩn nấp trong bóng tối, khinh công trác tuyệt",
+    "first_appearance": 95,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_BACH_MA_NGHIA_TONG",
+    "name": "Bạch Mã Nghĩa Tòng",
+    "leader": "Triệu Vân",
+    "purpose": "Kỵ binh xung kích cơ động thần tốc, đột kích xé rách phòng tuyến địch",
+    "members": "3.000 đến 5.000 kỵ binh tinh nhuệ cưỡi ngựa trắng Tuyết Cưu mã",
+    "base_of_operations": "Bắc Cảnh Doanh Trại & Nam Quan",
+    "specialty": "Toàn bộ cưỡi ngựa trắng trang bị móng ngựa sắt, cung nỏ cơ động tầm xa kết hợp trường thương đột phá",
+    "first_appearance": 177,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_HAM_TRAN_DOANH",
+    "name": "Hãm Trận Doanh",
+    "leader": "Cao Thuận",
+    "purpose": "Quân đoàn cảm tử phá trận, khắc tinh của kỵ binh và thành trì kiên cố",
+    "members": "Khoảng 800 dũng sĩ tinh chọn",
+    "base_of_operations": "Thành trì Bắc Cảnh",
+    "specialty": "Trang bị trọng giáp tinh thiết, đại khiên và đoản mâu; phương châm 'xung phong hãm trận, mỗi trận tất phá', phòng ngự phản kích tuyệt đối",
+    "first_appearance": 200,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_TIEN_DANG_TU_SI",
+    "name": "Tiên Đăng Tử Sĩ",
+    "leader": "Khúc Nghĩa",
+    "purpose": "Bộ binh cảm tử chuyên khắc chế thiết kỵ và mở đường công thành",
+    "members": "1.000 chiến binh cảm tử",
+    "base_of_operations": "Bắc Cảnh Doanh Trại",
+    "specialty": "Trang bị nỏ cứng bắn xuyên giáp và khiên cao chắn tên, phối hợp đội hình đan xen chặt chẽ",
+    "first_appearance": 149,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_CHIEN_HO_QUAN",
+    "name": "Chiến Hổ Quân",
+    "leader": "Quý Vô Song (sáng lập), Quý Bình Sinh (thống soái trực tiếp)",
+    "purpose": "Đạo quân thiết kỵ và dũng sĩ mạnh nhất Đại Vũ, giữ gìn biên cương và răn đe các nước",
+    "members": "Hơn 100.000 chiến binh thiện chiến trải dài khắp các quân đoàn",
+    "base_of_operations": "Đại Vũ Biên Cương & Kinh Đô",
+    "specialty": "Kỵ binh bọc giáp dũng mãnh, quân đoàn cung thủ bách bộ xuyên dương, tính kỷ luật và sức mạnh càn quét vô địch",
+    "first_appearance": 108,
+    "_source_arc": "extraction_arc1_ch001_300.json",
+    "details": "Lực lượng thiện chiến cận chiến, từng bị chia rẽ trong kế hoạch của Quý Bình Sinh và trúng mưu thủy công tại Ngưu Khánh Châu."
+  },
+  {
+    "id": "ORG_THIEN_CO_LAU",
+    "name": "Thiên Cơ Lâu",
+    "leader": "Ẩn danh (Ninh An công chúa và thế lực ngầm Tây Lăng thao túng)",
+    "purpose": "Tổ chức tình báo mạng lưới bí mật khổng lồ bao trùm cả bốn nước",
+    "members": "Mật thám rải rác khắp triều đình, hậu cung (Trần Hải, Dương công công, nhóm Vật Tổ)",
+    "base_of_operations": "Phân bộ bí mật khắp tứ quốc",
+    "specialty": "Mạng lưới truyền tin chim ưng, mật mã cơ quan, mua bán tin tức và thao túng cục diện chính trị",
+    "first_appearance": 7,
+    "_source_arc": "extraction_arc1_ch001_300.json",
+    "details": "Là mạng lưới tình báo lâu đời và bí ẩn nhất. Khác với Đại Vũ hoạt động ngầm, Thiên Cơ Lâu tại Nam Ly hoạt động công khai, có xưởng rèn đúc cơ quan lôi hỏa đạn cực mạnh."
+  },
+  {
+    "id": "ORG_TAY_LANG_QUY_QUAT",
+    "name": "Tây Lăng Quỷ Quật",
+    "leader": "Các quái nhân Quỷ Quật",
+    "purpose": "Tổ chức ám sát ngầm phục vụ hoàng tộc Tây Lăng và thế lực bóng tối",
+    "members": "Các thích khách dị dạng, người lùn (Chu Nho thích khách), Đồng Chuy Quỷ",
+    "base_of_operations": "Quỷ Quật - Tây Lăng",
+    "specialty": "Thuật độn thổ đào hầm ngầm, ám sát bất ngờ bằng đoản đao độc, dịch dung mặt nạ quỷ",
+    "first_appearance": 204,
+    "_source_arc": "extraction_arc1_ch001_300.json",
+    "details": "Thế lực tà dị nguy hiểm chuyên biến dị cơ thể người để tạo ra các cỗ máy chém giết vô cảm, cấu kết ngầm với các phe phái Tây Lăng."
+  },
+  {
+    "id": "ORG_PHI_BAO_QUAN",
+    "name": "Phi Báo Quân",
+    "leader": "Tô Kiến Phong",
+    "purpose": "Lực lượng kỵ binh cơ động tinh nhuệ của Cấm Vệ Quân Đại Vũ",
+    "members": "Khoảng 10.000 kỵ binh",
+    "base_of_operations": "Cấm Vệ Doanh - Kinh Đô Đại Vũ",
+    "specialty": "Tốc độ di chuyển nhanh, trung thành với gia tộc họ Tô",
+    "first_appearance": 182,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_HAC_MA",
+    "name": "Hắc Ma (Hắc Ma Ảnh Vệ)",
+    "leader": "Khai Sơn Vương Tử Triệu Phong",
+    "purpose": "Lực lượng sát thủ và mật vụ hoàng gia Đại Vũ",
+    "members": "Hàng trăm cao thủ ám sát mặc hắc y",
+    "base_of_operations": "Khai Sơn Vương Phủ / Mật thất Hoàng Cung",
+    "specialty": "Ám toán trong đêm tối, thủ tiêu các đối thủ chính trị của hoàng thất",
+    "first_appearance": 210,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_THIEN_DAO_VE",
+    "name": "Thiên Đao Vệ",
+    "leader": "Trầm Lưu Lương",
+    "purpose": "Đội cận vệ mang đao bảo vệ an ninh các đại điện kinh thành",
+    "members": "Khoảng 3.000 đao thủ",
+    "base_of_operations": "Hoàng thành Đại Vũ",
+    "specialty": "Thiên Đao Trận Pháp, cận chiến phòng thủ",
+    "first_appearance": 114,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_THUONG_UNG_VE",
+    "name": "Thương Ưng Vệ",
+    "leader": "Vũ Hoàng (nắm Thương Ưng Lệnh)",
+    "purpose": "Thị vệ mật vụ hoàng gia, chỉ nghe lệnh trực tiếp từ người cầm Thương Ưng Lệnh",
+    "members": "Các đại nội cao thủ trung thành tuyệt đối với ngai vàng",
+    "base_of_operations": "Nội cung Đại Vũ",
+    "specialty": "Bảo vệ hoàng đế, chấp hành mật chỉ trừng phạt tông thất",
+    "first_appearance": 110,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_THIEN_KIM_LAU",
+    "name": "Thiên Kim Lâu",
+    "leader": "Vệ Ti Vũ (sau trực thuộc Quý Bình An)",
+    "purpose": "Tửu lâu số một kinh thành, nơi tụ họp quý tộc và thu thập tài chính - tình báo",
+    "members": "Hàng trăm vũ nữ, tiểu nhị, bảo tiêu",
+    "base_of_operations": "Trung tâm Đế đô Đại Vũ",
+    "specialty": "Kinh doanh độc quyền rượu ngon, xà phòng Thấu Hoa Cao, tổ chức yến tiệc thượng lưu",
+    "first_appearance": 7,
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "ORG_DAI_HAN_TRIEU_DINH",
+    "name": "Đại Hán Triều Đình",
+    "leader": "Khai Quốc Hoàng Đế Quý Bình An",
+    "purpose": "Thống nhất tứ hải, kiến lập thịnh thế vạn năm, bình định chư quốc",
+    "members": [
+      "Tuân Úc (Tả Thừa Tướng)",
+      "Quách Gia (Hữu Thừa Tướng)",
+      "Mãn Sủng (Đình Úy)",
+      "Đào Nhã (Nữ Công Bộ Thượng Thư)",
+      "Điêu Thuyền (Quốc Hậu)",
+      "Quý Sơn Hà (Hoàng Thái Tử)"
+    ],
+    "base_of_operations": "Đại Hán Kinh Đô (Cần Chính Điện, Phượng Tê Cung)",
+    "military_might": "Khoảng 30-40 vạn tinh binh chính quy, lực lượng Thánh Giả hùng hậu nhất thiên hạ",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_HUYET_Y_CAC",
+    "name": "Huyết Y Các",
+    "leader": "Xích Hồng Y (Các chủ nguyên bản) -> Vương Việt (chưởng khống thực tế từ Ch.571)",
+    "purpose": "Tổ chức sát thủ đệ nhất thiên hạ, ám sát các mục tiêu chính trị và quân sự cấp cao",
+    "members": [
+      "Xích Hồng Y (Thánh giả sát thủ)",
+      "Hắc Y Sát Thủ",
+      "Mật thám tứ quốc"
+    ],
+    "base_of_operations": "Các cứ điểm bí mật phân bố khắp Tây Lăng, Nam Ly, Đông Thương",
+    "details": "Sau khi Xích Hồng Y bị Triệu Vân đánh bại (Ch.503) và bị Vương Việt một kiếm chế phục tại Đế đô (Ch.568-571), Huyết Y Các chuyển sang phục vụ Quý Bình An và Đại Hán.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_HONG_NHAN",
+    "name": "Mạng Lưới Tình Báo Hồng Nhan",
+    "leader": "Điêu Thuyền (Quốc Hậu) & Quách Gia (Hữu Thừa Tướng) / Vệ Ti Vũ (cựu phụ trách)",
+    "purpose": "Mạng lưới nữ điệp báo, gián điệp thương nghiệp và tình báo thanh lâu phủ đệ xuyên quốc gia",
+    "members": [
+      "Nữ điệp báo viên, danh kỹ thanh lâu, tỳ nữ phủ đệ quan lại chư quốc"
+    ],
+    "base_of_operations": "Đế đô Phượng Tê Cung & các kỹ viện lớn tại Tây Lăng, Nam Ly, Đông Thương",
+    "details": "Được kích hoạt chính thức từ Ch.507 sau khi giải tỏa thiên phú Hồng Nhan của Điêu Thuyền tại Ch.427. Bị Mãn Sủng thanh lọc các nhân tố phản nghịch (Vệ Ti Vũ) tại Ch.547 để hoàn toàn trung thành với Quý Bình An.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_THIEN_CUNG_HOC_VIEN",
+    "name": "Thiên Cung Học Viện",
+    "leader": "Thần Tượng Mã Quân",
+    "purpose": "Trung tâm nghiên cứu kỹ thuật, luyện kim, chế tạo vũ khí cơ quan và công trình quốc phòng vượt thời đại",
+    "members": [
+      "Mã Quân",
+      "Thợ rèn đúc bậc thầy, công tượng tinh hoa Đại Hán"
+    ],
+    "base_of_operations": "Thiên Cung Viện - Đại Hán Đế Đô",
+    "details": "Thành lập tại Ch.495 sau khi Quý Bình An triệu hoán Mã Quân. Nơi phát minh Thiết Giáp Môn, nỏ liên châu, cải tiến vũ khí Tấn Thiết Song Kích cho Điển Vi và hệ thống phòng thủ Uyển Châu.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_HOC_CUNG_DAI_HAN",
+    "name": "Hệ Thống Ba Tòa Học Cung Đại Hán",
+    "leader": "Tuân Úc, Quý Bình An, Phó Dĩnh Thăng (đại nho thỉnh mời)",
+    "purpose": "Đào tạo nhân tài văn võ, xóa bỏ rào cản thế gia, phổ cập giáo dục cho toàn dân",
+    "members": [
+      "Trưởng Thành Học Cung (cho kẻ sĩ thành niên)",
+      "Thiếu Niên Học Cung (cho thanh thiếu niên)",
+      "Nữ Tử Học Cung (phá vỡ định kiến nam tôn nữ ti, cho phép phụ nữ đi học)"
+    ],
+    "base_of_operations": "Đại Hán Đế Đô",
+    "details": "Sáng kiến chấn động tứ quốc tại Ch.406-407, ban bố Chiêu Hiền Lệnh thu hút sĩ phu toàn thiên hạ.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_THIEU_NIEN_BINH",
+    "name": "Thiếu Niên Binh / Tiên Phong Doanh",
+    "leader": "Trầm Hạo (con nuôi Quý Bình An)",
+    "purpose": "Chiêu mộ thiếu niên từ 8-12 tuổi, huấn luyện văn võ toàn diện, tạo lực lượng nòng cốt cho tương lai Đại Hán",
+    "members": [
+      "Hàng ngàn thiếu niên ưu tú từ các châu huyện trên cả nước"
+    ],
+    "base_of_operations": "Đế đô và các quân doanh Tiên Phong",
+    "details": "Thành lập theo sắc lệnh thứ ba của Quý Bình An khi đăng cơ (Ch.387), gia đình có con tham gia được hưởng trợ cấp gạo tiền từ triều đình.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_TAY_LANG_THIET_KY",
+    "name": "Tây Lăng Thiết Kỵ",
+    "leader": "Tần Tứ Nghiệp (trước) -> Tần Ức -> Trương Bất Minh trực tiếp kiểm soát",
+    "purpose": "Binh chủng kỵ binh hạng nặng trấn quốc của Tây Lăng, nổi danh càn quét bình nguyên",
+    "members": [
+      "Kỵ binh thiết giáp Tây Lăng"
+    ],
+    "base_of_operations": "Tây Kinh Thành, Tây Hoàng Thành",
+    "details": "Từng đại bại dưới tay Triệu Vân và Bạch Mã Nghĩa Tòng tại Lâm Quan Thành; sau trận Uyển Châu tiếp tục suy yếu.",
+    "_source_arc": "extraction_arc2_ch301_600.json",
+    "numbers": "140.000 thiết kỵ",
+    "traits": "Xung lực kinh hoàng nhưng bị khắc chế triệt để bởi thừng gạt ngựa, bán mã thung và xe nỏ của quân Hán."
+  },
+  {
+    "id": "ORG_THAN_HOA_QUAN",
+    "name": "Nam Ly Thần Hỏa Quân",
+    "leader": "Phó Thương Quân (Thái tử) / Triệu Thiên Lỗi",
+    "purpose": "Lực lượng tinh nhuệ của Nam Ly chuyên sử dụng hỏa khí, thuốc nổ, Lưu Hỏa Tiễn và Thần Hỏa Lôi",
+    "members": [
+      "Chiến sĩ hỏa khí Nam Ly"
+    ],
+    "base_of_operations": "Thần Hỏa Thành, Nam Thiên Thành",
+    "details": "Sở hữu sức công phá diện rộng khủng khiếp nhờ hỏa khí, là đối thủ cạnh tranh vũ khí tầm xa với Đại Hán.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_DAI_LA_DE_QUOC",
+    "name": "Đại La Đế Quốc (Thế lực Thần bí Hải Ngoại)",
+    "leader": "Hoàng Đế Đại La / Thế lực ngoài biển",
+    "purpose": "Bành trướng xâm chiếm đất liền Trung Thổ, bắt giữ nô lệ và người dị biến",
+    "members": [
+      "Bí Đao (liên thể nhân)",
+      "Đặc sứ và thám tử viễn dương"
+    ],
+    "base_of_operations": "Hải ngoại Đại La",
+    "details": "Xuất hiện manh mối từ Ch.522 khi sứ giả liên thể Bí Đao thâm nhập, hé lộ thế giới bên ngoài bờ cõi Trung Thổ cực kỳ rộng lớn.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "ORG_DAI_HAN_HOANG_TRIEU",
+    "name": "Đại Hán Hoàng Triều",
+    "leader": "Hán Đế Quý Bình An",
+    "base_of_operations": "Thần Châu Trường An (Tân Đô)",
+    "purpose": "Thống nhất tứ quốc thiên hạ, kiến tạo vạn thế cơ nghiệp, chống trả và viễn chinh đại lục Đại La.",
+    "sub_units": [
+      "Bạch Mã Nghĩa Tòng (Kỵ binh cơ động Triệu Vân)",
+      "Thần Cơ Doanh (Cung nỏ & Nỏ xe cải tiến)",
+      "Giang Đông Thủy Quân (Hạm đội viễn dương Chu Du & Cam Ninh)",
+      "Cẩm Y Vệ (Cơ quan mật vụ tình báo Cơ Vô Thiên)",
+      "Hồng Nhan (Mạng lưới tình báo Điêu Thuyền)"
+    ],
+    "traits": "Sở hữu dàn tướng lĩnh Tam Quốc siêu việt, công nghệ khí giới dẫn đầu thời đại, nắm giữ 1.5 phần thiên địa khí vận.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_THIEN_CO_CAC",
+    "name": "Thiên Cơ Các (Thiên Cơ Tông)",
+    "leader": "Quý Bình Xuyên (Ninh Bình Xuyên) / Trương Bất Minh (tiền nhiệm)",
+    "base_of_operations": "Bí mật xuyên quốc gia (Tây Lăng, Nam Ly, Đông Thương)",
+    "purpose": "Thao túng vương quyền 4 nước từ bóng tối, tích lũy Thiên Cơ Đồ và Trường Sinh bí bảo.",
+    "members": [
+      "Khôn Tự",
+      "Lý Hoành (Đại Chấp Sự Nam Ly)",
+      "Vệ Ti Vũ",
+      "Trương Hiên Chính"
+    ],
+    "traits": "Mạng lưới gián điệp tinh vi, cài cắm người vào tận cung cấm và hàng ngũ tướng soái các quốc gia.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_THANH_NU_GIAO",
+    "name": "Thánh Nữ Giáo Đại La",
+    "leader": "Hiên Thanh Nguyệt (Thánh Nữ Tối Cao) / An Khinh Ngôn (Kế vị)",
+    "base_of_operations": "Thâm Uyên / U Châu (Đại La)",
+    "purpose": "Duy trì tín ngưỡng Thánh Nữ tại Đại La, tranh đoạt quyền lực tối cao với Quốc Giáo.",
+    "members": [
+      "Liễu Khinh Ngôn",
+      "Tuyết Nương (Đại Tế Ti)",
+      "Hề Nhan"
+    ],
+    "traits": "Thao túng thuật mị hoặc tâm thần, sở hữu mạng lưới tín đồ nữ quyền lực và liên minh với các cự đầu như Đức Bất Nhân.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_QUOC_GIAO_DAI_LA",
+    "name": "Quốc Giáo Đại La",
+    "leader": "Quốc Sư Ninh Không Lâu",
+    "base_of_operations": "Thánh Đô Quốc Giáo (Đại La)",
+    "purpose": "Truyền bá giáo lý tôn giáo chính thống của đế chế Đại La, thâu tóm chính quyền và biên cương.",
+    "sub_units": [
+      "Quân đoàn Bạch Bào Tế Tự (Nhất phẩm đến Cửu phẩm)",
+      "Chiến binh Cuồng Tín"
+    ],
+    "traits": "Kỷ luật nghiêm ngặt, sử dụng thần thuật và trận pháp phòng ngự quy mô lớn.",
+    "_source_arc": "extraction_arc3_ch601_900.json",
+    "members": [
+      "Ninh Không Lâu",
+      "Cầu Hòa",
+      "Ngân Giải Tướng Quân",
+      "Vương Sơ",
+      "Thánh Quang Đại Tế Ti",
+      "Đoàn Bạch Bào Tế Tự",
+      "Tử Sĩ Giáo Đồ"
+    ],
+    "military_units": [
+      "Bạch Bào Tế Tự Quân (thi triển phù chú ấn pháp)",
+      "Ngân Giải Quân (quân thiết giáp phòng thủ)",
+      "Thi Khôi Binh & Thi Khôi Vương (quái vật cương thi bất tử)",
+      "Hàng vạn Tín Đồ Tử Sĩ cuồng tín"
+    ],
+    "troop_types": [
+      "Hộ Giáo Vệ (20 vạn đại quân tử vì đạo)",
+      "Bạch Bào Tế Ty Đoàn",
+      "Thiên Sơn Cố Thủ Binh"
+    ]
+  },
+  {
+    "id": "ORG_THE_LUC_A_BO",
+    "name": "Thế Lực Bí Mật A Bố",
+    "leader": "A Bố",
+    "base_of_operations": "Khu vực phong tỏa hẻo lánh Đại La",
+    "purpose": "Nghiên cứu cấm thuật bất tử, tạo ra quân đoàn Thi Khôi thống trị cả đại lục.",
+    "sub_units": [
+      "Đội quân Thi Khôi (Bao gồm Thi Khôi Đặc Phổ)",
+      "Hắc y nhân thể phách biến dị"
+    ],
+    "traits": "Tàn độc, sẵn sàng biến tướng bại trận và thương binh thành công cụ giết người không biết sợ hãi.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_VIEN_CHINH_HAM_DOI_DAI_LA",
+    "name": "Đại Quân Viễn Chinh Đại La",
+    "leader": "Bái Đăng (Thủy quân) & Quinto (Lục quân)",
+    "base_of_operations": "Hải lộ Bắc Cực Băng Xuyên",
+    "purpose": "Xâm chiếm toàn bộ lãnh thổ Trung Nguyên Đại Hán sau khi băng tan.",
+    "numbers": "3.000.000 (3 triệu đại quân thủy bộ)",
+    "traits": "Quy mô khổng lồ chưa từng có, sở hữu giáp sắt nặng và hạm đội thuyền lớn vượt biển.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_THAN_HOA_QUAN",
+    "name": "Thần Hỏa Quân Nam Ly",
+    "leader": "Lạc Thiên Thanh",
+    "base_of_operations": "Thần Hỏa Thành (Nam Ly) -> Sáp nhập Đại Hán",
+    "purpose": "Đội quân hỏa tiễn và vũ khí cháy tinh nhuệ bậc nhất Nam Ly.",
+    "numbers": "3.000 thiết giáp hỏa binh",
+    "traits": "Thiện xạ tên lửa, thiêu rụi phòng tuyến đối phương.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "ORG_DAI_HAN",
+    "name": "Đại Hán Đế Quốc (Phe Quý Bình An)",
+    "leader": "Hoàng Đế Quý Bình An",
+    "purpose": "Chinh phạt Đại La, tiêu diệt Quốc Giáo thần quyền và thế lực Ca Bỉ, mở rộng cương thổ và thiết lập trật tự thái bình thiên hạ.",
+    "members": [
+      "Gia Cát Lượng",
+      "Quách Gia",
+      "Bàng Thống",
+      "Tư Mã Ý",
+      "Giả Hủ",
+      "Lý Nho",
+      "Trình Dục",
+      "Từ Thứ",
+      "Pháp Chính",
+      "Tả Từ",
+      "Lữ Bố",
+      "Triệu Vân",
+      "Quan Vũ",
+      "Trương Phi",
+      "Hoàng Trung",
+      "Điển Vi",
+      "Mã Siêu",
+      "Cao Thuận",
+      "Khúc Nghĩa",
+      "Văn Ương",
+      "Vương Việt",
+      "Cam Ninh",
+      "Chu Du",
+      "Hoa Đà",
+      "Cơ Vô Thiên",
+      "Đào Nhã",
+      "Mã Quân",
+      "Trầm Hạo"
+    ],
+    "base_of_operations": "Kinh Bắc Thành (Tiền tuyến Đại La), U Châu, Doanh Kinh, Thiên Hồn Thành, Linh Ích Thành, Bách Khổng Thành",
+    "military_units": [
+      "137 vạn - 200 vạn U Châu Quân",
+      "Bạch Mã Nghĩa Tòng (Triệu Vân chỉ huy)",
+      "Hãm Trận Doanh (Cao Thuận chỉ huy)",
+      "Tiên Đăng Tử Sĩ (Khúc Nghĩa & Trương Hợp chỉ huy)",
+      "Tây Lương Thiết Kỵ (Mã Siêu chỉ huy)",
+      "Giang Đông Thủy Quân (Cam Ninh & Chu Du chỉ huy)",
+      "Cẩm Y Vệ (Cơ Vô Thiên chỉ huy)",
+      "Công Binh & Hỏa Lực Đoàn (Thiên Cung Học Viện)"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_CA_BI_AN_TUC",
+    "name": "Ca Bỉ / An Tức Thế Lực (Cự Nhân Tộc)",
+    "leader": "Tôn Chủ A Bố",
+    "purpose": "Bành trướng quyền thống trị khắp 9 khu 231 thành Đại La, tiêu diệt cả Quốc Giáo và Đại Hán để độc tôn thiên hạ.",
+    "members": [
+      "A Bố",
+      "Quy Dạ",
+      "Bạch Ảnh",
+      "Đặc Phổ",
+      "Hắc Ma Quỷ",
+      "Quân Đoàn Cự Nhân"
+    ],
+    "base_of_operations": "Ca Bỉ Hoàng Thành, Thánh Nữ Thành (chiếm đóng)",
+    "military_units": [
+      "Cự Nhân Thiết Giáp Quân",
+      "Kỵ Binh Ca Bỉ",
+      "Quân đoàn khống chế Thi Khôi Vương (giai đoạn phối hợp)"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_THIEN_BAC_THI",
+    "name": "Thiên Bắc Thị Nhất Tộc (Cực Bắc Chi Tộc)",
+    "leader": "Thánh Tử Bắc Minh & Trưởng Lão Bắc Mạch Sơn",
+    "purpose": "Bảo vệ truyền thừa Thánh Hỏa cổ xưa, giữ vững độc lập vùng Cực Bắc hoang mạc, nắm giữ bí mật rèn đúc giáp khí và Thần Khí viễn cổ.",
+    "members": [
+      "Bắc Minh",
+      "Bắc Mạch Sơn",
+      "Chiến binh Thiên Bắc Thị",
+      "Hàng ngàn thợ rèn đúc giáp"
+    ],
+    "base_of_operations": "Thiên Thạch Thành (Thánh Địa), Tây Phường Thành, Vùng Hoang Mạc Bắc U",
+    "military_units": [
+      "Chiến Binh Lam Hỏa Cực Bắc",
+      "Đội Quân Giáp Nặng Rèn Đúc Thần Binh"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_QUY_TOC",
+    "name": "Quỷ Tộc (Thế Lực Áo Đen)",
+    "leader": "Quỷ Vương (Nhân Tiên mang mặt nạ quỷ)",
+    "purpose": "Tranh đoạt Thần Khí Trường Sinh, thực hiện các chiến dịch ám sát tàn khốc, ngư ông đắc lợi giữa Đại Hán và Quốc Giáo.",
+    "members": [
+      "Quỷ Vương",
+      "Thanh Diện Quỷ",
+      "Hắc Ma Quỷ (sau phản bội)",
+      "Sát Thủ Áo Đen"
+    ],
+    "base_of_operations": "Lưu động, từng chiếm Viêm Hỏa Thành, Quang Hoa Thành, sau rút về Bắc U",
+    "military_units": [
+      "Hắc Y Tử Sĩ Ám Sát Đoàn",
+      "Kỵ Binh Quỷ Đạo"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_THANH_NU_GIAO",
+    "name": "Thánh Nữ Giáo",
+    "leader": "Thánh Nữ Hiên Thanh Nguyệt",
+    "purpose": "Thế lực nữ tử tôn giáo tự chủ, chống lại sự đồng hóa của Quốc Giáo, sau bị Đại Hán khống chế.",
+    "members": [
+      "Hiên Thanh Nguyệt",
+      "Nữ Hộ Vệ Giáo Đoàn",
+      "20 vạn Binh Mã Thánh Nữ Giáo"
+    ],
+    "base_of_operations": "Thánh Nữ Thành",
+    "military_units": [
+      "Thánh Nữ Quân Đoàn"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_QUY_GIA_DAI_LA",
+    "name": "Quý Gia Cổ Tộc (Thủ Hộ Gia Tộc Đại La)",
+    "leader": "Quý Vô Sinh, Quý Vô Song",
+    "purpose": "Bảo tồn thế lực ngàn năm của gia tộc họ Quý tại Đại La, toan tính quyền lực ngầm.",
+    "members": [
+      "Quý Vô Sinh",
+      "Quý Vô Song",
+      "Quý Dương",
+      "Quý gia kiếm sĩ"
+    ],
+    "base_of_operations": "Tây Lũng Thành, Tây Môn Quan, Bắc Duyên Thành",
+    "military_units": [
+      "Quý Gia Kiếm Sĩ Đoàn",
+      "Tây Lũng Thủ Quân"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_THIEN_CUNG_HOC_VIEN",
+    "name": "Thiên Cung Học Viện & Hoa Đà Y Quán",
+    "leader": "Mã Quân (Học viện) & Hoa Đà (Y quán) & Đào Nhã (Công bộ)",
+    "purpose": "Nghiên cứu khoa học kỹ thuật, phát minh vũ khí, kiến trúc công trình phòng thủ, cứu chữa thương bệnh binh và bài độc.",
+    "members": [
+      "Mã Quân",
+      "Trầm Căn",
+      "Đào Nhã",
+      "Hoa Đà",
+      "Thợ thủ công và y sư"
+    ],
+    "base_of_operations": "Kinh Bắc Thành",
+    "military_units": [
+      "Đội Ngũ Thợ Máy, Công Binh và Y Sinh Tác Chiến"
+    ],
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "ORG_DAI_HAN_EMPIRE",
+    "name": "Đại Hán Hoàng Triều (Đại Hán Đế Quốc)",
+    "leader": "Quý Bình An (Hán Đế)",
+    "purpose": "Chinh phạt các cường địch, dẹp yên loạn thế, nhất thống toàn vẹn cõi Đại Vũ và Đại La, kiến tạo Đại Hán Thịnh Thế vĩnh hằng.",
+    "members": [
+      "Lữ Bố",
+      "Quan Vũ",
+      "Triệu Vân",
+      "Gia Cát Lượng",
+      "Quách Gia",
+      "Tuân Úc",
+      "Bàng Thống",
+      "Chu Du",
+      "Vương Việt",
+      "Đào Nhã",
+      "Cơ Vô Thiên",
+      "Quý Sơn Hà",
+      "Quý Thiên Tứ"
+    ],
+    "base_of_operations": "Kinh Bắc Thành (giai đoạn đầu tại U Châu Đại La) -> Thánh Đức Đại Sâm Lâm (đổi tên thành Quốc An Thành Mới - Tân Kinh Đô Đại La).",
+    "troop_types": [
+      "Bạch Mã Nghĩa Tòng",
+      "Hãm Trận Doanh",
+      "Tiên Đăng Tử Sĩ",
+      "Thiên Công Thần Tượng Doanh",
+      "U Châu Kỵ Binh",
+      "Thủy Quân Mông Đồng"
+    ],
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ORG_THIEN_A_THI",
+    "name": "Thiên A Thị (Hoàng Tộc & Đế Quốc Thiên A)",
+    "leader": "A Bố (Tôn Chủ)",
+    "purpose": "Duy trì ách thống trị hàng trăm năm trên toàn cõi Đại La, tiêu diệt Đại Hán và các thị tộc phản nghịch.",
+    "members": [
+      "A Bố (Ngũ Thân)",
+      "Kim Khuê",
+      "Hoàng Thành Vệ Thống Lĩnh",
+      "Tu La",
+      "A Nô"
+    ],
+    "base_of_operations": "Hoàng Thành Thiên A Thị (phương Nam Đại La) và các đại ải Nam Hùng Quan.",
+    "troop_types": [
+      "Hoàng Thành Cấm Vệ Binh",
+      "Bất Tử Vệ (Thi Khôi)",
+      "Kim Ô Giáp Binh",
+      "Nam Phương Quân Đoàn (hơn 60 vạn quân)"
+    ],
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ORG_THIEN_BAC_THI",
+    "name": "Thiên Bắc Thị",
+    "leader": "Tử Ngọc Sùng",
+    "purpose": "Khôi phục vinh quang gia tộc phương Bắc, tranh đoạt lãnh thổ và đoạt lấy thần khí Đồ Đằng Chi Thần.",
+    "members": [
+      "Tử Ngọc Sùng",
+      "Ngân Giải (Bán Tiên tướng quân)"
+    ],
+    "base_of_operations": "Thiên Thạch Thành và vùng giáp ranh Bắc U.",
+    "troop_types": [
+      "Thiên Bắc Thiết Kỵ",
+      "Hàn Băng Cung Thủ",
+      "15 vạn quân chủ lực"
+    ],
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ORG_BAC_U_THE_LUC",
+    "name": "Bắc U Chi Địa (Bắc Minh Thế Lực)",
+    "leader": "Bắc Minh",
+    "purpose": "Chiếm cứ vùng cực bắc Đại La, mưu đồ tràn xuống phương nam làm chủ thiên hạ.",
+    "members": [
+      "Bắc Minh",
+      "Bắc Thần"
+    ],
+    "base_of_operations": "Tuyết Sơn Bắc U và các cứ điểm cực bắc.",
+    "troop_types": [
+      "Bắc U Cuồng Đao Binh",
+      "Tuyết Địa Kỵ Binh"
+    ],
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ORG_QUY_GIA_DAI_LA",
+    "name": "Quý Gia Đại La",
+    "leader": "Quý Vô Sinh (Tộc Trưởng)",
+    "purpose": "Bảo tồn huyết mạch Quý tộc tại ngoại hải Đại La, tự vệ trước sự chèn ép của Thiên A Thị và Thiên Bắc Thị.",
+    "members": [
+      "Quý Vô Sinh",
+      "Quý Thần",
+      "Quý Vô Danh"
+    ],
+    "base_of_operations": "Tây Lũng Thành.",
+    "troop_types": [
+      "Quý Thị Hộ Vệ Quân (khoảng 5 vạn quân)"
+    ],
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  }
+]

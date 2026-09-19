@@ -1,0 +1,74 @@
+{
+  "extraction_arc2_ch301_600.json": {
+    "upgrade_milestone_chapter": 360,
+    "system_phase": "Tam Quốc Anh Linh Tranh Bá",
+    "prerequisites_unlocked": [
+      "Hiện lên ở phương Đông (Đông Thương phòng tuyến)",
+      "Tây Chinh thành công (chiếm ưu thế Tây Lăng Quốc Giới Thập Tam Châu)",
+      "Mở rộng lỗ hổng tranh bá thiên hạ"
+    ],
+    "core_rules_changes": [
+      {
+        "change": "Hủy bỏ triệu hoán thiên kim mưu thần và võ tướng (1,000 vàng)",
+        "rationale": "Cấp bậc chiến tranh mở rộng quy mô quốc gia và tranh phong Thánh Giả, loại bỏ cấp bậc thấp không còn phù hợp."
+      },
+      {
+        "change": "Bổ sung cấp bậc triệu hoán mới",
+        "details": {
+          "tier_10k": "10,000 vàng (Vạn kim võ tướng/văn thần: Phan Phượng, Hình Đạo Vinh)",
+          "tier_50k": "50,000 vàng (50 ngàn kim võ tướng/văn thần: Hác Chiêu, Mãn Sủng)",
+          "tier_100k": "100,000 vàng (Tuyệt thế võ tướng/mưu thần: Mã Siêu, Trương Phi, Hứa Chử, Cam Ninh)",
+          "tier_special_peerless": "Đặc thù loại tuyệt thế anh linh (Hoa Đà, Mã Quân, Vương Việt)",
+          "tier_heaven_mandate_strategist": "500,000 vàng (Thiên mệnh mưu thần: Quách Gia - kích hoạt Hoàng Đạo khí vận)",
+          "tier_heaven_mandate_general": "2,000,000 vàng (Thiên mệnh võ tướng: Quan Vũ - kích hoạt sau khi đột phá Quách Gia tại Ch.428)"
+        }
+      },
+      {
+        "change": "Hệ thống Anh Linh Điểm (Hero Soul Points)",
+        "conversion_rate": "1 Anh linh điểm = 1 Vàng (hoán đổi tương đương để mua sắm, triệu hoán, đột phá)",
+        "earning_mechanisms": [
+          "Mỗi tiêu diệt 1 sinh lực địch trực thuộc quân đội ký chủ: +1 Anh linh điểm",
+          "Mỗi công chiếm thành công 1 tòa thành trì: +10,000 Anh linh điểm"
+        ],
+        "emperor_dependency_rule": "Trước khi đăng cơ, chỉ quân lực trực thuộc Quý Bình An (17 vạn quân Bắc Cảnh và 3 châu Liễu - Thanh - Tần) mới được cộng điểm. Quân của Quý Bình Sinh và Quý Bình Xuyên thuộc Vũ Hoàng nên không được tính. Điều kiện để gom toàn bộ chiến sự quốc gia vào Anh Linh Điểm là KÝ CHỦ PHẢI ĐĂNG CƠ LÀM ĐẾ."
+      },
+      {
+        "change": "Đặc quyền Đăng Cơ Hoàng Đế (Ch.386, 394)",
+        "unlocked_abilities": [
+          "Toàn bộ chinh phạt, phòng thủ, sát lục của Đại Hán chuyển hóa thành Anh Linh Điểm",
+          "Hoàng Đạo Long Khí Hộ Thể: Vạn tà bất xâm, phòng ngự tuyệt đối trước ám sát thông thường",
+          "Ngôn Xuất Pháp Tùy: Khí thế thiên tử uy áp quần thần, lời nói mang thiên địa quy tắc gia trì"
+        ]
+      },
+      {
+        "change": "Đặc thù Thiên Phú Cộng Minh (3 Giai đoạn)",
+        "stages": [
+          {
+            "stage": 1,
+            "effect": "Cộng minh cơ bản giữa các tuyệt thế võ tướng và mưu thần ban đầu."
+          },
+          {
+            "stage": 2,
+            "unlocked_chapter": 381,
+            "effect": "Cộng minh tuyệt thế thiên phú giai đoạn 2, gia tăng trí lực tuyệt đối cho Hoa Đà (+2), mở khóa triệu hoán Thiên Mệnh Mưu Thần Quách Gia."
+          },
+          {
+            "stage": 3,
+            "unlocked_chapter": 557,
+            "effect": "Cho phép mở khóa thiên phú thứ hai cho các tuyệt thế võ tướng hoặc mưu thần (Ví dụ: Mã Quân mở thiên phú thứ hai 'Xảo Nghĩ' +3 trí lực)."
+          }
+        ]
+      },
+      {
+        "change": "Cơ chế Đột Phá Thiên Mệnh & Thánh Giả (Ch.428, 502)",
+        "quach_gia_breakthrough": "Tiêu tốn 100,000 Anh linh điểm, mở thiên phú Dự Phán (+1 trí lực), đột phá trí lực +4 đạt 104, Nghịch thiên cải mệnh gia tăng 50 năm thọ mệnh, mở khóa hệ thống Thiên Mệnh Võ Tướng.",
+        "trieu_van_breakthrough": "Đột phá cảnh giới Bán Thánh lên Thánh Giả (Võ lực 132-134), mở khóa thiên phú thứ hai Nhai Giác (+2 võ lực), kích hoạt bảo rương phần thưởng ngẫu nhiên Anh Hồn Lệnh (sau triệu hoán Vương Việt)."
+      },
+      {
+        "change": "Kích hoạt Ràng Buộc Thần Thoại: Ngũ Hổ Tướng (Ch.350, 443, 598)",
+        "progression": "Mã Siêu (3/5 -> +3 điểm thuộc tính tự do), Trương Phi (4/5), Quan Vũ (5/5 hoàn chỉnh)",
+        "completion_buffs": "Toàn bộ 5 vị tướng Ngũ Hổ nhận +3 võ lực vĩnh viễn; Ký chủ nhận +5 điểm thuộc tính và +10 võ lực kèm bảo kiếm Thiên Tử Kiếm; Kích hoạt hiệu ứng tổ hợp độc quyền 'Ngũ Hổ Tuyệt Thế'."
+      }
+    ]
+  }
+}

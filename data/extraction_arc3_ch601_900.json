@@ -1,0 +1,1997 @@
+{
+  "arc_info": {
+    "arc_id": "ARC_03_04_CONQUEST_AND_DA_LAO",
+    "arc_title": "Bình Định Tứ Quốc - Đại Hải Chiến & Viễn Chinh Đại La",
+    "chapter_range": {
+      "start_chapter": 601,
+      "end_chapter": 900,
+      "total_chapters": 300
+    },
+    "summary": "Giai đoạn hoàng kim và biến chuyển vĩ đại nhất của Quý Bình An và Đại Hán triều. Khởi đầu từ chiến dịch tiêu diệt Tây Lăng, bức hàng Tây Lăng Vương Văn Nhân Mục, phá tan mưu đồ của Bùi gia và Đông Thương. Tiếp nối bằng biến cố ngoại giao lịch sử 'Lấy Nước Đổi Nước' thâu tóm hoàn toàn Nam Ly, thu hồi kho báu hơn 3 triệu lượng vàng tại Núi Ngưu Giác, triệu hoán Ngọa Long Gia Cát Lượng, thống nhất hoàn toàn tứ quốc (Đại Vũ, Tây Lăng, Nam Ly, Đông Thương) và dời đô về Thần Châu Trường An. Sau đó là bước ngoặt thời đại khi Bắc Cực Băng Xuyên tan vỡ, Đại La thế lực hải ngoại xua 300 vạn đại quân xâm lăng. Chu Du và Cam Ninh diễn vở kịch khổ nhục kế hỏa thiêu toàn bộ hạm đội địch trên biển; Quý Bình An triệu hoán Thiên Mệnh Võ Tướng Nhân Tiên Lữ Bố miểu sát Bán Tiên Đại La tại Núi Ngưu Giác. Cuối cùng, Đại Hán viễn chinh vượt biển đánh vào đại lục Đại La, đối đầu Quốc Sư Ninh Không Lâu, cự phách A Bố, Thánh Nữ Hiên Thanh Nguyệt và Đức Bất Nhân; triệu hoán Trủng Hổ Tư Mã Ý, dùng dương mưu phân hóa Đại La rồi khải hoàn về nước, mở ra thịnh thế thái bình và tiếp nhận chân tướng huyết thống gia tộc tại chương 900.",
+    "major_themes": [
+      "Thống nhất tứ quốc lập nên Hoàng triều Đại Hán",
+      "Khai mở hệ thống thủy chiến viễn dương và hỏa công liên hoàn thuyền",
+      "Đột phá giới hạn võ đạo phàm trần tiến nhập cảnh giới Nhân Tiên (Lữ Bố)",
+      "Va chạm văn minh lục địa với đại lục hải ngoại Đại La và hệ thống Thần Giáo / Thi Khôi",
+      "Giải mã bí mật thân thế Quý thị và Trường Sinh Đồ"
+    ]
+  },
+  "characters": [
+    {
+      "id": "CHAR_QUY_BINH_AN",
+      "canonical_name": "Quý Bình An",
+      "aliases": [
+        "Hán Đế",
+        "Bệ Hạ",
+        "Phò Mã Gia",
+        "Tiểu Tử",
+        "Chúa Công"
+      ],
+      "faction": "Đại Hán Hoàng Triều (Hoàng Đế khai quốc)",
+      "role": "Nhân vật chính / Khai quốc Hoàng đế / Kẻ thao túng thiên hạ",
+      "martial_realm": "Đế Cảnh -> Thánh Giả -> Bán Tiên (Nắm giữ 1.5 phần Thiên Địa Khí Vận)",
+      "martial_power": 120,
+      "chapter_appearance": 601,
+      "signature_weapons": [
+        "Trấn Quốc Bảo Kiếm",
+        "Thiên Công Cơ Quan Hộp",
+        "Bạch Long Bào"
+      ],
+      "skills": [
+        {
+          "name": "Thiên Mệnh Chi Chủ",
+          "type": "Hoàng Đế Quyền Năng",
+          "effect": "Thu gom Thiên Địa Khí Vận từ việc tiêu diệt các vương giả dị giới, tăng toàn bộ thuộc tính và khả năng triệu hoán anh linh."
+        },
+        {
+          "name": "Kim Tiền Triệu Hoán Vạn Năng",
+          "type": "Hệ Thống Thần Cấp",
+          "effect": "Tiêu hao hoàng kim và anh linh điểm để bồi dưỡng đột phá cảnh giới cho võ tướng, triệu hoán văn thần mưu sĩ đỉnh cao."
+        },
+        {
+          "name": "Đế Vương Chi Tâm",
+          "type": "Tâm Thuật Quyền Mưu",
+          "effect": "Quyết đoán tàn nhẫn, trừ khử Cung Ngạo, phế bỏ võ công Quý Vô Song, dùng dương mưu thao túng toàn bộ đại lục Đại La."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_VO_SONG": "Thân tiểu thúc (ngỡ là phụ thân suốt 20 năm)",
+        "CHAR_QUY_VO_DANH": "Phụ thân ruột (Gia chủ trẻ nhất Quý gia Đại La)",
+        "CHAR_HIEN_NGUYET": "Mẫu thân ruột (Đại La Thánh Nữ)",
+        "CHAR_TRUONG_BAT_MINH": "Thân thúc thúc / Ân nhân cứu mạng dưỡng dục",
+        "CHAR_GIA_CAT_LUONG": "Quân sư tâm phúc thống ngự quân chính",
+        "CHAR_LU_BO": "Thiên mệnh chiến thần hộ giá vô địch"
+      },
+      "lore_bio": "Từ một phò mã bị ruồng bỏ tại Đại Vũ, Quý Bình An từng bước dùng hệ thống Tam Quốc Sát thâu tóm binh quyền, quét sạch Tây Lăng, nuốt trọn Nam Ly, thu phục Đông Thương, lập nên Đại Hán Hoàng Triều hùng mạnh nhất lịch sử. Về sau viễn chinh Đại La, dùng trí lực khuynh đảo hải ngoại rồi hồi triều kiến tạo thiên triều thịnh thế."
+    },
+    {
+      "id": "CHAR_LU_BO",
+      "canonical_name": "Lữ Bố",
+      "aliases": [
+        "Chiến Thần",
+        "Phi Tướng Lữ Bố",
+        "Lữ Phụng Tiên",
+        "Vô Song Chiến Thần"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thiên Mệnh Võ Tướng Chí Tôn / Nhân Tiên đệ nhất nhân",
+      "martial_realm": "Nhân Tiên (Đột phá phá vỡ phàm trần, võ lực đỉnh phong 150+)",
+      "martial_power": 155,
+      "chapter_appearance": 817,
+      "is_summoned_spirit": true,
+      "summon_cost": "500.000 Anh Linh Điểm (kèm hàng triệu điểm bồi dưỡng vũ khí, thiên phú và phá giới)",
+      "signature_weapons": [
+        "Phương Thiên Họa Kích (+15 võ lực)",
+        "Bạch Long Mã (+10 võ lực)"
+      ],
+      "skills": [
+        {
+          "name": "Vô Song",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "+10 Võ lực. Miễn nhiễm toàn bộ hiệu ứng suy yếu, đòn đánh áp đảo tuyệt đối mọi đối thủ dưới cấp Nhân Tiên."
+        },
+        {
+          "name": "Thần Phẫn",
+          "type": "Chiến Ý Tuyệt Kỹ",
+          "effect": "+10 Võ lực. Nộ khí bùng nổ cuốn phăng quân trận, phóng ra kình khí hình rồng xé nát chiến trường."
+        },
+        {
+          "name": "Chiến Thần Hàng Thế",
+          "type": "Xưng Hào Kỹ Năng",
+          "effect": "Khi bước vào Bán Tiên và Nhân Tiên, mỗi đòn đánh đều mang theo thiên địa quy tắc, có khả năng miểu sát Bán Tiên trong 1 hiệp."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chúa công trung thành tuyệt đối",
+        "CHAR_DUC_BAT_NHAN": "Bại tướng dưới tay tại Đại La",
+        "CHAR_CON_SON": "Bán Tiên bị Lữ Bố trảm đầu trong chớp mắt"
+      },
+      "lore_bio": "Thiên Mệnh Võ Tướng vạn thế lưu truyền do Quý Bình An tiêu hao 500k anh linh điểm triệu hoán tại Núi Ngưu Giác. Ngay khi xuất thế, Lữ Bố cưỡi Bạch Long cầm Phương Thiên Họa Kích chém bay đầu Bán Tiên Côn Sơn của Đại La chỉ trong một tích tắc. Tại chiến trường Đại La, Lữ Bố đả bại Đặc Phổ và đánh bại Nhân Tiên Đức Bất Nhân, trấn áp toàn bộ cõi hải ngoại."
+    },
+    {
+      "id": "CHAR_GIA_CAT_LUONG",
+      "canonical_name": "Gia Cát Lượng",
+      "aliases": [
+        "Khổng Minh",
+        "Ngọa Long Tiên Sinh",
+        "Thừa Tướng"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thiên Mệnh Mưu Thần / Quân Chính Toàn Năng Thống Soái",
+      "martial_realm": "Phàm Nhân (Trí lực 104 - Thiên Mệnh Đột Phá)",
+      "martial_power": 45,
+      "chapter_appearance": 725,
+      "is_summoned_spirit": true,
+      "summon_cost": "500.000 Anh Linh Điểm",
+      "signature_weapons": [
+        "Bạch Hạc Vũ Phiến (Quạt lông)",
+        "Bát Trận Đồ Thư"
+      ],
+      "skills": [
+        {
+          "name": "Thống Ngự",
+          "type": "Quân Chính Chủ Động",
+          "effect": "Chấp chưởng quân chính, an định nhân tâm, ổn định hoàn toàn hậu phương Nam Ly và điều phối lương thảo toàn quân."
+        },
+        {
+          "name": "Cẩm Nang Diệu Kế",
+          "type": "Hạn Lượng Thiên Phú (5/5)",
+          "effect": "Mở cẩm nang đúng thời điểm phân phó thì kế hoạch tất thành trăm phần trăm."
+        },
+        {
+          "name": "Diệu Kế",
+          "type": "Thiên Phú Thứ Hai",
+          "effect": "Phá giải toàn bộ cạm bẫy chiến thuật của quân địch, biến hiểm nguy thành bàn đạp chiến thắng."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chúa công",
+        "CHAR_PHAP_CHINH": "Đồng liêu mưu thần",
+        "CHAR_TU_MA_Y": "Đối thủ truyền kỳ cùng phụng sự Đại Hán"
+      },
+      "lore_bio": "Thiên Mệnh Mưu Thần xuất thế tại chương 725 giúp Quý Bình An giải quyết bài toán tiếp quản Nam Ly mà không tốn một giọt máu. Gia Cát Lượng bày mưu kế trong kế tại Ất Tuyên Thành chôn vùi 15 vạn quân An gia, xây dựng thể chế Hán triều vững chắc như bàn thạch."
+    },
+    {
+      "id": "CHAR_TU_MA_Y",
+      "canonical_name": "Tư Mã Ý",
+      "aliases": [
+        "Trủng Hổ",
+        "Tư Mã Trọng Đạt"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thiên Mệnh Mưu Thần Cuối Cùng / Tuyệt Thế Mưu Sĩ Nhẫn Nại",
+      "martial_realm": "Phàm Nhân (Trí lực 104 - Đột Phá Phá Giới)",
+      "martial_power": 52,
+      "chapter_appearance": 885,
+      "is_summoned_spirit": true,
+      "summon_cost": "Thiên Mệnh Mưu Thần triệu hoán trước hạn chót cưỡng chế thăng cấp hệ thống",
+      "signature_weapons": [
+        "Ưng Lang Lệnh Kỳ",
+        "Trầm Mặc Thư Quyển"
+      ],
+      "skills": [
+        {
+          "name": "Hùng Chí",
+          "type": "Thiên Phú Nhẫn Nại",
+          "effect": "+3 Trí lực. Gia tăng khả năng nhìn thấu thời cơ chính trị và giấu kín dã tâm."
+        },
+        {
+          "name": "Phản Hồi",
+          "type": "Phản Đòn Mưu Kế",
+          "effect": "+3 Trí lực. Hóa giải kế sách thâm sâu của đối phương và giáng đòn trả đũa bất ngờ."
+        },
+        {
+          "name": "Ưng Quan Lang Cố",
+          "type": "Nội Tại Uy Nhiếp",
+          "effect": "Tăng 3 điểm trí lực cho toàn bộ mưu thần dưới trướng khi Thiên Mệnh quy vị hoàn chỉnh."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chúa công",
+        "CHAR_GIA_HU": "Mưu thần đồng chí hướng nhìn thấu nhân tâm",
+        "CHAR_GIA_CAT_LUONG": "Đối thủ kỳ phùng"
+      },
+      "lore_bio": "Mảnh ghép Thiên Mệnh cuối cùng được Quý Bình An triệu hoán tại chiến trường Đại La ngay trước khi hệ thống đóng băng thăng cấp. Sự xuất hiện của Tư Mã Ý giúp hoàn thiện bộ máy mưu thần Đại Hán, hỗ trợ xây dựng chiến lược văn hóa và rút quân dương mưu để làm suy yếu Đại La."
+    },
+    {
+      "id": "CHAR_BANG_THONG",
+      "canonical_name": "Bàng Thống",
+      "aliases": [
+        "Phượng Sồ",
+        "Bàng Sĩ Nguyên"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Tuyệt Thế Mưu Thần / Chuyên Gia Hỏa Công & Liên Hoàn Kế",
+      "martial_realm": "Phàm Nhân (Trí lực 98)",
+      "martial_power": 42,
+      "chapter_appearance": 825,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "skills": [
+        {
+          "name": "Liên Hoàn Kế",
+          "type": "Chiến Thuật Khóa Địch",
+          "effect": "Khóa chặt các đơn vị chiến đấu của địch vào chung một chuỗi tổn thương."
+        },
+        {
+          "name": "Phượng Hoàng Niết Bàn",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "Hóa giải hiểm cảnh sinh tử, tránh lặp lại bi kịch Lạc Phượng Pha."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_GIA_CAT_LUONG": "Phượng Sồ sánh cùng Ngọa Long"
+      },
+      "lore_bio": "Mưu thần kỳ tài được triệu hoán bằng 100k vàng tại Trường An. Sở hữu trí tuệ phi phàm, cùng Gia Cát Lượng tạo nên cặp bài trùng mưu lược khuynh đảo chiến trường."
+    },
+    {
+      "id": "CHAR_BANG_DUC",
+      "canonical_name": "Bàng Đức",
+      "aliases": [
+        "Bàng Lệnh Minh",
+        "Bạch Mã Tướng Quân"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Tuyệt Thế Hổ Tướng / Tiên Phong Trảm Trận",
+      "martial_realm": "Bán Thánh Đỉnh Phong (Võ lực 123)",
+      "martial_power": 123,
+      "chapter_appearance": 730,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "signature_weapons": [
+        "Tiệt Đầu Đại Đao (+10)",
+        "Bạch Trần Mã (+8)"
+      ],
+      "skills": [
+        {
+          "name": "Tiến Mạnh",
+          "type": "Đột Phá Chiến Ý",
+          "effect": "+10 Võ lực. Càng thâm nhập sâu vào trùng vây quân địch khí thế và võ lực càng tăng cao (tối đa +5%)."
+        },
+        {
+          "name": "Đoạn Hải Trảm",
+          "type": "Tuyệt Kỹ Đao Pháp",
+          "effect": "Chém đứt chiến tuyến phòng thủ của đối phương trong các trận giáp công."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_QUAN_VU": "Từng bình thủ trăm hiệp kiếp trước"
+      },
+      "lore_bio": "Hổ tướng dũng mãnh được Quý Bình An triệu hoán từ kho vàng Núi Ngưu Giác. Tác chiến hung bạo, thẳng tiến không lùi, là mũi khoan thép trong các chiến dịch bình định."
+    },
+    {
+      "id": "CHAR_THAI_SU_TU",
+      "canonical_name": "Thái Sử Từ",
+      "aliases": [
+        "Thái Sử Tử Nghĩa",
+        "Thần Xạ Hổ Tướng"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Tuyệt Thế Võ Tướng / Song Binh Khí Cung Thương Toàn Năng",
+      "martial_realm": "Bán Thánh (Võ lực 124)",
+      "martial_power": 124,
+      "chapter_appearance": 785,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "signature_weapons": [
+        "Đoạt Mệnh Thương (+8)",
+        "Tử Kim Cung (+8)",
+        "Hoàng Phiếu Mã (+8)"
+      ],
+      "skills": [
+        {
+          "name": "Thiên Nghĩa",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "+10 Võ lực. Giữ vững niềm tin kiên định, kích hoạt trạng thái sử dụng đồng thời thương và cung tiễn."
+        },
+        {
+          "name": "Xạ Tiễn Liên Châu",
+          "type": "Tầm Xa Xuyên Kích",
+          "effect": "Bắn cung tầm xa chuẩn xác sánh ngang Hoàng Trung, yểm trợ đắc lực cho quân đội."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công"
+      },
+      "lore_bio": "Võ tướng Đông Ngô kiệt xuất được triệu hoán trước thềm đại chiến chống quân xâm lăng Đại La. Sở hữu khả năng song đấu cả thương lẫn cung tiễn siêu đẳng."
+    },
+    {
+      "id": "CHAR_NHAN_LUONG",
+      "canonical_name": "Nhan Lương",
+      "aliases": [
+        "Hà Bắc Danh Tướng",
+        "Dũng Quán Tam Quân"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Tuyệt Thế Tiên Phong Mãnh Tướng",
+      "martial_realm": "Bán Thánh (Võ lực 126)",
+      "martial_power": 126,
+      "chapter_appearance": 786,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "signature_weapons": [
+        "Lưu Quang Đao (+10)",
+        "Đại Uyển Mã (+9)"
+      ],
+      "skills": [
+        {
+          "name": "Quyết Đấu",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "+10 Võ lực. Ép tướng địch đơn đả độc đấu, giảm 15% phòng ngự của kẻ địch trong trận đấu tướng."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_QUAN_VU": "Chiến hữu kiếp này"
+      },
+      "lore_bio": "Mãnh tướng hàng đầu Hà Bắc được Quý Bình An triệu hoán để nghênh chiến 300 vạn đại quân Đại La. Sở hữu sức mạnh chém tướng đoạt cờ áp đảo."
+    },
+    {
+      "id": "CHAR_MI_TRUC",
+      "canonical_name": "Mi Trúc",
+      "aliases": [
+        "Mi Tử Trọng",
+        "Tài Thần Đại Hán"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Đặc Thù Nhân Tài / Tổng Quản Quốc Khố & Kinh Tế Thương Nghiệp",
+      "martial_realm": "Phàm Nhân (Thương nghiệp 110)",
+      "martial_power": 35,
+      "chapter_appearance": 653,
+      "is_summoned_spirit": true,
+      "summon_cost": "Kích hoạt sau 10 lần triệu hoán 50k vàng",
+      "skills": [
+        {
+          "name": "Cự Phú Thông Thương",
+          "type": "Nội Chính Kinh Tế",
+          "effect": "Quản lý ngân khố quốc gia, phát hành tiền đồng thống nhất, thâu tóm tuyến đường buôn bán 4 nước."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chúa công tin cẩn giao trọn ngân khố"
+      },
+      "lore_bio": "Đặc thù nhân tài kinh thương được Quý Bình An trao trọng trách chưởng quản toàn bộ Quốc Khố Đại Hán. Mi Trúc phát triển mạng lưới thương nghiệp, tài chính giúp nuôi sống hàng triệu đại quân."
+    },
+    {
+      "id": "CHAR_LANG_THONG",
+      "canonical_name": "Lăng Thống",
+      "aliases": [
+        "Lăng Công Tích",
+        "Giang Đông Thập Nhị Hổ Thần"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thủy Quân Dũng Tướng",
+      "martial_realm": "Hoàng Cảnh Đỉnh Phong (Võ lực 95)",
+      "martial_power": 95,
+      "chapter_appearance": 653,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "relationships": {
+        "CHAR_CAM_NINH": "Đồng liêu thủy quân",
+        "CHAR_CHU_DU": "Thống soái"
+      },
+      "lore_bio": "Tướng lĩnh thủy quân được triệu hoán đến Tần Châu huấn luyện tân binh thủy quân cùng Cam Ninh và Chu Thái."
+    },
+    {
+      "id": "CHAR_VAN_SINH",
+      "canonical_name": "Văn Sính",
+      "aliases": [
+        "Văn Trọng Nghiệp"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thủ Thành Danh Tướng",
+      "martial_realm": "Hoàng Cảnh Đỉnh Phong (Võ lực 94)",
+      "martial_power": 94,
+      "chapter_appearance": 653,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "relationships": {
+        "CHAR_CHU_DU": "Phối hợp tác chiến tại Đông Thương"
+      },
+      "lore_bio": "Đại tướng thiện phòng thủ được Quý Bình An phái sang Đông Thương hỗ trợ Chu Du ngăn chặn các đợt phản công của đối phương."
+    },
+    {
+      "id": "CHAR_MA_LUONG",
+      "canonical_name": "Mã Lương",
+      "aliases": [
+        "Mã Quý Thường",
+        "Bạch Mi Mã Lương"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Văn Thần Nội Chính",
+      "martial_realm": "Phàm Nhân (Trí lực 90)",
+      "martial_power": 38,
+      "chapter_appearance": 653,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "relationships": {
+        "CHAR_HI_CHI_TAI": "Cấp trên tại Thái Úy Phủ"
+      },
+      "lore_bio": "Mưu sĩ nổi tiếng 'Bạch mi tối lương' được điều động về đế đô hỗ trợ Hí Chí Tài xử lý chính vụ Đại Hán."
+    },
+    {
+      "id": "CHAR_DUONG_TU",
+      "canonical_name": "Dương Tu",
+      "aliases": [
+        "Dương Đức Tổ"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Văn Thần Cơ Mật",
+      "martial_realm": "Phàm Nhân (Trí lực 92)",
+      "martial_power": 36,
+      "chapter_appearance": 653,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "relationships": {
+        "CHAR_HI_CHI_TAI": "Đồng liêu xử lý công văn"
+      },
+      "lore_bio": "Tài tử uyên bác thông tuệ được phái về Thái Úy Phủ biên soạn giấy tờ, văn kiện cơ mật triều đình."
+    },
+    {
+      "id": "CHAR_TRAN_QUAN",
+      "canonical_name": "Trần Quần",
+      "aliases": [
+        "Trần Trường Văn"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Lập Pháp Đại Thần / Thiết Lập Hán Luật",
+      "martial_realm": "Phàm Nhân (Trí lực 96)",
+      "martial_power": 40,
+      "chapter_appearance": 723,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "skills": [
+        {
+          "name": "Pháp Lệnh",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "+3 Trí lực. Soạn thảo luật pháp thống nhất tứ quốc (Hán Luật), bách tính thuận theo, quan viên quy phục."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công"
+      },
+      "lore_bio": "Người sáng tạo chế độ cửu phẩm trung chính thời Tam Quốc, được Quý Bình An triệu hoán để soạn thảo bộ luật thống nhất cho toàn cõi Đại Hán."
+    },
+    {
+      "id": "CHAR_TRINH_DUC",
+      "canonical_name": "Trình Dục",
+      "aliases": [
+        "Trình Trọng Đức"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Khốc Liệt Mưu Sĩ / Bậc Thầy Phục Kích",
+      "martial_realm": "Phàm Nhân (Trí lực 96)",
+      "martial_power": 46,
+      "chapter_appearance": 724,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "skills": [
+        {
+          "name": "Bố Trí Mai Phục",
+          "type": "Chiến Thuật Quân Sĩ",
+          "effect": "Bố trí phục binh trong điều kiện môi trường càng khắc nghiệt thì xác suất thành công càng cao."
+        },
+        {
+          "name": "Bí Dục",
+          "type": "Thiên Phú Tuyệt Địa",
+          "effect": "Khi rơi vào tuyệt cảnh kích phát đặc tính 'Sói Diệt', tăng 1-5 điểm trí lực và tăng cường 30% uy lực mưu kế."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_LY_NHO": "Đồng điệu về thủ đoạn tàn độc"
+      },
+      "lore_bio": "Mưu sĩ lạnh lùng quyết liệt phụ trách các chiến dịch phục kích tiêu diệt tàn quân đối kháng tại Nam Ly."
+    },
+    {
+      "id": "CHAR_PHAP_CHINH",
+      "canonical_name": "Pháp Chính",
+      "aliases": [
+        "Pháp Hiếu Trực"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Kỳ Mưu Đại Sư",
+      "martial_realm": "Phàm Nhân (Trí lực 96)",
+      "martial_power": 41,
+      "chapter_appearance": 724,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "skills": [
+        {
+          "name": "Kỳ Mưu",
+          "type": "Chiến Lược Bất Ngờ",
+          "effect": "Bố cục chiến dịch thắng nhờ đánh úp bất ngờ, mưu kế càng quái dị tỷ lệ thắng càng cao."
+        },
+        {
+          "name": "Quăng Nghi Ngờ",
+          "type": "Bản Mệnh Thiên Phú",
+          "effect": "Khi quân sư đồng minh có cùng suy nghĩ với kỳ mưu của Pháp Chính thì kế sách tất thành công 100%."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_GIA_CAT_LUONG": "Cộng sự đắc lực"
+      },
+      "lore_bio": "Mưu thần đệ nhất của Lưu Bị thời Tam Quốc, đóng vai trò then chốt trong kế hoạch vây hãm và chiếm đóng Đông Thương Hoàng Thành."
+    },
+    {
+      "id": "CHAR_TU_THU",
+      "canonical_name": "Từ Thứ",
+      "aliases": [
+        "Từ Nguyên Trực",
+        "Đơn Phúc"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Nho Tướng Quân Sư",
+      "martial_realm": "Phàm Nhân (Trí lực 95)",
+      "martial_power": 65,
+      "chapter_appearance": 825,
+      "is_summoned_spirit": true,
+      "summon_cost": "100.000 Hoàng Kim",
+      "lore_bio": "Văn thần toàn tài giỏi kiếm thuật lẫn mưu lược, tham gia hoạch định chiến lược viễn chinh Đại La."
+    },
+    {
+      "id": "CHAR_TRUONG_HOP",
+      "canonical_name": "Trương Hợp",
+      "aliases": [
+        "Trương Tuấn Nghệ",
+        "Ngũ Tử Lương Tướng"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Địa Hình & Doanh Trận Danh Tướng",
+      "martial_realm": "Hoàng Cảnh Đỉnh Phong (Võ lực 96)",
+      "martial_power": 96,
+      "chapter_appearance": 826,
+      "is_summoned_spirit": true,
+      "summon_cost": "Anh Hồn Lệnh Ngẫu Nhiên",
+      "lore_bio": "Tướng lĩnh lão luyện trong việc bày binh bố trận, lợi dụng địa hình hiểm trở để khắc chế kỵ binh đối phương."
+    },
+    {
+      "id": "CHAR_LO_TUC",
+      "canonical_name": "Lỗ Túc",
+      "aliases": [
+        "Lỗ Tử Kính"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Chiến Lược Gia Ngoại Giao / Đại Trí Nhược Ngu",
+      "martial_realm": "Phàm Nhân (Trí lực 94)",
+      "martial_power": 45,
+      "chapter_appearance": 826,
+      "is_summoned_spirit": true,
+      "summon_cost": "Anh Hồn Lệnh Ngẫu Nhiên",
+      "skills": [
+        {
+          "name": "Liên Hoành Ngoại Giao",
+          "type": "Thuyết Khách Đỉnh Cao",
+          "effect": "Du thuyết các phe phái tại Đại La, trao đổi lợi ích và gài bẫy khiến Thánh Nữ Giáo xung đột với Quốc Giáo."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chủ công",
+        "CHAR_AN_KHINH_NGON": "Đối tượng đàm phán mượn đao giết người"
+      },
+      "lore_bio": "Nhà ngoại giao chiến lược bậc thầy của Giang Đông, là sứ giả trực tiếp mang 'đại lễ nạn dân' sang gặp Thánh Nữ An Khinh Ngôn để giăng bẫy Quốc Giáo."
+    },
+    {
+      "id": "CHAR_LUC_TON",
+      "canonical_name": "Lục Tốn",
+      "aliases": [
+        "Lục Bá Ngôn"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Nho Tướng Thống Soái",
+      "martial_realm": "Hoàng Cảnh Đỉnh Phong (Trí lực 96, Võ lực 85)",
+      "martial_power": 85,
+      "chapter_appearance": 826,
+      "is_summoned_spirit": true,
+      "summon_cost": "Anh Hồn Lệnh Ngẫu Nhiên",
+      "lore_bio": "Nho tướng trẻ tuổi xuất chúng của Đông Ngô, được bổ sung vào bộ chỉ huy viễn chinh Đại La."
+    },
+    {
+      "id": "CHAR_DIEN_PHONG",
+      "canonical_name": "Điền Phong",
+      "aliases": [
+        "Điền Nguyên Hạo"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Cương Trực Mưu Thần",
+      "martial_realm": "Phàm Nhân (Trí lực 93)",
+      "martial_power": 40,
+      "chapter_appearance": 824,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "lore_bio": "Mưu sĩ cương trực thời Tam Quốc, hỗ trợ quản lý trật tự và pháp trị tại hậu phương Đại Hán."
+    },
+    {
+      "id": "CHAR_TRAN_CUNG",
+      "canonical_name": "Trần Cung",
+      "aliases": [
+        "Trần Công Đài"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Quân Sư Cơ Mưu",
+      "martial_realm": "Phàm Nhân (Trí lực 92)",
+      "martial_power": 43,
+      "chapter_appearance": 824,
+      "is_summoned_spirit": true,
+      "summon_cost": "50.000 Hoàng Kim",
+      "lore_bio": "Mưu thần cơ mưu túc trí, hỗ trợ công tác tham mưu hành quân viễn chinh."
+    },
+    {
+      "id": "CHAR_CHU_DU",
+      "canonical_name": "Chu Du",
+      "aliases": [
+        "Chu Công Cẩn",
+        "Mỹ Chu Lang",
+        "Đại Đô Đốc Đại Hán"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thủy Quân Đại Đô Đốc / Đại Nguyên Soái Thủy Lục",
+      "martial_realm": "Bán Thánh (Mưu lược 130)",
+      "martial_power": 98,
+      "chapter_appearance": 601,
+      "skills": [
+        {
+          "name": "Khổ Nhục Kế",
+          "type": "Chiến Lược Lừa Địch",
+          "effect": "Phối hợp cùng Cam Ninh dàn cảnh đánh đòn roi tàn nhẫn trước ba quân để Cam Ninh trá hàng quân Đại La."
+        },
+        {
+          "name": "Hỏa Thiêu Xích Bích Hải Dương",
+          "type": "Thủy Chiến Hỏa Công Cực Hạn",
+          "effect": "Lợi dụng gió biển và sóng thần kết hợp Lưu Hỏa thiêu rụi toàn bộ hạm đội xích sắt 300 vạn quân Đại La."
+        }
+      ],
+      "relationships": {
+        "CHAR_CAM_NINH": "Tướng tiên phong sinh tử gắn bó",
+        "CHAR_QUY_BINH_AN": "Chúa công tin cậy"
+      },
+      "lore_bio": "Thống soái thủy quân kiệt xuất kiến tạo nên chiến tích hỏa thiêu 300 vạn quân Đại La trên biển băng, cứu nguy cho toàn cõi Đại Hán."
+    },
+    {
+      "id": "CHAR_CAM_NINH",
+      "canonical_name": "Cam Ninh",
+      "aliases": [
+        "Cam Hưng Bá",
+        "Cẩm Phàm Tặc"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thủy Quân Mãnh Tướng / Cảm Tử Thống Soái",
+      "martial_realm": "Bán Thánh",
+      "martial_power": 105,
+      "chapter_appearance": 607,
+      "skills": [
+        {
+          "name": "Khổ Nhục Trá Hàng",
+          "type": "Quyết Tử Kế Sách",
+          "effect": "Chấp nhận chịu trăm trượng roi da rách thịt nát xương để chiếm trọn lòng tin của tướng giặc Bái Đăng."
+        },
+        {
+          "name": "Đục Thuyền Phá Hạm",
+          "type": "Thủy Tác Chiến",
+          "effect": "Chỉ huy thủy quái tinh nhuệ lặn sâu đục thủng đáy tàu chiến đối phương."
+        }
+      ],
+      "relationships": {
+        "CHAR_CHU_DU": "Đại đô đốc / Người thi hành khổ nhục kế"
+      },
+      "lore_bio": "Tướng quân cảm tử số một của thủy quân Đại Hán. Nhận đòn roi của Chu Du tại chương 800 để làm mồi nhử dẫn dụ liên hạm Đại La vào tử địa biển lửa."
+    },
+    {
+      "id": "CHAR_QUAN_VU",
+      "canonical_name": "Quan Vũ",
+      "aliases": [
+        "Quan Vân Trường",
+        "Mỹ Nhiệm Công",
+        "Võ Thánh"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thiên Mệnh Võ Tướng / Thống Soái Quân Đoàn",
+      "martial_realm": "Bán Tiên (Đột phá tại chương 827, võ lực 144)",
+      "martial_power": 144,
+      "chapter_appearance": 610,
+      "signature_weapons": [
+        "Thanh Long Yển Nguyệt Đao",
+        "Xích Thố Mã"
+      ],
+      "skills": [
+        {
+          "name": "Yển Nguyệt Kéo Đao Trảm",
+          "type": "Tuyệt Kỹ Trảm Tướng",
+          "effect": "Kéo đao chém đứt vũ khí và chém chết cao thủ Bán Thánh/Bán Tiên trong vài chiêu."
+        }
+      ],
+      "lore_bio": "Tung hoành khắp chiến trường Tây Lăng, trảm sát Khôn Tự tại hoàng cung, kéo đao giao đấu Quý Vô Song, đột phá lên cảnh giới Bán Tiên."
+    },
+    {
+      "id": "CHAR_HOANG_TRUNG",
+      "canonical_name": "Hoàng Trung",
+      "aliases": [
+        "Hoàng Hán Thăng",
+        "Thần Xạ Lão Tướng"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thiên Mệnh Võ Tướng / Thần Tiễn Bách Bộ Xuyên Dương",
+      "martial_realm": "Bán Tiên (Đột phá tại chương 827, võ lực 142)",
+      "martial_power": 142,
+      "chapter_appearance": 651,
+      "signature_weapons": [
+        "Bát Bảo Kỳ Lân Cung",
+        "Bảo Điêu Cung"
+      ],
+      "skills": [
+        {
+          "name": "Tiễn Thôi Tiễn (Mũi Tên Đẩy Mũi Tên)",
+          "type": "Thần Kỹ Cung Thuật",
+          "effect": "Bắn mũi tên thứ hai trúng đuôi mũi tên thứ nhất để nhân đôi cự ly và gia tốc, bắn xuyên họng mục tiêu cách hàng trăm mét ngoài tầm với."
+        }
+      ],
+      "lore_bio": "Bắn chết đại tướng Đông Thương An Quân Thương và bắn xuyên cổ An Vũ Hi (thật), đột phá lên Bán Tiên bằng kinh nghiệm chiến trường tích lũy."
+    },
+    {
+      "id": "CHAR_TRIEU_VAN",
+      "canonical_name": "Triệu Vân",
+      "aliases": [
+        "Triệu Tử Long",
+        "Bạch Mã Tướng Quân"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Hổ Tướng Tiên Phong / Thống Lĩnh Bạch Mã Nghĩa Tòng",
+      "martial_realm": "Bán Tiên (Đột phá chương 685 lên võ lực 142)",
+      "martial_power": 142,
+      "chapter_appearance": 621,
+      "signature_weapons": [
+        "Long Đảm Lượng Ngân Thương (Tiến giai)",
+        "Dạ Chiếu Ngọc Sư Tử"
+      ],
+      "skills": [
+        {
+          "name": "Long Đảm Tiến Giai",
+          "type": "Đột Phá Kỹ Năng",
+          "effect": "Công thủ toàn diện, dẫn dắt Bạch Mã Nghĩa Tòng nghiền nát kỵ binh đối phương."
+        }
+      ],
+      "lore_bio": "Trấn thủ Ất Tuyên Thành một người một ngựa cản vạn quân, cùng Gia Cát Lượng chôn vùi đại quân An gia, đột phá Bán Tiên càn quét chiến trường Đại La."
+    },
+    {
+      "id": "CHAR_VUONG_VIET",
+      "canonical_name": "Vương Việt",
+      "aliases": [
+        "Thiên Hạ Đệ Nhất Kiếm Khách",
+        "Đế Sư Vương Việt"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Thị Vệ Trưởng / Bán Tiên Kiếm Khách Hộ Giá",
+      "martial_realm": "Bán Tiên",
+      "martial_power": 143,
+      "chapter_appearance": 611,
+      "signature_weapons": [
+        "Bảo Kiếm Đế Sư"
+      ],
+      "skills": [
+        {
+          "name": "Thiểm Điện Kiếm Khí",
+          "type": "Kiếm Thuật Tuyệt Sát",
+          "effect": "Di chuyển như chớp giật, một kiếm xuyên tim đối thủ, từng ám sát Cung Ngạo và giao đấu Văn Nhân Hạo."
+        }
+      ],
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Chúa công / Hộ vệ cận thân"
+      },
+      "lore_bio": "Kiếm khách Bán Tiên luôn theo sát bảo vệ Quý Bình An. Trực tiếp thực thi mệnh lệnh ám sát bí mật Cung Ngạo và giải cứu Trương Bất Minh."
+    },
+    {
+      "id": "CHAR_QUY_VO_SONG",
+      "canonical_name": "Quý Vô Song",
+      "aliases": [
+        "Chiến Thần Quý Vô Song",
+        "Hộ Quốc Hầu",
+        "Thân Tiểu Thúc"
+      ],
+      "faction": "Quý Gia / Đông Thương (từng đứng đầu) -> Đại Hán tù nhân",
+      "role": "Bán Tiên Võ Giả -> Phế nhân / Chú ruột Quý Bình An",
+      "martial_realm": "Bán Tiên (Bị phế bỏ võ công tại chương 766, sống nhờ châm cứu)",
+      "martial_power": 145,
+      "chapter_appearance": 640,
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Cháu ruột (gọi là con nuôi/cháu ruột)",
+        "CHAR_QUY_VO_DANH": "Đại ca ruột",
+        "CHAR_HIEN_NGUYET": "Đại tẩu"
+      },
+      "lore_bio": "Thực chất là em trai của Quý Vô Danh. Nhận nuôi Quý Bình An để che giấu thân phận trước sự truy sát của Hiên gia và Quốc Giáo Đại La. Sau khi Đông Thương bại vong, ông đầu hàng và bị Quý Bình An phế võ công. Chương 900 tiết lộ toàn bộ chân tướng huyết thống và bí mật Trường Sinh Đồ."
+    },
+    {
+      "id": "CHAR_TRUONG_BAT_MINH",
+      "canonical_name": "Trương Bất Minh",
+      "aliases": [
+        "Nam Ly Cựu Quốc Chủ",
+        "Thân Thúc Thúc"
+      ],
+      "faction": "Nam Ly Hoàng Thất / Thiên Cơ",
+      "role": "Cựu Hoàng Nam Ly / Bậc Thầy Bố Cục Thao Túng Thiên Cơ",
+      "martial_realm": "Bán Tiên ẩn tàng",
+      "martial_power": 125,
+      "chapter_appearance": 608,
+      "relationships": {
+        "CHAR_QUY_BINH_AN": "Cháu nuôi / Con của huynh đệ đồng môn",
+        "CHAR_HIEN_THANH_NGUYET": "Sư muội đồng môn Đại La"
+      },
+      "lore_bio": "Bị giam dưới lòng hoàng cung Tây Lăng suốt nhiều năm trước khi được Hán quân giải cứu. Biết rõ toàn bộ nguồn gốc của Thiên Cơ Đồ, Trường Sinh Đồ và bí mật huyết thống giữa Quý gia và Đại La."
+    },
+    {
+      "id": "CHAR_QUY_BINH_XUYEN",
+      "canonical_name": "Quý Bình Xuyên",
+      "aliases": [
+        "Ninh Bình Xuyên",
+        "Thiên Cơ Chi Chủ",
+        "Tam Ca"
+      ],
+      "faction": "Thiên Cơ / Quốc Giáo Ninh Thị",
+      "role": "Chủ nhân Thiên Cơ Các / Mưu đồ Thiên Hạ Khí Vận",
+      "martial_realm": "Bán Tiên",
+      "martial_power": 130,
+      "chapter_appearance": 772,
+      "relationships": {
+        "CHAR_NINH_KHONG_LAU": "Huyết mạch đồng tộc Ninh thị",
+        "CHAR_QUY_BINH_AN": "Huynh đệ trên danh nghĩa nhưng khác dòng máu"
+      },
+      "lore_bio": "Mang huyết thống họ Ninh của Quốc Sư Ninh Không Lâu Đại La, giật dây Thiên Cơ thâu tóm khí vận tứ quốc nhưng cuối cùng bị Quý Bình An vạch trần và giam lỏng."
+    },
+    {
+      "id": "CHAR_VAN_NHAN_HAO",
+      "canonical_name": "Văn Nhân Hạo",
+      "aliases": [
+        "Tây Lăng Vương Tiền Nhiệm",
+        "Lân Giáp Quái Nhân"
+      ],
+      "faction": "Tây Lăng Hoàng Thất",
+      "role": "Bán Tiên Biến Dị / Bạo Chúa Tây Lăng",
+      "martial_realm": "Bán Tiên (Đao thương bất nhập nhờ vảy lân giáp)",
+      "martial_power": 140,
+      "chapter_appearance": 663,
+      "skills": [
+        {
+          "name": "Lân Giáp Bất Hoại",
+          "type": "Thể Chất Biến Dị Cổ Trùng",
+          "effect": "Lớp vảy lân giáp cứng như huyền thiết, miễn nhiễm đao thương và kiếm khí thông thường."
+        }
+      ],
+      "lore_bio": "Vị vua điên cuồng của Tây Lăng dung nạp cổ độc biến dị thể xác thành lân giáp đao thương bất nhập. Thất bại trước sự phối hợp giữa Vương Việt và Hán quân."
+    },
+    {
+      "id": "CHAR_VAN_NHAN_MUC",
+      "canonical_name": "Văn Nhân Mục",
+      "aliases": [
+        "Tây Lăng Vương"
+      ],
+      "faction": "Tây Lăng Hoàng Thất",
+      "role": "Hoàng Đế Tây Lăng Quy Thuận",
+      "martial_realm": "Hoàng Cảnh",
+      "martial_power": 88,
+      "chapter_appearance": 614,
+      "lore_bio": "Lấy lại ngai vàng sau 20 năm ẩn nhẫn nhưng nhận rõ xu thế thời đại không thể kháng cự Đại Hán. Tại chương 734 đã dẫn đầu trăm quan mở cửa thành đầu hàng Quý Bình An."
+    },
+    {
+      "id": "CHAR_CUNG_NGOA",
+      "canonical_name": "Cung Ngạo",
+      "aliases": [
+        "Nam Ly Quốc Chủ",
+        "Trấn Tây Vương"
+      ],
+      "faction": "Nam Ly -> Bị Hán Triều thanh trừng",
+      "role": "Kẻ Đổi Nước / Trấn Tây Vương Bị Ám Sát",
+      "martial_realm": "Đế Cảnh Đỉnh Phong",
+      "martial_power": 110,
+      "chapter_appearance": 620,
+      "lore_bio": "Quốc chủ Nam Ly thực hiện thỏa thuận 'Lấy Nước Đổi Nước' giao 55 vạn quân và toàn bộ Nam Ly cho Quý Bình An để đổi lấy đất Tây Lăng. Trên đường đi nhậm chức Trấn Tây Vương thì bị Vương Việt thừa lệnh Quý Bình An ám sát để trừ mầm họa."
+    },
+    {
+      "id": "CHAR_TRUONG_HIEN_CHINH",
+      "canonical_name": "Trương Hiên Chính",
+      "aliases": [
+        "An Vũ Hi Giả",
+        "Kẻ Chiếm Đoạt Khí Vận"
+      ],
+      "faction": "Thiên Cơ / Nam Ly Phản Nghịch",
+      "role": "Kẻ Mang Huyết Hải Thâm Cừu / Cung Cấp 0.5 Khí Vận",
+      "martial_realm": "Thánh Giả Đỉnh Phong",
+      "martial_power": 115,
+      "chapter_appearance": 734,
+      "lore_bio": "Giả mạo An Vũ Hi chỉ huy 15 vạn quân An gia công đánh Nam Ly nhưng bị Gia Cát Lượng hố tại Ất Tuyên Thành. Sau đó bị Quý Bình An và Triệu Vân bao vây tiêu diệt tại Miệng Lớn Cốc (Ch.775), bị cướp 0.5 thiên địa khí vận."
+    },
+    {
+      "id": "CHAR_NINH_KHONG_LAU",
+      "canonical_name": "Ninh Không Lâu",
+      "aliases": [
+        "Quốc Sư Đại La",
+        "Giáo Chủ Quốc Giáo"
+      ],
+      "faction": "Quốc Giáo Đại La",
+      "role": "Lãnh Tụ Tôn Giáo & Quyền Lực Hải Ngoại",
+      "martial_realm": "Nhân Tiên",
+      "martial_power": 150,
+      "chapter_appearance": 841,
+      "skills": [
+        {
+          "name": "Bạch Bào Tế Lễ",
+          "type": "Thần Thuật Đại La",
+          "effect": "Huy động tín đồ tôn giáo cuồng tín, điều khiển trận pháp quy mô lớn bảo hộ biên giới."
+        }
+      ],
+      "lore_bio": "Quốc Sư đứng đầu Quốc Giáo Đại La, đối thủ kình địch của Thánh Nữ Giáo và A Bố. Đụng độ Hán quân tại U Châu và nếm mùi thất bại trước mưu kế của Quý Bình An."
+    },
+    {
+      "id": "CHAR_DAC_PHO",
+      "canonical_name": "Đặc Phổ",
+      "aliases": [
+        "Cự Phủ Bán Tiên",
+        "Thi Khôi Đặc Phổ"
+      ],
+      "faction": "Đại La (A Bố phái bộ)",
+      "role": "Bán Tiên Mãnh Tướng -> Cương Thi Chiến Binh",
+      "martial_realm": "Bán Tiên (Sau khi bị chém đứt tay biến thành Thi Khôi Bất Tử)",
+      "martial_power": 138,
+      "chapter_appearance": 834,
+      "signature_weapons": [
+        "Khai Sơn Cự Phủ"
+      ],
+      "lore_bio": "Tướng lĩnh Bán Tiên hung hãn trấn thủ Hoa Ước Thành bị Lữ Bố đánh bại. Về sau trúng bẫy dụ địch của Quý Bình An bị chém đứt một cánh tay, được A Bố luyện chế thành Thi Khôi bất tử."
+    },
+    {
+      "id": "CHAR_DUC_BAT_NHAN",
+      "canonical_name": "Đức Bất Nhân",
+      "aliases": [
+        "Tôn Thượng Đức Bất Nhân",
+        "Đại La Cự Đầu"
+      ],
+      "faction": "Đại La (Thế lực quý tộc / Thánh Nữ minh hữu)",
+      "role": "Nhân Tiên Cường Giả",
+      "martial_realm": "Nhân Tiên",
+      "martial_power": 151,
+      "chapter_appearance": 875,
+      "lore_bio": "Một trong các cự đầu quyền lực tối cao tại Đại La. Tham gia cuộc tranh giành ngôi vị Thánh Nữ và đại chiến kịch liệt với Lữ Bố nhưng bị Lữ Bố đánh bại tại chương 881."
+    },
+    {
+      "id": "CHAR_BAI_DANG",
+      "canonical_name": "Bái Đăng",
+      "aliases": [
+        "Đại La Thủy Quân Thống Soái"
+      ],
+      "faction": "Đại La Viễn Chinh Hạm Đội",
+      "role": "Tổng Chỉ Huy Hạm Đội 300 Vạn Quân",
+      "martial_realm": "Bán Thánh",
+      "martial_power": 118,
+      "chapter_appearance": 792,
+      "lore_bio": "Thống soái hạm đội hải ngoại của Đại La xua 300 vạn quân xâm lăng Đại Hán. Mắc lừa kế khổ nhục của Cam Ninh và Chu Du, dùng xích sắt nối thuyền dẫn đến toàn bộ hạm đội bị thiêu rụi dưới đáy biển."
+    },
+    {
+      "id": "CHAR_QUINTO",
+      "canonical_name": "Quinto",
+      "aliases": [
+        "Đại La Quân Đoàn Trưởng"
+      ],
+      "faction": "Đại La Lục Quân",
+      "role": "Thống Soái Lục Quân 200 Vạn Người",
+      "martial_realm": "Bán Thánh Đỉnh Phong",
+      "martial_power": 125,
+      "chapter_appearance": 797,
+      "lore_bio": "Chỉ huy cánh quân tinh giáp binh Đại La tấn công Núi Ngưu Giác, chứng kiến Bán Tiên hộ vệ bị Lữ Bố miểu sát và toàn bộ quân đoàn bị nghiền nát."
+    },
+    {
+      "id": "CHAR_HIEN_THANH_NGUYET",
+      "canonical_name": "Hiên Thanh Nguyệt",
+      "aliases": [
+        "Đại La Thánh Nữ",
+        "Thâm Uyên Thánh Nữ"
+      ],
+      "faction": "Thánh Nữ Giáo Đại La",
+      "role": "Lãnh Tụ Thánh Nữ Giáo / Dì Ruột Quý Bình An",
+      "martial_realm": "Bán Tiên Đỉnh Phong",
+      "martial_power": 146,
+      "chapter_appearance": 869,
+      "skills": [
+        {
+          "name": "Mị Hoặc Chi Âm",
+          "type": "Tâm Thần Bí Thuật",
+          "effect": "Âm thanh mê hoặc lòng người, thao túng tâm trí đối thủ từ sâu trong Thâm Uyên."
+        }
+      ],
+      "relationships": {
+        "CHAR_HIEN_NGUYET": "Tỷ muội song sinh (Hiên Nguyệt là mẹ Quý Bình An)",
+        "CHAR_TRUONG_BAT_MINH": "Sư huynh đồng môn"
+      },
+      "lore_bio": "Thánh Nữ tối cao cư ngụ nơi Thâm Uyên tăm tối. Là chị em song sinh với Hiên Nguyệt (mẹ ruột của Quý Bình An). Nắm giữ bí thuật và quyền lực to lớn tại Đại La."
+    },
+    {
+      "id": "CHAR_AN_KHINH_NGON",
+      "canonical_name": "An Khinh Ngôn",
+      "aliases": [
+        "Thánh Nữ Mới An Khinh Ngôn"
+      ],
+      "faction": "Thánh Nữ Giáo",
+      "role": "Thánh Nữ Kế Vị / Lãnh Đạo Nhánh An Thị",
+      "martial_realm": "Thánh Giả",
+      "martial_power": 115,
+      "chapter_appearance": 874,
+      "relationships": {
+        "CHAR_LO_TUC": "Đối tác đàm phán nhận món quà U Châu"
+      },
+      "lore_bio": "Thánh Nữ trẻ tuổi vươn lên nắm quyền khống chế Thánh Nữ Giáo sau cuộc đấu đá nội bộ, tiếp nhận bàn giao thành trì từ Lỗ Túc để tranh đoạt thế lực với Quốc Giáo."
+    },
+    {
+      "id": "CHAR_LIEU_KHINH_NGON",
+      "canonical_name": "Liễu Khinh Ngôn",
+      "aliases": [
+        "Liễu Thánh Nữ"
+      ],
+      "faction": "Thánh Nữ Giáo / Thiên Cơ",
+      "role": "Sứ Giả Thánh Nữ / Cầu Nối Hai Lục Địa",
+      "martial_realm": "Thánh Giả",
+      "martial_power": 112,
+      "chapter_appearance": 648,
+      "lore_bio": "Nhân vật bí ẩn của Thánh Nữ Giáo hoạt động tại Trung Nguyên, từng giao dịch với Quý Bình Sinh và hướng dẫn các thế lực về sự vỡ tan của Băng Xuyên."
+    },
+    {
+      "id": "CHAR_A_BO",
+      "canonical_name": "A Bố",
+      "aliases": [
+        "Cự Phách A Bố",
+        "Đại La Đệ Nhất Cường Nhân"
+      ],
+      "faction": "Thế Lực A Bố (Độc lập / Thao túng bóng tối)",
+      "role": "Thế Lực Ngầm Tối Thượng / Kẻ Luyện Chế Thi Khôi",
+      "martial_realm": "Nhân Tiên Đỉnh Phong",
+      "martial_power": 158,
+      "chapter_appearance": 847,
+      "skills": [
+        {
+          "name": "Thi Khôi Bất Tử Thuật",
+          "type": "Cấm Kỹ Hắc Ám",
+          "effect": "Luyện chế thi thể và thương binh thành chiến binh thây ma bất tử miễn nhiễm mọi đau đớn."
+        }
+      ],
+      "lore_bio": "Nhân vật quyền lực đáng sợ nhất tại Đại La, ẩn nấp trong bóng tối điều khiển các phe phái và nắm giữ công nghệ luyện thi khôi rợn người."
+    },
+    {
+      "id": "CHAR_BURTON",
+      "canonical_name": "Burton",
+      "aliases": [
+        "Bá Đốn",
+        "Công Thành Cuồng Nhân"
+      ],
+      "faction": "Đại La Quân Đội",
+      "role": "Thống Soái Trăm Vạn Đại Quân",
+      "martial_realm": "Bán Thánh Đỉnh Phong",
+      "martial_power": 128,
+      "chapter_appearance": 850,
+      "lore_bio": "Đại tướng công thành khét tiếng chỉ huy trăm vạn binh mã vây ráp Hoa Ước Thành hai lần liên tiếp nhưng đều bị quân Hán bẻ gãy."
+    },
+    {
+      "id": "CHAR_DAO_NHA",
+      "canonical_name": "Đào Nhã",
+      "aliases": [
+        "Đại Sư Kiến Trúc",
+        "Công Trình Khôi Thủ"
+      ],
+      "faction": "Đại Hán Hoàng Triều",
+      "role": "Công Trình Sư Trưởng / Nhà Thiết Kế Kinh Đô Trường An",
+      "martial_realm": "Phàm Nhân (Kiến trúc & Địa đồ 120)",
+      "martial_power": 30,
+      "chapter_appearance": 662,
+      "skills": [
+        {
+          "name": "Khảo Sát Địa Hình & Vẽ Bản Đồ",
+          "type": "Tình Báo Công Trình",
+          "effect": "Lẻn vào cung cấm đối phương vẽ lại chính xác mạng lưới phòng thủ và sơ đồ cung điện."
+        },
+        {
+          "name": "Thiết Kế Đại Thành Trường An",
+          "type": "Quy Hoạch Đô Thị Phòng Thủ",
+          "effect": "Xây dựng Thần Châu Trường An với hệ thống tháp canh liên hoàn khống chế toàn bộ góc nhìn đô thị."
+        }
+      ],
+      "lore_bio": "Nhà thiết kế thiên tài chịu trách nhiệm vẽ bản đồ mật đạo hoàng cung Tây Lăng và kiến thiết toàn bộ kinh đô mới Thần Châu Trường An."
+    },
+    {
+      "id": "CHAR_TRAM_CAN",
+      "canonical_name": "Trầm Căn",
+      "aliases": [
+        "Đại Sư Luyện Kim Trầm Căn"
+      ],
+      "faction": "Thiên Cung Học Viện (Đại Hán)",
+      "role": "Đại Sư Rèn Đúc & Khí Giới",
+      "martial_realm": "Phàm Nhân",
+      "martial_power": 45,
+      "chapter_appearance": 639,
+      "lore_bio": "Viện sĩ Thiên Cung Học Viện chế tạo thành công Cự Khôi Xe Nỏ và Phá Giáp Tiễn uy lực kinh thiên."
+    }
+  ],
+  "organizations_and_forces": [
+    {
+      "id": "ORG_DAI_HAN_HOANG_TRIEU",
+      "name": "Đại Hán Hoàng Triều",
+      "leader": "Hán Đế Quý Bình An",
+      "base_of_operations": "Thần Châu Trường An (Tân Đô)",
+      "purpose": "Thống nhất tứ quốc thiên hạ, kiến tạo vạn thế cơ nghiệp, chống trả và viễn chinh đại lục Đại La.",
+      "sub_units": [
+        "Bạch Mã Nghĩa Tòng (Kỵ binh cơ động Triệu Vân)",
+        "Thần Cơ Doanh (Cung nỏ & Nỏ xe cải tiến)",
+        "Giang Đông Thủy Quân (Hạm đội viễn dương Chu Du & Cam Ninh)",
+        "Cẩm Y Vệ (Cơ quan mật vụ tình báo Cơ Vô Thiên)",
+        "Hồng Nhan (Mạng lưới tình báo Điêu Thuyền)"
+      ],
+      "traits": "Sở hữu dàn tướng lĩnh Tam Quốc siêu việt, công nghệ khí giới dẫn đầu thời đại, nắm giữ 1.5 phần thiên địa khí vận."
+    },
+    {
+      "id": "ORG_THIEN_CO_CAC",
+      "name": "Thiên Cơ Các (Thiên Cơ Tông)",
+      "leader": "Quý Bình Xuyên (Ninh Bình Xuyên) / Trương Bất Minh (tiền nhiệm)",
+      "base_of_operations": "Bí mật xuyên quốc gia (Tây Lăng, Nam Ly, Đông Thương)",
+      "purpose": "Thao túng vương quyền 4 nước từ bóng tối, tích lũy Thiên Cơ Đồ và Trường Sinh bí bảo.",
+      "members": [
+        "Khôn Tự",
+        "Lý Hoành (Đại Chấp Sự Nam Ly)",
+        "Vệ Ti Vũ",
+        "Trương Hiên Chính"
+      ],
+      "traits": "Mạng lưới gián điệp tinh vi, cài cắm người vào tận cung cấm và hàng ngũ tướng soái các quốc gia."
+    },
+    {
+      "id": "ORG_THANH_NU_GIAO",
+      "name": "Thánh Nữ Giáo Đại La",
+      "leader": "Hiên Thanh Nguyệt (Thánh Nữ Tối Cao) / An Khinh Ngôn (Kế vị)",
+      "base_of_operations": "Thâm Uyên / U Châu (Đại La)",
+      "purpose": "Duy trì tín ngưỡng Thánh Nữ tại Đại La, tranh đoạt quyền lực tối cao với Quốc Giáo.",
+      "members": [
+        "Liễu Khinh Ngôn",
+        "Tuyết Nương (Đại Tế Ti)",
+        "Hề Nhan"
+      ],
+      "traits": "Thao túng thuật mị hoặc tâm thần, sở hữu mạng lưới tín đồ nữ quyền lực và liên minh với các cự đầu như Đức Bất Nhân."
+    },
+    {
+      "id": "ORG_QUOC_GIAO_DAI_LA",
+      "name": "Quốc Giáo Đại La",
+      "leader": "Quốc Sư Ninh Không Lâu",
+      "base_of_operations": "Thánh Đô Quốc Giáo (Đại La)",
+      "purpose": "Truyền bá giáo lý tôn giáo chính thống của đế chế Đại La, thâu tóm chính quyền và biên cương.",
+      "sub_units": [
+        "Quân đoàn Bạch Bào Tế Tự (Nhất phẩm đến Cửu phẩm)",
+        "Chiến binh Cuồng Tín"
+      ],
+      "traits": "Kỷ luật nghiêm ngặt, sử dụng thần thuật và trận pháp phòng ngự quy mô lớn."
+    },
+    {
+      "id": "ORG_THE_LUC_A_BO",
+      "name": "Thế Lực Bí Mật A Bố",
+      "leader": "A Bố",
+      "base_of_operations": "Khu vực phong tỏa hẻo lánh Đại La",
+      "purpose": "Nghiên cứu cấm thuật bất tử, tạo ra quân đoàn Thi Khôi thống trị cả đại lục.",
+      "sub_units": [
+        "Đội quân Thi Khôi (Bao gồm Thi Khôi Đặc Phổ)",
+        "Hắc y nhân thể phách biến dị"
+      ],
+      "traits": "Tàn độc, sẵn sàng biến tướng bại trận và thương binh thành công cụ giết người không biết sợ hãi."
+    },
+    {
+      "id": "ORG_VIEN_CHINH_HAM_DOI_DAI_LA",
+      "name": "Đại Quân Viễn Chinh Đại La",
+      "leader": "Bái Đăng (Thủy quân) & Quinto (Lục quân)",
+      "base_of_operations": "Hải lộ Bắc Cực Băng Xuyên",
+      "purpose": "Xâm chiếm toàn bộ lãnh thổ Trung Nguyên Đại Hán sau khi băng tan.",
+      "numbers": "3.000.000 (3 triệu đại quân thủy bộ)",
+      "traits": "Quy mô khổng lồ chưa từng có, sở hữu giáp sắt nặng và hạm đội thuyền lớn vượt biển."
+    },
+    {
+      "id": "ORG_THAN_HOA_QUAN",
+      "name": "Thần Hỏa Quân Nam Ly",
+      "leader": "Lạc Thiên Thanh",
+      "base_of_operations": "Thần Hỏa Thành (Nam Ly) -> Sáp nhập Đại Hán",
+      "purpose": "Đội quân hỏa tiễn và vũ khí cháy tinh nhuệ bậc nhất Nam Ly.",
+      "numbers": "3.000 thiết giáp hỏa binh",
+      "traits": "Thiện xạ tên lửa, thiêu rụi phòng tuyến đối phương."
+    },
+    {
+      "id": "ORG_TAY_LANG_THIET_KY",
+      "name": "Tây Lăng Thiết Kỵ",
+      "leader": "Vân Ninh",
+      "base_of_operations": "Phi Mã Thành / Thảo nguyên Tây Lăng",
+      "purpose": "Lực lượng kỵ binh xung kích hạng nặng uy hiếp khắp biên cương.",
+      "numbers": "140.000 thiết kỵ",
+      "traits": "Xung lực kinh hoàng nhưng bị khắc chế triệt để bởi thừng gạt ngựa, bán mã thung và xe nỏ của quân Hán."
+    }
+  ],
+  "battles": [
+    {
+      "id": "BTL_01_HOANG_CUNG_TAY_LANG",
+      "name": "Đột Kích Địa Lao Hoàng Cung Tây Lăng: Giải Cứu Trương Bất Minh",
+      "chapters": [
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616
+      ],
+      "location": "Hoàng Cung Tây Lăng - Tây Hoàng Thành",
+      "participants": {
+        "player_side": [
+          "Quan Vũ",
+          "Vương Việt",
+          "Cam Ninh",
+          "Ninh Thâm"
+        ],
+        "enemy_side": [
+          "Khôn Tự (Sát thủ Thiên Cơ)",
+          "Thị vệ cấm quân Tây Lăng",
+          "Văn Nhân Mục"
+        ]
+      },
+      "tactics_used": "Quan Vũ làm mũi nhọn đột kích chính diện nghi binh thu hút ám vệ; Vương Việt và Cam Ninh lặn vào đường cống ngầm tiếp cận địa lao giải cứu cựu quốc chủ Nam Ly Trương Bất Minh.",
+      "outcome": "Quan Vũ trảm sát Khôn Tự bằng một đao chấn động; toàn đội giải cứu Trương Bất Minh thoát ly an toàn về lãnh thổ Đại Hán.",
+      "significance": "Cắt đứt một nhánh gọng kìm của Thiên Cơ, mở khóa chuỗi bí mật về Thiên Cơ Đồ và sự hợp tác với Nam Ly."
+    },
+    {
+      "id": "BTL_02_CAM_QUAN_THANH",
+      "name": "Trận Cẩm Quan Thành: Thần Uy Yển Nguyệt",
+      "chapters": [
+        636,
+        637,
+        638
+      ],
+      "location": "Cẩm Quan Thành - Đông Thương",
+      "participants": {
+        "player_side": [
+          "Chu Du",
+          "Quan Vũ",
+          "Trương Phi",
+          "Hoàng Trung"
+        ],
+        "enemy_side": [
+          "An Mạt Tề (An gia Đông Thương)",
+          "Quân phòng thủ Cẩm Quan Thành"
+        ]
+      },
+      "tactics_used": "Chu Du bày binh khiêu chiến chính diện nghi binh; Trương Phi dẫn 5.000 quân bí mật leo tường đột nhập vào thành nửa đêm mở cổng; Quan Vũ phi ngựa chém tướng đoạt cờ.",
+      "outcome": "Đại Hán toàn thắng chiếm trọn Cẩm Quan Thành, tướng giữ thành An Mạt Tề tự vẫn/tử trận.",
+      "significance": "Mở toang cánh cửa tiến vào trung tâm tài chính và quyền lực của hoàng triều Đông Thương."
+    },
+    {
+      "id": "BTL_03_TAY_KINH_THANH_BUI_GIA",
+      "name": "Chiến Dịch Tây Kinh Thành & Diệt Tộc Bùi Gia",
+      "chapters": [
+        646,
+        647,
+        650,
+        651,
+        652
+      ],
+      "location": "Tây Kinh Thành & Bùi An Hà",
+      "participants": {
+        "player_side": [
+          "Triệu Thiên Lỗi",
+          "Hoàng Trung",
+          "Điển Vi",
+          "Hứa Chử"
+        ],
+        "enemy_side": [
+          "An Quân Thương",
+          "Bùi Thế An",
+          "Bùi Khuyết"
+        ]
+      },
+      "tactics_used": "Triệu Thiên Lỗi chỉ huy bộ binh công phá Tây Kinh Thành; Hoàng Trung phục kích bắn 3 mũi tên liên hoàn đoạt mạng An Quân Thương tại trận tiền.",
+      "outcome": "Tây Kinh Thành thất thủ rơi vào tay Hán triều; gia tộc Bùi thị bị Đông Thương thanh trừng tận diệt, dập tắt mầm họa phân tranh ở Bùi An Hà.",
+      "significance": "Thu về 1 vạn anh linh điểm cho Quý Bình An kích hoạt đợt triệu hoán 50k vàng 5 danh thần tướng."
+    },
+    {
+      "id": "BTL_04_PHI_MA_THANH",
+      "name": "Đại Quyết Chiến Phi Mã Thành: Bẻ Gãy Tây Lăng Thiết Kỵ",
+      "chapters": [
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        694,
+        695,
+        696
+      ],
+      "location": "Phi Mã Thành (Cửa Bắc và Cửa Tây)",
+      "participants": {
+        "player_side": [
+          "Quý Bình An",
+          "Triệu Vân",
+          "Trương Liêu",
+          "Lý Nho",
+          "Điển Vi",
+          "Hứa Chử",
+          "Khúc Nghĩa",
+          "Mã Quân"
+        ],
+        "enemy_side": [
+          "Văn Nhân Hạo",
+          "Vân Ninh",
+          "Tuần Diệp",
+          "140.000 Tây Lăng Thiết Kỵ"
+        ]
+      },
+      "tactics_used": "Mã Quân triển khai xe nỏ cự khôi bắn phá giáp tiễn; bố trí cọc ngầm bán mã thung sắt và thừng gạt ngựa hai người một tổ để làm què chân kỵ binh; Lý Nho chiếm cửa tây; Triệu Vân cùng 1 vạn Bạch Mã Nghĩa Tòng chém giết hỏa thiêu toàn bộ chiến cụ của Tây Lăng.",
+      "outcome": "Đại phá hoàn toàn 14 vạn thiết kỵ Tây Lăng, tướng soái Vân Ninh đại bại, Phi Mã Thành hoàn toàn thất thủ về tay Hán triều.",
+      "significance": "Tiêu diệt lực lượng quân sự nòng cốt mạnh nhất của Tây Lăng, đặt dấu chấm hết cho năng lực phòng ngự của vương triều này."
+    },
+    {
+      "id": "BTL_05_TAY_HOANG_THANH_DAU_HANG",
+      "name": "Chiến Dịch Công Chiếm Tây Hoàng Thành: Thần Tiễn Diệt Vũ Hi",
+      "chapters": [
+        704,
+        705,
+        706,
+        708,
+        709,
+        710,
+        711,
+        733,
+        734
+      ],
+      "location": "Tây Hoàng Thành - Quốc Đô Tây Lăng",
+      "participants": {
+        "player_side": [
+          "Quý Bình An",
+          "Vương Việt",
+          "Hoàng Trung",
+          "Chu Du",
+          "Trương Phi"
+        ],
+        "enemy_side": [
+          "Văn Nhân Hạo (Bán Tiên)",
+          "Văn Nhân Mục",
+          "An Vũ Hi (Thật)"
+        ]
+      },
+      "tactics_used": "Vây hãm bốn mặt; Hoàng Trung dùng tuyệt kỹ 'Tiễn thôi tiễn' bắn xuyên cổ An Vũ Hi ngoài cự ly phòng thủ; Vương Việt giao đấu Bán Tiên lân giáp Văn Nhân Hạo.",
+      "outcome": "An Vũ Hi tử trận, Văn Nhân Hạo trọng thương đào tẩu, Tây Lăng Vương Văn Nhân Mục dẫn bách quan dâng biểu đầu hàng.",
+      "significance": "Tây Lăng chính thức sáp nhập vào bản đồ Đại Hán; Quý Bình An nắm quyền sinh sát toàn bộ phương Tây."
+    },
+    {
+      "id": "BTL_06_AT_TUYEN_THANH",
+      "name": "Trận Phục Kích Ất Tuyên Thành: Kế Trong Kế Gia Cát Lượng",
+      "chapters": [
+        734,
+        735,
+        736,
+        737
+      ],
+      "location": "Ất Tuyên Thành - Cửa ngõ Đông Nam Ly",
+      "participants": {
+        "player_side": [
+          "Gia Cát Lượng",
+          "Triệu Vân",
+          "Triệu Chân",
+          "Bạch Mã Nghĩa Tòng"
+        ],
+        "enemy_side": [
+          "Trương Hiên Chính (An Vũ Hi giả)",
+          "An Hàn Khôi",
+          "150.000 quân An gia"
+        ]
+      },
+      "tactics_used": "Gia Cát Lượng dùng Không Thành Kế giả vờ để Triệu Vân một ngựa canh cổng; bí mật đào rỗng nền móng cả nửa tòa thành; khi quân địch ùa vào thành thì kích hoạt sập hầm hố chông và hỏa thiêu liên hoàn.",
+      "outcome": "Hơn phân nửa quân An gia bị chôn sống và tiêu diệt; An Hàn Khôi và Trương Hiên Chính tháo chạy thảm hại.",
+      "significance": "Bảo vệ nguyên vẹn lãnh thổ Nam Ly sau khi tiếp quản, thể hiện trí tuệ thần cơ diệu toán của Ngọa Long."
+    },
+    {
+      "id": "BTL_07_MIENG_LON_COC",
+      "name": "Chặn Giết Miệng Lớn Cốc: Trảm Thân Đoạt Khí Vận",
+      "chapters": [
+        774,
+        775
+      ],
+      "location": "Miệng Lớn Cốc (Đại Khẩu Cốc) - Vũ Châu Lương Châu",
+      "participants": {
+        "player_side": [
+          "Quý Bình An",
+          "Triệu Vân",
+          "Vương Việt"
+        ],
+        "enemy_side": [
+          "Trương Hiên Chính (kẻ giả An Vũ Hi)"
+        ]
+      },
+      "tactics_used": "Phong tỏa hẻm núi hiểm trở độc đạo, Triệu Vân và Vương Việt đồng loạt xuất kích chém giết tận gốc.",
+      "outcome": "Trương Hiên Chính bị giết tại chỗ; hệ thống thưởng Quý Bình An 0.5 phần Thiên Địa Khí Vận.",
+      "significance": "Thu hồi thêm một nửa khí vận thiên địa, củng cố uy quyền hoàng quyền tuyệt đối của Hán Đế."
+    },
+    {
+      "id": "BTL_08_HAI_CHIEN_XICH_BICH_DAI_LA",
+      "name": "Đại Hải Chiến Bắc Cực Băng Xuyên: Khổ Nhục Kế & Biển Lửa Hỏa Thiêu Hạm Đội Đại La",
+      "chapters": [
+        790,
+        792,
+        794,
+        799,
+        800,
+        804,
+        806,
+        807,
+        808,
+        809,
+        810
+      ],
+      "location": "Vùng biển Băng Xuyên - Vũ Châu Hàn Tinh Thành",
+      "participants": {
+        "player_side": [
+          "Chu Du",
+          "Cam Ninh",
+          "Trương Phi",
+          "Chu Thái",
+          "Giang Đông Thủy Quân"
+        ],
+        "enemy_side": [
+          "Bái Đăng (Thống soái Đại La)",
+          "300 vạn thủy lục đại quân Đại La"
+        ]
+      },
+      "tactics_used": "Chu Du đánh Cam Ninh nhừ tử trước mặt ba quân (Khổ Nhục Kế chương 800); Cam Ninh mang tử sĩ vờ trá hàng, khuyên Bái Đăng dùng xích sắt liên kết chiến thuyền chống say sóng; Chu Du chớp thời cơ thuận gió kết hợp sóng thần phóng hỏa thiêu rụi hạm đội xích sắt.",
+      "outcome": "Toàn bộ hạm đội hải quân Đại La bị biến thành biển lửa khổng lồ chìm xuống đáy biển; Bái Đăng thảm bại tháo chạy.",
+      "significance": "Bảo vệ lục địa Trung Nguyên thoát khỏi thảm họa diệt vong trước cuộc xâm lược 300 vạn quân hải ngoại."
+    },
+    {
+      "id": "BTL_09_NGUU_GIAC_SON_MIEU_SAT",
+      "name": "Đại Chiến Núi Ngưu Giác: Lữ Bố Miểu Sát Bán Tiên",
+      "chapters": [
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821
+      ],
+      "location": "Dãy Núi Ngưu Giác (Ngưu Giác Sơn)",
+      "participants": {
+        "player_side": [
+          "Quý Bình An",
+          "Lữ Bố (Nhân Tiên)",
+          "Triệu Vân",
+          "Vương Việt",
+          "Độc Nhãn Đao Khách"
+        ],
+        "enemy_side": [
+          "Quinto",
+          "Tarik",
+          "Côn Sơn (Bán Tiên)",
+          "An Thành Tiền (Bán Tiên)",
+          "200 vạn quân Đại La"
+        ]
+      },
+      "tactics_used": "Xe nỏ và kỵ binh Bạch Mã cản bước quân địch; Quý Bình An tiêu hao 500k anh linh điểm triệu hoán Lữ Bố bước vào Nhân Tiên cảnh; Lữ Bố cưỡi Bạch Long cầm kích chém bay đầu Côn Sơn trong một chớp mắt.",
+      "outcome": "Bán Tiên Côn Sơn bị miểu sát trong 1 hiệp; quân đoàn 200 vạn của Quinto tan rã kinh hoàng, Quinto bị bắt sống.",
+      "significance": "Cột mốc xác lập vị thế vô địch của Nhân Tiên Lữ Bố, bẻ gãy hoàn toàn lực lượng trên cạn của cuộc xâm lăng Đại La."
+    },
+    {
+      "id": "BTL_10_VIEN_CHINH_HOA_UOC_THANH",
+      "name": "Viễn Chinh Đại La: Công Phá Hoa Ước Thành & Bại Đặc Phổ",
+      "chapters": [
+        833,
+        834,
+        835,
+        836,
+        837
+      ],
+      "location": "Hoa Ước Thành - Biên Giới Đại Lục Đại La",
+      "participants": {
+        "player_side": [
+          "Lữ Bố",
+          "Triệu Vân",
+          "Quý Bình An",
+          "Bạch Mã Nghĩa Tòng"
+        ],
+        "enemy_side": [
+          "Đặc Phổ (Bán Tiên cự phủ)",
+          "Quân đồn trú Hoa Ước Thành"
+        ]
+      },
+      "tactics_used": "Lữ Bố một kích áp đảo hoàn toàn sức mạnh của Đặc Phổ; Hán quân ào ạt công phá cổng thành, kích hoạt Chế Độ Xâm Lược của hệ thống (+2 anh linh điểm mỗi tên địch bị hạ).",
+      "outcome": "Chiếm trọn Hoa Ước Thành, Đặc Phổ ôm hận tháo lui về thỉnh cầu A Bố viện binh.",
+      "significance": "Đại Hán chính thức cắm cờ tại tân đại lục hải ngoại Đại La, mở màn chiến dịch liên hạ 4 thành trì."
+    },
+    {
+      "id": "BTL_11_THU_THANH_BURTON_CHAT_TAY_DAC_PHO",
+      "name": "Trận Thủ Thành Hoa Ước: Bẻ Gãy Burton & Vây Chặt Tay Đặc Phổ",
+      "chapters": [
+        850,
+        852,
+        854,
+        856,
+        857,
+        858
+      ],
+      "location": "Hoa Ước Thành",
+      "participants": {
+        "player_side": [
+          "Quý Bình An (Dụ mồi)",
+          "Lữ Bố",
+          "Triệu Vân",
+          "Hoàng Trung"
+        ],
+        "enemy_side": [
+          "Burton (Bá Đốn)",
+          "Đặc Phổ",
+          "Trăm vạn quân Đại La"
+        ]
+      },
+      "tactics_used": "Quý Bình An đích thân cưỡi ngựa ra trận tiền làm mồi nhử lòng tham muốn bắt sống hoàng đế của Đặc Phổ; Lữ Bố và chư tướng lập tức tạo vòng vây bọc hậu, chặt đứt lìa cánh tay cầm búa của Đặc Phổ.",
+      "outcome": "Đặc Phổ cụt tay tàn phế chạy trốn (sau bị A Bố biến thành Thi Khôi); quân Burton bị đẩy lui hoàn toàn.",
+      "significance": "Bảo vệ vững chắc căn cứ bàn đạp tại Đại La, đè bẹp nhuệ khí quân đoàn bản địa."
+    },
+    {
+      "id": "BTL_12_LU_BO_DAI_CHIEN_DUC_BAT_NHAN",
+      "name": "Quyết Đấu Đỉnh Cao: Lữ Bố Đả Bại Nhân Tiên Đức Bất Nhân",
+      "chapters": [
+        878,
+        879,
+        880,
+        881
+      ],
+      "location": "Chiến Trường Kinh Bắc Thành Ngoại Vi - Đại La",
+      "participants": {
+        "player_side": [
+          "Lữ Bố"
+        ],
+        "enemy_side": [
+          "Đức Bất Nhân (Nhân Tiên Tôn Thượng)"
+        ]
+      },
+      "tactics_used": "Quyết đấu đỉnh phong giữa hai đại Nhân Tiên thế giới; Lữ Bố kích hoạt Thần Phẫn và Phương Thiên Họa Kích nghiền nát kình khí của Đức Bất Nhân.",
+      "outcome": "Đức Bất Nhân trọng thương bại trận rút lui, uy danh Lữ Bố chấn động toàn cõi Đại La.",
+      "significance": "Thắng lợi quyết định giúp Đại Hán can thiệp trực tiếp vào cuộc phân tranh ngôi vị Thánh Nữ Giáo."
+    }
+  ],
+  "key_plot_events": [
+    {
+      "event_id": "EVT_01_GIAI_CUU_TRUONG_BAT_MINH",
+      "title": "Giải cứu Trương Bất Minh tại hoàng cung Tây Lăng",
+      "chapter": 613,
+      "participants": [
+        "Quý Bình An",
+        "Quan Vũ",
+        "Trương Bất Minh",
+        "Văn Nhân Mục"
+      ],
+      "description": "Quan Vũ và Vương Việt đột kích giải cứu cựu quốc chủ Nam Ly bị giam cầm nhiều năm dưới lòng đất Tây Hoàng Thành.",
+      "consequences": "Trương Bất Minh tiết lộ các bí mật chấn động về Thiên Cơ Đồ và mở đường cho liên minh Nam Ly sáp nhập vào Đại Hán."
+    },
+    {
+      "event_id": "EVT_02_NGHIEN_CUU_THAN_KHI_XE_NO_LUU_HOA",
+      "title": "Hoàn thiện Cự Khôi Xe Nỏ và Lưu Hỏa cải tiến",
+      "chapter": 639,
+      "participants": [
+        "Quý Bình An",
+        "Mã Quân",
+        "Trầm Căn",
+        "Cơ Vô Thiên"
+      ],
+      "description": "Thiên Cung Học Viện chế tạo thành công Xe Nỏ liên phát bắn Phá Giáp Tiễn và viện nghiên cứu chế tạo thành công chất nổ Lưu Hỏa uy lực cao.",
+      "consequences": "Quân Hán sở hữu hỏa lực áp đảo tuyệt đối để phá tan thiết kỵ và tường thành kiên cố của đối phương."
+    },
+    {
+      "event_id": "EVT_03_LAY_NUOC_DOI_NUOC",
+      "title": "Sự kiện lịch sử 'Lấy Nước Đổi Nước'",
+      "chapter": 700,
+      "participants": [
+        "Quý Bình An",
+        "Cung Ngạo",
+        "Cung Thư Sinh",
+        "Lý Hoành"
+      ],
+      "description": "Cung Ngạo vạch trần môn sinh Lý Hoành là nội gián Thiên Cơ khiến Cung Sinh thổ huyết sụp đổ; sau đó đề nghị giao trọn vương triều Nam Ly và 55 vạn quân cho Quý Bình An để đổi lấy đất Tây Lăng độc lập.",
+      "consequences": "Đại Hán tiếp quản Nam Ly trong hòa bình, không tốn binh lực; sau đó Quý Bình An sai Vương Việt trừ khử Cung Ngạo để tránh hậu họa."
+    },
+    {
+      "event_id": "EVT_04_TRIEU_HOAN_GIA_CAT_LUONG",
+      "title": "Thiên Mệnh quy vị: Triệu hoán Ngọa Long Gia Cát Lượng",
+      "chapter": 725,
+      "participants": [
+        "Quý Bình An",
+        "Gia Cát Lượng"
+      ],
+      "description": "Quý Bình An tiêu hao 500k anh linh điểm triệu hoán Thiên Mệnh Mưu Thần Gia Cát Lượng với kỹ năng Thống Ngự và Cẩm Nang diệu kế.",
+      "consequences": "Toàn bộ quân chính hậu phương Nam Ly được an định tuyệt đối, giải phóng toàn bộ cánh quân tinh nhuệ đi bình định thiên hạ."
+    },
+    {
+      "event_id": "EVT_05_TANG_BAO_NGUU_GIAC_SON",
+      "title": "Khai quật kho báu hơn 3 triệu lượng vàng tại Núi Ngưu Giác",
+      "chapter": 728,
+      "participants": [
+        "Quý Bình An",
+        "Giả Hủ",
+        "Vương Việt"
+      ],
+      "description": "Giả Hủ phát hiện kho vàng bí mật khổng lồ hơn 3.000.000 lượng kim được chôn giấu trong lòng Núi Ngưu Giác.",
+      "consequences": "Đem lại nguồn vốn vô tận cho Quý Bình An triệu hoán liên tiếp hàng loạt danh thần hổ tướng (Bàng Đức, Thái Sử Từ, Nhan Lương, văn thần 7 người)."
+    },
+    {
+      "event_id": "EVT_06_THONG_NHAT_TU_QUOC_DOI_DO_TRUONG_AN",
+      "title": "Đại Hán nhất thống bốn nước và dời đô Thần Châu Trường An",
+      "chapter": 764,
+      "participants": [
+        "Quý Bình An",
+        "Toàn thể bá quan văn võ",
+        "Đào Nhã"
+      ],
+      "description": "Quý Vô Song đầu hàng, Đông Thương và Tây Lăng diệt vong, Nam Ly quy phục; Đại Hán hoàn thành đại nghiệp nhất thống thiên hạ và dời đô về Trường An do Đào Nhã thiết kế.",
+      "consequences": "Kết thúc thời kỳ loạn thế phân tranh hàng trăm năm của 4 nước Trung Nguyên, mở ra triều đại hoàng kim Đại Hán."
+    },
+    {
+      "event_id": "EVT_07_PHE_BO_QUY_VO_SONG",
+      "title": "Phế bỏ võ công Quý Vô Song",
+      "chapter": 766,
+      "participants": [
+        "Quý Bình An",
+        "Quý Vô Song",
+        "Hoa Đà"
+      ],
+      "description": "Quý Bình An quyết đoán phế bỏ toàn bộ tu vi Bán Tiên của Quý Vô Song nhằm triệt tiêu nguy cơ uy hiếp hoàng quyền, giao cho Hoa Đà châm cứu duy trì mạng sống.",
+      "consequences": "Củng cố quyền lực tối thượng tuyệt đối trong tay Quý Bình An, chuẩn bị cho những tiết lộ chấn động về sau."
+    },
+    {
+      "event_id": "EVT_08_BANG_XUYEN_VO_NAT",
+      "title": "Bắc Cực Băng Xuyên tan vỡ - Cánh cổng nối liền Đại La",
+      "chapter": 767,
+      "participants": [
+        "Liễu Khinh Ngôn",
+        "Quý Bình Xuyên",
+        "Hán triều biên thám"
+      ],
+      "description": "Dòng sông băng vĩnh cửu ngàn năm tại cực bắc vỡ nát, thông đạo đường biển nối liền thế giới Đại La hải ngoại với lục địa Đại Hán được khai thông.",
+      "consequences": "Chuyển giao cục diện tranh đấu từ nội chiến Trung Nguyên sang chiến tranh sinh tồn với đế chế hải ngoại Đại La."
+    },
+    {
+      "event_id": "EVT_09_CHU_DU_DANH_CAM_NINH",
+      "title": "Kế sách kinh điển: 'Chu Du đánh Cam Ninh'",
+      "chapter": 800,
+      "participants": [
+        "Chu Du",
+        "Cam Ninh"
+      ],
+      "description": "Chu Du và Cam Ninh bí mật thống nhất thực hiện khổ nhục kế, Cam Ninh chấp nhận đòn roi rách da nát thịt trước mắt toàn quân để trá hàng Bái Đăng.",
+      "consequences": "Bái Đăng tin tưởng tuyệt đối, làm theo lời khuyên của Cam Ninh đem xích sắt khóa chặt toàn bộ thuyền chiến, dẫn tới đại họa biển lửa thiêu rụi 300 vạn quân."
+    },
+    {
+      "event_id": "EVT_10_NHAN_TIEN_LU_BO_XUAT_THE",
+      "title": "Nhân Tiên Lữ Bố xuất thế và Thiên Mệnh Võ Tướng quy vị",
+      "chapter": 817,
+      "participants": [
+        "Quý Bình An",
+        "Lữ Bố"
+      ],
+      "description": "Quý Bình An chi 500k anh linh điểm triệu hoán Lữ Bố, giải tỏa trang bị và phá giới đạt cảnh giới Nhân Tiên; kích hoạt hiệu ứng Thiên Mệnh quy vị tăng 3 võ lực cho toàn bộ tướng Thánh Giả.",
+      "consequences": "Đại Hán sở hữu cường giả Nhân Tiên đệ nhất nhân đủ sức quét ngang mọi Bán Tiên và cự đầu của Đại La."
+    },
+    {
+      "event_id": "EVT_11_TRIEU_HOAN_TU_MA_Y_THANG_CAP_HE_THONG",
+      "title": "Trủng Hổ quy vị: Triệu hoán Tư Mã Ý & Hệ thống đếm ngược đóng băng",
+      "chapter": 885,
+      "participants": [
+        "Quý Bình An",
+        "Tư Mã Ý"
+      ],
+      "description": "Ngay trước khi hết hạn chót 180 ngày, Quý Bình An triệu hoán Thiên Mệnh Mưu Thần cuối cùng Tư Mã Ý, toàn bộ mưu thần trí lực +3, hệ thống tiến vào chu kỳ cưỡng chế thăng cấp.",
+      "consequences": "Hoàn thành trọn vẹn bộ khung anh linh Tam Quốc đỉnh phong nhất."
+    },
+    {
+      "event_id": "EVT_12_DUONG_MUU_RUT_QUAN",
+      "title": "Dương Mưu Rút Quân: Rút củi dưới đáy nồi để lại thảm họa Đại La",
+      "chapter": 887,
+      "participants": [
+        "Quý Bình An",
+        "Giả Hủ",
+        "Quách Gia",
+        "Lỗ Túc",
+        "An Khinh Ngôn",
+        "Ninh Không Lâu"
+      ],
+      "description": "Quý Bình An không sa lầy chiếm đất mà quyết định rút toàn bộ quân Hán về nước; bỏ lại 37 thành U Châu hoang tàn cùng hàng vạn nạn dân đói khổ trao cho Quốc Giáo và Thánh Nữ Giáo.",
+      "consequences": "Đẩy Quốc Giáo và Thánh Nữ Giáo vào cuộc nội chiến tranh đoạt lương thảo và quyền lực tàn sát lẫn nhau, Đại Hán ung dung ngồi ngoài trục lợi."
+    },
+    {
+      "event_id": "EVT_13_CHAN_TUONG_CHUONG_900",
+      "title": "Bí mật thân thế Quý thị và truyền thừa Trường Sinh Đồ",
+      "chapter": 900,
+      "participants": [
+        "Quý Bình An",
+        "Quý Vô Song",
+        "Trương Bất Minh",
+        "Quý Bình Xuyên"
+      ],
+      "description": "Quý Vô Song thừa nhận mình chỉ là 'thân tiểu thúc', cha đẻ thực sự của Quý Bình An là Quý Vô Danh (gia chủ trẻ nhất Quý gia Đại La), mẹ là Thánh Nữ Hiên Nguyệt; trao truyền toàn bộ bí mật về Trường Sinh Đồ và ân oán giữa Tứ Đại Thủ Hộ Gia Tộc Đại La.",
+      "consequences": "Khai mở bức màn bí mật cho chiến dịch viễn chinh tối thượng và hành trình trường sinh trong tương lai."
+    }
+  ],
+  "locations": [
+    {
+      "name": "Thần Châu Trường An",
+      "category": "Kinh Đô Hoàng Triều",
+      "description": "Kinh đô mới của Đại Hán do công trình sư Đào Nhã quy hoạch và thiết kế. Được xây dựng với hệ thống tháp canh cao ngút tầm mắt kết nối liên hoàn, khống chế toàn bộ hoạt động bên trong và bên ngoài thành. Là trung tâm chính trị, văn hóa, tài chính lớn nhất thiên hạ.",
+      "strategic_importance": "Pháo đài bất khả xâm phạm, nơi đặt triều đình trung ương của Hán Đế Quý Bình An và đóng quân của 3.000 Thần Cơ Doanh tinh nhuệ."
+    },
+    {
+      "name": "Tây Hoàng Thành",
+      "category": "Cố Đô Tây Lăng",
+      "description": "Kinh đô kiên cố của Tây Lăng, bên dưới hoàng cung có hệ thống địa lao ngầm kiên cố từng giam giữ cựu quốc chủ Nam Ly Trương Bất Minh suốt nhiều năm.",
+      "strategic_importance": "Trụ sở đầu não của Tây Lăng, sau khi thất thủ đã mở đường cho Đại Hán thâu tóm toàn bộ vùng đất phía tây."
+    },
+    {
+      "name": "Phi Mã Thành",
+      "category": "Yết Hầu Quân Sự Tây Lăng",
+      "description": "Cửa ngõ quân sự quan trọng bậc nhất của Tây Lăng, nơi tập kết của 14 vạn Tây Lăng Thiết Kỵ.",
+      "strategic_importance": "Địa điểm diễn ra trận đại quyết chiến giữa công nghệ khí giới Hán triều (xe nỏ, thừng gạt ngựa, bán mã thung) và thiết kỵ thảo nguyên."
+    },
+    {
+      "name": "Núi Ngưu Giác (Ngưu Giác Sơn)",
+      "category": "Hiểm Địa & Kho Báu Chiến Lược",
+      "description": "Dãy núi trùng điệp hình sừng bò nằm ở biên giới phía đông Nam Ly. Nơi cất giấu kho báu hơn 3 triệu lượng vàng ròng của thiên hạ.",
+      "strategic_importance": "Cung cấp nguồn ngân lượng khổng lồ cho Quý Bình An triệu hoán thần tướng, đồng thời là chiến trường Lữ Bố miểu sát Bán Tiên Côn Sơn."
+    },
+    {
+      "name": "Ất Tuyên Thành",
+      "category": "Cửa Ngõ Phòng Thủ Phía Đông Nam Ly",
+      "description": "Thành trì hiểm yếu che chắn trực tiếp cho kinh đô Thần Hỏa Thành của Nam Ly.",
+      "strategic_importance": "Địa điểm Gia Cát Lượng thi triển Không Thành Kế và bẫy sập hầm ngầm tiêu diệt 15 vạn quân An gia."
+    },
+    {
+      "name": "Hàn Tinh Thành",
+      "category": "Tiền Tiêu Biên Giới Vũ Châu",
+      "description": "Thành trì nằm ở vùng cực bắc Vũ Châu, tiếp giáp trực tiếp với cửa biển sông băng.",
+      "strategic_importance": "Căn cứ phòng ngự bờ biển và trạm xuất phát của hạm đội hải quân Đại Hán trong đại hải chiến và viễn chinh Đại La."
+    },
+    {
+      "name": "Bắc Cực Băng Xuyên",
+      "category": "Hải Ngoại Thông Đạo",
+      "description": "Vùng biển băng vĩnh cửu ngàn năm chia cắt Trung Nguyên và đại lục Đại La.",
+      "strategic_importance": "Khi băng vỡ nát tại chương 767, nơi đây trở thành đại chiến trường thủy quân giữa hạm đội Chu Du và 300 vạn quân Đại La."
+    },
+    {
+      "name": "Hoa Ước Thành",
+      "category": "Thành Cảng Tiền Tiêu Đại La",
+      "description": "Thành trì bờ biển đầu tiên trên đại lục Đại La do Bán Tiên Đặc Phổ trấn thủ.",
+      "strategic_importance": "Bàn đạp quân sự đầu tiên của quân Hán tại tân đại lục sau khi đánh bại Đặc Phổ."
+    },
+    {
+      "name": "Thâm Uyên",
+      "category": "Cấm Địa Đại La",
+      "description": "Khu vực hang động vực thẳm u tối bí ẩn sâu trong lòng đất Đại La, nơi cư ngụ của Thánh Nữ Hiên Thanh Nguyệt.",
+      "strategic_importance": "Nơi cất giấu những bí mật rợn người về công nghệ Thi Khôi của A Bố và nguồn gốc huyết thống Hiên gia."
+    },
+    {
+      "name": "U Châu (Đại La)",
+      "category": "Đại Địa Hạt 37 Thành",
+      "description": "Vùng đất rộng lớn gồm 37 tòa thành trì tại Đại La bị quân Hán càn quét trước khi thi hành 'Dương Mưu Rút Quân'.",
+      "strategic_importance": "Tâm điểm của cuộc khủng hoảng nạn dân và tranh chấp sinh tử giữa Quốc Giáo và Thánh Nữ Giáo."
+    }
+  ],
+  "technologies_and_inventions": [
+    {
+      "name": "Cự Khôi Xe Nỏ (Nỏ Xa Liên Phát Cải Tiến)",
+      "inventor": "Trầm Căn & Mã Quân (Thiên Cung Học Viện)",
+      "chapter_introduced": 633,
+      "category": "Công Thành & Diệt Kỵ Binh",
+      "effect": "Cải tiến từ nguyên lý Gia Cát Liên Nỗ, bắn ra các mũi Phá Giáp Tiễn khổng lồ bằng thép, tầm bắn cực xa xuyên thủng cổng thành và xuyên thủng giáp trụ của nhiều tầng kỵ binh.",
+      "description": "Vũ khí chủ lực giúp quân Hán áp đảo Tây Lăng Thiết Kỵ tại Phi Mã Thành và bắn phá chiến thuyền địch."
+    },
+    {
+      "name": "Bán Mã Thung & Thừng Gạt Ngựa Cơ Quan",
+      "inventor": "Quý Bình An & Mã Quân",
+      "chapter_introduced": 683,
+      "category": "Khắc Chế Kỵ Binh Hạng Nặng",
+      "effect": "Sử dụng cọc sắt liên kết bằng xích xích và thừng bện chuyên dụng do 2 người phối hợp kéo căng, giật ngã hàng loạt chiến mã đang phi nước đại.",
+      "description": "Bảo bối chiến thuật bẻ gãy hoàn toàn uy lực xung phong bất khả chiến bại của 14 vạn Tây Lăng Thiết Kỵ."
+    },
+    {
+      "name": "Lưu Hỏa Nổ (Hỏa Dược Cải Tiến)",
+      "inventor": "Viện Nghiên Cứu Thiên Cung",
+      "chapter_introduced": 639,
+      "category": "Vũ Khí Hóa Học / Hỏa Dược",
+      "effect": "Dầu cháy đặc biệt trộn hỏa dược nổ, khi va chạm tạo ra vụ nổ xé toạc công sự và bốc cháy dữ dội không thể dập tắt bằng nước.",
+      "description": "Thần khí thay đổi cục diện các trận hỏa thiêu, nền tảng cho trận biển lửa thiêu rụi hạm đội Đại La."
+    },
+    {
+      "name": "Xích Sắt Khóa Thuyền (Chiến Thuật Giang Hải)",
+      "inventor": "Chu Du & Cam Ninh (Vận dụng tương kế tựu kế)",
+      "chapter_introduced": 806,
+      "category": "Trận Pháp Thủy Quân",
+      "effect": "Lừa đối phương kết nối các chiến hạm lại với nhau bằng xích sắt để giữ thăng bằng trên sóng biển dữ, biến hạm đội địch thành một khối bất động dễ cháy.",
+      "description": "Chiến thuật kinh điển thời Tam Quốc được tái hiện hoàn hảo trên biển Bắc Cực, tiêu diệt 300 vạn quân xâm lược."
+    },
+    {
+      "name": "Kỹ Thuật Đục Thuyền & Thợ Lặn Cảm Tử",
+      "inventor": "Cam Ninh",
+      "chapter_introduced": 793,
+      "category": "Chiến Thuật Thủy Quân Đặc Nhiệm",
+      "effect": "Các toán thợ lặn mang theo dùi sắt và búa chuyên dụng lặn sâu nhiều giờ dưới nước để đục thủng đáy soái hạm địch.",
+      "description": "Cách đánh du kích dưới nước độc đáo khiến quân Đại La hoang mang cực độ."
+    },
+    {
+      "name": "Bí Kỹ Luyện Chế Thi Khôi",
+      "inventor": "A Bố (Đại La)",
+      "chapter_introduced": 861,
+      "category": "Cấm Thuật Dị Giới",
+      "effect": "Biến thân thể của cao thủ bị thương nặng (như Đặc Phổ) thành thây ma chiến đấu, mất đi tri giác và đau đớn, thể phách cứng như sắt đá.",
+      "description": "Bí thuật hắc ám của A Bố tạo nên một chủng loại quái vật chiến tranh mới tại Đại La."
+    },
+    {
+      "name": "Thiên Cơ Đồ & Trường Sinh Đồ",
+      "inventor": "Thượng Cổ Di Sản / Tứ Đại Thủ Hộ Gia Tộc",
+      "chapter_introduced": 629,
+      "category": "Bí Bảo Tối Thượng",
+      "effect": "Bản đồ cổ đại ẩn chứa bí mật thông hành giữa hai thế giới lục địa và phương pháp đột phá cảnh giới trường sinh bất lão.",
+      "description": "Mục tiêu tranh đoạt xuyên suốt của Thiên Cơ, các vương triều và dòng họ Quý thị."
+    }
+  ],
+  "political_events": [
+    {
+      "id": "POL_01_GIAO_DICH_THIEN_CO_DO",
+      "title": "Giao Dịch Thiên Cơ Đồ Giữa Quý Bình An & Văn Nhân Mục",
+      "chapters": [
+        629,
+        630
+      ],
+      "factions_involved": [
+        "Đại Hán",
+        "Tây Lăng",
+        "Thiên Cơ"
+      ],
+      "key_figures": [
+        "Quý Bình An",
+        "Văn Nhân Mục",
+        "Trương Bất Minh"
+      ],
+      "description": "Các bên thương lượng việc hoán đổi thông tin về Thiên Cơ Đồ để bảo toàn tính mạng cho hoàng tộc Tây Lăng và công chúa Bất Hối.",
+      "outcome": "Đại Hán nắm giữ chìa khóa giải mã bí mật cấm thuật của Thiên Cơ."
+    },
+    {
+      "event_id": "POL_02_DONG_THUONG_DIET_BUI_GIA",
+      "title": "Đông Thương Diệt Môn Bùi Gia",
+      "chapters": [
+        650,
+        651,
+        652
+      ],
+      "factions_involved": [
+        "Đông Thương (An gia)",
+        "Bùi gia",
+        "Đại Hán"
+      ],
+      "key_figures": [
+        "An Quân Thương",
+        "Bùi Thế An",
+        "Quý Vô Song",
+        "Hoàng Trung"
+      ],
+      "description": "Sau khi Bùi gia có ý định ngả theo Đại Hán tại Bùi An Hà, gia tộc An thị của Đông Thương đã ra tay tàn sát diệt môn Bùi thị.",
+      "outcome": "Bùi gia bị xóa sổ khỏi vũ đài lịch sử; An Quân Thương bị Hoàng Trung bắn chết; Đông Thương mất đi bức tường phòng ngự phía tây."
+    },
+    {
+      "event_id": "POL_03_LAY_NUOC_DOI_NUOC_NAM_LY",
+      "title": "Đại Thỏa Thuận 'Lấy Nước Đổi Nước' & Thanh Trừng Cung Ngạo",
+      "chapters": [
+        700,
+        713,
+        715,
+        720
+      ],
+      "factions_involved": [
+        "Nam Ly",
+        "Đại Hán",
+        "Tây Lăng"
+      ],
+      "key_figures": [
+        "Cung Ngạo",
+        "Quý Bình An",
+        "Vương Việt"
+      ],
+      "description": "Cung Ngạo chuyển giao trọn vẹn 55 vạn quân và toàn bộ cương thổ Nam Ly cho Đại Hán để đổi lấy tước vị Trấn Tây Vương và vùng đất Tây Lăng. Quý Bình An ngoài mặt đồng ý nhưng ngầm phái Vương Việt ám sát Cung Ngạo trên đường đi.",
+      "outcome": "Đại Hán sáp nhập trọn vẹn Nam Ly mà không đổ máu, đồng thời diệt cỏ tận gốc mầm họa cát cứ."
+    },
+    {
+      "event_id": "POL_04_TAY_LANG_CHINH_THUC_DAU_HANG",
+      "title": "Tây Lăng Vương Dâng Biểu Quy Thuận",
+      "chapters": [
+        733,
+        734
+      ],
+      "factions_involved": [
+        "Tây Lăng Hoàng Thất",
+        "Đại Hán"
+      ],
+      "key_figures": [
+        "Văn Nhân Mục",
+        "Quý Bình An"
+      ],
+      "description": "Sau khi Phi Mã Thành và tuyến phòng thủ cuối cùng bị đập tan, Văn Nhân Mục dẫn bách quan quỳ gối xin hàng ngoài cửa Tây Hoàng Thành.",
+      "outcome": "Xóa sổ vương triều Tây Lăng, toàn bộ lãnh thổ phương Tây thuộc về Đại Hán."
+    },
+    {
+      "event_id": "POL_05_NHAT_THONG_TU_QUOC_DAI_HAN",
+      "title": "Đại Hán Nhất Thống Thiên Hạ Tứ Quốc",
+      "chapters": [
+        764,
+        768,
+        769,
+        770,
+        771
+      ],
+      "factions_involved": [
+        "Đại Hán",
+        "Đại Vũ",
+        "Tây Lăng",
+        "Nam Ly",
+        "Đông Thương"
+      ],
+      "key_figures": [
+        "Hán Đế Quý Bình An",
+        "Toàn thể triều thần"
+      ],
+      "description": "Đông Thương đầu hàng sau khi Quý Vô Song buông vũ khí, 4 nước hợp nhất thành Hoàng triều Đại Hán duy nhất, thiết lập Hán Luật và đồng tiền thống nhất.",
+      "outcome": "Chấm dứt thời đại phân tranh cát cứ, xác lập địa vị bá chủ tuyệt đối của triều Hán."
+    },
+    {
+      "event_id": "POL_06_DUONG_MUU_PHAN_HOA_DAI_LA",
+      "title": "Dương Mưu Rút Quân Phân Hóa Đại La",
+      "chapters": [
+        886,
+        887,
+        891,
+        894
+      ],
+      "factions_involved": [
+        "Đại Hán",
+        "Quốc Giáo Đại La",
+        "Thánh Nữ Giáo",
+        "Thế lực A Bố"
+      ],
+      "key_figures": [
+        "Quý Bình An",
+        "Giả Hủ",
+        "Quách Gia",
+        "Lỗ Túc",
+        "Ninh Không Lâu",
+        "An Khinh Ngôn"
+      ],
+      "description": "Đại Hán chủ động rút quân khỏi 37 thành U Châu, trao trả vùng đất hoang tàn đầy nạn dân đói kém cho Thánh Nữ Giáo và Quốc Giáo nhằm ép hai thế lực này phải chém giết lẫn nhau để giành giật lương thảo.",
+      "outcome": "Đại Hán bảo toàn tuyệt đối nguyên vẹn lực lượng viễn chinh, biến nội bộ Đại La thành bãi chiến trường tương tàn suy kiệt."
+    },
+    {
+      "event_id": "POL_07_NGA_BAI_HUYET_THONG_QUY_THI",
+      "title": "Ngả Bài Chân Tướng Huyết Thống Quý Gia Tại Chương 900",
+      "chapters": [
+        899,
+        900
+      ],
+      "factions_involved": [
+        "Quý Gia Đại La",
+        "Hiên Gia",
+        "Quốc Giáo",
+        "Thánh Nữ Giáo"
+      ],
+      "key_figures": [
+        "Quý Bình An",
+        "Quý Vô Song",
+        "Trương Bất Minh",
+        "Quý Vô Danh",
+        "Hiên Nguyệt"
+      ],
+      "description": "Quý Vô Song tiết lộ thân phận chú ruột, giải mã mối thù diệt tộc giữa Quý gia và Hiên gia tại Đại La, cũng như nguồn gốc con lai giữa đại ca Quý Vô Danh và Thánh Nữ Hiên Nguyệt.",
+      "outcome": "Quý Bình An nắm giữ nguồn gốc xuất thân thực sự và quyền thừa kế bí mật Trường Sinh Đồ để chuẩn bị cho giai đoạn chinh phục tối cao tiếp theo."
+    }
+  ]
+}

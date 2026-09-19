@@ -1,0 +1,1648 @@
+[
+  {
+    "id": "BTL_01_PHO_MA_PHU_THICH_SAT",
+    "name": "Trận Thích Sát Phò Mã Phủ (Quý Vô Song thử thách)",
+    "location": "Sân viện Phò Mã Phủ - Đế Đô Đại Vũ",
+    "chapter_range": "Chương 10",
+    "participants": {
+      "side_a": "Triệu Vân & Quý Bình An",
+      "side_b": "6 thích khách Hoàng Cảnh do Quý Vô Song phái tới"
+    },
+    "commanders": {
+      "side_a": "Triệu Vân",
+      "side_b": "Thủ lĩnh thích khách"
+    },
+    "tactics_used": "Triệu Vân sử dụng Bách Điểu Triều Phượng Thương lấy một địch sáu, thương thế xuất thần trấn áp hoàn toàn đối phương",
+    "outcome": "Phe Quý Bình An toàn thắng, toàn bộ thích khách bị đẩy lui; Quý Vô Song thừa nhận thực lực Hoàng Cảnh đỉnh phong của Triệu Vân",
+    "consequences": "Quý Vô Song trao chỉ dụ Bắc Chinh, bắt đầu đưa Quý Bình An ra tiền tuyến thử lửa",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_02_KHAI_NGUYEN_HUYEN",
+    "name": "Chiến Dịch Đột Phá Cửa Ngõ Khai Nguyên Huyện",
+    "location": "Khai Nguyên Huyện Thành",
+    "chapter_range": "Chương 42 - 45",
+    "participants": {
+      "side_a": "Quý Bình An, Triệu Vân, 30.000 tân binh Huyết Y Doanh",
+      "side_b": "Huyện lệnh Lưu Nguyên và 500 thủ thành binh (thuộc phe Tứ hoàng tử Tử Ngọc Hằng)"
+    },
+    "commanders": {
+      "side_a": "Quý Bình An & Triệu Vân",
+      "side_b": "Lưu Nguyên"
+    },
+    "tactics_used": "Khổ nhục kế: Quý Bình An giả vờ trúng độc để dụ Lưu Nguyên mất cảnh giác; Triệu Vân một người một thương phi thân vào thành bắt sống huyện lệnh giữa trùng vây",
+    "outcome": "Phe Quý Bình An toàn thắng mà không tổn thất binh mã",
+    "consequences": "Kiểm soát toàn bộ kho lương thảo tích trữ của Tứ hoàng tử, mở toang cửa ải tiến thẳng vào Bắc Cảnh",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_03_BAC_CANH_DICH_HOA",
+    "name": "Đại Chiến Bắc Cảnh Tam Châu Lần Thứ Nhất (Xả Lũ Diệt Địch Hỏa)",
+    "location": "Thanh Châu Thành & Liễu Châu Thành - Bắc Cảnh",
+    "chapter_range": "Chương 48 - 54",
+    "participants": {
+      "side_a": "Quý Bình An, Triệu Vân, Giả Hủ, Quý Bình Xuyên, Mã Tắc, Huyết Y Doanh",
+      "side_b": "Đại tướng Nam Ly Địch Hỏa, phó tướng A Vũ cùng 20.000 đại quân Nam Ly"
+    },
+    "commanders": {
+      "side_a": "Giả Hủ (quân sư) & Triệu Vân (tiên phong)",
+      "side_b": "Địch Hỏa & A Vũ"
+    },
+    "tactics_used": "Mã Tắc phòng ngự Liễu Châu; Giả Hủ dụ quân Địch Hỏa phá cửa thành Thanh Châu vào bẫy cổng sắt kiên cố, sau đó giật chốt xả lũ hồng thủy dìm chết toàn bộ quân Nam Ly",
+    "outcome": "2 vạn quân Nam Ly bị xóa sổ hoàn toàn; Triệu Vân bắt sống Đại tướng Địch Hỏa",
+    "consequences": "Quý Bình An hoàn toàn làm chủ Bắc Cảnh tam châu, lập đại công chấn động triều đình Đại Vũ",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_04_CONG_THANH_DIEN_VI",
+    "name": "Trận Chiến Cổng Thành Đế Đô (Điển Vi xuất thế)",
+    "location": "Cửa Nam Thành Đế Đô Đại Vũ",
+    "chapter_range": "Chương 66 - 67",
+    "participants": {
+      "side_a": "Điển Vi & Quý Bình An",
+      "side_b": "50 thủ thành vệ binh và quan viên do Tứ hoàng tử Tử Ngọc Hằng sai khiến"
+    },
+    "commanders": {
+      "side_a": "Điển Vi",
+      "side_b": "Thủ thành quan"
+    },
+    "tactics_used": "Điển Vi cầm Song Thiết Kích một mình xông thẳng vào đám đông như hổ vào bầy dê, dùng bạo lực tuyệt đối nghiền nát quân địch",
+    "outcome": "Trong 10 nhịp thở, toàn bộ 50 vệ binh bị đánh gục la liệt; Tử Ngọc Hằng hoảng sợ rút lui",
+    "consequences": "Tên tuổi Điển Vi chấn động kinh thành, Quý Bình An hiên ngang tiến vào Cần Chính Điện đối chất",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_05_DIEN_VO_TAY_LANG",
+    "name": "Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
+    "location": "Diễn Võ Trường Hoàng Cung Đại Vũ",
+    "chapter_range": "Chương 80 - 83",
+    "participants": {
+      "side_a": "Điển Vi, Quý Bình An (đại diện Đại Vũ)",
+      "side_b": "Dũng sĩ Trịnh Trung Hà, Phó Dĩnh Thăng, Hề Nhan công chúa (Tây Lăng)"
+    },
+    "commanders": {
+      "side_a": "Quý Bình An",
+      "side_b": "Hề Nhan công chúa"
+    },
+    "tactics_used": "Cửa 1 tỉ võ: Điển Vi dùng Song Thiết Kích đâm bay cả người lẫn ngựa của cao thủ Hoàng Cảnh Trịnh Trung Hà; Cửa 2 và 3 tỉ thí văn tài thi phú: Quý Bình An xuất khẩu thành thơ áp đảo Tây Lăng",
+    "outcome": "Đại Vũ toàn thắng cả 3 cửa ải",
+    "consequences": "Quý Bình An đoạt lấy Huyết Long Lệnh danh giá, thanh danh lừng lẫy tứ quốc",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_06_BINH_BIEN_HOANG_CUNG_TO_KIEN_PHONG",
+    "name": "Đại Biến Cung Đình: Dẹp Loạn Cấm Vệ Quân Tô Kiến Phong",
+    "location": "Hoàng Cung Đại Vũ (Thiên Hòa Điện & Ngự Phòng)",
+    "chapter_range": "Chương 104 - 110",
+    "participants": {
+      "side_a": "Quý Bình Sinh (Chiến Hổ Quân), Điển Vi, Quý Bình An, Vũ Hoàng",
+      "side_b": "Cấm Vệ Thống Lĩnh Tô Kiến Phong, Hứa Hòa Lâm, phủ binh Tam hoàng tử và Tứ hoàng tử"
+    },
+    "commanders": {
+      "side_a": "Quý Bình Sinh & Điển Vi",
+      "side_b": "Tô Kiến Phong & Hứa Hòa Lâm"
+    },
+    "tactics_used": "Tô Kiến Phong giương đông kích tây đánh vào hoàng cung; Quý Bình Sinh kịp thời điều động Chiến Hổ Quân cung tiễn bách bộ xuyên dương chặn đứng; Điển Vi giao đấu sinh tử đâm song kích xuyên hai vai phế truất Tô Kiến Phong",
+    "outcome": "Phe Quý gia đại thắng; Tô Kiến Phong bại trận bị bắt; Hứa Hòa Lâm bị giam giữ",
+    "consequences": "Toàn bộ phe cánh chống đối bị đập tan; dọn đường cho việc Tử Ngọc Trạch lên ngôi Thái tử",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_07_HUYET_TAY_NGAO_PHU",
+    "name": "Đêm Huyết Tẩy Ngao Phủ",
+    "location": "Ngao Phủ - Đế Đô Đại Vũ",
+    "chapter_range": "Chương 121 - 123",
+    "participants": {
+      "side_a": "Triệu Vân & Quý Bình An",
+      "side_b": "Gia tộc họ Ngao (Ngao Khâm, Ngao Thiếu Vũ, hàng trăm gia đinh hộ vệ)"
+    },
+    "commanders": {
+      "side_a": "Triệu Vân",
+      "side_b": "Ngao Khâm"
+    },
+    "tactics_used": "Tập kích ban đêm, đột phá cổng chính, áp dụng chiến thuật trảm thảo trừ căn của Lý Nho không để một ai trốn thoát",
+    "outcome": "Toàn bộ gia tộc Ngao thị bị diệt môn trong một đêm",
+    "consequences": "Quý Bình An thị uy quyền lực tuyệt đối tại kinh thành, thu hồi toàn bộ tài sản vàng bạc của Ngao phủ",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_08_DAI_NAO_DINH_UY_PHU",
+    "name": "Đại Náo Đình Úy Phủ Giải Cứu Điển Vi Và Cơ Vô Pháp",
+    "location": "Ngục Giam Đình Úy Phủ - Đế Đô",
+    "chapter_range": "Chương 136 - 137",
+    "participants": {
+      "side_a": "Điển Vi, Triệu Vân, Quý Bình An, Cơ Vô Thiên",
+      "side_b": "Đình Úy Hướng Hạo Thiên cùng cai ngục, ngục tốt Đình Úy Phủ"
+    },
+    "commanders": {
+      "side_a": "Điển Vi & Triệu Vân",
+      "side_b": "Hướng Hạo Thiên"
+    },
+    "tactics_used": "Nội ứng ngoại hiệp: Điển Vi bẻ gãy gông cùm trong ngục xông ra, Triệu Vân bên ngoài dùng thương kích phá cổng tiếp ứng",
+    "outcome": "Giải cứu thành công Điển Vi và kỳ nhân Cơ Vô Pháp an toàn",
+    "consequences": "Thu phục được bộ đôi Cơ Vô Pháp - Cơ Vô Thiên, mở ra kỷ nguyên nghiên cứu cơ quan và hỏa dược cho Quý gia",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_09_HOA_CONG_BAC_CO_SON",
+    "name": "Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
+    "location": "Liễu Châu Thành & Dãy Núi Bắc Cô Sơn",
+    "chapter_range": "Chương 151 - 182",
+    "participants": {
+      "side_a": "Quý Bình An, Trương Liêu, Triệu Vân, Giả Hủ, Lý Nho, Cao Thuận, Huyết Y Doanh, Bạch Mã Nghĩa Tòng",
+      "side_b": "Nam Ly Quân Thần Cung Sinh, Đại tướng Chu Bất Ninh cùng 30 vạn đại quân Nam Ly"
+    },
+    "commanders": {
+      "side_a": "Giả Hủ (tham mưu) & Trương Liêu, Triệu Vân (thống soái)",
+      "side_b": "Cung Sinh & Chu Bất Ninh"
+    },
+    "tactics_used": "Trương Liêu dùng địa hình thủ vững Liễu Châu; Giả Hủ tương kế tựu kế dẫn dụ đại quân địch vào hẻm núi Bắc Cô Sơn rồi phóng hỏa thiêu rụi lương thảo; Triệu Vân dẫn kỵ binh Bạch Mã trang bị móng ngựa sắt vu hồi tập kích bắt sống Chu Bất Ninh",
+    "outcome": "Đại thắng; 30 vạn quân Nam Ly đại bại tháo chạy; Chu Bất Ninh bị trảm thủ; Cung Sinh nhận thất bại đầu tiên trong đời",
+    "consequences": "Bắc Cảnh hoàn toàn sạch bóng quân xâm lược; Quý Bình An xây dựng tuyến phòng ngự kiên cố bất khả xâm phạm",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_10_THICH_SAT_QUY_QUAT",
+    "name": "Trận Chặn Đứng Thích Khách Tây Lăng Quỷ Quật",
+    "location": "Hậu Viện Phủ Thành Chủ - Liễu Châu",
+    "chapter_range": "Chương 203 - 204",
+    "participants": {
+      "side_a": "Triệu Vân, Điển Vi, Quý Bình An",
+      "side_b": "Thích khách Chu Nho đeo mặt nạ quỷ của Tây Lăng Quỷ Quật"
+    },
+    "commanders": {
+      "side_a": "Triệu Vân",
+      "side_b": "Chu Nho thích khách"
+    },
+    "tactics_used": "Thích khách độn thổ đào hầm hành thích bất ngờ, dùng độc châm khiến Điển Vi trúng độc ngã quỵ; Triệu Vân phi ngựa tới bộc phát chiến lực Bán Thánh một thương đâm chết thích khách",
+    "outcome": "Thích khách bị tiêu diệt tại chỗ; Điển Vi được Cơ Vô Pháp giải độc cứu sống",
+    "consequences": "Lộ diện mối liên hệ ngầm giữa Tây Lăng Quỷ Quật và thế lực ám hại tại kinh đô",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_11_TRIEU_VAN_DON_KY_TAY_KINH",
+    "name": "Triệu Vân Đơn Thương Độc Mã Bức Hàng Tây Kinh",
+    "location": "Cổng Thành Tây Kinh - Tây Lăng Quốc",
+    "chapter_range": "Chương 222",
+    "participants": {
+      "side_a": "Triệu Vân (một người một ngựa)",
+      "side_b": "Hàng ngàn thủ quân Tây Kinh và hoàng thất Tây Lăng"
+    },
+    "commanders": {
+      "side_a": "Triệu Vân",
+      "side_b": "Thống tướng Tây Kinh"
+    },
+    "tactics_used": "Đột kích thần tốc đường xa, dùng uy áp Bán Thánh phá tan cổng thành, thương ảnh ngút trời chấn nhiếp toàn bộ quân dân Tây Kinh",
+    "outcome": "Triệu Vân áp sát hoàng cung Tây Lăng không ai dám cản; Tây Lăng hoảng sợ chấp nhận thả Quý Bình Sinh",
+    "consequences": "Giải cứu Quý Bình Sinh thành công, bẻ gãy hoàn toàn sĩ khí của Tây Lăng",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_12_CAN_CHINH_DIEN_HUYET_CHIEN",
+    "name": "Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long)",
+    "location": "Cần Chính Điện - Hoàng Cung Đại Vũ",
+    "chapter_range": "Chương 238 - 240",
+    "participants": {
+      "side_a": "Triệu Vân (bảo vệ Quý Bình An)",
+      "side_b": "Tân hoàng Tử Ngọc Trạch, Khai Sơn Vương Tử Triệu Phong, Tô Kiến Phong, cao thủ Đế Cảnh hoàng cung"
+    },
+    "commanders": {
+      "side_a": "Triệu Vân",
+      "side_b": "Tử Ngọc Trạch & Tử Triệu Phong"
+    },
+    "tactics_used": "Bẫy cung đình: Tử Ngọc Trạch khép kín đại điện, huy động 3 vị Đế Cảnh cùng hàng trăm cấm vệ vây sát; Triệu Vân thi triển Thất Thám Xà Bàn Thương đạt cảnh giới Bán Thánh, lấy một địch ba vẫn áp đảo hoàn toàn",
+    "outcome": "Triệu Vân thương phong áp đảo, Tử Triệu Phong và Tô Kiến Phong bị thương; Trần Hải can ngăn đình chiến",
+    "consequences": "Kế hoạch ám hại của Tử Ngọc Trạch đổ vỡ hoàn toàn, mối quan hệ hoàng đế - Quý gia chính thức vỡ vụn",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_13_TIEU_DIET_PHI_BAO_QUAN",
+    "name": "Chiến Dịch Tiêu Diệt Phi Báo Quân",
+    "location": "Ngoại Vi Kinh Đô",
+    "chapter_range": "Chương 245 - 247",
+    "participants": {
+      "side_a": "Quý Bình Sinh, Triệu Vân, Chiến Hổ Quân, Bạch Mã Nghĩa Tòng",
+      "side_b": "Phi Báo Quân của Tô Kiến Phong và Bán Thánh trợ chiến"
+    },
+    "commanders": {
+      "side_a": "Quý Bình Sinh & Triệu Vân",
+      "side_b": "Tô Kiến Phong & Bán Thánh sát thủ"
+    },
+    "tactics_used": "Quý Bình Sinh dũng mãnh dùng đao đối đầu kìm chân Bán Thánh; Triệu Vân dẫn kỵ binh Bạch Mã vòng sau xông thẳng vào đại bản doanh đập tan đội hình Phi Báo Quân",
+    "outcome": "Phi Báo Quân bị xóa sổ hoàn toàn; Bán Thánh phe địch bị thương bỏ chạy",
+    "consequences": "Tô Kiến Phong mất sạch quân bài chiến lược cuối cùng, hoàn toàn rơi vào thế bị động",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_14_CONG_PHA_HOANG_CUNG",
+    "name": "Quý Bình An Mang Quân Công Phá Hoàng Cung",
+    "location": "Cần Chính Điện & Ngự Phòng Hoàng Cung Đại Vũ",
+    "chapter_range": "Chương 251 - 253",
+    "participants": {
+      "side_a": "Quý Bình An, Hoàng Trung, Điển Vi, Trương Liêu, Huyết Y Doanh",
+      "side_b": "Tàn dư Cấm Vệ Quân Tô Kiến Phong và hộ vệ Tử Triệu Phong"
+    },
+    "commanders": {
+      "side_a": "Quý Bình An & Hoàng Trung",
+      "side_b": "Tô Kiến Phong & Tử Triệu Phong"
+    },
+    "tactics_used": "Hoàng Trung dùng Cửu Tinh Thần Cung liên tiếp bắn hạ các phó tướng và cung thủ đối phương tiễn vô hư phát; Điển Vi dẫn trọng binh đập tan chốt chặn Cần Chính Điện",
+    "outcome": "Toàn bộ cấm vệ buông vũ khí quy hàng; Quý Bình An kiểm soát tuyệt đối hoàng cung",
+    "consequences": "Tử Ngọc Trạch run rẩy chấp nhận ký chiếu thư sắc phong Quý Bình An làm Trấn Quốc Công, phong Tuân Úc làm Thừa Tướng Đại Vũ",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_15_HON_HUYET_SON",
+    "name": "Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
+    "location": "Cửa Ải Nam Quan & Dãy Núi Hồn Huyết Sơn",
+    "chapter_range": "Chương 269 - 279",
+    "participants": {
+      "side_a": "Quý Bình An, Quý Bình Sinh, Triệu Vân, Hoàng Trung, Lý Nho, Chiến Hổ Quân, Bạch Mã Nghĩa Tòng",
+      "side_b": "Đông Thương Triệu Văn Dụ, An Vũ Hi (5 vạn quân An gia mang Lưu Hỏa), Khai Sơn Vương Tử Triệu Phong (bị gài bẫy)"
+    },
+    "commanders": {
+      "side_a": "Quý Bình An & Triệu Vân",
+      "side_b": "Triệu Văn Dụ & An Vũ Hi"
+    },
+    "tactics_used": "Mượn đao giết người: Lý Nho cho Tử Triệu Phong mặc giáp dẫn đầu để Triệu Văn Dụ đánh trọng thương; Triệu Vân truy kích trảm sát Triệu Văn Dụ; Quý Bình An dùng vũ khí Lưu Hỏa ném thiêu rụi thành trì và xe phòng ngự quân An gia",
+    "outcome": "Đại thắng toàn diện; Triệu Văn Dụ bị chém đầu; Tử Triệu Phong trúng độc Toái Mệnh Đan chết; quân An gia thảm bại rút lui",
+    "consequences": "Thu hồi trọn vẹn Nam Quan; đoạt được hơn 100 xe mỏ vàng (75 vạn kim) tại Hồn Huyết Sơn; triệt hạ hoàn toàn thế lực Khai Sơn Vương và Hắc Ma",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "BTL_LAM_QUAN_THANH",
+    "name": "Đại Chiến Cửa Ải Lâm Quan Thành (Đến Quan Thành)",
+    "chapter_range": [
+      321,
+      325
+    ],
+    "location": "Lâm Quan Thành (biên giới Đại Vũ - Tây Lăng)",
+    "sides": {
+      "player_faction": "Đại Vũ (Quý Bình An, Triệu Vân, Quý Bình Xuyên, Giả Hủ, Bạch Mã Nghĩa Tòng)",
+      "enemy_faction": "Tây Lăng (Tần Tứ Nghiệp, Đổng Vệ Đông, 3 vạn Tây Lăng Thiết Kỵ)"
+    },
+    "tactics": "Triệu Vân xung phong một thương một ngựa đối đầu Tần Tứ Nghiệp; Bạch Mã Nghĩa Tòng dùng cung kỵ cơ động bắn tỉa phá vỡ đội hình thiết kỵ cồng kềnh.",
+    "outcome": "Đại Hán đại thắng; Đổng Vệ Đông trọng thương bị bắt; Tần Tứ Nghiệp đại bại tháo lui.",
+    "consequences": "Mở toang cánh cửa Tây Chinh vào Thập Tam Châu của Tây Lăng, đập tan thần thoại bách chiến bách thắng của Tây Lăng Thiết Kỵ.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_HOAI_HA_PHUC_KICH",
+    "name": "Trận Phục Kích Hoài Hà - Nghiệp Thành",
+    "chapter_range": [
+      326,
+      328
+    ],
+    "location": "Hoài Hà bên ngoài Nghiệp Thành",
+    "sides": {
+      "player_faction": "Đại Vũ (Trương Liêu, Chu Du, Thủy quân)",
+      "enemy_faction": "Tây Lăng (Tần Tứ Nghiệp và tàn binh Thiết Kỵ)"
+    },
+    "tactics": "Chu Du bày chiến thuyền chặn đứng đường thủy; Trương Liêu dẫn bộ kỵ chặn đường bộ tạo thế hai đại Bán Thánh vây hãm.",
+    "outcome": "Tần Tứ Nghiệp bị dồn vào đường cùng nhưng Quý Bình An hạ lệnh cố tình để Tần Tứ Nghiệp sống sót rời đi.",
+    "consequences": "Tạo mối nghi kỵ và chia rẽ sâu sắc giữa Tần gia và triều đình Tây Lăng Vương Trương Bất Minh.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_BAC_CO_SON_01",
+    "name": "Trận Phòng Thủ Bắc Cô Sơn Quan Ải",
+    "chapter_range": [
+      334,
+      338
+    ],
+    "location": "Bắc Cô Sơn quan ải (ngoài thành Liễu Châu)",
+    "sides": {
+      "player_faction": "Đại Vũ (Chu Thái, Điển Vi, Điêu Thuyền, Cận vệ quân)",
+      "enemy_faction": "Đông Thương (Bùi Nguyên, 5 vạn quân tinh nhuệ Bùi gia)"
+    },
+    "tactics": "Chu Thái đổ 100 thùng dầu hỏa chặn cổng; Điêu Thuyền đích thân đánh trống trận kích phát sĩ khí kinh thiên; Điển Vi cầm song kích mở cửa xung sát chém địch như rạ.",
+    "outcome": "Quân Đông Thương đại bại thương vong vô số; Bùi Nguyên bị Điển Vi bắt sống tại chỗ.",
+    "consequences": "Bảo vệ an toàn tuyệt đối cho căn cứ Liễu Châu, thu được tù binh Bùi Nguyên để tống tiền thế gia Đông Thương.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_LINH_KHE_THANH",
+    "name": "Trận Tập Kích Đánh Úp Linh Khê Thành",
+    "chapter_range": [
+      346,
+      348
+    ],
+    "location": "Linh Khê Thành (Tây Lăng)",
+    "sides": {
+      "player_faction": "Đại Vũ (Quý Bình An, Triệu Vân)",
+      "enemy_faction": "Tây Lăng (Bán Thánh Vân Ninh, thủ quân Linh Khê Thành)"
+    },
+    "tactics": "Tận dụng nội ứng và tốc độ hành quân thần tốc đánh úp thành trì bị bỏ ngỏ phòng ngự sau hỏa hoạn cũ.",
+    "outcome": "Thành vỡ; bắt sống Bán Thánh Vân Ninh.",
+    "consequences": "Quý Bình An tống tiền Tây Lăng 1.2 triệu kim (Ch.349), cung cấp toàn bộ tài chính để triệu hoán Mã Siêu.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_DONG_SON_THANH",
+    "name": "Chiến Dịch Đông Sơn Thành & Bùi An Hà",
+    "chapter_range": [
+      351,
+      357
+    ],
+    "location": "Đông Sơn Thành và bờ sông Bùi An Hà (Đông Thương)",
+    "sides": {
+      "player_faction": "Chiến Hổ Quân (Quý Bình Sinh, Lý Nho, 5 vạn quân)",
+      "enemy_faction": "Đông Thương (An Quân Thương, An Đức Lộc, 10 vạn đại quân An gia)"
+    },
+    "tactics": "Quý Bình Sinh kích tướng quyết chiến, chém đầu An Đức Lộc; Lý Nho bày mưu tiêu diệt 4 vạn địch, bắt sống hàng ngàn tù binh.",
+    "outcome": "Đông Sơn thành thất thủ; quân An gia tan vỡ hoàn toàn. Lý Nho đào hố chôn sống hàng ngàn tù binh trước mặt hai thành An Hà - An Lộ.",
+    "consequences": "Mở toang con đường Đông Chinh cho Đại Hán, gieo rắc nỗi kinh hoàng tột độ cho quân dân Đông Thương.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_BAC_CO_SON_UAN_CHAU",
+    "name": "Trận Tái Chiếm Uyển Châu & Chặn Đánh Lạc Thiên Thanh",
+    "chapter_range": [
+      388,
+      392
+    ],
+    "location": "Uyển Châu Thành & Bắc Cô Sơn Quan Ải",
+    "sides": {
+      "player_faction": "Đại Vũ / Đại Hán (Giả Hủ, Khúc Nghĩa, Cao Thuận, Trương Liêu, Tiên Đăng tử sĩ)",
+      "enemy_faction": "Nam Ly (Lạc Thiên Thanh, 15 vạn đại quân Nam Ly)"
+    },
+    "tactics": "Cao Thuận giả vờ bỏ Uyển Châu nhử 15 vạn quân Nam Ly tiến sâu vào Bắc Cô Sơn; Khúc Nghĩa dẫn 2000 Tiên Đăng tử sĩ leo tường chiếm lại Uyển Châu; Trương Liêu đón đầu tại Bắc Cô Sơn.",
+    "outcome": "Quân Nam Ly bị cắt đứt đường lui như cá trong chậu, thương vong nặng nề, Lạc Thiên Thanh phải tháo chạy.",
+    "consequences": "Làm quà mừng đăng cơ cho Quý Bình An, khẳng định tài thao lược thần sầu của Giả Hủ và Khúc Nghĩa.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_NHAT_TUYEN_THIEN",
+    "name": "Tập Sát Nhất Tuyến Thiên: Trương Phi Hộ Giá",
+    "chapter_range": [
+      456,
+      457
+    ],
+    "location": "Hẻm núi hiểm trở Nhất Tuyến Thiên",
+    "sides": {
+      "player_faction": "Quý Bình An, Trương Phi, Hộ vệ",
+      "enemy_faction": "Quý Bình Thường (Tam ca Quý gia, Đệ nhất kiếm khách Bán Thánh đỉnh phong), Quý Vô Song quan sát"
+    },
+    "tactics": "Quý Bình Thường dùng tuyệt kỹ khoái kiếm ám sát Quý Bình An từ trên đỉnh núi lao xuống trong chớp mắt.",
+    "outcome": "Trương Phi nổi giận bộc phát chiến lực cấp Thánh Giả gạt phăng kiếm kích, Quý Bình Thường bị thương thối lui; Quý Vô Song xuất hiện rồi rút lui.",
+    "consequences": "Kích hoạt phần thưởng hệ thống: 10 vạn kim đặc thù loại tuyệt thế anh linh triệu hoán (sau dùng triệu hoán Mã Quân).",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_NGUU_KHANH_CHAU",
+    "name": "Đại Chiến Ngưu Khánh Châu (Hỏa Thiêu Thành Trống)",
+    "chapter_range": [
+      460,
+      468
+    ],
+    "location": "Ngưu Khánh Châu thành",
+    "sides": {
+      "player_faction": "Đại Hán (Chu Du làm Thống soái, Triệu Vân, Hoàng Trung, Cao Thuận, Khúc Nghĩa, Quách Gia, viện binh Quý Bình An & Trương Phi)",
+      "enemy_faction": "Liên quân Nam Ly (Lạc Thiên Thanh) + Đông Thương (Bùi Thế An) + Chiến Hổ Quân (Quý Bình Sinh)"
+    },
+    "tactics": "Chu Du dùng kế Thành trống: Triệu Vân giả vờ bại rút qua Bắc Môn, quân địch tràn vào thì châm lửa thiêu rụi toàn bộ Ngưu Khánh Châu; Hoàng Trung lấy một địch hai; Quý Bình An mang Trương Phi đánh úp sườn giáp công.",
+    "outcome": "Toàn bộ Ngưu Khánh Châu biến thành biển lửa; liên quân Nam Ly - Đông Thương tổn thất hơn chục vạn quân, tan rã hoàn toàn.",
+    "consequences": "Chiến thắng vang dội nhất giải phóng áp lực biên cương Nam Quan, Quý Bình An tích lũy lượng lớn Anh Linh Điểm.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_THUY_PHA_CHIEN_HO",
+    "name": "Trận Thủy Phá Chiến Hổ Quân & Phá Đê Khai Hồng",
+    "chapter_range": [
+      471,
+      473
+    ],
+    "location": "Lưu vực sông Nam Quan - Ngưu Khánh Châu",
+    "sides": {
+      "player_faction": "Đại Hán Thủy Quân (Chu Thái)",
+      "enemy_faction": "Chiến Hổ Quân & Tàn quân Đông Thương"
+    },
+    "tactics": "Chu Thái nam hạ mở đập phá đê, dẫn nước lũ nhấn chìm toàn bộ vùng trũng Nam Quan.",
+    "outcome": "Nước ngập cuốn trôi doanh trại địch; dũng tướng Lý Tiểu Đao tử trận; Chiến Hổ quân tan tác.",
+    "consequences": "Quý Bình An hoàn toàn kiểm soát thực địa chiến trường Nam Quan, dập tắt mầm mống nổi loạn.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_HO_LO_COC",
+    "name": "Trận Bao Vây Hồ Lô Cốc & Hội Tụ An Hà Thành",
+    "chapter_range": [
+      476,
+      482
+    ],
+    "location": "Hồ Lô Cốc và An Hà Thành",
+    "sides": {
+      "player_faction": "Đại Hán (Quý Bình An thân chinh, Trương Phi, Hán quân)",
+      "enemy_faction": "Tàn quân Đông Thương và thế lực Quý gia cũ"
+    },
+    "tactics": "Bao vây chặt chẽ cửa thung lũng hình hồ lô, Quý Bình An trực tiếp dẫn quân tràn vào ép địch đầu hàng.",
+    "outcome": "Toàn thắng; bắt gọn các tướng lĩnh tàn quân; Quý Bình An đối diện cha Quý Vô Song.",
+    "consequences": "Quý Bình An biết được chân tướng kế hoạch Thâu Thiên hoán nhật (Ch.486).",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_TAN_PHU_TAY_LANG",
+    "name": "Trận Tập Sát Diệt Môn Tần Phủ Tây Lăng",
+    "chapter_range": [
+      526,
+      527
+    ],
+    "location": "Phủ Trấn Quốc Đại Tướng Quân Tần gia (Tây Lăng)",
+    "sides": {
+      "player_faction": "Đại Hán (Kiếm Thánh Vương Việt, Cơ Vô Thiên)",
+      "enemy_faction": "Tây Lăng (Tần Tứ Nghiệp, hộ vệ cao thủ Tần gia)"
+    },
+    "tactics": "Vương Việt xuất quỷ nhập thần dùng kiếm thuật Thục Sơn Thiên Kiếm và Quỷ Ảnh Tam Sát chém thẳng vào nội viện.",
+    "outcome": "Tần Tứ Nghiệp bị Vương Việt một kiếm đoạt mạng; toàn bộ quyền lực Tần gia tại Tây Lăng sụp đổ.",
+    "consequences": "Xóa sổ gia tộc quân phiệt lớn nhất Tây Lăng, tướng trẻ Tần Ức quy thuận Đại Hán (Ch.532).",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_UAN_CHAU_THAN_MON",
+    "name": "Chiến Dịch Phòng Thủ Uyển Châu & Đoạt Tân Môn Thành",
+    "chapter_range": [
+      561,
+      570
+    ],
+    "location": "Uyển Châu Thành & Tân Môn Thành",
+    "sides": {
+      "player_faction": "Đại Hán (Hác Chiêu, Cao Thuận, Trương Liêu, Điển Vi, Hứa Chử, thiết giáp môn của Mã Quân)",
+      "enemy_faction": "Tây Lăng (Cảnh Vương Mạc Thiên Tinh, Văn Nhân Húc, 4 vạn quân + 1 vạn Tây Lăng Thiết Kỵ)"
+    },
+    "tactics": "Hác Chiêu dùng cửa thép Thiết Giáp Môn chặn đứng mọi máy công thành và địa đạo của Mạc Thiên Tinh; Trương Liêu vu hồi bất ngờ đánh úp chiếm Tân Môn Thành; Hổ Bí Song Hùng (Điển Vi + Hứa Chử) phản công truy sát.",
+    "outcome": "Mạc Thiên Tinh đại bại, mất sạch binh mã, trốn chạy tán loạn.",
+    "consequences": "Bảo vệ vững chắc cửa ngõ Uyển Châu, tiêu hao sinh lực tinh nhuệ cuối cùng của thế gia Tây Lăng.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_DAU_KIEM_DE_DO",
+    "name": "Trận Đấu Kiếm Đế Đô: Vương Việt Phá Xích Hồng Y",
+    "chapter_range": [
+      568,
+      571
+    ],
+    "location": "Đại Hán Đế Đô hoàng thành ngoại viện",
+    "sides": {
+      "player_faction": "Vương Việt (Kiếm Thánh Đại Hán)",
+      "enemy_faction": "Xích Hồng Y (Đệ nhất sát thủ Thánh Giả thiên hạ, Huyết Y Các)"
+    },
+    "tactics": "Xích Hồng Y tiềm nhập Đế đô do thám bị phát giác; Vương Việt xuất Thừa Ảnh Kiếm xuất thủ chỉ trong một hiệp thi triển Thục Sơn Thiên Kiếm.",
+    "outcome": "Vương Việt chém gãy vũ khí, đánh trọng thương Xích Hồng Y chỉ trong tích tắc.",
+    "consequences": "Xích Hồng Y tâm phục khẩu phục, giao lại toàn bộ lệnh bài và quyền kiểm soát Huyết Y Các cho Vương Việt và Đại Hán.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_CHINH_BIEN_NAM_THIEN",
+    "name": "Chính Biến Nam Thiên Thành & Cái Chết Phó Thương Quân",
+    "chapter_range": [
+      582,
+      585
+    ],
+    "location": "Nam Thiên Thành (Nam Ly)",
+    "sides": {
+      "player_faction": "Phe Phó Thương Quân (Thái tử Nam Ly, Thần Hỏa Quân thân tín)",
+      "enemy_faction": "Liên minh Cung Ngạo (Cung gia) & Tri Mặc Bạch (Thánh Giả Nam Ly)"
+    },
+    "tactics": "Tri Mặc Bạch đánh úp bất ngờ kết liễu Phó Thương Quân; Cung Ngạo đem đại quân kiểm soát toàn bộ phủ nha thành trì.",
+    "outcome": "Phó Thương Quân tử trận; Cung Ngạo tự phong Hộ Quốc Đại Tướng Quân thâu tóm chính quyền Nam Ly; Xích Hồng Y kịch chiến Tri Mặc Bạch rồi rút lui.",
+    "consequences": "Nam Ly rơi vào hỗn loạn và chia rẽ sâu sắc dưới sự cai trị độc tài của Cung Ngạo, tạo cơ hội bằng vàng cho Đại Hán.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "BTL_01_HOANG_CUNG_TAY_LANG",
+    "name": "Đột Kích Địa Lao Hoàng Cung Tây Lăng: Giải Cứu Trương Bất Minh",
+    "chapters": [
+      609,
+      610,
+      611,
+      612,
+      613,
+      614,
+      615,
+      616
+    ],
+    "location": "Hoàng Cung Tây Lăng - Tây Hoàng Thành",
+    "participants": {
+      "player_side": [
+        "Quan Vũ",
+        "Vương Việt",
+        "Cam Ninh",
+        "Ninh Thâm"
+      ],
+      "enemy_side": [
+        "Khôn Tự (Sát thủ Thiên Cơ)",
+        "Thị vệ cấm quân Tây Lăng",
+        "Văn Nhân Mục"
+      ]
+    },
+    "tactics_used": "Quan Vũ làm mũi nhọn đột kích chính diện nghi binh thu hút ám vệ; Vương Việt và Cam Ninh lặn vào đường cống ngầm tiếp cận địa lao giải cứu cựu quốc chủ Nam Ly Trương Bất Minh.",
+    "outcome": "Quan Vũ trảm sát Khôn Tự bằng một đao chấn động; toàn đội giải cứu Trương Bất Minh thoát ly an toàn về lãnh thổ Đại Hán.",
+    "significance": "Cắt đứt một nhánh gọng kìm của Thiên Cơ, mở khóa chuỗi bí mật về Thiên Cơ Đồ và sự hợp tác với Nam Ly.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_02_CAM_QUAN_THANH",
+    "name": "Trận Cẩm Quan Thành: Thần Uy Yển Nguyệt",
+    "chapters": [
+      636,
+      637,
+      638
+    ],
+    "location": "Cẩm Quan Thành - Đông Thương",
+    "participants": {
+      "player_side": [
+        "Chu Du",
+        "Quan Vũ",
+        "Trương Phi",
+        "Hoàng Trung"
+      ],
+      "enemy_side": [
+        "An Mạt Tề (An gia Đông Thương)",
+        "Quân phòng thủ Cẩm Quan Thành"
+      ]
+    },
+    "tactics_used": "Chu Du bày binh khiêu chiến chính diện nghi binh; Trương Phi dẫn 5.000 quân bí mật leo tường đột nhập vào thành nửa đêm mở cổng; Quan Vũ phi ngựa chém tướng đoạt cờ.",
+    "outcome": "Đại Hán toàn thắng chiếm trọn Cẩm Quan Thành, tướng giữ thành An Mạt Tề tự vẫn/tử trận.",
+    "significance": "Mở toang cánh cửa tiến vào trung tâm tài chính và quyền lực của hoàng triều Đông Thương.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_03_TAY_KINH_THANH_BUI_GIA",
+    "name": "Chiến Dịch Tây Kinh Thành & Diệt Tộc Bùi Gia",
+    "chapters": [
+      646,
+      647,
+      650,
+      651,
+      652
+    ],
+    "location": "Tây Kinh Thành & Bùi An Hà",
+    "participants": {
+      "player_side": [
+        "Triệu Thiên Lỗi",
+        "Hoàng Trung",
+        "Điển Vi",
+        "Hứa Chử"
+      ],
+      "enemy_side": [
+        "An Quân Thương",
+        "Bùi Thế An",
+        "Bùi Khuyết"
+      ]
+    },
+    "tactics_used": "Triệu Thiên Lỗi chỉ huy bộ binh công phá Tây Kinh Thành; Hoàng Trung phục kích bắn 3 mũi tên liên hoàn đoạt mạng An Quân Thương tại trận tiền.",
+    "outcome": "Tây Kinh Thành thất thủ rơi vào tay Hán triều; gia tộc Bùi thị bị Đông Thương thanh trừng tận diệt, dập tắt mầm họa phân tranh ở Bùi An Hà.",
+    "significance": "Thu về 1 vạn anh linh điểm cho Quý Bình An kích hoạt đợt triệu hoán 50k vàng 5 danh thần tướng.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_04_PHI_MA_THANH",
+    "name": "Đại Quyết Chiến Phi Mã Thành: Bẻ Gãy Tây Lăng Thiết Kỵ",
+    "chapters": [
+      683,
+      684,
+      685,
+      686,
+      687,
+      688,
+      689,
+      690,
+      691,
+      694,
+      695,
+      696
+    ],
+    "location": "Phi Mã Thành (Cửa Bắc và Cửa Tây)",
+    "participants": {
+      "player_side": [
+        "Quý Bình An",
+        "Triệu Vân",
+        "Trương Liêu",
+        "Lý Nho",
+        "Điển Vi",
+        "Hứa Chử",
+        "Khúc Nghĩa",
+        "Mã Quân"
+      ],
+      "enemy_side": [
+        "Văn Nhân Hạo",
+        "Vân Ninh",
+        "Tuần Diệp",
+        "140.000 Tây Lăng Thiết Kỵ"
+      ]
+    },
+    "tactics_used": "Mã Quân triển khai xe nỏ cự khôi bắn phá giáp tiễn; bố trí cọc ngầm bán mã thung sắt và thừng gạt ngựa hai người một tổ để làm què chân kỵ binh; Lý Nho chiếm cửa tây; Triệu Vân cùng 1 vạn Bạch Mã Nghĩa Tòng chém giết hỏa thiêu toàn bộ chiến cụ của Tây Lăng.",
+    "outcome": "Đại phá hoàn toàn 14 vạn thiết kỵ Tây Lăng, tướng soái Vân Ninh đại bại, Phi Mã Thành hoàn toàn thất thủ về tay Hán triều.",
+    "significance": "Tiêu diệt lực lượng quân sự nòng cốt mạnh nhất của Tây Lăng, đặt dấu chấm hết cho năng lực phòng ngự của vương triều này.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_05_TAY_HOANG_THANH_DAU_HANG",
+    "name": "Chiến Dịch Công Chiếm Tây Hoàng Thành: Thần Tiễn Diệt Vũ Hi",
+    "chapters": [
+      704,
+      705,
+      706,
+      708,
+      709,
+      710,
+      711,
+      733,
+      734
+    ],
+    "location": "Tây Hoàng Thành - Quốc Đô Tây Lăng",
+    "participants": {
+      "player_side": [
+        "Quý Bình An",
+        "Vương Việt",
+        "Hoàng Trung",
+        "Chu Du",
+        "Trương Phi"
+      ],
+      "enemy_side": [
+        "Văn Nhân Hạo (Bán Tiên)",
+        "Văn Nhân Mục",
+        "An Vũ Hi (Thật)"
+      ]
+    },
+    "tactics_used": "Vây hãm bốn mặt; Hoàng Trung dùng tuyệt kỹ 'Tiễn thôi tiễn' bắn xuyên cổ An Vũ Hi ngoài cự ly phòng thủ; Vương Việt giao đấu Bán Tiên lân giáp Văn Nhân Hạo.",
+    "outcome": "An Vũ Hi tử trận, Văn Nhân Hạo trọng thương đào tẩu, Tây Lăng Vương Văn Nhân Mục dẫn bách quan dâng biểu đầu hàng.",
+    "significance": "Tây Lăng chính thức sáp nhập vào bản đồ Đại Hán; Quý Bình An nắm quyền sinh sát toàn bộ phương Tây.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_06_AT_TUYEN_THANH",
+    "name": "Trận Phục Kích Ất Tuyên Thành: Kế Trong Kế Gia Cát Lượng",
+    "chapters": [
+      734,
+      735,
+      736,
+      737
+    ],
+    "location": "Ất Tuyên Thành - Cửa ngõ Đông Nam Ly",
+    "participants": {
+      "player_side": [
+        "Gia Cát Lượng",
+        "Triệu Vân",
+        "Triệu Chân",
+        "Bạch Mã Nghĩa Tòng"
+      ],
+      "enemy_side": [
+        "Trương Hiên Chính (An Vũ Hi giả)",
+        "An Hàn Khôi",
+        "150.000 quân An gia"
+      ]
+    },
+    "tactics_used": "Gia Cát Lượng dùng Không Thành Kế giả vờ để Triệu Vân một ngựa canh cổng; bí mật đào rỗng nền móng cả nửa tòa thành; khi quân địch ùa vào thành thì kích hoạt sập hầm hố chông và hỏa thiêu liên hoàn.",
+    "outcome": "Hơn phân nửa quân An gia bị chôn sống và tiêu diệt; An Hàn Khôi và Trương Hiên Chính tháo chạy thảm hại.",
+    "significance": "Bảo vệ nguyên vẹn lãnh thổ Nam Ly sau khi tiếp quản, thể hiện trí tuệ thần cơ diệu toán của Ngọa Long.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_07_MIENG_LON_COC",
+    "name": "Chặn Giết Miệng Lớn Cốc: Trảm Thân Đoạt Khí Vận",
+    "chapters": [
+      774,
+      775
+    ],
+    "location": "Miệng Lớn Cốc (Đại Khẩu Cốc) - Vũ Châu Lương Châu",
+    "participants": {
+      "player_side": [
+        "Quý Bình An",
+        "Triệu Vân",
+        "Vương Việt"
+      ],
+      "enemy_side": [
+        "Trương Hiên Chính (kẻ giả An Vũ Hi)"
+      ]
+    },
+    "tactics_used": "Phong tỏa hẻm núi hiểm trở độc đạo, Triệu Vân và Vương Việt đồng loạt xuất kích chém giết tận gốc.",
+    "outcome": "Trương Hiên Chính bị giết tại chỗ; hệ thống thưởng Quý Bình An 0.5 phần Thiên Địa Khí Vận.",
+    "significance": "Thu hồi thêm một nửa khí vận thiên địa, củng cố uy quyền hoàng quyền tuyệt đối của Hán Đế.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_08_HAI_CHIEN_XICH_BICH_DAI_LA",
+    "name": "Đại Hải Chiến Bắc Cực Băng Xuyên: Khổ Nhục Kế & Biển Lửa Hỏa Thiêu Hạm Đội Đại La",
+    "chapters": [
+      790,
+      792,
+      794,
+      799,
+      800,
+      804,
+      806,
+      807,
+      808,
+      809,
+      810
+    ],
+    "location": "Vùng biển Băng Xuyên - Vũ Châu Hàn Tinh Thành",
+    "participants": {
+      "player_side": [
+        "Chu Du",
+        "Cam Ninh",
+        "Trương Phi",
+        "Chu Thái",
+        "Giang Đông Thủy Quân"
+      ],
+      "enemy_side": [
+        "Bái Đăng (Thống soái Đại La)",
+        "300 vạn thủy lục đại quân Đại La"
+      ]
+    },
+    "tactics_used": "Chu Du đánh Cam Ninh nhừ tử trước mặt ba quân (Khổ Nhục Kế chương 800); Cam Ninh mang tử sĩ vờ trá hàng, khuyên Bái Đăng dùng xích sắt liên kết chiến thuyền chống say sóng; Chu Du chớp thời cơ thuận gió kết hợp sóng thần phóng hỏa thiêu rụi hạm đội xích sắt.",
+    "outcome": "Toàn bộ hạm đội hải quân Đại La bị biến thành biển lửa khổng lồ chìm xuống đáy biển; Bái Đăng thảm bại tháo chạy.",
+    "significance": "Bảo vệ lục địa Trung Nguyên thoát khỏi thảm họa diệt vong trước cuộc xâm lược 300 vạn quân hải ngoại.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_09_NGUU_GIAC_SON_MIEU_SAT",
+    "name": "Đại Chiến Núi Ngưu Giác: Lữ Bố Miểu Sát Bán Tiên",
+    "chapters": [
+      815,
+      816,
+      817,
+      818,
+      819,
+      820,
+      821
+    ],
+    "location": "Dãy Núi Ngưu Giác (Ngưu Giác Sơn)",
+    "participants": {
+      "player_side": [
+        "Quý Bình An",
+        "Lữ Bố (Nhân Tiên)",
+        "Triệu Vân",
+        "Vương Việt",
+        "Độc Nhãn Đao Khách"
+      ],
+      "enemy_side": [
+        "Quinto",
+        "Tarik",
+        "Côn Sơn (Bán Tiên)",
+        "An Thành Tiền (Bán Tiên)",
+        "200 vạn quân Đại La"
+      ]
+    },
+    "tactics_used": "Xe nỏ và kỵ binh Bạch Mã cản bước quân địch; Quý Bình An tiêu hao 500k anh linh điểm triệu hoán Lữ Bố bước vào Nhân Tiên cảnh; Lữ Bố cưỡi Bạch Long cầm kích chém bay đầu Côn Sơn trong một chớp mắt.",
+    "outcome": "Bán Tiên Côn Sơn bị miểu sát trong 1 hiệp; quân đoàn 200 vạn của Quinto tan rã kinh hoàng, Quinto bị bắt sống.",
+    "significance": "Cột mốc xác lập vị thế vô địch của Nhân Tiên Lữ Bố, bẻ gãy hoàn toàn lực lượng trên cạn của cuộc xâm lăng Đại La.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_10_VIEN_CHINH_HOA_UOC_THANH",
+    "name": "Viễn Chinh Đại La: Công Phá Hoa Ước Thành & Bại Đặc Phổ",
+    "chapters": [
+      833,
+      834,
+      835,
+      836,
+      837
+    ],
+    "location": "Hoa Ước Thành - Biên Giới Đại Lục Đại La",
+    "participants": {
+      "player_side": [
+        "Lữ Bố",
+        "Triệu Vân",
+        "Quý Bình An",
+        "Bạch Mã Nghĩa Tòng"
+      ],
+      "enemy_side": [
+        "Đặc Phổ (Bán Tiên cự phủ)",
+        "Quân đồn trú Hoa Ước Thành"
+      ]
+    },
+    "tactics_used": "Lữ Bố một kích áp đảo hoàn toàn sức mạnh của Đặc Phổ; Hán quân ào ạt công phá cổng thành, kích hoạt Chế Độ Xâm Lược của hệ thống (+2 anh linh điểm mỗi tên địch bị hạ).",
+    "outcome": "Chiếm trọn Hoa Ước Thành, Đặc Phổ ôm hận tháo lui về thỉnh cầu A Bố viện binh.",
+    "significance": "Đại Hán chính thức cắm cờ tại tân đại lục hải ngoại Đại La, mở màn chiến dịch liên hạ 4 thành trì.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_11_THU_THANH_BURTON_CHAT_TAY_DAC_PHO",
+    "name": "Trận Thủ Thành Hoa Ước: Bẻ Gãy Burton & Vây Chặt Tay Đặc Phổ",
+    "chapters": [
+      850,
+      852,
+      854,
+      856,
+      857,
+      858
+    ],
+    "location": "Hoa Ước Thành",
+    "participants": {
+      "player_side": [
+        "Quý Bình An (Dụ mồi)",
+        "Lữ Bố",
+        "Triệu Vân",
+        "Hoàng Trung"
+      ],
+      "enemy_side": [
+        "Burton (Bá Đốn)",
+        "Đặc Phổ",
+        "Trăm vạn quân Đại La"
+      ]
+    },
+    "tactics_used": "Quý Bình An đích thân cưỡi ngựa ra trận tiền làm mồi nhử lòng tham muốn bắt sống hoàng đế của Đặc Phổ; Lữ Bố và chư tướng lập tức tạo vòng vây bọc hậu, chặt đứt lìa cánh tay cầm búa của Đặc Phổ.",
+    "outcome": "Đặc Phổ cụt tay tàn phế chạy trốn (sau bị A Bố biến thành Thi Khôi); quân Burton bị đẩy lui hoàn toàn.",
+    "significance": "Bảo vệ vững chắc căn cứ bàn đạp tại Đại La, đè bẹp nhuệ khí quân đoàn bản địa.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_12_LU_BO_DAI_CHIEN_DUC_BAT_NHAN",
+    "name": "Quyết Đấu Đỉnh Cao: Lữ Bố Đả Bại Nhân Tiên Đức Bất Nhân",
+    "chapters": [
+      878,
+      879,
+      880,
+      881
+    ],
+    "location": "Chiến Trường Kinh Bắc Thành Ngoại Vi - Đại La",
+    "participants": {
+      "player_side": [
+        "Lữ Bố"
+      ],
+      "enemy_side": [
+        "Đức Bất Nhân (Nhân Tiên Tôn Thượng)"
+      ]
+    },
+    "tactics_used": "Quyết đấu đỉnh phong giữa hai đại Nhân Tiên thế giới; Lữ Bố kích hoạt Thần Phẫn và Phương Thiên Họa Kích nghiền nát kình khí của Đức Bất Nhân.",
+    "outcome": "Đức Bất Nhân trọng thương bại trận rút lui, uy danh Lữ Bố chấn động toàn cõi Đại La.",
+    "significance": "Thắng lợi quyết định giúp Đại Hán can thiệp trực tiếp vào cuộc phân tranh ngôi vị Thánh Nữ Giáo.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "BTL_THIEN_HON_THANH_01",
+    "name": "Trận Công Phá Thiên Hồn Thành Lần 1 (Gia Cát Lượng Dùng Mê Vụ)",
+    "chapters": [
+      925,
+      926,
+      928,
+      929
+    ],
+    "location": "Thiên Hồn Thành (Cửa ngõ Quốc Giáo)",
+    "participants": {
+      "han_empire": [
+        "Gia Cát Lượng",
+        "Hoa Hùng",
+        "U Châu Quân"
+      ],
+      "opponents": [
+        "Ninh Không Lâu",
+        "Quân Thủ Thành Quốc Giáo"
+      ]
+    },
+    "tactics": "Ninh Không Lâu ban đầu chắp tay nhường thành để thăm dò; Gia Cát Lượng tương kế tựu kế bố trí Mê Vụ Trận che giấu đại quân và hoàn toàn kiểm soát thành trì mà không tốn nhiều tổn thất.",
+    "outcome": "Đại Hán chiếm Thiên Hồn Thành, đặt bàn đạp tiến vào nội địa Quốc Giáo.",
+    "significance": "Mở đầu chiến dịch tiến công Quốc Giáo của Đại Hán.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_DOANH_KINH_LONG_SA",
+    "name": "Chiến Dịch Doanh Kinh & Đại Chiến Long Sa Thành",
+    "chapters": [
+      930,
+      931,
+      932,
+      948,
+      949
+    ],
+    "location": "Vùng biển Doanh Kinh, Dương Hoa Thành, Long Sa Thành",
+    "participants": {
+      "han_empire": [
+        "Quý Bình An",
+        "Chu Du",
+        "Quách Gia",
+        "Tư Mã Ý",
+        "Gia Cát Lượng",
+        "Lữ Bố",
+        "Triệu Vân",
+        "Hoa Hùng"
+      ],
+      "opponents": [
+        "Đức Bất Nhân",
+        "Thác Hạp",
+        "30 vạn Quân Doanh Kinh"
+      ]
+    },
+    "tactics": "Thủy quân Đại Hán dùng kế Thiết Tỏa Hoành Giang vượt biển đổ bộ; Gia Cát Lượng giáp công chiếm Dương Hoa Thành; Thác Hạp tại Long Sa phát điên dốc toàn bộ 30 vạn quân ra ngoài dã chiến khi hay tin Đức Bất Nhân tử trận.",
+    "outcome": "Quân Doanh Kinh tan vỡ hoàn toàn, Thác Hạp thảm bại, Đại Hán làm chủ hàng chục thành trì Doanh Kinh, cấp phát Long Nha Mễ và khoai tây vỗ an dân chúng.",
+    "significance": "Bình định trọn vẹn khu vực Doanh Kinh, xóa sổ một thế lực thù địch lớn bên sườn Đại Hán.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_KINH_BAC_THANH_TRAM_BAN_TIEN",
+    "name": "Trận Thủ Hộ Kinh Bắc Thành: Quý Bình An Trảm 3 Bán Tiên",
+    "chapters": [
+      942,
+      943,
+      945,
+      946,
+      947
+    ],
+    "location": "Kinh Bắc Thành",
+    "participants": {
+      "han_empire": [
+        "Quý Bình An",
+        "Trương Hợp",
+        "Hiên Thanh Nguyệt (20 vạn quân Thánh Nữ Giáo chi viện)"
+      ],
+      "opponents": [
+        "Ba Tôn Bán Tiên Quốc Giáo",
+        "20 vạn Đại Quân Quốc Giáo"
+      ]
+    },
+    "tactics": "Quốc Giáo mở đợt tổng tấn công bất ngờ với 3 đại Bán Tiên đột nhập vào thành mưu sát chỉ huy; Quý Bình An đích thân cầm Bá Vương Thương một mình nghênh chiến cả ba, phóng thích Thiên Mệnh Chi Khí áp chế và trảm sát cả 3 Bán Tiên tại chỗ.",
+    "outcome": "Đại Hán toàn thắng, Kinh Bắc Thành đứng vững, quân Quốc Giáo mất sạch Bán Tiên phải tháo lui trong hoảng loạn.",
+    "significance": "Khẳng định chiến lực đỉnh cao của Quý Bình An, củng cố vững chắc đại bản doanh Kinh Bắc.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_CA_BI_HOANG_THANH_NHAN_TIEN",
+    "name": "Đại Chiến Ca Bỉ Hoàng Thành: Nhân Tiên Hỗn Chiến & Triệu Vân Đột Phá",
+    "chapters": [
+      973,
+      974,
+      975,
+      976,
+      980,
+      981,
+      983,
+      986,
+      987,
+      989
+    ],
+    "location": "Ca Bỉ Hoàng Thành",
+    "participants": {
+      "han_empire": [
+        "Lữ Bố",
+        "Triệu Vân"
+      ],
+      "opponents": [
+        "Ninh Không Lâu",
+        "Cầu Hòa",
+        "Thi Khôi Vương (Quốc Giáo)",
+        "A Bố (Ca Bỉ)"
+      ]
+    },
+    "tactics": "Ninh Không Lâu và Cầu Hòa dùng bí thuật liên thể 'Hợp Thể Vây Khốn Ấn' vây khốn Lữ Bố; Lữ Bố bộc phát ma thần lực lấy 1 địch 2 kìm chân địch; Thi Khôi Vương cản đường; Triệu Vân trong tình thế thập tử nhất sinh đã kích phát tiềm năng, chính thức đột phá cảnh giới Nhân Tiên (Ch.989).",
+    "outcome": "Lữ Bố và Triệu Vân phá tan vòng vây an toàn, Quốc Giáo thất bại trong âm mưu diệt tướng, Quỷ Vương nhân cơ hội soán quyền Quốc Giáo.",
+    "significance": "Trận chiến quy tụ đông đảo Nhân Tiên nhất từ trước đến nay, đánh dấu sự ra đời của Nhân Tiên Triệu Vân.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_VIEM_HOA_BACH_KHONG",
+    "name": "Trận Cường Công Viêm Hỏa & Hỏa Thiêu Bách Khổng Thành",
+    "chapters": [
+      998,
+      1001,
+      1002,
+      1003
+    ],
+    "location": "Viêm Hỏa Thành & Bách Khổng Thành",
+    "participants": {
+      "han_empire": [
+        "Lý Nho",
+        "U Châu Quân"
+      ],
+      "opponents": [
+        "Bạch Bào Tế Tự & Quân Thủ Thành Quốc Giáo"
+      ],
+      "third_party": [
+        "Quỷ Vương"
+      ]
+    },
+    "tactics": "Quỷ Vương đánh vào Viêm Hỏa Thành chém đầu tế tự; Lý Nho thừa thế tấn công Bách Khổng Thành, sử dụng độc kế hỏa công phóng hỏa thiêu rụi đồ thành tiêu diệt toàn bộ lực lượng kháng cự.",
+    "outcome": "Đại Hán chiếm trọn Bách Khổng Thành, bẻ gãy hành lang phòng thủ phía Tây của Quốc Giáo.",
+    "significance": "Tạo đường thông thương quân sự nối Doanh Kinh với trung tâm Quốc Giáo.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_THIEN_HON_THANH_02",
+    "name": "Trận Công Phá Thiên Hồn Thành Lần 2 (Tiên Đăng Tử Sĩ Trèo Tường)",
+    "chapters": [
+      1021,
+      1022
+    ],
+    "location": "Thiên Hồn Thành",
+    "participants": {
+      "han_empire": [
+        "Gia Cát Lượng",
+        "Trương Hợp",
+        "5000 Tiên Đăng Tử Sĩ"
+      ],
+      "opponents": [
+        "Quân Trấn Thủ Quốc Giáo"
+      ]
+    },
+    "tactics": "Gia Cát Lượng dùng xe công thành, xe đâm và nỏ hạng nặng dồn ép hỏa lực chính diện; đồng thời lệnh cho Trương Hợp dẫn 5.000 Tiên Đăng Tử Sĩ bí mật vượt vách núi hai bên sườn, trèo thẳng lên mặt thành đánh thọc sườn.",
+    "outcome": "Thành vỡ trong thời gian ngắn, Đại Hán hoàn toàn làm chủ Thiên Hồn Thành.",
+    "significance": "Chấm dứt hoàn toàn sự kiểm soát của Quốc Giáo tại cửa ngõ phía Bắc.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_QUANG_HOA_THANH_HOANG_TRUNG",
+    "name": "Trận Quang Hoa Thành & Hoàng Trung Phục Kích Quỷ Vương",
+    "chapters": [
+      1025,
+      1027,
+      1028
+    ],
+    "location": "Quang Hoa Thành và hẻm núi phụ cận",
+    "participants": {
+      "han_empire": [
+        "Hoàng Trung",
+        "Cẩm Y Vệ"
+      ],
+      "opponents": [
+        "Quỷ Vương",
+        "Tử Sĩ Quỷ Tộc"
+      ]
+    },
+    "tactics": "Quỷ Vương ám sát Thánh Quang Đại Tế Ti rồi phóng hỏa đồ thành chạy trốn; Hoàng Trung mai phục sẵn bên hẻm núi hiểm trở, giương Thần Cung bắn phát tên xuyên tâm khiến Quỷ Vương trọng thương thổ huyết.",
+    "outcome": "Quỷ Vương bị trọng thương nặng phải lẩn trốn, kế hoạch chiếm trọn Quang Hoa Thành của Quỷ Vương phá sản.",
+    "significance": "Đập tan nhuệ khí của Quỷ Vương, bảo vệ mạng lưới tình báo Đại Hán.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_BAC_DUYEN_THANH_TRAM_HAO",
+    "name": "Huyết Chiến Bắc Duyên Thành: Trầm Hạo Đọa Ma Quyết Chiến Thi Khôi Vương",
+    "chapters": [
+      1040,
+      1041,
+      1045,
+      1048,
+      1050
+    ],
+    "location": "Bắc Duyên Thành",
+    "participants": {
+      "han_empire": [
+        "Trầm Hạo",
+        "Hoàng Trung",
+        "Bàng Thống"
+      ],
+      "opponents": [
+        "Thi Khôi Vương",
+        "A Bố",
+        "Quý Vô Sinh",
+        "Quý Dương"
+      ]
+    },
+    "tactics": "Hoàng Trung bắn chết Quý Dương; Thi Khôi Vương và A Bố dồn ép tàn nhẫn; Trầm Hạo trong bước đường cùng bộc phát chấp niệm cực đoan đọa ma, đột phá cảnh giới Nhân Tiên, cầm song chùy tử chiến nện nát giáp trụ Thi Khôi Vương.",
+    "outcome": "Đẩy lui đợt tập kích của đối phương, Trầm Hạo trọng thương ngất lịm vì nhiễm kịch độc hàn thi.",
+    "significance": "Chiến công phi thường của Trầm Hạo giúp giữ vững phòng tuyến trước hai quái vật Nhân Tiên.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_THIEN_THACH_THANH_BAC_MINH",
+    "name": "Chiến Dịch Thiên Thạch Thành: Triệu Vân Cắt Thịt Đấu Bắc Minh",
+    "chapters": [
+      1080,
+      1081,
+      1082,
+      1098,
+      1099,
+      1100
+    ],
+    "location": "Thiên Thạch Thành (Cực Bắc U Châu)",
+    "participants": {
+      "han_empire": [
+        "Triệu Vân",
+        "Pháp Chính",
+        "Bạch Mã Nghĩa Tòng"
+      ],
+      "opponents": [
+        "Bắc Minh",
+        "Bắc Mạch Sơn",
+        "Chiến Binh Thiên Bắc Thị"
+      ]
+    },
+    "tactics": "Triệu Vân công kích chiếm nửa Bắc U rồi bao vây Thiên Thạch Thành; Bắc Minh xuất quan mang theo Thánh Hỏa, bắn ra gai độc lam hỏa đâm trúng vai và cánh tay Triệu Vân; Triệu Vân quả đoán rút gươm tự cắt từng mảng thịt nhiễm độc ngay trước mặt quân địch để giữ tính mạng và tiếp tục nghênh chiến.",
+    "outcome": "Bắc Minh kinh hãi trước dũng khí của Triệu Vân nên lui về thành; Triệu Vân bảo toàn tính mạng nhưng kiệt sức hôn mê, quân Hán tạm lui lập trại phòng thủ.",
+    "significance": "Hành động tự cắt thịt bài độc của Triệu Vân làm chấn động toàn bộ phương Bắc, tạo tiền đề cho Quý Bình An đích thân thân chinh.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_LINH_ICH_THANH_LU_BO",
+    "name": "Trận Thu Hồi Linh Ích Thành: Lữ Bố Thuấn Sát Bán Tiên",
+    "chapters": [
+      1137,
+      1140,
+      1141
+    ],
+    "location": "Linh Ích Thành",
+    "participants": {
+      "han_empire": [
+        "Lữ Bố",
+        "Gia Cát Lượng"
+      ],
+      "opponents": [
+        "Bán Tiên Thủ Thành Quốc Giáo",
+        "Quân Quốc Giáo"
+      ]
+    },
+    "tactics": "Lữ Bố cưỡi Xích Thố xông thẳng vào trận tiền, vung Phương Thiên Họa Kích chém bay đầu Bán Tiên địch chỉ trong một chớp mắt (thuấn sát), khiến toàn quân địch vỡ tổ.",
+    "outcome": "Đại Hán thu hồi Linh Ích Thành nhanh chóng, tiêu diệt toàn bộ nhóm chỉ huy của Quốc Giáo.",
+    "significance": "Tái lập quyền kiểm soát trung tâm tam giác Thiên Hồn - Linh Ích - Bách Khổng.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_TAM_TUONG_DAU_BAC_MINH",
+    "name": "Trận Đại Chiến Thảo Nguyên Cực Bắc: Triệu Vân - Quan Vũ - Trương Phi Đấu Bắc Minh",
+    "chapters": [
+      1160,
+      1161,
+      1162
+    ],
+    "location": "Bình nguyên tuyết Cực Bắc",
+    "participants": {
+      "han_empire": [
+        "Triệu Vân",
+        "Quan Vũ",
+        "Trương Phi",
+        "Bạch Mã Nghĩa Tòng"
+      ],
+      "opponents": [
+        "Bắc Minh",
+        "Thiên Bắc Thị Quân"
+      ]
+    },
+    "tactics": "Triệu Vân nén đau dẫn Bạch Mã Nghĩa Tòng cảm tử xung phong; Quan Vũ kéo đại đao Yển Nguyệt, Trương Phi múa Bát Xà Mâu kịp thời xông tới hình thành thế trận ba góc quần thảo giam hãm kiếm khí hàn băng của Bắc Minh.",
+    "outcome": "Bắc Minh không thể bứt phá, buộc phải đình chiến rút lui; giữ vững tuyệt đối phòng tuyến U Châu.",
+    "significance": "Tái hiện hình ảnh Tam Anh chiến Lữ Bố nhưng lần này là ba đại thần tướng Hán hợp lực chặn đứng đệ nhất thiên tài Cực Bắc.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_TAY_LUNG_THANH_VUONG_VIET",
+    "name": "Huyết Chiến Tây Lũng Thành: Vương Việt Chiến Quý Vô Sinh",
+    "chapters": [
+      1166,
+      1169,
+      1184
+    ],
+    "location": "Tây Lũng Thành - Tây Môn Quan",
+    "participants": {
+      "han_empire": [
+        "Vương Việt",
+        "Đại Hán Công Thành Quân"
+      ],
+      "opponents": [
+        "Quý Vô Sinh",
+        "Quý Gia Quân"
+      ]
+    },
+    "tactics": "Vương Việt mở Kiếm Đạo Không Gian phong tỏa đối phương; Quý Vô Sinh thi triển Vô Sinh Kiếm Quyết đối công kịch liệt; Đại Hán không tiếc giá nào nã hỏa lực phá vỡ cửa ải.",
+    "outcome": "Quý Vô Sinh bị thương phải rút lui, Đại Hán đánh chiếm Tây Lũng Thành và làm chủ Tây Môn Quan.",
+    "significance": "Chọc thủng cứ điểm hiểm trở nhất của Quý gia tại phía Tây.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_KINH_BAC_THANH_TA_TU_A_BO",
+    "name": "Đại Chiến Phòng Ngự Kinh Bắc Thành: Tả Từ Bố Trận, Văn Ương Tác Chiến & Cam Ninh Chi Viện",
+    "chapters": [
+      1163,
+      1164,
+      1174,
+      1175,
+      1176,
+      1178,
+      1179
+    ],
+    "location": "Kinh Bắc Thành",
+    "participants": {
+      "han_empire": [
+        "Lữ Bố",
+        "Tả Từ",
+        "Quách Gia",
+        "Trình Dục",
+        "Văn Ương",
+        "Cam Ninh",
+        "Phượng Hoàng (trợ chiến)"
+      ],
+      "opponents": [
+        "A Bố",
+        "Thi Khôi Vương",
+        "Quân Đoàn Cự Nhân An Tức"
+      ]
+    },
+    "tactics": "A Bố vây 4 mặt thành công kích dữ dội; Tả Từ cải tổ toàn bộ vị trí máy bắn đá và nỏ xa xen kẽ theo Bát Quái Cửu Cung, dùng Long Kỳ điều khiển hỏa lực đan chéo tiêu diệt sinh lực địch; Văn Ương xuất chiến chém tướng bờ sông; Cam Ninh dẫn chiến hạm nã pháo; Phượng Hoàng phun lửa thiêu rụi cánh quân bao vây; Lữ Bố kiềm chế A Bố & Thi Khôi Vương.",
+    "outcome": "Quân A Bố thương vong nặng nề không thể phá thành, A Bố hạ lệnh rút lui toàn diện.",
+    "significance": "Thắng lợi phòng thủ vĩ đại nhất của Đại Hán, bảo vệ an toàn trái tim chiến lược Kinh Bắc Thành.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "BTL_1206_LINH_ICH_THANH",
+    "name": "Đại Chiến Linh Ích Thành & Thiên Hồn Thành",
+    "chapters": [
+      1206,
+      1207,
+      1208,
+      1209,
+      1210
+    ],
+    "location": "Linh Ích Thành & Thiên Hồn Thành",
+    "terrain_type": "Thủ thành & Huyết chiến dã ngoại",
+    "player_commanders": [
+      "Cao Thuận",
+      "Phan Phượng",
+      "Gia Cát Lượng"
+    ],
+    "enemy_commanders": [
+      "Tử Ngọc Sùng"
+    ],
+    "player_troops": "Hãm Trận Doanh & Thủ thành quân Đại Hán (khoảng 30.000 quân)",
+    "enemy_troops": "100.000 (10 vạn) đại quân Quốc Giáo",
+    "key_stratagem": "Cao Thuận chỉ huy Hãm Trận Doanh kết trận kiên thủ. Phan Phượng xuất chiến nghênh địch nhưng bị Tử Ngọc Sùng dùng hàn băng thương nhất kích tất sát.",
+    "outcome": "Phan Phượng tử trận. Quý Bình An xóa bỏ Phan Phượng trong hệ thống, thu được 6 Anh Hồn Châu chuyển giao cho Quan Vũ đột phá cảnh giới Nhân Tiên.",
+    "rewards": "Mở khóa cảnh giới Nhân Tiên cho Quan Vũ; bảo toàn được bộ khung chiến lược của Gia Cát Lượng tại Bách Khổng Thành.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1212_BACH_KHONG_THANH",
+    "name": "Đại Chiến Bách Khổng Thành: Quan Vũ Trảm Ngân Giải",
+    "chapters": [
+      1212,
+      1213,
+      1214,
+      1236,
+      1237,
+      1238,
+      1239,
+      1240
+    ],
+    "location": "Bách Khổng Thành",
+    "terrain_type": "Thành lũy phòng ngự đặc thù",
+    "player_commanders": [
+      "Quan Vũ",
+      "Mã Siêu",
+      "Hình Đạo Vinh",
+      "Gia Cát Lượng"
+    ],
+    "enemy_commanders": [
+      "Tử Ngọc Sùng",
+      "Ngân Giải"
+    ],
+    "player_troops": "U Châu Quân & Kỵ Binh Tây Lương (khoảng 50.000 quân)",
+    "enemy_troops": "150.000 quân Thiên Bắc Thị & Quốc Giáo",
+    "key_stratagem": "Quan Vũ giả vờ thất thế rút lui (Dương Bại / Đà Đao Kế). Ngân Giải ngạo mạn khinh địch thúc ngựa đuổi sát, Quan Vũ đột ngột xoay đao chém đứt đôi Ngân Giải rồi bộc phát uy áp Nhân Tiên chém lui Tử Ngọc Sùng.",
+    "outcome": "Đại tướng Bán Tiên Ngân Giải bị chém chết tại chỗ. Tử Ngọc Sùng kinh hãi trước sức mạnh Nhân Tiên của Quan Vũ, hạ lệnh toàn quân lui binh.",
+    "rewards": "Giữ vững Bách Khổng Thành, bẻ gãy nhuệ khí liên quân Quốc Giáo - Thiên Bắc Thị.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1221_QUOC_AN_THANH",
+    "name": "Chiến Dịch Đột Kích Quốc An Thành",
+    "chapters": [
+      1221,
+      1222
+    ],
+    "location": "Quốc An Thành (Cửa ngõ Quốc Giáo)",
+    "terrain_type": "Dạ tập công phá cổng thành",
+    "player_commanders": [
+      "Lữ Bố"
+    ],
+    "enemy_commanders": [
+      "Định Quốc An (Chủ tướng thủ thành)"
+    ],
+    "player_troops": "Tiên Đăng Tử Sĩ (khoảng 5.000 dũng sĩ)",
+    "enemy_troops": "Quân thủ thành Quốc Giáo (khoảng 20.000 quân)",
+    "key_stratagem": "Lợi dụng đêm tối mịt mùng, Lữ Bố dẫn đầu cảm tử quân lặn sát chân thành, bất thần leo lên tường thành vung Phương Thiên Họa Kích chém bay đại đao của Định Quốc An rồi chém chết hắn trong 1 kích.",
+    "outcome": "Đại Hán chiếm trọn Quốc An Thành nhanh chóng mà không cho quân địch kịp cứu viện.",
+    "rewards": "Chiếm giữ Quốc An Thành, mở đường tiến thẳng vào trung tâm đầu não Quốc Giáo.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1259_THANH_DUC_DAI_SAM_LAM",
+    "name": "Trận Huyết Chiến Phá Vây: Nhân Thể Tạc Đạn",
+    "chapters": [
+      1251,
+      1252,
+      1253,
+      1254,
+      1255,
+      1256,
+      1257,
+      1258,
+      1259,
+      1260,
+      1261,
+      1262,
+      1266,
+      1267
+    ],
+    "location": "Ngoại vi Thánh Đức Đại Sâm Lâm",
+    "terrain_type": "Rừng rậm rậm rạp & Chiến hào vây bọc",
+    "player_commanders": [
+      "Quý Bình An",
+      "Lữ Bố",
+      "Bàng Thống"
+    ],
+    "enemy_commanders": [
+      "Cầu Sinh",
+      "Cầu Hòa"
+    ],
+    "player_troops": "Đại quân Đại Hán (khoảng 50.000 quân)",
+    "enemy_troops": "200.000 (20 vạn) Hộ Giáo Vệ Quốc Giáo",
+    "key_stratagem": "Bàng Thống sáng chế chiến thuật 'Nhân Thể Tạc Đạn', tuyển 300 cảm tử quân khoác Lưu Hỏa nổ phá bung hai lớp thuẫn trận 3 vạn quân địch; Lữ Bố dũng mãnh mở đường máu hộ tống Quý Bình An phá vây.",
+    "outcome": "Quý Bình An và Lữ Bố phá tan vòng vây 20 vạn quân thoát ra an toàn; Cam Ninh kịp thời đưa quân tới ứng cứu.",
+    "rewards": "Bảo toàn tính mạng Hán Đế; giáng đòn tâm lý kinh hoàng vào đội quân cuồng tín của Quốc Giáo.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1271_THUY_CONG_THIEN_SON",
+    "name": "Chiến Dịch Thủy Công: Doanh Kinh Đê Đập Tạc Sơn",
+    "chapters": [
+      1271,
+      1272,
+      1273,
+      1274,
+      1275
+    ],
+    "location": "Thiên Sơn Thành & Dãy Núi Doanh Kinh",
+    "terrain_type": "Núi cao & Đê đập dẫn nước lũ",
+    "player_commanders": [
+      "Tả Từ",
+      "Lý Nho",
+      "Tư Mã Ý",
+      "Đào Nhã"
+    ],
+    "enemy_commanders": [
+      "Thủ thành tướng lĩnh Quốc Giáo",
+      "Tháp Ngân"
+    ],
+    "player_troops": "Công binh Đào Nhã & Phân đội bộc phá",
+    "enemy_troops": "Toàn bộ quân dân và quân đồn trú Thiên Sơn Thành (hơn 10 vạn quân)",
+    "key_stratagem": "Lợi dụng mưa to liên tiếp 12 ngày, Đào Nhã xây đê đập tích lũy hàng triệu khối nước lũ; Lý Nho và Tư Mã Ý dùng Lưu Hỏa tạc nổ chân núi, xả cuồng lưu nhấn chìm toàn bộ thành quách.",
+    "outcome": "Thiên Sơn Thành ngập trong biển nước, quân Quốc Giáo bị tiêu diệt hoàn toàn; Lý Nho chỉ đạo hỏa thiêu thi thể tránh đại dịch.",
+    "rewards": "Xóa sổ hoàn toàn cứ điểm Thiên Sơn Thành, đập tan cánh sườn phía bắc của Quốc Giáo.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1292_DIET_QUOC_GIAO",
+    "name": "Chiến Dịch Diệt Quốc Giáo tại Thánh Đức Đại Sâm Lâm",
+    "chapters": [
+      1292,
+      1294,
+      1297,
+      1298,
+      1300,
+      1308,
+      1316,
+      1318,
+      1321,
+      1323,
+      1330,
+      1332,
+      1337
+    ],
+    "location": "Thánh Đức Đại Sâm Lâm & Bắc Duyên Hà",
+    "terrain_type": "Công thành rừng thiêng & Thủy chiến sông Bắc Duyên",
+    "player_commanders": [
+      "Lữ Bố",
+      "Triệu Vân",
+      "Chu Du",
+      "Pháp Chính",
+      "Bàng Thống"
+    ],
+    "enemy_commanders": [
+      "Cầu Hòa",
+      "Cầu Sinh",
+      "Ninh Không Lâu"
+    ],
+    "player_troops": "150.000 quân Đại Hán đa binh chủng",
+    "enemy_troops": "Quân tàn dư Quốc Giáo & Hộ Giáo Vệ (khoảng 150.000 quân)",
+    "key_stratagem": "Tứ diện giáp kích: Chu Du tiếp viện đường thủy, Lữ Bố và Triệu Vân tấn công chính diện, hỏa thiêu bìa rừng ép Cầu Hòa bỏ thành tháo chạy; Bàng Thống cam tử chặn đường rút lui.",
+    "outcome": "Quốc Giáo chính thức sụp đổ; Ninh Không Lâu bị Cầu Hòa thôn phệ; Bàng Thống chịu chết kích hoạt Niết Bàn tái sinh; Cầu Hòa mang tàn quân chạy trốn.",
+    "rewards": "Xóa sổ 1 trong 4 đại thế lực thống trị Đại La; chiếm quyền kiểm soát Thánh Đức Đại Sâm Lâm.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1364_KINH_BAC_THANH",
+    "name": "Huyết Chiến Kinh Bắc Thành: Lữ Bố Đột Phá Nhân Tiên",
+    "chapters": [
+      1364,
+      1365,
+      1366,
+      1367,
+      1368,
+      1369
+    ],
+    "location": "Kinh Bắc Thành (U Châu Đại La)",
+    "terrain_type": "Thủ thành & Huyết chiến trước cửa hoàng cung",
+    "player_commanders": [
+      "Quý Bình An",
+      "Lữ Bố",
+      "Quách Gia"
+    ],
+    "enemy_commanders": [
+      "Bắc Minh (Nhân Tiên)",
+      "Tử Ngọc Sùng (Nhân Tiên)"
+    ],
+    "player_troops": "Cấm Vệ Quân Đại Hán",
+    "enemy_troops": "Đại quân tinh nhuệ liên minh Bắc U - Thiên Bắc Thị",
+    "key_stratagem": "Bắc Minh và Tử Ngọc Sùng thừa dịp Triệu Vân vắng mặt để tập kích Quý Bình An. Quý Bình An kích hoạt hệ thống dồn điểm võ lực giúp Lữ Bố đột phá chạm mốc 160 Nhân Tiên. Lữ Bố tỏa ngân quang tinh hà đánh gãy ma đao của Bắc Minh, bức lui hai đại Nhân Tiên.",
+    "outcome": "Đại Hán toàn thắng phòng thủ Kinh Bắc Thành; bẻ gãy ý chí của Bắc Minh và Tử Ngọc Sùng.",
+    "rewards": "Lữ Bố trở thành Nhân Tiên vô địch thiên hạ; Quý Bình An khẳng định uy thế đế vương.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1380_HOANG_HON_CHI_SAM",
+    "name": "Trận Hoàng Hôn Chi Sâm: Tam Cường Vây Giết Bắc Minh",
+    "chapters": [
+      1380,
+      1381,
+      1382,
+      1383
+    ],
+    "location": "Hoàng Hôn Chi Sâm",
+    "terrain_type": "Phục kích rừng rậm",
+    "player_commanders": [
+      "Quý Bình An",
+      "Lữ Bố",
+      "Trần Hạo"
+    ],
+    "enemy_commanders": [
+      "Bắc Minh"
+    ],
+    "player_troops": "Cao thủ tinh nhuệ Đại Hán",
+    "enemy_troops": "Tàn quân Bắc U",
+    "key_stratagem": "Lợi dụng địa hình Hoàng Hôn Chi Sâm khép chặt vòng vây, Lữ Bố làm mũi nhọn áp chế ma đao, phối hợp cao thủ Đại Hán bọc hậu diệt sạch đường lui.",
+    "outcome": "Bắc Minh bị đánh trọng thương phế bỏ hoàn toàn công lực, thế lực Bắc U tan rã.",
+    "rewards": "Triệt tiêu vĩnh viễn mối họa xâm lăng từ cực bắc Đại La.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1387_THIEN_THACH_THANH",
+    "name": "Trận Thiên Thạch Thành: Tử Long Ngã Xuống & Tái Sinh",
+    "chapters": [
+      1387,
+      1388,
+      1389,
+      1391,
+      1395
+    ],
+    "location": "Thiên Thạch Thành",
+    "terrain_type": "Trùng vây dã ngoại",
+    "player_commanders": [
+      "Triệu Vân"
+    ],
+    "enemy_commanders": [
+      "A Bố",
+      "Tử Ngọc Sùng"
+    ],
+    "player_troops": "Bạch Mã Nghĩa Tòng (khoảng vài ngàn quân)",
+    "enemy_troops": "Liên quân áp đảo của A Bố và Tử Ngọc Sùng (vài vạn quân)",
+    "key_stratagem": "Triệu Vân dốc hết hỏa lực 'Long Đảm', liều chết tấn công Tử Ngọc Sùng đâm thủng vai trái hắn, dù trúng nhát đao sau lưng của A Bố vẫn đứng sừng sững không chịu ngã xuống.",
+    "outcome": "Triệu Vân tử chiến. Quý Bình An thu hồi thi thể và dùng thần y Hoa Đà thi triển 'Xuân Về Linh Hồn' hồi sinh Triệu Vân hoàn mỹ.",
+    "rewards": "Tử Ngọc Sùng bị trọng thương; Triệu Vân được hồi sinh nguyên vẹn để chuẩn bị cho chiến dịch Tây Môn Quan.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1403_TAY_MON_QUAN",
+    "name": "Chiến Dịch Tái Chiếm Tây Môn Quan & Bắt Phượng Hoàng",
+    "chapters": [
+      1403,
+      1405,
+      1407,
+      1408,
+      1410,
+      1412,
+      1413,
+      1415
+    ],
+    "location": "Tây Môn Quan & Không phận Kinh Bắc",
+    "terrain_type": "Hiểm quan công thành & Bẫy lưới thiên la địa võng",
+    "player_commanders": [
+      "Triệu Vân (hồi sinh)",
+      "Lữ Bố",
+      "Quách Gia"
+    ],
+    "enemy_commanders": [
+      "Tử Ngọc Sùng",
+      "Phượng Hoàng"
+    ],
+    "player_troops": "160.000 quân Đại Hán",
+    "enemy_troops": "Quân Thiên Bắc Thị & Thần thú Phượng Hoàng",
+    "key_stratagem": "Triệu Vân đột ngột xuất hiện tấn công Cửa Đông khiến địch hoảng loạn; Quách Gia giăng lưới 'Thiên La Địa Võng' thủy hỏa bất xâm bắt sống Phượng Hoàng.",
+    "outcome": "Đại Hán tái chiếm trọn vẹn Tây Môn Quan; Phượng Hoàng bị giam cầm; Tử Ngọc Sùng tháo chạy đầu hàng A Bố.",
+    "rewards": "Kiểm soát yết hầu phòng thủ Đại La; bắt giữ được Đồ Đằng Chi Thần.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1426_DINH_THANH_THANH",
+    "name": "Đại Chiến Định Thánh Thành",
+    "chapters": [
+      1426,
+      1428,
+      1432,
+      1436,
+      1438,
+      1444,
+      1445
+    ],
+    "location": "Định Thánh Thành",
+    "terrain_type": "Đại quy mô công thủ thành lũy",
+    "player_commanders": [
+      "Lữ Bố",
+      "Quý Thiên Tứ",
+      "Giả Hủ (xuất sơn)"
+    ],
+    "enemy_commanders": [
+      "A Bố"
+    ],
+    "player_troops": "Đại quân Đại Hán",
+    "enemy_troops": "Đại quân Thiên A Thị",
+    "key_stratagem": "Giả Hủ hiến kế đoạt ưu thế, Lữ Bố kềm tỏa phản sát đòn vây giết của A Bố; Quý Thiên Tứ thần dũng phá tung cửa tây thành.",
+    "outcome": "A Bố buộc phải rút lui; Đại Hán chiếm hoàn toàn Định Thánh Thành.",
+    "rewards": "Đẩy lùi thế lực Thiên A Thị về phía nam, giải phóng các thành trì then chốt.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1471_TRAM_NHAN_TIEN",
+    "name": "Trận Cửa Tây Thiên A: Lữ Bố Trảm Nhân Tiên",
+    "chapters": [
+      1470,
+      1471,
+      1472,
+      1473
+    ],
+    "location": "Cửa Tây Thiên A Thị",
+    "terrain_type": "Đột kích trận địa địch",
+    "player_commanders": [
+      "Lữ Bố"
+    ],
+    "enemy_commanders": [
+      "Hoàng Thành Vệ Thống Lĩnh (Nhân Tiên)"
+    ],
+    "player_troops": "Lữ Bố đơn thương độc mã cưỡi Bạch Long",
+    "enemy_troops": "Mấy ngàn Cấm Vệ Thuẫn Giáp Quân Thiên A Thị",
+    "key_stratagem": "Lữ Bố bất chấp vòng vây vạn quân, dẫn kích chém thẳng vào thống lĩnh; Bạch Long tung vó bay qua đầu bộ binh tạo thế kích sát từ trên không.",
+    "outcome": "Lữ Bố một kích đâm xuyên ngực chém chết Hoàng Thành Vệ Thống Lĩnh (Nhân Tiên) ngay giữa quân địch.",
+    "rewards": "Uy danh Lữ Bố chấn động thiên hạ; chặt đứt cánh tay cấm vệ mạnh nhất của A Bố.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1480_HOA_THIEU_KINH_BAC",
+    "name": "Bi kịch Kinh Bắc Thành: Quách Gia & Quý Thiên Tứ Hy Sinh",
+    "chapters": [
+      1480,
+      1481,
+      1482,
+      1483,
+      1484,
+      1485,
+      1486
+    ],
+    "location": "Kinh Bắc Thành",
+    "terrain_type": "Đô thành hỏa thiêu đồng quy vu tận",
+    "player_commanders": [
+      "Quách Gia",
+      "Quý Thiên Tứ"
+    ],
+    "enemy_commanders": [
+      "A Bố",
+      "Phượng Hoàng"
+    ],
+    "player_troops": "Tử sĩ Đại Hán",
+    "enemy_troops": "Quân chủ lực Thiên A Thị",
+    "key_stratagem": "Quách Gia dùng chính thân mình và thành trì làm mồi nhử; chôn sẵn Lưu Hỏa tự bốc cháy, khóa chặt cổng thành để tiêu diệt chủ lực A Bố và diệt trừ mầm mống nội loạn vương quyền.",
+    "outcome": "Kinh Bắc Thành hóa thành tro bụi; Quách Gia và Quý Thiên Tứ anh dũng hy sinh; A Bố và Phượng Hoàng chật vật đào thoát.",
+    "rewards": "Bảo vệ ngai vàng tuyệt đối vững chắc cho Quý Bình An; đập tan đợt phản công chiến lược của A Bố.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "BTL_1496_THIEN_BANG_DIA_LIET",
+    "name": "Đại Quyết Chiến Thánh Đức Đại Sâm Lâm: Táng Diệt Thiên A Thị",
+    "chapters": [
+      1496,
+      1497,
+      1498,
+      1499,
+      1500,
+      1501,
+      1502,
+      1503,
+      1504,
+      1505,
+      1506,
+      1507
+    ],
+    "location": "Thánh Đức Đại Sâm Lâm",
+    "terrain_type": "Bình địa & Hệ thống địa đạo bộc phá ngầm",
+    "player_commanders": [
+      "Quý Bình An",
+      "Lữ Bố",
+      "Vương Việt",
+      "Tuân Úc"
+    ],
+    "enemy_commanders": [
+      "A Bố (Ngũ Thân)",
+      "Kim Khuê"
+    ],
+    "player_troops": "Toàn bộ lực lượng quân thần Đại Hán",
+    "enemy_troops": "Hơn 600.000 (60 vạn) đại quân Thiên A Thị",
+    "key_stratagem": "Vương Việt dùng kiếm thuật dĩ mệnh hoán mệnh trảm sát 1 A Bố; Quý Bình An câu giờ quyết chiến trước thành, sau đó kích hoạt toàn bộ kho Lưu Hỏa ngầm tạo nên 'Thiên Băng Địa Liệt' san phẳng cả khu rừng.",
+    "outcome": "Đại quân 60 vạn Thiên A Thị và toàn bộ các phân thân A Bố bị chôn vùi hoàn toàn; Vương Việt và Kim Khuê tử trận; Lữ Bố hộ giá Quý Bình An an toàn.",
+    "rewards": "Thiên A Thị hoàn toàn diệt vong; Đại Hán chính thức hoàn thành đại nghiệp nhất thống thiên hạ Đại La.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  }
+]

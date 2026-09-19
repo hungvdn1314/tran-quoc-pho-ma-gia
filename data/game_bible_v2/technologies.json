@@ -1,0 +1,358 @@
+[
+  {
+    "id": "TECH_THAU_HOA_CAO",
+    "name": "Thấu Hoa Cao (Xà Phòng Tinh Chế)",
+    "inventor": "Quý Bình An",
+    "chapter_introduced": 8,
+    "category": "Thương Nghiệp & Mỹ Phẩm",
+    "effect_and_usage": "Sản phẩm tẩy rửa vệ sinh cao cấp kết hợp dầu thực vật, kiềm tro và hương hoa thiên nhiên. Giúp Quý Bình An độc quyền thị trường hoa lâu quý tộc, thu về hàng vạn lượng vàng ròng cung cấp cho hệ thống.",
+    "impact": "Tạo nền tảng kinh tế ban đầu vững chắc để triệu hoán các tướng lĩnh đắt giá như Giả Hủ và Điển Vi.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_THIET_DAP",
+    "name": "Móng Ngựa Sắt (Thiết Đề / Thiết Đạp)",
+    "inventor": "Quý Bình An (Thiên Công Thần Tượng chế tác)",
+    "chapter_introduced": 176,
+    "category": "Quân Sự & Kỵ Binh",
+    "effect_and_usage": "Miếng sắt hình móng ngựa đóng vào chân ngựa giúp bảo vệ móng không bị nứt vỡ khi di chuyển trên địa hình đá gồ ghề và đường trường.",
+    "impact": "Tăng độ bền, sức tải và tốc độ di chuyển của kỵ binh Bạch Mã Nghĩa Tòng lên gấp 3 lần, giúp kỵ binh Quý gia di chuyển thần tốc không đối thủ nào sánh kịp.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_HOA_DUOC_SO_KHAI",
+    "name": "Hỏa Dược & Ống Trúc Phát Nổ",
+    "inventor": "Cơ Vô Pháp (dựa trên hướng dẫn của Quý Bình An và khoáng thạch Đào Nhã)",
+    "chapter_introduced": 227,
+    "category": "Quân Sự & Vũ Khí Nổ",
+    "effect_and_usage": "Hỗn hợp thuốc súng chế tạo từ Tiêu Thạch, lưu huỳnh và than củi nhồi vào ống tre/ống sắt có ngòi nổ. Khi ném ra tạo tiếng nổ lớn và mảnh vỡ sát thương cao.",
+    "impact": "Bước đầu đưa vũ khí nóng vào chiến trường, gây khiếp đảm tinh thần cho binh lính và chiến mã đối phương.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_LUU_HOA",
+    "name": "Vũ Khí Lưu Hỏa (Hỏa Khí Công Thành)",
+    "inventor": "Đông Thương An Gia phát minh, Quý Bình An & Cơ Vô Pháp cải tiến",
+    "chapter_introduced": 276,
+    "category": "Quân Sự & Hỏa Công",
+    "effect_and_usage": "Chất lỏng dẫn cháy đặc biệt chiết xuất từ Khổ Đảm Mộc và Xà Linh Hoa. Khi phát hỏa sinh nhiệt lượng cực lớn, bám dính vào cửa gỗ, khiên giáp và không thể dập tắt bằng nước thông thường.",
+    "impact": "Vũ khí quyết định giúp Quý Bình An thiêu rụi kho khí tài của quân An gia tại Hồn Huyết Sơn và phá tan cổng thành kiên cố.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_NO_LIEN_HOAN",
+    "name": "Nỏ Liên Hoàn Cơ Quan",
+    "inventor": "Thiên Công Thần Tượng (Lão Tào chế tạo theo bản vẽ)",
+    "chapter_introduced": 190,
+    "category": "Quân Sự & Khí Tài Cơ Quan",
+    "effect_and_usage": "Nỏ cầm tay có hộp tiếp tên tự động, có thể bắn liên tiếp nhiều mũi tên thép trong vài giây với lực xuyên giáp mạnh.",
+    "impact": "Trang bị cho cận vệ An Tức Vệ và xạ thủ Huyết Y Doanh, tăng gấp bội hỏa lực tầm gần.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_TRONG_GIAP_TINH_THIET",
+    "name": "Bộ Giáp Trọng Thiết Phản Chấn",
+    "inventor": "Thiên Công Thần Tượng chế tạo cho Điển Vi & Hãm Trận Doanh",
+    "chapter_introduced": 205,
+    "category": "Quân Sự & Phòng Ngự",
+    "effect_and_usage": "Áo giáp nặng bằng thép tôi nhiều lần, cấu trúc khớp vảy cá giúp phân tán lực va đập của đao thương và tên bắn.",
+    "impact": "Biến đội quân Trọng Giáp Binh của Điển Vi và Hãm Trận Doanh của Cao Thuận thành những bức tường thành di động bất khả xâm phạm.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_TOAI_MENH_DAN",
+    "name": "Toái Mệnh Đan & Độc Dược Phá Tạng",
+    "inventor": "Cơ Vô Pháp",
+    "chapter_introduced": 274,
+    "category": "Y Dược & Độc Thuật",
+    "effect_and_usage": "Độc đan vô sắc vô vị, tan nhanh trong máu, phá hủy kinh mạch và nội tạng khiến nạn nhân tử vong mà vẻ ngoài giống như kiệt sức vì vết thương chiến trận.",
+    "impact": "Vũ khí ám sát then chốt dùng để kết liễu Khai Sơn Vương Tử Triệu Phong một cách êm thấm không để lại chứng cứ.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_GIAI_DUOC_THUC_TAM",
+    "name": "Thuốc Giải Thực Tâm Bách Cốt Trùng",
+    "inventor": "Cơ Vô Pháp",
+    "chapter_introduced": 141,
+    "category": "Y Dược & Cổ Thuật",
+    "effect_and_usage": "Dược tễ dung hòa máu độc, hóa giải hoàn toàn sự cắn xé của cổ trùng ký sinh trong tủy xương.",
+    "impact": "Cứu chữa thành công cho các tướng lĩnh trúng độc (như Điển Vi) và nắm giữ sinh mệnh của các nhân vật hoàng gia.",
+    "_source_arc": "extraction_arc1_ch001_300.json"
+  },
+  {
+    "id": "TECH_THIET_GIAP_MON",
+    "name": "Thiết Giáp Môn (Cửa Thành Bọc Thép Nguyên Khối)",
+    "inventor": "Thần Tượng Mã Quân (Thiên Cung Học Viện)",
+    "chapter_introduced": 558,
+    "effect": "Cửa thành được đúc và gia cố bằng thép đặc chủng, chống chịu hoàn toàn máy phá thành, máy bắn đá và địa đạo nổ của quân Tây Lăng tại Uyển Châu.",
+    "military_value": "Biến mọi cổng thành Đại Hán thành pháo đài thép bất khả xâm phạm.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_NO_LIEN_CHAU",
+    "name": "Cơ Quan Nỏ Liên Châu",
+    "inventor": "Mã Quân",
+    "chapter_introduced": 516,
+    "effect": "Nỏ cơ quan có thể bắn liên tiếp nhiều mũi tên với độ chính xác và lực xuyên giáp cao, áp chế kỵ binh đối phương.",
+    "military_value": "Trang bị cho Tiên Phong Doanh và bộ binh phòng ngự thành lũy.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_CUONG_HOA_SONG_KICH",
+    "name": "Cường Hóa Tấn Thiết Song Kích",
+    "inventor": "Mã Quân",
+    "chapter_introduced": 516,
+    "effect": "Sử dụng kỹ thuật luyện thép Thiên Cung tôi luyện lại vũ khí Tấn Thiết Song Kích cho Điển Vi, tăng độ sắc bén, độ bền và sát thương phá giáp.",
+    "military_value": "Nâng cao uy lực cận chiến của Cổ Chi Ác Lai Điển Vi.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_MO_SO_PHAU_THUAT",
+    "name": "Kỹ Thuật Phẫu Thuật Mổ Sọ & Ma Phế Tán",
+    "inventor": "Thần Y Hoa Đà",
+    "chapter_introduced": 419,
+    "effect": "Phương pháp gây mê toàn thân bằng Ma Phế Tán và rạch mở hộp sọ gắp dị vật/cổ trùng mà bệnh nhân không tử vong, kết hợp bí thuật Hồi Xuân cầm máu.",
+    "military_value": "Cứu sống Lý Nho và mở ra khả năng phẫu thuật chiến trường cho tướng lĩnh Đại Hán.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_QUY_HOACH_GIAO_THONG",
+    "name": "Đồ Án Giao Thông Toàn Quốc 'Gặp Núi Mở Đường, Gặp Nước Bắc Cầu'",
+    "inventor": "Nữ Công Bộ Thượng Thư Đào Nhã",
+    "chapter_introduced": 528,
+    "effect": "Hệ thống quy hoạch bản đồ địa lý 4 nước, san phẳng các dãy núi chắn, xây cầu lớn vượt sông, lát đá đường bằng phẳng nối liền các châu huyện về Đế đô.",
+    "military_value": "Rút ngắn thời gian chuyển quân chi viện và tuần tra từ hàng tháng xuống vài ngày; kích cầu kinh tế thương nghiệp toàn quốc.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_THU_NHAN_HOA",
+    "name": "Kỹ Thuật Thú Nhân Hóa Thể",
+    "inventor": "Quỷ Thánh (Tây Lăng Quỷ Quật)",
+    "chapter_introduced": 505,
+    "effect": "Dùng độc chất và tà thuật dung hợp huyết mạch dã thú vào cơ thể người, tạo ra các chiến binh thú có sức mạnh cơ bắp phi thường và không biết sợ chết.",
+    "military_value": "Vũ khí sinh học tà đạo nguy hiểm đe dọa quân đội thông thường.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "id": "TECH_LƯU_HOA_DAN",
+    "name": "Lưu Hỏa Đạn / Thần Hỏa Lôi",
+    "inventor": "Thiên Cơ Lâu Nam Ly & Thần Hỏa Quân",
+    "chapter_introduced": 356,
+    "effect": "Vũ khí nổ chứa dầu hỏa và thuốc nổ nguyên sơ, khi phát nổ tạo ra biển lửa và chấn động lớn.",
+    "military_value": "Vũ khí hủy diệt diện rộng được dùng trong các trận công thủ thành và thủy chiến.",
+    "_source_arc": "extraction_arc2_ch301_600.json"
+  },
+  {
+    "name": "Cự Khôi Xe Nỏ (Nỏ Xa Liên Phát Cải Tiến)",
+    "inventor": "Trầm Căn & Mã Quân (Thiên Cung Học Viện)",
+    "chapter_introduced": 633,
+    "category": "Công Thành & Diệt Kỵ Binh",
+    "effect": "Cải tiến từ nguyên lý Gia Cát Liên Nỗ, bắn ra các mũi Phá Giáp Tiễn khổng lồ bằng thép, tầm bắn cực xa xuyên thủng cổng thành và xuyên thủng giáp trụ của nhiều tầng kỵ binh.",
+    "description": "Vũ khí chủ lực giúp quân Hán áp đảo Tây Lăng Thiết Kỵ tại Phi Mã Thành và bắn phá chiến thuyền địch.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Bán Mã Thung & Thừng Gạt Ngựa Cơ Quan",
+    "inventor": "Quý Bình An & Mã Quân",
+    "chapter_introduced": 683,
+    "category": "Khắc Chế Kỵ Binh Hạng Nặng",
+    "effect": "Sử dụng cọc sắt liên kết bằng xích xích và thừng bện chuyên dụng do 2 người phối hợp kéo căng, giật ngã hàng loạt chiến mã đang phi nước đại.",
+    "description": "Bảo bối chiến thuật bẻ gãy hoàn toàn uy lực xung phong bất khả chiến bại của 14 vạn Tây Lăng Thiết Kỵ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Lưu Hỏa Nổ (Hỏa Dược Cải Tiến)",
+    "inventor": "Viện Nghiên Cứu Thiên Cung",
+    "chapter_introduced": 639,
+    "category": "Vũ Khí Hóa Học / Hỏa Dược",
+    "effect": "Dầu cháy đặc biệt trộn hỏa dược nổ, khi va chạm tạo ra vụ nổ xé toạc công sự và bốc cháy dữ dội không thể dập tắt bằng nước.",
+    "description": "Thần khí thay đổi cục diện các trận hỏa thiêu, nền tảng cho trận biển lửa thiêu rụi hạm đội Đại La.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Xích Sắt Khóa Thuyền (Chiến Thuật Giang Hải)",
+    "inventor": "Chu Du & Cam Ninh (Vận dụng tương kế tựu kế)",
+    "chapter_introduced": 806,
+    "category": "Trận Pháp Thủy Quân",
+    "effect": "Lừa đối phương kết nối các chiến hạm lại với nhau bằng xích sắt để giữ thăng bằng trên sóng biển dữ, biến hạm đội địch thành một khối bất động dễ cháy.",
+    "description": "Chiến thuật kinh điển thời Tam Quốc được tái hiện hoàn hảo trên biển Bắc Cực, tiêu diệt 300 vạn quân xâm lược.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Kỹ Thuật Đục Thuyền & Thợ Lặn Cảm Tử",
+    "inventor": "Cam Ninh",
+    "chapter_introduced": 793,
+    "category": "Chiến Thuật Thủy Quân Đặc Nhiệm",
+    "effect": "Các toán thợ lặn mang theo dùi sắt và búa chuyên dụng lặn sâu nhiều giờ dưới nước để đục thủng đáy soái hạm địch.",
+    "description": "Cách đánh du kích dưới nước độc đáo khiến quân Đại La hoang mang cực độ.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Bí Kỹ Luyện Chế Thi Khôi",
+    "inventor": "A Bố (Đại La)",
+    "chapter_introduced": 861,
+    "category": "Cấm Thuật Dị Giới",
+    "effect": "Biến thân thể của cao thủ bị thương nặng (như Đặc Phổ) thành thây ma chiến đấu, mất đi tri giác và đau đớn, thể phách cứng như sắt đá.",
+    "description": "Bí thuật hắc ám của A Bố tạo nên một chủng loại quái vật chiến tranh mới tại Đại La.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "name": "Thiên Cơ Đồ & Trường Sinh Đồ",
+    "inventor": "Thượng Cổ Di Sản / Tứ Đại Thủ Hộ Gia Tộc",
+    "chapter_introduced": 629,
+    "category": "Bí Bảo Tối Thượng",
+    "effect": "Bản đồ cổ đại ẩn chứa bí mật thông hành giữa hai thế giới lục địa và phương pháp đột phá cảnh giới trường sinh bất lão.",
+    "description": "Mục tiêu tranh đoạt xuyên suốt của Thiên Cơ, các vương triều và dòng họ Quý thị.",
+    "_source_arc": "extraction_arc3_ch601_900.json"
+  },
+  {
+    "id": "TECH_GAO_NEP_VOI_TUONG",
+    "name": "Gạo Nếp Vôi Tương (Vữa Hồ Nếp Vôi Xây Thành)",
+    "inventor": "Kỹ sư Mã Quân & Trầm Căn (Thiên Cung Học Viện), Đào Nhã tổ chức thi công",
+    "chapter_introduced": 1014,
+    "category": "Kỹ Thuật Xây Thành & Công Trình Phòng Thủ",
+    "effect": "Dùng nước gạo nếp nấu chín trộn đều với vôi sống và bột đất nung tạo thành loại vữa siêu kết dính. Tường thành xây bằng vữa này có độ bền kinh ngạc, chịu được tên nỏ hạng nặng bắn thẳng từ cự ly 50 bước mà không để lại vết nứt. Giúp thành trì Đại Hán có khả năng phòng thủ bất khả xâm phạm.",
+    "description": "Được thử nghiệm thành công tại Chương 1015 dưới sự chứng kiến của Tả Từ. Quý Bình An lập tức ra lệnh cho Công Bộ Thượng Thư Đào Nhã đem công nghệ này ứng dụng đại trà gia cố toàn bộ hệ thống thành trì của Đại Hán tại Đại La.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_BAT_QUAI_TRAN_NO_XA",
+    "name": "Bát Quái Cửu Cung Trận Pháp Phòng Ngự (Máy Bắn Đá & Cường Nỗ Xa)",
+    "inventor": "Kỳ nhân dị sĩ Tả Từ",
+    "chapter_introduced": 1174,
+    "category": "Chiến Thuật Trận Pháp & Hỏa Lực Liên Hoàn",
+    "effect": "Bố trí xen kẽ giữa cường nỗ xe và xe bắn đá theo nguyên lý Bát Quái Cửu Cung, chỉ huy chuyển hướng và thay đổi quỹ đạo bắn bằng hệ thống Long Kỳ màu sắc. Tạo ra lưới lửa tầm xa và tầm trung đan chéo không góc chết, phá vỡ mọi đợt xung kích biển người của quân địch.",
+    "description": "Được Tả Từ trực tiếp thiết kế và chỉ huy tại Kinh Bắc Thành Chương 1174-1175, giúp đẩy lùi cuộc tổng tấn công vây thành dữ dội của A Bố và Thi Khôi Vương.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_DE_DAP_THUY_CONG",
+    "name": "Công Trình Đê Đập Thủy Công Thiên Sơn",
+    "inventor": "Tả Từ & Đào Nhã",
+    "chapter_introduced": 1199,
+    "category": "Thủy Lợi & Chiến Tranh Thủy Công",
+    "effect": "Lợi dụng địa hình lòng chảo và nguồn nước suối dồi dào quanh năm nhiều mưa của ngàn dãy núi Thiên Sơn, đắp đập trữ lượng nước khổng lồ. Khi thời cơ chín muồi sẽ phá đập xả lũ tạo thành sóng thần nhân tạo dìm ngập thành trì và cuốn phăng tuyến phòng thủ của Quốc Giáo.",
+    "description": "Tả Từ giải thích cho Đào Nhã về tầm quan trọng của việc khống chế nguồn nước để tiêu diệt 10 thành trì phía sau Thiên Sơn Thành mà không cần tốn quá nhiều xương máu binh sĩ.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_THUAT_HOAN_HUYET",
+    "name": "Thuật Hoán Huyết Cứu Mệnh (Đại Phẫu Thay Toàn Bộ Máu)",
+    "inventor": "Thần y Hoa Đà",
+    "chapter_introduced": 1090,
+    "category": "Y Thuật & Giải Độc Thần Kỳ",
+    "effect": "Hút bỏ toàn bộ lượng máu đã bị nhiễm kịch độc hàn thi của Bán Tiên ra ngoài và bơm vào lượng máu tươi thuần khiết tương thích, kết hợp dùng đan dược kích thích tủy xương tái sinh tế bào máu mới.",
+    "description": "Được Hoa Đà thực hiện thành công cứu sống Trầm Hạo khỏi cái chết chắc chắn sau khi huyết chiến với Thi Khôi Vương (hoàn tất ở Ch.1195).",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_ME_VU_TRAN",
+    "name": "Mê Vụ Trận Pháp (Trận Sương Mù Ngụy Trang)",
+    "inventor": "Thừa tướng Gia Cát Lượng",
+    "chapter_introduced": 929,
+    "category": "Chiến Thuật Ảo Ảnh & Tâm Lý Chiến",
+    "effect": "Vận dụng địa khí và thuật số tạo ra màn sương mù dày đặc bao phủ toàn bộ đại quân, khiến đối phương không thể dò biết quân số, vị trí và ý đồ hành quân.",
+    "description": "Giúp Gia Cát Lượng tiếp quản Thiên Hồn Thành và che giấu đường hành quân của 137 vạn U Châu quân.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_LUU_HOA_DAU_TRON",
+    "name": "Lưu Hỏa & Ống Dầu Trơn Tác Chiến",
+    "inventor": "Cơ Vô Pháp (Chế tạo cho tiền tuyến)",
+    "chapter_introduced": 1000,
+    "category": "Vũ Khí Hỏa Công Công Phá",
+    "effect": "Chất lỏng dễ cháy đặc biệt có thể đựng trong ống trúc nhỏ hoặc bình gốm bắn xa, khi bắt lửa sẽ cháy bùng dữ dội bám dính vào gỗ đá và không thể dập tắt bằng nước thông thường.",
+    "description": "Bàng Thống mang Lưu Hỏa uy hiếp Thánh Nữ Thành; Lý Nho dùng hỏa công thiêu rụi Bách Khổng Thành; Ninh Không Lâu cũng tìm cách cài người đánh cắp công nghệ này (Ch.1186).",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_THIET_TOA_HOANG_GIANG",
+    "name": "Chiến Hạm Thiết Tỏa Hoành Giang (Khóa Xích Chiến Thuyền)",
+    "inventor": "Đại đô đốc Chu Du",
+    "chapter_introduced": 930,
+    "category": "Thủy Quân & Vượt Biển Tác Chiến",
+    "effect": "Dùng xích sắt liên kết các chiến hạm lớn nhỏ tạo thành pháo đài nổi vững chắc trên biển, giúp binh sĩ kỵ binh và bộ binh không bị say sóng, di chuyển vững vàng vượt đại dương.",
+    "description": "Đưa đại quân Đại Hán vượt biển Doanh Kinh an toàn tuyệt đối trong đêm tối.",
+    "_source_arc": "extraction_arc4_ch901_1200.json"
+  },
+  {
+    "id": "TECH_HOAN_TOAN_MOI_LUU_HOA",
+    "name": "Hoàn Toàn Mới Lưu Hỏa (Lưu Hỏa Cải Tiến Đệ Nhị Đại)",
+    "category": "Hỏa Khí Quân Sự Đột Phá",
+    "inventor": "Cơ Vô Pháp (vận chuyển bởi Tuân Úc)",
+    "chapter_introduced": 1215,
+    "effects": "Sức công phá nổ và nhiệt lượng tăng gấp nhiều lần so với Lưu Hỏa ban đầu, có khả năng nổ tung tường đá dày và san phẳng cả sườn núi.",
+    "description": "Vũ khí mang tính quyết định giúp Đại Hán tạc sơn Doanh Kinh, triển khai Nhân Thể Tạc Đạn và tạo nên vụ nổ Thiên Băng Địa Liệt tiêu diệt Thiên A Thị.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "TECH_NHAN_THE_TAC_DAN",
+    "name": "Chiến Thuật Nhân Thể Tạc Đạn (Bom Cảm Tử Phá Vây)",
+    "category": "Chiến Thuật Quân Sự Độc Quyền",
+    "inventor": "Bàng Thống (Phụng Sồ)",
+    "chapter_introduced": 1259,
+    "effects": "Trang bị Lưu Hỏa mới vào người cảm tử quân, áp sát đội hình thuẫn giáp của địch rồi kích nổ, tạo lỗ hổng lớn giữa vòng vây hàng vạn quân.",
+    "description": "Chiến thuật cảm tử táo bạo phá tan thế trận bao vây 20 vạn Hộ Giáo Vệ của Cầu Sinh tại Thánh Đức Đại Sâm Lâm.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ART_SINH_MENH_THAN_THU",
+    "name": "Sinh Mệnh Thần Thụ Đại La",
+    "category": "Thần Thụ Thượng Cổ",
+    "origin": "Quốc Giáo Đại La (tọa lạc tại Thánh Đức Đại Sâm Lâm)",
+    "chapter_introduced": 1254,
+    "effects": "Bổ sung sinh mệnh lực, kéo dài thọ nguyên, dung hợp huyết mạch và chữa lành các vết thương do thiên phạt.",
+    "description": "Bảo vật cốt lõi duy trì sự sống cho Cầu Sinh và Cầu Hòa hàng trăm năm, sau này bị Quý Thiên Tứ dùng để tế luyện bản thân và chôn vùi trong biển lửa.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ART_KIM_O_GIAP",
+    "name": "Kim Ô Giáp",
+    "category": "Thần Binh Chiến Giáp",
+    "origin": "Thiên A Thị (trang bị cho mãnh tướng Kim Khuê)",
+    "chapter_introduced": 1307,
+    "effects": "Đao thương bất nhập, thủy hỏa bất xâm, hấp thụ nhiệt năng và chống chịu lực chém trực tiếp từ Bán Tiên.",
+    "description": "Bộ giáp trứ danh khiến Kim Khuê trở thành pháo đài di động, chỉ bị phá vỡ trong đại quyết chiến cuối cùng.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ART_DO_DANG_CHI_TINH",
+    "name": "Hỏa Hồng Sắc Tinh Thạch (Đồ Đằng Chi Tinh)",
+    "category": "Thần Tinh Linh Dược",
+    "origin": "Phượng Hoàng (Hỏa Phượng Hoàng)",
+    "chapter_introduced": 1279,
+    "effects": "Chứa đựng chân hỏa tinh hoa của Phượng Hoàng, giúp võ giả phá cảnh Nhân Tiên nhưng sẽ bị khống chế bởi Đốt Tâm Liệt Diễm.",
+    "description": "Tử Ngọc Sùng và Quý Thiên Tứ từng sở hữu tinh thạch này để gia tăng tu vi võ đạo.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "ART_THIEN_TU_KIEM_BA_VUONG_THUONG",
+    "name": "Thiên Tử Kiếm & Bá Vương Thương",
+    "category": "Hoàng Gia Đế Khí",
+    "origin": "Quý Bình An (kết hợp thần binh thế giới và hệ thống)",
+    "chapter_introduced": 1211,
+    "effects": "Thiên Tử Kiếm ngưng tụ thiên địa long khí Đại Hán tăng cường phòng ngự và chém rách hộ thể cương khí; Bá Vương Thương phá vạn quân.",
+    "description": "Song binh khí hộ thân giúp Quý Bình An tự tin đối đầu với các đại Nhân Tiên như Tử Ngọc Sùng và A Bố.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "TECH_DE_DAP_TRI_THUY",
+    "name": "Kỹ Thuật Thủy Lợi & Đê Đập Bê Tông Bộc Phá",
+    "category": "Thủy Công & Xây Dựng",
+    "inventor": "Đào Nhã (Công Bộ Thượng Thư)",
+    "chapter_introduced": 1216,
+    "effects": "Xây dựng hệ thống ngăn dòng tích nước khổng lồ và điều hướng dòng chảy lũ quét cuốn trôi thành trì.",
+    "description": "Kỹ thuật được áp dụng xuất sắc tại Doanh Kinh đê đập nhấn chìm Thiên Sơn Thành.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  },
+  {
+    "id": "TECH_THI_KHOI_THUAT",
+    "name": "Thi Khôi Chi Thuật & Thi Khôi Vương",
+    "category": "Tà Thuật Bí Truyền",
+    "origin": "Thiên A Thị & Quốc Giáo (A Bố và Cầu Hòa)",
+    "chapter_introduced": 1396,
+    "effects": "Luyện chế xác chết chiến binh thành đội quân Bất Tử Vệ không biết đau đớn, chịu sự chi phối của lệnh bài Thi Khôi Vương.",
+    "description": "Công cụ chiến tranh phi nhân tính của các thế lực phản diện tại Đại La nhằm chống lại đại quân Đại Hán.",
+    "_source_arc": "extraction_arc5_ch1201_1509.json"
+  }
+]

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "TRP_BACH_MA_NGHIA_TONG",
+    "name": "Bạch Mã Nghĩa Tòng",
+    "commander": "Triệu Vân",
+    "category": "Kỵ Binh Viễn Chinh Cơ Động",
+    "defense_rating": 65,
+    "attack_rating": 90,
+    "mobility": 98,
+    "special_trait": "Rút ngắn 50% thời gian hành quân trên bản đồ; đòn đánh đầu tiên luôn là bạo kích xuyên giáp.",
+    "unlocked_card_name": "Bạch Mã Đột Kích"
+  },
+  {
+    "id": "TRP_HAM_TRAN_DOANH",
+    "name": "Hãm Trận Doanh",
+    "commander": "Cao Thuận",
+    "category": "Bộ Binh Giáp Nặng Hắc Thiết",
+    "defense_rating": 99,
+    "attack_rating": 78,
+    "mobility": 45,
+    "special_trait": "Lũy thép bất khả xâm phạm; giảm 70% sát thương từ mọi đòn công thành và cung nỏ.",
+    "unlocked_card_name": "Khiên Khóa Trận"
+  },
+  {
+    "id": "TRP_CHIEN_HO_QUAN",
+    "name": "Chiến Hổ Quân",
+    "commander": "Quý Bình Sinh",
+    "category": "Bộ Binh Tinh Nhuệ Biên Ải",
+    "defense_rating": 85,
+    "attack_rating": 88,
+    "mobility": 75,
+    "special_trait": "Càng đánh càng hăng; khi HP dưới 50% tăng 40% sát thương đao pháp.",
+    "unlocked_card_name": "Mãnh Hổ Xuất Sơn"
+  },
+  {
+    "id": "TRP_TAY_LUONG_THIET_KY",
+    "name": "Tây Lương Thiết Kỵ",
+    "commander": "Mã Siêu",
+    "category": "Trọng Kỵ Phá Trận",
+    "defense_rating": 82,
+    "attack_rating": 96,
+    "mobility": 85,
+    "special_trait": "Càn quét phá tan hàng phòng ngự đối phương; gây hoảng loạn cho bộ binh địch.",
+    "unlocked_card_name": "Thiết Kỵ Càn Quét"
+  },
+  {
+    "id": "TRP_GIANG_DONG_THUY_QUAN",
+    "name": "Giang Đông Thủy Quân",
+    "commander": "Chu Du / Cam Ninh",
+    "category": "Thủy Quân Tác Chiến",
+    "defense_rating": 75,
+    "attack_rating": 92,
+    "mobility": 90,
+    "special_trait": "Vô địch trên sông ngòi; tăng gấp đôi hiệu lực hỏa công khi gió xuôi chiều.",
+    "unlocked_card_name": "Lướt Sóng Hỏa Công"
+  },
+  {
+    "id": "TRP_THAN_XA_CUNG_NO",
+    "name": "Thần Xạ Cung Nỏ Vệ",
+    "commander": "Hoàng Trung",
+    "category": "Cung Nỏ Tầm Xa (Gia Cát Nỏ)",
+    "defense_rating": 50,
+    "attack_rating": 95,
+    "mobility": 60,
+    "special_trait": "Bắn liên tiếp 10 tiễn xuyên giáp; tầm bắn xa hơn 2 ô so với cung thủ thường.",
+    "unlocked_card_name": "Vạn Tiễn Tề Phát"
+  }
+]
