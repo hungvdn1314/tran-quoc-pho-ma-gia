@@ -170,9 +170,10 @@ document.addEventListener('DOMContentLoaded', () => {
     actorRightNametag: document.getElementById('actor-right-nametag'),
 
     // Branch Choices Modal
-    choiceModal: document.getElementById('choice-modal'),
+    choiceModal: document.getElementById('branch-choice-modal') || document.getElementById('choice-modal'),
     choiceQuestion: document.getElementById('choice-question'),
     choiceGrid: document.getElementById('choice-grid'),
+    btnResetGame: document.getElementById('btn-reset-game'),
 
     // Backlog Modal
     backlogDrawer: document.getElementById('backlog-drawer'),
@@ -688,11 +689,46 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       const line = ink.currentText[state.currentTextIndex] || "";
 
+      // Determine speaker & metadata dynamically
+      let speakerName = "Dẫn Truyện";
+      let speakerSub = "Hồi 1: Khởi Đầu & Sinh Tồn";
+
+      if (line.startsWith('"') || line.startsWith('“') || line.startsWith("'")) {
+        if (line.includes("Mạt tướng") || line.includes("Tử Long")) {
+          speakerName = "Triệu Tử Long";
+          speakerSub = "Thường Sơn Hổ Tướng · Hoàng Cảnh Sơ Kỳ";
+        } else if (line.includes("Vũ Hoàng") || line.includes("Phò mã gia!") || line.includes("bệ hạ")) {
+          speakerName = "Tỳ Nữ Phò Mã Phủ";
+          speakerSub = "Cung Nhân Hầu Cận";
+        } else if (line.includes("Địa tác tỳ bà") || line.includes("phò mã")) {
+          speakerName = "Sứ Thần Nam Ly";
+          speakerSub = "Sứ Đoàn Phương Nam";
+        } else if (line.includes("Quý gia") || line.includes("xuyên không")) {
+          speakerName = "Quý Bình An";
+          speakerSub = "Phò Mã Hàn Vi";
+        } else {
+          speakerName = "Quý Bình An";
+          speakerSub = "Phò Mã Gia";
+        }
+      } else if (line.includes("Vũ Hoàng")) {
+        speakerName = "Vũ Hoàng";
+        speakerSub = "Đại Vũ Đế Vương";
+      } else if (line.includes("Cao Thuận")) {
+        speakerName = "Cao Thuận";
+        speakerSub = "Thống Soái Hãm Trận Doanh";
+      } else if (line.includes("Giả Hủ")) {
+        speakerName = "Giả Hủ (Văn Hòa)";
+        speakerSub = "Tuyệt Thế Độc Sĩ";
+      }
+
+      ui.vnSpeaker.textContent = speakerName;
+      ui.vnSpeakerSub.textContent = speakerSub;
+
       // Record into Backlog
       if (!state.dialogueHistory.some(h => h.text === line)) {
         state.dialogueHistory.push({
-          speaker: "Nhân Vật",
-          title: "Kịch Bản Ink",
+          speaker: speakerName,
+          title: speakerSub,
           text: line
         });
         renderBacklog();
@@ -711,7 +747,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
           clearInterval(typewriterTimer);
           state.isTyping = false;
-          checkInkChoices();
+          // ONLY trigger choices at the very last line of this knot!
+          if (state.currentTextIndex >= ink.currentText.length - 1) {
+            checkInkChoices();
+          }
         }
       }, 14);
 
@@ -730,11 +769,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const line = ink.currentText[state.currentTextIndex] || "";
       ui.vnDialogueText.textContent = line;
       state.isTyping = false;
-      checkInkChoices();
+      if (state.currentTextIndex >= ink.currentText.length - 1) {
+        checkInkChoices();
+      }
       return;
     }
 
-    if (!ui.choiceModal.classList.contains('hidden')) return;
+    if (ui.choiceModal && !ui.choiceModal.classList.contains('hidden')) return;
 
     if (state.currentTextIndex < ink.currentText.length - 1) {
       state.currentTextIndex++;
@@ -748,13 +789,18 @@ document.addEventListener('DOMContentLoaded', () => {
         state.currentTextIndex = 0;
         renderCurrentDialogue();
       } else {
-        showToast("📜 Đã đến điểm hội tụ câu chuyện! Hãy chọn mục tiêu trên bản đồ hoặc mốc chương.");
+        showToast("📜 Đã đến điểm hội tụ câu chuyện! Mở Ma Trận Chương hoặc Sa Bàn để tiếp tục.");
       }
     }
   }
 
   function checkInkChoices() {
-    if (ink.hasChoices()) {
+    // ONLY display choices when reached the last line of current knot text
+    if (state.currentTextIndex < ink.currentText.length - 1) {
+      return;
+    }
+
+    if (ink.hasChoices() && ui.choiceModal) {
       ui.choiceQuestion.textContent = "Quý Bình An quyết định ứng phó ra sao?";
       ui.choiceGrid.innerHTML = '';
 
@@ -783,6 +829,62 @@ document.addEventListener('DOMContentLoaded', () => {
 
       ui.choiceModal.classList.remove('hidden');
     }
+  }
+
+  // =========================================================================
+  // RESET GAME ENGINE
+  // =========================================================================
+  function resetGame() {
+    clearInterval(typewriterTimer);
+    if (state.autoTimer) clearInterval(state.autoTimer);
+    state.autoAdvance = false;
+    state.isTyping = false;
+
+    state.currentChapterId = 1;
+    state.unlocked = {
+      gacha: false,
+      zhaoyun: false,
+      soap: false,
+      strategyMap: false,
+      gaoshun: false,
+      giaHu: false,
+      flood: false,
+      khaiNguyen: false,
+      battleFront: false
+    };
+
+    state.ticketCount = 1;
+    state.jade = 10;
+    state.gold = 100;
+    state.food = 5000;
+    state.suspicion = 15;
+    state.ap = 3;
+    state.pityCount = 0;
+    state.ownedHeroIds = ['hero_zhaoyun'];
+    state.currentTextIndex = 0;
+    state.dialogueHistory = [];
+
+    // Hide all modals
+    if (ui.choiceModal) ui.choiceModal.classList.add('hidden');
+    if (ui.gachaModal) ui.gachaModal.classList.add('hidden');
+    if (ui.heroDetailModal) ui.heroDetailModal.classList.add('hidden');
+    if (ui.milestoneMatrixModal) ui.milestoneMatrixModal.classList.add('hidden');
+    if (ui.unlockEventModal) ui.unlockEventModal.classList.add('hidden');
+    if (ui.victoryModal) ui.victoryModal.classList.add('hidden');
+    if (ui.backlogDrawer) ui.backlogDrawer.classList.add('hidden');
+
+    // Reset ink variables and restart knot
+    ink.variables.gold = 100;
+    ink.variables.suspicion = 15;
+    ink.variables.rations = 5000;
+    ink.variables.chapter = 1;
+    ink.start('chapter_1_start');
+
+    switchView('vn');
+    advanceChapter(1);
+    updateProgressTrackerUI();
+    updateHudResources();
+    renderCurrentDialogue();
   }
 
   function renderBacklog() {
@@ -1251,47 +1353,61 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   function initEvents() {
     // Nav Tabs
-    ui.btnTabVn.addEventListener('click', () => switchView('vn'));
-    ui.btnTabMap.addEventListener('click', () => switchView('map'));
-    ui.btnTabBattle.addEventListener('click', () => switchView('battle'));
+    if (ui.btnTabVn) ui.btnTabVn.addEventListener('click', () => switchView('vn'));
+    if (ui.btnTabMap) ui.btnTabMap.addEventListener('click', () => switchView('map'));
+    if (ui.btnTabBattle) ui.btnTabBattle.addEventListener('click', () => switchView('battle'));
 
     // Chapter Milestone Tracker Modal
-    ui.btnOpenMilestones.addEventListener('click', () => {
-      renderMilestoneTimeline();
-      ui.milestoneMatrixModal.classList.remove('hidden');
-    });
-    ui.btnCloseMatrix.addEventListener('click', () => {
-      ui.milestoneMatrixModal.classList.add('hidden');
-    });
+    if (ui.btnOpenMilestones) {
+      ui.btnOpenMilestones.addEventListener('click', () => {
+        renderMilestoneTimeline();
+        if (ui.milestoneMatrixModal) ui.milestoneMatrixModal.classList.remove('hidden');
+      });
+    }
+    if (ui.btnCloseMatrix && ui.milestoneMatrixModal) {
+      ui.btnCloseMatrix.addEventListener('click', () => {
+        ui.milestoneMatrixModal.classList.add('hidden');
+      });
+    }
 
     // Gacha Altar Controls
-    ui.btnHudGacha.addEventListener('click', openGachaModal);
-    ui.btnCloseGacha.addEventListener('click', () => {
-      ui.gachaModal.classList.add('hidden');
-    });
-    ui.btnDoSummon.addEventListener('click', performSummon);
-    ui.btnRevealInspect.addEventListener('click', () => {
-      openHeroInspector(state.lastSummonedHero ? state.lastSummonedHero.id : 'hero_zhaoyun');
-    });
-    ui.btnRevealConfirm.addEventListener('click', () => {
-      ui.gachaModal.classList.add('hidden');
-      const hName = state.lastSummonedHero ? state.lastSummonedHero.name : "Triệu Tử Long";
-      showToast(`⚔️ Đã gia nhập đội ngũ! ${hName} đã sẵn sàng phò tá Chúa Công.`);
-    });
+    if (ui.btnHudGacha) ui.btnHudGacha.addEventListener('click', openGachaModal);
+    if (ui.btnCloseGacha && ui.gachaModal) {
+      ui.btnCloseGacha.addEventListener('click', () => {
+        ui.gachaModal.classList.add('hidden');
+      });
+    }
+    if (ui.btnDoSummon) ui.btnDoSummon.addEventListener('click', performSummon);
+    if (ui.btnRevealInspect) {
+      ui.btnRevealInspect.addEventListener('click', () => {
+        openHeroInspector(state.lastSummonedHero ? state.lastSummonedHero.id : 'hero_zhaoyun');
+      });
+    }
+    if (ui.btnRevealConfirm && ui.gachaModal) {
+      ui.btnRevealConfirm.addEventListener('click', () => {
+        ui.gachaModal.classList.add('hidden');
+        const hName = state.lastSummonedHero ? state.lastSummonedHero.name : "Triệu Tử Long";
+        showToast(`⚔️ Đã gia nhập đội ngũ! ${hName} đã sẵn sàng phò tá Chúa Công.`);
+      });
+    }
 
     // Hero Detail Inspector
-    ui.btnHudHero.addEventListener('click', () => openHeroInspector('hero_zhaoyun'));
-    ui.btnCloseHeroDetail.addEventListener('click', () => {
-      ui.heroDetailModal.classList.add('hidden');
-    });
+    if (ui.btnHudHero) ui.btnHudHero.addEventListener('click', () => openHeroInspector('hero_zhaoyun'));
+    if (ui.btnCloseHeroDetail && ui.heroDetailModal) {
+      ui.btnCloseHeroDetail.addEventListener('click', () => {
+        ui.heroDetailModal.classList.add('hidden');
+      });
+    }
 
     // Unlock Event Notification Modal
-    ui.btnCloseUnlock.addEventListener('click', () => {
-      ui.unlockEventModal.classList.add('hidden');
-    });
+    if (ui.btnCloseUnlock && ui.unlockEventModal) {
+      ui.btnCloseUnlock.addEventListener('click', () => {
+        ui.unlockEventModal.classList.add('hidden');
+      });
+    }
 
     // VN Dialogue Controls
-    ui.btnVnAdvance.addEventListener('click', advanceDialogue);
+    if (ui.btnVnAdvance) ui.btnVnAdvance.addEventListener('click', advanceDialogue);
     window.addEventListener('keydown', (e) => {
       if (e.code === 'Space' && state.currentView === 'vn') {
         e.preventDefault();
@@ -1299,40 +1415,48 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    ui.btnVnLog.addEventListener('click', () => {
-      ui.backlogDrawer.classList.toggle('hidden');
-    });
-    ui.btnCloseLog.addEventListener('click', () => {
-      ui.backlogDrawer.classList.add('hidden');
-    });
+    if (ui.btnVnLog && ui.backlogDrawer) {
+      ui.btnVnLog.addEventListener('click', () => {
+        ui.backlogDrawer.classList.toggle('hidden');
+      });
+    }
+    if (ui.btnCloseLog && ui.backlogDrawer) {
+      ui.btnCloseLog.addEventListener('click', () => {
+        ui.backlogDrawer.classList.add('hidden');
+      });
+    }
 
-    ui.btnVnAuto.addEventListener('click', () => {
-      state.autoAdvance = !state.autoAdvance;
-      ui.btnVnAuto.style.color = state.autoAdvance ? 'var(--gold-primary)' : 'var(--text-muted)';
-      if (state.autoAdvance) {
-        showToast("▶ Chế độ tự động đọc: BẬT");
-        state.autoTimer = setInterval(() => {
-          if (state.currentView === 'vn' && ui.choiceModal.classList.contains('hidden')) {
-            advanceDialogue();
-          }
-        }, 3200);
-      } else {
-        showToast("⏹ Chế độ tự động đọc: TẮT");
-        clearInterval(state.autoTimer);
-      }
-    });
+    if (ui.btnVnAuto) {
+      ui.btnVnAuto.addEventListener('click', () => {
+        state.autoAdvance = !state.autoAdvance;
+        ui.btnVnAuto.style.color = state.autoAdvance ? 'var(--gold-primary)' : 'var(--text-muted)';
+        if (state.autoAdvance) {
+          showToast("▶ Chế độ tự động đọc: BẬT");
+          state.autoTimer = setInterval(() => {
+            if (state.currentView === 'vn' && ui.choiceModal && ui.choiceModal.classList.contains('hidden')) {
+              advanceDialogue();
+            }
+          }, 3200);
+        } else {
+          showToast("⏹ Chế độ tự động đọc: TẮT");
+          clearInterval(state.autoTimer);
+        }
+      });
+    }
 
     // Sa Bàn Map Controls
-    ui.provinceNodes.forEach(node => {
-      node.addEventListener('click', () => {
-        renderMapNodeDetails(node.dataset.node);
+    if (ui.provinceNodes) {
+      ui.provinceNodes.forEach(node => {
+        node.addEventListener('click', () => {
+          renderMapNodeDetails(node.dataset.node);
+        });
       });
-    });
+    }
 
-    ui.btnActionSoap.addEventListener('click', handleSoapCommand);
-    ui.btnActionTribute.addEventListener('click', handleBribeCommand);
-    ui.btnActionBattle.addEventListener('click', () => switchView('battle'));
-    ui.btnIntercept.addEventListener('click', () => switchView('battle'));
+    if (ui.btnActionSoap) ui.btnActionSoap.addEventListener('click', handleSoapCommand);
+    if (ui.btnActionTribute) ui.btnActionTribute.addEventListener('click', handleBribeCommand);
+    if (ui.btnActionBattle) ui.btnActionBattle.addEventListener('click', () => switchView('battle'));
+    if (ui.btnIntercept) ui.btnIntercept.addEventListener('click', () => switchView('battle'));
 
     // Battle Card Deck
     document.querySelectorAll('.hand-card').forEach(card => {
@@ -1341,18 +1465,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    ui.btnExecuteTurn.addEventListener('click', executeTurn);
+    if (ui.btnExecuteTurn) ui.btnExecuteTurn.addEventListener('click', executeTurn);
 
     // Victory Next
-    ui.btnTriumphNext.addEventListener('click', () => {
-      ui.victoryModal.classList.add('hidden');
-      state.gold += 20000;
-      state.food += 50000;
-      updateHudResources();
-      showToast("🎉 Đại thắng! Đã nhận 20.000 Vàng & 50.000 Thạch Lương.", true);
-      switchView('vn');
-    });
+    if (ui.btnTriumphNext && ui.victoryModal) {
+      ui.btnTriumphNext.addEventListener('click', () => {
+        ui.victoryModal.classList.add('hidden');
+        state.gold += 20000;
+        state.food += 50000;
+        updateHudResources();
+        showToast("🎉 Đại thắng! Đã nhận 20.000 Vàng & 50.000 Thạch Lương.", true);
+        switchView('vn');
+      });
+    }
+
+    if (ui.btnResetGame) {
+      ui.btnResetGame.addEventListener('click', resetGame);
+    }
   }
+
+  // Expose reset to window
+  window.resetGame = resetGame;
+  window.state = state;
+  window.ink = ink;
 
   // =========================================================================
   // 14. INITIAL BOOT
