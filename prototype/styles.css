@@ -808,95 +808,173 @@ body {
   opacity: 0.85;
 }
 
-/* Branch Choice Modal */
+/* ==========================================================================
+   FLOATING VN DIALOGUE CHOICES (HIỂN THỊ NỔI TRỰC TIẾP TRÊN NỀN CẢNH — ZERO BLUR)
+   Chuẩn Visual Novel thương mại cao cấp (Tsukihime / Fate / Persona)
+   ========================================================================== */
 .branch-choice-modal {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.88);
+  bottom: 224px; /* Nằm lơ lửng ngay phía trên hộp thoại ADV */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  max-width: 92vw;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  z-index: 50;
-  backdrop-filter: blur(10px);
-  transition: opacity 0.25s ease;
+  z-index: 45;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .branch-choice-modal.hidden {
   opacity: 0;
+  transform: translateX(-50%) translateY(14px);
   pointer-events: none;
 }
 
 .choice-container {
-  width: 720px;
-  background: linear-gradient(180deg, #1c222c 0%, #0d1015 100%);
-  border: 2px solid var(--gold-primary);
-  border-radius: var(--radius-lg);
-  padding: 36px;
-  box-shadow: 0 0 60px rgba(245, 158, 11, 0.25), 0 25px 60px rgba(0, 0, 0, 0.95);
-  text-align: center;
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .choice-seal {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   background: var(--red-imperial);
   color: var(--gold-primary);
-  border: 1px solid var(--gold-primary);
-  padding: 4px 16px;
-  border-radius: var(--radius-sm);
-  font-size: 11px;
-  font-weight: 800;
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  padding: 2px 10px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 900;
   letter-spacing: 2px;
-  margin-bottom: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  pointer-events: none;
 }
 
 .choice-question {
   font-family: var(--font-title);
-  font-size: 22px;
+  font-size: 13px;
+  font-weight: 800;
   color: #fff;
-  margin-bottom: 6px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  background: rgba(14, 18, 26, 0.88);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  padding: 4px 18px;
+  border-radius: 20px;
+  margin-bottom: 2px;
+  backdrop-filter: blur(8px);
+  pointer-events: none;
 }
 
 .choice-subtext {
-  font-size: 13px;
-  color: var(--text-muted);
-  margin-bottom: 24px;
+  display: none !important;
 }
 
 .choice-grid {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 8px;
 }
 
+/* Từng thẻ lựa chọn: Phiến gỗ sơn mài nẹp chỉ vàng rạn nứt Kintsugi */
 .choice-card-btn {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  pointer-events: auto;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(16, 22, 32, 0.92) 0%, rgba(26, 35, 50, 0.95) 50%, rgba(16, 22, 32, 0.92) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
   border-radius: var(--radius-md);
-  padding: 16px 22px;
-  text-align: left;
-  cursor: pointer;
-  transition: all 0.25s ease;
+  padding: 12px 20px;
   display: flex;
-  flex-direction: column;
-  gap: 6px;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.75), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.choice-card-btn::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gold-primary);
+  opacity: 0.6;
+  transition: width 0.2s ease, opacity 0.2s ease;
 }
 
 .choice-card-btn:hover {
-  background: rgba(245, 158, 11, 0.12);
+  transform: translateY(-2px) scale(1.015);
   border-color: var(--gold-primary);
-  transform: translateX(6px);
-  box-shadow: 0 0 20px rgba(245, 158, 11, 0.25);
+  background: linear-gradient(90deg, rgba(38, 30, 18, 0.96) 0%, rgba(68, 52, 28, 0.98) 50%, rgba(38, 30, 18, 0.96) 100%);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.85), 0 0 20px rgba(245, 158, 11, 0.45);
+}
+
+.choice-card-btn:hover::before {
+  width: 6px;
+  opacity: 1;
+}
+
+.choice-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.choice-num-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
 }
 
 .choice-card-title {
-  font-weight: 800;
-  font-size: 15px;
+  font-family: var(--font-text);
+  font-size: 14px;
+  font-weight: 700;
   color: #fff;
+  letter-spacing: 0.2px;
 }
 
-.choice-card-consequence {
-  font-size: 12px;
-  color: var(--gold-primary);
+.choice-right-tag {
+  font-size: 10px;
+  font-weight: 800;
+  color: #fca5a5;
+  background: rgba(220, 38, 38, 0.25);
+  border: 1px solid rgba(220, 38, 38, 0.5);
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  flex-shrink: 0;
 }
 
 /* Backlog Drawer */

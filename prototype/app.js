@@ -761,39 +761,53 @@ document.addEventListener('DOMContentLoaded', () => {
       const line = ink.currentText[state.currentTextIndex] || "";
 
       // Determine speaker & metadata dynamically
-      let speakerName = "Dẫn Truyện";
-      let speakerSub = "Hồi 1: Khởi Đầu & Sinh Tồn";
+      let speakerName = "Người Dẫn Truyện";
+      let speakerSub = "Hồi 1 · Phò Mã Phủ Thức Tỉnh";
 
-      if (line.startsWith('"') || line.startsWith('“') || line.startsWith("'")) {
-        if (line.includes("Mạt tướng") || line.includes("Tử Long")) {
+      const trimmedLine = line.trim();
+      const isQuoted = trimmedLine.startsWith('"') || trimmedLine.startsWith('“') || trimmedLine.startsWith("'") || trimmedLine.startsWith('「');
+      const hasSpeakerColon = trimmedLine.includes(': "') || trimmedLine.includes(': “') || trimmedLine.includes('：');
+
+      if (isQuoted || hasSpeakerColon) {
+        if (line.includes("Mạt tướng") || line.includes("Tử Long") || line.includes("Triệu Vân")) {
           speakerName = "Triệu Tử Long";
           speakerSub = "Thường Sơn Hổ Tướng · Hoàng Cảnh Sơ Kỳ";
-        } else if (line.includes("Vũ Hoàng") || line.includes("Phò mã gia!") || line.includes("bệ hạ")) {
+        } else if (line.includes("Phò mã gia!") || line.includes("bệ hạ triệu kiến") || line.includes("Tỳ nữ")) {
           speakerName = "Tỳ Nữ Phò Mã Phủ";
           speakerSub = "Cung Nhân Hầu Cận";
-        } else if (line.includes("Địa tác tỳ bà") || line.includes("phò mã")) {
+        } else if (line.includes("Bệ hạ Đại Vũ") || line.includes("Lễ nghĩa chi bang") || line.includes("Thiên đương kỳ bàn") || line.includes("Địa tác tỳ bà")) {
           speakerName = "Sứ Thần Nam Ly";
           speakerSub = "Sứ Đoàn Phương Nam";
-        } else if (line.includes("Quý gia") || line.includes("xuyên không")) {
-          speakerName = "Quý Bình An";
-          speakerSub = "Phò Mã Hàn Vi";
+        } else if (line.includes("HAY! HAY LẮM!") || line.includes("Trẫm không ngờ") || line.includes("Đối đi.") || line.includes("Ban thưởng phò mã")) {
+          speakerName = "Vũ Hoàng";
+          speakerSub = "Đại Vũ Đế Vương";
+        } else if (line.includes("Cao Thuận") || line.includes("Hãm Trận Doanh")) {
+          speakerName = "Cao Thuận";
+          speakerSub = "Thống Soái Hãm Trận Doanh";
+        } else if (line.includes("Văn Hòa") || line.includes("Độc kế")) {
+          speakerName = "Giả Hủ (Văn Hòa)";
+          speakerSub = "Tuyệt Thế Độc Sĩ";
         } else {
           speakerName = "Quý Bình An";
           speakerSub = "Phò Mã Gia";
         }
-      } else if (line.includes("Vũ Hoàng")) {
-        speakerName = "Vũ Hoàng";
-        speakerSub = "Đại Vũ Đế Vương";
-      } else if (line.includes("Cao Thuận")) {
-        speakerName = "Cao Thuận";
-        speakerSub = "Thống Soái Hãm Trận Doanh";
-      } else if (line.includes("Giả Hủ")) {
-        speakerName = "Giả Hủ (Văn Hòa)";
-        speakerSub = "Tuyệt Thế Độc Sĩ";
+      } else if (trimmedLine.startsWith("[HỆ THỐNG]") || trimmedLine.includes("[HỆ THỐNG]")) {
+        speakerName = "Hệ Thống Tam Quốc";
+        speakerSub = "Trí Huệ Xuyên Không";
+      } else {
+        // Pure narration: ALWAYS "Người Dẫn Truyện"
+        speakerName = "Người Dẫn Truyện";
+        speakerSub = "Hồi 1 · Phò Mã Phủ Thức Tỉnh";
       }
 
-      ui.vnSpeaker.textContent = speakerName;
-      ui.vnSpeakerSub.textContent = speakerSub;
+      const isNarrator = speakerName === "Người Dẫn Truyện" || speakerName === "Dẫn Truyện" || !speakerName;
+      if (ui.vnSpeaker) ui.vnSpeaker.textContent = speakerName;
+      if (ui.vnSpeakerSub) ui.vnSpeakerSub.textContent = speakerSub;
+
+      const speakerSeal = document.getElementById('vn-speaker-seal');
+      if (speakerSeal) {
+        speakerSeal.textContent = isNarrator ? "史" : (speakerName[0] || "鎮");
+      }
 
       // Update Standee Speaking / Listening Focus (Dynamic VN Depth)
       if (speakerName.includes("Quý Bình An")) {
@@ -805,8 +819,9 @@ document.addEventListener('DOMContentLoaded', () => {
           ui.actorLeftSlot.classList.add('listening');
           ui.actorLeftSlot.classList.remove('speaking');
         }
-      } else if (speakerName !== "Dẫn Truyện") {
+      } else if (!isNarrator) {
         if (ui.actorLeftSlot) {
+          ui.actorLeftSlot.classList.remove('hidden');
           ui.actorLeftSlot.classList.add('speaking');
           ui.actorLeftSlot.classList.remove('listening');
           if (ui.actorLeftNametag) ui.actorLeftNametag.textContent = speakerName;
@@ -819,11 +834,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // Neutral narrative state
         if (ui.actorRightSlot) {
           ui.actorRightSlot.classList.remove('speaking');
-          ui.actorRightSlot.classList.add('listening');
+          ui.actorRightSlot.classList.remove('listening');
         }
         if (ui.actorLeftSlot) {
           ui.actorLeftSlot.classList.remove('speaking');
-          ui.actorLeftSlot.classList.add('listening');
+          ui.actorLeftSlot.classList.remove('listening');
         }
       }
 
@@ -907,16 +922,17 @@ document.addEventListener('DOMContentLoaded', () => {
       ui.choiceQuestion.textContent = "Quý Bình An quyết định ứng phó ra sao?";
       ui.choiceGrid.innerHTML = '';
 
+      const numGlyphs = ["壹", "贰", "叁", "肆", "伍"];
+
       ink.currentChoices.forEach((c, idx) => {
         const choiceCard = document.createElement('div');
         choiceCard.className = 'choice-card-btn';
         choiceCard.innerHTML = `
-          <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div class="choice-left-meta">
+            <span class="choice-num-badge">${numGlyphs[idx] || (idx + 1)}</span>
             <span class="choice-card-title">${c.text}</span>
-            <span style="font-size: 10px; font-weight: 800; background: rgba(220, 38, 38, 0.3); border: 1px solid #dc2626; color: #fca5a5; padding: 2px 8px; border-radius: 4px;">QUYẾT ĐỊNH</span>
           </div>
-          <p style="font-size: 12px; color: #94a3b8; margin: 4px 0;">Phân nhánh cốt truyện chiến lược</p>
-          <div class="choice-card-consequence">⚡ Kích hoạt lựa chọn kịch bản Ink</div>
+          <span class="choice-right-tag">QUYẾT ĐỊNH</span>
         `;
         choiceCard.addEventListener('click', () => {
           triggerShake();

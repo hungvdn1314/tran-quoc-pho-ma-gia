@@ -146,8 +146,8 @@
 
         <!-- Character Stage: Dual Cast Standees (Trực tiếp trên sàn tẩm thất, không đóng khung card) -->
         <div class="cast-stage" id="cast-stage">
-          <!-- Left Character Standee (Tô Kiến Phong / Tướng lĩnh) -->
-          <div class="actor-slot actor-left listening" id="actor-left-slot">
+          <!-- Left Character Standee (Ẩn mặc định khi bắt đầu tại tẩm thất, chỉ hiện khi gặp NPC) -->
+          <div class="actor-slot actor-left listening hidden" id="actor-left-slot">
             <div class="standee-wrapper" id="actor-left-card">
               <img src="assets/images/actor_to_kien_phong.png" alt="Tô Kiến Phong" class="standee-img" id="actor-left-img">
               <div class="standee-floor-shadow"></div>
@@ -156,7 +156,7 @@
           </div>
 
           <!-- Right Character Standee (Quý Bình An / Phò Mã Gia) -->
-          <div class="actor-slot actor-right speaking" id="actor-right-slot">
+          <div class="actor-slot actor-right" id="actor-right-slot">
             <div class="standee-wrapper" id="actor-right-card">
               <img src="assets/images/actor_quy_binh_an.png" alt="Quý Bình An" class="standee-img" id="actor-right-img">
               <div class="standee-floor-shadow"></div>
@@ -169,10 +169,10 @@
         <div class="vn-dialogue-panel" id="vn-dialogue-panel" title="Nhấp chuột hoặc bấm [Space] để đọc tiếp câu thoại">
           <!-- Diegetic Speaker Seal Plate -->
           <div class="vn-speaker-plate" id="vn-speaker-plate">
-            <div class="speaker-seal-stamp">鎮</div>
+            <div class="speaker-seal-stamp" id="vn-speaker-seal">史</div>
             <div class="speaker-titles">
-              <span class="speaker-name" id="vn-speaker">Dẫn Truyện</span>
-              <span class="speaker-sub" id="vn-speaker-sub">Hồi 1: Khởi Đầu & Sinh Tồn</span>
+              <span class="speaker-name" id="vn-speaker">Người Dẫn Truyện</span>
+              <span class="speaker-sub" id="vn-speaker-sub">Hồi 1 · Phò Mã Phủ Thức Tỉnh</span>
             </div>
           </div>
 
@@ -211,12 +211,11 @@
           </div>
         </div>
 
-        <!-- Choice Overlay: Interactive Branches with Real Scene Shifts -->
+        <!-- Floating VN Dialogue Choices Layer (Nổi trực tiếp trên nền cảnh — Không làm mờ background) -->
         <div class="branch-choice-modal hidden" id="branch-choice-modal">
           <div class="choice-container">
             <div class="choice-seal">MƯU QUỐC CHI ĐẠO</div>
-            <h3 class="choice-question" id="choice-question">Quý Bình An quyết định ứng phó ra sao?</h3>
-            <p class="choice-subtext">Quyết định này sẽ rẽ nhánh kịch bản trực tiếp và thay đổi cục diện chính trị!</p>
+            <div class="choice-question" id="choice-question">Quý Bình An quyết định ứng phó ra sao?</div>
             <div class="choice-grid" id="choice-grid">
               <!-- Dynamically rendered via app.js -->
             </div>
