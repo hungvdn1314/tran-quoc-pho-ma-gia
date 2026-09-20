@@ -1,0 +1,186 @@
+[
+    {
+        "id": "battle_ch10_assassin",
+        "name": "Thích khách Phò Mã Phủ",
+        "chapter": 10,
+        "type": "defense",
+        "difficulty": 3,
+        "player_wall_hp": 200,
+        "enemy_units": [
+            {
+                "id": "eu_assassin_1",
+                "name": "Sát thủ 1",
+                "hp": 100,
+                "atk": 20,
+                "lane": "left",
+                "intent_pattern": [
+                    "attack",
+                    "attack"
+                ]
+            },
+            {
+                "id": "eu_assassin_2",
+                "name": "Sát thủ 2",
+                "hp": 100,
+                "atk": 20,
+                "lane": "center",
+                "intent_pattern": [
+                    "attack",
+                    "attack"
+                ]
+            },
+            {
+                "id": "eu_assassin_3",
+                "name": "Sát thủ 3",
+                "hp": 120,
+                "atk": 25,
+                "lane": "right",
+                "intent_pattern": [
+                    "buff",
+                    "attack"
+                ]
+            }
+        ],
+        "victory_conditions": [
+            "Tiêu diệt tất cả địch"
+        ],
+        "rewards": {
+            "gold": 100
+        },
+        "unlocks": []
+    },
+    {
+        "id": "battle_ch48_thanh_chau",
+        "name": "Đại chiến Thanh Châu",
+        "chapter": 48,
+        "type": "defense",
+        "difficulty": 8,
+        "player_wall_hp": 500,
+        "enemy_units": [
+            {
+                "id": "eu_dich_hoa",
+                "name": "Boss Địch Hỏa",
+                "hp": 1000,
+                "atk": 80,
+                "lane": "center",
+                "intent_pattern": [
+                    "aoe",
+                    "attack",
+                    "buff"
+                ]
+            },
+            {
+                "id": "eu_soldier_1",
+                "name": "Lính 1",
+                "hp": 200,
+                "atk": 30,
+                "lane": "left",
+                "intent_pattern": [
+                    "attack"
+                ]
+            },
+            {
+                "id": "eu_soldier_2",
+                "name": "Lính 2",
+                "hp": 200,
+                "atk": 30,
+                "lane": "right",
+                "intent_pattern": [
+                    "attack"
+                ]
+            },
+            {
+                "id": "eu_soldier_3",
+                "name": "Lính 3",
+                "hp": 200,
+                "atk": 30,
+                "lane": "left",
+                "intent_pattern": [
+                    "attack"
+                ]
+            },
+            {
+                "id": "eu_soldier_4",
+                "name": "Lính 4",
+                "hp": 200,
+                "atk": 30,
+                "lane": "right",
+                "intent_pattern": [
+                    "attack"
+                ]
+            }
+        ],
+        "victory_conditions": [
+            "Phòng thủ 10 hiệp hoặc Tiêu diệt Boss Địch Hỏa"
+        ],
+        "rewards": {
+            "gold": 1000,
+            "honor": 500
+        },
+        "unlocks": [
+            "feature_thanh_chau"
+        ]
+    },
+    {
+        "id": "battle_ch27_gia_hu",
+        "name": "Phục kích Giả Hủ",
+        "chapter": 27,
+        "type": "field",
+        "difficulty": 5,
+        "enemy_units": [
+            {
+                "id": "eu_ambush_1",
+                "name": "Phục binh 1",
+                "hp": 300,
+                "atk": 40,
+                "lane": "left",
+                "intent_pattern": [
+                    "attack",
+                    "defend"
+                ]
+            },
+            {
+                "id": "eu_ambush_2",
+                "name": "Phục binh 2",
+                "hp": 300,
+                "atk": 40,
+                "lane": "right",
+                "intent_pattern": [
+                    "attack",
+                    "defend"
+                ]
+            },
+            {
+                "id": "eu_ambush_3",
+                "name": "Phục binh 3",
+                "hp": 300,
+                "atk": 40,
+                "lane": "center",
+                "intent_pattern": [
+                    "attack",
+                    "defend"
+                ]
+            },
+            {
+                "id": "eu_ambush_4",
+                "name": "Phục binh tinh nhuệ",
+                "hp": 500,
+                "atk": 50,
+                "lane": "center",
+                "intent_pattern": [
+                    "attack",
+                    "skill"
+                ]
+            }
+        ],
+        "victory_conditions": [
+            "Sống sót sau 5 hiệp"
+        ],
+        "rewards": {
+            "gold": 500
+        },
+        "unlocks": [
+            "feature_bai_tuong_dai_gia_hu"
+        ]
+    }
+]

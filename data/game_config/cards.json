@@ -1,0 +1,244 @@
+[
+    {
+        "id": "c_bach_ma",
+        "name": "Bạch Mã Xung Phong",
+        "type": "unit",
+        "rarity": "SR",
+        "mana_cost": 3,
+        "damage": 50,
+        "shield": 0,
+        "heal": 0,
+        "target": "lane",
+        "effects": [],
+        "description": "Bạch Mã Nghĩa Tòng xung phong.",
+        "unlock_chapter": 5,
+        "hero_required": "hero_zhaoyun"
+    },
+    {
+        "id": "c_ham_tran",
+        "name": "Hãm Trận Doanh",
+        "type": "unit",
+        "rarity": "SR",
+        "mana_cost": 4,
+        "damage": 60,
+        "shield": 20,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Break shield"
+        ],
+        "description": "Lực lượng tử sĩ.",
+        "unlock_chapter": 20,
+        "hero_required": "hero_gaoshun"
+    },
+    {
+        "id": "c_cung_thu",
+        "name": "Cung Thủ Thủ Thành",
+        "type": "unit",
+        "rarity": "R",
+        "mana_cost": 2,
+        "damage": 30,
+        "shield": 0,
+        "heal": 0,
+        "target": "single",
+        "effects": [],
+        "description": "Cung thủ bảo vệ thành.",
+        "unlock_chapter": 1
+    },
+    {
+        "id": "c_thiet_ky",
+        "name": "Thiết Kỵ Đột Kích",
+        "type": "unit",
+        "rarity": "SR",
+        "mana_cost": 4,
+        "damage": 70,
+        "shield": 0,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Charge"
+        ],
+        "description": "Kỵ binh xung phong.",
+        "unlock_chapter": 15
+    },
+    {
+        "id": "c_bo_binh",
+        "name": "Bộ Binh Trường Thương",
+        "type": "unit",
+        "rarity": "R",
+        "mana_cost": 2,
+        "damage": 25,
+        "shield": 10,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Anti-Cavalry"
+        ],
+        "description": "Lính cầm giáo.",
+        "unlock_chapter": 1
+    },
+    {
+        "id": "c_that_tham",
+        "name": "Thất Thám Bàn Xà",
+        "type": "tactic",
+        "rarity": "SSR",
+        "mana_cost": 5,
+        "damage": 120,
+        "shield": 0,
+        "heal": 0,
+        "target": "single",
+        "effects": [
+            "Combo"
+        ],
+        "description": "Kỹ năng đặc trưng của Triệu Vân.",
+        "unlock_chapter": 5,
+        "hero_required": "hero_zhaoyun"
+    },
+    {
+        "id": "c_bao_liet",
+        "name": "Bạo Liệt Đao Pháp",
+        "type": "tactic",
+        "rarity": "SR",
+        "mana_cost": 3,
+        "damage": 80,
+        "shield": 0,
+        "heal": 0,
+        "target": "single",
+        "effects": [
+            "Bleed"
+        ],
+        "description": "Chém mạnh.",
+        "unlock_chapter": 10
+    },
+    {
+        "id": "c_hoa_cong",
+        "name": "Hỏa Công Liên Hoàn",
+        "type": "tactic",
+        "rarity": "SSR",
+        "mana_cost": 6,
+        "damage": 100,
+        "shield": 0,
+        "heal": 0,
+        "target": "all_enemies",
+        "effects": [
+            "Burn"
+        ],
+        "description": "Đốt cháy địch.",
+        "unlock_chapter": 27
+    },
+    {
+        "id": "c_phuc_binh",
+        "name": "Phục Binh",
+        "type": "tactic",
+        "rarity": "R",
+        "mana_cost": 2,
+        "damage": 0,
+        "shield": 0,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Ambush"
+        ],
+        "description": "Tạo phục binh.",
+        "unlock_chapter": 8
+    },
+    {
+        "id": "c_xa_lu",
+        "name": "Xả Lũ Thanh Thủy",
+        "type": "stratagem",
+        "rarity": "SSR",
+        "mana_cost": 5,
+        "damage": 150,
+        "shield": 0,
+        "heal": 0,
+        "target": "all_enemies",
+        "effects": [
+            "Wet",
+            "Slow"
+        ],
+        "description": "Kế thủy công.",
+        "unlock_chapter": 35
+    },
+    {
+        "id": "c_noi_ung",
+        "name": "Nội Ứng Khai Môn",
+        "type": "stratagem",
+        "rarity": "SR",
+        "mana_cost": 4,
+        "damage": 0,
+        "shield": 0,
+        "heal": 0,
+        "target": "wall",
+        "effects": [
+            "Reduce defense"
+        ],
+        "description": "Nội gián mở cửa thành.",
+        "unlock_chapter": 20
+    },
+    {
+        "id": "c_ly_gian",
+        "name": "Ly Gián Kế",
+        "type": "stratagem",
+        "rarity": "SSR",
+        "mana_cost": 4,
+        "damage": 0,
+        "shield": 0,
+        "heal": 0,
+        "target": "single",
+        "effects": [
+            "Betray"
+        ],
+        "description": "Làm địch tự đánh nhau.",
+        "unlock_chapter": 25,
+        "hero_required": "hero_diaochan"
+    },
+    {
+        "id": "c_long_dam",
+        "name": "Long Đảm Lượng Ngân Thương",
+        "type": "equipment",
+        "rarity": "SSR",
+        "mana_cost": 3,
+        "damage": 0,
+        "shield": 0,
+        "heal": 0,
+        "target": "ally",
+        "effects": [
+            "+ATK",
+            "+Pierce"
+        ],
+        "description": "Vũ khí của Triệu Vân.",
+        "unlock_chapter": 5
+    },
+    {
+        "id": "c_bach_ngan",
+        "name": "Bạch Ngân Giáp",
+        "type": "equipment",
+        "rarity": "SR",
+        "mana_cost": 2,
+        "damage": 0,
+        "shield": 50,
+        "heal": 0,
+        "target": "ally",
+        "effects": [
+            "+DEF"
+        ],
+        "description": "Áo giáp sáng loáng.",
+        "unlock_chapter": 5
+    },
+    {
+        "id": "c_tuong_thanh",
+        "name": "Tường Thành Cao Lâm",
+        "type": "terrain",
+        "rarity": "R",
+        "mana_cost": 3,
+        "damage": 0,
+        "shield": 100,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Fortify"
+        ],
+        "description": "Dựng tường bảo vệ.",
+        "unlock_chapter": 1
+    }
+]

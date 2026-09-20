@@ -1,0 +1,746 @@
+[
+    {
+        "id": "hero_zhaoyun",
+        "name": "Triệu Vân",
+        "aliases": [
+            "Zhao Yun"
+        ],
+        "rarity": "SSR",
+        "faction": "Hoàng Thất Đại Vũ",
+        "realm": "Hoàng Cảnh Sơ Kỳ",
+        "base_stats": {
+            "force": 96,
+            "command": 91,
+            "intelligence": 76,
+            "politics": 65,
+            "charisma": 90
+        },
+        "hp": 1200,
+        "atk": 150,
+        "troop_type": "Bạch Mã Nghĩa Tòng",
+        "cost": 6.5,
+        "troop_affinity": {
+            "Bạch Mã Nghĩa Tòng": "S"
+        },
+        "equipment": [
+            {
+                "id": "eq_longdam",
+                "name": "Long Đảm Lượng Ngân Thương",
+                "type": "weapon",
+                "stat_bonus": {
+                    "force": 10
+                },
+                "description": "Thương truyền thuyết."
+            }
+        ],
+        "skills": [
+            {
+                "id": "sk_thattham",
+                "name": "Thất Thám Bàn Xà",
+                "type": "active",
+                "mana_cost": 3,
+                "damage": 400,
+                "effects": [],
+                "description": "Gây sát thương lớn."
+            },
+            {
+                "id": "sk_longdam",
+                "name": "Long Đảm",
+                "type": "passive",
+                "effects": [
+                    "Immune to fear"
+                ],
+                "description": "Không bị hoảng sợ."
+            },
+            {
+                "id": "sk_dotkich",
+                "name": "Đột Kích",
+                "type": "passive",
+                "effects": [
+                    "+10% speed"
+                ],
+                "description": "Tăng tốc độ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_nguho",
+                "name": "Ngũ Hổ Tướng",
+                "required_heroes": [
+                    "hero_machao"
+                ],
+                "bonus": {
+                    "atk_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_zhaoyun_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 5,
+        "novel_first_appearance": 5
+    },
+    {
+        "id": "hero_dianwei",
+        "name": "Điển Vi",
+        "aliases": [
+            "Dian Wei"
+        ],
+        "rarity": "SSR",
+        "faction": "Trung Lập",
+        "realm": "Hoàng Cảnh Trung Kỳ",
+        "base_stats": {
+            "force": 99,
+            "command": 72,
+            "intelligence": 35,
+            "politics": 25,
+            "charisma": 60
+        },
+        "hp": 1500,
+        "atk": 160,
+        "troop_type": "Hổ Bộ Doanh",
+        "cost": 6.0,
+        "troop_affinity": {
+            "Hổ Bộ Doanh": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_aclai",
+                "name": "Ác Lai",
+                "type": "passive",
+                "effects": [],
+                "description": "Tăng sát thương theo HP mất.",
+                "damage": 0
+            },
+            {
+                "id": "sk_generic_hero_dianwei_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_dianwei_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_hovethan",
+                "name": "Hộ Vệ Thần",
+                "required_heroes": [],
+                "bonus": {
+                    "hp_pct": 15.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_dianwei_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 15,
+        "novel_first_appearance": 15
+    },
+    {
+        "id": "hero_jiaxu",
+        "name": "Giả Hủ",
+        "aliases": [
+            "Jia Xu"
+        ],
+        "rarity": "SSR",
+        "faction": "Trung Lập",
+        "realm": "Hoàng Cảnh Sơ Kỳ",
+        "base_stats": {
+            "force": 45,
+            "command": 65,
+            "intelligence": 97,
+            "politics": 88,
+            "charisma": 50
+        },
+        "hp": 800,
+        "atk": 50,
+        "troop_type": "Mưu Thần",
+        "cost": 5.5,
+        "troop_affinity": {
+            "Mưu Thần": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_docsi",
+                "name": "Độc Sĩ",
+                "type": "active",
+                "mana_cost": 4,
+                "damage": 100,
+                "effects": [
+                    "Poison"
+                ],
+                "description": "Gây độc mạnh."
+            },
+            {
+                "id": "sk_generic_hero_jiaxu_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_jiaxu_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_muuthan",
+                "name": "Mưu Thần",
+                "required_heroes": [
+                    "hero_xunyu",
+                    "hero_guojia"
+                ],
+                "bonus": {
+                    "int_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_jiaxu_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 27,
+        "novel_first_appearance": 27
+    },
+    {
+        "id": "hero_gaoshun",
+        "name": "Cao Thuận",
+        "aliases": [
+            "Gao Shun"
+        ],
+        "rarity": "SR",
+        "faction": "Tây Lăng",
+        "realm": "Vương Cảnh",
+        "base_stats": {
+            "force": 82,
+            "command": 78,
+            "intelligence": 52,
+            "politics": 40,
+            "charisma": 70
+        },
+        "hp": 1100,
+        "atk": 120,
+        "troop_type": "Hãm Trận Doanh",
+        "cost": 5.0,
+        "troop_affinity": {
+            "Hãm Trận Doanh": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_hamtran",
+                "name": "Hãm Trận",
+                "type": "passive",
+                "effects": [
+                    "Break shield"
+                ],
+                "description": "Phá giáp.",
+                "damage": 0
+            },
+            {
+                "id": "sk_generic_hero_gaoshun_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_gaoshun_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_trungthanh",
+                "name": "Trung Thành",
+                "required_heroes": [
+                    "hero_zhangliao"
+                ],
+                "bonus": {
+                    "def_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_gaoshun_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 20,
+        "novel_first_appearance": 20
+    },
+    {
+        "id": "hero_liru",
+        "name": "Lý Nho",
+        "aliases": [
+            "Li Ru"
+        ],
+        "rarity": "SR",
+        "faction": "Tây Lăng",
+        "realm": "Vương Cảnh",
+        "base_stats": {
+            "force": 55,
+            "command": 60,
+            "intelligence": 85,
+            "politics": 72,
+            "charisma": 40
+        },
+        "hp": 750,
+        "atk": 45,
+        "troop_type": "Mưu Thần",
+        "cost": 4.5,
+        "troop_affinity": {
+            "Mưu Thần": "A"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_lietduc",
+                "name": "Diệt Dục",
+                "type": "active",
+                "mana_cost": 3,
+                "damage": 50,
+                "effects": [
+                    "Silence"
+                ],
+                "description": "Khóa mõm."
+            },
+            {
+                "id": "sk_generic_hero_liru_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_liru_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_docac",
+                "name": "Độc Ác",
+                "required_heroes": [
+                    "hero_jiaxu"
+                ],
+                "bonus": {
+                    "damage_pct": 5.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_liru_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 18,
+        "novel_first_appearance": 18
+    },
+    {
+        "id": "hero_diaochan",
+        "name": "Điêu Thuyền",
+        "aliases": [
+            "Diao Chan"
+        ],
+        "rarity": "SSR",
+        "faction": "Quý Gia",
+        "realm": "Hoàng Cảnh Sơ Kỳ",
+        "base_stats": {
+            "force": 28,
+            "command": 30,
+            "intelligence": 82,
+            "politics": 90,
+            "charisma": 100
+        },
+        "hp": 700,
+        "atk": 30,
+        "troop_type": "Hồng Nhan",
+        "cost": 4.0,
+        "troop_affinity": {
+            "Hồng Nhan": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_lygian",
+                "name": "Ly Gián",
+                "type": "active",
+                "mana_cost": 3,
+                "damage": 0,
+                "effects": [
+                    "Charm"
+                ],
+                "description": "Quyến rũ."
+            },
+            {
+                "id": "sk_generic_hero_diaochan_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_diaochan_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_hongnhan",
+                "name": "Hồng Nhan",
+                "required_heroes": [],
+                "bonus": {
+                    "dodge_pct": 15.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_diaochan_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 25,
+        "novel_first_appearance": 25
+    },
+    {
+        "id": "hero_machao",
+        "name": "Mã Siêu",
+        "aliases": [
+            "Ma Chao"
+        ],
+        "rarity": "SSR",
+        "faction": "Tây Lăng",
+        "realm": "Hoàng Cảnh Trung Kỳ",
+        "base_stats": {
+            "force": 97,
+            "command": 85,
+            "intelligence": 42,
+            "politics": 30,
+            "charisma": 80
+        },
+        "hp": 1150,
+        "atk": 155,
+        "troop_type": "Tây Lăng Thiết Kỵ",
+        "cost": 6.5,
+        "troop_affinity": {
+            "Tây Lăng Thiết Kỵ": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_dotkich2",
+                "name": "Thiết Kỵ",
+                "type": "passive",
+                "effects": [
+                    "Charge"
+                ],
+                "description": "Lao tới.",
+                "damage": 0
+            },
+            {
+                "id": "sk_generic_hero_machao_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_machao_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_nguho2",
+                "name": "Ngũ Hổ Tướng",
+                "required_heroes": [
+                    "hero_zhaoyun"
+                ],
+                "bonus": {
+                    "atk_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_machao_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 100,
+        "novel_first_appearance": 100
+    },
+    {
+        "id": "hero_zhangliao",
+        "name": "Trương Liêu",
+        "aliases": [
+            "Zhang Liao"
+        ],
+        "rarity": "SSR",
+        "faction": "Bắc Cương",
+        "realm": "Hoàng Cảnh Sơ Kỳ",
+        "base_stats": {
+            "force": 90,
+            "command": 88,
+            "intelligence": 68,
+            "politics": 52,
+            "charisma": 85
+        },
+        "hp": 1100,
+        "atk": 130,
+        "troop_type": "Thiết Kỵ Tiên Phong",
+        "cost": 6.0,
+        "troop_affinity": {
+            "Thiết Kỵ Tiên Phong": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_uytran",
+                "name": "Uy Trấn",
+                "type": "active",
+                "mana_cost": 4,
+                "damage": 200,
+                "effects": [
+                    "Fear"
+                ],
+                "description": "Gây sợ hãi."
+            },
+            {
+                "id": "sk_generic_hero_zhangliao_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_zhangliao_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_tienphong",
+                "name": "Tiên Phong",
+                "required_heroes": [
+                    "hero_gaoshun"
+                ],
+                "bonus": {
+                    "speed_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_zhangliao_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 45,
+        "novel_first_appearance": 45
+    },
+    {
+        "id": "hero_guojia",
+        "name": "Quách Gia",
+        "aliases": [
+            "Guo Jia"
+        ],
+        "rarity": "SSR",
+        "faction": "Trung Lập",
+        "realm": "Hoàng Cảnh Trung Kỳ",
+        "base_stats": {
+            "force": 35,
+            "command": 55,
+            "intelligence": 98,
+            "politics": 82,
+            "charisma": 75
+        },
+        "hp": 700,
+        "atk": 40,
+        "troop_type": "Mưu Thần Đệ Nhất",
+        "cost": 6.5,
+        "troop_affinity": {
+            "Mưu Thần Đệ Nhất": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_thienky",
+                "name": "Thiên Cơ",
+                "type": "passive",
+                "effects": [
+                    "Insight"
+                ],
+                "description": "Nhìn thấu.",
+                "damage": 0
+            },
+            {
+                "id": "sk_generic_hero_guojia_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_guojia_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_muuthan2",
+                "name": "Mưu Thần",
+                "required_heroes": [
+                    "hero_xunyu",
+                    "hero_jiaxu"
+                ],
+                "bonus": {
+                    "int_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_guojia_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 60,
+        "novel_first_appearance": 60
+    },
+    {
+        "id": "hero_xunyu",
+        "name": "Tuân Úc",
+        "aliases": [
+            "Xun Yu"
+        ],
+        "rarity": "SSR",
+        "faction": "Hoàng Thất Đại Vũ",
+        "realm": "Hoàng Cảnh Sơ Kỳ",
+        "base_stats": {
+            "force": 30,
+            "command": 58,
+            "intelligence": 95,
+            "politics": 96,
+            "charisma": 90
+        },
+        "hp": 750,
+        "atk": 35,
+        "troop_type": "Nội Chính Đại Thần",
+        "cost": 6.0,
+        "troop_affinity": {
+            "Nội Chính Đại Thần": "S"
+        },
+        "equipment": [],
+        "skills": [
+            {
+                "id": "sk_vuongta",
+                "name": "Vương Tá",
+                "type": "passive",
+                "effects": [
+                    "Resource Boost"
+                ],
+                "description": "Tăng tài nguyên.",
+                "damage": 0
+            },
+            {
+                "id": "sk_generic_hero_xunyu_1",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            },
+            {
+                "id": "sk_generic_hero_xunyu_2",
+                "name": "Kỹ năng thường",
+                "type": "passive",
+                "effects": [],
+                "description": "Kỹ năng bổ trợ."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_muuthan3",
+                "name": "Mưu Thần",
+                "required_heroes": [
+                    "hero_guojia",
+                    "hero_jiaxu"
+                ],
+                "bonus": {
+                    "int_pct": 10.0
+                },
+                "is_active": false
+            },
+            {
+                "id": "bnd_generic_hero_xunyu_1",
+                "name": "Duyên phận",
+                "required_heroes": [],
+                "bonus": {},
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 30,
+        "novel_first_appearance": 30
+    }
+]

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "gamedev": {
+      "command": "node",
+      "args": ["C:\\Users\\Admin\\.gemini\\antigravity\\mcp-servers\\gamedev-mcp-server\\dist\\index.js"]
+    }
+  }
+}

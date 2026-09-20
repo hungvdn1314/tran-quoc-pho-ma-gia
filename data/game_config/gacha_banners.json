@@ -1,0 +1,26 @@
+[
+    {
+        "id": "banner_1",
+        "name": "Bái Tướng Đài Sơ Khai",
+        "chapter": 5,
+        "featured": [
+            "hero_zhaoyun"
+        ]
+    },
+    {
+        "id": "banner_2",
+        "name": "Độc Sĩ Giáng Lâm",
+        "chapter": 27,
+        "featured": [
+            "hero_jiaxu"
+        ]
+    },
+    {
+        "id": "banner_3",
+        "name": "Ngũ Hổ Tướng",
+        "chapter": 100,
+        "featured": [
+            "hero_machao"
+        ]
+    }
+]

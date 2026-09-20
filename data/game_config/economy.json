@@ -1,0 +1,42 @@
+{
+    "currencies": [
+        {
+            "id": "gold",
+            "name": "Vàng",
+            "description": "Tiền tệ cơ bản."
+        },
+        {
+            "id": "honor",
+            "name": "Danh vọng",
+            "description": "Dùng để chiêu mộ danh tướng."
+        }
+    ],
+    "faucets": [
+        {
+            "chapter": 1,
+            "source": "Lương tháng",
+            "amount": 100,
+            "currency_id": "gold"
+        },
+        {
+            "chapter": 5,
+            "source": "Thắng trận",
+            "amount": 50,
+            "currency_id": "honor"
+        }
+    ],
+    "sinks": [
+        {
+            "sink_id": "summon_1",
+            "cost": 100,
+            "currency_id": "honor"
+        }
+    ],
+    "balance": {
+        "inflation_rate": 0.05,
+        "max_storage": {
+            "gold": 99999,
+            "honor": 9999
+        }
+    }
+}

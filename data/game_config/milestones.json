@@ -1,0 +1,115 @@
+[
+    {
+        "chapter": 1,
+        "title": "Xuyên Không",
+        "scene_name": "Phò Mã Phủ",
+        "unlocks": [
+            "feature_basic_battle"
+        ],
+        "rewards": {},
+        "narrative_summary": "Bắt đầu cuộc hành trình.",
+        "prerequisites": []
+    },
+    {
+        "chapter": 5,
+        "title": "Bái Tướng Đài",
+        "scene_name": "Bái Tướng Đài",
+        "unlocks": [
+            "feature_gacha"
+        ],
+        "rewards": {},
+        "narrative_summary": "Chiêu mộ Triệu Vân.",
+        "prerequisites": [
+            1
+        ]
+    },
+    {
+        "chapter": 10,
+        "title": "Ám Sát",
+        "scene_name": "Phò Mã Phủ",
+        "unlocks": [
+            "feature_defense"
+        ],
+        "rewards": {},
+        "narrative_summary": "Chống lại sát thủ.",
+        "prerequisites": [
+            5
+        ]
+    },
+    {
+        "chapter": 15,
+        "title": "Điển Vi",
+        "scene_name": "Doanh Trại",
+        "unlocks": [
+            "feature_barracks"
+        ],
+        "rewards": {},
+        "narrative_summary": "Thu phục Điển Vi.",
+        "prerequisites": [
+            10
+        ]
+    },
+    {
+        "chapter": 20,
+        "title": "Cao Thuận",
+        "scene_name": "Biên Cương",
+        "unlocks": [
+            "feature_border"
+        ],
+        "rewards": {},
+        "narrative_summary": "Gặp gỡ Cao Thuận.",
+        "prerequisites": [
+            15
+        ]
+    },
+    {
+        "chapter": 27,
+        "title": "Độc Sĩ",
+        "scene_name": "Mưu Khách Phủ",
+        "unlocks": [
+            "feature_strategy"
+        ],
+        "rewards": {},
+        "narrative_summary": "Giả Hủ hiến kế.",
+        "prerequisites": [
+            20
+        ]
+    },
+    {
+        "chapter": 35,
+        "title": "Thủy Công",
+        "scene_name": "Bờ Sông",
+        "unlocks": [
+            "feature_naval"
+        ],
+        "rewards": {},
+        "narrative_summary": "Trận chiến trên sông.",
+        "prerequisites": [
+            27
+        ]
+    },
+    {
+        "chapter": 48,
+        "title": "Đại Chiến",
+        "scene_name": "Thanh Châu",
+        "unlocks": [
+            "feature_thanh_chau"
+        ],
+        "rewards": {},
+        "narrative_summary": "Chiến đấu sinh tử ở Thanh Châu.",
+        "prerequisites": [
+            35
+        ]
+    },
+    {
+        "chapter": 53,
+        "title": "Kỷ Nguyên Mới",
+        "scene_name": "Kinh Đô",
+        "unlocks": [],
+        "rewards": {},
+        "narrative_summary": "Chương mới bắt đầu. (Tới 386)",
+        "prerequisites": [
+            48
+        ]
+    }
+]
