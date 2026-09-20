@@ -54,20 +54,20 @@ document.addEventListener('DOMContentLoaded', () => {
       battleFront: false
     },
 
-    // Resources
-    ticketCount: 1,       // Anh Hồn Lệnh Sơ Cấp
-    jade: 10,             // Ngọc Tỷ / Kim Bảo
-    suspicion: 15,        // Emperor Suspicion (0 - 100%)
-    gold: 100,            // Vàng khởi đầu
-    food: 5000,           // Lương thảo
-    ap: 3,
+    // Resources (Bắt đầu tại Chương 1: Hàn vi, chưa có tài nguyên)
+    ticketCount: 0,       // Anh Hồn Lệnh (Nhận khi hệ thống thức tỉnh cuối Ch.1)
+    jade: 0,              // Ngọc Tỷ / Kim Bảo
+    suspicion: 15,        // Emperor Suspicion (Khởi điểm 15%)
+    gold: 0,              // Vàng khởi đầu (Thưởng 100 sau khi thắng đối thơ Ch.1)
+    food: 0,              // Lương thảo (Chưa có quân đội)
+    ap: 0,                // Điểm Hành Động (Mở tại Ch.15)
     maxAp: 3,
 
-    // Gacha & Roster State
+    // Gacha & Roster State (Chưa chiêu mộ anh linh nào)
     pityCount: 0,
     hasWon5050: false,
-    ownedHeroIds: ['hero_zhaoyun'],
-    selectedInspectorHeroId: 'hero_zhaoyun',
+    ownedHeroIds: [],     // Trống rỗng! Chiêu mộ Triệu Vân tại Ch.5
+    selectedInspectorHeroId: null,
     lastSummonedHero: null,
 
     // VN Dialogue State (Ink Engine Driven)
@@ -288,6 +288,11 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (action.includes("show_toast")) {
       const msg = parts[1] || "Thông báo";
       showToast(msg, true);
+    } else if (action.includes("grant_ticket")) {
+      const count = Number(parts[1] || 1);
+      state.ticketCount += count;
+      updateProgressTrackerUI();
+      showToast(`🎫 Nhận được Anh Hồn Lệnh × ${count}!`, true);
     } else if (action.includes("unlock_feature")) {
       const feat = parts[1] || parts[0].split("|")[1];
       if (feat) triggerUnlockNotification(feat.trim());
@@ -302,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // =========================================================================
-  // 5. PROGRESSION MATRIX & LOCK ENGINE
+  // 5. PROGRESSION MATRIX & LOCK ENGINE (TIẾN TRÌNH KHÓA CHẶT CHẼ)
   // =========================================================================
   function updateProgressTrackerUI() {
     const currentChapter = chapterMatrix.find(c => c.id === state.currentChapterId) || chapterMatrix[0];
@@ -314,7 +319,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.hudTicketCount.textContent = state.ticketCount;
     ui.gachaTicketDisplay.textContent = state.ticketCount;
 
-    // Feature lock states
+    // 1. Tính năng Kinh Doanh Xà Phòng (Chương 8)
     if (state.unlocked.soap) {
       ui.btnActionSoap.classList.remove('locked-feature');
       const lockBadge = document.getElementById('soap-lock-badge');
@@ -323,26 +328,50 @@ document.addEventListener('DOMContentLoaded', () => {
       ui.btnActionSoap.classList.add('locked-feature');
     }
 
+    // 2. Tầng 2: Đế Nghiệp Sa Bàn (Chương 15 - Sắc phong Chinh Bắc)
+    // Hoàn toàn ẩn khỏi thanh điều hướng ở giai đoạn đầu để tránh tương tác sớm gây bug
     if (state.unlocked.strategyMap) {
-      ui.btnTabMap.classList.remove('locked-tab');
-      ui.tabMapLock.style.display = 'none';
+      ui.btnTabMap.classList.remove('locked-tab', 'hidden');
+      ui.btnTabMap.removeAttribute('disabled');
+      if (ui.tabMapLock) ui.tabMapLock.style.display = 'none';
     } else {
-      ui.btnTabMap.classList.add('locked-tab');
-      ui.tabMapLock.style.display = 'inline-block';
+      ui.btnTabMap.classList.add('locked-tab', 'hidden');
+      ui.btnTabMap.setAttribute('disabled', 'true');
+      if (ui.tabMapLock) ui.tabMapLock.style.display = 'inline-block';
     }
 
+    // 3. Tầng 3: Sa Trường Thẻ Bài (Chương 48 - Đại Chiến Thanh Châu)
+    // Hoàn toàn ẩn khỏi thanh điều hướng ở giai đoạn đầu
     if (state.unlocked.battleFront) {
-      ui.btnTabBattle.classList.remove('locked-tab');
-      ui.tabBattleLock.style.display = 'none';
+      ui.btnTabBattle.classList.remove('locked-tab', 'hidden');
+      ui.btnTabBattle.removeAttribute('disabled');
+      if (ui.tabBattleLock) ui.tabBattleLock.style.display = 'none';
     } else {
-      ui.btnTabBattle.classList.add('locked-tab');
-      ui.tabBattleLock.style.display = 'inline-block';
+      ui.btnTabBattle.classList.add('locked-tab', 'hidden');
+      ui.btnTabBattle.setAttribute('disabled', 'true');
+      if (ui.tabBattleLock) ui.tabBattleLock.style.display = 'inline-block';
     }
 
-    if (state.unlocked.zhaoyun) {
+    // 4. Bái Tướng Đài Gacha (Chương 5 - Mật thất Phò Mã Phủ)
+    // Chỉ xuất hiện trên HUD khi kịch bản đã khai mở đài chiêu mộ
+    if (state.unlocked.gacha) {
+      ui.btnHudGacha.classList.remove('hidden');
+    } else {
+      ui.btnHudGacha.classList.add('hidden');
+    }
+
+    // 5. Nút Tra Cứu Danh Tướng (Chỉ hiện khi đã triệu hoán thành công anh linh)
+    if (state.unlocked.zhaoyun && state.ownedHeroIds.length > 0) {
       ui.btnHudHero.classList.remove('hidden');
     } else {
       ui.btnHudHero.classList.add('hidden');
+    }
+
+    // 6. An toàn trạng thái: Nếu view hiện tại bị khóa, tự động chuyển về VN
+    if (state.currentView === 'map' && !state.unlocked.strategyMap) {
+      switchView('vn');
+    } else if (state.currentView === 'battle' && !state.unlocked.battleFront) {
+      switchView('vn');
     }
 
     const cardFlood = document.getElementById('card-flood');
@@ -364,21 +393,43 @@ document.addEventListener('DOMContentLoaded', () => {
       c.active = (c.id === chapterId);
     });
 
-    if (chapterId >= 5) state.unlocked.gacha = true;
-    if (chapterId >= 8) state.unlocked.soap = true;
-    if (chapterId >= 15) state.unlocked.strategyMap = true;
-    if (chapterId >= 20) state.unlocked.gaoshun = true;
-    if (chapterId >= 27) state.unlocked.giaHu = true;
-    if (chapterId >= 35) state.unlocked.flood = true;
-    if (chapterId >= 48) state.unlocked.battleFront = true;
+    state.unlocked.gacha = (chapterId >= 5);
+    state.unlocked.zhaoyun = (chapterId >= 5 && state.ownedHeroIds.length > 0);
+    state.unlocked.soap = (chapterId >= 8);
+    state.unlocked.strategyMap = (chapterId >= 15);
+    if (state.unlocked.strategyMap && state.ap === 0) {
+      state.ap = 3;
+    }
+    state.unlocked.gaoshun = (chapterId >= 20);
+    state.unlocked.giaHu = (chapterId >= 27);
+    state.unlocked.flood = (chapterId >= 35);
+    state.unlocked.khaiNguyen = (chapterId >= 43);
+    state.unlocked.battleFront = (chapterId >= 48);
 
     updateProgressTrackerUI();
+    updateHudResources();
     renderMilestoneTimeline();
   }
 
   function triggerUnlockNotification(featureKey) {
     state.unlocked[featureKey] = true;
+    if (featureKey === 'bai_tuong_dai') {
+      state.unlocked.gacha = true;
+      if (state.ticketCount < 1) state.ticketCount = 1;
+      advanceChapter(5);
+    } else if (featureKey === 'strategyMap' || featureKey === 'de_nghiep_sa_ban') {
+      state.unlocked.strategyMap = true;
+      if (state.ap === 0) state.ap = 3;
+      advanceChapter(15);
+    } else if (featureKey === 'soap') {
+      state.unlocked.soap = true;
+      advanceChapter(8);
+    } else if (featureKey === 'battleFront') {
+      state.unlocked.battleFront = true;
+      advanceChapter(48);
+    }
     updateProgressTrackerUI();
+    updateHudResources();
 
     const unlockDetails = {
       soap: {
@@ -469,7 +520,12 @@ document.addEventListener('DOMContentLoaded', () => {
     chapterMatrix.forEach(c => {
       const item = document.createElement('div');
       item.className = `milestone-item ${c.unlocked ? 'ms-unlocked' : 'ms-locked'} ${c.active ? 'ms-current' : ''}`;
-      item.style.cursor = 'pointer';
+      if (!c.unlocked) {
+        item.style.cursor = 'not-allowed';
+        item.style.opacity = '0.55';
+      } else {
+        item.style.cursor = 'pointer';
+      }
       item.innerHTML = `
         <div class="ms-badge">${c.badge}</div>
         <div class="ms-body">
@@ -479,8 +535,12 @@ document.addEventListener('DOMContentLoaded', () => {
         </div>
         <div class="ms-status-label">${c.unlocked ? 'ĐÃ MỞ KHÓA ▶' : 'KHÓA 🔒'}</div>
       `;
-      // Click on unlocked milestone to jump story knot!
+      // Click on unlocked milestone to replay/jump story knot!
       item.addEventListener('click', () => {
+        if (!c.unlocked) {
+          showToast(`🔒 ${c.badge} chưa mở khóa! Hãy hoàn thành cốt truyện để tiến tới.`);
+          return;
+        }
         if (c.knot && ink.knots.has(c.knot)) {
           advanceChapter(c.id);
           ink.start(c.knot);
@@ -499,6 +559,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // 6. GACHA SUMMONING ENGINE (BÁI TƯỚNG ĐÀI) — 28 HEROES POOL
   // =========================================================================
   function openGachaModal() {
+    if (!state.unlocked.gacha) {
+      showToast("🔒 Bái Tướng Đài chưa được khai mở! Cần tiến tới Chương 5 trong kịch bản.");
+      return;
+    }
     ui.gachaModal.classList.remove('hidden');
     ui.altarBtnRow.classList.remove('hidden');
     ui.revealActionRow.classList.add('hidden');
@@ -672,7 +736,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function openHeroInspector(heroId) {
-    renderHeroInspector(heroId || state.selectedInspectorHeroId);
+    if (state.ownedHeroIds.length === 0) {
+      showToast("🔒 Chưa có danh tướng nào quy thuận! Hãy hoàn thành triệu hoán tại Bái Tướng Đài trước.");
+      return;
+    }
+    renderHeroInspector(heroId || state.selectedInspectorHeroId || state.ownedHeroIds[0]);
     ui.heroDetailModal.classList.remove('hidden');
   }
 
@@ -853,16 +921,23 @@ document.addEventListener('DOMContentLoaded', () => {
       battleFront: false
     };
 
-    state.ticketCount = 1;
-    state.jade = 10;
-    state.gold = 100;
-    state.food = 5000;
+    state.ticketCount = 0;
+    state.jade = 0;
+    state.gold = 0;
+    state.food = 0;
     state.suspicion = 15;
-    state.ap = 3;
+    state.ap = 0;
     state.pityCount = 0;
-    state.ownedHeroIds = ['hero_zhaoyun'];
+    state.ownedHeroIds = [];
+    state.selectedInspectorHeroId = null;
+    state.lastSummonedHero = null;
     state.currentTextIndex = 0;
     state.dialogueHistory = [];
+
+    // Reset right actor slot in VN
+    if (ui.actorRightImg) ui.actorRightImg.classList.add('hidden');
+    if (ui.actorRightAvatar) ui.actorRightAvatar.classList.remove('hidden');
+    if (ui.actorRightNametag) ui.actorRightNametag.textContent = "Chưa Triệu Hoán";
 
     // Hide all modals
     if (ui.choiceModal) ui.choiceModal.classList.add('hidden');
@@ -872,12 +947,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.unlockEventModal) ui.unlockEventModal.classList.add('hidden');
     if (ui.victoryModal) ui.victoryModal.classList.add('hidden');
     if (ui.backlogDrawer) ui.backlogDrawer.classList.add('hidden');
+    if (ui.vnBranchIndicator) ui.vnBranchIndicator.textContent = 'Khởi Đầu: Nhập Thể Hàn Vi';
 
     // Reset ink variables and restart knot
-    ink.variables.gold = 100;
+    ink.variables.gold = 0;
     ink.variables.suspicion = 15;
-    ink.variables.rations = 5000;
+    ink.variables.rations = 0;
     ink.variables.chapter = 1;
+    ink.variables.has_anh_hon_lenh = false;
+    ink.variables.system_awakened = false;
+    ink.variables.unlocked_gacha = false;
+    ink.variables.unlocked_soap = false;
+    ink.variables.unlocked_map = false;
+    ink.variables.unlocked_battle = false;
     ink.start('chapter_1_start');
 
     switchView('vn');
@@ -1291,7 +1373,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     ui.txtGold.textContent = state.gold.toLocaleString('vi-VN');
     ui.txtFood.textContent = state.food.toLocaleString('vi-VN');
-    ui.txtAp.textContent = `${state.ap} / ${state.maxAp}`;
+    if (state.unlocked.strategyMap) {
+      ui.txtAp.textContent = `${state.ap} / ${state.maxAp}`;
+      ui.txtAp.style.color = '#fff';
+    } else {
+      ui.txtAp.textContent = 'Khóa (Ch.15)';
+      ui.txtAp.style.color = '#64748b';
+    }
   }
 
   // =========================================================================

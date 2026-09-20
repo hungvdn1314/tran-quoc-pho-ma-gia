@@ -53,7 +53,7 @@
         <span>Tầng 1: Kịch Bản Visual Novel</span>
       </button>
 
-      <button class="nav-btn locked-tab" id="btn-tab-map" data-view="map" title="Khóa: Mở khóa tại Chương 15 (Chinh Bắc Thánh Chỉ)">
+      <button class="nav-btn locked-tab hidden" id="btn-tab-map" data-view="map" disabled title="Khóa: Mở khóa tại Chương 15 (Chinh Bắc Thánh Chỉ)">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
           <line x1="8" y1="2" x2="8" y2="18"></line>
@@ -64,7 +64,7 @@
         <span class="badge-alert hidden" id="map-alert-badge">Nguy Cấp</span>
       </button>
 
-      <button class="nav-btn locked-tab" id="btn-tab-battle" data-view="battle" title="Khóa: Mở khóa tại Chương 48 (Thành Thanh Châu Đại Chiến)">
+      <button class="nav-btn locked-tab hidden" id="btn-tab-battle" data-view="battle" disabled title="Khóa: Mở khóa tại Chương 48 (Thành Thanh Châu Đại Chiến)">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path>
           <path d="M13 19l6 2 2-6-4.5-4.5"></path>
@@ -76,17 +76,17 @@
       </button>
     </nav>
 
-    <!-- HERO & GACHA QUICK ACCESS -->
+    <!-- HERO & GACHA QUICK ACCESS (MỞ KHÓA THEO TIẾN TRÌNH: GACHA TẠI CH.5, HERO KHI ĐÃ CHIÊU MỘ) -->
     <div class="hud-hero-dock">
-      <button class="btn-gacha-hud" id="btn-hud-gacha" title="Bái Tướng Đài - Chiêu Mộ Anh Linh Tam Quốc">
+      <button class="btn-gacha-hud hidden" id="btn-hud-gacha" title="Bái Tướng Đài - Chiêu Mộ Anh Linh Tam Quốc (Mở tại Ch.5)">
         <span class="gacha-seal">令</span>
         <div class="gacha-hud-info">
           <span class="gacha-lbl">Bái Tướng Đài</span>
-          <span class="gacha-ticket-status">Anh Hồn Lệnh: <strong id="hud-ticket-count">1</strong></span>
+          <span class="gacha-ticket-status">Anh Hồn Lệnh: <strong id="hud-ticket-count">0</strong></span>
         </div>
       </button>
 
-      <button class="btn-hero-inspect-hud hidden" id="btn-hud-hero" title="Bấm để xem Bảng Thuộc Tính & Tuyệt Kỹ Triệu Tử Long">
+      <button class="btn-hero-inspect-hud hidden" id="btn-hud-hero" title="Bấm để xem Bảng Thuộc Tính & Tuyệt Kỹ Danh Tướng Đã Sở Hữu">
         <img src="assets/images/zhaoyun.jpg" class="hero-hud-mini" alt="Triệu Vân">
         <div class="hero-hud-meta">
           <span class="hh-name">Triệu Tử Long</span>
@@ -111,10 +111,10 @@
       </div>
 
       <!-- Vàng Ròng (Gold from Soap/Trade) -->
-      <div class="res-card gold-res" title="Vàng ròng tích lũy từ xà phòng Thấu Hoa Cao">
+      <div class="res-card gold-res" title="Vàng ròng tích lũy từ xà phòng Thấu Hoa Cao & thưởng triều đình">
         <div class="res-symbol">金</div>
         <div class="res-meta">
-          <span class="res-val" id="txt-gold">10.500</span>
+          <span class="res-val" id="txt-gold">0</span>
           <span class="res-lbl">Lượng Vàng</span>
         </div>
       </div>
@@ -123,16 +123,16 @@
       <div class="res-card food-res" title="Lương thảo phục vụ hành quân và nuôi binh sĩ">
         <div class="res-symbol">糧</div>
         <div class="res-meta">
-          <span class="res-val" id="txt-food">50.000</span>
+          <span class="res-val" id="txt-food">0</span>
           <span class="res-lbl">Thạch Lương</span>
         </div>
       </div>
 
       <!-- Điểm Hành Động (Action Points) -->
-      <div class="res-card ap-res" title="Điểm Hành Động mỗi tháng trên Sa Bàn">
+      <div class="res-card ap-res" title="Điểm Hành Động mỗi tháng trên Sa Bàn (Mở tại Ch.15)">
         <div class="res-symbol">令</div>
         <div class="res-meta">
-          <span class="res-val" id="txt-ap">3 / 3</span>
+          <span class="res-val" id="txt-ap">0 / 0</span>
           <span class="res-lbl">Lệnh Sa Bàn</span>
         </div>
       </div>

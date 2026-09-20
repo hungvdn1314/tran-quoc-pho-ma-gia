@@ -258,6 +258,7 @@ Quý Bình An nuốt nhục. Nhưng trong bóng tối cuối hàng, một tiến
 ⟨ Ban tặng: Anh Hồn Lệnh Sơ Cấp × 1 ⟩
 
 # EFFECT: show_toast|🎉 HỆ THỐNG KÍCH HOẠT! Nhận Anh Hồn Lệnh × 1|system
+# EFFECT: grant_ticket|1
 
 "Hệ thống... Tam Quốc?" — Quý Bình An nghe thấy giọng nói cơ giới vang trong đầu.
 
@@ -288,6 +289,7 @@ Trong khoảnh khắc tĩnh lặng giữa đại điện ồn ào, Quý Bình An
 [HỆ THỐNG]: Ban tặng: Anh Hồn Lệnh Sơ Cấp × 1.
 
 # EFFECT: show_toast|🎉 HỆ THỐNG KÍCH HOẠT (Chế độ ẩn)! Nhận Anh Hồn Lệnh × 1|system
+# EFFECT: grant_ticket|1
 
 Hắn giật mình nhìn xuống — trong tay áo, một tấm lệnh bài phát sáng mờ nhạt xuất hiện từ hư không.
 
@@ -646,4 +648,4 @@ Vũ Hoàng đứng dậy, rút thanh kiếm truyền quốc:
   
   [HỆ THỐNG]: Từ đây, người chơi có thể chuyển sang Tầng 2 — Đế Nghiệp Sa Bàn để quản lý lãnh thổ và quân đội.
   
-  -> END
+  -> chapter_20_start
