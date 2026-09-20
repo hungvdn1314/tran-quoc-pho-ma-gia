@@ -34,6 +34,70 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 52, badge: "CHƯƠNG 48-52", title: "Đại Chiến Thành Thanh Châu", knot: "chapter_48_transition", featureUnlocked: "TẦNG 3: Sa Trường Thẻ Bài 3 Làn & Quyết Chiến Địch Hỏa", lore: "5 vạn quân Địch Hỏa vây hãm, dùng thủy kế Giả Hủ và Triệu Vân đại phá quân Nam Ly khải hoàn.", unlocked: false, active: false }
   ];
 
+  // Faction & Identity Progression Stages (Tiến Trình Thế Lực & Định Danh Quý Bình An)
+  const factionStages = [
+    {
+      id: 1,
+      minChapter: 1,
+      maxChapter: 14,
+      sealIcon: "駙",
+      factionName: "PHÒ MÃ PHỦ",
+      identityTitle: "PHÒ MÃ GIA",
+      fullTitle: "Hàn Vi Phò Mã · Đích Tử Phủ Trấn Quốc Công",
+      description: "Đích tử thứ ba của phủ Trấn Quốc Công Quý gia, ở rể hoàng tộc Đại Vũ chịu đủ ghẻ lạnh và nghi kỵ. Ẩn nhẫn giấu tài, phá giải vế đối cứu nguy thể diện quốc gia tại điện Kim Loan, thức tỉnh Bái Tướng Đài triệu hoán Triệu Tử Long và phát minh xà phòng Thấu Hoa Cao gây dựng ngân quỹ.",
+      buffSummary: "Ngân Khố Bí Mật · Thức Tỉnh Anh Hồn Lệnh · Chiêu Mộ Triệu Vân",
+      colorTag: "tag-amber"
+    },
+    {
+      id: 2,
+      minChapter: 15,
+      maxChapter: 19,
+      sealIcon: "征",
+      factionName: "BẮC CHINH TIỀN PHONG",
+      identityTitle: "TIỀN PHONG TƯỚNG QUÂN",
+      fullTitle: "Chinh Bắc Tiền Phong Tướng Quân",
+      description: "Bắc Cương khói lửa, Vũ Hoàng hạ chỉ phong làm Tiền Phong Tướng Quân thống lĩnh cấm quân xuất chinh bắc phạt. Tiếp nhận 5.000 Vàng và Hổ Phù Lệnh Sa Bàn (AP), khai mở quyền thám sát và điều phối binh mã trên Sa Bàn Sơn Hà.",
+      buffSummary: "Khai Mở Tầng 2 Sa Bàn · Hổ Phù Lệnh Sa Bàn (AP) · Điều Binh Bốn Cõi",
+      colorTag: "tag-cyan"
+    },
+    {
+      id: 3,
+      minChapter: 20,
+      maxChapter: 47,
+      sealIcon: "鎮",
+      factionName: "TRẤN BẮC QUÂN",
+      identityTitle: "TRẤN BẮC TƯỚNG QUÂN",
+      fullTitle: "Trấn Bắc Quân Thống Soái · Tiền Tuyến Thống Lĩnh",
+      description: "Tự chủ quân cơ nơi biên ải hiểm trở, bỏ 5.000 Vàng rèn đúc thiết giáp thu phục 800 dũng sĩ Hãm Trận Doanh (Cao Thuận), chiêu mộ Độc Sĩ Giả Hủ mưu định giang sơn, đắp đập ngăn sông Thanh Thủy, thu mua 5 vạn thạch quân lương. Thế lực Trấn Bắc Quân danh chấn thiên hạ.",
+      buffSummary: "Thu Phục Hãm Trận Doanh · Độc Kế Giả Hủ · Đại Kế Thủy Công · 50.000 Thạch Lương",
+      colorTag: "tag-crimson"
+    },
+    {
+      id: 4,
+      minChapter: 48,
+      maxChapter: 51,
+      sealIcon: "北",
+      factionName: "BA CHÂU BẮC CẢNH",
+      identityTitle: "CHINH BẮC ĐẠI TƯỚNG QUÂN",
+      fullTitle: "Chinh Bắc Đại Tướng Quân · Chúa Công Ba Châu",
+      description: "Thống lĩnh đại chiến Thanh Châu, xả lũ sông Thanh Thủy và phái Triệu Tử Long đơn thương độc mã bắt sống phản tướng Địch Hỏa, quét sạch 5 vạn phản quân. Vũ Hoàng ban phong chức Chinh Bắc Đại Tướng Quân, nắm trọn 3 châu hiểm yếu phương Bắc (Thanh Châu, Liễu Châu, Khai Nguyên), binh hùng tướng mạnh trở thành thế lực cát cứ chư hầu lớn nhất.",
+      buffSummary: "Thống Nhất Bắc Cương · Nắm Giữ Ba Châu · Mười Vạn Hùng Binh · Trấn Nhiếp Phiên Trấn",
+      colorTag: "tag-emerald"
+    },
+    {
+      id: 5,
+      minChapter: 52,
+      maxChapter: 999,
+      sealIcon: "帝",
+      factionName: "ĐỊNH QUỐC HOÀNG TRIỀU",
+      identityTitle: "ĐỊNH QUỐC HOÀNG ĐẾ",
+      fullTitle: "Khai Quốc Hoàng Đế · Cửu Ngũ Chí Tôn",
+      description: "Kinh đô đại biến, chín hoàng tử tranh giành ngai vàng tương tàn, xã tắc ngả nghiêng. Quý Bình An từ Ba Châu Bắc Cảnh hưng binh tiến vào kinh kỳ dẹp yên phản loạn, đăng cơ Hoàng Đế tại điện Kim Loan, khai sáng triều đại Định Quốc Hoàng Triều, mở ra thiên hạ thái bình.",
+      buffSummary: "Đăng Cơ Hoàng Đế · Niên Hiệu Định Quốc · Nhất Thống Thiên Hạ Giang Sơn",
+      colorTag: "tag-gold"
+    }
+  ];
+
   // =========================================================================
   // 2. MASTER GAME STATE
   // =========================================================================
@@ -134,6 +198,16 @@ document.addEventListener('DOMContentLoaded', () => {
     btnHudGacha: document.getElementById('btn-hud-gacha'),
     hudTicketCount: document.getElementById('hud-ticket-count'),
     btnHudHero: document.getElementById('btn-hud-hero'),
+
+    // Faction & Identity Plate (Cụm Trái)
+    dynastySealPlate: document.getElementById('dynasty-seal-plate'),
+    dynastySealIcon: document.getElementById('dynasty-seal-icon'),
+    dynastyEra: document.getElementById('dynasty-era'),
+    dynastyRole: document.getElementById('dynasty-role'),
+    factionModal: document.getElementById('faction-progression-modal'),
+    btnCloseFaction: document.getElementById('btn-close-faction'),
+    factionCurrentCard: document.getElementById('faction-current-card'),
+    factionStagesList: document.getElementById('faction-stages-list'),
 
     btnTabVn: document.getElementById('btn-tab-vn'),
     btnTabMap: document.getElementById('btn-tab-map'),
@@ -316,6 +390,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentChapter = chapterMatrix.find(c => c.id === state.currentChapterId) || chapterMatrix[0];
     ui.hudChapterBadge.textContent = currentChapter.badge;
     ui.hudChapterTitle.textContent = currentChapter.title;
+    updateFactionIdentityUI();
 
     const progressPct = (chapterMatrix.indexOf(currentChapter) + 1) / chapterMatrix.length * 100;
     ui.hudChFill.style.width = `${progressPct}%`;
@@ -411,7 +486,82 @@ document.addEventListener('DOMContentLoaded', () => {
 
     updateProgressTrackerUI();
     updateHudResources();
+    updateFactionIdentityUI();
     renderMilestoneTimeline();
+  }
+
+  // =========================================================================
+  // 5B. FACTION & IDENTITY PROGRESSION ENGINE (QUÝ BÌNH AN ĐẾ NGHIỆP)
+  // =========================================================================
+  function getCurrentFactionStage() {
+    const ch = state.currentChapterId || 1;
+    return factionStages.find(s => ch >= s.minChapter && ch <= s.maxChapter) || factionStages[0];
+  }
+
+  function updateFactionIdentityUI() {
+    const stage = getCurrentFactionStage();
+    if (ui.dynastySealIcon) ui.dynastySealIcon.textContent = stage.sealIcon;
+    if (ui.dynastyEra) ui.dynastyEra.textContent = stage.factionName;
+    if (ui.dynastyRole) ui.dynastyRole.textContent = stage.identityTitle;
+    if (ui.dynastySealPlate) {
+      ui.dynastySealPlate.title = `Thế Lực: ${stage.factionName} · Thân Phận: ${stage.identityTitle} (Bấm để xem Lộ Trình Đế Nghiệp)`;
+    }
+  }
+
+  function openFactionModal() {
+    if (!ui.factionModal) return;
+    renderFactionModal();
+    ui.factionModal.classList.remove('hidden');
+  }
+
+  function renderFactionModal() {
+    if (!ui.factionCurrentCard || !ui.factionStagesList) return;
+    const current = getCurrentFactionStage();
+    const ch = state.currentChapterId || 1;
+
+    // Render Current Faction Card
+    ui.factionCurrentCard.innerHTML = `
+      <div class="f-current-seal">${current.sealIcon}</div>
+      <div class="f-current-info">
+        <div class="f-current-tag">THẾ LỰC & THÂN PHẬN HIỆN THỜI (HỒI 1 · CHƯƠNG ${ch})</div>
+        <div class="f-current-name">${current.factionName}</div>
+        <div class="f-current-role">👑 ${current.identityTitle} — ${current.fullTitle}</div>
+        <div class="f-current-desc">${current.description}</div>
+      </div>
+    `;
+
+    // Render 5 Progression Stages
+    ui.factionStagesList.innerHTML = '';
+    factionStages.forEach(s => {
+      const isCurrent = s.id === current.id;
+      const isCompleted = s.id < current.id;
+
+      let statusClass = 'stage-locked';
+      let statusBadge = '<span class="f-stage-badge badge-locked">CHƯA ĐẠT ĐẾN 🔒</span>';
+      if (isCurrent) {
+        statusClass = 'stage-active';
+        statusBadge = '<span class="f-stage-badge badge-active">HIỆN THỜI ⚡</span>';
+      } else if (isCompleted) {
+        statusClass = 'stage-completed';
+        statusBadge = '<span class="f-stage-badge badge-completed">ĐÃ VƯỢT QUA ✓</span>';
+      }
+
+      const stageEl = document.createElement('div');
+      stageEl.className = `faction-stage-item ${statusClass}`;
+      stageEl.innerHTML = `
+        <div class="f-stage-seal">${s.sealIcon}</div>
+        <div class="f-stage-body">
+          <div class="f-stage-header">
+            <div class="f-stage-title">${s.factionName} · ${s.identityTitle}</div>
+            ${statusBadge}
+          </div>
+          <div style="font-size: 11px; font-weight: 700; color: #c5a059;">Chương ${s.minChapter} - ${s.maxChapter === 999 ? 'Về Sau' : s.maxChapter} · ${s.fullTitle}</div>
+          <p class="f-stage-desc">${s.description}</p>
+          <div class="f-stage-buff">✨ Mở rộng: ${s.buffSummary}</div>
+        </div>
+      `;
+      ui.factionStagesList.appendChild(stageEl);
+    });
   }
 
   function triggerUnlockNotification(featureKey) {
@@ -1022,6 +1172,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.gachaModal) ui.gachaModal.classList.add('hidden');
     if (ui.heroDetailModal) ui.heroDetailModal.classList.add('hidden');
     if (ui.milestoneMatrixModal) ui.milestoneMatrixModal.classList.add('hidden');
+    if (ui.factionModal) ui.factionModal.classList.add('hidden');
     if (ui.unlockEventModal) ui.unlockEventModal.classList.add('hidden');
     if (ui.victoryModal) ui.victoryModal.classList.add('hidden');
     if (ui.backlogDrawer) ui.backlogDrawer.classList.add('hidden');
@@ -1733,6 +1884,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.btnResetGame) {
       ui.btnResetGame.addEventListener('click', resetGame);
     }
+
+    // Faction & Identity Progression Modal (Cụm Trái)
+    if (ui.dynastySealPlate) {
+      ui.dynastySealPlate.addEventListener('click', openFactionModal);
+    }
+    if (ui.btnCloseFaction) {
+      ui.btnCloseFaction.addEventListener('click', () => {
+        if (ui.factionModal) ui.factionModal.classList.add('hidden');
+      });
+    }
+    if (ui.factionModal) {
+      ui.factionModal.addEventListener('click', (e) => {
+        if (e.target === ui.factionModal) ui.factionModal.classList.add('hidden');
+      });
+    }
   }
 
   // =========================================================================
@@ -2292,6 +2458,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.state = state;
   window.ink = ink;
   window.switchView = switchView;
+  window.advanceChapter = advanceChapter;
+  window.openFactionModal = openFactionModal;
+  window.updateFactionIdentityUI = updateFactionIdentityUI;
 
   // =========================================================================
   // 14. INITIAL BOOT (DEFAULT TO ZERO-HUD CINEMATIC VISUAL NOVEL)

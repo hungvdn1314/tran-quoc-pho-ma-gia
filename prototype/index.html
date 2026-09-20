@@ -19,11 +19,12 @@
   <header class="game-hud-frame" id="top-hud">
     <!-- TOP-LEFT: NGỌC BỘI HOÀNG TRIỀU & TÀI NGUYÊN NỘI KHỐ -->
     <div class="hud-corner-crest" id="hud-corner-crest">
-      <div class="dynasty-seal-plate">
-        <div class="dynasty-seal-icon">鎮</div>
+      <!-- BẢNG TRIỆN KHẮC ĐỒNG: THẾ LỰC & ĐỊNH DANH QUÝ BÌNH AN -->
+      <div class="dynasty-seal-plate" id="dynasty-seal-plate" title="Thế lực: Phò Mã Phủ · Thân phận: Phò Mã Gia (Bấm để xem Lộ trình Khởi Nghiệp)">
+        <div class="dynasty-seal-icon" id="dynasty-seal-icon">駙</div>
         <div class="dynasty-meta">
-          <span class="dynasty-era">ĐẠI VŨ TRIỀU</span>
-          <span class="dynasty-role">BÌNH AN THẾ THÂN</span>
+          <span class="dynasty-era" id="dynasty-era">PHÒ MÃ PHỦ</span>
+          <span class="dynasty-role" id="dynasty-role">PHÒ MÃ GIA</span>
         </div>
       </div>
 
@@ -955,6 +956,26 @@
       </div>
       <div class="matrix-timeline" id="matrix-timeline-list">
         <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FACTION & IDENTITY PROGRESSION MODAL (LỘ TRÌNH ĐẾ NGHIỆP QUÝ BÌNH AN)
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="faction-progression-modal">
+    <div class="matrix-dialog faction-dialog">
+      <div class="matrix-header">
+        <div class="matrix-crest">ĐẾ NGHIỆP TẦNG THỨ · THẾ LỰC KHỞI NGUYÊN</div>
+        <h2 class="matrix-title">TIẾN TRÌNH THẾ LỰC & ĐỊNH DANH QUÝ BÌNH AN</h2>
+        <p class="matrix-sub">Từ Phò Mã Hàn Vi đến Trấn Bắc Thống Soái, Chúa Tể Ba Châu Bắc Cảnh và Định Quốc Hoàng Đế</p>
+        <button class="btn-close-modal" id="btn-close-faction">✕ Đóng</button>
+      </div>
+      <div class="faction-current-card" id="faction-current-card">
+        <!-- Rendered dynamically -->
+      </div>
+      <div class="faction-stages-list" id="faction-stages-list">
+        <!-- Rendered dynamically -->
       </div>
     </div>
   </div>
