@@ -3483,6 +3483,7 @@ body.view-mode-battle .dynasty-role {
 
 body.view-mode-map .suspicion-diegetic,
 body.view-mode-battle .suspicion-diegetic {
+  width: 180px !important;
   background: rgba(22, 15, 10, 0.9) !important;
   border: 1px solid rgba(138, 115, 75, 0.5) !important;
   border-radius: 3px !important;
