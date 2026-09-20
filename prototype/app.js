@@ -344,6 +344,91 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // =========================================================================
+  // 3B. CENSER SMOKE PARTICLE SYSTEM (Diegetic Suspicion Visualization)
+  // =========================================================================
+  const censerSmokeSystem = {
+    canvas: null,
+    ctx: null,
+    particles: [],
+    tier: 'safe',
+    animId: null,
+    
+    init() {
+      this.canvas = document.getElementById('suspicion-smoke-canvas');
+      if (!this.canvas) return;
+      this.ctx = this.canvas.getContext('2d');
+      if (this.animId) cancelAnimationFrame(this.animId);
+      this.animate();
+    },
+    
+    setTier(pct) {
+      const el = document.querySelector('.suspicion-diegetic');
+      if (!el) return;
+      el.classList.remove('tier-safe', 'tier-caution', 'tier-danger');
+      
+      if (pct <= 30) {
+        this.tier = 'safe';
+        el.classList.add('tier-safe');
+      } else if (pct <= 60) {
+        this.tier = 'caution';
+        el.classList.add('tier-caution');
+      } else {
+        this.tier = 'danger';
+        el.classList.add('tier-danger');
+      }
+    },
+    
+    spawnParticle() {
+      const configs = {
+        safe: { count: 1, color: [148, 163, 184], maxAlpha: 0.25, speed: 0.3, size: 2 },
+        caution: { count: 2, color: [251, 191, 36], maxAlpha: 0.4, speed: 0.5, size: 3 },
+        danger: { count: 3, color: [239, 68, 68], maxAlpha: 0.55, speed: 0.7, size: 4 }
+      };
+      const cfg = configs[this.tier] || configs.safe;
+      for (let i = 0; i < cfg.count; i++) {
+        this.particles.push({
+          x: 30 + (Math.random() - 0.5) * 10,
+          y: 38,
+          vx: (Math.random() - 0.5) * 0.6,
+          vy: -cfg.speed - Math.random() * 0.3,
+          size: cfg.size + Math.random() * 2,
+          alpha: cfg.maxAlpha,
+          decay: 0.006 + Math.random() * 0.004,
+          color: cfg.color
+        });
+      }
+    },
+    
+    animate() {
+      if (!this.ctx) return;
+      const ctx = this.ctx;
+      ctx.clearRect(0, 0, 60, 40);
+      
+      // Spawn new particles every few frames
+      if (Math.random() < 0.3) this.spawnParticle();
+      
+      // Update and draw particles
+      this.particles = this.particles.filter(p => {
+        p.x += p.vx;
+        p.y += p.vy;
+        p.alpha -= p.decay;
+        p.size *= 1.01;
+        p.vx += (Math.random() - 0.5) * 0.1;
+        
+        if (p.alpha <= 0) return false;
+        
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${p.color[0]}, ${p.color[1]}, ${p.color[2]}, ${p.alpha})`;
+        ctx.fill();
+        return true;
+      });
+      
+      this.animId = requestAnimationFrame(() => this.animate());
+    }
+  };
+
+  // =========================================================================
   // 4. INK ENGINE INITIALIZATION & SCRIPT LOADING
   // =========================================================================
   const ink = new (window.InkEngine || function() {})();
@@ -393,9 +478,9 @@ document.addEventListener('DOMContentLoaded', () => {
     updateFactionIdentityUI();
 
     const progressPct = (chapterMatrix.indexOf(currentChapter) + 1) / chapterMatrix.length * 100;
-    ui.hudChFill.style.width = `${progressPct}%`;
-    ui.hudTicketCount.textContent = state.ticketCount;
-    ui.gachaTicketDisplay.textContent = state.ticketCount;
+    if (ui.hudChFill) ui.hudChFill.style.width = `${progressPct}%`;
+    if (ui.hudTicketCount) ui.hudTicketCount.textContent = state.ticketCount;
+    if (ui.gachaTicketDisplay) ui.gachaTicketDisplay.textContent = state.ticketCount;
 
     // 1. Tính năng Kinh Doanh Xà Phòng (Chương 8)
     if (state.unlocked.soap) {
@@ -1232,7 +1317,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "50.000 Ngự Lâm Quân",
       desc: "Trung tâm quyền lực hoàng triều Đại Vũ. Vũ Hoàng đa nghi theo dõi nhất cử nhất động của phò mã phủ. Cần dâng biểu, tiến cống vàng để giải tỏa lòng ngờ vực.",
       actionPrompt: "Tiến Cống Giảm Nghi Kỵ",
-      actionCost: "Tiêu hao 1.500 Vàng (-15% Nghi Kỵ)",
+      actionCost: "Tiêu hao 1 Lệnh (-15% Nghi Kỵ)",
       bgImg: "assets/images/bg_capital.jpg"
     },
     khainguyen: {
@@ -1241,13 +1326,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ruler: "Trấn Bắc Quân Hậu Cần",
       status: "An Cư Lạc Nghiệp",
       threat: "An Toàn Tuyệt Đối",
-      income: "+5.000 Thạch Lương/Lượt",
+      income: "+5.000 Thạch Lương/Tháng",
       dist: "2 Ngày Đến Thanh Châu",
       intel: "Thương Hội Vệ Ti Vũ",
       garrison: "5.000 Binh Hộ Lương",
       desc: "Hậu cần trung chuyển quân lương cho toàn tuyến biên cương. Quý Bình An tích trữ 5 vạn thạch lương tại đây thông qua thương hội Vệ Ti Vũ, bảo đảm sĩ khí ba quân không bao giờ cạn.",
       actionPrompt: "Tiếp Nhận Quân Lương",
-      actionCost: "Tiêu hao 1 AP (+5.000 Thạch Lương)",
+      actionCost: "Tiêu hao 1 Lệnh (+5.000 Thạch Lương)",
       bgImg: "assets/images/bg_capital.jpg"
     },
     thanhchau: {
@@ -1260,9 +1345,9 @@ document.addEventListener('DOMContentLoaded', () => {
       dist: "3 Ngày Đến Đế Đô",
       intel: "Hồng Nhan Mật Thám",
       garrison: "Triệu Vân + 800 Hãm Trận Doanh",
-      desc: "Cửa ải yết hầu che chở toàn bộ ba châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy. Tường thành kiên cố 500 HP trước mũi nhọn tiến công của Địch Hỏa.",
+      desc: "Cửa ải yết hầu che chở toàn bộ ba châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy. Thành cao hào sâu, có thể cầm cự trước nhiều đợt tấn công của Địch Hỏa.",
       actionPrompt: "Mở Rộng Xưởng Thấu Hoa Cao",
-      actionCost: "Tiêu hao 1 AP (+3.000 Vàng)",
+      actionCost: "Tiêu hao 1 Lệnh (+3.000 Vàng)",
       bgImg: "assets/images/bg_battle.jpg"
     },
     baccoson: {
@@ -1277,7 +1362,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "3.000 Bạch Mã Nghĩa Tòng",
       desc: "Địa hình núi non hiểm trở, thắt cổ chai đón lõng đường rút lui của địch. Nơi bố trí phục binh cung nỏ và kỵ binh cơ động sẵn sàng đánh bọc sườn quân Nam Ly.",
       actionPrompt: "Bố Trí Cạm Bẫy Phục Kích",
-      actionCost: "Tiêu hao 1 AP (+15 Sĩ Khí)",
+      actionCost: "Tiêu hao 1 Lệnh (+15 Sĩ Khí)",
       bgImg: "assets/images/bg_capital.jpg"
     },
     lieuchau: {
@@ -1292,7 +1377,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "8.000 Thủ Thành Quân",
       desc: "Căn cứ địa trù phú của 3 châu phương Bắc, nơi cung cấp tuấn mã chiến trường và nhân lực thợ rèn đúc giáp trụ thép cho quân đội Quý Bình An.",
       actionPrompt: "Chiêu Mộ Tân Binh",
-      actionCost: "Tiêu hao 1 AP (+500 Binh Lực)",
+      actionCost: "Tiêu hao 1 Lệnh (+500 Binh Lực)",
       bgImg: "assets/images/bg_capital.jpg"
     },
     namly: {
@@ -1307,7 +1392,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "20.000 Thiết Giáp Tượng Binh",
       desc: "Đại doanh tiền phương của Nam Ly Vương triều do đại tướng Địch Hỏa chỉ huy. Bày trận hãm thành chuẩn bị nuốt chửng Thanh Châu hòng mở toang cánh cửa tiến thẳng về kinh đô Đại Vũ.",
       actionPrompt: "Thám Sát Trận Địa Địch",
-      actionCost: "Tiêu hao 1 AP (-5% Nguy Cơ)",
+      actionCost: "Tiêu hao 1 Lệnh (-5% Nguy Cơ)",
       bgImg: "assets/images/bg_battle.jpg"
     },
     // Aliases
@@ -1323,7 +1408,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "Triệu Vân + 800 Hãm Trận Doanh",
       desc: "Cửa ải yết hầu che chở toàn bộ ba châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy.",
       actionPrompt: "Mở Rộng Xưởng Thấu Hoa Cao",
-      actionCost: "Tiêu hao 1 AP (+3.000 Vàng)",
+      actionCost: "Tiêu hao 1 Lệnh (+3.000 Vàng)",
       bgImg: "assets/images/bg_battle.jpg"
     },
     taylang: {
@@ -1338,7 +1423,7 @@ document.addEventListener('DOMContentLoaded', () => {
       garrison: "15.000 Du Mục Kỵ",
       desc: "Vùng đất cằn cỗi nhiều thớt ngựa chiến quý. Nơi thu mua ngựa tốt cho Bạch Mã Nghĩa Tòng.",
       actionPrompt: "Thu Mua Tuấn Mã",
-      actionCost: "Tiêu hao 1 AP (Tăng 10% Tốc Độ Kỵ)",
+      actionCost: "Tiêu hao 1 Lệnh (Tăng 10% Tốc Độ Kỵ)",
       bgImg: "assets/images/bg_capital.jpg"
     }
   };
@@ -1754,6 +1839,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       ui.txtAp.textContent = 'Khóa (Ch.15)';
       ui.txtAp.style.color = '#64748b';
+    }
+
+    if (typeof censerSmokeSystem !== 'undefined' && censerSmokeSystem.setTier) {
+      censerSmokeSystem.setTier(state.suspicion);
     }
   }
 
@@ -2754,6 +2843,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initPixiEngine();
     initThreeEngine();
     initPhaserEngine();
+    censerSmokeSystem.init();
   }, 100);
 
   console.log("⚡ [Prototype V3] Khởi động thành công với Trio (Phaser/Three/Pixi), 28 danh tướng và Ink Engine!");

@@ -6,7 +6,7 @@
   <title>Trấn Quốc Phò Mã Gia — Grand Strategy & Tactical Card Battler</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Cinzel:wght@600;700;900&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,7 +33,8 @@
         <div class="suspicion-censer-icon" id="suspicion-censer-icon">
           <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2c.6 0 1 .4 1 1v1.1c3.4.5 6 3.4 6 7v1h1c.6 0 1 .4 1 1s-.4 1-1 1h-1v2.2c0 2.2-1.1 4.2-2.9 5.3l1.4 2.4c.3.5.1 1.1-.4 1.4-.5.3-1.1.1-1.4-.4L14 18.5c-.6.2-1.3.3-2 .3s-1.4-.1-2-.3l-1.7 2.9c-.3.5-.9.7-1.4.4-.5-.3-.7-.9-.4-1.4l1.4-2.4C6.1 16.9 5 14.9 5 12.7V10.5H4c-.6 0-1-.4-1-1s.4-1 1-1h1v-1c0-3.6 2.6-6.5 6-7V3c0-.6.4-1 1-1zM7 10.5v2.2c0 2.8 2.2 5 5 5s5-2.2 5-5v-2.2H7z"/></svg>
         </div>
-        <div class="suspicion-data">
+        <canvas class="suspicion-smoke-canvas" id="suspicion-smoke-canvas" width="60" height="40"></canvas>
+        <div class="suspicion-data hidden">
           <div class="suspicion-info">
             <span class="suspicion-title">Nghi Kỵ</span>
             <span class="suspicion-pct" id="txt-suspicion">0%</span>
@@ -68,20 +69,16 @@
       </div>
     </div>
 
-    <!-- TOP-CENTER: TRƯỚNG KỲ CHƯƠNG TIẾT (BIỂU NGỮ LỤA TREO) -->
-    <div class="hud-center-banner" id="btn-open-milestones" title="Bấm để mở Ma Trận Kỷ Niệm Cốt Truyện">
-      <div class="banner-swallowtail"></div>
-      <div class="banner-body">
-        <div class="banner-chapter" id="hud-chapter-badge">CHƯƠNG 1</div>
-        <div class="banner-title" id="hud-chapter-title">Phá Giải Câu Đối Hoàng Cung</div>
-        <div class="banner-progress-cord">
-          <div class="cord-fill" id="hud-ch-fill" style="width: 12.5%;"></div>
+    <!-- TOP-RIGHT: TRƯỚNG KỲ CHƯƠNG TIẾT & KỲ MÔN BÀN XOAY -->
+    <div class="hud-corner-system">
+      <!-- Trướng Kỳ Chương Tiết (Thánh Chỉ Lụa Treo) -->
+      <div class="hud-center-banner" id="btn-open-milestones" title="Bấm để mở Ma Trận Kỷ Niệm Cốt Truyện">
+        <div class="banner-body">
+          <div class="banner-chapter" id="hud-chapter-badge">CHƯƠNG 1</div>
+          <div class="banner-title" id="hud-chapter-title">Phá Giải Câu Đối Hoàng Cung</div>
         </div>
       </div>
-    </div>
 
-    <!-- TOP-RIGHT: ẤN GIÁM HỆ THỐNG & KỲ MÔN BÀN XOAY -->
-    <div class="hud-corner-system">
       <!-- Bái Tướng Đài Seal (Mở tại Ch.5) -->
       <button class="seal-btn seal-gacha hidden" id="btn-hud-gacha" title="Bái Tướng Đài (Mở tại Ch.5)">
         <span class="seal-char">令</span>
@@ -96,7 +93,7 @@
       </button>
 
       <!-- Trùng Khởi Phù (Cinnabar Reset Seal) -->
-      <button class="seal-btn seal-reset" id="btn-reset-game" title="Trùng Khởi Phù (Làm mới cốt truyện về Chương 1)">
+      <button class="seal-btn seal-reset hidden" id="btn-reset-game" title="Trùng Khởi Phù (Làm mới cốt truyện về Chương 1)">
         <span class="seal-char">重起</span>
         <span class="seal-sub">Trùng Khởi</span>
       </button>
@@ -105,7 +102,7 @@
       <nav class="realm-astrolabe" id="realm-astrolabe" aria-label="Game Realms">
         <button class="astrolabe-btn active" id="btn-tab-vn" data-view="vn" title="Nội Điện Hoàng Cung (Visual Novel)">
           <span class="astrolabe-glyph">殿</span>
-          <span class="astrolabe-tip">Cung Điện</span>
+          <span class="astrolabe-tip">Hồi Cung</span>
         </button>
 
         <button class="astrolabe-btn locked-tab hidden" id="btn-tab-map" data-view="map" disabled title="Khóa: Mở tại Chương 15 (Chinh Bắc Thánh Chỉ)">
@@ -298,30 +295,36 @@
               </div>
             </div>
 
-            <!-- Military Actions -->
+            <!-- Military Actions (Thao Thiết Lệnh Bài) -->
             <div class="slip-actions-group">
               <button class="slip-act-btn btn-enter-battle" id="btn-action-battle">
+                <span class="act-tally-notch"></span>
                 <span class="act-seal-char">戈</span>
                 <div class="act-meta">
-                  <span class="act-name">Thống Lãnh Thủ Thành</span>
-                  <span class="act-desc">Vào Sa Trường Thẻ Bài (Không tốn AP)</span>
+                  <span class="act-name">Thống Lãnh Xuất Chinh</span>
+                  <span class="act-desc">Sa Trường Thẻ Bài · Không tốn Lệnh</span>
                 </div>
+                <span class="act-cost-badge free">XUẤT TRẬN</span>
               </button>
 
               <button class="slip-act-btn" id="btn-action-soap">
+                <span class="act-tally-notch"></span>
                 <span class="act-seal-char">商</span>
                 <div class="act-meta">
                   <span class="act-name">Mở Rộng Thấu Hoa Cao</span>
-                  <span class="act-desc">Tiêu hao 1 AP · Thu +3.000 Vàng</span>
+                  <span class="act-desc">Kinh doanh xà phòng Bắc Cảnh</span>
                 </div>
+                <span class="act-cost-badge cost-ap">1 Lệnh <small>+3k Vàng</small></span>
               </button>
 
               <button class="slip-act-btn" id="btn-action-tribute">
+                <span class="act-tally-notch"></span>
                 <span class="act-seal-char">奉</span>
                 <div class="act-meta">
                   <span class="act-name">Cống Nạp Triều Đình</span>
-                  <span class="act-desc">-1.500 Vàng · -15% Nghi Kỵ Vũ Hoàng</span>
+                  <span class="act-desc">Dâng biểu xoa dịu lòng ngờ vực</span>
                 </div>
+                <span class="act-cost-badge cost-gold">-1.5k Vàng <small>-15% Nghi Kỵ</small></span>
               </button>
             </div>
           </div>

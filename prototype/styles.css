@@ -42,7 +42,7 @@
   --transition-slow: 400ms ease;
 
   /* Typography: Chuẩn hóa 100% tiếng Việt, hoàn toàn không bị lỗi glyph/fallback */
-  --font-title: 'Playfair Display', 'Cormorant Garamond', 'Georgia', 'Cambria', serif;
+  --font-title: 'Cinzel', 'Playfair Display', 'Georgia', serif;
   --font-text: 'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif;
   --font-serif: 'Lora', 'Noto Serif', 'Palatino Linotype', 'Times New Roman', serif;
 
@@ -89,8 +89,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 14px 20px;
-  gap: 16px;
+  padding: 12px 16px;
+  gap: 12px;
 }
 
 /* TOP-LEFT: NGỌC BỘI HOÀNG TRIỀU */
@@ -110,9 +110,8 @@ body {
 .dynasty-seal-plate {
   display: flex;
   align-items: center;
-  gap: 8px;
-  border-right: 1px solid rgba(212, 175, 55, 0.25);
-  padding-right: 12px;
+  justify-content: center;
+  width: 50px;
   cursor: pointer;
   user-select: none;
   transition: all 0.2s ease;
@@ -123,9 +122,9 @@ body {
 }
 
 .dynasty-seal-icon {
-  width: 30px;
-  height: 30px;
-  background: var(--red-imperial);
+  width: 36px;
+  height: 36px;
+  background: #991b1b;
   color: var(--gold-primary);
   border: 1.5px solid var(--gold-primary);
   border-radius: 4px;
@@ -133,7 +132,7 @@ body {
   align-items: center;
   justify-content: center;
   font-family: var(--font-title);
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
   box-shadow: 0 0 10px rgba(185, 28, 28, 0.7);
   flex-shrink: 0;
@@ -141,68 +140,85 @@ body {
 }
 
 .dynasty-meta {
-  display: flex;
-  flex-direction: column;
-  white-space: nowrap;
+  display: none;
 }
 
 .dynasty-era {
-  font-family: var(--font-title);
-  font-size: 11px;
-  font-weight: 900;
-  letter-spacing: 0.8px;
-  color: var(--gold-primary);
-  line-height: 1.2;
-  transition: color 0.3s ease;
+  display: none;
 }
 
 .dynasty-role {
-  font-size: 9px;
-  color: var(--text-muted);
-  letter-spacing: 0.5px;
-  line-height: 1.2;
-  transition: color 0.3s ease;
+  display: none;
 }
 
-/* Suspicion Diegetic (Cửu Đỉnh Long Lô) */
+/* Suspicion Diegetic (Cửu Đỉnh Long Lô — Diegetic Censer) */
 .suspicion-diegetic {
   display: flex;
   align-items: center;
-  gap: 8px;
-  border-right: 1px solid rgba(212, 175, 55, 0.25);
-  padding-right: 10px;
-  width: 175px;
-  min-width: 175px;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  padding: 4px;
   flex-shrink: 0;
-  white-space: nowrap;
+  cursor: help;
 }
 
 .suspicion-censer-icon {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--gold-primary);
+  color: #94a3b8;
   position: relative;
-  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5));
   transition: all 0.3s ease;
 }
 
-.suspicion-censer-icon.censer-stage-white {
-  color: #e2e8f0;
+.suspicion-censer-icon svg {
+  width: 28px;
+  height: 28px;
 }
 
-.suspicion-censer-icon.censer-stage-gold {
+/* Smoke Canvas (particle system draws here) */
+.suspicion-smoke-canvas {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Tier: Safe (0-30%) — faint silvery wisps */
+.suspicion-diegetic.tier-safe .suspicion-censer-icon {
+  color: #94a3b8;
+  filter: drop-shadow(0 0 4px rgba(148, 163, 184, 0.3));
+}
+
+/* Tier: Caution (31-60%) — golden smoke, pulsing */
+.suspicion-diegetic.tier-caution .suspicion-censer-icon {
   color: #fbbf24;
-  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.7));
+  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.6));
   animation: censerPulse 2s infinite ease-in-out;
 }
 
-.suspicion-censer-icon.censer-stage-red {
+/* Tier: Danger (61-100%) — fiery red, fast pulse, danger border */
+.suspicion-diegetic.tier-danger .suspicion-censer-icon {
   color: #ef4444;
-  filter: drop-shadow(0 0 14px rgba(239, 68, 68, 0.9));
-  animation: censerPulse 1s infinite ease-in-out;
+  filter: drop-shadow(0 0 16px rgba(239, 68, 68, 0.8));
+  animation: censerPulse 0.8s infinite ease-in-out;
+}
+
+.suspicion-diegetic.tier-danger::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 2px solid rgba(220, 38, 38, 0.3);
+  border-radius: 6px;
+  animation: dangerPulse 1.2s infinite;
+  pointer-events: none;
 }
 
 @keyframes censerPulse {
@@ -210,58 +226,26 @@ body {
   50% { transform: scale(1.12); }
 }
 
-.suspicion-data {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+@keyframes dangerPulse {
+  0%, 100% { border-color: rgba(220, 38, 38, 0.2); }
+  50% { border-color: rgba(220, 38, 38, 0.6); }
 }
 
-.suspicion-info {
-  display: flex;
-  justify-content: space-between;
-  font-size: 9px;
-}
-
-.suspicion-title {
-  color: var(--text-muted);
-  font-weight: 700;
-}
-
-.suspicion-pct {
-  color: var(--gold-primary);
-  font-weight: 900;
-  font-family: var(--font-title);
-}
-
-.suspicion-track {
-  height: 4px;
-  background: #000;
-  border-radius: 2px;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  position: relative;
-  overflow: hidden;
-}
-
-.suspicion-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #10b981 0%, #f59e0b 60%, #dc2626 100%);
-  transition: width 0.4s ease;
-}
-
+/* Legacy suspicion data elements — hidden in favor of diegetic smoke */
+.suspicion-data,
+.suspicion-info,
+.suspicion-pct,
+.suspicion-track,
+.suspicion-fill,
 .suspicion-desc {
-  font-size: 8px;
-  color: var(--text-dim);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  display: none;
 }
 
 /* Treasury Ribbon (Vàng, Lương, Lệnh) */
 .hud-treasury-ribbon {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
 }
 
 .treasury-item {
@@ -269,7 +253,7 @@ body {
   align-items: center;
   gap: 4px;
   color: var(--gold-primary);
-  font-size: 11px;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -277,11 +261,11 @@ body {
   font-family: var(--font-title);
   font-weight: 900;
   color: #fff;
+  font-size: 11px;
 }
 
 .treasury-item .t-lbl {
-  font-size: 9px;
-  color: var(--text-dim);
+  display: none;
 }
 
 /* TOP-CENTER: TRƯỚNG KỲ CHƯƠNG TIẾT */
@@ -290,7 +274,7 @@ body {
   border: 1.5px solid rgba(212, 175, 55, 0.5);
   border-top: none;
   border-radius: 0 0 8px 8px;
-  padding: 6px 20px 8px 20px;
+  padding: 4px 12px 6px 12px;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), 0 0 15px rgba(212, 175, 55, 0.15);
   pointer-events: auto;
   cursor: pointer;
@@ -311,14 +295,14 @@ body {
   font-family: var(--font-title);
   font-size: 10px;
   font-weight: 900;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--gold-primary);
   text-transform: uppercase;
 }
 
 .banner-title {
   font-family: var(--font-title);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
   color: #fff;
   letter-spacing: 0.5px;
@@ -326,19 +310,11 @@ body {
 }
 
 .banner-progress-cord {
-  width: 90px;
-  height: 3px;
-  background: rgba(0, 0, 0, 0.8);
-  border-radius: 2px;
-  border: 0.5px solid rgba(212, 175, 55, 0.3);
-  margin-top: 3px;
-  overflow: hidden;
+  display: none;
 }
 
 .cord-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #b45309, #fbbf24);
-  transition: width 0.4s ease;
+  display: none;
 }
 
 /* TOP-RIGHT: ẤN GIÁM HỆ THỐNG & KỲ MÔN BÀN XOAY */
@@ -388,48 +364,41 @@ body {
 
 .seal-badge {
   position: absolute;
-  top: -4px;
-  right: -4px;
-  background: var(--red-cinnabar);
-  color: #fff;
-  font-size: 9px;
+  bottom: -2px;
+  right: -2px;
+  background: rgba(30, 20, 12, 0.95);
+  color: var(--gold-primary);
+  font-size: 8px;
   font-weight: 900;
-  border-radius: 8px;
-  padding: 1px 5px;
-  box-shadow: 0 0 6px #dc2626;
+  font-family: var(--font-title);
+  border-radius: 2px;
+  border: 1px solid rgba(138, 115, 75, 0.6);
+  padding: 0px 3px;
+  min-width: 14px;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .seal-reset {
-  border-color: rgba(220, 38, 38, 0.5);
-  background: linear-gradient(135deg, #3b1111 0%, #180606 100%);
-}
-
-.seal-reset:hover {
-  border-color: #ef4444;
-  box-shadow: 0 0 16px rgba(239, 68, 68, 0.5);
-}
-
-.seal-reset .seal-char {
-  font-size: 10px;
-  color: #fca5a5;
+  display: none;
 }
 
 /* Kỳ Môn Sa Bàn Astrolabe */
 .realm-astrolabe {
   display: flex;
-  align-items: center;
-  gap: 3px;
-  background: linear-gradient(135deg, rgba(30, 23, 16, 0.95) 0%, rgba(14, 10, 7, 0.98) 100%);
-  border: 1.5px solid rgba(212, 175, 55, 0.5);
-  border-radius: 28px;
-  padding: 3px 5px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.85), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  flex-direction: column;
+  gap: 4px;
+  background: linear-gradient(180deg, rgba(30, 23, 16, 0.95) 0%, rgba(14, 10, 7, 0.98) 100%);
+  border: 1.5px solid rgba(138, 115, 75, 0.5);
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.85), inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .astrolabe-btn {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
+  border-radius: 4px;
   border: 1px solid transparent;
   background: transparent;
   color: var(--text-dim);
@@ -1083,27 +1052,30 @@ body {
   width: 100%;
   height: 100%;
   z-index: 1;
+  pointer-events: auto;
 }
 
-/* Diegetic Table Engraving Hint (Khắc chìm mép bàn gỗ sa bàn) */
+/* Diegetic Table Engraving Hint (Khắc chìm mép bàn gỗ sa bàn — 100% In-World) */
 .saban-table-engraving {
   position: absolute;
-  bottom: 20px;
-  left: 28px;
+  bottom: 22px;
+  left: 32px;
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(14, 10, 7, 0.88);
-  border: 1px solid rgba(138, 115, 75, 0.4);
-  border-radius: 4px;
-  padding: 6px 14px;
-  color: #c4b9a8;
+  background: transparent;
+  border: none;
+  border-left: 2px solid rgba(212, 175, 55, 0.45);
+  padding: 3px 12px;
+  color: rgba(212, 196, 176, 0.75);
   font-family: var(--font-serif);
   font-size: 11px;
-  letter-spacing: 0.5px;
+  font-style: italic;
+  letter-spacing: 0.6px;
   z-index: 10;
   pointer-events: none;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.85);
+  box-shadow: none;
+  text-shadow: 0 1px 1px rgba(212, 175, 55, 0.2), 0 -1px 2px rgba(0, 0, 0, 0.95);
   user-select: none;
 }
 
@@ -1113,26 +1085,28 @@ body {
   justify-content: center;
   width: 18px;
   height: 18px;
-  background: #5c1818;
-  color: #f6d89b;
-  border: 1px solid #c5a059;
+  background: rgba(127, 29, 29, 0.7);
+  color: #fef08a;
+  border: 1px solid rgba(212, 175, 55, 0.6);
   border-radius: 2px;
   font-family: var(--font-title);
   font-size: 10px;
   font-weight: 900;
+  font-style: normal;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.8), 0 0 6px rgba(185, 28, 28, 0.4);
 }
 
-/* Trúc Giản Quân Cơ (Bamboo Scroll Panel) */
+/* Trúc Giản Quân Cơ (Bamboo Scroll Tactical Briefing Panel) */
 .bamboo-scroll-panel {
   position: absolute;
   right: 24px;
   bottom: 24px;
-  width: 310px;
-  max-height: 74vh;
+  width: 320px;
+  max-height: 76vh;
   z-index: 25;
   display: flex;
   flex-direction: column;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.95));
+  filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.95));
   pointer-events: auto;
   transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.3s ease;
 }
@@ -1146,44 +1120,45 @@ body {
   left: -32px;
   top: 24px;
   width: 32px;
-  height: 94px;
-  background: linear-gradient(180deg, #2a1c12 0%, #170f09 100%);
-  border: 1px solid rgba(212, 175, 55, 0.5);
+  height: 98px;
+  background: linear-gradient(180deg, #2e1d13 0%, #170d07 100%);
+  border: 1.5px solid #9c7b45;
   border-right: none;
   border-radius: 6px 0 0 6px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3px;
+  gap: 4px;
   cursor: pointer;
   color: var(--gold-molten);
   padding: 6px 2px;
-  box-shadow: -4px 4px 12px rgba(0, 0, 0, 0.85);
+  box-shadow: -6px 6px 16px rgba(0, 0, 0, 0.9);
   transition: all 0.2s ease;
   z-index: 30;
 }
 
 .bamboo-toggle-tab:hover {
-  background: linear-gradient(180deg, #3d281a 0%, #23160e 100%);
+  background: linear-gradient(180deg, #42291b 0%, #24140b 100%);
   color: #fff;
-  border-color: rgba(212, 175, 55, 0.85);
-  box-shadow: -6px 4px 16px rgba(212, 175, 55, 0.35);
+  border-color: #d4af37;
+  box-shadow: -8px 6px 20px rgba(212, 175, 55, 0.4);
 }
 
 .bamboo-tab-seal {
   font-family: var(--font-title);
   font-size: 13px;
   font-weight: 900;
-  color: var(--gold-primary);
-  background: rgba(185, 28, 28, 0.45);
-  border: 1px solid rgba(212, 175, 55, 0.6);
+  color: #fef08a;
+  background: linear-gradient(135deg, #8b1a1a 0%, #520e0e 100%);
+  border: 1px solid #d4af37;
   border-radius: 2px;
   width: 20px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .bamboo-tab-lbl {
@@ -1191,66 +1166,100 @@ body {
   text-orientation: upright;
   font-family: var(--font-title);
   font-size: 11px;
-  letter-spacing: 1.5px;
-  font-weight: 800;
-  color: #d1c7b7;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #e2d7c5;
 }
 
+/* Trục Cuốn Gỗ Mun Bọc Đồng (Turned Ebony Roller with Bronze Finials) */
 .scroll-wood-roller {
-  height: 14px;
-  background: linear-gradient(90deg, #3d2617 0%, #6b4328 15%, #3d2617 85%, #1f130b 100%);
-  border-radius: 7px;
-  border: 1px solid rgba(212, 175, 55, 0.4);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  height: 16px;
+  background: linear-gradient(90deg, #180f08 0%, #3d2314 10%, #6b3e23 20%, #3d2314 80%, #6b3e23 90%, #180f08 100%);
+  border-radius: 8px;
+  border: 1.5px solid #9c7b45;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.95), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+  position: relative;
+  z-index: 2;
 }
 
+/* Thân Trúc Giản: Nan tre thật với dây gai buộc liên kết */
 .scroll-slips-body {
+  position: relative;
   background: repeating-linear-gradient(
     90deg,
-    #231911 0px,
-    #231911 20px,
-    #18110b 21px,
-    #18110b 23px
+    #291c13 0px,
+    #291c13 18px,
+    #1b120c 19px,
+    #130d08 21px,
+    #251910 22px
   );
-  border-left: 1.5px solid rgba(212, 175, 55, 0.35);
-  border-right: 1.5px solid rgba(212, 175, 55, 0.35);
-  padding: 16px 20px;
+  border-left: 2px solid #8a6838;
+  border-right: 2px solid #8a6838;
+  padding: 18px 20px;
   overflow-y: auto;
-  max-height: calc(75vh - 28px);
+  max-height: calc(76vh - 32px);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.85);
+}
+
+.scroll-slips-body::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-slips-body::after {
+  content: '';
+  position: sticky;
+  bottom: -18px;
+  left: -20px;
+  right: -20px;
+  height: 35px;
+  background: linear-gradient(transparent, rgba(19, 13, 8, 0.96));
+  pointer-events: none;
+  display: block;
+  margin: 0 -20px -18px -20px;
 }
 
 .scroll-header {
-  margin-bottom: 14px;
-  border-bottom: 1px dashed rgba(212, 175, 55, 0.25);
+  margin-bottom: 12px;
+  border-bottom: 1px solid rgba(156, 123, 69, 0.4);
   padding-bottom: 10px;
 }
 
 .scroll-seal-tag {
   font-family: var(--font-title);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 900;
-  letter-spacing: 1.5px;
-  color: var(--gold-primary);
-  background: rgba(245, 158, 11, 0.15);
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  padding: 1px 6px;
+  letter-spacing: 2px;
+  color: #fef08a;
+  background: linear-gradient(135deg, #8b1a1a 0%, #520e0e 100%);
+  border: 1.5px solid #d4af37;
+  padding: 2px 8px;
   border-radius: 2px;
   display: inline-block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.4), inset 0 0 4px rgba(0, 0, 0, 0.5);
 }
 
 .scroll-city-title {
   font-family: var(--font-title);
   font-size: 18px;
   font-weight: 900;
-  color: #fff;
-  letter-spacing: 1px;
+  color: #fef3c7;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  line-height: 1.25;
 }
 
 .scroll-threat-line {
-  font-size: 10px;
-  color: #f87171;
-  margin-top: 2px;
+  font-size: 10.5px;
+  font-family: var(--font-serif);
+  color: #fca5a5;
+  margin-top: 5px;
+  padding: 3px 0 3px 8px;
+  border-left: 2.5px solid #dc2626;
+  font-style: italic;
+  line-height: 1.35;
 }
 
 .slip-section {
@@ -1260,119 +1269,213 @@ body {
 .slip-section-title {
   font-family: var(--font-title);
   font-size: 10px;
-  font-weight: 800;
-  color: var(--gold-molten);
-  letter-spacing: 1px;
-  margin-bottom: 4px;
+  font-weight: 900;
+  color: #f59e0b;
+  letter-spacing: 1.5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(156, 123, 69, 0.3);
+  padding-bottom: 3px;
+  display: inline-block;
 }
 
 .slip-text {
   font-size: 12px;
-  line-height: 1.6;
-  color: #d1d5db;
+  line-height: 1.65;
+  color: #d5cebe;
   font-family: var(--font-serif);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
 }
 
+/* Sổ Cái Quân Cơ (Military Docket / Dot Leaders) */
 .slip-numbers-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   margin-bottom: 16px;
+  padding: 8px 0;
+  border-top: 1px solid rgba(156, 123, 69, 0.35);
+  border-bottom: 1px solid rgba(156, 123, 69, 0.35);
 }
 
 .slip-num-box {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: var(--radius-sm);
-  padding: 6px 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 2px 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  gap: 6px;
 }
 
+.slip-num-box::after {
+  content: '';
+  order: 0;
+  flex: 1;
+  border-bottom: 1px dotted rgba(156, 123, 69, 0.4);
+  margin: 0 4px;
+  position: relative;
+  top: -3px;
+}
+
+.slip-num-box .sn-lbl { order: -1; }
+.slip-num-box .sn-val { order: 1; }
+
 .sn-lbl {
-  font-size: 9px;
-  color: var(--text-dim);
+  font-size: 10.5px;
+  font-family: var(--font-serif);
+  color: #b0a390;
+  flex-shrink: 0;
 }
 
 .sn-val {
   font-family: var(--font-title);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
-  color: #fff;
-  margin-top: 2px;
+  color: #f3ede2;
+  margin-top: 0;
+  text-align: right;
+  flex-shrink: 0;
 }
 
 .text-gold { color: var(--gold-primary); }
-.text-green { color: #34d399; }
-.text-cyan { color: #38bdf8; }
+.text-green { color: var(--jade-green); }
+.text-cyan { color: var(--silver-steel); }
 
+/* Thao Thiết Lệnh Bài Quân Cơ (Tactical Command Tallies) */
 .slip-actions-group {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .slip-act-btn {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(180deg, #1f160e 0%, #120d08 100%);
-  border: 1px solid rgba(212, 175, 55, 0.3);
-  border-radius: var(--radius-sm);
+  background: linear-gradient(180deg, #2b1d14 0%, #170e09 100%);
+  border: 1.5px solid rgba(156, 123, 69, 0.5);
+  border-left: 4px solid #9c7b45;
+  border-radius: 3px;
   padding: 8px 12px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
   text-align: left;
+  position: relative;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
 }
 
 .slip-act-btn:hover {
-  border-color: var(--gold-primary);
-  background: linear-gradient(180deg, #2d2014 0%, #1a120b 100%);
-  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
-  transform: translateY(-1px);
+  border-color: #d4af37;
+  border-left-color: #fbbf24;
+  background: linear-gradient(180deg, #3d281b 0%, #22140c 100%);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.3), inset 0 0 10px rgba(212, 175, 55, 0.1);
+  transform: translateX(4px);
 }
 
+.slip-act-btn:active {
+  transform: translateX(2px) scale(0.99);
+}
+
+/* Lệnh Bài Xuất Chinh (Primary Battle Command) */
 .slip-act-btn.btn-enter-battle {
-  border-color: rgba(220, 38, 38, 0.6);
-  background: linear-gradient(180deg, #2b1010 0%, #150606 100%);
+  background: linear-gradient(135deg, #3d1414 0%, #1f0808 100%);
+  border: 1.5px solid #d4af37;
+  border-left: 5px solid #dc2626;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.85), 0 0 16px rgba(220, 38, 38, 0.35);
 }
 
 .slip-act-btn.btn-enter-battle:hover {
-  border-color: #ef4444;
-  box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
+  border-color: #f59e0b;
+  border-left-color: #ef4444;
+  background: linear-gradient(135deg, #4f1b1b 0%, #2b0b0b 100%);
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.4), 0 0 20px rgba(239, 68, 68, 0.5);
+  transform: translateX(4px) scale(1.01);
 }
 
 .act-seal-char {
-  width: 26px;
-  height: 26px;
-  background: var(--red-imperial);
-  color: var(--gold-primary);
-  border: 1px solid var(--gold-primary);
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #991b1b 0%, #520e0e 100%);
+  color: #fef08a;
+  border: 1px solid #d4af37;
   border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-title);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 900;
   flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.btn-enter-battle .act-seal-char {
+  background: linear-gradient(135deg, #dc2626 0%, #7f1d1d 100%);
+  border-color: #fbbf24;
+  color: #ffffff;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.6);
 }
 
 .act-meta {
   display: flex;
   flex-direction: column;
+  flex: 1;
+  min-width: 0;
 }
 
 .act-name {
   font-family: var(--font-title);
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 800;
   color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.btn-enter-battle .act-name {
+  color: #fef08a;
+  font-size: 12px;
 }
 
 .act-desc {
+  font-size: 9.5px;
+  color: #a39682;
+  margin-top: 1px;
+}
+
+/* Huy Hiệu Chi Phí Lệnh Bài (Command Cost Badges) */
+.act-cost-badge {
+  margin-left: auto;
+  font-family: var(--font-title);
   font-size: 9px;
-  color: var(--text-dim);
+  font-weight: 800;
+  padding: 3px 7px;
+  border-radius: 2px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.act-cost-badge.free {
+  background: linear-gradient(135deg, #991b1b 0%, #5c1010 100%);
+  color: #fef08a;
+  border: 1px solid #d4af37;
+  letter-spacing: 1px;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.5);
+}
+
+.act-cost-badge.cost-ap,
+.act-cost-badge.cost-gold {
+  background: rgba(14, 9, 6, 0.85);
+  color: #e2d7c5;
+  border: 1px solid rgba(156, 123, 69, 0.45);
+}
+
+.act-cost-badge small {
+  color: #fbbf24;
+  font-size: 8px;
+  display: block;
 }
 
 /* ==========================================================================
@@ -1810,15 +1913,7 @@ body {
   margin: 3px 0;
 }
 
-/* 3D Sand-Table & Battle FX Containers */
-.saban-threejs-container {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: auto;
-  z-index: 1;
-}
+/* 3D Sand-Table & Battle FX Containers — saban-threejs-container consolidated above */
 
 .battle-phaser-container {
   position: absolute;
@@ -2342,76 +2437,8 @@ body {
   to { transform: translateY(0); opacity: 1; }
 }
 
-/* ==========================================================================
-   CHAPTER PROGRESSION TRACKER ON HUD
-   ========================================================================== */
-.hud-chapter-tracker {
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid var(--border-kintsugi);
-  padding: 6px 14px;
-  border-radius: var(--radius-md);
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  transition: all 0.2s ease;
-}
+/* [DEAD CODE REMOVED] Legacy HUD components (tracker, hero dock, gacha btn) cleaned up */
 
-.hud-chapter-tracker:hover {
-  background: rgba(245, 158, 11, 0.1);
-  box-shadow: 0 0 15px var(--gold-glow);
-  transform: translateY(-1px);
-}
-
-.tracker-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.ch-badge {
-  background: var(--red-imperial);
-  color: var(--gold-primary);
-  font-family: var(--font-title);
-  font-size: 10px;
-  font-weight: 900;
-  padding: 1px 6px;
-  border-radius: var(--radius-sm);
-  border: 1px solid var(--gold-primary);
-}
-
-.ch-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-  white-space: nowrap;
-}
-
-.ch-subtrack {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.ch-matrix-hint {
-  font-size: 10px;
-  color: var(--gold-molten);
-}
-
-.ch-progress-mini {
-  width: 60px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.ch-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #f59e0b, #fbbf24);
-  transition: width 0.4s ease;
-}
 
 /* Locked States for Navigation and Features */
 .nav-btn.locked-tab {
@@ -2455,105 +2482,8 @@ body {
   border-radius: 4px;
 }
 
-/* Hero & Gacha Quick Access Dock */
-.hud-hero-dock {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
+/* [DEAD CODE REMOVED] Legacy hero dock, gacha button, hero inspect CSS cleaned up */
 
-.btn-gacha-hud {
-  background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
-  border: 1px solid var(--gold-primary);
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
-  transition: all 0.2s ease;
-}
-
-.btn-gacha-hud:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 18px var(--gold-glow);
-}
-
-.gacha-seal {
-  font-family: var(--font-title);
-  font-weight: 900;
-  font-size: 16px;
-  background: var(--red-imperial);
-  color: var(--gold-primary);
-  border: 1px solid var(--gold-primary);
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 2px;
-}
-
-.gacha-hud-info {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.gacha-lbl {
-  font-size: 11px;
-  font-weight: 800;
-  color: var(--gold-primary);
-}
-
-.gacha-ticket-status {
-  font-size: 9px;
-  color: #fef08a;
-}
-
-.btn-hero-inspect-hud {
-  background: rgba(0, 0, 0, 0.55);
-  border: 1px solid var(--gold-primary);
-  padding: 4px 10px;
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.btn-hero-inspect-hud:hover {
-  background: rgba(245, 158, 11, 0.15);
-  box-shadow: 0 0 14px var(--gold-glow);
-}
-
-.hero-hud-mini {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--gold-primary);
-}
-
-.hero-hud-meta {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.hh-name {
-  font-size: 11px;
-  font-weight: 800;
-  color: var(--gold-primary);
-}
-
-.hh-realm {
-  font-size: 9px;
-  color: #38bdf8;
-}
 
 /* ==========================================================================
    GACHA ALTAR MODAL (BÁI TƯỚNG ĐÀI)
@@ -3420,124 +3350,111 @@ body.view-mode-map .game-hud-frame,
 body.view-mode-battle .game-hud-frame {
   display: flex !important;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  background: linear-gradient(180deg, #1e1610 0%, #130d09 100%) !important;
-  border-bottom: 2px solid #8a734b !important;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.95), inset 0 -1px 0 rgba(255, 255, 255, 0.08) !important;
-  padding: 0 28px !important;
-  align-items: center;
+  top: 0; left: 0; right: 0;
+  height: auto;
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding: 12px 16px !important;
+  align-items: flex-start;
   justify-content: space-between;
   z-index: 50;
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 /* Nẹp góc đồng đúc cổ kính của Khung Quân Cơ Thượng Thư */
 body.view-mode-map .game-hud-frame::before,
 body.view-mode-battle .game-hud-frame::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-top: 3px solid #d4af37;
-  border-left: 3px solid #d4af37;
-  pointer-events: none;
+  display: none !important;
 }
 
 body.view-mode-map .game-hud-frame::after,
 body.view-mode-battle .game-hud-frame::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 20px;
-  height: 20px;
-  border-top: 3px solid #d4af37;
-  border-right: 3px solid #d4af37;
-  pointer-events: none;
+  display: none !important;
 }
 
-/* Cụm Trái: Ấn triện Đại Vũ Triều & Cửu Đỉnh Long Lô */
+/* Cụm Trái: Thao Thiết Ngọc Bội & Quân Cơ Án Bản (Single Unified Diegetic Desk Plate) */
 body.view-mode-map .hud-corner-crest,
 body.view-mode-battle .hud-corner-crest {
-  display: flex;
+  display: flex !important;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
+  background: linear-gradient(180deg, #261b12 0%, #150e09 100%) !important;
+  border: 1.5px solid #9c7b45 !important;
+  border-top: 2px solid #c8a25c !important;
+  border-bottom: 2px solid #4a2f15 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 0 20px rgba(0, 0, 0, 0.8) !important;
+  padding: 5px 14px !important;
+  pointer-events: auto;
+}
+
+/* Ấn Triện Thế Lực: Không đóng hộp lồng hộp, ngồi trực tiếp trên Án Bản */
+body.view-mode-map .dynasty-seal-plate,
+body.view-mode-battle .dynasty-seal-plate {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
   padding: 0 !important;
-}
-
-body.view-mode-map .dynasty-seal-plate,
-body.view-mode-battle .dynasty-seal-plate {
-  background: rgba(26, 18, 12, 0.92) !important;
-  border: 1.5px solid #8a734b !important;
-  border-radius: 3px !important;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8), 0 2px 8px rgba(0, 0, 0, 0.6) !important;
-  padding: 4px 12px !important;
   cursor: pointer !important;
-  min-width: 155px;
-  transition: all 0.25s ease !important;
+  width: auto !important;
+  min-width: auto;
+  transition: transform 0.2s ease, filter 0.2s ease !important;
 }
 
 body.view-mode-map .dynasty-seal-plate:hover,
 body.view-mode-battle .dynasty-seal-plate:hover {
-  border-color: #d4af37 !important;
-  box-shadow: inset 0 0 14px rgba(212, 175, 55, 0.2), 0 0 14px rgba(212, 175, 55, 0.4) !important;
-  transform: translateY(-1px);
+  transform: scale(1.06) !important;
+  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6)) !important;
 }
 
 body.view-mode-map .dynasty-seal-icon,
 body.view-mode-battle .dynasty-seal-icon {
-  background: #991b1b !important;
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #991b1b 0%, #5c1010 100%) !important;
   color: #fef08a !important;
-  border: 1px solid #d4af37 !important;
+  border: 1.5px solid #d4af37 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), inset 0 0 6px rgba(251, 191, 36, 0.3) !important;
 }
 
-body.view-mode-map .dynasty-era,
-body.view-mode-battle .dynasty-era {
-  color: #fef3c7 !important;
-  font-family: var(--font-title);
-  letter-spacing: 1px;
-}
-
-body.view-mode-map .dynasty-role,
-body.view-mode-battle .dynasty-role {
-  color: #c5a059 !important;
-}
-
+/* Cửu Đỉnh Long Lô: Tọa trên Án Bản, có vạch ngăn đồng mảnh */
 body.view-mode-map .suspicion-diegetic,
 body.view-mode-battle .suspicion-diegetic {
-  width: 185px !important;
-  min-width: 185px !important;
+  width: auto !important;
+  min-width: auto !important;
   flex-shrink: 0 !important;
   white-space: nowrap !important;
-  background: rgba(22, 15, 10, 0.9) !important;
-  border: 1px solid rgba(138, 115, 75, 0.5) !important;
-  border-radius: 3px !important;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.85) !important;
-  padding: 4px 12px !important;
+  background: transparent !important;
+  border: none !important;
+  border-left: 1px solid rgba(156, 123, 69, 0.35) !important;
+  border-right: 1px solid rgba(156, 123, 69, 0.35) !important;
+  box-shadow: none !important;
+  padding: 2px 10px !important;
 }
 
-/* Cụm Giữa: Khay đồng Nội Khố & Hổ Phù Lệnh Sa Bàn */
+/* Khay Tài Nguyên Nội Khố: Điêu khắc trực tiếp trên Án Bản */
 body.view-mode-map .hud-treasury-ribbon,
 body.view-mode-battle .hud-treasury-ribbon {
-  background: rgba(22, 15, 10, 0.9) !important;
-  border: 1px solid rgba(138, 115, 75, 0.5) !important;
-  border-radius: 3px !important;
-  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.85) !important;
-  padding: 4px 14px !important;
-  gap: 16px !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  gap: 14px !important;
 }
 
 body.view-mode-map .treasury-item,
 body.view-mode-battle .treasury-item {
   color: #fef3c7 !important;
+  font-size: 13px;
+  gap: 5px;
+}
+
+body.view-mode-map .treasury-item svg,
+body.view-mode-battle .treasury-item svg {
+  color: #d4af37;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
 }
 
 body.view-mode-map .t-val,
@@ -3545,67 +3462,106 @@ body.view-mode-battle .t-val {
   color: #fbbf24 !important;
   font-family: var(--font-title);
   font-weight: 800;
+  font-size: 12px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
 }
 
-body.view-mode-map .t-lbl,
-body.view-mode-battle .t-lbl {
-  color: #bfa682 !important;
-}
-
-/* Trướng kỳ mốc chương */
-body.view-mode-map .hud-center-banner,
-body.view-mode-battle .hud-center-banner {
-  background: rgba(28, 19, 13, 0.94) !important;
-  border: 1.5px solid #8a734b !important;
-  border-radius: 3px !important;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.85) !important;
-}
-
-/* Cụm Phải: Ấn Phù & Bàn Xoay Chuyển Cõi */
+/* Cụm Phải: Trướng Kỳ Mốc Chương & Bàn Xoay Chuyển Cõi */
 body.view-mode-map .hud-corner-system,
 body.view-mode-battle .hud-corner-system {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  pointer-events: auto;
 }
 
-body.view-mode-map .seal-btn,
-body.view-mode-battle .seal-btn {
-  background: rgba(28, 19, 13, 0.94) !important;
-  border: 1.5px solid #8a734b !important;
-  border-radius: 4px !important;
-  color: #fef3c7 !important;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75) !important;
+/* Trướng Kỳ Mốc Chương (Thánh Chỉ Lụa Treo Cổ Kính) */
+body.view-mode-map .hud-center-banner,
+body.view-mode-battle .hud-center-banner {
+  background: linear-gradient(180deg, #2e1515 0%, #180a0a 100%) !important;
+  border: 1.5px solid #a37f48 !important;
+  border-top: 2px solid #d4af37 !important;
+  border-radius: 0 0 6px 6px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), inset 0 0 12px rgba(0, 0, 0, 0.8) !important;
+  padding: 5px 16px 7px 16px !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
 }
 
-body.view-mode-map .seal-btn:hover,
-body.view-mode-battle .seal-btn:hover {
-  border-color: #f59e0b !important;
-  box-shadow: 0 0 14px rgba(245, 158, 11, 0.4) !important;
-  transform: translateY(-1px);
+body.view-mode-map .hud-center-banner:hover,
+body.view-mode-battle .hud-center-banner:hover {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 8px 30px rgba(251, 191, 36, 0.35), inset 0 0 16px rgba(212, 175, 55, 0.2) !important;
+  transform: translateY(2px);
 }
 
+body.view-mode-map .banner-chapter,
+body.view-mode-battle .banner-chapter {
+  font-family: var(--font-title);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #f59e0b;
+}
+
+body.view-mode-map .banner-title,
+body.view-mode-battle .banner-title {
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.8px;
+}
+
+/* Bàn Xoay Chuyển Cõi: Thẻ Lệnh Đồng Khắc Chìm */
 body.view-mode-map .realm-astrolabe,
 body.view-mode-battle .realm-astrolabe {
-  background: rgba(20, 14, 9, 0.94) !important;
-  border: 1.5px solid #8a734b !important;
+  background: linear-gradient(180deg, #241b12 0%, #130d08 100%) !important;
+  border: 1.5px solid #9c7b45 !important;
   border-radius: 4px !important;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.85) !important;
-  padding: 2px 4px !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.8) !important;
+  padding: 3px !important;
 }
 
 body.view-mode-map .astrolabe-btn,
 body.view-mode-battle .astrolabe-btn {
-  color: #bfa682 !important;
+  width: 42px !important;
+  height: 42px !important;
   border-radius: 3px !important;
+  border: 1px solid transparent !important;
+  color: #bfa682 !important;
+  transition: all 0.2s ease;
+}
+
+body.view-mode-map .astrolabe-btn .astrolabe-glyph,
+body.view-mode-battle .astrolabe-btn .astrolabe-glyph {
+  font-family: var(--font-title);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+body.view-mode-map .astrolabe-btn .astrolabe-tip,
+body.view-mode-battle .astrolabe-btn .astrolabe-tip {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #c5a059;
+  margin-top: 1px;
 }
 
 body.view-mode-map .astrolabe-btn.active,
 body.view-mode-battle .astrolabe-btn.active {
-  background: linear-gradient(180deg, #991b1b 0%, #681111 100%) !important;
-  border: 1px solid #dc2626 !important;
+  background: linear-gradient(135deg, #8b1a1a 0%, #520e0e 100%) !important;
+  border: 1.5px solid #d4af37 !important;
   color: #ffffff !important;
-  box-shadow: 0 0 10px rgba(220, 38, 38, 0.6) !important;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.6), inset 0 0 8px rgba(251, 191, 36, 0.25) !important;
+}
+
+body.view-mode-map .astrolabe-btn:hover:not(.active),
+body.view-mode-battle .astrolabe-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fef08a !important;
 }
 
 /* ==========================================================================
