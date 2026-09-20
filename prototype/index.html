@@ -26,7 +26,19 @@
       </div>
     </div>
 
-    <!-- TABS CHUYỂN ĐỔI TAM ĐẠI TẦNG -->
+    <!-- Chapter Progression Tracker -->
+    <div class="hud-chapter-tracker" id="btn-open-milestones" title="Bấm để xem Ma Trận Mở Khóa Tính Năng Theo Chương">
+      <div class="tracker-row">
+        <span class="ch-badge" id="hud-chapter-badge">CHƯƠNG 1</span>
+        <span class="ch-title" id="hud-chapter-title">Phá Giải Câu Đối Hoàng Cung</span>
+      </div>
+      <div class="ch-subtrack">
+        <span class="ch-matrix-hint">📜 Ma Trận Mở Khóa 8 Mốc</span>
+        <div class="ch-progress-mini"><div class="ch-progress-fill" id="hud-ch-fill" style="width: 12.5%;"></div></div>
+      </div>
+    </div>
+
+    <!-- TABS CHUYỂN ĐỔI TAM ĐẠI TẦNG (HỖ TRỢ TRẠNG THÁI KHÓA THEO CHƯƠNG) -->
     <nav class="hud-nav" aria-label="Game Views">
       <button class="nav-btn active" id="btn-tab-vn" data-view="vn">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -35,26 +47,47 @@
         <span>Tầng 1: Kịch Bản Visual Novel</span>
       </button>
 
-      <button class="nav-btn" id="btn-tab-map" data-view="map">
+      <button class="nav-btn locked-tab" id="btn-tab-map" data-view="map" title="Khóa: Mở khóa tại Chương 15 (Chinh Bắc Thánh Chỉ)">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
           <line x1="8" y1="2" x2="8" y2="18"></line>
           <line x1="16" y1="6" x2="16" y2="22"></line>
         </svg>
         <span>Tầng 2: Đế Nghiệp Sa Bàn</span>
-        <span class="badge-alert" id="map-alert-badge">Nguy Cấp</span>
+        <span class="tab-lock-tag" id="tab-map-lock">🔒 Ch.15</span>
+        <span class="badge-alert hidden" id="map-alert-badge">Nguy Cấp</span>
       </button>
 
-      <button class="nav-btn" id="btn-tab-battle" data-view="battle">
+      <button class="nav-btn locked-tab" id="btn-tab-battle" data-view="battle" title="Khóa: Mở khóa tại Chương 48 (Thành Thanh Châu Đại Chiến)">
         <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path>
           <path d="M13 19l6 2 2-6-4.5-4.5"></path>
           <path d="M9.5 6.5L19 16"></path>
         </svg>
         <span>Tầng 3: Sa Trường Thẻ Bài</span>
-        <span class="badge-live">Chiến Sự</span>
+        <span class="tab-lock-tag" id="tab-battle-lock">🔒 Ch.48</span>
+        <span class="badge-live hidden" id="battle-live-badge">Chiến Sự</span>
       </button>
     </nav>
+
+    <!-- HERO & GACHA QUICK ACCESS -->
+    <div class="hud-hero-dock">
+      <button class="btn-gacha-hud" id="btn-hud-gacha" title="Bái Tướng Đài - Chiêu Mộ Anh Linh Tam Quốc">
+        <span class="gacha-seal">令</span>
+        <div class="gacha-hud-info">
+          <span class="gacha-lbl">Bái Tướng Đài</span>
+          <span class="gacha-ticket-status">Anh Hồn Lệnh: <strong id="hud-ticket-count">1</strong></span>
+        </div>
+      </button>
+
+      <button class="btn-hero-inspect-hud hidden" id="btn-hud-hero" title="Bấm để xem Bảng Thuộc Tính & Tuyệt Kỹ Triệu Tử Long">
+        <img src="assets/images/zhaoyun.jpg" class="hero-hud-mini" alt="Triệu Vân">
+        <div class="hero-hud-meta">
+          <span class="hh-name">Triệu Tử Long</span>
+          <span class="hh-realm">Hoàng Cảnh Sơ Kỳ · ⚔ 96</span>
+        </div>
+      </button>
+    </div>
 
     <!-- THANH TÀI NGUYÊN & THANH NGHI KỴ VŨ HOÀNG -->
     <div class="hud-monitors">
@@ -127,11 +160,15 @@
             </div>
           </div>
 
-          <!-- Right Character (Phe ta / Triệu Vân / Quý Bình An / Giả Hủ) -->
+          <!-- Right Character (Phe ta / Quý Bình An / Triệu Vân) -->
           <div class="actor-slot actor-right active" id="actor-right-slot">
             <div class="actor-card" id="actor-right-card">
-              <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="actor-img" id="actor-right-img">
-              <div class="actor-nametag" id="actor-right-nametag">Triệu Tử Long</div>
+              <div class="actor-avatar actor-scholar" id="actor-right-avatar">
+                <span>Quý Bình An</span>
+                <span style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Phò Mã Gia</span>
+              </div>
+              <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="actor-img hidden" id="actor-right-img">
+              <div class="actor-nametag" id="actor-right-nametag">Quý Bình An</div>
             </div>
           </div>
         </div>
@@ -654,6 +691,254 @@
     </div>
   </div>
 
+  <!-- =========================================================================
+       GACHA MODAL: BÁI TƯỚNG ĐÀI — CHIÊU MỘ ANH LINH TAM QUỐC
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="gacha-modal">
+    <div class="gacha-altar-container">
+      <div class="altar-header">
+        <div class="altar-crest">THẦN CẤP TRIỆU HOÁN THẦN BẢNG</div>
+        <h2 class="altar-title">BÁI TƯỚNG ĐÀI KHỞI NGUYÊN</h2>
+        <p class="altar-subtext">Hấp thu vạn kim thiên hạ, triệu hoán mãnh tướng mưu thần Tam Quốc giáng thế!</p>
+        <button class="btn-close-modal" id="btn-close-gacha">✕ Đóng</button>
+      </div>
+
+      <!-- Summoning Arena -->
+      <div class="altar-core" id="altar-core">
+        <div class="bagua-ring" id="bagua-ring"></div>
+        <div class="altar-incense"></div>
+        <div class="summon-talisman" id="summon-talisman">
+          <div class="talisman-inner">
+            <span class="talisman-script">英魂敕令</span>
+            <span class="talisman-badge">SƠ CẤP</span>
+          </div>
+        </div>
+
+        <!-- Summon Card Reveal Container -->
+        <div class="gacha-card-reveal hidden" id="gacha-card-reveal">
+          <div class="reveal-flash-burst"></div>
+          <div class="card-flipper" id="card-flipper">
+            <!-- Back of Card -->
+            <div class="card-face card-back">
+              <div class="card-back-seal">魂</div>
+            </div>
+            <!-- Front of Card (SSR Hero Reveal) -->
+            <div class="card-face card-front">
+              <div class="ssr-banner">SSR · HỔ TƯỚNG</div>
+              <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="reveal-hero-art">
+              <div class="reveal-hero-name">TRIỆU TỬ LONG</div>
+              <div class="reveal-hero-title">Thường Sơn Triệu Vân · Võ Lực 96</div>
+              <div class="reveal-hero-realm">Cảnh giới: Hoàng Cảnh Sơ Kỳ</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Altar Controls -->
+      <div class="altar-footer">
+        <div class="ticket-status-row">
+          <span>Sở hữu: <strong id="gacha-ticket-display">1</strong> Anh Hồn Lệnh Sơ Cấp</span>
+        </div>
+        <div class="altar-btn-row" id="altar-btn-row">
+          <button class="btn-summon-action" id="btn-do-summon">
+            <span class="summon-btn-title">KHAI MỞ CHIÊU MỘ</span>
+            <span class="summon-btn-sub">Tiêu hao 1 Anh Hồn Lệnh</span>
+          </button>
+        </div>
+        <div class="reveal-action-row hidden" id="reveal-action-row">
+          <button class="btn-view-hero-detail" id="btn-reveal-inspect">
+            📜 XEM THUỘC TÍNH & TUYỆT KỸ
+          </button>
+          <button class="btn-confirm-summon" id="btn-reveal-confirm">
+            ⚔️ TIẾP NHẬN VÕ TƯỚNG VÀO HÀNG NGŨ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       HERO CARD DETAIL INSPECTOR: BẢNG TRA CỨU THUỘC TÍNH TƯỚNG (RPG STAT SHEET)
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="hero-detail-modal">
+    <div class="hero-inspector-dialog">
+      <button class="btn-close-modal" id="btn-close-hero-detail">✕ Đóng</button>
+      
+      <div class="inspector-layout">
+        <!-- Left: Full Portrait & Badges -->
+        <div class="inspector-art-col">
+          <div class="rarity-crest">SSR HOÀNG KIM</div>
+          <div class="hero-art-frame">
+            <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="hero-full-art">
+          </div>
+          <div class="hero-appellation">
+            <h3>TRIỆU TỬ LONG</h3>
+            <span class="hero-epithet">Thường Sơn Hổ Tướng · Long Đảm Ngân Thương</span>
+          </div>
+          <div class="hero-realm-pill">
+            <span class="realm-lbl">CẢNH GIỚI VÕ ĐẠO:</span>
+            <span class="realm-val">HOÀNG CẢNH SƠ KỲ</span>
+          </div>
+        </div>
+
+        <!-- Right: Tabs & Deep Stats -->
+        <div class="inspector-meta-col">
+          <!-- Four Dimensions Grid (Tứ Duy Tam Quốc) -->
+          <div class="sheet-section">
+            <div class="section-badge">TỨ ĐẠI CHỈ SỐ TAM QUỐC</div>
+            <div class="stats-quad-grid">
+              <div class="quad-stat-item">
+                <div class="qs-header"><span class="qs-name">⚔️ VÕ LỰC</span><span class="qs-val">96</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 96%; background: #ef4444;"></div></div>
+                <span class="qs-desc">Tấn công bộc phát, uy áp sa trường</span>
+              </div>
+              <div class="quad-stat-item">
+                <div class="qs-header"><span class="qs-name">🛡️ THỐNG SOÁI</span><span class="qs-val">91</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 91%; background: #06b6d4;"></div></div>
+                <span class="qs-desc">Dẫn dắt quân đoàn, chỉ huy kỵ binh</span>
+              </div>
+              <div class="quad-stat-item">
+                <div class="qs-header"><span class="qs-name">📜 TRÍ LỰC</span><span class="qs-val">76</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 76%; background: #3b82f6;"></div></div>
+                <span class="qs-desc">Kháng mưu lược, phòng thủ kế sách</span>
+              </div>
+              <div class="quad-stat-item">
+                <div class="qs-header"><span class="qs-name">🏛️ CHÍNH TRỊ</span><span class="qs-val">65</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 65%; background: #10b981;"></div></div>
+                <span class="qs-desc">An dân trị quốc, tuần tra kinh kỳ</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Combat Ratings -->
+          <div class="sheet-section">
+            <div class="section-badge">CHỈ SỐ CHIẾN TRẬN TRỰC TIẾP</div>
+            <div class="combat-stats-row">
+              <div class="cs-pill"><span class="cs-lbl">SINH MỆNH:</span><span class="cs-val text-green">180</span></div>
+              <div class="cs-pill"><span class="cs-lbl">TẤN CÔNG:</span><span class="cs-val text-red">102</span></div>
+              <div class="cs-pill"><span class="cs-lbl">PHÒNG THỦ:</span><span class="cs-val text-blue">88</span></div>
+              <div class="cs-pill"><span class="cs-lbl">BINH CHỦNG:</span><span class="cs-val text-gold">Bạch Mã Nghĩa Tòng</span></div>
+            </div>
+          </div>
+
+          <!-- Skills System -->
+          <div class="sheet-section">
+            <div class="section-badge">BỘ KỸ NĂNG VÕ ĐẠO</div>
+            <div class="skills-list">
+              <div class="skill-entry skill-active">
+                <div class="sk-icon">⚡</div>
+                <div class="sk-info">
+                  <div class="sk-name-row"><span class="sk-name">Thất Thám Bàn Xà</span><span class="sk-tag active-tag">Tuyệt Kỹ Chủ Động · 2 Mana</span></div>
+                  <p class="sk-desc">Đâm liên tiếp 7 thương chí mạng, gây 120 Bạo Kích lên Tướng địch và <strong>Ngắt hoàn toàn Ý Đồ</strong> sắp sửa phát động!</p>
+                </div>
+              </div>
+              <div class="skill-entry">
+                <div class="sk-icon">🛡️</div>
+                <div class="sk-info">
+                  <div class="sk-name-row"><span class="sk-name">Long Đảm Bất Khuất</span><span class="sk-tag passive-tag">Bị Động 1</span></div>
+                  <p class="sk-desc">Khi HP giảm xuống dưới 50%, né tránh tăng 30%, sát thương gây ra tăng 25%.</p>
+                </div>
+              </div>
+              <div class="skill-entry">
+                <div class="sk-icon">⚔️</div>
+                <div class="sk-info">
+                  <div class="sk-name-row"><span class="sk-name">Thường Sơn Hổ Tướng</span><span class="sk-tag passive-tag">Bị Động 2</span></div>
+                  <p class="sk-desc">Tự động phản kích 100% sát thương đối với mọi đòn tấn công cận chiến của kẻ địch cùng cánh.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Divine Equipment & Mount -->
+          <div class="sheet-section">
+            <div class="section-badge">THẦN BINH & THÚ CƯỠI TRẤN THÂN</div>
+            <div class="equip-row">
+              <div class="equip-card">
+                <div class="eq-icon">🔱</div>
+                <div class="eq-meta">
+                  <span class="eq-name">Long Đảm Lượng Ngân Thương</span>
+                  <span class="eq-stat">+25 Công Kích · +15% Tỷ Lệ Bạo Kích</span>
+                </div>
+              </div>
+              <div class="equip-card">
+                <div class="eq-icon">🐎</div>
+                <div class="eq-meta">
+                  <span class="eq-name">Chiếu Dạ Ngọc Sư Tử</span>
+                  <span class="eq-stat">+20 Tốc Độ Hành Quân · +10% Né Tránh</span>
+                </div>
+              </div>
+              <div class="equip-card">
+                <div class="eq-icon">🛡️</div>
+                <div class="eq-meta">
+                  <span class="eq-name">Bạch Ngân Ngân Long Giáp</span>
+                  <span class="eq-stat">+30 Phòng Ngự · Kháng Khí Giới 15%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bonds & Synergy -->
+          <div class="sheet-section">
+            <div class="section-badge">DUYÊN PHẬN ANH LINH (KÍCH DUYÊN)</div>
+            <div class="bonds-grid">
+              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Quan Vũ, Trương Phi, Mã Siêu, Hoàng Trung">
+                <span class="bond-title">🔒 Ngũ Hổ Thượng Tướng</span>
+                <span class="bond-effect">Công kích toàn đội ngũ +25% (Chưa kích hoạt)</span>
+              </div>
+              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Cổ Chi Ác Lai Điển Vi (Chương 63)">
+                <span class="bond-title">🔒 Thân Vệ Song Bích</span>
+                <span class="bond-effect">Quý Bình An giảm 20% sát thương nhận vào (Chưa kích hoạt)</span>
+              </div>
+              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Gia Cát Lượng, Bàng Thống (Chương 1015)">
+                <span class="bond-title">🔒 Ngọa Long Phượng Sồ</span>
+                <span class="bond-effect">Khởi đầu trận đấu đầy 100% nộ khí (Chưa kích hoạt)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       CHAPTER MILESTONE PROGRESSION MATRIX MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="milestone-matrix-modal">
+    <div class="matrix-dialog">
+      <div class="matrix-header">
+        <div class="matrix-crest">ĐẾ NGHIỆP THỜI GIAN TUYẾN</div>
+        <h2 class="matrix-title">MA TRẬN MỞ KHÓA TÍNH NĂNG THEO CHƯƠNG</h2>
+        <p class="matrix-sub">Toàn bộ tính năng mở khóa tuần tự theo đúng tiến trình nguyên tác tiểu thuyết</p>
+        <button class="btn-close-modal" id="btn-close-matrix">✕ Đóng</button>
+      </div>
+      <div class="matrix-timeline" id="matrix-timeline-list">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       FEATURE UNLOCK EVENT NOTIFICATION MODAL
+       ========================================================================= -->
+  <div class="modal-backdrop hidden" id="unlock-event-modal">
+    <div class="unlock-dialog">
+      <div class="unlock-seal">THIÊN CƠ KHAI MỞ</div>
+      <div class="unlock-icon" id="unlock-modal-icon">🔓</div>
+      <h3 class="unlock-title" id="unlock-modal-title">MỞ KHÓA TÍNH NĂNG MỚI!</h3>
+      <div class="unlock-name" id="unlock-modal-name">KINH DOANH THẤU HOA CAO</div>
+      <p class="unlock-lore" id="unlock-modal-lore">
+        Quý Bình An đã chế tạo thành công xà phòng thơm từ mỡ cừu và bắt tay cùng Lâu chủ Vệ Ti Vũ. Nguồn thu vàng ròng bắt đầu chảy vào túi!
+      </p>
+      <div class="unlock-reward-tag" id="unlock-modal-effect">
+        ⚡ Tác dụng: Cho phép Mở Rộng Xưởng tại Sa Bàn kiếm +3.000 Vàng mỗi đợt!
+      </div>
+      <button class="btn-triumph-next" id="btn-close-unlock">
+        TIẾP NHẬN TÍNH NĂNG & TIẾP TỤC HÀNH TRÌNH
+      </button>
+    </div>
+  </div>
+
   <script src="app.js"></script>
 </body>
 </html>
+

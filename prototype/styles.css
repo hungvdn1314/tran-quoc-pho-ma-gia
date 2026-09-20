@@ -61,6 +61,10 @@ body {
   flex-direction: column;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* ==========================================================================
    TOP IMPERIAL HUD
    ========================================================================== */
@@ -2047,4 +2051,1013 @@ body {
   from { transform: translateY(50px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
 }
+
+/* ==========================================================================
+   CHAPTER PROGRESSION TRACKER ON HUD
+   ========================================================================== */
+.hud-chapter-tracker {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid var(--border-kintsugi);
+  padding: 6px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  transition: all 0.2s ease;
+}
+
+.hud-chapter-tracker:hover {
+  background: rgba(245, 158, 11, 0.1);
+  box-shadow: 0 0 15px var(--gold-glow);
+  transform: translateY(-1px);
+}
+
+.tracker-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ch-badge {
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--gold-primary);
+}
+
+.ch-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.ch-subtrack {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ch-matrix-hint {
+  font-size: 10px;
+  color: var(--gold-molten);
+}
+
+.ch-progress-mini {
+  width: 60px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.ch-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f59e0b, #fbbf24);
+  transition: width 0.4s ease;
+}
+
+/* Locked States for Navigation and Features */
+.nav-btn.locked-tab {
+  opacity: 0.55;
+  cursor: not-allowed;
+  position: relative;
+}
+
+.nav-btn.locked-tab:hover {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.tab-lock-tag {
+  font-size: 9px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--gold-molten);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+.btn-action.locked-feature {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(0.8);
+  position: relative;
+}
+
+.lock-indicator-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(220, 38, 38, 0.3);
+  border: 1px solid #dc2626;
+  color: #fca5a5;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Hero & Gacha Quick Access Dock */
+.hud-hero-dock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-gacha-hud {
+  background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+  border: 1px solid var(--gold-primary);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.3);
+  transition: all 0.2s ease;
+}
+
+.btn-gacha-hud:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px var(--gold-glow);
+}
+
+.gacha-seal {
+  font-family: var(--font-title);
+  font-weight: 900;
+  font-size: 16px;
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+}
+
+.gacha-hud-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.gacha-lbl {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gold-primary);
+}
+
+.gacha-ticket-status {
+  font-size: 9px;
+  color: #fef08a;
+}
+
+.btn-hero-inspect-hud {
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid var(--gold-primary);
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-hero-inspect-hud:hover {
+  background: rgba(245, 158, 11, 0.15);
+  box-shadow: 0 0 14px var(--gold-glow);
+}
+
+.hero-hud-mini {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--gold-primary);
+}
+
+.hero-hud-meta {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.hh-name {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--gold-primary);
+}
+
+.hh-realm {
+  font-size: 9px;
+  color: #38bdf8;
+}
+
+/* ==========================================================================
+   GACHA ALTAR MODAL (BÁI TƯỚNG ĐÀI)
+   ========================================================================== */
+.gacha-altar-container {
+  width: 620px;
+  background: radial-gradient(circle at 50% 30%, #201a13 0%, #0d0b09 85%, #050403 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 0 80px rgba(245, 158, 11, 0.4), 0 25px 70px rgba(0, 0, 0, 0.95);
+  position: relative;
+  animation: modalScale 0.35s ease;
+}
+
+.altar-header {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.altar-crest {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  margin-bottom: 4px;
+}
+
+.altar-title {
+  font-family: var(--font-title);
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.altar-subtext {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.btn-close-modal:hover {
+  border-color: var(--red-cinnabar);
+  color: #fff;
+  background: rgba(220, 38, 38, 0.4);
+}
+
+.altar-core {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.bagua-ring {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 2px dashed rgba(245, 158, 11, 0.5);
+  border-radius: 50%;
+  animation: baguaRotate 20s linear infinite;
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.2), inset 0 0 35px rgba(245, 158, 11, 0.2);
+}
+
+@keyframes baguaRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.summon-talisman {
+  width: 140px;
+  height: 210px;
+  background: linear-gradient(180deg, #991b1b 0%, #450a0a 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(185, 28, 28, 0.7);
+  z-index: 5;
+  transition: transform 0.4s ease;
+}
+
+.summon-talisman.active-pulse {
+  animation: talismanPulse 0.8s infinite alternate;
+}
+
+@keyframes talismanPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 10px #dc2626); }
+  100% { transform: scale(1.08); filter: drop-shadow(0 0 30px #f59e0b); }
+}
+
+.talisman-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.talisman-script {
+  font-family: var(--font-title);
+  font-size: 26px;
+  color: var(--gold-primary);
+  writing-mode: vertical-rl;
+  letter-spacing: 6px;
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.8);
+}
+
+.talisman-badge {
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--gold-primary);
+}
+
+/* 3D Card Reveal in Gacha */
+.gacha-card-reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  perspective: 1000px;
+}
+
+.card-flipper {
+  width: 210px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #1c150e 0%, #2f2114 50%, #0d0a07 100%);
+}
+
+.card-back-seal {
+  font-family: var(--font-title);
+  font-size: 72px;
+  color: var(--gold-primary);
+  text-shadow: 0 0 25px var(--gold-glow);
+}
+
+.card-front {
+  background: linear-gradient(180deg, #1b2432 0%, #0c1017 100%);
+  transform: rotateY(180deg);
+  padding: 14px;
+}
+
+.ssr-banner {
+  position: absolute;
+  top: 10px;
+  left: -24px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 2px 30px;
+  transform: rotate(-30deg);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.8);
+}
+
+.reveal-hero-art {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-kintsugi);
+  margin-bottom: 8px;
+}
+
+.reveal-hero-name {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--gold-primary);
+  text-shadow: 0 0 10px var(--gold-glow);
+}
+
+.reveal-hero-title {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.reveal-hero-realm {
+  font-size: 10px;
+  color: #38bdf8;
+  margin-top: 2px;
+}
+
+.altar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ticket-status-row {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.btn-summon-action {
+  width: 100%;
+  background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+  border: 2px solid var(--gold-primary);
+  color: #fff;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(180, 83, 9, 0.6);
+  transition: all 0.2s ease;
+}
+
+.btn-summon-action:hover {
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+  transform: scale(1.02);
+  box-shadow: 0 6px 28px rgba(217, 119, 6, 0.85);
+}
+
+.summon-btn-title {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.summon-btn-sub {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.reveal-action-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-view-hero-detail {
+  flex: 1;
+  background: #1e293b;
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-view-hero-detail:hover {
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.btn-confirm-summon {
+  flex: 1.2;
+  background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);
+  border: 1px solid #f87171;
+  color: #fff;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-confirm-summon:hover {
+  background: linear-gradient(180deg, #ef4444 0%, #b91c1c 100%);
+}
+
+/* ==========================================================================
+   HERO CARD DETAIL INSPECTOR MODAL (RPG STAT SHEET)
+   ========================================================================== */
+.hero-inspector-dialog {
+  width: 960px;
+  max-height: 90vh;
+  background: linear-gradient(180deg, #151a24 0%, #0a0d13 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-lg);
+  padding: 30px;
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.95), 0 0 35px rgba(245, 158, 11, 0.35);
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+  animation: modalScale 0.3s ease;
+}
+
+.inspector-layout {
+  display: flex;
+  gap: 28px;
+}
+
+.inspector-art-col {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 18px;
+  position: relative;
+}
+
+.rarity-crest {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: var(--gold-deep);
+  color: #fff;
+  font-family: var(--font-title);
+  font-size: 9px;
+  font-weight: 900;
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+.hero-art-frame {
+  width: 250px;
+  height: 330px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 2px solid var(--border-kintsugi);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+}
+
+.hero-full-art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-appellation {
+  text-align: center;
+  margin-top: 14px;
+}
+
+.hero-appellation h3 {
+  font-family: var(--font-title);
+  font-size: 20px;
+  color: var(--gold-primary);
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.hero-epithet {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.hero-realm-pill {
+  margin-top: 10px;
+  background: rgba(6, 182, 212, 0.12);
+  border: 1px solid var(--cyan-ice);
+  padding: 4px 12px;
+  border-radius: 20px;
+  display: flex;
+  gap: 6px;
+  font-size: 11px;
+}
+
+.realm-lbl { color: var(--text-muted); font-weight: 600; }
+.realm-val { color: var(--cyan-ice); font-weight: 800; }
+
+.inspector-meta-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sheet-section {
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+}
+
+.section-badge {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+}
+
+/* 4-Dimensions Grid */
+.stats-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.quad-stat-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.qs-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 800;
+  margin-bottom: 4px;
+}
+
+.qs-val {
+  font-family: var(--font-title);
+  color: #fff;
+  font-size: 14px;
+}
+
+.qs-bar-track {
+  height: 6px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 4px;
+}
+
+.qs-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.qs-desc {
+  font-size: 9px;
+  color: var(--text-dim);
+}
+
+/* Combat Stats Row */
+.combat-stats-row {
+  display: flex;
+  gap: 10px;
+}
+
+.cs-pill {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.cs-lbl { color: var(--text-muted); font-size: 10px; }
+.cs-val { font-weight: 900; }
+
+/* Skills List */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.skill-entry {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.02);
+  padding: 8px 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-active {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: rgba(245, 158, 11, 0.04);
+}
+
+.sk-icon {
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.sk-info { flex: 1; }
+
+.sk-name-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.sk-name {
+  font-weight: 800;
+  font-size: 12px;
+  color: #fff;
+}
+
+.sk-tag {
+  font-size: 9px;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.active-tag {
+  background: var(--gold-deep);
+  color: #fff;
+  font-weight: 800;
+}
+
+.passive-tag {
+  background: rgba(56, 189, 248, 0.2);
+  color: #38bdf8;
+}
+
+.sk-desc {
+  font-size: 10px;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+
+/* Equipment Row */
+.equip-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.equip-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 6px 10px;
+  border-radius: var(--radius-sm);
+}
+
+.eq-icon { font-size: 18px; }
+.eq-meta { display: flex; flex-direction: column; }
+.eq-name { font-size: 10px; font-weight: 800; color: #fff; }
+.eq-stat { font-size: 8px; color: var(--cyan-ice); }
+
+/* Bonds Grid */
+.bonds-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.bond-card {
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bond-inactive {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  color: var(--text-dim);
+}
+
+.bond-active {
+  background: rgba(245, 158, 11, 0.1);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+}
+
+/* ==========================================================================
+   MILESTONE MATRIX TIMELINE MODAL
+   ========================================================================== */
+.matrix-dialog {
+  width: 760px;
+  max-height: 85vh;
+  background: linear-gradient(180deg, #181d27 0%, #0d1117 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  position: relative;
+  box-shadow: 0 0 70px rgba(0, 0, 0, 0.95);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.matrix-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.matrix-crest {
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+}
+
+.matrix-title {
+  font-family: var(--font-title);
+  font-size: 22px;
+  color: #fff;
+}
+
+.matrix-sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.matrix-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+}
+
+.milestone-item.ms-unlocked {
+  border-color: var(--gold-primary);
+  background: rgba(245, 158, 11, 0.04);
+}
+
+.milestone-item.ms-current {
+  border-color: #38bdf8;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+.ms-badge {
+  font-family: var(--font-title);
+  font-size: 12px;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.ms-unlocked .ms-badge {
+  background: var(--gold-deep);
+  color: #fff;
+}
+
+.ms-locked .ms-badge {
+  background: #334155;
+  color: #94a3b8;
+}
+
+.ms-body { flex: 1; }
+
+.ms-title {
+  font-weight: 800;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.ms-feature-tag {
+  font-size: 11px;
+  color: var(--gold-primary);
+  font-weight: 600;
+}
+
+.ms-status-label {
+  font-size: 10px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.ms-unlocked .ms-status-label {
+  background: rgba(16, 185, 129, 0.2);
+  color: #34d399;
+}
+
+.ms-locked .ms-status-label {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-dim);
+}
+
+/* ==========================================================================
+   UNLOCK NOTIFICATION DIALOG
+   ========================================================================== */
+.unlock-dialog {
+  width: 520px;
+  background: linear-gradient(180deg, #1e1913 0%, #0d0b08 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  text-align: center;
+  box-shadow: 0 0 60px rgba(245, 158, 11, 0.5), 0 25px 60px rgba(0, 0, 0, 0.95);
+  animation: modalScale 0.35s ease;
+}
+
+.unlock-seal {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2.5px;
+  color: var(--gold-primary);
+  margin-bottom: 8px;
+}
+
+.unlock-icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.unlock-title {
+  font-family: var(--font-title);
+  font-size: 18px;
+  color: var(--gold-primary);
+  margin-bottom: 6px;
+}
+
+.unlock-name {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.unlock-lore {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+.unlock-reward-tag {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid var(--gold-primary);
+  padding: 8px 14px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold-primary);
+  margin-bottom: 24px;
+}
+
 

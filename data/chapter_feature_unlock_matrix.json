@@ -1,0 +1,114 @@
+{
+  "project": "Trấn Quốc Phò Mã Gia — Season 1: Đế Nghiệp Khởi Nguyên",
+  "total_acts": 21,
+  "season_scope": "Ch.1 - 386",
+  "chapter_feature_unlock_matrix": [
+    {
+      "chapter_milestone": 1,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Phá Giải Câu Đối Hoàng Cung & Thức Tỉnh Hệ Thống",
+      "canonical_event": "Quý Bình An đối lại câu đối cái thế 'Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?' áp đảo sứ thần Nam Ly, nhận thưởng 100 Vàng và thức tỉnh Hệ Thống Tam Quốc.",
+      "unlocked_features": [
+        "Hệ Thống Tam Quốc Anh Linh",
+        "1x Anh Hồn Lệnh Sơ Cấp",
+        "Thanh Nghi Kỵ Vũ Hoàng (HUD)"
+      ],
+      "locked_features": [
+        "Bái Tướng Đài (Khóa tới Ch.5)",
+        "Kinh Doanh Thấu Hoa Cao (Khóa tới Ch.8)",
+        "Đế Nghiệp Sa Bàn (Khóa tới Ch.15)",
+        "Độc Kế Thủy Công Giả Hủ (Khóa tới Ch.27)",
+        "Kho Lương Khai Nguyên (Khóa tới Ch.43)",
+        "Sa Trường Thẻ Bài (Khóa tới Ch.48-52)"
+      ]
+    },
+    {
+      "chapter_milestone": 5,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Bái Tướng Đài & Triệu Hoán Thần Tướng Triệu Tử Long",
+      "canonical_event": "Dùng Anh Hồn Lệnh Sơ Cấp kích hoạt Bái Tướng Đài, chiêu mộ Thường Sơn Triệu Tử Long (SSR, Hoàng Cảnh Sơ Kỳ, Võ lực 96, Long Đảm Lượng Ngân Thương).",
+      "unlocked_features": [
+        "Gacha Bái Tướng Đài",
+        "Anh Linh SSR: Triệu Tử Long",
+        "Bảng Tra Cứu Thuộc Tính Tứ Duy (Võ, Thống, Trí, Chính)",
+        "Thần Binh: Long Đảm Lượng Ngân Thương",
+        "Binh Chủng: Bạch Mã Nghĩa Tòng",
+        "Tuyệt Kỹ: Thất Thám Bàn Xà & Long Đảm Bất Khuất"
+      ]
+    },
+    {
+      "chapter_milestone": 8,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Phát Minh Thấu Hoa Cao (Xà Phòng) & Bắt Tay Thiên Kim Lâu",
+      "canonical_event": "Quý Bình An dùng mỡ cừu đun sôi kết hợp tro kiềm tinh chế tạo ra xà phòng thơm 'Thấu Hoa Cao', liên minh cùng Lâu chủ Vệ Ti Vũ bán độc quyền kiếm hàng vạn lượng vàng.",
+      "unlocked_features": [
+        "Tính Năng Kinh Doanh: Mở Rộng Xưởng Thấu Hoa Cao (+3.000 Vàng/Lượt)",
+        "Liên Minh Thương Nghiệp: Thiên Kim Lâu (Vệ Ti Vũ)"
+      ]
+    },
+    {
+      "chapter_milestone": 10,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Trận Thích Sát Phò Mã Phủ & Phép Thử Của Quý Vô Song",
+      "canonical_event": "Tử sĩ áo đen đột kích phủ đệ; Triệu Vân một thương bẻ gãy sát thủ, bộc lộ uy áp Hoàng Cảnh Sơ Kỳ; Quý Bình An chọn kế ẩn nhẫn giấu xác giảm nghi kỵ.",
+      "unlocked_features": [
+        "Hệ thống Ép Cung & Mật Thất Phò Mã Phủ",
+        "Lựa chọn rẽ nhánh chính trị tác động Nghi Kỵ Vũ Hoàng"
+      ]
+    },
+    {
+      "chapter_milestone": 15,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Vũ Hoàng Hạ Chỉ Bắc Chinh & Sắc Phong Đại Tướng Quân",
+      "canonical_event": "Vũ Hoàng mượn đao giết người, phong Quý Bình An làm Chinh Bắc Đại Tướng Quân đi thu phục 3 châu Bắc Cảnh.",
+      "unlocked_features": [
+        "TẦNG 2: Đế Nghiệp Sa Bàn (Grand Strategy Map)",
+        "Điểm Hành Động (Action Points - AP)",
+        "Lộ trình tiến quân 4 phương (Đại Vũ, Bắc Cảnh, Nam Ly, Tây Lăng)",
+        "Mệnh lệnh Ngoại giao: Cống Nạp & Mua Chuộc Hoạn Quan (-15% Nghi Kỵ)"
+      ]
+    },
+    {
+      "chapter_milestone": 27,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Hố Vũ Hoàng 20 Vạn Vàng & Triệu Hoán Độc Sĩ Giả Hủ",
+      "canonical_event": "Ép triều đình chi 20 vạn vàng mua quân công cho Thập Tam Hoàng Tử, Quý Bình An triệu hoán Độc Sĩ đệ nhất Tam Quốc Giả Hủ Văn Hòa và tiếp quản Huyết Y Doanh.",
+      "unlocked_features": [
+        "Anh Linh SSR: Giả Hủ (Văn Hòa)",
+        "Độc Kế Thủy Công: Xả Lũ Sông Thanh Thủy (Tầng 3 Thẻ Bài)",
+        "Đội Quân Thân Tín: Huyết Y Doanh"
+      ]
+    },
+    {
+      "chapter_milestone": 43,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Giả Trúng Độc Đoạt Cửa Ngõ Huyện Khai Nguyên",
+      "canonical_event": "Quý Bình An giả vờ bị hạ độc dụ Huyện lệnh Lưu Nguyên mở thành, Triệu Vân bắt sống Lưu Nguyên tước đoạt trọn vẹn 50.000 thạch lương của Tứ Hoàng Tử.",
+      "unlocked_features": [
+        "Căn Cứ Hậu Cần: Huyện Khai Nguyên trên Sa Bàn",
+        "Kho Lương Dự Trữ Hậu Cần: +50.000 Thạch Lương"
+      ]
+    },
+    {
+      "chapter_milestone": 52,
+      "act": 1,
+      "act_title": "Xuyên Việt & Sinh Tồn",
+      "milestone_name": "Đại Chiến Thành Thanh Châu & Bắt Sống Địch Hỏa",
+      "canonical_event": "2 vạn thiết kỵ Nam Ly của Địch Hỏa công phá Thanh Châu; Tường thành 500 HP cầm cự; Giả Hủ tháo đê xả lũ cuốn phăng khí giới công thành; Triệu Vân bắt sống Địch Hỏa.",
+      "unlocked_features": [
+        "TẦNG 3: Sa Trường Thẻ Bài Toàn Diện (3-Lane Tactical Arena)",
+        "Thực Thể Tường Thành Thanh Châu (500 HP + Buff Cao Lâm Hạ)",
+        "Cơ Chế Ý Đồ Kẻ Địch (Enemy Intent System)",
+        "Màn Hình Quyết Toán Thắng Trận S-Rank",
+        "Mở Khóa Anh Linh Kế Tiếp: Điển Vi (Ch.63) & Lý Nho (Ch.97)"
+      ]
+    }
+  ]
+}

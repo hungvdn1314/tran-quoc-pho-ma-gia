@@ -41,40 +41,89 @@ Dự án sở hữu một bản **Playable Web Prototype V2** được nâng c�
 
 ```
 prototype/
-├── index.html                  # Giao diện chính 3 tầng (Visual Novel, Sa Bàn, Sa Trường)
-├── styles.css                  # Thiết kế Kintsugi Molten Gold x Obsidian Ink (2.000+ dòng CSS)
-├── app.js                      # Động cơ tương tác 3 tầng: Typewriter, Rẽ nhánh, AP Sa Bàn, Enemy Intent & Thủy Công
+├── index.html                  # Giao diện chính 3 tầng + Bái Tướng Đài Gacha + Bảng Tướng + Ma Trận Tiến Trình
+├── styles.css                  # Thiết kế Kintsugi Molten Gold x Obsidian Ink, 3D Card Flip & Bát Quái trận
+├── app.js                      # Động cơ tương tác: Typewriter, Quản lý Mở khóa theo chương, Gacha, Sa Bàn, Sa Trường
 └── assets/
     ├── images/zhaoyun.jpg      # Concept Art chuẩn duyệt: Triệu Tử Long (Bạch Ngân x Kim Kế)
-    └── screenshots/            # Ảnh chụp trực tiếp gameplay 3 tầng
-        ├── tier1_vn.png        # Tầng 1: Sân khấu kịch bản đa nhân vật & lựa chọn rẽ nhánh
-        ├── tier2_map.png       # Tầng 2: Sa bàn địa lý 4 phương, thủy lộ Hoài Hà & phòng tuyến
-        ├── tier3_battle.png    # Tầng 3: Đấu thẻ bài 3 làn, ý đồ kẻ địch (Enemy Intent) & Tường Thành
-        └── tier3_victory.png   # Tầng 3: Màn hình quyết toán Đại Thắng S-Rank
+    └── screenshots/            # Ảnh chụp trực tiếp gameplay
+        ├── milestone_matrix.png     # Ma trận tiến trình mở khóa theo từng chương (Ch.1 - Ch.52)
+        ├── gacha_altar.png          # Bái Tướng Đài chiêu mộ Anh Linh Tam Quốc (Bát Quái Kintsugi)
+        ├── gacha_card_reveal.png    # Hiệu ứng lật thẻ 3D Card Flip & triệu hoán Triệu Vân SSR
+        ├── hero_card_inspector.png  # Bảng soi chi tiết Tứ Duy, Cảnh giới, Thần Binh, Tuyệt Kỹ & Duyên Phận
+        ├── feature_unlock_modal.png # Thánh chỉ thông báo mở khóa tính năng theo mốc chương
+        ├── tier1_vn.png             # Tầng 1: Visual Novel Theater đối thơ đại điện & phân nhánh
+        ├── tier2_map.png            # Tầng 2: Sa bàn địa lý 4 phương, thủy lộ Hoài Hà & phòng tuyến
+        ├── tier3_battle.png         # Tầng 3: Đấu thẻ bài 3 làn, ý đồ kẻ địch (Enemy Intent) & Tường Thành
+        └── tier3_victory.png        # Tầng 3: Màn hình quyết toán Đại Thắng S-Rank
 ```
 
-### 📸 Gameplay Screenshots 3 Tầng:
+### 📸 Gameplay Screenshots & Tính Năng Trọng Tâm:
 
-#### 1. Tầng 1: Visual Novel Theater (Đối Thoại Kép & Rẽ Nhánh Thực Sự)
-- **Sân khấu đa nhân vật (Dual-Actor Stage)**: Quý Bình An / Triệu Vân đối đầu Tô Kiến Phong / Vũ Hoàng / Cổ Hủ với hiệu ứng chiếu sáng nhân vật đang nói.
-- **Lựa chọn rẽ nhánh thay đổi cục diện**: 3 quyết định chiến lược (Ngụy tạo tai nạn giấu xác sát thủ, Áp giải lên Kim Loan Điện đối chất, hoặc Hỏa tốc điều tra Nam Ly) dẫn đến các phân cảnh bối cảnh hoàn toàn khác biệt, tác động trực tiếp đến thanh *Nghi Kỵ Vũ Hoàng* và ngân khố.
-- **Tiện ích cao cấp**: Hiệu ứng đánh máy mượt mà (Typewriter), Nhật ký hội thoại (Backlog Drawer), Chế độ tự động đọc (Auto-Advance).
+#### 1. Bái Tướng Đài (Gacha Summoning Altar & 3D Card Reveal)
+- **Chuẩn phong cách game thẻ bài Tam Quốc thương mại**: Tái hiện nghi thức chiêu mộ anh linh trang nghiêm với Trận pháp Bát Quái dát vàng Kintsugi xoay vần (`baguaRotate`), bùa chú chu sa và hào quang sấm sét giáng lâm.
+- **Hiệu ứng lật mở thẻ bài 3D (3D Card Flip & Molten Gold Particles)**: Lật mở chân dung Thần Tướng Triệu Tử Long (SSR) uy phong lẫm liệt, kích hoạt hiệu ứng sương khói và ngân quang chấn động.
+- **Tích hợp vào mạch truyện nguyên tác**: Mở khóa tại **Chương 5 (Phò Mã Phủ)** sau khi hoàn thành đối thơ và thức tỉnh Hệ Thống.
+
+![Bái Tướng Đài Chiêu Mộ Gacha](prototype/assets/screenshots/gacha_altar.png)
+![Hiệu Ứng Lật Thẻ Bài 3D SSR Triệu Vân](prototype/assets/screenshots/gacha_card_reveal.png)
+
+#### 2. Bảng Soi Thuộc Tính Danh Tướng (Hero Card Detail Inspector)
+- **Hệ Thống Tứ Duy RPG Tam Quốc**:
+  - ⚔️ **Võ Lực: 96/100** | 🛡️ **Thống Soái: 91/100** | 🧠 **Trí Lực: 76/100** | 📜 **Chính Trị: 65/100**
+- **Cảnh Giới Võ Đạo & Chỉ Số Sinh Tồn**:
+  - Cảnh giới: **Hoàng Cảnh Sơ Kỳ** (Bám sát thiết lập huyền huyễn nguyên tác).
+  - Sinh lực: **180 HP** · Sát thương: **102 ATK** · Binh chủng: **Bạch Mã Nghĩa Tòng**.
+- **Thần Binh & Thú Cưỡi Truyền Thuyết**:
+  - Vũ khí: **Long Đảm Lượng Ngân Thương** (+25 Võ Lực, Đâm Xuyên Giáp).
+  - Thú cưỡi: **Chiếu Dạ Ngọc Sư Tử** (+15 Thống Soái, Khởi Đầu Tăng Tốc).
+- **Tuyệt Kỹ Sa Trường**:
+  - *Thất Thám Bàn Xà* (Tuyệt kỹ chủ động: 120 ST, ngắt hoàn toàn đòn đánh của tướng địch).
+  - *Long Đảm* (Bị động: Dưới 30% HP tăng 40% Né Tránh & Miễn Khống).
+  - *Thường Sơn Hổ Tướng* (Bị động: Phản kích 50% sát thương khi bị tấn công cận chiến).
+- **Hệ Thống Duyên Phận (Bonds Activation)**:
+  - *Ngũ Hổ Thượng Tướng* (Cùng Quan Vũ, Trương Phi, Mã Siêu, Hoàng Trung): +25% Toàn Thuộc Tính.
+  - *Thân Vệ Song Bích* (Cùng Điển Vi bảo vệ Quý Bình An): +20% Miễn Thương.
+  - *Ngọa Long Phụ Tá* (Cùng Gia Cát Lượng): Khởi đầu trận đấu đầy 100% Nộ Khí.
+
+![Bảng Soi Thuộc Tính Danh Tướng](prototype/assets/screenshots/hero_card_inspector.png)
+
+#### 3. Ma Trận Mở Khóa Tính Năng Theo Từng Chương (Chapter Unlock Matrix)
+Tuân thủ nguyên tắc thiết kế **Progressive Feature Unlock**: Người chơi không thể sử dụng bừa bãi mọi tính năng ngay từ đầu. Tất cả tính năng đều khóa chặt (🔒) và chỉ mở khóa khi người chơi đạt đúng mốc chương tương ứng trong cốt truyện:
+
+| Chương Mốc | Tên Phân Cảnh Cốt Truyện | Tính Năng Được Khai Mở (Unlock) | Hiệu Quả Chiến Lược |
+| :---: | :--- | :--- | :--- |
+| **Chương 1** | Xuyên Không & Yến Tiệc Hoàng Cung | Thức Tỉnh Hệ Thống Anh Linh | Nhận 100 Vàng + 1 Anh Hồn Lệnh Sơ Cấp |
+| **Chương 5** | Mật Thất Phò Mã Phủ | Mở khóa **Bái Tướng Đài Gacha** | Chiêu mộ Triệu Tử Long SSR & Mở Bảng Tướng |
+| **Chương 8** | Thiên Kim Lâu & Lâu Chủ Vệ Ti Vũ | Mở khóa **Kinh Doanh Thấu Hoa Cao** | Sản xuất xà phòng tinh chế (+3.000 Vàng mỗi lượt) |
+| **Chương 10** | Ám Sát Tại Sân Viện Phò Mã Phủ | Triệu Vân thi triển uy lực Hoàng Cảnh | Đập tan sát thủ, rẽ nhánh điều tra mật mưu |
+| **Chương 15** | Vũ Hoàng Hạ Chỉ Chinh Phạt Bắc Cảnh | Mở khóa **Tầng 2: Đế Nghiệp Sa Bàn** | Bản đồ 4 vùng chiến lược, Thủy lộ Hoài Hà & Điểm AP |
+| **Chương 27** | Hố Vàng Vũ Hoàng & Triệu Hoán Giả Hủ | Mở khóa **Siêu Thẻ Thủy Công Giả Hủ** | Kích hoạt Độc Kế Xả Lũ Sông Thanh Thủy |
+| **Chương 43** | Bắt Sống Tri Huyện Lưu Nguyên | Mở khóa **Kho Lương Khai Nguyên** | Tiếp tế quân lương đại quân (+50.000 Thạch Lương) |
+| **Chương 48-52** | Đại Quân Địch Hỏa Vây Thành Thanh Châu | Mở khóa **Tầng 3: Sa Trường Thẻ Bài** | Giao chiến thủ thành 3 làn, Tường thành 500 HP |
+
+![Ma Trận Mở Khóa Tính Năng Theo Chương](prototype/assets/screenshots/milestone_matrix.png)
+![Thánh Chỉ Mở Khóa Tính Năng Mới](prototype/assets/screenshots/feature_unlock_modal.png)
+
+#### 4. Tầng 1: Visual Novel Theater (Đối Thoại Kép & Rẽ Nhánh Chuẩn Cốt Truyện)
+- **Mở đầu bằng vế đối chấn động triều đình**: Sứ thần Nam Ly ngạo mạn ra vế đối *"Thiên đương kỳ bàn tinh tác tử, thùy nhân cảm hạ?"*, Quý Bình An đối lại vế câu thần sầu *"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?"* chấn động văn võ bá quan.
+- **Sân khấu hai nhân vật (Dual-Actor Stage)**: Quý Bình An / Triệu Vân đối đầu Tô Kiến Phong / Vũ Hoàng / Cổ Hủ với hiệu ứng rọi sáng chủ thể đang nói.
+- **Phân nhánh kịch bản thực sự**: Lựa chọn chiến lược ảnh hưởng trực tiếp đến thanh *Nghi Kỵ Vũ Hoàng* và ngân khố.
 
 ![Tầng 1: Visual Novel Theater](prototype/assets/screenshots/tier1_vn.png)
 
-#### 2. Tầng 2: Đế Nghiệp Sa Bàn (Bản Đồ Địa Lý 4 Vùng Chiến Lược)
+#### 5. Tầng 2: Đế Nghiệp Sa Bàn (Bản Đồ Địa Lý 4 Vùng Chiến Lược)
 - **Địa lý 4 phương rõ ràng**: Phân định trực quan 4 vùng lãnh thổ (Đại Vũ Hoàng Triều, Căn Cứ Bắc Cảnh, Nam Ly Xâm Lăng, Tây Lăng Thiết Kỵ).
-- **Hệ thống sông ngòi & quan ải hiểm trở**: Thủy lộ Sông Hoài Hà, Sông Thanh Thủy (thượng nguồn đập nước) và Dãy Núi Bắc Cô Sơn.
-- **Cảnh báo xâm lược thời gian thực**: Lộ trình tấn công Nam Ly hiển thị trực quan cùng nút bấm *Xuất Binh Chặn Giặc*.
+- **Hệ thống sông ngòi & quan ải hiểm trở**: Thủy lộ Sông Hoài Hà, Sông Thanh Thủy và Dãy Núi Bắc Cô Sơn.
 - **Bảng điều lệnh quân cơ**: Chi tiêu Điểm Hành Động (AP), Mở rộng xưởng xà phòng *Thấu Hoa Cao* (+3.000 Vàng), Cống nạp mua chuộc hoạn quan (-15% Nghi Kỵ).
 
 ![Tầng 2: Đế Nghiệp Sa Bàn](prototype/assets/screenshots/tier2_map.png)
 
-#### 3. Tầng 3: Sa Trường Thẻ Bài Chiến Thuật (Enemy Intent & Tường Thành)
+#### 6. Tầng 3: Sa Trường Thẻ Bài Chiến Thuật (Enemy Intent & Tường Thành)
 - **Cơ chế Ý Đồ Kẻ Địch (Enemy Intent System)**: Hiển thị minh bạch hành động sắp tới của quân Nam Ly mỗi hiệp (Công thành 80 HP, Bắn cung 35 HP, Bạo Liệt Đao Pháp của Địch Hỏa 90 HP).
 - **Thực thể Tường Thành (Fortress Wall: 500 HP)**: Buff *Cao Lâm Hạ* che chắn hàng sau, hứng chịu sát thương từ Xe Đục Thành.
-- **Độc Kế Giả Hủ — Trữ Lượng Nước Sông Thanh Thủy**: Tích lũy 3 cấp độ (Cấp 1: Đắp Đê -> Cấp 2: Nước Dâng -> Cấp 3: Đại Hồng Thủy). Mở khóa thẻ bài huyền thoại *Xả Lũ Thanh Thủy* quét sạch khí giới công thành và gây sát thương diện rộng.
-- **Tuyệt Kỹ Thất Thám Bàn Xà của Triệu Vân**: Đâm liên hoàn 7 thương ngắt hoàn toàn ý đồ nguy hiểm của Tướng địch!
+- **Độc Kế Giả Hủ — Trữ Lượng Nước Sông Thanh Thủy**: Tích lũy 3 cấp độ (Cấp 1: Đắp Đê -> Cấp 2: Nước Dâng -> Cấp 3: Đại Hồng Thủy), kích hoạt thẻ *Xả Lũ Thanh Thủy*.
+- **Tuyệt Kỹ Thất Thám Bàn Xà của Triệu Vân**: Đâm liên hoàn 7 thương ngắt hoàn toàn ý đồ nguy hiểm của Tướng địch.
 - **Đại Thắng S-Rank**: Màn hình vinh danh chiến tích với phần thưởng vàng, quân lương và mở khóa danh tướng tiếp theo (Điển Vi & Lý Nho).
 
 ![Tầng 3: Sa Trường Thẻ Bài](prototype/assets/screenshots/tier3_battle.png)
@@ -115,6 +164,7 @@ tran-quoc-pho-ma-gia/
 │   │   ├── political_events.json      # 44 biến cố chính trị
 │   │   └── game_bible_v2_master.json  # Toàn bộ dữ liệu tổng hợp (463 KB)
 │   ├── character_graph_v2/            # Đồ thị mạng lưới quan hệ nhân vật (HTML + JSON)
+│   ├── chapter_feature_unlock_matrix.json # Ma trận mở khóa tính năng Ch.1-386 (Season 1)
 │   ├── story_timeline.json            # Dòng thời gian 1.509 chương
 │   └── tran_quoc_pho_ma_gia_full.json # Toàn văn 1.509 chương tiểu thuyết crawl
 ├── prototype/                         # Mã nguồn Bản Mẫu Web chơi thử nghiệm
