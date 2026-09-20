@@ -35,22 +35,53 @@
 
 ---
 
-## 🎮 BẢN MẪU WEB CHƠI THỬ (PLAYABLE WEB PROTOTYPE)
+## 🎮 BẢN MẪU WEB CHƠI THỬ (PLAYABLE WEB PROTOTYPE V2)
 
-Dự án đã tích hợp sẵn một bản **Interactive Web Prototype** chạy độc lập trên trình duyệt:
+Dự án sở hữu một bản **Playable Web Prototype V2** được nâng cấp toàn diện với chiều sâu cơ chế thương mại, chạy độc lập không cần cài đặt môi trường:
 
 ```
 prototype/
-├── index.html                  # Giao diện chính 3 tầng (VN, Sa Bàn, Đánh Bài)
-├── styles.css                  # Thiết kế Kintsugi Ink & Dark Obsidian
-├── app.js                      # Động cơ quản lý State, AP, Suspicion & Card Combat
+├── index.html                  # Giao diện chính 3 tầng (Visual Novel, Sa Bàn, Sa Trường)
+├── styles.css                  # Thiết kế Kintsugi Molten Gold x Obsidian Ink (2.000+ dòng CSS)
+├── app.js                      # Động cơ tương tác 3 tầng: Typewriter, Rẽ nhánh, AP Sa Bàn, Enemy Intent & Thủy Công
 └── assets/
-    └── images/
-        └── zhaoyun.jpg         # Concept Art chuẩn duyệt: Triệu Tử Long (Bạch Ngân x Kim Kế)
+    ├── images/zhaoyun.jpg      # Concept Art chuẩn duyệt: Triệu Tử Long (Bạch Ngân x Kim Kế)
+    └── screenshots/            # Ảnh chụp trực tiếp gameplay 3 tầng
+        ├── tier1_vn.png        # Tầng 1: Sân khấu kịch bản đa nhân vật & lựa chọn rẽ nhánh
+        ├── tier2_map.png       # Tầng 2: Sa bàn địa lý 4 phương, thủy lộ Hoài Hà & phòng tuyến
+        ├── tier3_battle.png    # Tầng 3: Đấu thẻ bài 3 làn, ý đồ kẻ địch (Enemy Intent) & Tường Thành
+        └── tier3_victory.png   # Tầng 3: Màn hình quyết toán Đại Thắng S-Rank
 ```
 
+### 📸 Gameplay Screenshots 3 Tầng:
+
+#### 1. Tầng 1: Visual Novel Theater (Đối Thoại Kép & Rẽ Nhánh Thực Sự)
+- **Sân khấu đa nhân vật (Dual-Actor Stage)**: Quý Bình An / Triệu Vân đối đầu Tô Kiến Phong / Vũ Hoàng / Cổ Hủ với hiệu ứng chiếu sáng nhân vật đang nói.
+- **Lựa chọn rẽ nhánh thay đổi cục diện**: 3 quyết định chiến lược (Ngụy tạo tai nạn giấu xác sát thủ, Áp giải lên Kim Loan Điện đối chất, hoặc Hỏa tốc điều tra Nam Ly) dẫn đến các phân cảnh bối cảnh hoàn toàn khác biệt, tác động trực tiếp đến thanh *Nghi Kỵ Vũ Hoàng* và ngân khố.
+- **Tiện ích cao cấp**: Hiệu ứng đánh máy mượt mà (Typewriter), Nhật ký hội thoại (Backlog Drawer), Chế độ tự động đọc (Auto-Advance).
+
+![Tầng 1: Visual Novel Theater](prototype/assets/screenshots/tier1_vn.png)
+
+#### 2. Tầng 2: Đế Nghiệp Sa Bàn (Bản Đồ Địa Lý 4 Vùng Chiến Lược)
+- **Địa lý 4 phương rõ ràng**: Phân định trực quan 4 vùng lãnh thổ (Đại Vũ Hoàng Triều, Căn Cứ Bắc Cảnh, Nam Ly Xâm Lăng, Tây Lăng Thiết Kỵ).
+- **Hệ thống sông ngòi & quan ải hiểm trở**: Thủy lộ Sông Hoài Hà, Sông Thanh Thủy (thượng nguồn đập nước) và Dãy Núi Bắc Cô Sơn.
+- **Cảnh báo xâm lược thời gian thực**: Lộ trình tấn công Nam Ly hiển thị trực quan cùng nút bấm *Xuất Binh Chặn Giặc*.
+- **Bảng điều lệnh quân cơ**: Chi tiêu Điểm Hành Động (AP), Mở rộng xưởng xà phòng *Thấu Hoa Cao* (+3.000 Vàng), Cống nạp mua chuộc hoạn quan (-15% Nghi Kỵ).
+
+![Tầng 2: Đế Nghiệp Sa Bàn](prototype/assets/screenshots/tier2_map.png)
+
+#### 3. Tầng 3: Sa Trường Thẻ Bài Chiến Thuật (Enemy Intent & Tường Thành)
+- **Cơ chế Ý Đồ Kẻ Địch (Enemy Intent System)**: Hiển thị minh bạch hành động sắp tới của quân Nam Ly mỗi hiệp (Công thành 80 HP, Bắn cung 35 HP, Bạo Liệt Đao Pháp của Địch Hỏa 90 HP).
+- **Thực thể Tường Thành (Fortress Wall: 500 HP)**: Buff *Cao Lâm Hạ* che chắn hàng sau, hứng chịu sát thương từ Xe Đục Thành.
+- **Độc Kế Giả Hủ — Trữ Lượng Nước Sông Thanh Thủy**: Tích lũy 3 cấp độ (Cấp 1: Đắp Đê -> Cấp 2: Nước Dâng -> Cấp 3: Đại Hồng Thủy). Mở khóa thẻ bài huyền thoại *Xả Lũ Thanh Thủy* quét sạch khí giới công thành và gây sát thương diện rộng.
+- **Tuyệt Kỹ Thất Thám Bàn Xà của Triệu Vân**: Đâm liên hoàn 7 thương ngắt hoàn toàn ý đồ nguy hiểm của Tướng địch!
+- **Đại Thắng S-Rank**: Màn hình vinh danh chiến tích với phần thưởng vàng, quân lương và mở khóa danh tướng tiếp theo (Điển Vi & Lý Nho).
+
+![Tầng 3: Sa Trường Thẻ Bài](prototype/assets/screenshots/tier3_battle.png)
+![Tầng 3: Màn Hình Đại Thắng S-Rank](prototype/assets/screenshots/tier3_victory.png)
+
 ### Cách trải nghiệm ngay:
-* **Cách 1**: Nhấp đúp chuột mở trực tiếp tệp `prototype/index.html` trên trình duyệt (Chrome, Edge, Firefox, Brave).
+* **Cách 1**: Nhấp đúp chuột mở trực tiếp tệp `prototype/index.html` trên bất kỳ trình duyệt nào (Chrome, Edge, Firefox, Brave).
 * **Cách 2**: Chạy máy chủ tĩnh local:
   ```bash
   cd prototype
