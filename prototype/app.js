@@ -2273,7 +2273,44 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Expose reset to window
+  // =========================================================================
+  // THEME SWITCHER CONTROLLER (3 OPTIONS LIVE PREVIEW)
+  // =========================================================================
+  function initThemeSwitcher() {
+    const savedTheme = localStorage.getItem('vn_theme') || 'hac-kim';
+    setVnTheme(savedTheme, false);
+
+    document.querySelectorAll('.theme-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const theme = btn.dataset.theme;
+        setVnTheme(theme, true);
+      });
+    });
+  }
+
+  function setVnTheme(themeName, showNotification = true) {
+    document.body.classList.remove('vn-theme-hac-kim', 'vn-theme-truc-gian', 'vn-theme-dien-anh');
+    document.body.classList.add('vn-theme-' + themeName);
+    localStorage.setItem('vn_theme', themeName);
+    document.querySelectorAll('.theme-btn').forEach(b => {
+      b.classList.toggle('active', b.dataset.theme === themeName);
+    });
+    console.log(`⚡ [VN Theme Switcher] Chuyển sang phong cách: ${themeName}`);
+    if (showNotification) {
+      showToast(`🎭 Phong Cách: ${getThemeTitle(themeName)}`, true);
+    }
+  }
+
+  function getThemeTitle(theme) {
+    if (theme === 'hac-kim') return 'Sơn Mài Hắc Kim & Đồng Cổ';
+    if (theme === 'truc-gian') return 'Xuyến Chỉ & Trúc Giản Cổ Phong';
+    if (theme === 'dien-anh') return 'Tối Giản Điện Ảnh & Thủy Mặc';
+    return theme;
+  }
+
+  // Expose to window
+  window.setVnTheme = setVnTheme;
   window.resetGame = resetGame;
   window.state = state;
   window.ink = ink;
@@ -2282,6 +2319,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   // 14. INITIAL BOOT
   // =========================================================================
+  initThemeSwitcher();
   ink.start('chapter_1_start');
   advanceChapter(1);
   updateProgressTrackerUI();
