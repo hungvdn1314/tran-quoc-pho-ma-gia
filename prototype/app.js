@@ -145,6 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     viewBattle: document.getElementById('view-battle'),
 
     // HUD Monitors
+    suspicionCenserIcon: document.getElementById('suspicion-censer-icon'),
     txtSuspicion: document.getElementById('txt-suspicion'),
     barSuspicion: document.getElementById('bar-suspicion'),
     suspicionDesc: document.getElementById('suspicion-status-desc'),
@@ -153,7 +154,8 @@ document.addEventListener('DOMContentLoaded', () => {
     txtAp: document.getElementById('txt-ap'),
 
     // Visual Novel Stage
-    vnStageContainer: document.getElementById('vn-stage-container'),
+    vnStageContainer: document.getElementById('vn-stage-container') || document.getElementById('vn-stage'),
+    vnDialoguePanel: document.getElementById('vn-dialogue-panel'),
     vnSpeaker: document.getElementById('vn-speaker'),
     vnSpeakerSub: document.getElementById('vn-speaker-sub'),
     vnDialogueText: document.getElementById('vn-dialogue-text'),
@@ -163,6 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     vnBranchIndicator: document.getElementById('vn-branch-indicator'),
     actorLeftSlot: document.getElementById('actor-left-slot'),
     actorLeftAvatar: document.getElementById('actor-left-avatar'),
+    actorLeftImg: document.getElementById('actor-left-img'),
     actorLeftNametag: document.getElementById('actor-left-nametag'),
     actorRightSlot: document.getElementById('actor-right-slot'),
     actorRightAvatar: document.getElementById('actor-right-avatar'),
@@ -237,33 +240,33 @@ document.addEventListener('DOMContentLoaded', () => {
     btnCloseUnlock: document.getElementById('btn-close-unlock'),
 
     // Map View (Tier 2)
-    provinceNodes: document.querySelectorAll('.map-node'),
+    provinceNodes: document.querySelectorAll('.province-node, .map-node'),
     mapDetailsCard: document.getElementById('map-node-details'),
-    nodeTitle: document.getElementById('node-title'),
-    nodeDesc: document.getElementById('node-desc'),
+    nodeTitle: document.getElementById('panel-city-name') || document.getElementById('node-title'),
+    nodeDesc: document.getElementById('panel-city-desc') || document.getElementById('node-desc'),
     nodeActionCost: document.getElementById('node-action-cost'),
     btnActionSoap: document.getElementById('btn-action-soap'),
     btnActionTribute: document.getElementById('btn-action-tribute'),
     btnActionBattle: document.getElementById('btn-action-battle'),
-    btnIntercept: document.getElementById('btn-intercept-threat'),
+    btnIntercept: document.getElementById('btn-intercept') || document.getElementById('btn-intercept-threat'),
 
     // Battle View (Tier 3)
     wallHpBar: document.getElementById('wall-hp-bar'),
-    wallHpText: document.getElementById('wall-hp-text'),
-    bossHpBar: document.getElementById('boss-hp-bar'),
-    bossHpText: document.getElementById('boss-hp-text'),
-    bossIntentDesc: document.getElementById('boss-intent-desc'),
-    reservoirText: document.getElementById('reservoir-text'),
+    wallHpText: document.getElementById('wall-hp-val') || document.getElementById('wall-hp-text'),
+    bossHpBar: document.getElementById('enemy-hp-bar') || document.getElementById('boss-hp-bar'),
+    bossHpText: document.getElementById('enemy-hp-val') || document.getElementById('boss-hp-text'),
+    bossIntentDesc: document.getElementById('boss-intent-desc') || document.getElementById('boss-intent-display'),
+    reservoirText: document.getElementById('reservoir-text') || document.getElementById('reservoir-card'),
     btnExecuteTurn: document.getElementById('btn-execute-turn'),
     victoryModal: document.getElementById('victory-modal'),
     btnTriumphNext: document.getElementById('btn-triumph-next'),
 
-    cardEnemyLeft: document.getElementById('enemy-left'),
-    cardEnemyCenter: document.getElementById('enemy-center'),
-    cardEnemyRight: document.getElementById('enemy-right'),
-    playerZoneLeft: document.getElementById('player-left'),
-    playerZoneCenter: document.getElementById('player-center'),
-    playerZoneRight: document.getElementById('player-right')
+    cardEnemyLeft: document.getElementById('card-enemy-left') || document.getElementById('enemy-left'),
+    cardEnemyCenter: document.getElementById('card-enemy-center') || document.getElementById('enemy-center'),
+    cardEnemyRight: document.getElementById('card-enemy-right') || document.getElementById('enemy-right'),
+    playerZoneLeft: document.getElementById('player-zone-left') || document.getElementById('player-left'),
+    playerZoneCenter: document.getElementById('player-zone-center') || document.getElementById('player-center'),
+    playerZoneRight: document.getElementById('player-zone-right') || document.getElementById('player-right')
   };
 
   // =========================================================================
@@ -792,6 +795,38 @@ document.addEventListener('DOMContentLoaded', () => {
       ui.vnSpeaker.textContent = speakerName;
       ui.vnSpeakerSub.textContent = speakerSub;
 
+      // Update Standee Speaking / Listening Focus (Dynamic VN Depth)
+      if (speakerName.includes("Quý Bình An")) {
+        if (ui.actorRightSlot) {
+          ui.actorRightSlot.classList.add('speaking');
+          ui.actorRightSlot.classList.remove('listening');
+        }
+        if (ui.actorLeftSlot) {
+          ui.actorLeftSlot.classList.add('listening');
+          ui.actorLeftSlot.classList.remove('speaking');
+        }
+      } else if (speakerName !== "Dẫn Truyện") {
+        if (ui.actorLeftSlot) {
+          ui.actorLeftSlot.classList.add('speaking');
+          ui.actorLeftSlot.classList.remove('listening');
+          if (ui.actorLeftNametag) ui.actorLeftNametag.textContent = speakerName;
+        }
+        if (ui.actorRightSlot) {
+          ui.actorRightSlot.classList.add('listening');
+          ui.actorRightSlot.classList.remove('speaking');
+        }
+      } else {
+        // Neutral narrative state
+        if (ui.actorRightSlot) {
+          ui.actorRightSlot.classList.remove('speaking');
+          ui.actorRightSlot.classList.add('listening');
+        }
+        if (ui.actorLeftSlot) {
+          ui.actorLeftSlot.classList.remove('speaking');
+          ui.actorLeftSlot.classList.add('listening');
+        }
+      }
+
       // Record into Backlog
       if (!state.dialogueHistory.some(h => h.text === line)) {
         state.dialogueHistory.push({
@@ -1145,12 +1180,13 @@ document.addEventListener('DOMContentLoaded', () => {
       state.mana -= 2;
       triggerShake();
       triggerLightning();
+      if (window.phaserCombatFx) window.phaserCombatFx.slash(600, 250);
       state.bossIntent.interrupted = true;
-      state.bossIntent.desc = "⚡ Ý ĐỒ BỊ PHÁ VỠ bởi Thất Thám Bàn Xà của Triệu Tử Long!";
+      state.bossIntent.desc = "Ý ĐỒ BỊ PHÁ VỠ bởi Thất Thám Bàn Xà của Triệu Tử Long!";
       ui.bossIntentDesc.textContent = state.bossIntent.desc;
       state.bossHp = Math.max(0, state.bossHp - 60);
       spawnDamage(ui.bossHpBar, 60, true);
-      showToast("⚡ THẤT THÁM BÀN XÀ! Ngắt hoàn toàn ý đồ của Địch Hỏa & Gây 60 DMG!", true);
+      showToast("THẤT THÁM BÀN XÀ! Ngắt hoàn toàn ý đồ của Địch Hỏa & Gây 60 DMG!", true);
       renderBattlefield();
       checkVictoryDefeat();
       return;
@@ -1158,16 +1194,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (cardType === 'flood') {
       if (!state.unlocked.giaHu && !state.unlocked.flood) {
-        showToast("🔒 Thẻ 'XẢ LŨ THANH THỦY' bị khóa! Cần kế sách Giả Hủ ở Chương 27-35.");
+        showToast("Thẻ 'XẢ LŨ THANH THỦY' bị khóa! Cần kế sách Giả Hủ ở Chương 27-35.");
         return;
       }
       if (state.mana < 5) {
-        showToast("⚠️ Cần 5 Mana để phát lệnh phá đập xả lũ!");
+        showToast("Cần 5 Mana để phát lệnh phá đập xả lũ!");
         return;
       }
       state.mana -= 5;
       triggerShake();
       triggerLightning();
+      if (window.phaserCombatFx) window.phaserCombatFx.flood();
 
       if (state.lanes.center.enemy) {
         state.lanes.center.enemy.hp = 0;
@@ -1176,7 +1213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       state.bossHp = Math.max(0, state.bossHp - 120);
       spawnDamage(ui.bossHpBar, 120, true);
-      showToast("🌊 THỦY CÔNG PHÁ ĐẬP! Dòng thác cuốn phăng Xe Đục Thành & Gây 120 DMG lên Địch Hỏa!", true);
+      showToast("THỦY CÔNG PHÁ ĐẬP! Dòng thác cuốn phăng Xe Đục Thành & Gây 120 DMG lên Địch Hỏa!", true);
       renderBattlefield();
       checkVictoryDefeat();
       return;
@@ -1233,7 +1270,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function executeTurn() {
     triggerShake();
-    showToast("⚔️ BA QUÂN XUNG TRẬN! QUYẾT TOÁN HIỆP ĐẤU!", true);
+    if (window.phaserCombatFx) window.phaserCombatFx.slash(500, 250);
+    showToast("BA QUÂN XUNG TRẬN! QUYẾT TOÁN HIỆP ĐẤU!", true);
 
     // Player Attacks
     if (state.lanes.center.player && state.lanes.center.enemy && state.lanes.center.enemy.alive) {
@@ -1356,6 +1394,18 @@ document.addEventListener('DOMContentLoaded', () => {
   function updateHudResources() {
     ui.txtSuspicion.textContent = `${state.suspicion}%`;
     ui.barSuspicion.style.width = `${state.suspicion}%`;
+
+    // Cửu Đỉnh Long Lô 4-Stage Incense Glow
+    if (ui.suspicionCenserIcon) {
+      ui.suspicionCenserIcon.classList.remove('censer-stage-white', 'censer-stage-gold', 'censer-stage-red');
+      if (state.suspicion >= 80) {
+        ui.suspicionCenserIcon.classList.add('censer-stage-red');
+      } else if (state.suspicion >= 50) {
+        ui.suspicionCenserIcon.classList.add('censer-stage-gold');
+      } else {
+        ui.suspicionCenserIcon.classList.add('censer-stage-white');
+      }
+    }
 
     if (state.suspicion >= 80) {
       ui.barSuspicion.style.background = 'linear-gradient(90deg, #dc2626, #ef4444)';
@@ -1495,7 +1545,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // VN Dialogue Controls
+    if (ui.vnAdvance) ui.vnAdvance.addEventListener('click', advanceDialogue);
     if (ui.btnVnAdvance) ui.btnVnAdvance.addEventListener('click', advanceDialogue);
+
+    // Clicking anywhere on the dialogue panel advances dialogue (VN industry standard)
+    if (ui.vnDialoguePanel) {
+      ui.vnDialoguePanel.addEventListener('click', (e) => {
+        if (e.target.closest('.vn-quick-ribbon')) return;
+        advanceDialogue();
+      });
+    }
+
     window.addEventListener('keydown', (e) => {
       if (e.code === 'Space' && state.currentView === 'vn') {
         e.preventDefault();
@@ -1572,6 +1632,239 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  // =========================================================================
+  // TRIO ENGINES INITIALIZATION (PIXI.JS + THREE.JS + PHASER 3)
+  // =========================================================================
+
+  /**
+   * 1. PixiJS Atmospheric & Shader Engine (Tier 1 VN)
+   * Ambient ink-wash mist drifting and dynamic lighting
+   */
+  async function initPixiEngine() {
+    if (typeof PIXI === 'undefined') {
+      console.warn("PixiJS library not found");
+      return;
+    }
+    const canvas = document.getElementById('vn-pixi-canvas');
+    if (!canvas) return;
+
+    try {
+      const parent = canvas.parentElement || document.body;
+      const app = new PIXI.Application();
+      await app.init({
+        canvas: canvas,
+        resizeTo: parent,
+        backgroundAlpha: 0,
+        antialias: true
+      });
+
+      const mistContainer = new PIXI.Container();
+      app.stage.addChild(mistContainer);
+
+      const particles = [];
+      const count = 24;
+
+      for (let i = 0; i < count; i++) {
+        const g = new PIXI.Graphics();
+        const isGold = Math.random() < 0.3;
+        const color = isGold ? 0xfbbf24 : 0x0f172a;
+        const alpha = isGold ? (0.12 + Math.random() * 0.2) : (0.05 + Math.random() * 0.08);
+        const radius = 35 + Math.random() * 65;
+
+        if (typeof g.circle === 'function') {
+          g.circle(0, 0, radius).fill({ color, alpha });
+        } else {
+          g.beginFill(color, alpha);
+          g.drawCircle(0, 0, radius);
+          g.endFill();
+        }
+
+        g.x = Math.random() * (app.screen.width || 1200);
+        g.y = Math.random() * (app.screen.height || 700);
+        g.vx = (Math.random() - 0.5) * 0.5;
+        g.vy = -0.2 - Math.random() * 0.4;
+        g.scaleSpeed = (Math.random() - 0.5) * 0.002;
+
+        mistContainer.addChild(g);
+        particles.push(g);
+      }
+
+      app.ticker.add((delta) => {
+        particles.forEach(p => {
+          p.x += p.vx * delta;
+          p.y += p.vy * delta;
+          p.scale.x += p.scaleSpeed * delta;
+          p.scale.y += p.scaleSpeed * delta;
+
+          if (p.y < -80) {
+            p.y = (app.screen.height || 700) + 40;
+            p.x = Math.random() * (app.screen.width || 1200);
+          }
+          if (p.x < -80) p.x = (app.screen.width || 1200) + 40;
+          if (p.x > (app.screen.width || 1200) + 80) p.x = -40;
+        });
+      });
+
+      window.pixiApp = app;
+      console.log("⚡ [PixiJS] WebGL atmospheric ink-mist active");
+    } catch (err) {
+      console.warn("PixiJS init error:", err);
+    }
+  }
+
+  /**
+   * 2. Three.js 3D Sand-Table Engine (Tier 2 Sa Bàn)
+   * 3D war sand-table with elevation grid & flickering candlelight
+   */
+  function initThreeEngine() {
+    if (typeof THREE === 'undefined') {
+      console.warn("Three.js library not found");
+      return;
+    }
+    const container = document.getElementById('saban-threejs-container');
+    if (!container) return;
+
+    try {
+      const scene = new THREE.Scene();
+      const w = container.clientWidth || 1000;
+      const h = container.clientHeight || 650;
+
+      const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
+      camera.position.set(0, -180, 220);
+      camera.lookAt(0, 0, 0);
+
+      const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+      renderer.setSize(w, h);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      container.appendChild(renderer.domElement);
+
+      const ambientLight = new THREE.AmbientLight(0xffeedd, 0.5);
+      scene.add(ambientLight);
+
+      // Flickering campaign tent lantern
+      const lanternLight = new THREE.PointLight(0xf59e0b, 2.5, 600);
+      lanternLight.position.set(40, -40, 110);
+      scene.add(lanternLight);
+
+      // Relief Grid Geometry for Sand-Table Mountains
+      const planeGeo = new THREE.PlaneGeometry(360, 230, 20, 14);
+      const pos = planeGeo.attributes.position;
+      for (let i = 0; i < pos.count; i++) {
+        const x = pos.getX(i);
+        const y = pos.getY(i);
+        if (y > 20) {
+          const mountain = Math.sin(x * 0.06) * Math.cos(y * 0.06) * 16;
+          pos.setZ(i, mountain);
+        }
+      }
+      planeGeo.computeVertexNormals();
+
+      const planeMat = new THREE.MeshLambertMaterial({
+        color: 0x1e293b,
+        wireframe: true,
+        transparent: true,
+        opacity: 0.22
+      });
+      const tableMesh = new THREE.Mesh(planeGeo, planeMat);
+      scene.add(tableMesh);
+
+      let time = 0;
+      function renderLoop() {
+        requestAnimationFrame(renderLoop);
+        time += 0.015;
+        lanternLight.intensity = 2.2 + Math.sin(time * 3.5) * 0.35;
+        camera.position.x = Math.sin(time * 0.5) * 8;
+        camera.lookAt(0, 0, 0);
+        renderer.render(scene, camera);
+      }
+      renderLoop();
+
+      window.addEventListener('resize', () => {
+        const newW = container.clientWidth || 1000;
+        const newH = container.clientHeight || 650;
+        camera.aspect = newW / newH;
+        camera.updateProjectionMatrix();
+        renderer.setSize(newW, newH);
+      });
+
+      window.threeScene = scene;
+      console.log("⚡ [Three.js] 3D tactical relief war sand-table active");
+    } catch (err) {
+      console.warn("Three.js init error:", err);
+    }
+  }
+
+  /**
+   * 3. Phaser 3 Combat Event & Particle Engine (Tier 3 Cards)
+   * Impact sparks, ink slashing, and water wave shockwaves
+   */
+  function initPhaserEngine() {
+    if (typeof Phaser === 'undefined') {
+      console.warn("Phaser 3 library not found");
+      return;
+    }
+    const container = document.getElementById('battle-phaser-container');
+    if (!container) return;
+
+    try {
+      let battleSceneRef = null;
+
+      const config = {
+        type: Phaser.AUTO,
+        parent: 'battle-phaser-container',
+        transparent: true,
+        width: container.clientWidth || 1000,
+        height: container.clientHeight || 600,
+        scene: {
+          create: function() {
+            battleSceneRef = this;
+          }
+        }
+      };
+
+      const phaserGame = new Phaser.Game(config);
+
+      window.phaserCombatFx = {
+        slash: function(x = 500, y = 300) {
+          if (!battleSceneRef) return;
+          const g = battleSceneRef.add.graphics();
+          g.lineStyle(4, 0xfbbf24, 1);
+          g.beginPath();
+          g.moveTo(x - 90, y - 60);
+          g.lineTo(x + 90, y + 60);
+          g.strokePath();
+
+          battleSceneRef.tweens.add({
+            targets: g,
+            alpha: 0,
+            scaleX: 1.5,
+            scaleY: 1.5,
+            duration: 350,
+            onComplete: () => g.destroy()
+          });
+        },
+        flood: function() {
+          if (!battleSceneRef) return;
+          const w = battleSceneRef.scale.width;
+          const h = battleSceneRef.scale.height;
+          const wave = battleSceneRef.add.rectangle(w / 2, h / 2, w, h, 0x0284c7, 0.45);
+
+          battleSceneRef.tweens.add({
+            targets: wave,
+            alpha: 0,
+            duration: 800,
+            onComplete: () => wave.destroy()
+          });
+        }
+      };
+
+      window.phaserGame = phaserGame;
+      console.log("⚡ [Phaser 3] Tactical card battler combat engine active");
+    } catch (err) {
+      console.warn("Phaser 3 init error:", err);
+    }
+  }
+
   // Expose reset to window
   window.resetGame = resetGame;
   window.state = state;
@@ -1586,5 +1879,13 @@ document.addEventListener('DOMContentLoaded', () => {
   updateHudResources();
   initEvents();
   renderCurrentDialogue();
-  console.log("⚡ [Prototype V3] Khởi động thành công với 28 danh tướng và Ink Engine!");
+
+  // Initialize Trio Techstack
+  setTimeout(() => {
+    initPixiEngine();
+    initThreeEngine();
+    initPhaserEngine();
+  }, 100);
+
+  console.log("⚡ [Prototype V3] Khởi động thành công với Trio (Phaser/Three/Pixi), 28 danh tướng và Ink Engine!");
 });

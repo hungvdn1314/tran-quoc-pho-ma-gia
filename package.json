@@ -1,0 +1,30 @@
+{
+  "name": "tran-quoc-pho-ma-gia",
+  "version": "1.0.0",
+  "description": "> **Chuyển thể từ nguyên tác**: Tiểu thuyết mạng lịch sử / quân sự / huyền huyễn *Trấn Quốc Phò Mã Gia* của tác giả Hiên Chí (轩轾)   > **Quy mô nguyên tác**: 1.509 chương · 2.470.000 từ · 100% tiếng Việt   > **Định hướng gameplay**: Chiến lược sa bàn mô phỏng lịch sử (Grand Strategy Campaign) kết hợp thẻ bài sa trường chiến thuật (Tactical Card Battler) & Visual Novel đa nhánh (Branching Narrative)   > **Phạm vi Season 1**: Từ Chương 1 (*Phò Mã hàn vi nơm nớp lo sợ*) đến Chương 386 (*Đăng cơ Hoàng đế lập ra Đại Hán, ban bố Bốn Đại Chính Lệnh*)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hungvdn1314/tran-quoc-pho-ma-gia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hungvdn1314/tran-quoc-pho-ma-gia/issues"
+  },
+  "homepage": "https://github.com/hungvdn1314/tran-quoc-pho-ma-gia#readme",
+  "dependencies": {
+    "phaser": "^4.2.1",
+    "pixi.js": "^8.21.0",
+    "three": "^0.186.0"
+  }
+}

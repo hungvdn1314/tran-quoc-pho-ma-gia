@@ -33,15 +33,18 @@
         <span class="ch-title" id="hud-chapter-title">Phá Giải Câu Đối Hoàng Cung</span>
       </div>
       <div class="ch-subtrack">
-        <span class="ch-matrix-hint">📜 Ma Trận Mở Khóa 8 Mốc</span>
+        <span class="ch-matrix-hint">
+          <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+          <span>Ma Trận Mở Khóa 8 Mốc</span>
+        </span>
         <div class="ch-progress-mini"><div class="ch-progress-fill" id="hud-ch-fill" style="width: 12.5%;"></div></div>
       </div>
     </div>
 
-    <!-- Quick Reset Button -->
-    <button class="btn-reset-game" id="btn-reset-game" title="Làm mới trò chơi về Chương 1" style="background: rgba(220, 38, 38, 0.18); border: 1px solid #dc2626; color: #fca5a5; padding: 6px 14px; border-radius: 6px; font-size: 11px; font-weight: 800; cursor: pointer; display: flex; align-items: center; gap: 6px; transition: all 0.2s;">
-      <span style="font-size: 13px;">🔄</span>
-      <span>RESET</span>
+    <!-- Quick Reset Button (Trùng Khởi Phù) -->
+    <button class="btn-reset-game" id="btn-reset-game" title="Làm mới toàn bộ trò chơi về điểm khởi đầu Chương 1">
+      <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+      <span>TRÙNG KHỞI</span>
     </button>
 
     <!-- TABS CHUYỂN ĐỔI TAM ĐẠI TẦNG (HỖ TRỢ TRẠNG THÁI KHÓA THEO CHƯƠNG) -->
@@ -60,7 +63,10 @@
           <line x1="16" y1="6" x2="16" y2="22"></line>
         </svg>
         <span>Tầng 2: Đế Nghiệp Sa Bàn</span>
-        <span class="tab-lock-tag" id="tab-map-lock">🔒 Ch.15</span>
+        <span class="tab-lock-tag" id="tab-map-lock">
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Ch.15</span>
+        </span>
         <span class="badge-alert hidden" id="map-alert-badge">Nguy Cấp</span>
       </button>
 
@@ -71,12 +77,15 @@
           <path d="M9.5 6.5L19 16"></path>
         </svg>
         <span>Tầng 3: Sa Trường Thẻ Bài</span>
-        <span class="tab-lock-tag" id="tab-battle-lock">🔒 Ch.48</span>
+        <span class="tab-lock-tag" id="tab-battle-lock">
+          <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+          <span>Ch.48</span>
+        </span>
         <span class="badge-live hidden" id="battle-live-badge">Chiến Sự</span>
       </button>
     </nav>
 
-    <!-- HERO & GACHA QUICK ACCESS (MỞ KHÓA THEO TIẾN TRÌNH: GACHA TẠI CH.5, HERO KHI ĐÃ CHIÊU MỘ) -->
+    <!-- HERO & GACHA QUICK ACCESS -->
     <div class="hud-hero-dock">
       <button class="btn-gacha-hud hidden" id="btn-hud-gacha" title="Bái Tướng Đài - Chiêu Mộ Anh Linh Tam Quốc (Mở tại Ch.5)">
         <span class="gacha-seal">令</span>
@@ -95,42 +104,53 @@
       </button>
     </div>
 
-    <!-- THANH TÀI NGUYÊN & THANH NGHI KỴ VŨ HOÀNG -->
+    <!-- THANH TÀI NGUYÊN & THANH NGHI KỴ VŨ HOÀNG (CỬU ĐỈNH LONG LÔ) -->
     <div class="hud-monitors">
-      <!-- Suspicion Meter (Emperor Suspicion) -->
-      <div class="suspicion-wrapper" title="Thanh Nghi Kỵ của Vũ Hoàng (0 - 100%): Nếu chạm 100%, Vũ Hoàng khép tội tạo phản và tru diệt gia tộc!">
-        <div class="suspicion-info">
-          <span class="suspicion-title">Nghi Kỵ Vũ Hoàng</span>
-          <span class="suspicion-pct" id="txt-suspicion">15%</span>
+      <!-- Suspicion Meter (Cửu Đỉnh Long Lô) -->
+      <div class="suspicion-wrapper" title="Cửu Đỉnh Long Lô — Độ Nghi Kỵ của Vũ Hoàng (0 - 100%): Nếu chạm 100%, Vũ Hoàng khép tội tạo phản và tru diệt gia tộc!">
+        <div class="suspicion-censer-icon" id="suspicion-censer-icon">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2c.6 0 1 .4 1 1v1.1c3.4.5 6 3.4 6 7v1h1c.6 0 1 .4 1 1s-.4 1-1 1h-1v2.2c0 2.2-1.1 4.2-2.9 5.3l1.4 2.4c.3.5.1 1.1-.4 1.4-.5.3-1.1.1-1.4-.4L14 18.5c-.6.2-1.3.3-2 .3s-1.4-.1-2-.3l-1.7 2.9c-.3.5-.9.7-1.4.4-.5-.3-.7-.9-.4-1.4l1.4-2.4C6.1 16.9 5 14.9 5 12.7V10.5H4c-.6 0-1-.4-1-1s.4-1 1-1h1v-1c0-3.6 2.6-6.5 6-7V3c0-.6.4-1 1-1zM7 10.5v2.2c0 2.8 2.2 5 5 5s5-2.2 5-5v-2.2H7z"/></svg>
         </div>
-        <div class="suspicion-track">
-          <div class="suspicion-fill" id="bar-suspicion" style="width: 15%;"></div>
-          <div class="suspicion-marker" style="left: 60%;" title="Mốc Nguy Hiểm (60%)"></div>
+        <div class="suspicion-data">
+          <div class="suspicion-info">
+            <span class="suspicion-title">Nghi Kỵ Vũ Hoàng</span>
+            <span class="suspicion-pct" id="txt-suspicion">15%</span>
+          </div>
+          <div class="suspicion-track">
+            <div class="suspicion-fill" id="bar-suspicion" style="width: 15%;"></div>
+            <div class="suspicion-marker" style="left: 60%;" title="Mốc Nguy Hiểm (60%)"></div>
+          </div>
+          <span class="suspicion-desc" id="suspicion-status-desc">Khói Trắng · An Toàn</span>
         </div>
-        <span class="suspicion-desc" id="suspicion-status-desc">Cảnh giới: An Toàn Tương Đối</span>
       </div>
 
-      <!-- Vàng Ròng (Gold from Soap/Trade) -->
+      <!-- Vàng Ròng (Kim Nguyên Bảo) -->
       <div class="res-card gold-res" title="Vàng ròng tích lũy từ xà phòng Thấu Hoa Cao & thưởng triều đình">
-        <div class="res-symbol">金</div>
+        <div class="res-symbol">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14c0 3 4 5 9 5s9-2 9-5l-2-6H5L3 14z"/><ellipse cx="12" cy="8" rx="7" ry="2"/></svg>
+        </div>
         <div class="res-meta">
           <span class="res-val" id="txt-gold">0</span>
           <span class="res-lbl">Lượng Vàng</span>
         </div>
       </div>
 
-      <!-- Lương Thảo (Food Logistics) -->
-      <div class="res-card food-res" title="Lương thảo phục vụ hành quân và nuôi binh sĩ">
-        <div class="res-symbol">糧</div>
+      <!-- Lương Thảo (Thạch Lương) -->
+      <div class="res-card food-res" title="Lương thảo phục vụ hành quân và nuôi dưỡng quân đội">
+        <div class="res-symbol">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M7 8c1.5-2 3.5-3 5-3s3.5 1 5 3M6 13c2-2 4-2.5 6-2.5s4 .5 6 2.5M7 18c1.5-1.5 3-2 5-2s3.5.5 5 2"/></svg>
+        </div>
         <div class="res-meta">
           <span class="res-val" id="txt-food">0</span>
           <span class="res-lbl">Thạch Lương</span>
         </div>
       </div>
 
-      <!-- Điểm Hành Động (Action Points) -->
+      <!-- Điểm Hành Động (Hổ Phù Sa Bàn) -->
       <div class="res-card ap-res" title="Điểm Hành Động mỗi tháng trên Sa Bàn (Mở tại Ch.15)">
-        <div class="res-symbol">令</div>
+        <div class="res-symbol">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 4v16M4 12h16"/></svg>
+        </div>
         <div class="res-meta">
           <span class="res-val" id="txt-ap">0 / 0</span>
           <span class="res-lbl">Lệnh Sa Bàn</span>
@@ -149,63 +169,80 @@
          ======================================================================= -->
     <section class="stage-view view-vn active" id="view-vn">
       <!-- Backdrop with dynamic themes (Phò Mã Phủ, Kim Loan Điện, Địa Lao, Thành Trì) -->
-      <div class="vn-stage" id="vn-stage">
+      <div class="vn-stage" id="vn-stage" style="background-image: url('assets/images/bg_palace_chamber.jpg');">
+        <!-- PixiJS Ambient & Shader Canvas -->
+        <canvas id="vn-pixi-canvas" class="vn-pixi-canvas"></canvas>
+
         <div class="vn-ambient-fx" id="vn-ambient">
           <div class="rain-canvas"></div>
           <div class="lightning-flash" id="lightning-flash"></div>
           <div class="vignette-overlay"></div>
         </div>
 
-        <!-- Character Stage: Dual Cast Presence (Trái & Phải) -->
-        <div class="cast-stage">
-          <!-- Left Character (Đối phương / NPC) -->
-          <div class="actor-slot actor-left" id="actor-left-slot">
-            <div class="actor-card" id="actor-left-card">
-              <div class="actor-avatar" id="actor-left-avatar"></div>
+        <!-- Character Stage: Dual Cast Standees (Trực tiếp trên sàn tẩm thất, không đóng khung card) -->
+        <div class="cast-stage" id="cast-stage">
+          <!-- Left Character Standee (Tô Kiến Phong / Tướng lĩnh) -->
+          <div class="actor-slot actor-left listening" id="actor-left-slot">
+            <div class="standee-wrapper" id="actor-left-card">
+              <img src="assets/images/actor_to_kien_phong.png" alt="Tô Kiến Phong" class="standee-img" id="actor-left-img">
+              <div class="standee-floor-shadow"></div>
               <div class="actor-nametag" id="actor-left-nametag">Tô Kiến Phong</div>
             </div>
           </div>
 
-          <!-- Right Character (Phe ta / Quý Bình An / Triệu Vân) -->
-          <div class="actor-slot actor-right active" id="actor-right-slot">
-            <div class="actor-card" id="actor-right-card">
-              <div class="actor-avatar actor-scholar" id="actor-right-avatar">
-                <span>Quý Bình An</span>
-                <span style="font-size: 11px; color: var(--text-muted); margin-top: 4px;">Phò Mã Gia</span>
-              </div>
-              <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="actor-img hidden" id="actor-right-img">
+          <!-- Right Character Standee (Quý Bình An / Phò Mã Gia) -->
+          <div class="actor-slot actor-right speaking" id="actor-right-slot">
+            <div class="standee-wrapper" id="actor-right-card">
+              <img src="assets/images/actor_quy_binh_an.png" alt="Quý Bình An" class="standee-img" id="actor-right-img">
+              <div class="standee-floor-shadow"></div>
               <div class="actor-nametag" id="actor-right-nametag">Quý Bình An</div>
             </div>
           </div>
         </div>
 
-        <!-- Visual Novel Dialogue Box -->
-        <div class="vn-dialogue-panel" id="vn-dialogue-panel">
-          <div class="speaker-row">
-            <div class="speaker-name-badge">
-              <span class="speaker-text" id="vn-speaker">Triệu Tử Long</span>
-              <span class="speaker-identity" id="vn-speaker-sub">Thường Sơn Hổ Tướng · Hoàng Cảnh Sơ Kỳ</span>
-            </div>
-            <div class="vn-controls">
-              <button class="vn-ctrl-btn" id="btn-vn-log">📜 Lịch Sử Thoại</button>
-              <button class="vn-ctrl-btn" id="btn-vn-auto">▶ Tự Động</button>
+        <!-- Visual Novel Dialogue Box (Gỗ Sơn Mài Đen Nẹp Chỉ Vàng Kintsugi) -->
+        <div class="vn-dialogue-panel" id="vn-dialogue-panel" title="Nhấp chuột hoặc bấm [Space] để đọc tiếp câu thoại">
+          <!-- Diegetic Speaker Seal Plate -->
+          <div class="vn-speaker-plate" id="vn-speaker-plate">
+            <div class="speaker-seal-stamp">鎮</div>
+            <div class="speaker-titles">
+              <span class="speaker-name" id="vn-speaker">Dẫn Truyện</span>
+              <span class="speaker-sub" id="vn-speaker-sub">Hồi 1: Khởi Đầu & Sinh Tồn</span>
             </div>
           </div>
 
+          <!-- Mini Quick Utility Ribbon -->
+          <div class="vn-quick-ribbon" onclick="event.stopPropagation()">
+            <button class="vn-ctrl-btn" id="btn-vn-log" title="Lịch Sử Thoại (Lăn chuột lên)">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              <span>Sử Ký</span>
+            </button>
+            <button class="vn-ctrl-btn" id="btn-vn-auto" title="Tự Động Đọc">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Tự Động</span>
+            </button>
+            <button class="vn-ctrl-btn" id="btn-vn-hide" title="Ẩn Giao Diện (Chuột phải)">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+              <span>Ẩn UI</span>
+            </button>
+          </div>
+
+          <!-- Text Presentation Area -->
           <div class="dialogue-text-area" id="vn-text-area">
             <p class="dialogue-line" id="vn-dialogue-text">
-              "Mạt tướng Thường Sơn Triệu Tử Long! Bái kiến Chúa Công! Nguyện vì Chúa Công xông pha khói lửa, muôn thác không từ!"
+              Hắn mở mắt.
             </p>
           </div>
 
+          <!-- Footer Bar: Branch Indicator & Pulsing Golden CTAC glyph -->
           <div class="dialogue-action-row">
             <div class="branch-indicator" id="vn-branch-indicator">
               Tuyến Chính: Phò Mã Phủ Thức Tỉnh (Hồi 1 · Cảnh 1)
             </div>
-            <button class="btn-advance" id="btn-vn-advance">
-              <span>TIẾP TỤC ĐỐI THOẠI</span>
-              <span class="key-hint">[Space]</span>
-            </button>
+            <div class="vn-ctac" id="btn-vn-advance" title="Bấm [Space] hoặc nhấp chuột để tiếp tục">
+              <span class="ctac-glyph">▼</span>
+              <span class="ctac-hint">Tiếp Tục [Space]</span>
+            </div>
           </div>
         </div>
 
@@ -259,9 +296,12 @@
             </div>
           </div>
 
-          <!-- Stylized Geographic Map Canvas -->
-          <div class="geographic-map" id="geographic-map">
-            <!-- Territory Zones Colored Polygons Background -->
+          <!-- Stylized Geographic Map Canvas (Nền lụa cổ bàn cát) -->
+          <div class="geographic-map" id="geographic-map" style="background-image: url('assets/images/bg_saban_table.jpg');">
+            <!-- Three.js 3D Sand-table Container Hook -->
+            <div id="saban-threejs-container" class="saban-threejs-container"></div>
+
+            <!-- Territory Zones Watermark Overlay -->
             <div class="zone zone-daivu" title="Lãnh thổ Hoàng Gia Đại Vũ (Kinh Đô)">
               <span class="zone-watermark">ĐẠI VŨ HOÀNG TRIỀU</span>
             </div>
@@ -287,20 +327,22 @@
               <path d="M 520,130 L 580,90 L 640,140 L 720,110 L 780,160" class="mountain-chain"></path>
               <text x="610" y="90" class="mountain-name">Dãy Núi Bắc Cô Sơn</text>
 
-              <!-- Supply & Marching Routes -->
+              <!-- Supply & Marching Routes (Jade Supply Ribbon) -->
               <line x1="220" y1="520" x2="420" y2="400" class="route-line" id="rt-dedo-kh"></line>
               <line x1="420" y1="400" x2="680" y2="280" class="route-line active-route" id="rt-kh-tc"></line>
               <line x1="680" y1="280" x2="900" y2="180" class="route-line" id="rt-tc-lc"></line>
               <line x1="680" y1="280" x2="620" y2="140" class="route-line danger-route" id="rt-tc-bcs"></line>
 
-              <!-- Hostile Invasion Arrow -->
+              <!-- Hostile Invasion Arrow (Cinnabar Dashed) -->
               <path d="M 980,480 Q 820,380 710,300" class="invasion-arrow" id="invasion-arrow"></path>
             </svg>
 
             <!-- Interactive Strategic Fortress Nodes -->
             <!-- 1. Đế Đô Đại Vũ -->
             <div class="province-node node-capital" style="left: 20%; top: 80%;" data-node="dedo">
-              <div class="castle-icon">🏯</div>
+              <div class="castle-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2L2 9h3v12h14V9h3L12 2zm0 4.5l5 3.5v9H7V10l5-3.5z"/></svg>
+              </div>
               <div class="node-plate">
                 <span class="city-name">ĐẾ ĐÔ ĐẠI VŨ</span>
                 <span class="city-status">Phò Mã Phủ · Triều Đình</span>
@@ -309,7 +351,9 @@
 
             <!-- 2. Huyện Khai Nguyên -->
             <div class="province-node node-granary" style="left: 38%; top: 62%;" data-node="khainguyen">
-              <div class="castle-icon">🌾</div>
+              <div class="castle-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 2v20M7 8c1.5-2 3.5-3 5-3s3.5 1 5 3M6 13c2-2 4-2.5 6-2.5s4 .5 6 2.5M7 18c1.5-1.5 3-2 5-2s3.5.5 5 2"/></svg>
+              </div>
               <div class="node-plate">
                 <span class="city-name">KHAI NGUYÊN</span>
                 <span class="city-status">Kho Lương Hậu Cần</span>
@@ -318,7 +362,9 @@
 
             <!-- 3. Thành Thanh Châu (Tiền Tuyến) -->
             <div class="province-node node-battlefront active-node" style="left: 62%; top: 43%;" data-node="thanhchau">
-              <div class="castle-icon siege-pulse">🛡️</div>
+              <div class="castle-icon siege-pulse">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
               <div class="node-plate siege-plate">
                 <span class="city-name">THÀNH THANH CHÂU</span>
                 <span class="city-status alert">BỊ NAM LY VÂY HÃM!</span>
@@ -330,7 +376,9 @@
 
             <!-- 4. Thành Liễu Châu -->
             <div class="province-node node-haven" style="left: 82%; top: 28%;" data-node="lieuchau">
-              <div class="castle-icon">🏰</div>
+              <div class="castle-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M2 4h4v3h2V4h4v3h2V4h4v3h2V4h2v17H2V4zm4 7H4v2h2v-2zm0 4H4v2h2v-2zm14-4h-2v2h2v-2zm0 4h-2v2h2v-2z"/></svg>
+              </div>
               <div class="node-plate">
                 <span class="city-name">LIỄU CHÂU</span>
                 <span class="city-status">Lò Rèn Giáp & Xưởng Xà Phòng</span>
@@ -339,7 +387,9 @@
 
             <!-- 5. Bắc Cô Sơn -->
             <div class="province-node node-chokepoint" style="left: 56%; top: 22%;" data-node="baccoson">
-              <div class="castle-icon">⛰️</div>
+              <div class="castle-icon">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M14 6l-4 6-3-4-5 9h20L14 6z"/></svg>
+              </div>
               <div class="node-plate">
                 <span class="city-name">BẮC CÔ SƠN</span>
                 <span class="city-status warning">Hẻm Núi Hiểm Trở</span>
@@ -353,7 +403,10 @@
           <div class="panel-header">
             <div class="city-badge" id="panel-city-badge">CỬA NGÕ BIÊN THÙY</div>
             <h3 class="panel-city-name" id="panel-city-name">THÀNH THANH CHÂU</h3>
-            <span class="panel-city-threat" id="panel-city-threat">⚠️ Báo Động Cấp 1: Đại quân Địch Hỏa đã bao vây chân thành!</span>
+            <span class="panel-city-threat" id="panel-city-threat">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Báo Động Cấp 1: Đại quân Địch Hỏa đã bao vây chân thành!</span>
+            </span>
           </div>
 
           <div class="panel-scroll-body">
@@ -390,7 +443,9 @@
               <div class="cmd-group-title">MỆNH LỆNH QUÂN CƠ (TIÊU HAO AP)</div>
 
               <button class="btn-action btn-enter-battle" id="btn-action-battle">
-                <div class="action-icon">⚔️</div>
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                </div>
                 <div class="action-meta">
                   <span class="action-title">Chỉ Huy Thủ Thành Ngay</span>
                   <span class="action-cost">Vào Sa Trường Thẻ Bài · Không Tốn AP</span>
@@ -398,7 +453,9 @@
               </button>
 
               <button class="btn-action btn-expand-soap" id="btn-action-soap">
-                <div class="action-icon">🧼</div>
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M7 10h10M7 14h6"/></svg>
+                </div>
                 <div class="action-meta">
                   <span class="action-title">Mở Rộng Xưởng Thấu Hoa Cao</span>
                   <span class="action-cost">Tiêu hao 1 AP · Thu hoạch +3.000 Vàng</span>
@@ -406,7 +463,9 @@
               </button>
 
               <button class="btn-action btn-tribute-court" id="btn-action-tribute">
-                <div class="action-icon">🏛️</div>
+                <div class="action-icon">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10h14v11M12 3l9 7H3l9-7z"/></svg>
+                </div>
                 <div class="action-meta">
                   <span class="action-title">Cống Nạp & Mua Chuộc Hoạn Quan</span>
                   <span class="action-cost">Tiêu hao 1.500 Vàng · -15% Nghi Kỵ Vũ Hoàng</span>
@@ -422,17 +481,23 @@
          TẦNG 3: SA TRƯỜNG THẺ BÀI CHIẾN THUẬT (ENEMY INTENT & FORMATION)
          ======================================================================= -->
     <section class="stage-view view-battle" id="view-battle">
-      <div class="tactical-arena">
+      <div class="tactical-arena" style="background-image: url('assets/images/bg_fortress_battle.jpg');">
+        <!-- Phaser Combat Particle Canvas Container Hook -->
+        <div id="battle-phaser-container" class="battle-phaser-container"></div>
+
         <!-- TOP COMBAT BAR: FORTRESS WALL & ENEMY INTENT -->
         <div class="battlefield-header">
           <!-- Fortress Wall Entity (Real Siege Mechanic) -->
           <div class="wall-entity-card">
             <div class="wall-top-row">
-              <div class="wall-badge">🏰 THỦ THÀNH CHIẾN</div>
+              <div class="wall-badge">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                <span>THỦ THÀNH CHIẾN</span>
+              </div>
               <div class="wall-name">TƯỜNG THÀNH THANH CHÂU</div>
               <div class="wall-buff-tag">BUFF CAO LÂM HẠ: Hàng sau +30% Tầm xa · Miễn nhiễm cận chiến</div>
               <div class="wall-durability">
-                ĐỘ BỀN: <strong id="wall-hp-val">500</strong> / 500
+                ĐỘ BỀN: <strong id="wall-hp-val">500</strong> / 500 HP
               </div>
             </div>
             <div class="wall-hp-track">
@@ -442,7 +507,10 @@
 
           <!-- Flood Reservoir Level (Giả Hủ Mechanic) -->
           <div class="reservoir-card" id="reservoir-card">
-            <div class="reservoir-label">TRỮ LƯỢNG NƯỚC SÔNG THANH THỦY</div>
+            <div class="reservoir-label">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+              <span>TRỮ LƯỢNG NƯỚC SÔNG THANH THỦY</span>
+            </div>
             <div class="reservoir-stages">
               <span class="stage-dot active" id="stage-1">Cấp 1: Đắp Đê</span>
               <span class="stage-dot" id="stage-2">Cấp 2: Nước Dâng</span>
@@ -459,8 +527,10 @@
             <div class="boss-info">
               <div class="boss-name">Địch Hỏa (Tiên Phong Nam Ly)</div>
               <div class="boss-intent" id="boss-intent-display">
-                <span class="intent-icon">💥</span>
-                <span class="intent-text">Ý Đồ: Chuẩn bị phát động Bạo Liệt Đao Pháp (Gây 90 HP)</span>
+                <span class="intent-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </span>
+                <span class="intent-text" id="boss-intent-desc">Ý Đồ: Chuẩn bị phát động Bạo Liệt Đao Pháp (Gây 90 HP Tường Thành)</span>
               </div>
               <div class="boss-hp-track">
                 <div class="boss-hp-fill" id="enemy-hp-bar" style="width: 100%;"></div>
@@ -483,26 +553,35 @@
             <div class="lane-half enemy-half" id="enemy-zone-left">
               <div class="card-unit enemy-card" id="card-enemy-left">
                 <div class="unit-intent-tag" title="Ý đồ hiệp này: Bắn mưa tên">
-                  <span>🎯 Bắn Cung: 35 Sát thương</span>
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                  <span>Bắn Cung: 35 Sát thương</span>
                 </div>
                 <div class="unit-type-tag">Cung Nỗ Nam Ly</div>
                 <div class="unit-name">Hỏa Tiễn Doanh</div>
                 <div class="unit-bars">
-                  <div class="stat-pill atk">⚔ 35</div>
-                  <div class="stat-pill hp" id="hp-enemy-left">🛡 100</div>
+                  <div class="stat-pill atk">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>35</span>
+                  </div>
+                  <div class="stat-pill hp" id="hp-enemy-left">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>100</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Clash Middle Line -->
             <div class="clash-gutter">
-              <div class="gutter-sword">⚔️</div>
+              <div class="gutter-sword">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+              </div>
             </div>
 
             <!-- Player Side (Bottom) -->
             <div class="lane-half player-half drop-zone" id="player-zone-left" data-lane="left">
               <div class="deploy-placeholder">
-                <span>Trống (Thả thẻ lính vào đây)</span>
+                <span>Trống (Triển khai Hãm Trận Doanh)</span>
               </div>
             </div>
           </div>
@@ -515,20 +594,31 @@
             <div class="lane-half enemy-half" id="enemy-zone-center">
               <div class="card-unit enemy-card siege-engine" id="card-enemy-center">
                 <div class="unit-intent-tag intent-siege" title="Ý đồ: Húc sập tường thành!">
-                  <span>🔨 Công Thành: 80 sát thương Tường</span>
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h12M14 9l3 3-3 3"/></svg>
+                  <span>Công Thành: 80 Sát thương Tường</span>
                 </div>
                 <div class="unit-type-tag">Khí Giới Phá Thành</div>
                 <div class="unit-name">Xe Đục Thành Nam Ly</div>
                 <div class="unit-bars">
-                  <div class="stat-pill atk">🔨 80</div>
-                  <div class="stat-pill hp" id="hp-enemy-center">🛡 150</div>
+                  <div class="stat-pill atk">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>80</span>
+                  </div>
+                  <div class="stat-pill hp" id="hp-enemy-center">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>150</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Clash Middle Line -->
             <div class="clash-gutter">
-              <div class="gutter-sword text-gold">⚡ ĐỐI ĐẦU CHÍNH DIỆN ⚡</div>
+              <div class="gutter-sword text-gold">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                <span>ĐỐI ĐẦU CHÍNH DIỆN</span>
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
             </div>
 
             <!-- Player Side: Triệu Vân Preset -->
@@ -541,8 +631,14 @@
                   <div class="hero-title">Long Đảm Lượng Ngân Thương</div>
                   <div class="hero-skill-passive">Nội tại: Phản kích mọi đòn cận chiến</div>
                   <div class="unit-bars">
-                    <div class="stat-pill atk">⚔ 102</div>
-                    <div class="stat-pill hp" id="hp-zhaoyun">🛡 180</div>
+                    <div class="stat-pill atk">
+                      <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                      <span>102</span>
+                    </div>
+                    <div class="stat-pill hp" id="hp-zhaoyun">
+                      <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                      <span>180</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -557,26 +653,35 @@
             <div class="lane-half enemy-half" id="enemy-zone-right">
               <div class="card-unit enemy-card" id="card-enemy-right">
                 <div class="unit-intent-tag" title="Ý đồ: Xung kích chém lính">
-                  <span>⚡ Đột Kích: 45 Sát thương</span>
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>Đột Kích: 45 Sát thương</span>
                 </div>
                 <div class="unit-type-tag">Kỵ Binh Nam Ly</div>
                 <div class="unit-name">Kỵ Binh Khởi Đột</div>
                 <div class="unit-bars">
-                  <div class="stat-pill atk">⚔ 45</div>
-                  <div class="stat-pill hp" id="hp-enemy-right">🛡 120</div>
+                  <div class="stat-pill atk">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>45</span>
+                  </div>
+                  <div class="stat-pill hp" id="hp-enemy-right">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>120</span>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Clash Middle Line -->
             <div class="clash-gutter">
-              <div class="gutter-sword">⚔️</div>
+              <div class="gutter-sword">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+              </div>
             </div>
 
             <!-- Player Side (Bottom) -->
             <div class="lane-half player-half drop-zone" id="player-zone-right" data-lane="right">
               <div class="deploy-placeholder">
-                <span>Trống (Thả thẻ lính vào đây)</span>
+                <span>Trống (Triển khai Bạch Mã Nghĩa Tòng)</span>
               </div>
             </div>
           </div>
@@ -601,7 +706,7 @@
             </div>
           </div>
 
-          <!-- Interactive Hand Cards -->
+          <!-- Interactive Hand Cards with Fan Arc -->
           <div class="hand-deck" id="hand-deck">
             <!-- Card 1: Hãm Trận Doanh -->
             <div class="hand-card card-unit-playable" data-card="hamtran" data-cost="3">
@@ -612,8 +717,14 @@
                 <span class="c-type">Bộ Binh · Cao Thuận</span>
                 <p class="c-effect">Trọng giáp tinh luyện. Giảm 50% sát thương từ cung tiễn. Bảo vệ các đơn vị cùng cánh.</p>
                 <div class="c-stats">
-                  <span class="c-atk">⚔ 65</span>
-                  <span class="c-hp">🛡 140</span>
+                  <span class="c-atk">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>65</span>
+                  </span>
+                  <span class="c-hp">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>140</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -627,8 +738,14 @@
                 <span class="c-type">Kỵ Binh · Triệu Vân</span>
                 <p class="c-effect">Xung kích thần tốc. Tấn công trực tiếp bỏ qua phòng tuyến tiền tiêu của kẻ địch.</p>
                 <div class="c-stats">
-                  <span class="c-atk">⚔ 80</span>
-                  <span class="c-hp">🛡 110</span>
+                  <span class="c-atk">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>80</span>
+                  </span>
+                  <span class="c-hp">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>110</span>
+                  </span>
                 </div>
               </div>
             </div>
@@ -643,7 +760,10 @@
                 <p class="c-effect">
                   Phá đê trút lũ! Quét sạch toàn bộ Khí Giới Công Thành của địch và gây 130 Sát thương AoE lên toàn bộ kẻ địch!
                 </p>
-                <span class="c-requirement text-cyan">⚡ Cần Trữ Nước Cấp 2+</span>
+                <span class="c-requirement text-cyan">
+                  <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                  <span>Cần Trữ Nước Cấp 2+</span>
+                </span>
               </div>
             </div>
 
@@ -655,14 +775,18 @@
                 <span class="c-name">Thất Thám Bàn Xà</span>
                 <span class="c-type">Tuyệt Kỹ Thương Pháp</span>
                 <p class="c-effect">Triệu Vân đâm liên tiếp 7 thương chí mạng, gây 120 Bạo Kích lên tướng chỉ huy đối phương!</p>
-                <span class="c-bonus text-gold">★ Ngắt Ý Đồ Kẻ Địch</span>
+                <span class="c-bonus text-gold">
+                  <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>Ngắt Ý Đồ Kẻ Địch</span>
+                </span>
               </div>
             </div>
           </div>
 
-          <!-- Battle Action Execution Button -->
+          <!-- Battle Action Execution Button (Imperial Kintsugi Seal) -->
           <div class="action-dock">
-            <button class="btn-execute-turn" id="btn-execute-turn">
+            <button class="btn-execute-turn" id="btn-execute-turn" title="Quyết toán hiệp đấu">
+              <div class="seal-ring"></div>
               <span class="btn-primary-txt">XUNG TRẬN!</span>
               <span class="btn-sub-txt">Quyết toán lượt đối đầu</span>
             </button>
@@ -753,10 +877,12 @@
         </div>
         <div class="reveal-action-row hidden" id="reveal-action-row">
           <button class="btn-view-hero-detail" id="btn-reveal-inspect">
-            📜 XEM THUỘC TÍNH & TUYỆT KỸ
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span>XEM THUỘC TÍNH & TUYỆT KỸ</span>
           </button>
           <button class="btn-confirm-summon" id="btn-reveal-confirm">
-            ⚔️ TIẾP NHẬN VÕ TƯỚNG VÀO HÀNG NGŨ
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+            <span>TIẾP NHẬN VÕ TƯỚNG VÀO HÀNG NGŨ</span>
           </button>
         </div>
       </div>
@@ -799,22 +925,46 @@
             <div class="section-badge">TỨ ĐẠI CHỈ SỐ TAM QUỐC</div>
             <div class="stats-quad-grid">
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">⚔️ VÕ LỰC</span><span class="qs-val" id="qs-val-force">96</span></div>
+                <div class="qs-header">
+                  <span class="qs-name">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                    <span>VÕ LỰC</span>
+                  </span>
+                  <span class="qs-val" id="qs-val-force">96</span>
+                </div>
                 <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-force" style="width: 96%; background: #ef4444;"></div></div>
                 <span class="qs-desc">Tấn công bộc phát, uy áp sa trường</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">🛡️ THỐNG SOÁI</span><span class="qs-val" id="qs-val-command">91</span></div>
+                <div class="qs-header">
+                  <span class="qs-name">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>THỐNG SOÁI</span>
+                  </span>
+                  <span class="qs-val" id="qs-val-command">91</span>
+                </div>
                 <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-command" style="width: 91%; background: #06b6d4;"></div></div>
                 <span class="qs-desc">Dẫn dắt quân đoàn, chỉ huy kỵ binh</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">📜 TRÍ LỰC</span><span class="qs-val" id="qs-val-intel">76</span></div>
+                <div class="qs-header">
+                  <span class="qs-name">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                    <span>TRÍ LỰC</span>
+                  </span>
+                  <span class="qs-val" id="qs-val-intel">76</span>
+                </div>
                 <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-intel" style="width: 76%; background: #3b82f6;"></div></div>
                 <span class="qs-desc">Kháng mưu lược, phòng thủ kế sách</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">🏛️ CHÍNH TRỊ</span><span class="qs-val" id="qs-val-pol">65</span></div>
+                <div class="qs-header">
+                  <span class="qs-name">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10h14v11M12 3l9 7H3l9-7z"/></svg>
+                    <span>CHÍNH TRỊ</span>
+                  </span>
+                  <span class="qs-val" id="qs-val-pol">65</span>
+                </div>
                 <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-pol" style="width: 65%; background: #10b981;"></div></div>
                 <span class="qs-desc">An dân trị quốc, tuần tra kinh kỳ</span>
               </div>
@@ -837,21 +987,27 @@
             <div class="section-badge">BỘ KỸ NĂNG VÕ ĐẠO</div>
             <div class="skills-list" id="inspector-skills-list">
               <div class="skill-entry skill-active">
-                <div class="sk-icon">⚡</div>
+                <div class="sk-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
                 <div class="sk-info">
                   <div class="sk-name-row"><span class="sk-name">Thất Thám Bàn Xà</span><span class="sk-tag active-tag">Tuyệt Kỹ Chủ Động · 2 Mana</span></div>
                   <p class="sk-desc">Đâm liên tiếp 7 thương chí mạng, gây 120 Bạo Kích lên Tướng địch và <strong>Ngắt hoàn toàn Ý Đồ</strong> sắp sửa phát động!</p>
                 </div>
               </div>
               <div class="skill-entry">
-                <div class="sk-icon">🛡️</div>
+                <div class="sk-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
                 <div class="sk-info">
                   <div class="sk-name-row"><span class="sk-name">Long Đảm Bất Khuất</span><span class="sk-tag passive-tag">Bị Động 1</span></div>
                   <p class="sk-desc">Khi HP giảm xuống dưới 50%, né tránh tăng 30%, sát thương gây ra tăng 25%.</p>
                 </div>
               </div>
               <div class="skill-entry">
-                <div class="sk-icon">⚔️</div>
+                <div class="sk-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                </div>
                 <div class="sk-info">
                   <div class="sk-name-row"><span class="sk-name">Thường Sơn Hổ Tướng</span><span class="sk-tag passive-tag">Bị Động 2</span></div>
                   <p class="sk-desc">Tự động phản kích 100% sát thương đối với mọi đòn tấn công cận chiến của kẻ địch cùng cánh.</p>
@@ -865,21 +1021,27 @@
             <div class="section-badge">THẦN BINH & THÚ CƯỠI TRẤN THÂN</div>
             <div class="equip-row">
               <div class="equip-card">
-                <div class="eq-icon">🔱</div>
+                <div class="eq-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+                </div>
                 <div class="eq-meta">
                   <span class="eq-name">Long Đảm Lượng Ngân Thương</span>
                   <span class="eq-stat">+25 Công Kích · +15% Tỷ Lệ Bạo Kích</span>
                 </div>
               </div>
               <div class="equip-card">
-                <div class="eq-icon">🐎</div>
+                <div class="eq-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                </div>
                 <div class="eq-meta">
                   <span class="eq-name">Chiếu Dạ Ngọc Sư Tử</span>
                   <span class="eq-stat">+20 Tốc Độ Hành Quân · +10% Né Tránh</span>
                 </div>
               </div>
               <div class="equip-card">
-                <div class="eq-icon">🛡️</div>
+                <div class="eq-icon">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
                 <div class="eq-meta">
                   <span class="eq-name">Bạch Ngân Ngân Long Giáp</span>
                   <span class="eq-stat">+30 Phòng Ngự · Kháng Khí Giới 15%</span>
@@ -893,15 +1055,24 @@
             <div class="section-badge">DUYÊN PHẬN ANH LINH (KÍCH DUYÊN)</div>
             <div class="bonds-grid">
               <div class="bond-card bond-inactive" title="Cần chiêu mộ: Quan Vũ, Trương Phi, Mã Siêu, Hoàng Trung">
-                <span class="bond-title">🔒 Ngũ Hổ Thượng Tướng</span>
+                <span class="bond-title">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Ngũ Hổ Thượng Tướng</span>
+                </span>
                 <span class="bond-effect">Công kích toàn đội ngũ +25% (Chưa kích hoạt)</span>
               </div>
               <div class="bond-card bond-inactive" title="Cần chiêu mộ: Cổ Chi Ác Lai Điển Vi (Chương 63)">
-                <span class="bond-title">🔒 Thân Vệ Song Bích</span>
+                <span class="bond-title">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Thân Vệ Song Bích</span>
+                </span>
                 <span class="bond-effect">Quý Bình An giảm 20% sát thương nhận vào (Chưa kích hoạt)</span>
               </div>
               <div class="bond-card bond-inactive" title="Cần chiêu mộ: Gia Cát Lượng, Bàng Thống (Chương 1015)">
-                <span class="bond-title">🔒 Ngọa Long Phượng Sồ</span>
+                <span class="bond-title">
+                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  <span>Ngọa Long Phượng Sồ</span>
+                </span>
                 <span class="bond-effect">Khởi đầu trận đấu đầy 100% nộ khí (Chưa kích hoạt)</span>
               </div>
             </div>
@@ -934,20 +1105,27 @@
   <div class="modal-backdrop hidden" id="unlock-event-modal">
     <div class="unlock-dialog">
       <div class="unlock-seal">THIÊN CƠ KHAI MỞ</div>
-      <div class="unlock-icon" id="unlock-modal-icon">🔓</div>
+      <div class="unlock-icon" id="unlock-modal-icon">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11V7a5 5 0 0 1 9.9-1M3 11h18v11H3z"/></svg>
+      </div>
       <h3 class="unlock-title" id="unlock-modal-title">MỞ KHÓA TÍNH NĂNG MỚI!</h3>
       <div class="unlock-name" id="unlock-modal-name">KINH DOANH THẤU HOA CAO</div>
       <p class="unlock-lore" id="unlock-modal-lore">
         Quý Bình An đã chế tạo thành công xà phòng thơm từ mỡ cừu và bắt tay cùng Lâu chủ Vệ Ti Vũ. Nguồn thu vàng ròng bắt đầu chảy vào túi!
       </p>
       <div class="unlock-reward-tag" id="unlock-modal-effect">
-        ⚡ Tác dụng: Cho phép Mở Rộng Xưởng tại Sa Bàn kiếm +3.000 Vàng mỗi đợt!
+        <span>Tác dụng: Cho phép Mở Rộng Xưởng tại Sa Bàn kiếm +3.000 Vàng mỗi đợt!</span>
       </div>
       <button class="btn-triumph-next" id="btn-close-unlock">
         TIẾP NHẬN TÍNH NĂNG & TIẾP TỤC HÀNH TRÌNH
       </button>
     </div>
   </div>
+
+  <!-- Local Vendored Trio Engines (100% Offline) -->
+  <script src="lib/pixi.min.js"></script>
+  <script src="lib/three.min.js"></script>
+  <script src="lib/phaser.min.js"></script>
 
   <!-- Data Bundle (100% Offline) & Script Engines -->
   <script src="game_data.js"></script>
