@@ -1221,47 +1221,120 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   const provinceData = {
     dedo: {
-      name: "Kinh Đô Đại Vũ (Kim Loan Điện)",
+      name: "Đại Vũ Kinh Đô (Kim Loan Điện)",
+      type: "Đế Đô",
       ruler: "Vũ Hoàng",
       status: "Nghi Kỵ Giám Sát",
-      threat: "Thấp",
-      income: "+1.200 Vàng/Tháng",
+      threat: "An Ninh Cảnh Giới",
+      income: "Triều Cống 1.200 Vàng",
+      dist: "Hậu Phương Triều Đình",
+      intel: "Cẩm Y Vệ & Nội Các",
       garrison: "50.000 Ngự Lâm Quân",
-      desc: "Trọng tâm quyền lực của hoàng triều. Vũ Hoàng thâm hiểm đa nghi, các thế lực hoàng tử đấu đá ngầm.",
+      desc: "Trung tâm quyền lực hoàng triều Đại Vũ. Vũ Hoàng đa nghi theo dõi nhất cử nhất động của phò mã phủ. Cần dâng biểu, tiến cống vàng để giải tỏa lòng ngờ vực.",
       actionPrompt: "Tiến Cống Giảm Nghi Kỵ",
       actionCost: "Tiêu hao 1.500 Vàng (-15% Nghi Kỵ)",
       bgImg: "assets/images/bg_capital.jpg"
     },
-    baccanh: {
-      name: "Bắc Cảnh Biên Cương (Thanh Châu)",
-      ruler: "Chinh Bắc Đại Tướng Quân (Quý Bình An)",
+    khainguyen: {
+      name: "Khai Nguyên (Đại Kho Lương)",
+      type: "Hậu Cần",
+      ruler: "Trấn Bắc Quân Hậu Cần",
+      status: "An Cư Lạc Nghiệp",
+      threat: "An Toàn Tuyệt Đối",
+      income: "+5.000 Thạch Lương/Lượt",
+      dist: "2 Ngày Đến Thanh Châu",
+      intel: "Thương Hội Vệ Ti Vũ",
+      garrison: "5.000 Binh Hộ Lương",
+      desc: "Hậu cần trung chuyển quân lương cho toàn tuyến biên cương. Quý Bình An tích trữ 5 vạn thạch lương tại đây thông qua thương hội Vệ Ti Vũ, bảo đảm sĩ khí ba quân không bao giờ cạn.",
+      actionPrompt: "Tiếp Nhận Quân Lương",
+      actionCost: "Tiêu hao 1 AP (+5.000 Thạch Lương)",
+      bgImg: "assets/images/bg_capital.jpg"
+    },
+    thanhchau: {
+      name: "Thành Thanh Châu (Tiền Tuyến)",
+      type: "Tiền Tuyến",
+      ruler: "Chinh Bắc Quân (Quý Bình An)",
       status: "Khói Lửa Chiến Tranh",
-      threat: "Cực Cao (20.000 Kỵ Binh Nam Ly)",
+      threat: "Báo Động: 20.000 Quân Nam Ly Áp Sát!",
       income: "+3.500 Vàng (Xưởng Thấu Hoa Cao)",
-      garrison: "800 Hãm Trận Doanh & 3.000 Bạch Mã Kỵ",
-      desc: "Phòng tuyến hiểm yếu ngăn cách Đại Vũ và Nam Ly Quốc. Nơi Quý Bình An đặt xưởng xà phòng bí mật.",
+      dist: "3 Ngày Đến Đế Đô",
+      intel: "Hồng Nhan Mật Thám",
+      garrison: "Triệu Vân + 800 Hãm Trận Doanh",
+      desc: "Cửa ải yết hầu che chở toàn bộ ba châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy. Tường thành kiên cố 500 HP trước mũi nhọn tiến công của Địch Hỏa.",
       actionPrompt: "Mở Rộng Xưởng Thấu Hoa Cao",
       actionCost: "Tiêu hao 1 AP (+3.000 Vàng)",
       bgImg: "assets/images/bg_battle.jpg"
     },
-    namly: {
-      name: "Nam Ly Quốc (Phương Nam)",
-      ruler: "Nam Ly Vương",
-      status: "Thù Địch Căng Thẳng",
-      threat: "Trung Bình",
-      income: "0 Vàng",
-      garrison: "80.000 Thiết Kỵ Chiến Tượng",
-      desc: "Đế quốc lân bang hiếu chiến. Tướng tiên phong Địch Hỏa đang dòm ngó ải biên cương.",
-      actionPrompt: "Tuần Tra Ranh Giới",
-      actionCost: "Tiêu hao 1 AP (-5% Nguy Cơ)",
+    baccoson: {
+      name: "Bắc Cô Sơn (Hiểm Quan)",
+      type: "Hiểm Quan",
+      ruler: "Trấn Bắc Quân Phục Kỵ",
+      status: "Bố Trí Trận Địa",
+      threat: "Phục Binh Sẵn Sàng",
+      income: "Kiểm Soát Sơn Đạo",
+      dist: "1 Ngày Đến Thanh Châu",
+      intel: "Bạch Mã Tiền Tiêu",
+      garrison: "3.000 Bạch Mã Nghĩa Tòng",
+      desc: "Địa hình núi non hiểm trở, thắt cổ chai đón lõng đường rút lui của địch. Nơi bố trí phục binh cung nỏ và kỵ binh cơ động sẵn sàng đánh bọc sườn quân Nam Ly.",
+      actionPrompt: "Bố Trí Cạm Bẫy Phục Kích",
+      actionCost: "Tiêu hao 1 AP (+15 Sĩ Khí)",
       bgImg: "assets/images/bg_capital.jpg"
+    },
+    lieuchau: {
+      name: "Liễu Châu (Hậu Phương Bắc Cảnh)",
+      type: "Bắc Cảnh",
+      ruler: "Bắc Cảnh Trấn Phủ Ty",
+      status: "Thái Bình Ổn Định",
+      threat: "Ổn Định Tuyệt Đối",
+      income: "+2.000 Vàng & 100 Ngựa Chiến",
+      dist: "2 Ngày Đến Bắc Cô Sơn",
+      intel: "Thiên Cơ Lâu Mật Tuyến",
+      garrison: "8.000 Thủ Thành Quân",
+      desc: "Căn cứ địa trù phú của 3 châu phương Bắc, nơi cung cấp tuấn mã chiến trường và nhân lực thợ rèn đúc giáp trụ thép cho quân đội Quý Bình An.",
+      actionPrompt: "Chiêu Mộ Tân Binh",
+      actionCost: "Tiêu hao 1 AP (+500 Binh Lực)",
+      bgImg: "assets/images/bg_capital.jpg"
+    },
+    namly: {
+      name: "Nam Ly Doanh (Tiền Tiêu Địch)",
+      type: "Địch Doanh",
+      ruler: "Tiên Phong Địch Hỏa (Nam Ly Quốc)",
+      status: "Bao Vây Chiến Thành",
+      threat: "Địch Hỏa 20.000 Quân Tinh Nhuệ",
+      income: "Địch Binh Chiếm Đóng",
+      dist: "Đối Mặt Trực Diện",
+      intel: "Mật Báo Quân Doanh",
+      garrison: "20.000 Thiết Giáp Tượng Binh",
+      desc: "Đại doanh tiền phương của Nam Ly Vương triều do đại tướng Địch Hỏa chỉ huy. Bày trận hãm thành chuẩn bị nuốt chửng Thanh Châu hòng mở toang cánh cửa tiến thẳng về kinh đô Đại Vũ.",
+      actionPrompt: "Thám Sát Trận Địa Địch",
+      actionCost: "Tiêu hao 1 AP (-5% Nguy Cơ)",
+      bgImg: "assets/images/bg_battle.jpg"
+    },
+    // Aliases
+    baccanh: {
+      name: "Thành Thanh Châu (Tiền Tuyến)",
+      type: "Tiền Tuyến",
+      ruler: "Chinh Bắc Quân (Quý Bình An)",
+      status: "Khói Lửa Chiến Tranh",
+      threat: "Báo Động: 20.000 Quân Nam Ly Áp Sát!",
+      income: "+3.500 Vàng (Xưởng Thấu Hoa Cao)",
+      dist: "3 Ngày Đến Đế Đô",
+      intel: "Hồng Nhan Mật Thám",
+      garrison: "Triệu Vân + 800 Hãm Trận Doanh",
+      desc: "Cửa ải yết hầu che chở toàn bộ ba châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy.",
+      actionPrompt: "Mở Rộng Xưởng Thấu Hoa Cao",
+      actionCost: "Tiêu hao 1 AP (+3.000 Vàng)",
+      bgImg: "assets/images/bg_battle.jpg"
     },
     taylang: {
       name: "Tây Lăng Hoang Mạc",
+      type: "Trung Lập",
       ruler: "Tây Lăng Phiến Quân",
       status: "Hỗn Loạn Trung Lập",
       threat: "Thấp",
       income: "+500 Vàng/Tháng",
+      dist: "5 Ngày Đến Thanh Châu",
+      intel: "Thương Lộ Tây Vực",
       garrison: "15.000 Du Mục Kỵ",
       desc: "Vùng đất cằn cỗi nhiều thớt ngựa chiến quý. Nơi thu mua ngựa tốt cho Bạch Mã Nghĩa Tòng.",
       actionPrompt: "Thu Mua Tuấn Mã",
@@ -1287,8 +1360,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (incomeEl) incomeEl.textContent = data.income || '15.000 Thạch';
     const garrisonEl = document.getElementById('node-garrison') || document.getElementById('panel-garrison');
     if (garrisonEl) garrisonEl.textContent = data.garrison || '1.000 Quân';
+    const distEl = document.getElementById('panel-dist');
+    if (distEl) distEl.textContent = data.dist || '1 Ngày Đường';
+    const intelEl = document.getElementById('panel-intel');
+    if (intelEl) intelEl.textContent = data.intel || 'Hồng Nhan Mật Thám';
     const badgeEl = document.getElementById('panel-city-badge');
     if (badgeEl && data.type) badgeEl.textContent = data.type.toUpperCase();
+
+    // Auto-expand bamboo scroll if collapsed
+    const scrollPanel = document.getElementById('bamboo-scroll-panel');
+    if (scrollPanel) scrollPanel.classList.remove('collapsed');
 
     if (ui.provinceNodes) {
       ui.provinceNodes.forEach(n => {
@@ -1995,6 +2076,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       container.innerHTML = '';
+      container.style.pointerEvents = 'auto';
       const w = container.clientWidth || 1000;
       const h = container.clientHeight || 650;
 
@@ -2012,24 +2094,24 @@ document.addEventListener('DOMContentLoaded', () => {
       container.appendChild(renderer.domElement);
 
       // Warm candle / lantern ambient light
-      const ambientLight = new THREE.AmbientLight(0xffeedd, 0.65);
+      const ambientLight = new THREE.AmbientLight(0xffeedd, 0.7);
       scene.add(ambientLight);
 
       // Flickering campaign tent lantern (Point light casting light on the war table)
       const lanternLight = new THREE.PointLight(0xf59e0b, 2.8, 600);
-      lanternLight.position.set(40, -40, 100);
+      lanternLight.position.set(30, -35, 95);
       scene.add(lanternLight);
 
       // Secondary cool moonlight rim light
-      const moonRimLight = new THREE.DirectionalLight(0x60a5fa, 0.45);
+      const moonRimLight = new THREE.DirectionalLight(0x60a5fa, 0.4);
       moonRimLight.position.set(-80, 80, 120);
       scene.add(moonRimLight);
 
       // 1. Dark Rosewood War Council Table Base
       const tableBaseGeo = new THREE.BoxGeometry(320, 210, 8);
       const tableBaseMat = new THREE.MeshStandardMaterial({
-        color: 0x18110b,
-        roughness: 0.7,
+        color: 0x140e09,
+        roughness: 0.75,
         metalness: 0.2
       });
       const tableBase = new THREE.Mesh(tableBaseGeo, tableBaseMat);
@@ -2041,7 +2123,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const cornerMat = new THREE.MeshStandardMaterial({
         color: 0xd4af37,
         roughness: 0.35,
-        metalness: 0.8
+        metalness: 0.85
       });
       [[-155, -100], [155, -100], [-155, 100], [155, 100]].forEach(([cx, cy]) => {
         const cornerMesh = new THREE.Mesh(cornerGeo, cornerMat);
@@ -2057,40 +2139,158 @@ document.addEventListener('DOMContentLoaded', () => {
       const mapGeo = new THREE.PlaneGeometry(290, 185, 32, 20);
       const mapMat = new THREE.MeshStandardMaterial({
         map: mapTexture,
-        roughness: 0.85,
-        metalness: 0.1
+        roughness: 0.88,
+        metalness: 0.08
       });
       const mapMesh = new THREE.Mesh(mapGeo, mapMat);
       mapMesh.position.set(0, 0, 0);
       scene.add(mapMesh);
 
-      // Helper function to create text canvas texture for flags
-      function createFlagTexture(text, bgColor = '#78350f', textColor = '#fbbf24') {
+      // Helper function to create silk pennant texture (High-DPI 512x256)
+      function createFlagTexture(sealChar, subText, isEnemy, isSiege) {
         const canvas = document.createElement('canvas');
-        canvas.width = 128;
-        canvas.height = 64;
+        canvas.width = 512;
+        canvas.height = 256;
         const ctx = canvas.getContext('2d');
-        ctx.fillStyle = bgColor;
-        ctx.fillRect(0, 0, 128, 64);
-        ctx.strokeStyle = textColor;
-        ctx.lineWidth = 4;
-        ctx.strokeRect(3, 3, 122, 58);
-        ctx.fillStyle = textColor;
-        ctx.font = 'bold 30px "Cinzel", "Songti SC", "SimSun", serif';
+
+        // Silk fabric background (dark ink / aged parchment)
+        const grad = ctx.createLinearGradient(0, 0, 512, 256);
+        if (isEnemy) {
+          grad.addColorStop(0, '#5c1414');
+          grad.addColorStop(1, '#2d0a0a');
+        } else if (isSiege) {
+          grad.addColorStop(0, '#59320e');
+          grad.addColorStop(1, '#261505');
+        } else {
+          grad.addColorStop(0, '#221912');
+          grad.addColorStop(1, '#120d09');
+        }
+        ctx.fillStyle = grad;
+        ctx.fillRect(0, 0, 512, 256);
+
+        // Weathered gold border & trim
+        ctx.strokeStyle = isEnemy ? '#f87171' : (isSiege ? '#fbbf24' : '#d4af37');
+        ctx.lineWidth = 10;
+        ctx.strokeRect(10, 10, 492, 236);
+        ctx.strokeStyle = 'rgba(212, 175, 55, 0.45)';
+        ctx.lineWidth = 3;
+        ctx.strokeRect(20, 20, 472, 216);
+
+        // Large Chinese Calligraphic Character
+        ctx.fillStyle = isEnemy ? '#fca5a5' : '#f6d89b';
+        ctx.font = 'bold 112px "Cinzel", "Songti SC", "SimSun", "Noto Serif", serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        ctx.fillText(text, 64, 34);
-        return new THREE.CanvasTexture(canvas);
+        ctx.fillText(sealChar, 256, 108);
+
+        // Subtitle (Vietnamese province role)
+        ctx.fillStyle = isEnemy ? '#f87171' : '#c5a059';
+        ctx.font = 'bold 36px "Cinzel", "Segoe UI", sans-serif';
+        ctx.fillText(subText, 256, 196);
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.generateMipmaps = true;
+        return tex;
       }
 
-      // 3. Exact 3D War Tokens Anchored at Geographic Coordinates
+      function createSealPlateTexture(sealChar, isEnemy) {
+        const canvas = document.createElement('canvas');
+        canvas.width = 256;
+        canvas.height = 256;
+        const ctx = canvas.getContext('2d');
+
+        // Circular bronze disc background
+        ctx.fillStyle = isEnemy ? '#451212' : '#241a12';
+        ctx.beginPath();
+        ctx.arc(128, 128, 120, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.strokeStyle = isEnemy ? '#b91c1c' : '#d4af37';
+        ctx.lineWidth = 10;
+        ctx.stroke();
+
+        ctx.fillStyle = isEnemy ? '#fca5a5' : '#fbbf24';
+        ctx.font = 'bold 128px "Cinzel", "Songti SC", "SimSun", serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(sealChar, 128, 136);
+
+        const tex = new THREE.CanvasTexture(canvas);
+        tex.generateMipmaps = true;
+        return tex;
+      }
+
+      // 3. Exact 3D War Tokens Strictly Calibrated Inside the Silk Map Boundaries
       const tokenConfigs = [
-        { key: 'dedo', name: 'Đại Vũ Kinh Đô', x: -80, y: -45, char: '大武', bg: '#991b1b', textCol: '#fbbf24', baseCol: 0xd4af37, isCapital: true },
-        { key: 'khainguyen', name: 'Khai Nguyên', x: -25, y: -18, char: '粮', bg: '#1e3a8a', textCol: '#93c5fd', baseCol: 0x64748b },
-        { key: 'thanhchau', name: 'Thành Thanh Châu', x: 40, y: 15, char: '青州', bg: '#065f46', textCol: '#6ee7b7', baseCol: 0x059669, isSiege: true },
-        { key: 'baccoson', name: 'Bắc Cô Sơn', x: 15, y: 60, char: '关', bg: '#451a03', textCol: '#fcd34d', baseCol: 0x78350f },
-        { key: 'lieuchau', name: 'Liễu Châu', x: 80, y: 52, char: '北', bg: '#1e293b', textCol: '#e2e8f0', baseCol: 0x475569 },
-        { key: 'namly', name: 'Nam Ly Doanh', x: 105, y: -40, char: '南', bg: '#7f1d1d', textCol: '#fca5a5', baseCol: 0xb91c1c, isEnemy: true }
+        {
+          key: 'dedo',
+          name: 'Đại Vũ Kinh Đô',
+          x: -36,
+          y: -26,
+          sealChar: '武',
+          sub: 'KINH ĐÔ',
+          baseCol: 0x1c150e,
+          trimCol: 0xd4af37,
+          auraCol: 0xd4af37,
+          isCapital: true
+        },
+        {
+          key: 'khainguyen',
+          name: 'Khai Nguyên',
+          x: -22,
+          y: -8,
+          sealChar: '粮',
+          sub: 'KHO LƯƠNG',
+          baseCol: 0x161b20,
+          trimCol: 0x60a5fa,
+          auraCol: 0x38bdf8
+        },
+        {
+          key: 'thanhchau',
+          name: 'Thành Thanh Châu',
+          x: 28,
+          y: 4,
+          sealChar: '青',
+          sub: 'TIỀN TUYẾN',
+          baseCol: 0x22160e,
+          trimCol: 0xf59e0b,
+          auraCol: 0xf59e0b,
+          isSiege: true
+        },
+        {
+          key: 'baccoson',
+          name: 'Bắc Cô Sơn',
+          x: -4,
+          y: 22,
+          sealChar: '关',
+          sub: 'HIỂM QUAN',
+          baseCol: 0x1c1712,
+          trimCol: 0xd4af37,
+          auraCol: 0xd4af37
+        },
+        {
+          key: 'lieuchau',
+          name: 'Liễu Châu',
+          x: 52,
+          y: 18,
+          sealChar: '北',
+          sub: 'BẮC CẢNH',
+          baseCol: 0x141f1a,
+          trimCol: 0x34d399,
+          auraCol: 0x10b981
+        },
+        {
+          key: 'namly',
+          name: 'Nam Ly Doanh',
+          x: 42,
+          y: -24,
+          sealChar: '南',
+          sub: 'ĐỊCH DOANH',
+          baseCol: 0x280e0e,
+          trimCol: 0xef4444,
+          auraCol: 0xef4444,
+          isEnemy: true
+        }
       ];
 
       const tokenObjects = [];
@@ -2100,59 +2300,112 @@ document.addEventListener('DOMContentLoaded', () => {
         group.position.set(cfg.x, cfg.y, 0);
         group.userData = cfg;
 
-        // Base Cylinder
-        const baseRadius = cfg.isCapital ? 8 : (cfg.isSiege ? 7 : 5.5);
-        const baseGeo = new THREE.CylinderGeometry(baseRadius * 0.9, baseRadius, 3.5, 24);
+        const baseRadius = cfg.isCapital ? 7.5 : (cfg.isSiege ? 6.5 : 5.5);
+
+        // 1. Ebony Carved Chess Piece Base (pedestal)
+        const baseGeo = new THREE.CylinderGeometry(baseRadius * 0.88, baseRadius, 3.2, 32);
         const baseMat = new THREE.MeshStandardMaterial({
           color: cfg.baseCol,
-          roughness: 0.4,
-          metalness: 0.6
+          roughness: 0.75,
+          metalness: 0.2
         });
         const baseMesh = new THREE.Mesh(baseGeo, baseMat);
         baseMesh.rotation.x = Math.PI / 2;
-        baseMesh.position.z = 1.75;
+        baseMesh.position.z = 1.6;
         group.add(baseMesh);
 
-        // Flagstaff Pole
-        const staffGeo = new THREE.CylinderGeometry(0.5, 0.5, 20, 8);
-        const staffMat = new THREE.MeshStandardMaterial({ color: 0xd4af37, metalness: 0.8, roughness: 0.3 });
+        // 2. Molten Gold / Antique Bronze Torus Rim
+        const rimGeo = new THREE.TorusGeometry(baseRadius * 0.94, 0.65, 12, 32);
+        const rimMat = new THREE.MeshStandardMaterial({
+          color: cfg.trimCol,
+          roughness: 0.35,
+          metalness: 0.85
+        });
+        const rimMesh = new THREE.Mesh(rimGeo, rimMat);
+        rimMesh.position.z = 3.2;
+        group.add(rimMesh);
+
+        // 3. Cast Bronze Seal Character Plate on top of base
+        const sealPlateTex = createSealPlateTexture(cfg.sealChar, cfg.isEnemy);
+        const plateGeo = new THREE.CircleGeometry(baseRadius * 0.76, 32);
+        const plateMat = new THREE.MeshStandardMaterial({
+          map: sealPlateTex,
+          roughness: 0.4,
+          metalness: 0.7
+        });
+        const plateMesh = new THREE.Mesh(plateGeo, plateMat);
+        plateMesh.position.z = 3.25;
+        group.add(plateMesh);
+
+        // 4. Burnished Brass Flagstaff Pole
+        const staffGeo = new THREE.CylinderGeometry(0.45, 0.45, 20, 12);
+        const staffMat = new THREE.MeshStandardMaterial({
+          color: cfg.trimCol,
+          metalness: 0.85,
+          roughness: 0.3
+        });
         const staffMesh = new THREE.Mesh(staffGeo, staffMat);
         staffMesh.rotation.x = Math.PI / 2;
         staffMesh.position.set(0, 0, 11);
         group.add(staffMesh);
 
         // Spearhead tip
-        const tipGeo = new THREE.ConeGeometry(1.2, 3.5, 8);
+        const tipGeo = new THREE.ConeGeometry(1.2, 3.5, 12);
         const tipMesh = new THREE.Mesh(tipGeo, staffMat);
         tipMesh.rotation.x = -Math.PI / 2;
         tipMesh.position.set(0, 0, 22.5);
         group.add(tipMesh);
 
-        // Silk Pennant Flag
-        const flagTex = createFlagTexture(cfg.char, cfg.bg, cfg.textCol);
-        const flagGeo = new THREE.PlaneGeometry(14, 7);
-        const flagMat = new THREE.MeshBasicMaterial({ map: flagTex, side: THREE.DoubleSide });
+        // 5. Silk Pennant Flag
+        const flagTex = createFlagTexture(cfg.sealChar, cfg.sub, cfg.isEnemy, cfg.isSiege);
+        const flagGeo = new THREE.PlaneGeometry(15, 7.5);
+        const flagMat = new THREE.MeshBasicMaterial({
+          map: flagTex,
+          side: THREE.DoubleSide
+        });
         const flagMesh = new THREE.Mesh(flagGeo, flagMat);
-        flagMesh.position.set(7, 0, 16);
+        flagMesh.position.set(7.5, 0, 16);
         flagMesh.rotation.x = Math.PI / 2;
         group.add(flagMesh);
 
-        // Ground Beacon Ring
-        const ringGeo = new THREE.RingGeometry(baseRadius + 1.5, baseRadius + 3.2, 32);
-        const ringMat = new THREE.MeshBasicMaterial({
-          color: cfg.isSiege || cfg.isEnemy ? 0xef4444 : 0xfbbf24,
+        // 6. Diegetic Ground Aura (Subtle Molten Gold / Ink Halo, NOT neon)
+        const auraGeo = new THREE.RingGeometry(baseRadius + 1.2, baseRadius + 3.5, 32);
+        const auraMat = new THREE.MeshBasicMaterial({
+          color: cfg.auraCol,
           side: THREE.DoubleSide,
           transparent: true,
-          opacity: 0.65
+          opacity: 0.32
         });
-        const ringMesh = new THREE.Mesh(ringGeo, ringMat);
-        ringMesh.position.z = 0.2;
-        group.add(ringMesh);
-        group.userData.ringMesh = ringMesh;
+        const auraMesh = new THREE.Mesh(auraGeo, auraMat);
+        auraMesh.position.z = 0.2;
+        group.add(auraMesh);
+        group.userData.auraMesh = auraMesh;
 
         scene.add(group);
         tokenObjects.push(group);
       });
+
+      // 4. Ambient Lantern Embers & Dust Specks (Diegetic Tent Lighting)
+      const emberCount = 40;
+      const emberGeo = new THREE.BufferGeometry();
+      const emberPositions = new Float32Array(emberCount * 3);
+      const emberSpeeds = new Float32Array(emberCount);
+      for (let i = 0; i < emberCount; i++) {
+        emberPositions[i * 3] = (Math.random() - 0.5) * 180;
+        emberPositions[i * 3 + 1] = (Math.random() - 0.5) * 120;
+        emberPositions[i * 3 + 2] = Math.random() * 80 + 5;
+        emberSpeeds[i] = 0.08 + Math.random() * 0.12;
+      }
+      emberGeo.setAttribute('position', new THREE.BufferAttribute(emberPositions, 3));
+      const emberMat = new THREE.PointsMaterial({
+        color: 0xf59e0b,
+        size: 2.2,
+        transparent: true,
+        opacity: 0.65,
+        blending: THREE.AdditiveBlending
+      });
+      const emberPoints = new THREE.Points(emberGeo, emberMat);
+      scene.add(emberPoints);
 
       // Raycaster & Mouse Interaction
       const raycaster = new THREE.Raycaster();
@@ -2223,6 +2476,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
       window.selectProvinceIn3D = select3DToken;
 
+      // Wire up Bamboo Scroll Toggle Tab
+      const btnToggleBamboo = document.getElementById('btn-toggle-bamboo');
+      const bambooPanel = document.getElementById('bamboo-scroll-panel');
+      if (btnToggleBamboo && bambooPanel) {
+        btnToggleBamboo.addEventListener('click', (e) => {
+          e.stopPropagation();
+          bambooPanel.classList.toggle('collapsed');
+        });
+      }
+
       let time = 0;
       function renderLoop() {
         requestAnimationFrame(renderLoop);
@@ -2231,15 +2494,28 @@ document.addEventListener('DOMContentLoaded', () => {
         lanternLight.intensity = 2.6 + Math.sin(time * 4) * 0.35 + Math.cos(time * 7) * 0.15;
 
         tokenObjects.forEach((tok, idx) => {
-          if (tok.userData.ringMesh) {
-            const scale = 1 + Math.sin(time * 2.5 + idx) * 0.12;
-            tok.userData.ringMesh.scale.set(scale, scale, 1);
+          if (tok.userData.auraMesh) {
+            const scale = 1 + Math.sin(time * 2.2 + idx) * 0.08;
+            tok.userData.auraMesh.scale.set(scale, scale, 1);
           }
         });
 
         if (hoveredToken) {
-          hoveredToken.position.z = Math.min(hoveredToken.position.z + 0.3, 4);
+          hoveredToken.position.z = Math.min(hoveredToken.position.z + 0.25, 3.5);
         }
+
+        // Animate floating embers
+        const posAttr = emberGeo.attributes.position;
+        for (let i = 0; i < emberCount; i++) {
+          let z = posAttr.getZ(i) + emberSpeeds[i];
+          if (z > 95) {
+            z = 5;
+            posAttr.setX(i, (Math.random() - 0.5) * 180);
+            posAttr.setY(i, (Math.random() - 0.5) * 120);
+          }
+          posAttr.setZ(i, z);
+        }
+        posAttr.needsUpdate = true;
 
         camera.position.lerp(targetCameraPos, 0.05);
         currentLookAt.lerp(targetLookAt, 0.05);
