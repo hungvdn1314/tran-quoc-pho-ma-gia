@@ -1077,25 +1077,30 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function renderMapNodeDetails(nodeKey) {
-    const data = provinceData[nodeKey] || provinceData.baccanh;
+    const data = provinceData[nodeKey] || provinceData.thanhchau || provinceData.baccanh;
+    if (!data) return;
     state.selectedNode = nodeKey;
 
-    ui.nodeTitle.textContent = data.name;
-    ui.nodeDesc.textContent = data.desc;
-    ui.nodeActionCost.textContent = data.actionCost;
+    if (ui.nodeTitle) ui.nodeTitle.textContent = data.name || '';
+    if (ui.nodeDesc) ui.nodeDesc.textContent = data.desc || '';
+    if (ui.nodeActionCost) ui.nodeActionCost.textContent = data.actionCost || '1 AP';
 
-    const rulerEl = document.getElementById('node-ruler');
-    if (rulerEl) rulerEl.textContent = data.ruler;
-    const threatEl = document.getElementById('node-threat');
-    if (threatEl) threatEl.textContent = data.threat;
-    const incomeEl = document.getElementById('node-income');
-    if (incomeEl) incomeEl.textContent = data.income;
-    const garrisonEl = document.getElementById('node-garrison');
-    if (garrisonEl) garrisonEl.textContent = data.garrison;
+    const rulerEl = document.getElementById('node-ruler') || document.getElementById('panel-ruler');
+    if (rulerEl) rulerEl.textContent = data.ruler || 'Đại Vũ Triều';
+    const threatEl = document.getElementById('node-threat') || document.getElementById('panel-city-threat');
+    if (threatEl) threatEl.textContent = data.threat || 'Báo Động: Bình Thường';
+    const incomeEl = document.getElementById('node-income') || document.getElementById('panel-food');
+    if (incomeEl) incomeEl.textContent = data.income || '15.000 Thạch';
+    const garrisonEl = document.getElementById('node-garrison') || document.getElementById('panel-garrison');
+    if (garrisonEl) garrisonEl.textContent = data.garrison || '1.000 Quân';
+    const badgeEl = document.getElementById('panel-city-badge');
+    if (badgeEl && data.type) badgeEl.textContent = data.type.toUpperCase();
 
-    ui.provinceNodes.forEach(n => {
-      n.classList.toggle('active', n.dataset.node === nodeKey);
-    });
+    if (ui.provinceNodes) {
+      ui.provinceNodes.forEach(n => {
+        n.classList.toggle('active', n.dataset.node === nodeKey);
+      });
+    }
   }
 
   function handleSoapCommand() {
@@ -1130,31 +1135,72 @@ document.addEventListener('DOMContentLoaded', () => {
   // 10. TACTICAL CARD BATTLER (TẦNG 3)
   // =========================================================================
   function renderBattlefield() {
-    ui.wallHpText.textContent = `${state.wallHp} / ${state.maxWallHp} HP`;
-    ui.wallHpBar.style.width = `${(state.wallHp / state.maxWallHp) * 100}%`;
+    if (ui.wallHpText) ui.wallHpText.textContent = `${state.wallHp} / ${state.maxWallHp} HP`;
+    if (ui.wallHpBar) ui.wallHpBar.style.width = `${(state.wallHp / state.maxWallHp) * 100}%`;
 
-    ui.bossHpText.textContent = `${state.bossHp} / ${state.maxBossHp} HP`;
-    ui.bossHpBar.style.width = `${(state.bossHp / state.maxBossHp) * 100}%`;
+    if (ui.bossHpText) ui.bossHpText.textContent = `${state.bossHp} / ${state.maxBossHp} HP`;
+    if (ui.bossHpBar) ui.bossHpBar.style.width = `${(state.bossHp / state.maxBossHp) * 100}%`;
 
-    ui.reservoirText.textContent = `Cấp ${state.reservoirStage} (30% Sát Thương)`;
-    ui.bossIntentDesc.textContent = state.bossIntent.desc;
+    const resFill = document.getElementById('reservoir-fill');
+    if (resFill) resFill.style.width = `${(state.reservoirStage / 3) * 100}%`;
+    ['stage-1', 'stage-2', 'stage-3'].forEach((stId, idx) => {
+      const dot = document.getElementById(stId);
+      if (dot) dot.classList.toggle('active', idx + 1 <= state.reservoirStage);
+    });
 
-    // Render Center Lane (Triệu Vân vs Xe Đục Thành)
-    if (state.lanes.center.enemy && state.lanes.center.enemy.alive) {
-      ui.cardEnemyCenter.style.opacity = '1';
-      ui.cardEnemyCenter.querySelector('.sc-hp').textContent = `HP: ${state.lanes.center.enemy.hp}`;
-    } else {
-      ui.cardEnemyCenter.style.opacity = '0.2';
-      ui.cardEnemyCenter.querySelector('.sc-hp').textContent = `HP: 0`;
+    if (ui.bossIntentDesc) ui.bossIntentDesc.textContent = state.bossIntent.desc;
+
+    // Center Lane (Xe Đục Thành vs Triệu Tử Long)
+    if (ui.cardEnemyCenter) {
+      const hpSpan = document.getElementById('hp-enemy-center')?.querySelector('span') || ui.cardEnemyCenter.querySelector('.sc-hp, .stat-pill.hp span');
+      if (state.lanes.center.enemy && state.lanes.center.enemy.alive) {
+        ui.cardEnemyCenter.style.opacity = '1';
+        if (hpSpan) hpSpan.textContent = state.lanes.center.enemy.hp;
+      } else {
+        ui.cardEnemyCenter.style.opacity = '0.25';
+        if (hpSpan) hpSpan.textContent = '0';
+      }
     }
 
-    if (state.lanes.center.player) {
+    // Left Lane Enemy
+    if (ui.cardEnemyLeft) {
+      const hpSpan = document.getElementById('hp-enemy-left')?.querySelector('span') || ui.cardEnemyLeft.querySelector('.sc-hp, .stat-pill.hp span');
+      if (state.lanes.left.enemy && state.lanes.left.enemy.alive) {
+        ui.cardEnemyLeft.style.opacity = '1';
+        if (hpSpan) hpSpan.textContent = state.lanes.left.enemy.hp;
+      } else {
+        ui.cardEnemyLeft.style.opacity = '0.25';
+        if (hpSpan) hpSpan.textContent = '0';
+      }
+    }
+
+    // Right Lane Enemy
+    if (ui.cardEnemyRight) {
+      const hpSpan = document.getElementById('hp-enemy-right')?.querySelector('span') || ui.cardEnemyRight.querySelector('.sc-hp, .stat-pill.hp span');
+      if (state.lanes.right.enemy && state.lanes.right.enemy.alive) {
+        ui.cardEnemyRight.style.opacity = '1';
+        if (hpSpan) hpSpan.textContent = state.lanes.right.enemy.hp;
+      } else {
+        ui.cardEnemyRight.style.opacity = '0.25';
+        if (hpSpan) hpSpan.textContent = '0';
+      }
+    }
+
+    // Player Center Hero Unit (Triệu Tử Long)
+    if (state.lanes.center.player && ui.playerZoneCenter) {
       ui.playerZoneCenter.innerHTML = `
-        <div class="soldier-card player-hero-card" style="border: 2px solid var(--gold-primary); background: rgba(212,175,55,0.15);">
-          <div class="sc-badge">VẠN NHÂN ĐỊCH</div>
-          <div class="sc-name" style="color: var(--gold-primary); font-weight: 800;">Triệu Tử Long</div>
-          <div class="sc-hp" style="color: #4ade80;">HP: ${state.lanes.center.player.hp}</div>
-          <div class="sc-atk" style="color: #f87171;">ATK: ${state.lanes.center.player.atk}</div>
+        <div class="card-unit hero-card" id="card-hero-center">
+          <div class="hero-crest">DANH TƯỚNG</div>
+          <img src="assets/images/actor_to_kien_phong.png" alt="Triệu Vân" class="hero-mini-art">
+          <div class="hero-details">
+            <div class="hero-name">Triệu Tử Long</div>
+            <div class="hero-title">Thường Sơn Triệu Tử Long</div>
+            <div class="hero-skill-passive">Thất Tiến Thất Xuất: Kháng 50% sát thương</div>
+            <div class="unit-bars">
+              <div class="stat-pill atk"><span>ATK: ${state.lanes.center.player.atk}</span></div>
+              <div class="stat-pill hp"><span>HP: ${state.lanes.center.player.hp}</span></div>
+            </div>
+          </div>
         </div>
       `;
     }
@@ -1725,56 +1771,257 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!container) return;
 
     try {
-      const scene = new THREE.Scene();
+      container.innerHTML = '';
       const w = container.clientWidth || 1000;
       const h = container.clientHeight || 650;
 
-      const camera = new THREE.PerspectiveCamera(45, w / h, 0.1, 1000);
-      camera.position.set(0, -180, 220);
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x06080b);
+
+      const camera = new THREE.PerspectiveCamera(45, w / h, 1, 2000);
+      camera.position.set(0, -110, 160);
       camera.lookAt(0, 0, 0);
 
       const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
       renderer.setSize(w, h);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.shadowMap.enabled = true;
       container.appendChild(renderer.domElement);
 
-      const ambientLight = new THREE.AmbientLight(0xffeedd, 0.5);
+      // Warm candle / lantern ambient light
+      const ambientLight = new THREE.AmbientLight(0xffeedd, 0.65);
       scene.add(ambientLight);
 
-      // Flickering campaign tent lantern
-      const lanternLight = new THREE.PointLight(0xf59e0b, 2.5, 600);
-      lanternLight.position.set(40, -40, 110);
+      // Flickering campaign tent lantern (Point light casting light on the war table)
+      const lanternLight = new THREE.PointLight(0xf59e0b, 2.8, 600);
+      lanternLight.position.set(40, -40, 100);
       scene.add(lanternLight);
 
-      // Relief Grid Geometry for Sand-Table Mountains
-      const planeGeo = new THREE.PlaneGeometry(360, 230, 20, 14);
-      const pos = planeGeo.attributes.position;
-      for (let i = 0; i < pos.count; i++) {
-        const x = pos.getX(i);
-        const y = pos.getY(i);
-        if (y > 20) {
-          const mountain = Math.sin(x * 0.06) * Math.cos(y * 0.06) * 16;
-          pos.setZ(i, mountain);
+      // Secondary cool moonlight rim light
+      const moonRimLight = new THREE.DirectionalLight(0x60a5fa, 0.45);
+      moonRimLight.position.set(-80, 80, 120);
+      scene.add(moonRimLight);
+
+      // 1. Dark Rosewood War Council Table Base
+      const tableBaseGeo = new THREE.BoxGeometry(320, 210, 8);
+      const tableBaseMat = new THREE.MeshStandardMaterial({
+        color: 0x18110b,
+        roughness: 0.7,
+        metalness: 0.2
+      });
+      const tableBase = new THREE.Mesh(tableBaseGeo, tableBaseMat);
+      tableBase.position.set(0, 0, -5);
+      scene.add(tableBase);
+
+      // Brass Corner Brackets on the table
+      const cornerGeo = new THREE.BoxGeometry(16, 16, 10);
+      const cornerMat = new THREE.MeshStandardMaterial({
+        color: 0xd4af37,
+        roughness: 0.35,
+        metalness: 0.8
+      });
+      [[-155, -100], [155, -100], [-155, 100], [155, 100]].forEach(([cx, cy]) => {
+        const cornerMesh = new THREE.Mesh(cornerGeo, cornerMat);
+        cornerMesh.position.set(cx, cy, -4);
+        scene.add(cornerMesh);
+      });
+
+      // 2. The Antique Silk War Map (Direct Texture)
+      const mapTexture = new THREE.TextureLoader().load('assets/images/bg_saban_table.jpg');
+      mapTexture.generateMipmaps = true;
+      mapTexture.minFilter = THREE.LinearMipmapLinearFilter;
+
+      const mapGeo = new THREE.PlaneGeometry(290, 185, 32, 20);
+      const mapMat = new THREE.MeshStandardMaterial({
+        map: mapTexture,
+        roughness: 0.85,
+        metalness: 0.1
+      });
+      const mapMesh = new THREE.Mesh(mapGeo, mapMat);
+      mapMesh.position.set(0, 0, 0);
+      scene.add(mapMesh);
+
+      // Helper function to create text canvas texture for flags
+      function createFlagTexture(text, bgColor = '#78350f', textColor = '#fbbf24') {
+        const canvas = document.createElement('canvas');
+        canvas.width = 128;
+        canvas.height = 64;
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = bgColor;
+        ctx.fillRect(0, 0, 128, 64);
+        ctx.strokeStyle = textColor;
+        ctx.lineWidth = 4;
+        ctx.strokeRect(3, 3, 122, 58);
+        ctx.fillStyle = textColor;
+        ctx.font = 'bold 30px "Cinzel", "Songti SC", "SimSun", serif';
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        ctx.fillText(text, 64, 34);
+        return new THREE.CanvasTexture(canvas);
+      }
+
+      // 3. Exact 3D War Tokens Anchored at Geographic Coordinates
+      const tokenConfigs = [
+        { key: 'dedo', name: 'Đại Vũ Kinh Đô', x: -80, y: -45, char: '大武', bg: '#991b1b', textCol: '#fbbf24', baseCol: 0xd4af37, isCapital: true },
+        { key: 'khainguyen', name: 'Khai Nguyên', x: -25, y: -18, char: '粮', bg: '#1e3a8a', textCol: '#93c5fd', baseCol: 0x64748b },
+        { key: 'thanhchau', name: 'Thành Thanh Châu', x: 40, y: 15, char: '青州', bg: '#065f46', textCol: '#6ee7b7', baseCol: 0x059669, isSiege: true },
+        { key: 'baccoson', name: 'Bắc Cô Sơn', x: 15, y: 60, char: '关', bg: '#451a03', textCol: '#fcd34d', baseCol: 0x78350f },
+        { key: 'lieuchau', name: 'Liễu Châu', x: 80, y: 52, char: '北', bg: '#1e293b', textCol: '#e2e8f0', baseCol: 0x475569 },
+        { key: 'namly', name: 'Nam Ly Doanh', x: 105, y: -40, char: '南', bg: '#7f1d1d', textCol: '#fca5a5', baseCol: 0xb91c1c, isEnemy: true }
+      ];
+
+      const tokenObjects = [];
+
+      tokenConfigs.forEach(cfg => {
+        const group = new THREE.Group();
+        group.position.set(cfg.x, cfg.y, 0);
+        group.userData = cfg;
+
+        // Base Cylinder
+        const baseRadius = cfg.isCapital ? 8 : (cfg.isSiege ? 7 : 5.5);
+        const baseGeo = new THREE.CylinderGeometry(baseRadius * 0.9, baseRadius, 3.5, 24);
+        const baseMat = new THREE.MeshStandardMaterial({
+          color: cfg.baseCol,
+          roughness: 0.4,
+          metalness: 0.6
+        });
+        const baseMesh = new THREE.Mesh(baseGeo, baseMat);
+        baseMesh.rotation.x = Math.PI / 2;
+        baseMesh.position.z = 1.75;
+        group.add(baseMesh);
+
+        // Flagstaff Pole
+        const staffGeo = new THREE.CylinderGeometry(0.5, 0.5, 20, 8);
+        const staffMat = new THREE.MeshStandardMaterial({ color: 0xd4af37, metalness: 0.8, roughness: 0.3 });
+        const staffMesh = new THREE.Mesh(staffGeo, staffMat);
+        staffMesh.rotation.x = Math.PI / 2;
+        staffMesh.position.set(0, 0, 11);
+        group.add(staffMesh);
+
+        // Spearhead tip
+        const tipGeo = new THREE.ConeGeometry(1.2, 3.5, 8);
+        const tipMesh = new THREE.Mesh(tipGeo, staffMat);
+        tipMesh.rotation.x = -Math.PI / 2;
+        tipMesh.position.set(0, 0, 22.5);
+        group.add(tipMesh);
+
+        // Silk Pennant Flag
+        const flagTex = createFlagTexture(cfg.char, cfg.bg, cfg.textCol);
+        const flagGeo = new THREE.PlaneGeometry(14, 7);
+        const flagMat = new THREE.MeshBasicMaterial({ map: flagTex, side: THREE.DoubleSide });
+        const flagMesh = new THREE.Mesh(flagGeo, flagMat);
+        flagMesh.position.set(7, 0, 16);
+        flagMesh.rotation.x = Math.PI / 2;
+        group.add(flagMesh);
+
+        // Ground Beacon Ring
+        const ringGeo = new THREE.RingGeometry(baseRadius + 1.5, baseRadius + 3.2, 32);
+        const ringMat = new THREE.MeshBasicMaterial({
+          color: cfg.isSiege || cfg.isEnemy ? 0xef4444 : 0xfbbf24,
+          side: THREE.DoubleSide,
+          transparent: true,
+          opacity: 0.65
+        });
+        const ringMesh = new THREE.Mesh(ringGeo, ringMat);
+        ringMesh.position.z = 0.2;
+        group.add(ringMesh);
+        group.userData.ringMesh = ringMesh;
+
+        scene.add(group);
+        tokenObjects.push(group);
+      });
+
+      // Raycaster & Mouse Interaction
+      const raycaster = new THREE.Raycaster();
+      const mouse = new THREE.Vector2();
+      let hoveredToken = null;
+      let targetCameraPos = new THREE.Vector3(0, -110, 160);
+      let targetLookAt = new THREE.Vector3(0, 0, 0);
+      let currentLookAt = new THREE.Vector3(0, 0, 0);
+
+      function onMouseMove(event) {
+        const rect = container.getBoundingClientRect();
+        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(tokenObjects, true);
+
+        if (intersects.length > 0) {
+          let root = intersects[0].object;
+          while (root.parent && root.parent !== scene) root = root.parent;
+          if (root.userData && root.userData.key) {
+            if (hoveredToken !== root) {
+              if (hoveredToken) hoveredToken.position.z = 0;
+              hoveredToken = root;
+              container.style.cursor = 'pointer';
+            }
+          }
+        } else {
+          if (hoveredToken) {
+            hoveredToken.position.z = 0;
+            hoveredToken = null;
+            container.style.cursor = 'default';
+          }
         }
       }
-      planeGeo.computeVertexNormals();
 
-      const planeMat = new THREE.MeshLambertMaterial({
-        color: 0x1e293b,
-        wireframe: true,
-        transparent: true,
-        opacity: 0.22
-      });
-      const tableMesh = new THREE.Mesh(planeGeo, planeMat);
-      scene.add(tableMesh);
+      function onClick(event) {
+        const rect = container.getBoundingClientRect();
+        mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+        mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(tokenObjects, true);
+
+        if (intersects.length > 0) {
+          let root = intersects[0].object;
+          while (root.parent && root.parent !== scene) root = root.parent;
+          if (root.userData && root.userData.key) {
+            select3DToken(root.userData.key);
+          }
+        }
+      }
+
+      function select3DToken(key) {
+        const tok = tokenObjects.find(t => t.userData.key === key);
+        if (!tok) return;
+
+        targetCameraPos.set(tok.userData.x * 0.45, tok.userData.y * 0.45 - 90, 140);
+        targetLookAt.set(tok.userData.x, tok.userData.y, 0);
+
+        renderMapNodeDetails(key);
+        triggerLightning();
+        showToast(`📍 Chuyển tầm mắt Sa Bàn tới: ${tok.userData.name}`);
+      }
+
+      container.addEventListener('mousemove', onMouseMove);
+      container.addEventListener('click', onClick);
+
+      window.selectProvinceIn3D = select3DToken;
 
       let time = 0;
       function renderLoop() {
         requestAnimationFrame(renderLoop);
-        time += 0.015;
-        lanternLight.intensity = 2.2 + Math.sin(time * 3.5) * 0.35;
-        camera.position.x = Math.sin(time * 0.5) * 8;
-        camera.lookAt(0, 0, 0);
+        time += 0.02;
+
+        lanternLight.intensity = 2.6 + Math.sin(time * 4) * 0.35 + Math.cos(time * 7) * 0.15;
+
+        tokenObjects.forEach((tok, idx) => {
+          if (tok.userData.ringMesh) {
+            const scale = 1 + Math.sin(time * 2.5 + idx) * 0.12;
+            tok.userData.ringMesh.scale.set(scale, scale, 1);
+          }
+        });
+
+        if (hoveredToken) {
+          hoveredToken.position.z = Math.min(hoveredToken.position.z + 0.3, 4);
+        }
+
+        camera.position.lerp(targetCameraPos, 0.05);
+        currentLookAt.lerp(targetLookAt, 0.05);
+        camera.lookAt(currentLookAt);
+
         renderer.render(scene, camera);
       }
       renderLoop();
@@ -1788,7 +2035,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       window.threeScene = scene;
-      console.log("⚡ [Three.js] 3D tactical relief war sand-table active");
+      console.log("⚡ [Three.js] 3D tactical relief war sand-table active with real texture and 3D tokens");
     } catch (err) {
       console.warn("Three.js init error:", err);
     }
@@ -1796,7 +2043,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * 3. Phaser 3 Combat Event & Particle Engine (Tier 3 Cards)
-   * Impact sparks, ink slashing, and water wave shockwaves
    */
   function initPhaserEngine() {
     if (typeof Phaser === 'undefined') {
@@ -1808,6 +2054,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       let battleSceneRef = null;
+      container.innerHTML = '';
 
       const config = {
         type: Phaser.AUTO,
@@ -1818,6 +2065,64 @@ document.addEventListener('DOMContentLoaded', () => {
         scene: {
           create: function() {
             battleSceneRef = this;
+            const w = this.scale.width;
+            const h = this.scale.height;
+
+            // Ambient storm rain particles
+            this.rainGraphics = this.add.graphics();
+            this.rainDrops = [];
+            for (let i = 0; i < 60; i++) {
+              this.rainDrops.push({
+                x: Phaser.Math.Between(0, w),
+                y: Phaser.Math.Between(0, h),
+                speed: Phaser.Math.Between(15, 25),
+                len: Phaser.Math.Between(10, 20)
+              });
+            }
+
+            // 3 Tactical Lane Ground Sectors (Drawn in 2.5D perspective)
+            this.laneGraphics = this.add.graphics();
+            this.drawBattlefieldLanes();
+          },
+          update: function() {
+            if (!this.rainGraphics) return;
+            const w = this.scale.width;
+            const h = this.scale.height;
+            this.rainGraphics.clear();
+            this.rainGraphics.lineStyle(1.5, 0x93c5fd, 0.35);
+
+            for (let i = 0; i < this.rainDrops.length; i++) {
+              const r = this.rainDrops[i];
+              this.rainGraphics.beginPath();
+              this.rainGraphics.moveTo(r.x, r.y);
+              this.rainGraphics.lineTo(r.x - 3, r.y + r.len);
+              this.rainGraphics.strokePath();
+
+              r.x -= 1.5;
+              r.y += r.speed;
+              if (r.y > h) {
+                r.y = 0;
+                r.x = Phaser.Math.Between(0, w);
+              }
+            }
+          },
+          drawBattlefieldLanes: function() {
+            const w = this.scale.width;
+            const h = this.scale.height;
+            const g = this.laneGraphics;
+            g.clear();
+
+            // Lane 1: Tả Dực (Left Flank) Ground Beacon
+            g.lineStyle(2, 0x0284c7, 0.4);
+            g.strokeEllipse(w * 0.22, h * 0.52, 140, 60);
+
+            // Lane 2: Trung Lộ (Center Gate) Ground Beacon
+            g.lineStyle(2, 0xfbbf24, 0.5);
+            g.strokeEllipse(w * 0.50, h * 0.54, 180, 75);
+
+            // Lane 3: Hữu Dực (Right Flank) Ground Beacon
+            g.lineStyle(2, 0xf59e0b, 0.4);
+            g.strokeEllipse(w * 0.78, h * 0.52, 140, 60);
           }
         }
       };
@@ -1828,17 +2133,29 @@ document.addEventListener('DOMContentLoaded', () => {
         slash: function(x = 500, y = 300) {
           if (!battleSceneRef) return;
           const g = battleSceneRef.add.graphics();
-          g.lineStyle(4, 0xfbbf24, 1);
+          g.lineStyle(5, 0xfbbf24, 1);
           g.beginPath();
-          g.moveTo(x - 90, y - 60);
-          g.lineTo(x + 90, y + 60);
+          g.moveTo(x - 100, y - 70);
+          g.lineTo(x + 100, y + 70);
           g.strokePath();
+
+          for (let i = 0; i < 12; i++) {
+            const spark = battleSceneRef.add.circle(x, y, Phaser.Math.Between(2, 4), 0xfffbeb, 1);
+            battleSceneRef.tweens.add({
+              targets: spark,
+              x: x + Phaser.Math.Between(-80, 80),
+              y: y + Phaser.Math.Between(-80, 80),
+              alpha: 0,
+              duration: 300,
+              onComplete: () => spark.destroy()
+            });
+          }
 
           battleSceneRef.tweens.add({
             targets: g,
             alpha: 0,
-            scaleX: 1.5,
-            scaleY: 1.5,
+            scaleX: 1.6,
+            scaleY: 1.6,
             duration: 350,
             onComplete: () => g.destroy()
           });
@@ -1847,19 +2164,67 @@ document.addEventListener('DOMContentLoaded', () => {
           if (!battleSceneRef) return;
           const w = battleSceneRef.scale.width;
           const h = battleSceneRef.scale.height;
-          const wave = battleSceneRef.add.rectangle(w / 2, h / 2, w, h, 0x0284c7, 0.45);
 
+          const wave = battleSceneRef.add.rectangle(w / 2, h / 2, w, h, 0x0284c7, 0.55);
           battleSceneRef.tweens.add({
             targets: wave,
             alpha: 0,
-            duration: 800,
+            duration: 900,
             onComplete: () => wave.destroy()
+          });
+
+          for (let i = 0; i < 40; i++) {
+            const drop = battleSceneRef.add.circle(
+              Phaser.Math.Between(50, w - 50),
+              Phaser.Math.Between(h * 0.3, h * 0.8),
+              Phaser.Math.Between(4, 10),
+              0x38bdf8,
+              0.8
+            );
+            battleSceneRef.tweens.add({
+              targets: drop,
+              y: drop.y + Phaser.Math.Between(-100, 100),
+              alpha: 0,
+              scale: 1.8,
+              duration: 800,
+              onComplete: () => drop.destroy()
+            });
+          }
+        },
+        arrowVolley: function(startX, startY, targetX, targetY) {
+          if (!battleSceneRef) return;
+          for (let i = 0; i < 5; i++) {
+            const arrow = battleSceneRef.add.rectangle(
+              startX + Phaser.Math.Between(-20, 20),
+              startY + Phaser.Math.Between(-15, 15),
+              20, 3,
+              0xfbbf24
+            );
+            battleSceneRef.tweens.add({
+              targets: arrow,
+              x: targetX + Phaser.Math.Between(-30, 30),
+              y: targetY + Phaser.Math.Between(-30, 30),
+              duration: 400 + i * 60,
+              ease: 'Quad.easeOut',
+              onComplete: () => arrow.destroy()
+            });
+          }
+        },
+        cavalryCharge: function(laneX, laneY) {
+          if (!battleSceneRef) return;
+          const shock = battleSceneRef.add.circle(laneX, laneY, 15, 0xf59e0b, 0.8);
+          battleSceneRef.tweens.add({
+            targets: shock,
+            radius: 80,
+            alpha: 0,
+            duration: 500,
+            onComplete: () => shock.destroy()
           });
         }
       };
 
       window.phaserGame = phaserGame;
-      console.log("⚡ [Phaser 3] Tactical card battler combat engine active");
+      console.log("⚡ [Phaser 3] Full tactical card battler battlefield engine active");
     } catch (err) {
       console.warn("Phaser 3 init error:", err);
     }
@@ -1869,6 +2234,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.resetGame = resetGame;
   window.state = state;
   window.ink = ink;
+  window.switchView = switchView;
 
   // =========================================================================
   // 14. INITIAL BOOT

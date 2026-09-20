@@ -76,288 +76,112 @@ body {
 }
 
 /* ==========================================================================
-   TOP IMPERIAL HUD
+   DIEGETIC GAME HUD FRAME (KHUNG GIAO DIỆN HOÀNG TRIỀU)
    ========================================================================== */
-.imperial-hud {
-  height: 64px;
-  background: linear-gradient(180deg, #181d26 0%, #0d1117 100%);
-  border-bottom: 2px solid #2d2319;
-  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 16px;
-  gap: 10px;
+.game-hud-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  pointer-events: none;
   z-index: 100;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.hud-brand {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-.seal-badge {
-  width: 36px;
-  height: 36px;
-  background: var(--red-imperial);
-  color: var(--gold-primary);
-  border: 1.5px solid var(--gold-primary);
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-title);
-  font-size: 20px;
-  font-weight: 900;
-  box-shadow: 0 0 12px rgba(185, 28, 28, 0.6);
-  flex-shrink: 0;
-}
-
-.brand-titles {
-  display: flex;
-  flex-direction: column;
-}
-
-.game-title {
-  font-family: var(--font-title);
-  font-size: 14px;
-  font-weight: 900;
-  letter-spacing: 1.2px;
-  color: var(--gold-primary);
-  text-shadow: 0 0 12px rgba(251, 191, 36, 0.3);
-  white-space: nowrap;
-}
-
-.campaign-status {
-  font-size: 10px;
-  color: var(--text-muted);
-  white-space: nowrap;
-}
-
-.campaign-era {
-  color: var(--gold-molten);
-  font-weight: 700;
-}
-
-.campaign-act {
-  color: var(--silver-steel);
-  font-weight: 600;
-}
-
-/* Navigation Tabs */
-.hud-nav {
-  display: flex;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.45);
-  padding: 3px;
-  border-radius: var(--radius-md);
-  border: 1px solid var(--border-subtle);
-  gap: 4px;
-  flex-shrink: 0;
-}
-
-.nav-btn {
-  background: transparent;
-  border: 1px solid transparent;
-  color: var(--text-muted);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-text);
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  position: relative;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  white-space: nowrap;
-}
-
-.nav-btn:hover {
-  color: #fff;
-  background: rgba(255, 255, 255, 0.05);
-}
-
-.nav-btn.active {
-  background: linear-gradient(180deg, #2b231a 0%, #1a150f 100%);
-  color: var(--gold-primary);
-  border: 1px solid var(--border-kintsugi);
-  box-shadow: 0 0 12px var(--gold-glow);
-}
-
-.nav-icon {
-  width: 15px;
-  height: 15px;
-}
-
-.badge-alert {
-  background: var(--red-cinnabar);
-  color: #fff;
-  font-size: 9px;
-  font-weight: 800;
-  padding: 1px 6px;
-  border-radius: 10px;
-  animation: pulseAlert 1.2s infinite alternate;
-}
-
-.badge-live {
-  background: var(--gold-deep);
-  color: #fff;
-  font-size: 9px;
-  font-weight: 800;
-  padding: 1px 6px;
-  border-radius: 10px;
-}
-
-@keyframes pulseAlert {
-  0% { transform: scale(1); opacity: 0.8; }
-  100% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 8px #dc2626; }
-}
-
-/* Quick Reset Button (Trùng Khởi Phù) */
-.btn-reset-game {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  background: linear-gradient(180deg, #2b1f13 0%, #15110d 100%);
-  border: 1.5px solid rgba(212, 175, 55, 0.4);
-  color: var(--gold-primary);
-  padding: 6px 12px;
-  border-radius: var(--radius-sm);
-  font-family: var(--font-title);
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-.btn-reset-game:hover {
-  border-color: var(--gold-primary);
-  background: linear-gradient(180deg, #991b1b 0%, #5b1111 100%);
-  color: #fff;
-  box-shadow: 0 0 15px rgba(220, 38, 38, 0.6);
-  transform: translateY(-1px);
-}
-
-/* Chapter Milestone Progression Tracker in HUD */
-.hud-chapter-tracker {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(212, 175, 55, 0.25);
-  border-radius: var(--radius-sm);
-  padding: 5px 12px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.hud-chapter-tracker:hover {
-  border-color: var(--gold-primary);
-  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
-  background: rgba(245, 158, 11, 0.05);
-}
-
-.tracker-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.ch-badge {
-  font-family: var(--font-title);
-  font-size: 11px;
-  font-weight: 900;
-  color: var(--gold-primary);
-  background: rgba(245, 158, 11, 0.15);
-  padding: 1px 6px;
-  border-radius: 2px;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-}
-
-.ch-title {
-  font-size: 12px;
-  font-weight: 700;
-  color: #fff;
-}
-
-.ch-subtrack {
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 8px;
-}
-
-.ch-matrix-hint {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-size: 10px;
-  color: var(--text-dim);
-}
-
-.ch-progress-mini {
-  width: 70px;
-  height: 4px;
-  background: #000;
-  border-radius: 2px;
-  overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.ch-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #b45309, #fbbf24);
-  transition: width 0.4s ease;
-}
-
-/* Suspicion Meter & Resources HUD */
-.hud-monitors {
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
+  padding: 14px 20px;
   gap: 16px;
 }
 
-.suspicion-wrapper {
-  width: 175px;
+/* TOP-LEFT: NGỌC BỘI HOÀNG TRIỀU */
+.hud-corner-crest {
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(24, 18, 13, 0.92) 0%, rgba(12, 9, 6, 0.96) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
   border-radius: var(--radius-sm);
-  padding: 5px 10px;
+  padding: 6px 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(212, 175, 55, 0.08);
+  pointer-events: auto;
+  backdrop-filter: blur(8px);
 }
 
-/* Cửu Đỉnh Long Lô Censer */
+.dynasty-seal-plate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 1px solid rgba(212, 175, 55, 0.25);
+  padding-right: 10px;
+}
+
+.dynasty-seal-icon {
+  width: 30px;
+  height: 30px;
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 0 10px rgba(185, 28, 28, 0.7);
+}
+
+.dynasty-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.dynasty-era {
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--gold-primary);
+}
+
+.dynasty-role {
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+
+/* Suspicion Diegetic (Cửu Đỉnh Long Lô) */
+.suspicion-diegetic {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-right: 1px solid rgba(212, 175, 55, 0.25);
+  padding-right: 10px;
+  width: 145px;
+}
+
 .suspicion-censer-icon {
-  width: 28px;
-  height: 28px;
+  width: 24px;
+  height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--gold-primary);
   position: relative;
-  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.4));
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.5));
   transition: all 0.3s ease;
 }
 
 .suspicion-censer-icon.censer-stage-white {
   color: #e2e8f0;
-  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
 }
+
 .suspicion-censer-icon.censer-stage-gold {
   color: #fbbf24;
   filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.7));
   animation: censerPulse 2s infinite ease-in-out;
 }
+
 .suspicion-censer-icon.censer-stage-red {
   color: #ef4444;
   filter: drop-shadow(0 0 14px rgba(239, 68, 68, 0.9));
@@ -379,7 +203,7 @@ body {
 .suspicion-info {
   display: flex;
   justify-content: space-between;
-  font-size: 10px;
+  font-size: 9px;
 }
 
 .suspicion-title {
@@ -394,9 +218,9 @@ body {
 }
 
 .suspicion-track {
-  height: 6px;
+  height: 4px;
   background: #000;
-  border-radius: 3px;
+  border-radius: 2px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   position: relative;
   overflow: hidden;
@@ -408,60 +232,202 @@ body {
   transition: width 0.4s ease;
 }
 
-.suspicion-marker {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background: #fff;
-  z-index: 5;
-}
-
 .suspicion-desc {
-  font-size: 9px;
+  font-size: 8px;
   color: var(--text-dim);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.res-card {
+/* Treasury Ribbon (Vàng, Lương, Lệnh) */
+.hud-treasury-ribbon {
   display: flex;
   align-items: center;
-  gap: 8px;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: var(--radius-sm);
-  padding: 5px 10px;
+  gap: 12px;
 }
 
-.res-symbol {
-  width: 24px;
-  height: 24px;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.06);
+.treasury-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 4px;
   color: var(--gold-primary);
+  font-size: 11px;
+  font-weight: 700;
 }
 
-.res-symbol svg {
-  stroke: currentColor;
-}
-
-.res-meta {
-  display: flex;
-  flex-direction: column;
-}
-
-.res-val {
-  font-weight: 800;
-  font-size: 13px;
+.treasury-item .t-val {
+  font-family: var(--font-title);
+  font-weight: 900;
   color: #fff;
 }
 
-.res-lbl {
+.treasury-item .t-lbl {
+  font-size: 9px;
+  color: var(--text-dim);
+}
+
+/* TOP-CENTER: TRƯỚNG KỲ CHƯƠNG TIẾT */
+.hud-center-banner {
+  background: linear-gradient(180deg, #22180f 0%, #100b07 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 6px 20px 8px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), 0 0 15px rgba(212, 175, 55, 0.15);
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: all 0.25s ease;
+}
+
+.hud-center-banner:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.95), 0 0 22px rgba(251, 191, 36, 0.35);
+  transform: translateY(2px);
+}
+
+.banner-chapter {
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+}
+
+.banner-title {
+  font-family: var(--font-title);
+  font-size: 12px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.banner-progress-cord {
+  width: 90px;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  border: 0.5px solid rgba(212, 175, 55, 0.3);
+  margin-top: 3px;
+  overflow: hidden;
+}
+
+.cord-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #b45309, #fbbf24);
+  transition: width 0.4s ease;
+}
+
+/* TOP-RIGHT: ẤN GIÁM HỆ THỐNG & KỲ MÔN BÀN XOAY */
+.hud-corner-system {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.seal-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #261e16 0%, #110d09 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.seal-btn:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 16px rgba(251, 191, 36, 0.4);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.seal-char {
+  font-family: var(--font-title);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.seal-sub {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin-top: 1px;
+}
+
+.seal-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background: var(--red-cinnabar);
+  color: #fff;
+  font-size: 9px;
+  font-weight: 900;
+  border-radius: 8px;
+  padding: 1px 5px;
+  box-shadow: 0 0 6px #dc2626;
+}
+
+.seal-reset {
+  border-color: rgba(220, 38, 38, 0.5);
+  background: linear-gradient(135deg, #3b1111 0%, #180606 100%);
+}
+
+.seal-reset:hover {
+  border-color: #ef4444;
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.5);
+}
+
+.seal-reset .seal-char {
+  font-size: 10px;
+  color: #fca5a5;
+}
+
+/* Kỳ Môn Sa Bàn Astrolabe */
+.realm-astrolabe {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background: linear-gradient(135deg, rgba(30, 23, 16, 0.95) 0%, rgba(14, 10, 7, 0.98) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: 28px;
+  padding: 3px 5px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.85), inset 0 0 10px rgba(212, 175, 55, 0.1);
+}
+
+.astrolabe-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.astrolabe-btn:hover:not(:disabled) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
   font-size: 10px;
   color: var(--text-muted);
 }
@@ -618,9 +584,7 @@ body {
   width: auto;
   max-width: 440px;
   object-fit: contain;
-  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.92));
-  mask-image: linear-gradient(180deg, black 85%, transparent 100%);
-  -webkit-mask-image: linear-gradient(180deg, black 85%, transparent 100%);
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5));
   user-select: none;
   pointer-events: none;
 }
@@ -636,21 +600,9 @@ body {
   z-index: -1;
 }
 
-/* Nametag: Imperial Cinnabar Seal Plate */
+/* Nametag: Imperial Cinnabar Seal Plate (Handled cleanly in dialogue box) */
 .actor-nametag {
-  margin-top: -14px;
-  background: linear-gradient(180deg, #991b1b 0%, #450a0a 100%);
-  border: 1.5px solid var(--gold-primary);
-  color: #fff;
-  font-family: var(--font-title);
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 1.5px;
-  padding: 4px 18px;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.8), 0 0 10px rgba(220, 38, 38, 0.4);
-  z-index: 10;
-  text-transform: uppercase;
+  display: none;
 }
 
 /* ==========================================================================
@@ -763,22 +715,26 @@ body {
 .vn-ctrl-btn {
   display: flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(0, 0, 0, 0.45);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  color: var(--text-muted);
-  padding: 5px 12px;
-  border-radius: var(--radius-sm);
+  gap: 5px;
+  background: transparent;
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  color: var(--gold-molten);
+  padding: 4px 10px;
+  border-radius: 2px;
   font-size: 11px;
-  font-weight: 600;
+  font-family: var(--font-title);
+  font-weight: 700;
+  letter-spacing: 0.5px;
   cursor: pointer;
   transition: all 0.2s ease;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
 }
 
 .vn-ctrl-btn:hover {
-  background: rgba(245, 158, 11, 0.15);
+  background: rgba(245, 158, 11, 0.18);
   border-color: var(--gold-primary);
   color: #fff;
+  box-shadow: 0 0 10px rgba(251, 191, 36, 0.35);
   transform: translateY(-1px);
 }
 
@@ -1017,471 +973,307 @@ body {
    TẦNG 2: ĐẾ NGHIỆP SA BÀN (GEOGRAPHIC PROVINCE MAP)
    ========================================================================== */
 .view-map {
-  background: #090b0e;
-}
-
-.strategy-console {
-  display: flex;
+  background: #06080b;
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.map-viewport-wrapper {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  position: relative;
   overflow: hidden;
-  border-right: 2px solid #202632;
 }
 
-.territory-header {
-  padding: 14px 24px;
-  background: rgba(13, 17, 23, 0.95);
-  border-bottom: 1px solid var(--border-subtle);
+.saban-threejs-container {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Top Diegetic War Table Banner */
+.saban-top-banner {
+  position: absolute;
+  top: 86px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  gap: 16px;
+  background: linear-gradient(180deg, rgba(28, 20, 14, 0.95) 0%, rgba(14, 10, 7, 0.98) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: var(--radius-sm);
+  padding: 8px 24px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9), 0 0 15px rgba(212, 175, 55, 0.15);
+  z-index: 15;
+  pointer-events: auto;
 }
 
-.header-left {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.scroll-emblem {
-  width: 36px;
-  height: 36px;
-  background: #271f16;
-  border: 1px solid var(--border-kintsugi);
+.saban-banner-crest {
+  width: 32px;
+  height: 32px;
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-title);
-  font-size: 18px;
-  color: var(--gold-primary);
-}
-
-.territory-title {
-  font-family: var(--font-title);
-  font-size: 15px;
-  color: var(--gold-primary);
-  letter-spacing: 1px;
-}
-
-.territory-subtitle {
-  font-size: 11px;
-  color: var(--text-muted);
-}
-
-/* Invasion Threat Countdown Box */
-.invasion-warning-box {
-  background: rgba(220, 38, 38, 0.15);
-  border: 1px solid rgba(220, 38, 38, 0.5);
-  border-radius: var(--radius-md);
-  padding: 6px 16px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.threat-pulse {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--red-cinnabar);
-  box-shadow: 0 0 10px #ef4444;
-  animation: threatPulse 1s infinite alternate;
-}
-
-@keyframes threatPulse {
-  to { transform: scale(1.4); opacity: 0.6; }
-}
-
-.threat-meta {
-  display: flex;
-  flex-direction: column;
-}
-
-.threat-title {
-  font-size: 11px;
-  font-weight: 800;
-  color: #f87171;
-}
-
-.threat-detail {
-  font-size: 11px;
-  color: #fff;
-}
-
-.btn-intercept {
-  background: var(--red-imperial);
-  border: 1px solid #f87171;
-  color: #fff;
-  padding: 4px 12px;
-  border-radius: var(--radius-sm);
-  font-size: 11px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.btn-intercept:hover {
-  background: var(--red-cinnabar);
-  box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
-}
-
-/* Geographic Canvas Map */
-.geographic-map {
-  flex: 1;
-  position: relative;
-  background: radial-gradient(circle at 60% 40%, #161e2b 0%, #080b0f 85%);
-  overflow: hidden;
-}
-
-/* Territory Zones Colored Polygons */
-.zone {
-  position: absolute;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  pointer-events: none;
-}
-
-.zone-watermark {
-  font-family: var(--font-title);
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 900;
-  letter-spacing: 4px;
-  opacity: 0.08;
-  transform: rotate(-10deg);
+  box-shadow: 0 0 10px rgba(185, 28, 28, 0.6);
 }
 
-.zone-daivu {
-  left: 5%; bottom: 5%; width: 45%; height: 45%;
-  background: radial-gradient(circle, rgba(245, 158, 11, 0.08) 0%, transparent 70%);
-  border: 1px dashed rgba(245, 158, 11, 0.15);
+.saban-banner-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.zone-baccanh {
-  left: 30%; top: 10%; width: 55%; height: 60%;
-  background: radial-gradient(circle, rgba(6, 182, 212, 0.08) 0%, transparent 70%);
-  border: 1px dashed rgba(6, 182, 212, 0.2);
-}
-
-.zone-namly {
-  right: 2%; bottom: 10%; width: 35%; height: 50%;
-  background: radial-gradient(circle, rgba(220, 38, 38, 0.12) 0%, transparent 70%);
-  border: 1px dashed rgba(220, 38, 38, 0.25);
-}
-
-.zone-taylang {
-  left: 2%; top: 5%; width: 30%; height: 40%;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.06) 0%, transparent 70%);
-  border: 1px dashed rgba(59, 130, 246, 0.15);
-}
-
-/* Geo SVG */
-.geo-svg {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.river {
-  fill: none;
-  stroke: #1e3a8a;
-  stroke-width: 8;
-  stroke-linecap: round;
-  filter: drop-shadow(0 0 6px rgba(59, 130, 246, 0.5));
-}
-
-.river-thanhthuy { stroke-width: 6; stroke: #0284c7; }
-
-.river-name, .mountain-name {
+.saban-banner-title {
   font-family: var(--font-title);
-  font-size: 11px;
-  fill: rgba(255, 255, 255, 0.25);
-  letter-spacing: 1px;
-}
-
-.mountain-chain {
-  fill: none;
-  stroke: #334155;
-  stroke-width: 4;
-  stroke-dasharray: 8 4;
-}
-
-.route-line {
-  stroke: rgba(245, 158, 11, 0.35);
-  stroke-width: 3;
-  stroke-dasharray: 6 6;
-  animation: lineFlow 15s linear infinite;
-}
-
-.active-route { stroke: #fbbf24; stroke-width: 4; }
-.danger-route { stroke: #ef4444; }
-
-@keyframes lineFlow {
-  to { stroke-dashoffset: -100; }
-}
-
-.invasion-arrow {
-  fill: none;
-  stroke: #ef4444;
-  stroke-width: 6;
-  stroke-dasharray: 8 6;
-  animation: lineFlow 4s linear infinite;
-  filter: drop-shadow(0 0 8px #dc2626);
-}
-
-/* Strategic Fortress Province Nodes */
-.province-node {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  cursor: pointer;
-  z-index: 10;
-  transition: transform 0.2s ease;
-}
-
-.province-node:hover {
-  transform: translate(-50%, -50%) scale(1.1);
-  z-index: 25;
-}
-
-.castle-icon {
-  font-size: 32px;
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.9));
-}
-
-.siege-pulse {
-  animation: siegePulse 1.2s infinite alternate;
-}
-
-@keyframes siegePulse {
-  to { transform: scale(1.25); filter: drop-shadow(0 0 15px #dc2626); }
-}
-
-.node-plate {
-  margin-top: 6px;
-  background: rgba(13, 17, 23, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: var(--radius-sm);
-  padding: 4px 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
-}
-
-.province-node.active-node .node-plate {
-  border-color: var(--gold-primary);
-  background: #201a14;
-  box-shadow: 0 0 15px var(--gold-glow);
-}
-
-.siege-plate {
-  border-color: var(--red-cinnabar) !important;
-}
-
-.city-name {
-  font-family: var(--font-title);
-  font-weight: 800;
-  font-size: 12px;
-  color: #fff;
-}
-
-.city-status {
-  font-size: 10px;
-  color: var(--text-muted);
-}
-
-.city-status.alert { color: #f87171; font-weight: 700; }
-.city-status.warning { color: #fbbf24; }
-
-.march-unit-token {
-  position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  border: 2px solid var(--gold-primary);
-  overflow: hidden;
-  box-shadow: 0 0 10px var(--gold-glow);
-}
-
-.march-unit-token img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Strategy Command Sidebar */
-.strategy-command-panel {
-  width: 380px;
-  background: #12161f;
-  display: flex;
-  flex-direction: column;
-  padding: 24px;
-  overflow-y: auto;
-}
-
-.panel-header {
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 14px;
-}
-
-.city-badge {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 800;
+  font-size: 13px;
+  font-weight: 900;
   letter-spacing: 1px;
   color: var(--gold-primary);
-  background: rgba(245, 158, 11, 0.15);
-  padding: 2px 8px;
-  border-radius: 2px;
-  margin-bottom: 6px;
 }
 
-.panel-city-name {
-  font-family: var(--font-title);
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 6px;
-}
-
-.panel-city-threat {
-  font-size: 11px;
+.saban-banner-sub {
+  font-size: 10px;
   color: #f87171;
   font-weight: 600;
 }
 
-.intel-brief {
-  background: rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 14px;
-  margin-bottom: 20px;
-}
-
-.brief-title {
+.btn-dispatch-seal {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: linear-gradient(180deg, #991b1b 0%, #5b1111 100%);
+  border: 1.5px solid #f87171;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-title);
   font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.5);
+  transition: all 0.2s ease;
+}
+
+.btn-dispatch-seal:hover {
+  background: linear-gradient(180deg, #dc2626 0%, #7f1d1d 100%);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+  transform: translateY(-1px);
+}
+
+.saban-hint-pill {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  background: rgba(10, 8, 6, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.3);
   color: var(--gold-molten);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 6px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-family: var(--font-title);
+  letter-spacing: 0.5px;
+  z-index: 10;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 
-.brief-text {
-  font-size: 13px;
+/* Trúc Giản Quân Cơ (Bamboo Scroll Panel) */
+.bamboo-scroll-panel {
+  position: absolute;
+  right: 28px;
+  bottom: 24px;
+  width: 350px;
+  max-height: 75vh;
+  z-index: 20;
+  display: flex;
+  flex-direction: column;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.95));
+  pointer-events: auto;
+}
+
+.scroll-wood-roller {
+  height: 14px;
+  background: linear-gradient(90deg, #3d2617 0%, #6b4328 15%, #3d2617 85%, #1f130b 100%);
+  border-radius: 7px;
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.scroll-slips-body {
+  background: repeating-linear-gradient(
+    90deg,
+    #231911 0px,
+    #231911 20px,
+    #18110b 21px,
+    #18110b 23px
+  );
+  border-left: 1.5px solid rgba(212, 175, 55, 0.35);
+  border-right: 1.5px solid rgba(212, 175, 55, 0.35);
+  padding: 16px 20px;
+  overflow-y: auto;
+  max-height: calc(75vh - 28px);
+}
+
+.scroll-header {
+  margin-bottom: 14px;
+  border-bottom: 1px dashed rgba(212, 175, 55, 0.25);
+  padding-bottom: 10px;
+}
+
+.scroll-seal-tag {
+  font-family: var(--font-title);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: var(--gold-primary);
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 1px 6px;
+  border-radius: 2px;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
+.scroll-city-title {
+  font-family: var(--font-title);
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.scroll-threat-line {
+  font-size: 10px;
+  color: #f87171;
+  margin-top: 2px;
+}
+
+.slip-section {
+  margin-bottom: 14px;
+}
+
+.slip-section-title {
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--gold-molten);
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.slip-text {
+  font-size: 12px;
   line-height: 1.6;
-  color: #cbd5e1;
+  color: #d1d5db;
+  font-family: var(--font-serif);
 }
 
-.stats-overview-grid {
+.slip-numbers-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-bottom: 24px;
+  gap: 8px;
+  margin-bottom: 16px;
 }
 
-.stat-card {
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid var(--border-subtle);
-  padding: 10px;
+.slip-num-box {
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px solid rgba(212, 175, 55, 0.2);
   border-radius: var(--radius-sm);
+  padding: 6px 10px;
   display: flex;
   flex-direction: column;
 }
 
-.stat-title {
-  font-size: 10px;
+.sn-lbl {
+  font-size: 9px;
   color: var(--text-dim);
 }
 
-.stat-number {
-  font-size: 13px;
+.sn-val {
+  font-family: var(--font-title);
+  font-size: 12px;
   font-weight: 800;
   color: #fff;
   margin-top: 2px;
 }
 
-.text-green { color: #34d399; }
 .text-gold { color: var(--gold-primary); }
+.text-green { color: #34d399; }
+.text-cyan { color: #38bdf8; }
 
-.command-group {
+.slip-actions-group {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 6px;
 }
 
-.cmd-group-title {
-  font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--text-dim);
-  margin-bottom: 4px;
-}
-
-.btn-action {
-  background: #1a202c;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 12px 14px;
-  color: #fff;
+.slip-act-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  background: linear-gradient(180deg, #1f160e 0%, #120d08 100%);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
   cursor: pointer;
-  text-align: left;
   transition: all 0.2s ease;
+  text-align: left;
 }
 
-.btn-action:hover {
-  background: #252d3d;
+.slip-act-btn:hover {
   border-color: var(--gold-primary);
-  transform: translateY(-2px);
+  background: linear-gradient(180deg, #2d2014 0%, #1a120b 100%);
+  box-shadow: 0 0 12px rgba(245, 158, 11, 0.25);
+  transform: translateY(-1px);
 }
 
-.btn-enter-battle {
-  background: linear-gradient(90deg, #78350f 0%, #451a03 100%);
-  border-color: var(--gold-primary);
-  box-shadow: 0 4px 15px rgba(180, 83, 9, 0.4);
+.slip-act-btn.btn-enter-battle {
+  border-color: rgba(220, 38, 38, 0.6);
+  background: linear-gradient(180deg, #2b1010 0%, #150606 100%);
 }
 
-.btn-enter-battle:hover {
-  background: linear-gradient(90deg, #92400e 0%, #78350f 100%);
+.slip-act-btn.btn-enter-battle:hover {
+  border-color: #ef4444;
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.4);
 }
 
-.action-icon {
-  font-size: 20px;
+.act-seal-char {
+  width: 26px;
+  height: 26px;
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  border: 1px solid var(--gold-primary);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: 900;
+  flex-shrink: 0;
 }
 
-.action-meta {
+.act-meta {
   display: flex;
   flex-direction: column;
 }
 
-.action-title {
+.act-name {
+  font-family: var(--font-title);
+  font-size: 11px;
   font-weight: 800;
-  font-size: 13px;
+  color: #fff;
 }
 
-.action-cost {
-  font-size: 11px;
-  color: var(--text-muted);
+.act-desc {
+  font-size: 9px;
+  color: var(--text-dim);
 }
 
 /* ==========================================================================
@@ -1496,26 +1288,47 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 
 /* Battlefield Header Bar: Wall & Enemy Boss */
 .battlefield-header {
-  padding: 16px 24px;
-  background: rgba(0, 0, 0, 0.5);
-  border-bottom: 2px solid #202632;
+  margin-top: 68px;
+  padding: 10px 24px;
+  background: linear-gradient(180deg, rgba(8, 11, 16, 0.95) 0%, rgba(13, 17, 24, 0.85) 100%);
+  border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7);
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
+  position: relative;
+  z-index: 10;
+  flex-shrink: 0;
 }
 
 /* Wall Entity Card */
 .wall-entity-card {
   flex: 1.2;
-  background: rgba(18, 23, 31, 0.85);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(135deg, rgba(20, 27, 38, 0.9) 0%, rgba(10, 14, 20, 0.95) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.35);
   border-radius: var(--radius-md);
-  padding: 10px 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  padding: 10px 18px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.wall-entity-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: var(--gold-molten);
+  border-radius: var(--radius-md) 0 0 var(--radius-md);
 }
 
 .wall-top-row {
@@ -1566,11 +1379,12 @@ body {
 
 /* Reservoir Card (Giả Hủ Flood Level) */
 .reservoir-card {
-  width: 260px;
-  background: rgba(8, 47, 73, 0.4);
-  border: 1px solid #0284c7;
+  width: 270px;
+  background: linear-gradient(135deg, rgba(3, 40, 64, 0.85) 0%, rgba(8, 20, 32, 0.95) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.4);
   border-radius: var(--radius-md);
-  padding: 8px 14px;
+  padding: 10px 16px;
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.25), inset 0 1px 0 rgba(56, 189, 248, 0.2);
 }
 
 .reservoir-label {
@@ -1604,6 +1418,7 @@ body {
 .reservoir-fill {
   height: 100%;
   background: linear-gradient(90deg, #0284c7, #38bdf8);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.8);
   transition: width 0.4s ease;
 }
 
@@ -1612,25 +1427,29 @@ body {
   flex: 1;
   display: flex;
   align-items: center;
-  gap: 12px;
-  background: rgba(220, 38, 38, 0.1);
-  border: 1px solid rgba(220, 38, 38, 0.4);
-  padding: 8px 14px;
+  gap: 14px;
+  background: linear-gradient(135deg, rgba(69, 10, 10, 0.85) 0%, rgba(24, 15, 17, 0.95) 100%);
+  border: 1.5px solid rgba(220, 38, 38, 0.6);
+  padding: 10px 16px;
   border-radius: var(--radius-md);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.3), inset 0 1px 0 rgba(239, 68, 68, 0.2);
 }
 
 .boss-avatar {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
-  background: var(--red-imperial);
+  background: radial-gradient(circle at 35% 30%, #dc2626 0%, #7f1d1d 100%);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: var(--font-title);
   font-weight: 900;
-  box-shadow: 0 0 12px rgba(220, 38, 38, 0.6);
+  border: 2px solid #fbbf24;
+  box-shadow: 0 0 16px rgba(220, 38, 38, 0.8);
+  flex-shrink: 0;
 }
 
 .boss-info {
@@ -1638,31 +1457,42 @@ body {
 }
 
 .boss-name {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 800;
-  color: #f87171;
+  color: #fca5a5;
+  font-family: var(--font-title);
 }
 
 .boss-intent {
-  font-size: 10px;
-  color: #fca5a5;
-  background: rgba(0, 0, 0, 0.3);
-  padding: 1px 6px;
-  border-radius: 2px;
-  margin: 3px 0;
-  display: inline-block;
+  font-size: 11px;
+  color: #fecaca;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  margin: 4px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  border-left: 3px solid #ef4444;
+  animation: intentPulse 2s ease-in-out infinite;
+}
+
+@keyframes intentPulse {
+  0%, 100% { box-shadow: 0 0 5px rgba(239, 68, 68, 0.3); }
+  50% { box-shadow: 0 0 15px rgba(239, 68, 68, 0.7); }
 }
 
 .boss-hp-track {
-  height: 6px;
+  height: 7px;
   background: #000;
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
 }
 
 .boss-hp-fill {
   height: 100%;
-  background: #ef4444;
+  background: linear-gradient(90deg, #dc2626, #f87171);
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.7);
   transition: width 0.3s ease;
 }
 
@@ -1671,39 +1501,53 @@ body {
   justify-content: space-between;
   font-size: 10px;
   color: var(--text-muted);
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 /* 3-Lane Clash Battlefield */
 .lanes-board {
   flex: 1;
+  min-height: 0;
   display: flex;
   gap: 16px;
-  padding: 16px 36px;
+  padding: 8px 24px;
+  position: relative;
+  z-index: 5;
 }
 
 .battle-lane {
   flex: 1;
-  background: rgba(0, 0, 0, 0.25);
-  border: 1px solid var(--border-subtle);
+  background: rgba(10, 14, 20, 0.6);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
   border-radius: var(--radius-lg);
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 12px;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease;
 }
 
 .lane-center {
-  border-color: rgba(245, 158, 11, 0.35);
-  background: rgba(245, 158, 11, 0.03);
+  border-color: rgba(245, 158, 11, 0.5);
+  background: rgba(15, 18, 26, 0.68);
+  box-shadow: 0 10px 35px rgba(245, 158, 11, 0.15);
 }
 
 .lane-title-bar {
   text-align: center;
+  font-family: var(--font-title);
   font-size: 11px;
-  font-weight: 800;
-  letter-spacing: 1px;
-  color: var(--text-dim);
-  margin-bottom: 8px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  background: rgba(0, 0, 0, 0.45);
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  margin-bottom: 10px;
 }
 
 .lane-half {
@@ -1713,25 +1557,34 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 0.2s ease;
 }
 
 .enemy-half {
-  background: rgba(220, 38, 38, 0.04);
-  border: 1px dashed rgba(220, 38, 38, 0.2);
+  background: rgba(220, 38, 38, 0.06);
+  border: 1px dashed rgba(220, 38, 38, 0.3);
 }
 
 .player-half {
-  background: rgba(16, 185, 129, 0.04);
-  border: 1px dashed rgba(16, 185, 129, 0.2);
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px dashed rgba(16, 185, 129, 0.3);
+}
+
+.player-half:hover, .player-half.drag-over {
+  background: rgba(245, 158, 11, 0.12);
+  border: 1.5px solid var(--gold-primary);
+  box-shadow: 0 0 20px rgba(245, 158, 11, 0.35);
 }
 
 .clash-gutter {
-  height: 28px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   font-weight: 800;
+  color: var(--gold-molten);
+  opacity: 0.8;
 }
 
 .deploy-placeholder {
@@ -1879,7 +1732,8 @@ body {
 
 /* Player Command Dock & Hand */
 .player-command-dock {
-  height: 210px;
+  height: 195px;
+  flex-shrink: 0;
   background: linear-gradient(0deg, #07090c 0%, rgba(13, 17, 24, 0.98) 100%);
   border-top: 2px solid #2d2319;
   box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.85);
@@ -1924,18 +1778,20 @@ body {
 }
 
 .mana-gem {
-  width: 9px;
-  height: 14px;
-  border-radius: 2px;
-  background: #0284c7;
-  box-shadow: 0 0 8px #38bdf8;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 14px;
+  height: 20px;
+  border-radius: 4px;
+  background: radial-gradient(circle at 35% 30%, #34d399 0%, #059669 65%, #064e3b 100%);
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.7), inset 0 1px 1px rgba(255, 255, 255, 0.6);
+  border: 1px solid #6ee7b7;
+  transition: all 0.25s ease;
 }
 
 .mana-gem.spent {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: none;
-  border-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.08);
+  opacity: 0.35;
 }
 
 .morale-bar-box {
@@ -2107,35 +1963,40 @@ body {
 }
 
 .btn-execute-turn {
-  width: 96px;
-  height: 96px;
+  width: 104px;
+  height: 104px;
   border-radius: 50%;
-  background: radial-gradient(circle at 35% 30%, #dc2626 0%, #991b1b 60%, #450a0a 100%);
-  border: 3px solid var(--gold-primary);
+  background: radial-gradient(circle at 35% 30%, #b45309 0%, #78350f 50%, #451a03 100%);
+  border: 3px solid #fbbf24;
   color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 0 0 25px rgba(220, 38, 38, 0.7), 0 0 15px rgba(251, 191, 36, 0.4), inset 0 0 15px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.5), 0 8px 25px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(0, 0, 0, 0.8);
   position: relative;
   transition: all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+  user-select: none;
 }
 
 .btn-execute-turn:hover {
   transform: scale(1.08);
-  box-shadow: 0 0 40px rgba(220, 38, 38, 0.9), 0 0 25px rgba(251, 191, 36, 0.7), inset 0 0 20px rgba(0, 0, 0, 0.8);
   border-color: #fff;
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.8), 0 0 25px rgba(220, 38, 38, 0.6), inset 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.btn-execute-turn:active {
+  transform: scale(0.96);
 }
 
 .seal-ring {
   position: absolute;
-  inset: 4px;
-  border: 1px dashed rgba(251, 191, 36, 0.5);
+  inset: 5px;
+  border: 1.5px dashed rgba(251, 191, 36, 0.6);
   border-radius: 50%;
   pointer-events: none;
-  animation: sealSpin 20s linear infinite;
+  animation: sealSpin 24s linear infinite;
 }
 
 @keyframes sealSpin {
@@ -2146,16 +2007,18 @@ body {
   font-family: var(--font-title);
   font-size: 15px;
   font-weight: 900;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   color: #fff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
 }
 
 .btn-sub-txt {
   font-size: 9px;
-  opacity: 0.85;
-  color: #fca5a5;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #fde68a;
   margin-top: 2px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* ==========================================================================
