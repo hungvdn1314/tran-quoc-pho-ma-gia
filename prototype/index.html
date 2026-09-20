@@ -125,34 +125,24 @@
   </header>
 
   <!-- =========================================================================
-       THEME PREVIEW SWITCHER (THỬ NGHIỆM 3 PHONG CÁCH MỸ THUẬT VISUAL NOVEL)
-       ========================================================================= -->
-  <aside class="vn-theme-switcher" id="vn-theme-switcher" aria-label="Theme Preview Switcher">
-    <span class="switcher-label">🎭 ĐỔI PHONG CÁCH:</span>
-    <button class="theme-btn active" data-theme="hac-kim" id="btn-theme-hac-kim" title="Phương Án 1: Sơn Mài Hắc Kim & Đồng Cổ Triều Đình">
-      <span class="t-badge">壹</span> Sơn Mài Hắc Kim
-    </button>
-    <button class="theme-btn" data-theme="truc-gian" id="btn-theme-truc-gian" title="Phương Án 2: Xuyến Chỉ & Trúc Giản Khắc Ngấn">
-      <span class="t-badge">贰</span> Xuyến Chỉ Trúc Giản
-    </button>
-    <button class="theme-btn" data-theme="dien-anh" id="btn-theme-dien-anh" title="Phương Án 3: Tối Giản Điện Ảnh & Ước Lệ Thủy Mặc">
-      <span class="t-badge">叁</span> Tối Giản Điện Ảnh
-    </button>
-  </aside>
-
-  <!-- =========================================================================
        VIEWPORT CONTAINER (3 TẦNG LIÊN HOÀN)
        ========================================================================= -->
   <main class="game-viewport">
 
     <!-- =======================================================================
-         TẦNG 1: VISUAL NOVEL THEATER (ĐA NHÂN VẬT & RẼ NHÁNH SÂU)
+         TẦNG 1: VISUAL NOVEL THEATER (ĐA NHÂN VẬT & RẼ NHÁNH SÂU - 100% CINEMATIC)
          ======================================================================= -->
     <section class="stage-view view-vn active" id="view-vn">
       <!-- Backdrop with dynamic themes (Phò Mã Phủ, Kim Loan Điện, Địa Lao, Thành Trì) -->
       <div class="vn-stage" id="vn-stage" style="background-image: url('assets/images/bg_palace_chamber.jpg');">
         <!-- PixiJS Ambient & Shader Canvas -->
         <canvas id="vn-pixi-canvas" class="vn-pixi-canvas"></canvas>
+
+        <!-- Subtle Imperial Realm Portal Seal (Kín đáo ở góc phải trên — Mở Sa Bàn xem tình hình triều chính) -->
+        <button class="vn-portal-seal" id="btn-vn-to-saban" title="Đế Nghiệp Sa Bàn (Mở Bản Đồ Quân Sự & Triều Chính)">
+          <span class="portal-seal-char">輿</span>
+          <span class="portal-seal-label">Sa Bàn</span>
+        </button>
 
         <div class="vn-ambient-fx" id="vn-ambient">
           <div class="rain-canvas"></div>

@@ -1453,30 +1453,34 @@ document.addEventListener('DOMContentLoaded', () => {
   // 11. HUD VIEW SWITCHING & RESOURCES
   // =========================================================================
   function switchView(viewName) {
-    if (viewName === 'map' && !state.unlocked.strategyMap) {
-      showToast("🔒 Tầng 2: Đế Nghiệp Sa Bàn bị khóa! Cần hoàn thành Chương 15 (Thánh Chỉ Chinh Bắc).");
-      return;
-    }
     if (viewName === 'battle' && !state.unlocked.battleFront) {
       showToast("🔒 Tầng 3: Sa Trường Thẻ Bài bị khóa! Cần tiến tới Chương 48 (Đại Chiến Thanh Châu).");
       return;
     }
 
     state.currentView = viewName;
-    [ui.btnTabVn, ui.btnTabMap, ui.btnTabBattle].forEach(btn => btn.classList.remove('active'));
-    [ui.viewVn, ui.viewMap, ui.viewBattle].forEach(view => view.classList.remove('active'));
+    document.body.classList.remove('view-mode-vn', 'view-mode-map', 'view-mode-battle');
+    document.body.classList.add(`view-mode-${viewName}`);
+
+    [ui.btnTabVn, ui.btnTabMap, ui.btnTabBattle].forEach(btn => btn?.classList.remove('active'));
+    [ui.viewVn, ui.viewMap, ui.viewBattle].forEach(view => view?.classList.remove('active'));
 
     if (viewName === 'vn') {
-      ui.btnTabVn.classList.add('active');
+      ui.btnTabVn?.classList.add('active');
       ui.viewVn.classList.add('active');
     } else if (viewName === 'map') {
-      ui.btnTabMap.classList.add('active');
+      ui.btnTabMap?.classList.add('active');
       ui.viewMap.classList.add('active');
       renderMapNodeDetails(state.selectedNode);
+      updateHudResources();
+      if (!state.unlocked.strategyMap) {
+        showToast("📜 Đang thám sát Sa Bàn Quân Cơ — Hoàn thành Ch.15 để mở quyền điều binh!");
+      }
     } else if (viewName === 'battle') {
-      ui.btnTabBattle.classList.add('active');
+      ui.btnTabBattle?.classList.add('active');
       ui.viewBattle.classList.add('active');
       renderBattlefield();
+      updateHudResources();
     }
   }
 
@@ -1583,6 +1587,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.btnTabVn) ui.btnTabVn.addEventListener('click', () => switchView('vn'));
     if (ui.btnTabMap) ui.btnTabMap.addEventListener('click', () => switchView('map'));
     if (ui.btnTabBattle) ui.btnTabBattle.addEventListener('click', () => switchView('battle'));
+
+    // Subtle VN Realm Portal to open Sa Bàn
+    const btnVnToSaban = document.getElementById('btn-vn-to-saban');
+    if (btnVnToSaban) {
+      btnVnToSaban.addEventListener('click', (e) => {
+        e.stopPropagation();
+        switchView('map');
+        showToast("🗺️ Mở Đế Nghiệp Sa Bàn — Tham kiến thế cục hoàng triều & 4 phương", true);
+      });
+    }
 
     // Chapter Milestone Tracker Modal
     if (ui.btnOpenMilestones) {
@@ -2273,53 +2287,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // =========================================================================
-  // THEME SWITCHER CONTROLLER (3 OPTIONS LIVE PREVIEW)
-  // =========================================================================
-  function initThemeSwitcher() {
-    const savedTheme = localStorage.getItem('vn_theme') || 'hac-kim';
-    setVnTheme(savedTheme, false);
-
-    document.querySelectorAll('.theme-btn').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const theme = btn.dataset.theme;
-        setVnTheme(theme, true);
-      });
-    });
-  }
-
-  function setVnTheme(themeName, showNotification = true) {
-    document.body.classList.remove('vn-theme-hac-kim', 'vn-theme-truc-gian', 'vn-theme-dien-anh');
-    document.body.classList.add('vn-theme-' + themeName);
-    localStorage.setItem('vn_theme', themeName);
-    document.querySelectorAll('.theme-btn').forEach(b => {
-      b.classList.toggle('active', b.dataset.theme === themeName);
-    });
-    console.log(`⚡ [VN Theme Switcher] Chuyển sang phong cách: ${themeName}`);
-    if (showNotification) {
-      showToast(`🎭 Phong Cách: ${getThemeTitle(themeName)}`, true);
-    }
-  }
-
-  function getThemeTitle(theme) {
-    if (theme === 'hac-kim') return 'Sơn Mài Hắc Kim & Đồng Cổ';
-    if (theme === 'truc-gian') return 'Xuyến Chỉ & Trúc Giản Cổ Phong';
-    if (theme === 'dien-anh') return 'Tối Giản Điện Ảnh & Thủy Mặc';
-    return theme;
-  }
-
   // Expose to window
-  window.setVnTheme = setVnTheme;
   window.resetGame = resetGame;
   window.state = state;
   window.ink = ink;
   window.switchView = switchView;
 
   // =========================================================================
-  // 14. INITIAL BOOT
+  // 14. INITIAL BOOT (DEFAULT TO ZERO-HUD CINEMATIC VISUAL NOVEL)
   // =========================================================================
-  initThemeSwitcher();
+  switchView('vn');
   ink.start('chapter_1_start');
   advanceChapter(1);
   updateProgressTrackerUI();
