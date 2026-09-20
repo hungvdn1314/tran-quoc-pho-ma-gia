@@ -907,7 +907,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state.currentTextIndex = 0;
         renderCurrentDialogue();
       } else {
-        showToast("📜 Đã đến điểm hội tụ câu chuyện! Mở Ma Trận Chương hoặc Sa Bàn để tiếp tục.");
+        showToast("📜 Tiết tấu tạm lắng. Hãy thẩm định Sa Bàn Quân Cơ hoặc Ma Trận Chương để tiếp nối đại nghiệp.");
       }
     }
   }
@@ -919,28 +919,55 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (ink.hasChoices() && ui.choiceModal) {
-      ui.choiceQuestion.textContent = "Quý Bình An quyết định ứng phó ra sao?";
+      ui.choiceQuestion.textContent = "THIÊN ĐỊNH CHI THỜI · ĐỐI SÁCH QUYỀN MƯU";
       ui.choiceGrid.innerHTML = '';
 
       const numGlyphs = ["壹", "贰", "叁", "肆", "伍"];
 
       ink.currentChoices.forEach((c, idx) => {
+        let tagText = "QUYẾT SÁCH";
+        let tagClass = "";
+        let displayText = c.text;
+
+        // Parse tag from either [TAG] Content OR "TAG · Content"
+        const bracketMatch = c.text.match(/^\[(.*?)\]\s*(.*)$/);
+        const dotMatch = c.text.match(/^([^·\n]{2,14})\s*·\s*(.*)$/);
+        if (bracketMatch) {
+          tagText = bracketMatch[1].trim().toUpperCase();
+          displayText = bracketMatch[2].trim();
+        } else if (dotMatch) {
+          tagText = dotMatch[1].trim().toUpperCase();
+          displayText = dotMatch[2].trim();
+        }
+
+        const upperTag = tagText.toUpperCase();
+        if (upperTag.includes("ẨN NHẪN") || upperTag.includes("THĂM DÒ") || upperTag.includes("KHIÊM CUNG") || upperTag.includes("DÒ XÉT")) {
+          tagClass = "tag-amber";
+        } else if (upperTag.includes("SÁT PHẠT") || upperTag.includes("HOÀNH ĐAO") || upperTag.includes("QUYẾT CHIẾN") || upperTag.includes("XUẤT THẾ") || upperTag.includes("ĐỐI NGHỊCH") || upperTag.includes("BÁ ĐẠO")) {
+          tagClass = "tag-crimson";
+        } else if (upperTag.includes("THIÊN CƠ") || upperTag.includes("TRIỆU HOÁN") || upperTag.includes("THẦN ĐÀN") || upperTag.includes("TRÙNG SINH") || upperTag.includes("KHẢO NGHIỆM")) {
+          tagClass = "tag-cyan";
+        } else if (upperTag.includes("QUÂN CƠ") || upperTag.includes("THỦY CÔNG") || upperTag.includes("KINH TÀI") || upperTag.includes("HỢP TÁC") || upperTag.includes("NHÂN NGHĨA") || upperTag.includes("VƯƠNG ĐẠO") || upperTag.includes("KHẢI HOÀN") || upperTag.includes("ĐẾ NGHIỆP")) {
+          tagClass = "tag-emerald";
+        }
+
         const choiceCard = document.createElement('div');
         choiceCard.className = 'choice-card-btn';
         choiceCard.innerHTML = `
           <div class="choice-left-meta">
             <span class="choice-num-badge">${numGlyphs[idx] || (idx + 1)}</span>
-            <span class="choice-card-title">${c.text}</span>
+            <span class="choice-card-title">${displayText}</span>
           </div>
-          <span class="choice-right-tag">QUYẾT ĐỊNH</span>
+          <span class="choice-right-tag ${tagClass}">${tagText}</span>
         `;
         choiceCard.addEventListener('click', () => {
           triggerShake();
           ui.choiceModal.classList.add('hidden');
           ink.makeChoice(idx);
           state.currentTextIndex = 0;
-          ui.vnBranchIndicator.textContent = `Tuyến Rẽ: ${c.text.substring(0, 30)}...`;
-          showToast(`Đã chọn: ${c.text.substring(0, 30)}...`);
+          const cleanExcerpt = displayText.length > 32 ? displayText.substring(0, 32) + '...' : displayText;
+          ui.vnBranchIndicator.textContent = `Quyết Sách: ${cleanExcerpt}`;
+          showToast(`Đã định: ${cleanExcerpt}`, true);
           renderCurrentDialogue();
         });
         ui.choiceGrid.appendChild(choiceCard);

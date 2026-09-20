@@ -10,6 +10,9 @@ import json
 import os
 import sys
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 def bundle():
     print("--- ĐANG ĐÓNG GÓI DỮ LIỆU GAME CHO PROTOTYPE V3 ---")
     

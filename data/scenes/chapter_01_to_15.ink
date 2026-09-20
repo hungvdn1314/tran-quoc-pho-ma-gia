@@ -1,9 +1,9 @@
 // ============================================================
 // Trấn Quốc Phò Mã Gia — Ink Scene Script
-// Chương 1: Xuyên Không & Đối Thơ Đại Điện
+// Chương 1 - 15: Khởi Đầu Hàn Vi & Phong Vân Kinh Đô
 // ============================================================
-// Biên soạn theo chuẩn Ink scripting (inkjs runtime)
-// Tham chiếu: narrative-scene-scripting skill
+// Biên soạn theo chuẩn mực văn học cổ phong & Ink scripting
+// Tham chiếu: narrative-scene-scripting & game-systems-architect
 // ============================================================
 
 // === GLOBAL VARIABLES ===
@@ -34,6 +34,9 @@ VAR met_vu_hoang = false
 VAR met_to_kien_phong = false
 VAR met_ve_ti_vu = false
 
+// Branch memory
+VAR ch10_method = "none"
+
 // ============================================================
 // CHƯƠNG 1: XUYÊN KHÔNG & ĐỐI THƠ ĐẠI ĐIỆN
 // ============================================================
@@ -45,46 +48,55 @@ VAR met_ve_ti_vu = false
 
 Hắn mở mắt.
 
-Không phải trần nhà quen thuộc của căn hộ tầng 23 ở thành phố Hồ Chí Minh. Mà là một tấm màn lụa thêu rồng phượng, bụi thời gian phủ đầy nếp gấp.
+Không phải bóng tối hư vô của kiếp trước. Trước mắt hắn là tấm trướng lụa màu tím than thêu chỉ vàng đã sờn rách, thoang thoảng mùi trầm hương mục nát pha lẫn u uất.
 
-Đầu đau như búa bổ. Ký ức lạ lùng ồ ạt tràn vào — tên hắn là Quý Bình An, con trai thứ ba của Quý gia, một phò mã nổi tiếng bất tài bất đức của Đại Vũ Hoàng Triều.
+Đầu đau như búa bổ. Vô số mảnh vỡ ký ức xa lạ cuộn trào như thủy triều — hắn tên là Quý Bình An, đích tử thứ ba của phủ Trấn Quốc Công, cũng chính là kẻ phò mã hàn vi nức tiếng bất tài vô dụng của Đại Vũ Hoàng Triều.
+
+Phụ thân Quý Trọng Dung vừa bị tước đoạt binh quyền, gièm pha khắp kinh thành. Thê tử là Ninh An công chúa cao quý lạnh lùng chưa từng một lần ghé mắt. Còn bản thân hắn thì vừa trúng kỳ độc mê man ba ngày ba đêm, suýt nữa đã mất mạng trong âm thầm...
 
 # BACKGROUND: bg_pho_ma_phu_bedroom
 # ACTORS: qui_binh_an|right|worried
 
-Hắn... đã xuyên không.
+Hắn... đã nhập thể trùng sinh vào tử cục ngập tràn hiểm nguy này.
 
-* [Ngồi dậy, quan sát xung quanh]
-  Quý Bình An — hay nói đúng hơn, linh hồn hiện đại trong thân xác phò mã — chậm rãi ngồi dậy. Căn phòng rộng nhưng đồ đạc thưa thớt. Một bức tranh thủy mặc treo trên tường, vài cuốn sách cổ bám bụi trên giá.
+* [Ẩn Nhẫn · Tĩnh tâm quan sát: "Muốn sinh tồn nơi triều chính, trước hết phải nhìn thấu cục diện..."]
+  Quý Bình An khẽ hít sâu một hơi lãnh khí, kìm nén cơn chấn động trong lồng ngực, chậm rãi gượng dậy. Căn phòng tuy hoa lệ nhưng lạnh lẽo thấu xương, ngoài cửa sổ tiếng mưa rơi rả rích dập dồn như gõ trống trận.
   
-  "Phò mã hàn vi" — danh xưng này không phải lời khen.
+  "Một phò mã bị ruồng bỏ, một gia tộc đang bên bờ vực diệt môn... Muốn sống sót trong hoàng triều này, bước đầu tiên là phải giấu kín mũi nhọn."
+  
+  -> arrival_of_servant
+
+* [Sát Phạt · Siết chặt nắm tay: "Đã cho ta trùng sinh vào tử cục này, tuyệt không làm con rối mặc người xâu xé!"]
+  Ánh mắt Quý Bình An lóe lên tia sắc lạnh. Hắn nhìn xuống đôi bàn tay trắng trẻo nhưng yếu ớt của thân xác này, khóe môi khẽ nhếch lên nụ cười tự giễu.
+  
+  "Đã để ta sống lại trong thân xác này, thì tuyệt đối không có chuyện tiếp tục làm bù nhìn mặc người giẫm đạp!"
   
   -> arrival_of_servant
 
 === arrival_of_servant ===
 # ACTORS: qui_binh_an|right|neutral, servant|left|respectful
 
-Cửa phòng bật mở. Một tỳ nữ vội vã chạy vào, mặt tái mét:
+Cánh cửa gỗ sơn mài đột ngột bật mở. Tỳ nữ thân cận Tiểu Thúy vội vã chạy vào, gương mặt tái nhợt không còn giọt máu:
 
-"Phò mã gia! Ngài tỉnh rồi ạ! Vũ Hoàng bệ hạ triệu kiến, yến tiệc tiếp đón sứ đoàn Nam Ly Quốc sắp bắt đầu! Ngài phải vào cung ngay!"
+"Phò mã gia! Ngài rốt cuộc đã tỉnh lại rồi! Vũ Hoàng bệ hạ truyền khẩu dụ khẩn, yến tiệc tiếp đón sứ đoàn Nam Ly Quốc sắp sửa khai yến tại Kim Loan Điện! Ngài... ngài phải lập tức nhập cung ngay!"
 
-* [Hỏi tình hình yến tiệc]
-  "Yến tiệc? Sứ đoàn Nam Ly? Kể ta nghe."
+* [Thăm Dò · Gặng hỏi thực hư: "Nam Ly sứ thần ngông cuồng thế nào? Trăm quan triều đình không ai ứng đối được sao?"]
+  Quý Bình An cất giọng trầm tĩnh, ánh mắt sâu thẳm nhìn thẳng vào tỳ nữ: "Bình tĩnh lại. Sứ đoàn Nam Ly mang theo điều gì đến yến tiệc mà khiến cả triều đình đại loạn?"
   
-  Tỳ nữ cuống quýt: "Dạ, Nam Ly phái sứ thần đến, mang theo vế đối thách thức cả triều đình. Nghe đồn không ai đối được, Vũ Hoàng nổi giận triệu tập tất cả văn võ bá quan, kể cả... phò mã."
+  Tiểu Thúy run giọng bẩm báo: "Dạ bẩm... Nam Ly phái sứ thần đệ nhất học sĩ đến, mang theo một vế đối tuyệt đỉnh thách thức sĩ tử Đại Vũ. Nghe nói cả Hàn Lâm Viện lẫn các vị đại học sĩ đều câm nín, Vũ Hoàng nổi lôi đình lôi cả hoàng thân quốc thích và phò mã vào cung!"
   
-  "Kể cả phò mã phế vật như ta?" — Quý Bình An cười khổ.
+  Quý Bình An khẽ cười lạnh: "Xem ra Vũ Hoàng không phải cần ta đối đáp, mà là muốn tìm một kẻ gánh tội thay khi triều đình mất mặt."
   
   -> travel_to_palace
 
-* [Giả bệnh từ chối]
-  "Ta vẫn chưa khỏe, nói với cung nhân..."
+* [Ẩn Nhẫn · Phán đoán sát cơ: "Vũ Hoàng triệu kiến phò mã hàn vi... là muốn mượn đao giết người hay đẩy Quý gia vào chỗ chết?"]
+  Quý Bình An chau mày, trong đầu xoay chuyển trăm ngàn mưu kế: "Xưa nay yến tiệc ngoại giao chưa từng triệu kiến phò mã hàn vi. Đột nhiên hạ chỉ, ắt có kẻ gièm pha sau lưng nhằm triệt hạ Quý gia."
   
-  Tỳ nữ hoảng hốt quỳ xuống: "Không được đâu Phò mã gia! Đây là thánh chỉ! Kháng chỉ là tội chết!"
+  Tiểu Thúy hoảng hốt quỳ sụp xuống: "Phò mã gia, đây là thánh chỉ ban xuống! Kháng chỉ là tội tru di, nô tỳ van xin ngài mau chuẩn bị y phục nhập cung!"
   
   ~ suspicion += 5
   
-  Không có lựa chọn nào khác. Hắn phải đi.
+  Hắn khẽ thở dài, đứng dậy chỉnh lại vạt áo hắc bào: "Được, vậy để ta vào hoàng cung xem bọn họ muốn diễn vở kịch gì."
   
   -> travel_to_palace
 
@@ -92,13 +104,13 @@ Cửa phòng bật mở. Một tỳ nữ vội vã chạy vào, mặt tái mét:
 # BACKGROUND: bg_imperial_road
 # MUSIC: bgm_imperial_procession
 
-Kiệu rong ruổi qua đường phố kinh đô. Quý Bình An nhìn qua rèm kiệu — đây là một thế giới cổ đại, nhưng không hoàn toàn giống bất kỳ triều đại nào trong lịch sử Trung Hoa mà hắn biết.
+Cỗ xe ngựa lăn bánh trên đường đá hoa cương kinh đô, tiếng vó ngựa gõ dồn dập giữa màn mưa đêm.
 
-Đại Vũ Hoàng Triều. Một đế chế hư cấu nằm ở vị trí tương tự nhà Hán.
+Đại Vũ Hoàng Triều ba trăm năm định đô, bề ngoài phồn hoa tựa gấm, nhưng bên trong thì cửu vương đoạt đích, phiên trấn rục rịch binh đao, phương Bắc có Thác Bạt thiết kỵ rình rập, phương Nam có Nam Ly mưu toan cắn nuốt Trung Nguyên.
 
-Ký ức của thân xác gốc cho hắn biết: Vũ Hoàng đa nghi, quần thần bè phái, và Quý gia đang ở thế yếu sau khi phụ thân Quý Trọng Dung bị giáng chức.
+Còn Quý gia — từng là danh môn khai quốc — nay chịu đủ mọi nghi kỵ của Vũ Hoàng, phụ thân Quý Trọng Dung bị phế chức, huynh trưởng trấn giữ biên thùy cô độc.
 
-"Nếu đã xuyên không..." — hắn lẩm bẩm — "...thì phải sống cho ra trò."
+"Nếu đã bước vào ván cờ này... thì ta sẽ là người nắm giữ quân cờ."
 
 # BACKGROUND: bg_imperial_hall
 # MUSIC: bgm_court_tension
@@ -112,17 +124,13 @@ Ký ức của thân xác gốc cho hắn biết: Vũ Hoàng đa nghi, quần th
 
 ~ met_vu_hoang = true
 
-Đại điện Kim Loan. Rồng chạm trổ trên cột trụ, đèn lồng đỏ treo khắp nơi.
+Đại điện Kim Loan nguy nga tráng lệ, nhưng sát khí và sự ngột ngạt bao trùm từng tấc không khí.
 
-Vũ Hoàng ngồi trên ngai vàng, mặt lạnh như băng. Hai bên văn võ bá quan đứng xếp hàng, không khí nặng nề.
+Vũ Hoàng ngự trên Cửu Long Bảo Tọa, sắc mặt âm trầm như mây đen trước cơn bão. Hai bên bá quan văn võ cúi gầm mặt, không một ai dám ngẩng đầu thở mạnh.
 
-Sứ thần Nam Ly — một lão già râu dài, áo gấm xanh — đứng giữa đại điện, nụ cười ngạo mạn không che giấu.
+Chính giữa đại điện, sứ thần Nam Ly Quốc khoác cẩm bào xanh thẫm, ngạo nghễ vuốt râu, giọng nói sang sảng đầy vẻ khinh miệt:
 
-"Bệ hạ Đại Vũ, hạ thần mang theo một vế đối nhỏ. Nếu triều đình Đại Vũ không ai đối được..."
-
-Lão ta ngừng lại, ánh mắt lướt qua quần thần:
-
-"...thì e rằng sĩ tử Đại Vũ không xứng đáng với danh xưng 'Lễ nghĩa chi bang' nữa rồi."
+"Bệ hạ Đại Vũ, vế đối này chỉ là chút thi tài tầm thường của phương Nam ta. Nếu vương triều trăm vạn sĩ tử mà không ai đối nổi, thì danh xưng 'Văn hiến thiên bang' từ nay xin giao lại cho Nam Ly ta vậy!"
 
 -> poetry_challenge
 
@@ -130,48 +138,37 @@ Lão ta ngừng lại, ánh mắt lướt qua quần thần:
 # EFFECT: camera_shake|0.3
 # ACTORS: nam_ly_envoy|left|triumphant
 
-Sứ thần Nam Ly dõng dạc đọc:
+Sứ thần Nam Ly dõng dạc đọc vế đối vách đá:
 
 "「天当棋盘星作子，谁人敢下？」"
 
 "Thiên đương kỳ bàn tinh tác tử, thùy nhân cảm hạ?"
-
-(Trời làm bàn cờ sao làm quân, ai dám đánh?)
+(Trời làm bàn cờ sao làm quân, ai dám hạ cờ?)
 
 # EFFECT: sfx_crowd_murmur
 
 Cả đại điện xôn xao. Quan văn nhìn nhau, lắc đầu. Quan võ im phắc.
 
-Một vế đối vừa kiêu ngạo vừa uyên bác — lấy trời đất làm bàn cờ, tinh tú làm quân cờ. Ai dám tự xưng có thể đánh cờ với trời?
+Một vế đối ngập tràn sát khí và cuồng vọng — lấy trời đất làm bàn cờ, biến nhật nguyệt tinh tú thành con tốt. Ai dám xưng mình ngang hàng với trời đất mà hạ cờ?
 
-Vũ Hoàng nhíu mày, ánh mắt quét qua triều thần. Không ai dám lên tiếng.
+Vũ Hoàng nhíu mày, ánh mắt quét qua triều thần. Không ai dám lên tiếng. Rồi ánh mắt Vũ Hoàng dừng lại ở Quý Bình An — phò mã phế vật đứng cuối hàng:
 
-Rồi ánh mắt Vũ Hoàng dừng lại ở Quý Bình An — phò mã phế vật đứng cuối hàng.
-
-"Quý Bình An!"
-
-# ACTORS: qui_binh_an|right|shocked, vu_hoang|center|cold
-
-"Ngươi cũng là người đọc sách. Đối đi."
-
-Giọng Vũ Hoàng không có chút kỳ vọng nào. Đây rõ ràng là một lời đẩy phò mã ra làm bia đỡ đạn.
+"Quý Bình An! Ngươi dù sao cũng là con em Quý gia, đọc qua thi thư. Ngươi đối cho trẫm!"
 
 -> poetry_choice
 
 === poetry_choice ===
 # SCENE_TYPE: choice
 
-Quý Bình An — linh hồn hiện đại với 4 năm đại học Văn và 6 năm đọc tiểu thuyết lịch sử — nhận ra ngay vế đối này.
+Trước mắt hắn không chỉ là một vế đối lộng ngôn, mà là một đòn thăm dò hiểm độc của Nam Ly nhắm thẳng vào quốc thể Đại Vũ. Nếu vương triều chịu nhục, lửa chiến tranh sẽ thiêu rụi phương Nam...
 
-Hắn biết câu trả lời. Nhưng...
-
-* [Đứng lên đối: "Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?"]
+* [Hoành Đao · Đối vế nghịch thiên: "Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?"]
   -> poetry_triumph
 
-* [Đối một vế tầm thường để giấu thực lực]
+* [Khiêm Cung · Đối vế mực thước: Giữ thể diện triều đình, giấu kín phong mang]
   -> poetry_mediocre
 
-* [Im lặng, cúi đầu giả ngu]
+* [Quyền Mưu · Vạch trần dã tâm: Đanh thép chất vấn sứ thần Nam Ly trước điện Kim Loan]
   -> poetry_silence
 
 === poetry_triumph ===
@@ -185,31 +182,34 @@ Hắn biết câu trả lời. Nhưng...
 ~ suspicion += 10
 ~ imperial_prestige += 1
 
-Quý Bình An bước ra khỏi hàng, giọng trầm ấm vang vọng cả đại điện:
+Quý Bình An tiến lên một bước, tà áo hắc bào tung bay giữa đại điện. Tiếng cười khẽ của hắn vang vọng khắp Kim Loan:
+
+"Sứ thần Nam Ly ếch ngồi đáy giếng, cũng dám đem chút tài mọn ra bêu rếu trước mặt Hoàng thượng?"
+
+Hắn ngẩng đầu, ánh mắt uy nghiêm như sấm sét:
 
 "「地作琵琶路作弦，盖世谁弹？」"
 
 "Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?"
-
-(Đất làm đàn tỳ bà đường làm dây, ai dám gảy?)
+(Đất làm đàn tỳ bà đường làm dây, bậc cái thế nào dám gảy?)
 
 # EFFECT: sfx_crowd_gasp
 
-Trời làm bàn cờ — Đất làm đàn tỳ bà.
-Sao làm quân — Đường làm dây.
-Ai dám đánh — Ai dám gảy.
+Một câu xuất khẩu, sấm rền giữa trời quang!
 
-Đối thanh, đối ý, đối thế. Hoàn mỹ.
+Trời làm bàn cờ — Đất làm tỳ bà.
+Sao làm quân cờ — Đường thiên lý làm dây đàn.
+Khí phách ngút trời, nuốt trọn càn khôn, biến cả non sông gấm vóc thành khúc đàn của bậc đế vương!
 
-Sứ thần Nam Ly lùi một bước, mặt trắng bệch.
+Sứ thần Nam Ly lùi liền ba bước, sắc mặt trắng bệch, ngực phập phồng không thốt nên lời.
 
 # ACTORS: vu_hoang|center|surprised
 
-Vũ Hoàng bật đứng dậy trên ngai: "HAY! HAY LẮM!"
+Vũ Hoàng chấn động đứng phắt dậy khỏi long ngai, vỗ mạnh lên bàn: "HẢO! HẢO MỘT CÂU CÁI THẾ THÙY ĐẠN!"
 
-"Trẫm không ngờ Quý gia lại có nhân tài ẩn giấu! Ban thưởng phò mã Quý Bình An — một trăm lượng hoàng kim!"
+"Quý gia quả nhiên không hổ danh Trấn Quốc hổ môn! Ban thưởng phò mã Quý Bình An một trăm lượng hoàng kim!"
 
-# EFFECT: show_toast|+100 Vàng|reward
+# EFFECT: show_toast|+100 Hoàng Kim|reward
 
 -> system_awakening
 
@@ -219,59 +219,47 @@ Vũ Hoàng bật đứng dậy trên ngai: "HAY! HAY LẮM!"
 ~ suspicion -= 5
 ~ gold += 10
 
-Quý Bình An lắp bắp một vế đối tàm tạm. Không xuất sắc, nhưng cũng không đến nỗi mất mặt.
+Quý Bình An chắp tay hành lễ, từ tốn đọc một vế đối thanh nhã, vừa đủ giải vây cho triều đình mà không bộc lộ quá nhiều tài năng kinh thế hãi tục.
 
-Vũ Hoàng thở dài, vẫy tay: "Tạm được. Ban cho phò mã mười lượng bạc."
-
-Sứ thần Nam Ly cười mỉm — hắn không coi đây là thất bại.
-
-Quý Bình An lặng lẽ lui về cuối hàng, nhưng trong lòng có một tiếng nói lạ lùng vang lên...
+Sứ thần Nam Ly tuy không phục nhưng đành ngậm ngùi lui bước. Vũ Hoàng khẽ gật đầu, ban thưởng mười lượng bạc để khích lệ.
 
 -> system_awakening_delayed
 
 === poetry_silence ===
 # ACTORS: qui_binh_an|right|head_down, vu_hoang|center|contemptuous
 
-~ suspicion -= 10
+~ suspicion += 5
+~ imperial_prestige += 2
+~ gold += 50
 
-Im lặng. Cúi đầu. Phò mã phế vật vẫn là phế vật.
+Quý Bình An không đối ngay, mà cất giọng đanh thép vạch trần dã tâm mượn văn thăm dò quân sự của Nam Ly khiến sứ thần tái mặt, Vũ Hoàng thầm khen ngợi sự nhạy bén chính trị.
 
-Vũ Hoàng lạnh lùng quay đi. Sứ thần Nam Ly cười lớn: "Đại Vũ quả nhiên không có nhân tài!"
-
-Quý Bình An nuốt nhục. Nhưng trong bóng tối cuối hàng, một tiếng nói kỳ lạ vang lên trong đầu hắn...
-
--> system_awakening_delayed
+-> system_awakening
 
 === system_awakening ===
 # BACKGROUND: bg_void_golden
 # MUSIC: bgm_system_activation
-# EFFECT: screen_flash|#FFFFFF|1000
+# EFFECT: screen_flash|#FFD700|1000
 # EFFECT: sfx_system_chime
 
 ~ system_awakened = true
 ~ has_anh_hon_lenh = true
 
-[HỆ THỐNG TAM QUỐC KÍCH HOẠT]
+【 CÀN KHÔN ĐẢO CHUYỂN · THIÊN CƠ KÍCH HOẠT 】
 
-⟨ Phát hiện Trí Huệ Xuyên Thời Đại ⟩
-⟨ Kích hoạt Hệ Thống Triệu Hoán Anh Linh ⟩
-⟨ Ban tặng: Anh Hồn Lệnh Sơ Cấp × 1 ⟩
+⟨ Cảm ứng: Hùng tài đại lược · Trí tuệ thấu suốt càn khôn ⟩
+⟨ Khởi động: Thượng Cổ Bái Tướng Thần Đàn ⟩
+⟨ Ban tặng vật phẩm: Thượng Cổ Anh Hồn Lệnh × 1 ⟩
 
-# EFFECT: show_toast|🎉 HỆ THỐNG KÍCH HOẠT! Nhận Anh Hồn Lệnh × 1|system
+# EFFECT: show_toast|🎉 THỨC TỈNH THIÊN CƠ: Tiếp nhận Thượng Cổ Anh Hồn Lệnh|system
 # EFFECT: grant_ticket|1
 
-"Hệ thống... Tam Quốc?" — Quý Bình An nghe thấy giọng nói cơ giới vang trong đầu.
+Một cỗ hàn khí hùng hồn hòa cùng kim quang chói lòa tràn vào đan điền Quý Bình An. Trong lòng bàn tay hắn, một tấm lệnh bài bằng đồng cổ chạm khắc thần thú thượng cổ dần ngưng tụ thành thực thể, tỏa ra uy áp ngập tràn.
 
-[HỆ THỐNG]: Ký chủ đã chứng minh trí tuệ vượt bậc. Hệ Thống Triệu Hoán Anh Linh Tam Quốc chính thức kích hoạt.
+[THIÊN CƠ HỆ THỐNG]: Ký chủ đã bước qua ngưỡng cửa sinh tử, đoạt lấy thiên mệnh. Kể từ giờ phút này, có thể chiêu mộ chiến thần, mưu sĩ ngàn năm về dưới trướng!
 
-[HỆ THỐNG]: Ký chủ có thể sử dụng Anh Hồn Lệnh để triệu hoán danh tướng, mưu thần, mỹ nhân từ thời Tam Quốc về phụ tá.
-
-[HỆ THỐNG]: Lưu ý — Anh linh được triệu hoán sẽ tồn tại dưới dạng thực thể vật lý, có sức mạnh và ý thức đầy đủ.
-
-* [Kiểm tra Anh Hồn Lệnh]
-  Quý Bình An nhìn xuống tay — một tấm lệnh bài cổ kính, viền vàng rực rỡ, khắc chữ "英魂令" (Anh Hồn Lệnh) phát ra ánh sáng ấm áp.
-  
-  [HỆ THỐNG]: Anh Hồn Lệnh Sơ Cấp có thể triệu hoán 1 Anh Linh cấp Hoàng Cảnh trở xuống. Đài chiêu mộ sẽ mở khóa khi Ký chủ đạt đủ điều kiện.
+* [Thiên Cơ · Nắm chặt lệnh bài: "Có thiên mệnh trong tay, vận mệnh này do ta tự định đoạt!"]
+  Quý Bình An siết chặt phiến lệnh bài ấm nóng trong lòng bàn tay. Đôi mắt hắn ánh lên tia sáng sắc lẹm thấu suốt cõi trần.
   
   -> chapter_1_aftermath
 
@@ -282,44 +270,43 @@ Quý Bình An nuốt nhục. Nhưng trong bóng tối cuối hàng, một tiến
 ~ system_awakened = true
 ~ has_anh_hon_lenh = true
 
-Trong khoảnh khắc tĩnh lặng giữa đại điện ồn ào, Quý Bình An nghe thấy một giọng nói kỳ lạ — không phải từ bên ngoài, mà từ sâu trong ý thức:
+Trong khoảnh khắc tĩnh lặng giữa đại điện ồn ào, Quý Bình An nghe thấy một thanh âm cổ kính như vọng lại từ chuông đồng ngàn năm:
 
-[HỆ THỐNG]: ...Phát hiện Linh Hồn Xuyên Không. Khởi động giao thức khẩn cấp.
-[HỆ THỐNG]: Hệ Thống Triệu Hoán Anh Linh Tam Quốc — kích hoạt ở chế độ ẩn.
-[HỆ THỐNG]: Ban tặng: Anh Hồn Lệnh Sơ Cấp × 1.
+[THIÊN CƠ HỆ THỐNG]: Cảm ứng khí tức vương giả ẩn nhẫn. Thượng Cổ Bái Tướng Thần Đàn kích hoạt ở chế độ tiềm phục.
+[THIÊN CƠ HỆ THỐNG]: Ban tặng: Thượng Cổ Anh Hồn Lệnh × 1.
 
-# EFFECT: show_toast|🎉 HỆ THỐNG KÍCH HOẠT (Chế độ ẩn)! Nhận Anh Hồn Lệnh × 1|system
+# EFFECT: show_toast|🎉 THỨC TỈNH THIÊN CƠ (Tiềm Phục): Tiếp nhận Anh Hồn Lệnh × 1|system
 # EFFECT: grant_ticket|1
 
-Hắn giật mình nhìn xuống — trong tay áo, một tấm lệnh bài phát sáng mờ nhạt xuất hiện từ hư không.
+Trong tay áo hắn, phiến lệnh bài khắc họa rồng thiêng phát ra ánh sáng vàng ấm áp.
 
 -> chapter_1_aftermath
 
 === chapter_1_aftermath ===
-# BACKGROUND: bg_pho_ma_phu_courtyard
+# BACKGROUND: bg_palace_chamber
 # MUSIC: bgm_night_contemplation
-# ACTORS: qui_binh_an|right|thoughtful
+# ACTORS: qui_binh_an|right|determined
 
 ~ chapter = 1
 ~ met_to_kien_phong = true
 
-Đêm khuya. Phò Mã Phủ.
+Đêm khuya tẩm thất phò mã phủ.
 
-Quý Bình An ngồi trong sân viện, ngẩng đầu nhìn trăng. Tấm Anh Hồn Lệnh nằm trên bàn đá, phát ra ánh sáng vàng nhạt.
+Ánh trăng lạnh rọi qua song cửa sổ, chiếu lên phiến Thượng Cổ Anh Hồn Lệnh nằm trên bàn gỗ đàn hương.
 
-"Hệ thống Tam Quốc... Triệu hoán anh linh... Thế giới này thật điên rồ."
+Quý Bình An đứng chắp tay nhìn ra màn đêm kinh đô mịt mùng:
 
-Nhưng hắn biết — nếu muốn sống, muốn bảo vệ Quý gia, muốn thoát khỏi cái danh "phò mã phế vật" — hắn cần sức mạnh.
+"Vũ Hoàng ngoài mặt khen thưởng nhưng ánh mắt đầy vẻ thăm dò kiêng kỵ. Còn Nam Ly chịu nhục tại điện tiền ắt sẽ giở thủ đoạn ám sát hoặc gây hấn biên cương..."
 
-[HỆ THỐNG]: Ký chủ, Bái Tướng Đài (Đài Chiêu Mộ Anh Linh) sẽ mở khóa khi Ký chủ chuẩn bị đủ điều kiện. Hãy sẵn sàng.
+"Không thể chần chừ thêm nữa. Phải mau chóng khởi động Bái Tướng Thần Đàn, chiêu mộ võ tướng trấn giữ cơ đồ!"
 
-* [Kết thúc Chương 1]
-  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 1: Xuyên Không & Đối Thơ Đại Điện|milestone
+* [Quyền Mưu · Chuẩn bị mật thất: "Sóng gió kinh đô đã nổi lên, lập tức chuẩn bị tế đàn chiêu mộ danh tướng!"]
+  # EFFECT: show_toast|📜 HOÀN TẤT HỒI 1: Phò Mã Thức Tỉnh & Đối Thơ Chấn Kinh Đô|milestone
   # EFFECT: chapter_complete|1
   -> chapter_5_transition
 
 // ============================================================
-// CHƯƠNG 5: MẬT THẤT PHÒ MÃ PHỦ & BÁI TƯỚNG ĐÀI GACHA
+// CHƯƠNG 5: MẬT THẤT PHÒ MÃ PHỦ & BÁI TƯỚNG ĐÀI
 // ============================================================
 
 === chapter_5_transition ===
@@ -331,24 +318,22 @@ Nhưng hắn biết — nếu muốn sống, muốn bảo vệ Quý gia, muốn 
 
 Bốn ngày trôi qua kể từ yến tiệc đại điện.
 
-Quý Bình An đã dành thời gian tìm hiểu về thế giới này — Đại Vũ Hoàng Triều, các thế lực xung quanh, và sức mạnh bí ẩn của Hệ Thống.
+Quý Bình An dành trọn thời gian nắm bắt tình thế — Đại Vũ Hoàng Triều thù trong giặc ngoài, và sức mạnh bí ẩn của Thượng Cổ Bái Tướng Đàn.
 
-Đêm nay, trong mật thất sâu nhất của Phò Mã Phủ, Anh Hồn Lệnh bỗng phát sáng chói lòa.
+Đêm nay, trong mật thất sâu nhất của Phò Mã Phủ, phiến Anh Hồn Lệnh bỗng rung lên từng hồi chuông trầm hùng.
 
-[HỆ THỐNG]: Điều kiện đã đủ. Bái Tướng Đài — Khai Mở!
+[THIÊN CƠ HỆ THỐNG]: Địa mạch quy tụ. Thượng Cổ Bái Tướng Thần Đàn — Khai Mở!
 
 # EFFECT: screen_flash|#FFD700|800
 # EFFECT: sfx_gong_ancient
 
 ~ unlocked_gacha = true
-# EFFECT: show_toast|🎉 MỞ KHÓA: Bái Tướng Đài (Đài Chiêu Mộ Anh Linh)|unlock
+# EFFECT: show_toast|🎉 KHAI MỞ: Bái Tướng Thần Đàn (Chiêu Mộ Danh Tướng)|unlock
 # EFFECT: unlock_feature|bai_tuong_dai
 
-[HỆ THỐNG]: Ký chủ có thể sử dụng Anh Hồn Lệnh tại Bái Tướng Đài để chiêu mộ anh linh Tam Quốc.
+[THIÊN CƠ HỆ THỐNG]: Ký chủ có thể tế xuất Anh Hồn Lệnh để thỉnh triệu anh linh danh tướng thời Tam Quốc quy vị. Hiện tại sở hữu: Anh Hồn Lệnh × 1.
 
-[HỆ THỐNG]: Hiện tại Ký chủ sở hữu: Anh Hồn Lệnh Sơ Cấp × 1.
-
-* [Bước vào Bái Tướng Đài — Kích hoạt Gacha]
+* [Thiên Cơ · Khởi động tế đàn: "Thượng Cổ Bái Tướng Đài, phụng mệnh ta triệu hoán danh tướng ngàn năm quy vị!"]
   # EFFECT: trigger_gacha|bai_tuong_dai_v1
   -> gacha_summoning
 
@@ -357,13 +342,10 @@ Quý Bình An đã dành thời gian tìm hiểu về thế giới này — Đ�
 # MUSIC: bgm_bagua_ritual
 # EFFECT: sfx_bagua_spin
 
-// [Engine sẽ hiển thị Gacha Modal tại đây]
-// Sau khi người chơi hoàn thành ritual và rút được Triệu Vân:
-
 ~ affinity_trieu_van = 50
 
-[HỆ THỐNG]: ⟨ SSR ⟩ Chiêu mộ thành công — TRIỆU TỬ LONG!
-[HỆ THỐNG]: Cảnh giới: Hoàng Cảnh Sơ Kỳ | Binh chủng: Bạch Mã Nghĩa Tòng
+[THIÊN CƠ HỆ THỐNG]: ⟨ SSR ⟩ THỈNH TRIỆU THÀNH CÔNG — THƯỜNG SƠN TRIỆU TỬ LONG!
+[THIÊN CƠ HỆ THỐNG]: Cảnh giới: Hoàng Cảnh Sơ Kỳ | Binh chủng: Bạch Mã Nghĩa Tòng
 
 # EFFECT: screen_flash|#C0C0C0|1000
 # EFFECT: sfx_hero_reveal_ssr
@@ -375,65 +357,54 @@ Quý Bình An đã dành thời gian tìm hiểu về thế giới này — Đ�
 # ACTORS: qui_binh_an|right|amazed, trieu_van|left|noble
 # MUSIC: bgm_hero_theme
 
-Ánh sáng bạc ngân lóe lên, sương mù tụ lại hình dáng một chiến tướng.
+Ánh sáng bạc ngân lóe lên rực rỡ, sương khói ngưng tụ thành thân ảnh một vị dũng tướng oai phong lẫm liệt.
 
-Giáp bạc sáng loáng, bạch bào tung bay, tay phải cầm trường thương — Long Đảm Lượng Ngân Thương phát ra tiếng rung nhẹ.
+Giáp bạc sáng loáng, bạch bào tung bay, tay cầm Long Đảm Lượng Ngân Thương tỏa ra chiến ý ngút trời.
 
-Triệu Tử Long — Thường Sơn Triệu Vân, một trong Ngũ Hổ Thượng Tướng của Lưu Bị — hiện thân trước mặt Quý Bình An.
+Triệu Tử Long — Thường Sơn Triệu Vân — quỳ một gối, thương cắm thẳng xuống sàn đá, giọng nói sang sảng chấn động mật thất:
 
-"Triệu Vân, Triệu Tử Long, bái kiến Ký chủ."
+"Triệu Vân, Triệu Tử Long, bái kiến Chúa Công!"
 
-Tử Long đơn gối quỳ, Long Đảm Thương dựng đứng bên cạnh, ánh mắt kiên nghị như sao.
-
-* [Đỡ Triệu Vân đứng lên: "Tử Long, từ nay ta và ngươi cùng chiến đấu."]
+* [Tri Kỷ · Tiến lên đỡ Tử Long: "Tử Long mau bình thân! Có ngươi bên cạnh, Quý Bình An ta hà tất phải sợ nghịch cảnh!"]
   ~ affinity_trieu_van += 10
   
-  Triệu Vân ngẩng đầu, ánh mắt kiên định: "Tử Long nguyện dùng Long Đảm Thương bảo vệ Ký chủ, dù phải đâm xuyên vạn quân!"
+  Triệu Vân ngẩng đầu, ánh mắt kiên định như thiết thạch: "Tử Long nguyện đem Long Đảm Thương bảo hộ Chúa Công, dù đối mặt vạn mã thiên quân cũng không lùi nửa bước!"
   
   -> hero_inspector_prompt
 
-* [Quan sát kỹ — hắn thật sự là Triệu Tử Long?]
-  Quý Bình An nhíu mày: "Chứng minh cho ta."
+* [Khảo Nghiệm · Quan sát chiến ý: "Long Đảm Thần Thương danh chấn thiên hạ, xin Tử Long thi triển cho ta xem!"]
+  Triệu Vân mỉm cười, mũi thương khẽ rung — bảy đạo thương ảnh hóa thành hàn quang xé toang hư không, xuyên qua bảy trụ đá mật thất trong chớp mắt mà không làm vỡ một viên ngói!
   
-  Triệu Vân mỉm cười, Long Đảm Thương trong tay bỗng hóa thành tia sáng — bảy mũi thương bắn ra liên hoàn, xiên xuyên bảy cột gỗ trong mật thất mà không chạm một vật trang trí nào.
-  
-  "Thất Thám Bàn Xà."
+  "Thất Thám Bàn Xà Thương Pháp."
   
   ~ affinity_trieu_van += 5
   
   -> hero_inspector_prompt
 
 === hero_inspector_prompt ===
-# EFFECT: show_toast|💠 Mở Bảng Thuộc Tính Tướng — Nhấp vào Avatar Triệu Vân để xem|info
+# EFFECT: show_toast|💠 Đã Khai Mở Bảng Danh Tướng — Xem chi tiết thuộc tính Triệu Vân|info
 
-[HỆ THỐNG]: Đã mở khóa Bảng Tra Cứu Thuộc Tính Danh Tướng.
-[HỆ THỐNG]: Nhấp vào biểu tượng Triệu Vân bất cứ lúc nào để xem chi tiết.
+[THIÊN CƠ HỆ THỐNG]: Đã mở khóa Bảng Tra Cứu Thuộc Tính Danh Tướng. Ký chủ có thể thẩm duyệt chi tiết chiến tướng bất cứ lúc nào.
 
-// [Engine hiển thị Hero Detail Inspector Modal]
-
-* [Tiếp tục câu chuyện]
+* [Quân Cơ · Trao quyền thống lĩnh: "Mật thất và hậu viện phủ đệ giao cho Tử Long canh giữ, người khả nghi được phép tiền trảm hậu tấu!"]
   -> chapter_5_aftermath
 
 === chapter_5_aftermath ===
 # ACTORS: qui_binh_an|right|determined, trieu_van|left|standing_guard
 
-Quý Bình An nhìn Triệu Tử Long — vị chiến thần Tam Quốc giờ đây đứng trong phò mã phủ của hắn, trung thành và sẵn sàng.
+Quý Bình An nhìn Triệu Tử Long — vị chiến thần Tam Quốc giờ đây đứng sừng sững trong phò mã phủ, trung trinh và sẵn sàng đẫm máu sa trường.
 
-"Tử Long, ta có một câu hỏi. Ngươi... biết gì về thế giới này?"
+"Tử Long, thế giới này hiểm độc gấp bội, quyền mưu giấu sau từng nụ cười."
 
-Triệu Vân lắc đầu: "Thần chỉ biết Ký chủ cần thần. Thế giới này hay thế giới khác, Long Đảm Thương vẫn sắc bén."
+Triệu Vân nghiêm giọng: "Thần chỉ biết Chúa Công ở đâu, Long Đảm Thương chỉ về hướng đó!"
 
-Quý Bình An mỉm cười. Ít nhất, hắn không còn một mình.
-
-[HỆ THỐNG]: Gợi ý — Chương tiếp theo sẽ mở khóa cơ hội Kinh Doanh. Hãy chuẩn bị.
-
-* [Kết thúc Chương 5]
-  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Triệu Tử Long SSR|milestone
+* [Kinh Tài · Khởi sự cơ nghiệp: "Muốn nuôi quân đúc giáp thì ngân quỹ phải dồi dào. Ngày mai đến Thiên Kim Lâu bàn chuyện làm ăn!"]
+  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Thường Sơn Triệu Tử Long SSR|milestone
   # EFFECT: chapter_complete|5
   -> chapter_8_transition
 
 // ============================================================
-// CHƯƠNG 8: THIÊN KIM LÂU & PHÁT MINH THẤU HOA CAO
+// CHƯƠNG 8: THIÊN KIM LÂU & THẤU HOA CAO
 // ============================================================
 
 === chapter_8_transition ===
@@ -447,56 +418,52 @@ Quý Bình An mỉm cười. Ít nhất, hắn không còn một mình.
 
 Ba ngày sau khi chiêu mộ Triệu Vân.
 
-Quý Bình An đang ngồi trong Thiên Kim Lâu — tửu lâu lớn nhất kinh đô, do lâu chủ Vệ Ti Vũ điều hành.
+Quý Bình An ngồi trên lầu cao nhất của Thiên Kim Lâu — tửu lâu lớn nhất kinh đô, do lâu chủ Vệ Ti Vũ phong hoa tuyệt đại điều hành.
 
-Hắn mang theo một mẫu vật nhỏ — một thanh xà phòng thơm, trắng tinh, mịn màng — thứ mà hắn đã bí mật chế tạo từ mỡ cừu và tro kiềm trong ba đêm liên tiếp.
+Hắn đặt lên bàn một chiếc hộp sơn mài — bên trong là thanh xà phòng ngát hương hoa nhài, mịn màng như ngọc thạch — bảo vật hắn đã bí mật điều chế từ nguyên liệu thảo dược tự nhiên.
 
-"Vệ lâu chủ, ta có một thương phẩm... sẽ thay đổi toàn bộ thị trường mỹ phẩm Đại Vũ."
+"Vệ lâu chủ, thương phẩm này... sẽ khiến cả kinh đô điên đảo."
 
-Vệ Ti Vũ nhíu mày, cầm thanh xà phòng lên ngửi: "Thơm... và trơn láng. Đây là gì?"
+Vệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng rực: "Hương thơm thoát tục, trơn láng như mỡ đông. Phò mã gia, đây là kỳ trân dị bảo gì?"
 
-"Thấu Hoa Cao. Sản phẩm tinh chế từ nguyên liệu tự nhiên, có thể làm sạch da, khử mùi, và giữ ẩm. Mỗi thanh bán giá 10 lượng bạc cho giới quý tộc."
+"Thấu Hoa Cao. Rửa sạch bụi trần, lưu hương bảy ngày, dưỡng nhan tuyệt phẩm. Mỗi bánh giá mười lượng bạc dành riêng cho vương tôn quý tộc."
 
-* [Đề xuất hợp tác kinh doanh 50/50]
+* [Hợp Tác · Bắt tay cùng Vệ Ti Vũ: "Ta xuất bí phương độc quyền, lâu chủ lo mạng lưới phân phối, lợi nhuận chia đôi!"]
   ~ gold += 3000
   ~ unlocked_soap = true
   
-  "Ta cung cấp công thức độc quyền, lâu chủ lo sản xuất và phân phối. Lợi nhuận chia đôi."
+  "Ta cung cấp công thức độc quyền, Thiên Kim Lâu lo vận chuyển và tiêu thụ. Lợi nhuận chia đều."
   
-  Vệ Ti Vũ gật đầu: "Phò mã gia, thương vụ này sẽ khiến cả kinh đô phải xôn xao."
+  Vệ Ti Vũ khẽ cười quyến rũ, nâng chén rượu chúc mừng: "Phò mã gia quả là bậc kỳ tài ẩn nhẫn. Thương vụ này, tiện thiếp nhận!"
   
-  # EFFECT: show_toast|🎉 MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt)|unlock
+  # EFFECT: show_toast|🎉 MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt Sa Bàn)|unlock
   # EFFECT: unlock_feature|thau_hoa_cao
-  
-  [HỆ THỐNG]: Mở khóa tính năng Kinh Doanh Xà Phòng! Thu nhập +3.000 Vàng mỗi lượt trên Sa Bàn.
   
   -> chapter_8_aftermath
 
-* [Giữ bí mật, tự sản xuất quy mô nhỏ]
+* [Ẩn Nhẫn · Lập xưởng chế tạo riêng: "Bí phương chưa thể để lộ ra ngoài, tạm thời sản xuất quy mô nhỏ tích lũy thực lực."]
   ~ gold += 1000
   ~ unlocked_soap = true
   
-  "Chưa vội. Ta sẽ tự kinh doanh trước, thử thị trường."
+  "Chưa vội khuếch trương. Ta sẽ thăm dò thị trường trước, từng bước tích súc ngân quỹ."
   
-  # EFFECT: show_toast|🎉 MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+1.000 Vàng mỗi lượt, mở rộng sau)|unlock
+  # EFFECT: show_toast|🎉 MỞ KHÓA: Phường Đúc Thấu Hoa Cao (+1.000 Vàng mỗi lượt)|unlock
   # EFFECT: unlock_feature|thau_hoa_cao
-  
-  [HỆ THỐNG]: Mở khóa tính năng Kinh Doanh Xà Phòng! Thu nhập +1.000 Vàng mỗi lượt (có thể nâng cấp).
   
   -> chapter_8_aftermath
 
 === chapter_8_aftermath ===
 # ACTORS: qui_binh_an|right|satisfied
 
-Đây mới là bước khởi đầu thực sự. Có tiền, có tướng — Quý Bình An bắt đầu xây dựng nền tảng quyền lực.
+Nguồn hoàng kim ròng rã bắt đầu chảy vào túi phò mã phủ. Có tiền, có tướng — Quý Bình An đã đặt viên đá tảng đầu tiên cho đại nghiệp tranh bá.
 
-* [Kết thúc Chương 8]
-  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao|milestone
+* [Quyền Mưu · Thu nạp nhân tài: "Ngân khố đã vững, lập tức mở rộng tai mắt khắp các ngõ ngách kinh thành!"]
+  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao Kinh Doanh|milestone
   # EFFECT: chapter_complete|8
   -> chapter_10_transition
 
 // ============================================================
-// CHƯƠNG 10: THÍCH KHÁCH PHÒ MÃ PHỦ
+// CHƯƠNG 10: THÍCH KHÁCH ĐÊM TRĂNG
 // ============================================================
 
 === chapter_10_transition ===
@@ -507,19 +474,19 @@ Vệ Ti Vũ nhíu mày, cầm thanh xà phòng lên ngửi: "Thơm... và trơn 
 
 ~ chapter = 10
 
-Đêm khuya. Phò Mã Phủ.
+Đêm rằm gió lộng. Phò Mã Phủ tịch mịch như tờ.
 
-Quý Bình An đang đọc sách trong thư phòng thì cảm thấy luồng sát khí lạnh buốt.
+Quý Bình An đang nghiên cứu bản đồ địa hình trong thư phòng thì một luồng sát khí lạnh buốt gáy ập tới!
 
 # EFFECT: sfx_blade_unsheath
 # EFFECT: screen_darken
 
-Ba bóng đen từ trên mái nhà lao xuống — đao sáng lạnh, nhằm thẳng cổ phò mã!
+Ba đạo bóng đen xé gió lao xuống từ xà nhà — lưỡi đoản đao tẩm độc xanh biếc nhằm thẳng yếu huyệt của hắn!
 
-* [Hét gọi Triệu Vân!]
+* [Sát Phạt · Hét gọi Triệu Vân: "Tử Long, lưu lại kẻ sống!"]
   -> assassin_zhao_yun_saves
 
-* [Lăn sang bên, tự né tránh]
+* [Quyền Mưu · Lâm nguy không loạn: Phán đoán phương vị mũi đao, né tránh hiểm cảnh tìm chỗ sơ hở!]
   -> assassin_self_dodge
 
 === assassin_zhao_yun_saves ===
@@ -529,11 +496,11 @@ Ba bóng đen từ trên mái nhà lao xuống — đao sáng lạnh, nhằm th�
 
 "TỬ LONG!"
 
-Trước khi tiếng hét tắt, ánh bạc đã lóe lên — Long Đảm Lượng Ngân Thương xé toang bóng đêm!
+Thanh âm chưa dứt, một dải ngân hà rực sáng đã xé toang màn đêm — Long Đảm Thương xuất kích!
 
-Triệu Vân xuất hiện như luồng gió bạc. Ba mũi thương liên hoàn — ba thích khách ngã gục trước khi kịp chạm vào phò mã.
+Triệu Vân tựa như thần phong giáng thế. Ba mũi thương điểm chuẩn xác vào cổ tay thích khách, đánh bay binh khí, đá văng bọn chúng xuống sân gạch!
 
-"Ký chủ, bọn chúng là sát thủ được huấn luyện bài bản." — Triệu Vân thu thương, mắt vẫn cảnh giác quét xung quanh.
+"Chúa Công, bọn chúng là tử sĩ chuyên nghiệp!"
 
 ~ affinity_trieu_van += 15
 
@@ -542,15 +509,15 @@ Triệu Vân xuất hiện như luồng gió bạc. Ba mũi thương liên hoàn
 === assassin_self_dodge ===
 # ACTORS: qui_binh_an|right|rolling, assassin|center|attacking
 
-Quý Bình An lăn sang bên — phản xạ sinh tồn từ kinh nghiệm đọc quá nhiều tiểu thuyết võ hiệp.
+Quý Bình An xoay người ngã nhào ra sau bức bình phong gỗ lim, lưỡi đao độc chém toạc vạt áo!
 
-Nhưng thích khách thứ hai đã ở sau lưng—
+Thích khách thứ hai vừa vung đao bồi tiếp thì—
 
 # EFFECT: sfx_spear_whoosh
 # EFFECT: screen_flash|#C0C0C0|300
 # ACTORS: trieu_van|left|battle_stance
 
-Kịp thời! Triệu Vân đã phục sẵn bên ngoài từ lúc cảm nhận sát khí. Long Đảm Thương quét ngang — ba thích khách ngã gục.
+Hàn quang lóe lên! Long Đảm Thương của Triệu Vân quét ngang, đánh gãy xương sườn thích khách hất văng ra sân!
 
 ~ affinity_trieu_van += 10
 
@@ -561,43 +528,29 @@ Kịp thời! Triệu Vân đã phục sẵn bên ngoài từ lúc cảm nhận 
 # MUSIC: bgm_investigation
 # ACTORS: qui_binh_an|right|serious, trieu_van|left|reporting
 
-Triệu Vân kiểm tra thi thể thích khách: "Bọn chúng đều uống thuốc phong bế huyệt đạo, không thể tra khảo. Nhưng hình xăm trên cổ tay — đây là dấu hiệu của..."
+Triệu Vân xốc ngược cánh tay thích khách: "Bọn chúng đều cắn vỡ độc hoàn tự sát. Nhưng trên cổ tay có ấn triện hình đầu sói — đây là mật vụ thuộc Phi Báo Quân của Bắc Cương!"
 
-Hắn dừng lại.
+Hắn nhìn Quý Bình An trầm trọng: "Chúa Công, có kẻ trong triều cấu kết với phiên trấn phương Bắc muốn trừ khử ngài."
 
-"Ký chủ, bọn chúng không phải thích khách thường. Ai đó có quyền lực rất lớn muốn ngài chết."
-
-* [Ngụy tạo tai nạn giấu xác, bí mật điều tra]
+* [Ẩn Nhẫn · Xóa sạch dấu vết: "Bí mật chôn xác, dĩ bất biến ứng vạn biến, âm thầm truy vết kẻ chủ mưu."]
   ~ suspicion -= 10
   ~ gold += 2000
-  
-  "Không được để lộ. Giấu xác, xóa dấu vết. Ta sẽ tự điều tra."
-  
-  # EFFECT: set_flag|ch10_method|hide
-  
+  ch10_method = "hide"
   -> chapter_10_complete
 
-* [Áp giải thi thể lên Kim Loan Điện đối chất Vũ Hoàng]
+* [Hoành Đao · Đối chất triều đình: "Đem xác ném trước mặt trăm quan, bức kẻ giấu mặt phải lộ sơ hở!"]
   ~ suspicion += 20
   ~ gold += 5000
-  
-  "Đưa xác lên triều! Ta muốn xem ai dám ám sát phò mã ngay giữa kinh đô!"
-  
-  # EFFECT: set_flag|ch10_method|confront
-  
+  ch10_method = "confront"
   -> chapter_10_complete
 
-* [Hỏa tốc điều động kỵ binh thám thính tiền tuyến]
+* [Quân Cơ · Thám thính biên cương: "Sát thủ mang dấu vết phương Bắc, lập tức sai thám mã cấp báo tiền tuyến!"]
   ~ suspicion += 5
-  
-  "Tử Long, phái người đi kiểm tra biên giới phía Bắc. Ta nghi ngờ chuyện này liên quan đến ngoại bang."
-  
-  # EFFECT: set_flag|ch10_method|investigate
-  
+  ch10_method = "investigate"
   -> chapter_10_complete
 
 === chapter_10_complete ===
-* [Kết thúc Chương 10]
+* [Quyết Sách · Chờ đợi thời cơ: "Kinh đô đã là lò lửa, chỉ có nắm lấy binh quyền mới mong bảo toàn gia tộc!"]
   # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 10: Thích Khách Đêm Trăng|milestone
   # EFFECT: chapter_complete|10
   -> chapter_15_transition
@@ -614,13 +567,13 @@ Hắn dừng lại.
 
 ~ chapter = 15
 
-Đại điện Kim Loan. Vũ Hoàng ngồi trên ngai, mặt nghiêm trọng.
+Đại điện Kim Loan sớm hôm sau. Vũ Hoàng ngự trên ngai vàng, sắc diện ngập tràn phẫn nộ:
 
-"Biên giới Bắc Cảnh bất ổn. Quân phiến loạn đã chiếm ba huyện, cắt đứt tuyến thương mại phương Bắc."
+"Bắc Cương phản nghịch! Phi Báo Quân liên kết với nghịch tặc Địch Hỏa công hãm ba huyện, chém chết quan trấn thủ, uy hiếp kinh kỳ!"
 
-Vũ Hoàng đứng dậy, rút thanh kiếm truyền quốc:
+Vũ Hoàng rút ra Thượng Phương Bảo Kiếm, ánh mắt dừng lại trên người Quý Bình An:
 
-"Trẫm phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, lĩnh binh mã chinh phạt Bắc Cảnh!"
+"Quý Bình An! Phụ thân ngươi từng trấn thủ phương Bắc, ngươi lại có dũng khí phi thường. Trẫm lệnh ngươi tiếp nhận chức Chinh Bắc Tiền Phong Tướng Quân, lập tức xuất chinh dẹp loạn!"
 
 # EFFECT: screen_flash|#FFD700|500
 # EFFECT: sfx_imperial_decree
@@ -630,22 +583,19 @@ Vũ Hoàng đứng dậy, rút thanh kiếm truyền quốc:
 ~ gold += 5000
 ~ jade += 20
 
-# EFFECT: show_toast|🎉 MỞ KHÓA: Tầng 2 — Đế Nghiệp Sa Bàn (Grand Strategy Map)|unlock
+# EFFECT: show_toast|🎉 KHAI MỞ: Tầng 2 — Sơn Hà Sa Bàn (Grand Strategy)|unlock
 # EFFECT: unlock_feature|de_nghiep_sa_ban
 
-[HỆ THỐNG]: Mở khóa Đế Nghiệp Sa Bàn! Bản đồ chiến lược 4 phương, hệ thống Điểm Hành Động (AP), và quản lý hậu cần quân đội.
+[THIÊN CƠ HỆ THỐNG]: Khai mở Tầng 2 — Sơn Hà Sa Bàn! Cho phép điều binh khiển tướng, bố trí quân lương và tuần tra các cứ điểm trọng yếu.
 
-* [Nhận lệnh: "Thần lĩnh chỉ!"]
+* [Quân Cơ · Tiếp nhận Hổ Phù: "Thần Quý Bình An lĩnh chỉ! Ắt sẽ san bằng Bắc Cương, lập nên phòng tuyến bất khả xâm phạm!"]
   ~ suspicion += 5
   ~ affinity_trieu_van += 5
   
-  "Thần Quý Bình An lĩnh chỉ! Tất sẽ bình định Bắc Cảnh, khôi phục cương thổ cho Đại Vũ!"
+  Quý Bình An quỳ nhận Hổ Phù bằng đồng, ánh mắt sáng rực.
   
-  Triệu Vân đứng bên cạnh, Long Đảm Thương vang lên tiếng ngân: sẵn sàng.
+  Bên cạnh hắn, Triệu Tử Long nắm chặt chuôi thương — đại thời đại tranh bá chính thức bắt đầu!
   
-  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 15: Chinh Phạt Bắc Cảnh|milestone
+  # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 15: Tiếp Nhận Thánh Chỉ Bắc Chinh|milestone
   # EFFECT: chapter_complete|15
-  
-  [HỆ THỐNG]: Từ đây, người chơi có thể chuyển sang Tầng 2 — Đế Nghiệp Sa Bàn để quản lý lãnh thổ và quân đội.
-  
   -> chapter_20_start

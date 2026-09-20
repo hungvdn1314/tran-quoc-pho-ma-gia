@@ -2,8 +2,8 @@
 // Trấn Quốc Phò Mã Gia — Ink Scene Script
 // Phần 2: Từ Chương 16 đến Chương 52 (Hồi 1 Hoàn Tất)
 // ============================================================
-// Biên soạn theo chuẩn Ink scripting (inkjs runtime)
-// Tham chiếu: narrative-scene-scripting & game-systems-architect skills
+// Biên soạn theo chuẩn mực văn học cổ phong & Ink scripting
+// Tham chiếu: narrative-scene-scripting & game-systems-architect
 // ============================================================
 
 // ============================================================
@@ -18,31 +18,27 @@
 
 ~ chapter = 20
 
-Gió lạnh phương Bắc gào thét qua ải Nhạn Môn.
+Gió lạnh phương Bắc gào thét qua ải Nhạn Môn, cuốn theo cát bụi sương mù mịt mù.
 
-Quý Bình An đứng trên vọng lâu quân doanh Bắc Cương. Sau lưng hắn, Triệu Vân tay cầm Long Đảm Thương vững như bàn thạch.
+Quý Bình An khoác chiến bào đứng trên vọng lâu tiền tiêu quân doanh Bắc Cương. Sau lưng hắn, Triệu Tử Long uy dũng khôi giáp, Long Đảm Thương cắm thẳng bên bàn cờ sa bàn.
 
-Phía đối diện, một vị chiến tướng mình mặc hắc giáp nặng trĩu, nét mặt nghiêm cẩn như khắc đá, chắp tay hành lễ nhưng lưng thẳng tắp:
+Phía đối diện, một vị chiến tướng khoác hắc giáp nặng trĩu, phong trần sương gió, nét mặt nghiêm cẩn tựa như tảng đá ngàn năm, hai tay ôm quyền thi lễ:
 
 "Bắc Cương tiền phong thống lĩnh Cao Thuận, bái kiến Phò mã đại tướng quân!"
 
 # EFFECT: sfx_armor_clank
 
-Quý Bình An nhìn người này. Ký ức Tam Quốc trong đầu lập tức hiện lên:
+Quý Bình An nhìn sâu vào vị dũng tướng trước mắt:
 
-*Cao Thuận — thống soái Hãm Trận Doanh, tám trăm cảm tử quân trang bị giáp trụ tinh lương, mỗi trận đánh đều phá vỡ trận địa địch, tính tình thanh liêm trầm mặc, không uống rượu, không nhận quà cáp.*
+Cao Thuận — thống soái Hãm Trận Doanh nức tiếng Tam Quốc, tám trăm dũng sĩ cảm tử trang bị giáp trụ tinh lương, mỗi trận xông pha đều bạt núi phá lũy, tính tình trầm mặc thanh liêm, tuyệt đối không vướng bụi trần.
 
-* [Hỏi về thực trạng quân nhu và binh sĩ]
-  "Cao tướng quân bình thân. Quân sĩ Bắc Cương hiện nay thế nào?"
-  
-  Cao Thuận trầm giọng báo cáo: "Bẩm Phò mã, giáp trụ hư hỏng bốn phần, lương thực triều đình cấp phát trễ hai tháng. Nhưng tám trăm dũng sĩ Hãm Trận Doanh vẫn sẵn sàng quyết tử giữ ải!"
+* [Quân Cơ] Thăm hỏi tình hình quân nhu: "Cao tướng quân bình thân! Quân sĩ tiền tuyến trang bị và quân lương hiện thời ra sao?"
+  Cao Thuận trầm giọng bẩm báo: "Bẩm Phò mã, chiến giáp hư hại bốn phần, lương thảo triều đình cấp phát trễ hai tháng. Nhưng tám trăm huynh đệ Hãm Trận Doanh thề chết giữ vững cửa ải, quyết không lùi nửa bước!"
   
   -> gao_shun_decision
 
-* [Khen ngợi khí phách Hãm Trận Doanh]
-  "Ta nghe danh Hãm Trận Doanh đã lâu. Trăm trận trăm thắng, xung phong phá trận không gì cản nổi!"
-  
-  Cao Thuận ánh mắt lóe lên vẻ xúc động hiếm hoi, cúi đầu tạ ơn: "Tướng sĩ chỉ làm tròn bổn phận bảo quốc an dân."
+* [Tri Kỷ] Khen ngợi khí phách dũng liệt: "Danh chấn Hãm Trận Doanh bách chiến bách thắng, hôm nay diện kiến quả không phụ danh xưng!"
+  Cao Thuận ánh mắt khẽ rung động, cúi đầu tạ ơn: "Mạt tướng chỉ tận trung báo quốc, bảo hộ bình yên cho vạn dân trăm họ."
   
   ~ affinity_gaoshun += 10
   -> gao_shun_decision
@@ -50,40 +46,34 @@ Quý Bình An nhìn người này. Ký ức Tam Quốc trong đầu lập tức 
 === gao_shun_decision ===
 # SCENE_TYPE: choice
 
-Quý Bình An mở hòm quân nhu, trước mặt hắn là nguồn vàng ròng kiếm được từ việc kinh doanh xà phòng Thấu Hoa Cao tại kinh thành.
+Quý Bình An mở rương bạc vàng — đây chính là nguồn lợi nhuận kếch xù thu hoạch từ việc kinh doanh Thấu Hoa Cao tại kinh thành.
 
-* [Dốc 5.000 Vàng rèn lại toàn bộ giáp trụ cho Hãm Trận Doanh]
+* [Kinh Tài] Dốc 5.000 Vàng rèn đúc chiến giáp: "Xuất ngân quỹ cá nhân, mở lò rèn đúc giáp khiên thép tôi tốt nhất cho Hãm Trận Doanh!"
   ~ gold -= 5000
   ~ affinity_gaoshun += 25
   ~ unlocked_granary = true
   
-  Quý Bình An phất tay: "Truyền lệnh! Xuất 5.000 lượng vàng từ ngân quỹ cá nhân của ta, mở lò rèn ngày đêm đúc giáp khiên thép tôi tốt nhất cho toàn quân!"
+  Quý Bình An vung tay hạ lệnh: "Mở lò rèn suốt ngày đêm! Tám trăm dũng sĩ Hãm Trận Doanh phải được trang bị hắc giáp và thuẫn thép cứng cáp nhất!"
   
-  Cao Thuận quỳ rạp xuống, hai tay ôm quyền: "Mạt tướng thay mặt tám trăm huynh đệ Hãm Trận Doanh, thề đem máu nóng đền đáp ân tri ngộ của Phò mã gia!"
+  Cao Thuận quỳ rạp xuống nền đá, giọng nói nghẹn ngào chấn động: "Mạt tướng thay mặt tám trăm huynh đệ, thề đem tính mạng báo đáp ân tri ngộ của Phò mã gia!"
   
-  # EFFECT: show_toast|🎉 MỞ KHÓA THẺ BÀI: Hãm Trận Doanh (SSR Shield Guard)|unlock
+  # EFFECT: show_toast|🎉 MỞ KHÓA THẺ BÀI: Hãm Trận Doanh (SSR Thuẫn Vệ)|unlock
   # EFFECT: unlock_feature|feature_ham_tran_doanh
-  
-  [HỆ THỐNG]: Thu phục thành công Danh tướng Cao Thuận! Mở khóa thẻ bài phòng thủ chiến thuật [Hãm Trận Doanh].
   
   -> chapter_20_complete
 
-* [Phối hợp chiến thuật Kỵ - Bộ giữa Triệu Vân và Cao Thuận]
+* [Quân Cơ] Kết hợp chiến thuật Kỵ - Bộ: "Triệu Tử Long dẫn Bạch Mã Kỵ phối hợp Hãm Trận Doanh luyện thế bọc sườn chặn đầu!"
   ~ affinity_gaoshun += 15
   ~ affinity_trieu_van += 15
   
-  "Tử Long, ngươi dẫn Bạch Mã Kỵ phối hợp cùng Hãm Trận Doanh của Cao tướng quân, luyện tập thế trận Kỵ Binh bọc sườn - Thiết Giáp chặn đầu."
+  Triệu Vân tuốt gươm hưởng ứng: "Chúa Công nhìn xa trông rộng! Kỵ binh tập kích mạn sườn, bộ binh thiết giáp chặn đầu, kẻ địch ắt tan như tro bụi!"
   
-  Triệu Vân mỉm cười gật đầu: "Tuân lệnh Ký chủ! Bộ kỵ phối hợp, tất phá địch như chẻ tre!"
-  
-  Cao Thuận gật đầu khâm phục tầm nhìn chiến thuật của Phò mã.
-  
-  # EFFECT: show_toast|⚔️ Sĩ Khí Quân Đội Tăng Vọt (+20% ATK Bộ Kỵ)|buff
+  # EFFECT: show_toast|⚔️ Sĩ Khí Ba Quân Tăng Cao (+20% Uy Lực Bộ Kỵ)|buff
   
   -> chapter_20_complete
 
 === chapter_20_complete ===
-* [Kết thúc Chương 20]
+* [Quân Cơ] Tiến quân về thung lũng Hắc Phong: "Thiết giáp Hãm Trận và kỵ binh Tử Long đã hợp nhất, lập tức nhổ trại tiến quân!"
   # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 20: Thu Phục Cao Thuận & Hãm Trận Doanh|milestone
   # EFFECT: chapter_complete|20
   -> chapter_27_transition
@@ -100,9 +90,9 @@ Quý Bình An mở hòm quân nhu, trước mặt hắn là nguồn vàng ròng 
 
 ~ chapter = 27
 
-Đêm khuya tại mật trướng soái phủ. Ngọn đèn dầu le lói chiếu lên tấm địa đồ sông Hoài Hà và Thanh Thủy.
+Đêm khuya tại mật trướng soái phủ. Ánh đuốc bập bùng soi rọi tấm địa đồ sông Hoài Hà và Thanh Thủy.
 
-Một bóng người trung niên áo xám bước vào. Ánh mắt thâm sâu như đầm nước lạnh, nụ cười nửa miệng như thấu suốt mọi trò đời.
+Một bóng người trung niên khoác trường bào màu xám tro chậm rãi bước vào. Đôi mắt thâm sâu như đầm lầy vạn trượng, nụ cười nửa miệng như thấu suốt mọi mưu mô nhân gian:
 
 "Thảo dân Giả Hủ, tự Văn Hòa, bái kiến Phò mã gia."
 
@@ -110,71 +100,65 @@ Một bóng người trung niên áo xám bước vào. Ánh mắt thâm sâu nh
 
 ~ met_gia_hu = true
 
-Quý Bình An giật mình đứng bật dậy: "Giả Hủ? Độc Sĩ Giả Hủ thời Tam Quốc?!"
+Quý Bình An khẽ chấn động: "Giả Hủ? Độc Sĩ Giả Hủ mưu định Tam Quốc?!"
 
-Giả Hủ khẽ cười, nâng tay áo che miệng: "Phò mã gia nhận ra thảo dân sao? Xem ra thảo dân đã tìm đúng minh chủ."
+Giả Hủ khẽ cười nâng tay áo: "Phò mã gia nhận ra thảo dân sao? Thảo dân quả nhiên không chọn lầm minh chủ."
 
-Hắn bước tới bàn sa bàn, ngón tay gầy guộc chỉ thẳng vào hạ lưu sông Thanh Thủy:
+Hắn bước tới bên sa bàn, ngón tay gầy gò điểm thẳng vào khúc quanh hiểm trở của sông Thanh Thủy:
 
-"Quân Nam Ly đã bí mật liên kết với thổ phỉ Bắc Cương, dự định ba ngày sau vây khốn quân doanh Phò mã tại thung lũng Hắc Phong. Nếu Phò mã dùng binh pháp thông thường, mười phần chết chín."
+"Nghịch tặc Địch Hỏa đã bí mật liên kết thổ phỉ Bắc Cương, toan tính nội trong ba ngày sẽ vây khốn quân doanh Phò mã tại hẻm núi Hắc Phong. Nếu Phò mã dùng binh pháp thông thường, mười phần chết chín."
 
-* [Hỏi kế sách phá địch của Giả Hủ]
-  "Văn Hòa tiên sinh đã đến, ắt đã có diệu kế cứu vãn?"
-  
-  Giả Hủ cười lạnh: "Kế thì có ba. Nhưng còn tùy Phò mã muốn làm 'Nhân Quân' cứu người, hay muốn làm 'Bá Chủ' đoạt thiên hạ."
+* [Thăm Dò] Nghiêm túc thỉnh giáo mưu lược: "Văn Hòa tiên sinh đã đến, xin chỉ điểm cho ta kế sách phá vòng vây!"
+  Giả Hủ cười lạnh: "Kế sách có ba đường. Nhưng còn tùy Phò mã muốn làm 'Nhân Quân' cứu người, hay muốn làm 'Bá Chủ' đoạt thiên hạ."
   
   -> jia_xu_stratagem_choice
 
 === jia_xu_stratagem_choice ===
 # SCENE_TYPE: choice
 
-Giả Hủ trình bày ba mưu kế với nét mặt thản nhiên như luận bàn thời tiết:
+Giả Hủ từ tốn mở tấm lụa mật đồ:
 
-* [Chọn Độc Kế: Nhử địch vào hẻm núi, dùng tên độc và hỏa dược triệt hạ toàn bộ]
+* [Độc Kế] Nhử địch vào tử địa hẻm núi, dùng hỏa dược và tên độc tiêu diệt hoàn toàn
   ~ suspicion += 15
   ~ affinity_gia_hu += 25
   ~ gold += 20000
   
-  "Dùng độc kế! Trong chiến tranh, nhân từ với kẻ địch là tàn nhẫn với tướng sĩ của mình!"
+  Quý Bình An ánh mắt sắc lạnh: "Dùng độc kế! Trong chiến trận, nhân từ với kẻ địch chính là tàn nhẫn với tướng sĩ của mình!"
   
-  Giả Hủ ánh mắt sáng rực: "Hay! Rất quyết đoán! Giả vờ vứt bỏ doanh trại, nhử năm vạn quân địch chen chúc vào hẻm núi Tử Thần, sau đó chặn hai đầu phóng hỏa. Không một tên nào sống sót trở về!"
+  Giả Hủ khen ngợi: "Quyết đoán phi thường! Giả vờ vứt bỏ doanh trại, nhử năm vạn quân địch chen chúc vào hẻm núi rồi chặn hai đầu phóng hỏa. Không một tên nào sống sót trở về!"
   
-  # EFFECT: show_toast|🔥 MỞ KHÓA MƯU KẾ: Hỏa Công Liên Hoàn & Bẫy Độc (Giả Hủ)|unlock
+  # EFFECT: show_toast|🔥 MỞ KHÓA MƯU KẾ: Hỏa Công Bẫy Độc (Giả Hủ)|unlock
   # EFFECT: unlock_feature|feature_poison_stratagem
-  
-  [HỆ THỐNG]: Giả Hủ hoàn toàn quy thuận! Nhận 20.000 Vàng chiến lợi phẩm tịch thu từ quân địch. Nghi Kỵ triều đình tăng nhẹ do thủ đoạn tàn khốc.
   
   -> chapter_27_complete
 
-* [Chọn Phản Gián Kế: Tung tin giả khiến tướng soái địch tự chém giết lẫn nhau]
+* [Phản Gián] Tung mật thư giả ly gián tướng soái địch tự sát hại lẫn nhau
   ~ gold -= 3000
   ~ affinity_gia_hu += 20
   ~ suspicion -= 5
   
-  "Dùng mưu phản gián, cho người mang mật thư giả mua chuộc phó tướng Nam Ly, ly gián bọn chúng."
+  "Dùng mưu phản gián, cho nội gián mang mật thư giả mua chuộc phó tướng Nam Ly, khiến chúng nghi kỵ tương tàn."
   
-  Giả Hủ vuốt râu mỉm cười: "Dùng đao giết người không dính máu. Kế này bảo toàn được binh lực, lại khiến Vũ Hoàng nghĩ rằng Phò mã chỉ nhờ may mắn."
+  Giả Hủ vuốt râu: "Mượn đao giết người không dính máu, bảo toàn sinh lực ba quân."
   
-  # EFFECT: show_toast|📜 MỞ KHÓA THẺ BÀI: Mưu Kế Phản Gián & Ly Gián Kế|unlock
+  # EFFECT: show_toast|📜 MỞ KHÓA THẺ BÀI: Phản Gián Kế & Ly Gián Kế|unlock
   # EFFECT: unlock_feature|feature_counter_espionage
   
   -> chapter_27_complete
 
-* [Chọn Vương Đạo: Kết hợp trinh sát và phục kích chính diện]
+* [Vương Đạo] Đích thân dẫn chủ lực tập kích chính diện bắt sống tướng địch
   ~ affinity_trieu_van += 20
   ~ affinity_gia_hu += 5
   ~ suspicion -= 10
   
-  "Tử Long xông pha bắt sống tướng giặc, phân hóa bộ hạ, tha cho hàng binh."
+  "Tử Long xông pha bắt sống đầu sỏ, phân hóa quân giặc, khoan dung cho hàng binh."
   
-  Triệu Vân từ bên ngoài bước vào, phấn khởi: "Ký chủ nhân đức, Tử Long nguyện đi đầu vạn quân bắt sống tướng địch!"
-  
-  Giả Hủ thở dài lắc đầu nhưng trong mắt lộ vẻ kính nể: "Tuy đi đường vòng, nhưng quả thật có phong thái đế vương."
+  Triệu Vân từ ngoài bước vào, hào khí ngút trời: "Chúa Công nhân đức, Tử Long nguyện đạp bằng vạn quân bắt sống Địch Hỏa!"
   
   -> chapter_27_complete
 
 === chapter_27_complete ===
-* [Kết thúc Chương 27]
+* [Quân Cơ] Triển khai mưu lược Giả Hủ: "Lệnh cho toàn quân tuyệt đối giữ bí mật, đêm nay lập tức di chuyển trận địa!"
   # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 27: Độc Sĩ Giả Hủ Hiến Kế|milestone
   # EFFECT: chapter_complete|27
   -> chapter_35_transition
@@ -191,71 +175,65 @@ Giả Hủ trình bày ba mưu kế với nét mặt thản nhiên như luận b
 
 ~ chapter = 35
 
-Mùa mưa Bắc Cương đổ xuống xối xả. Dòng sông Thanh Thủy đỏ ngầu phù sa cuộn sóng gầm thét.
+Mùa mưa phương Bắc trút nước như thác đổ. Dòng sông Thanh Thủy đỏ ngầu phù sa cuộn sóng gầm thét như rồng lội.
 
-Quý Bình An cùng Giả Hủ đứng trên đỉnh đập đất thượng nguồn.
+Quý Bình An cùng Giả Hủ đứng trên đỉnh đập đất thượng nguồn ngắm nhìn hạ lưu.
 
-Hạ lưu cách đó ba mươi dặm chính là thành Thanh Châu — cứ điểm kiên cố nhất mà năm vạn quân chủ lực phản quân của Địch Hỏa đang chiếm đóng.
+Hạ lưu ba mươi dặm chính là tòa thành cổ Thanh Châu — sào huyệt kiên cố nhất của năm vạn phản quân do nghịch tướng Địch Hỏa trấn giữ.
 
-Giả Hủ chỉ xuống dòng nước xiết:
+Giả Hủ chỉ xuống dòng nước xiết cuồn cuộn:
 
-"Phò mã gia, mùa mưa đã đến. Nước lũ thượng nguồn dâng cao từng ngày. Nếu chúng ta đắp đập ngăn sông trong bảy ngày, sau đó hạ lệnh xả lũ..."
+"Chúa Công, mưa lớn kéo dài. Nếu ta đắp đập ngăn sông bảy ngày, đợi lũ thượng nguồn dâng cao rồi bất thần xả đập..."
 
-Giọng Giả Hủ trầm xuống, lạnh lẽo:
+Đôi mắt Độc Sĩ ánh lên vẻ tàn khốc:
 
-"...thành Thanh Châu cùng năm vạn quân Địch Hỏa sẽ chìm trong biển nước. Một trận định giang sơn!"
+"...toàn bộ chiến xa, quân doanh và thành lũy của Địch Hỏa sẽ chìm trong biển nước. Một trận định càn khôn!"
 
 # EFFECT: sfx_thunder_distant
 
-* [Khảo sát kỹ tác động tới bá tánh hạ lưu]
-  "Nước lũ tràn bờ, liệu có nhấn chìm thôn xóm của dân thường?"
-  
-  Giả Hủ thở dài: "Chiến tranh xưa nay nào có vẹn toàn đôi đường. Nếu không xả lũ, quân ta phải công thành ròng rã nửa năm, thương vong tướng sĩ không dưới ba vạn, dân chúng trong thành cũng chết đói."
+* [Thăm Dò] Cân nhắc thế trận hạ lưu: "Đắp đập chặn dòng nước dữ, thế nước liệu có đủ sức san bằng lũy thép Thanh Châu?"
+  Giả Hủ khẳng định: "Sức nước ngàn cân, lũ quét từ trên cao giáng xuống có thể nghiền nát cả cổng thành bằng đồng đúc!"
   
   -> flood_preparation_choice
 
 === flood_preparation_choice ===
 # SCENE_TYPE: choice
 
-* [Bí mật di tản dân lành hạ lưu trước ba ngày rồi mới xả lũ]
+* [Nhân Nghĩa] Bí mật di tản dân lành hạ lưu trước ba ngày: "Muốn thắng giặc nhưng không giẫm lên xương máu bách tính vô tội!"
   ~ gold -= 3000
   ~ affinity_trieu_van += 25
   ~ suspicion -= 10
   ~ unlocked_flood = true
   
-  Quý Bình An quyết đoán: "Ta muốn thắng, nhưng không muốn giẫm lên xương máu đồng bào vô tội! Xuất 3.000 Vàng, lệnh cho Triệu Vân dẫn kỵ binh cải trang thành thương đoàn, trong ba đêm bí mật di tản toàn bộ bách tính hạ lưu sang vùng cao!"
+  Quý Bình An quả quyết: "Ta muốn lập công, nhưng tuyệt đối không biến vạn dân vô tội thành mồi cho cá bèo! Xuất 3.000 Vàng, lệnh cho Tử Long cải trang kỵ binh thành đoàn buôn, âm thầm di dời toàn bộ thôn làng hạ lưu lên gò cao!"
   
-  Triệu Vân rực sáng ánh mắt: "Mạt tướng tuân lệnh! Dù phải thức trắng ba đêm cũng quyết đưa toàn bộ người già trẻ nhỏ an toàn!"
+  Triệu Vân xúc động ôm quyền: "Chúa Công lấy đức phục nhân, Tử Long dù thức trắng ba đêm cũng quyết hộ tống bá tánh an toàn!"
   
   # EFFECT: show_toast|🌊 MỞ KHÓA THỦY CÔNG: Xả Lũ Sông Thanh Thủy (Tầng 3 Combat)|unlock
   # EFFECT: unlock_feature|feature_water_stratagem
   
-  [HỆ THỐNG]: Kế sách Thủy Công được kích hoạt! Tích lũy nước 3 giai đoạn để hủy diệt xe đục thành của địch. Lòng dân quy phục tột bậc!
-  
   -> chapter_35_complete
 
-* [Xả lũ bất ngờ ngay trong đêm mưa bão để đạt hiệu quả tối đa]
+* [Bá Đạo] Bất ngờ xả lũ ngay trong đêm mưa bão: "Binh quý thần tốc! Đập vỡ thác tràn, hủy diệt toàn bộ chiến xa của địch!"
   ~ suspicion += 20
   ~ affinity_gia_hu += 20
   ~ unlocked_flood = true
   
-  "Quân cơ thần tốc! Địch Hỏa là kẻ xảo quyệt, nếu di tản sẽ để lộ phong thanh. Đắp đê thật cao, chờ thời cơ phóng thủy!"
+  "Địch Hỏa quỷ quyệt, nếu sơ hở ắt mất đại cục. Khóa chặt mọi ngả đường, đúng giờ Tý phá đập!"
   
-  Giả Hủ cúi đầu: "Phò mã quyết đoán phi thường, tất thành đại nghiệp."
-  
-  # EFFECT: show_toast|🌊 MỞ KHÓA THỦY CÔNG: Bạo Lũ Diệt Địch (Sát Thương Tối Đa)|unlock
+  # EFFECT: show_toast|🌊 MỞ KHÓA THỦY CÔNG: Bạo Lũ Phá Đập (Sát Thương Chí Mạng)|unlock
   # EFFECT: unlock_feature|feature_water_stratagem
   
   -> chapter_35_complete
 
 === chapter_35_complete ===
-* [Kết thúc Chương 35]
+* [Quân Cơ] Chốt giữ thượng nguồn: "Bố trí tử sĩ canh giữ van xả lũ, chờ thời khắc quyết chiến phát lệnh công thành!"
   # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 35: Đại Kế Thủy Công Dòng Thanh Thủy|milestone
   # EFFECT: chapter_complete|35
   -> chapter_43_transition
 
 // ============================================================
-// CHƯƠNG 43: ĐẠI DOANH TÍCH TRỮ QUÂN LƯƠNG
+// CHƯƠNG 43: VẠN THẠCH QUÂN LƯƠNG TIỀN TUYẾN
 // ============================================================
 
 === chapter_43_transition ===
@@ -266,36 +244,36 @@ Giọng Giả Hủ trầm xuống, lạnh lẽo:
 
 ~ chapter = 43
 
-Đoàn xe bò kéo chở đầy bao tải lương thực nối đuôi nhau như rồng rắn tiến vào đại doanh Bắc Cương.
+Hàng trăm cỗ xe ngựa chở đầy bao tải quân lương nối đuôi nhau rầm rộ tiến vào tổng hành dinh Bắc Cương.
 
-Cao Thuận cầm sổ bộ kiểm đếm, nét mặt giãn ra nụ cười hiếm hoi:
+Cao Thuận cầm thẻ trúc kiểm kê, ánh mắt lộ vẻ hân hoan hiếm thấy:
 
-"Báo cáo Phò mã gia! Toàn bộ 50.000 hộc lương thảo thu mua từ thương đoàn Giang Đông và Tây Lăng đã nhập kho an toàn. Quân ta hiện có đủ lương thực ăn trong trọn vẹn một năm!"
+"Khởi bẩm Phò mã gia! Toàn bộ năm vạn hộc lương thực thu mua từ các thương hội lớn đã vận chuyển nhập kho an toàn. Kho lương hiện tại đủ cung ứng cho mười vạn quân trong suốt một năm!"
 
 # EFFECT: sfx_cheer_soldiers
 
 ~ rations += 50000
 ~ jade += 10
 
-Quý Bình An nhìn kho lương cao như núi. Đây chính là quả ngọt của hệ thống kinh tế xà phòng Thấu Hoa Cao và tầm nhìn hậu cần chiến lược.
+Quý Bình An phóng tầm mắt nhìn kho lương ngút ngàn:
 
-"Binh mã chưa động, lương thảo đi trước. Có kho lương này, quân sĩ không còn sợ hãi mùa đông lạnh giá nữa!"
+"Binh mã chưa động, lương thảo đi trước. Có kho lương này làm hậu thuẫn, tướng sĩ vững lòng như bàn thạch!"
 
-* [Thưởng lớn cho binh sĩ và trích lương tế bần]
+* [Quân Cơ] Trích lương úy lạo ba quân: "Thưởng rượu thịt cho tướng sĩ giữ ải, trích lương cứu giúp nạn dân lưu lạc!"
   ~ gold -= 2000
   ~ affinity_gaoshun += 15
   ~ affinity_trieu_van += 15
   
-  "Phát rượu thịt cho toàn quân ăn mừng! Trích 5.000 hộc lương cứu đói cho nạn dân xung quanh quân doanh!"
+  "Ban thưởng rượu thịt cho toàn quân! Trích năm ngàn hộc lương cứu đói cho bá tánh chạy loạn!"
   
-  Tiếng hoan hô vang dậy đất trời. Sĩ khí quân đoàn đạt mốc tuyệt đối 100%!
+  Tiếng tung hô của vạn quân vang dội núi rừng, sĩ khí đạt mức cực hạn!
   
-  # EFFECT: show_toast|🌾 QUÂN LƯƠNG ĐẠT 50.000 HỘC — Sĩ Khí Quân Sĩ Tối Đa|reward
+  # EFFECT: show_toast|🌾 QUÂN LƯƠNG ĐẠT 50.000 HỘC — Sĩ Khí Ba Quân Cực Hạn|reward
   
   -> chapter_43_complete
 
 === chapter_43_complete ===
-* [Kết thúc Chương 43]
+* [Quyết Sách] Dàn trận dưới chân thành Thanh Châu: "Lương thảo sung túc, ba quân sĩ khí ngút trời, nghênh tiếp chiến dịch cuối cùng!"
   # EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 43: Vạn Thạch Quân Lương Tiền Tuyến|milestone
   # EFFECT: chapter_complete|43
   -> chapter_48_transition
@@ -312,62 +290,53 @@ Quý Bình An nhìn kho lương cao như núi. Đây chính là quả ngọt c�
 
 ~ chapter = 48
 
-Thành Thanh Châu rung chuyển dữ dội dưới làn mưa tên và đá lửa.
+Thành Thanh Châu rung chuyển dữ dội dưới làn mưa tên bốc lửa và đá tảng ném công thành.
 
-Dưới chân thành, năm vạn quân phản loạn do đại tướng Địch Hỏa chỉ huy dàn trận kín đặc như kiến cỏ.
-
-Mười cỗ xe đục thành khổng lồ bọc thép đen kịt đang ầm ầm tiến thẳng tới cổng thành chính!
+Dưới chân thành, năm vạn phản quân do dũng tướng Địch Hỏa chỉ huy dàn trận đen kịt như sóng thần. Mười cỗ Xe Đục Thành bọc thép dày ầm ầm húc thẳng vào cổng thành chính!
 
 # EFFECT: camera_shake|0.9
 # EFFECT: sfx_siege_ram_hit
 
-Địch Hỏa cưỡi hắc mã, vung thanh Bạo Liệt Đao gầm thét:
+Địch Hỏa vung thanh Bạo Liệt Đao gầm vang: "Quý Bình An! Hôm nay ta sẽ san phẳng Thanh Châu, lấy đầu ngươi tế cờ!"
 
-"Quý Bình An! Phò mã phế vật! Hôm nay ta sẽ san bằng thành này, lấy đầu ngươi dâng cho Nam Ly Vương!"
+Quý Bình An đứng uy nghiêm trên đỉnh thành, áo choàng đỏ tung bay trong bão gió. Bên cạnh, Triệu Tử Long Long Đảm Thương rực sáng, Cao Thuận lập khiên trận Hãm Trận Doanh, Giả Hủ cầm cờ hiệu lệnh.
 
-Quý Bình An đứng trên tường thành cao, áo choàng đỏ tung bay trong gió lộng. Triệu Vân giáp bạc sáng ngời, Cao Thuận dựng khiên thép Hãm Trận Doanh, Giả Hủ cầm cờ hiệu phát lệnh.
-
-"Tướng sĩ Đại Vũ! Hôm nay là ngày định đoạt vận mệnh giang sơn!"
+"Tướng sĩ Đại Vũ! Hôm nay là ngày định đoạt vận mệnh non sông!"
 
 # EFFECT: screen_flash|#FFD700|600
 
-* [Hạ lệnh nghênh chiến toàn diện — Kích hoạt Tầng 3 Tactical Card Battler!]
+* [Quyết Chiến] Minh kim khởi chiến: "Ba quân nghe lệnh! Giương cao chiến kỳ Đại Vũ, quyết một trận tử chiến cùng Địch Hỏa!"
   # EFFECT: trigger_battle|battle_ch48_thanh_chau
   -> thanh_chau_epic_battle
 
 === thanh_chau_epic_battle ===
-// [Chiến trường chuyển sang Tầng 3 Thẻ Bài Sa Trường]
-// Người chơi trải qua trận thủ thành 3 làn, phá hủy xe đục thành và boss Địch Hỏa
-
 # BACKGROUND: bg_thanh_chau_aftermath
 # MUSIC: bgm_triumph_sunrise
 # ACTORS: qui_binh_an|right|triumphant, trieu_van|right|bowing, gao_shun|left|kneeling, jia_xu|left|satisfied
 
-Nước lũ Thanh Thủy được xả xuống đúng thời khắc quyết định!
+Đúng thời khắc nguy nan, cờ hiệu xả lũ phất lên!
 
-Thác nước cuồn cuộn như rồng gầm cuốn phăng toàn bộ trận địa xe đục thành của địch.
+Nước sông Thanh Thủy như ngàn con rồng cuộn trào ập xuống thung lũng, nhấn chìm toàn bộ chiến xa đục thành của địch!
 
-Triệu Tử Long tung người xuống ngựa, Long Đảm Thương xuyên phá hàng ngũ bắt sống Địch Hỏa ngay giữa dòng nước xiết!
+Triệu Tử Long tung người xuống ngựa, đơn thương độc mã xông thẳng vào vòng vây bắt sống Địch Hỏa giữa dòng nước xiết!
 
 # EFFECT: sfx_victory_fanfare
 # EFFECT: screen_flash|#FFFFFF|1000
 
-Năm vạn quân địch tan rã hoàn toàn. Cờ xí Đại Vũ bay phấp phới trên cổng thành Thanh Châu!
+Năm vạn phản quân tan rã hoàn toàn. Chiến kỳ Đại Vũ bay ngạo nghễ trên đỉnh ải Thanh Châu!
 
 ~ gold += 20000
 ~ rations += 50000
 ~ imperial_prestige += 2
 ~ suspicion -= 15
 
-Triệu Vân áp giải Địch Hỏa quỳ trước mặt Quý Bình An:
+Triệu Vân áp giải Địch Hỏa quỳ trước soái kỳ: "Khởi bẩm Chúa Công, phản tướng Địch Hỏa đã quy phục! Toàn cõi Bắc Cương đã quét sạch bóng giặc!"
 
-"Báo cáo Phò mã gia! Chủ tướng địch Địch Hỏa đã bị bắt sống! Toàn cõi Bắc Cảnh đã được bình định sạch bóng quân thù!"
+Cao Thuận lau vết máu trên khiên: "Tám trăm huynh đệ Hãm Trận Doanh không một ai phụ bạc quân lệnh!"
 
-Cao Thuận thu khiên: "Tướng sĩ không một ai làm nhục mệnh lệnh của Phò mã!"
+Giả Hủ vuốt râu mỉm cười: "Chiến báo hỏa tốc đã truyền về kinh thành. Vũ Hoàng phen này tất phải phong vương ban thưởng!"
 
-Giả Hủ khẽ mỉm cười: "Bản tin thắng trận đã hỏa tốc phi về kinh đô. Vũ Hoàng tất phải phong vương bái tướng cho ngài!"
-
-* [Tuyên bố kết thúc chiến dịch Bắc Chinh — Khải hoàn hồi triều!]
+* [Khải Hoàn] Ban lệnh ban sư hồi triều: "Bắc Cương đại định, khói lửa tan biến! Toàn quân khải hoàn trở về kinh kỳ báo công!"
   -> season_1_finale
 
 === season_1_finale ===
@@ -375,22 +344,22 @@ Giả Hủ khẽ mỉm cười: "Bản tin thắng trận đã hỏa tốc phi v
 # MUSIC: bgm_imperial_grandeur
 # ACTORS: vu_hoang|center|impressed, qui_binh_an|right|kneeling_hero
 
-Kinh đô Kim Loan Điện rực rỡ cờ hoa chào đón đoàn quân thắng trận khải hoàn.
+Kinh đô Kim Loan Điện rợp cờ hoa gấm vóc đón mừng đoàn quân Chinh Bắc khải hoàn.
 
-Vũ Hoàng đích thân rời ngai vàng bước xuống thềm rồng, đỡ lấy hai tay Quý Bình An:
+Vũ Hoàng đích thân rời khỏi Cửu Long Bảo Tọa, bước xuống thềm ngọc đỡ lấy hai tay Quý Bình An:
 
-"Trẫm thật không nhìn lầm ngươi! Từ một phò mã hàn vi, ngươi đã lập nên chiến công vĩ đại nhất trăm năm qua của Đại Vũ!"
+"Trẫm quả nhiên không nhìn lầm ngươi! Từ một phò mã hàn vi, ngươi đã lập nên chiến công cái thế ngút trời cho Đại Vũ triều!"
 
-"Truyền chỉ trẫm! Thăng phong Quý Bình An làm CHINH BẮC ĐẠI TƯỚNG QUÂN, ban kim ấn tử thụ, thống lĩnh mười vạn đại quân!"
+"Truyền chỉ trẫm! Thăng phong Quý Bình An làm CHINH BẮC ĐẠI TƯỚNG QUÂN, ban kim ấn tử thụ, thống lĩnh mười vạn cấm quân!"
 
 # EFFECT: screen_flash|#FFD700|1200
 # EFFECT: sfx_gong_ancient
 
-[HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ!
-[HỆ THỐNG]: Hoàn thành xuất sắc TOÀN BỘ HỒI 1 (Chương 1 ➔ Chương 52)!
-[HỆ THỐNG]: Mở khóa chức danh: Chinh Bắc Đại Tướng Quân. Uy danh triều đình đạt Cấp 4!
+[THIÊN CƠ HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ!
+[THIÊN CƠ HỆ THỐNG]: Hoàn thành toàn vẹn HỒI 1 (Chương 1 ➔ Chương 52)!
+[THIÊN CƠ HỆ THỐNG]: Mở khóa tôn hiệu: Chinh Bắc Đại Tướng Quân. Uy danh triều đình đạt Cấp 4!
 
-* [Khép lại thiên sử thi Hồi 1 & Hướng tới mùa giải mới]
-  # EFFECT: show_toast|🏆 HOÀN THÀNH TOÀN BỘ HỒI 1 (CHƯƠNG 1 - 52) ĐẠI THẮNG!|triumph
+* [Đế Nghiệp] Khắc ghi chiến công vào sử sách: "Đây chỉ là khởi đầu của con đường định đoạt giang sơn thiên hạ!"
+  # EFFECT: show_toast|🏆 TOÀN BỘ HỒI 1 ĐẠI KHẢI HOÀN (CHƯƠNG 1 - 52)!|triumph
   # EFFECT: chapter_complete|52
   -> END
