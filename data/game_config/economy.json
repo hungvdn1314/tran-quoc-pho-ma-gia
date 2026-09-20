@@ -2,41 +2,116 @@
     "currencies": [
         {
             "id": "gold",
-            "name": "Vàng",
-            "description": "Tiền tệ cơ bản."
+            "name": "Vàng (Ngân Lượng)",
+            "description": "Tiền tệ lưu thông chính, dùng nâng cấp thẻ bài, đúc khí giới và chi trả bổng lộc quân sĩ."
+        },
+        {
+            "id": "jade",
+            "name": "Ngọc Tỷ (Kim Bảo)",
+            "description": "Bảo ngọc cao cấp thu được từ đại tiệc triều đình và chiến công hiển hách, dùng triệu hoán tại Bái Tướng Đài."
+        },
+        {
+            "id": "rations",
+            "name": "Lương Thảo",
+            "description": "Quân lương vạn thạch đảm bảo sĩ khí và năng lực hành quân sa trường của các đạo quân."
         },
         {
             "id": "honor",
-            "name": "Danh vọng",
-            "description": "Dùng để chiêu mộ danh tướng."
+            "name": "Anh Hồn Lệnh",
+            "description": "Tín vật thần bí chứa đựng linh hồn danh tướng thời Tam Quốc."
         }
     ],
     "faucets": [
         {
             "chapter": 1,
-            "source": "Lương tháng",
+            "source": "Vũ Hoàng ban thưởng đối thơ",
             "amount": 100,
             "currency_id": "gold"
         },
         {
-            "chapter": 5,
-            "source": "Thắng trận",
-            "amount": 50,
+            "chapter": 1,
+            "source": "Kích hoạt Hệ Thống Tam Quốc",
+            "amount": 1,
             "currency_id": "honor"
+        },
+        {
+            "chapter": 5,
+            "source": "Mở khóa Bái Tướng Đài",
+            "amount": 200,
+            "currency_id": "gold"
+        },
+        {
+            "chapter": 5,
+            "source": "Kỳ ngộ mật thất",
+            "amount": 10,
+            "currency_id": "jade"
+        },
+        {
+            "chapter": 8,
+            "source": "Kinh doanh Thấu Hoa Cao",
+            "amount": 3000,
+            "currency_id": "gold"
+        },
+        {
+            "chapter": 15,
+            "source": "Vũ Hoàng ban bạc Bắc Chinh",
+            "amount": 5000,
+            "currency_id": "gold"
+        },
+        {
+            "chapter": 15,
+            "source": "Thánh chỉ sắc phong",
+            "amount": 20,
+            "currency_id": "jade"
+        },
+        {
+            "chapter": 27,
+            "source": "Tịch thu chiến lợi phẩm Nam Ly",
+            "amount": 20000,
+            "currency_id": "gold"
+        },
+        {
+            "chapter": 43,
+            "source": "Thu mua tích trữ quân lương",
+            "amount": 50000,
+            "currency_id": "rations"
+        },
+        {
+            "chapter": 48,
+            "source": "Đại thắng chiến dịch Thanh Châu",
+            "amount": 20000,
+            "currency_id": "gold"
         }
     ],
     "sinks": [
         {
-            "sink_id": "summon_1",
-            "cost": 100,
-            "currency_id": "honor"
+            "sink_id": "summon_bai_tuong_dai",
+            "cost": 160,
+            "currency_id": "jade"
+        },
+        {
+            "sink_id": "card_upgrade_basic",
+            "cost": 500,
+            "currency_id": "gold"
+        },
+        {
+            "sink_id": "bribe_court_censor",
+            "cost": 1500,
+            "currency_id": "gold"
+        },
+        {
+            "sink_id": "march_supply_consumption",
+            "cost": 1000,
+            "currency_id": "rations"
         }
     ],
     "balance": {
         "inflation_rate": 0.05,
         "max_storage": {
-            "gold": 99999,
-            "honor": 9999
+            "gold": 999999,
+            "jade": 9999,
+            "rations": 200000,
+            "honor": 99
         }
     }
 }

@@ -724,11 +724,11 @@
             </div>
             <!-- Front of Card (SSR Hero Reveal) -->
             <div class="card-face card-front">
-              <div class="ssr-banner">SSR · HỔ TƯỚNG</div>
-              <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="reveal-hero-art">
-              <div class="reveal-hero-name">TRIỆU TỬ LONG</div>
-              <div class="reveal-hero-title">Thường Sơn Triệu Vân · Võ Lực 96</div>
-              <div class="reveal-hero-realm">Cảnh giới: Hoàng Cảnh Sơ Kỳ</div>
+              <div class="ssr-banner" id="reveal-card-rarity">SSR · HOÀNG KIM</div>
+              <img src="assets/images/zhaoyun.jpg" alt="Danh Tướng" class="reveal-hero-art" id="reveal-card-img">
+              <div class="reveal-hero-name" id="reveal-card-name">TRIỆU TỬ LONG</div>
+              <div class="reveal-hero-title" id="reveal-card-title">Thường Sơn Triệu Vân · Võ Lực 96</div>
+              <div class="reveal-hero-realm" id="reveal-card-realm">Cảnh giới: Hoàng Cảnh Sơ Kỳ</div>
             </div>
           </div>
         </div>
@@ -742,7 +742,7 @@
         <div class="altar-btn-row" id="altar-btn-row">
           <button class="btn-summon-action" id="btn-do-summon">
             <span class="summon-btn-title">KHAI MỞ CHIÊU MỘ</span>
-            <span class="summon-btn-sub">Tiêu hao 1 Anh Hồn Lệnh</span>
+            <span class="summon-btn-sub">Tiêu hao 1 Anh Hồn Lệnh (Bảo Hiểm 50/50 & Pity 74-90)</span>
           </button>
         </div>
         <div class="reveal-action-row hidden" id="reveal-action-row">
@@ -764,20 +764,25 @@
     <div class="hero-inspector-dialog">
       <button class="btn-close-modal" id="btn-close-hero-detail">✕ Đóng</button>
       
+      <!-- Quick Roster Switcher Bar -->
+      <div class="hero-roster-bar" id="inspector-hero-selector" style="display: flex; gap: 8px; overflow-x: auto; padding: 6px 12px; margin-bottom: 12px; background: rgba(0,0,0,0.4); border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);">
+        <!-- Populated dynamically by app.js -->
+      </div>
+
       <div class="inspector-layout">
         <!-- Left: Full Portrait & Badges -->
         <div class="inspector-art-col">
-          <div class="rarity-crest">SSR HOÀNG KIM</div>
+          <div class="rarity-crest" id="inspector-rarity-crest">SSR HOÀNG KIM</div>
           <div class="hero-art-frame">
-            <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="hero-full-art">
+            <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="hero-full-art" id="inspector-hero-img">
           </div>
           <div class="hero-appellation">
-            <h3>TRIỆU TỬ LONG</h3>
-            <span class="hero-epithet">Thường Sơn Hổ Tướng · Long Đảm Ngân Thương</span>
+            <h3 id="inspector-hero-name">TRIỆU TỬ LONG</h3>
+            <span class="hero-epithet" id="inspector-hero-epithet">Thường Sơn Hổ Tướng · Long Đảm Ngân Thương</span>
           </div>
           <div class="hero-realm-pill">
             <span class="realm-lbl">CẢNH GIỚI VÕ ĐẠO:</span>
-            <span class="realm-val">HOÀNG CẢNH SƠ KỲ</span>
+            <span class="realm-val" id="inspector-realm-val">HOÀNG CẢNH SƠ KỲ</span>
           </div>
         </div>
 
@@ -788,23 +793,23 @@
             <div class="section-badge">TỨ ĐẠI CHỈ SỐ TAM QUỐC</div>
             <div class="stats-quad-grid">
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">⚔️ VÕ LỰC</span><span class="qs-val">96</span></div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 96%; background: #ef4444;"></div></div>
+                <div class="qs-header"><span class="qs-name">⚔️ VÕ LỰC</span><span class="qs-val" id="qs-val-force">96</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-force" style="width: 96%; background: #ef4444;"></div></div>
                 <span class="qs-desc">Tấn công bộc phát, uy áp sa trường</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">🛡️ THỐNG SOÁI</span><span class="qs-val">91</span></div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 91%; background: #06b6d4;"></div></div>
+                <div class="qs-header"><span class="qs-name">🛡️ THỐNG SOÁI</span><span class="qs-val" id="qs-val-command">91</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-command" style="width: 91%; background: #06b6d4;"></div></div>
                 <span class="qs-desc">Dẫn dắt quân đoàn, chỉ huy kỵ binh</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">📜 TRÍ LỰC</span><span class="qs-val">76</span></div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 76%; background: #3b82f6;"></div></div>
+                <div class="qs-header"><span class="qs-name">📜 TRÍ LỰC</span><span class="qs-val" id="qs-val-intel">76</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-intel" style="width: 76%; background: #3b82f6;"></div></div>
                 <span class="qs-desc">Kháng mưu lược, phòng thủ kế sách</span>
               </div>
               <div class="quad-stat-item">
-                <div class="qs-header"><span class="qs-name">🏛️ CHÍNH TRỊ</span><span class="qs-val">65</span></div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" style="width: 65%; background: #10b981;"></div></div>
+                <div class="qs-header"><span class="qs-name">🏛️ CHÍNH TRỊ</span><span class="qs-val" id="qs-val-pol">65</span></div>
+                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-pol" style="width: 65%; background: #10b981;"></div></div>
                 <span class="qs-desc">An dân trị quốc, tuần tra kinh kỳ</span>
               </div>
             </div>
@@ -814,17 +819,17 @@
           <div class="sheet-section">
             <div class="section-badge">CHỈ SỐ CHIẾN TRẬN TRỰC TIẾP</div>
             <div class="combat-stats-row">
-              <div class="cs-pill"><span class="cs-lbl">SINH MỆNH:</span><span class="cs-val text-green">180</span></div>
-              <div class="cs-pill"><span class="cs-lbl">TẤN CÔNG:</span><span class="cs-val text-red">102</span></div>
-              <div class="cs-pill"><span class="cs-lbl">PHÒNG THỦ:</span><span class="cs-val text-blue">88</span></div>
-              <div class="cs-pill"><span class="cs-lbl">BINH CHỦNG:</span><span class="cs-val text-gold">Bạch Mã Nghĩa Tòng</span></div>
+              <div class="cs-pill"><span class="cs-lbl">SINH MỆNH:</span><span class="cs-val text-green" id="cs-val-hp">180</span></div>
+              <div class="cs-pill"><span class="cs-lbl">TẤN CÔNG:</span><span class="cs-val text-red" id="cs-val-atk">102</span></div>
+              <div class="cs-pill"><span class="cs-lbl">CHI PHÍ COST:</span><span class="cs-val text-blue" id="cs-val-cost">6.5</span></div>
+              <div class="cs-pill"><span class="cs-lbl">BINH CHỦNG:</span><span class="cs-val text-gold" id="cs-val-troop">Bạch Mã Nghĩa Tòng</span></div>
             </div>
           </div>
 
           <!-- Skills System -->
           <div class="sheet-section">
             <div class="section-badge">BỘ KỸ NĂNG VÕ ĐẠO</div>
-            <div class="skills-list">
+            <div class="skills-list" id="inspector-skills-list">
               <div class="skill-entry skill-active">
                 <div class="sk-icon">⚡</div>
                 <div class="sk-info">
@@ -938,6 +943,9 @@
     </div>
   </div>
 
+  <!-- Data Bundle (100% Offline) & Script Engines -->
+  <script src="game_data.js"></script>
+  <script src="ink_engine.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
