@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Character Concept Pipeline - Rarity Visual Ascension Rules",
+  "version": "1.0.0",
+  "rarities": {
+    "R": {
+      "tier_name": "Tinh Binh / Hàn Vi",
+      "border_color": "#64748b",
+      "frame_material": "Gỗ sồi phong mục sờn rách",
+      "particle_fx": "none",
+      "costume_details": "Giáp da sờn, vải lanh xám, đoản kiếm sắt có vết sứt mẻ",
+      "aura": "Không có hào quang",
+      "ui_crest": "🔹"
+    },
+    "SR": {
+      "tier_name": "Tiên Phong Thượng Tướng",
+      "border_color": "#38bdf8",
+      "frame_material": "Thép rèn nguội viền bạc",
+      "particle_fx": "cold_smoke",
+      "costume_details": "Giáp phiến thép tôi, áo choàng chiến trận xẻ tà, khí giới bóng loáng",
+      "aura": "Làn khói băng lam nhạt tỏa ra từ vai áo",
+      "ui_crest": "⭐"
+    },
+    "SSR": {
+      "tier_name": "Vạn Nhân Địch / Tuyệt Thế Mưu Thần",
+      "border_color": "#fbbf24",
+      "frame_material": "Gỗ mun sơn mài viền vàng Kintsugi",
+      "particle_fx": "molten_gold_sparkles",
+      "costume_details": "Thần giáp chạm trổ phù điêu rồng/hổ, bào gấm chu sa, thần binh cổ phát sáng",
+      "aura": "Hào quang hoàng kim bốc lên từ vũ khí, tia chớp vàng mờ ảo",
+      "ui_crest": "🌟"
+    },
+    "UR": {
+      "tier_name": "Vô Song Chiến Thần / Thiên Cổ Kỳ Tài",
+      "border_color": "#dc2626",
+      "accent_color": "#f59e0b",
+      "frame_material": "Khung đồng rạn nứt Kintsugi phát sáng cực đại",
+      "particle_fx": "full_screen_gold_lightning",
+      "costume_details": "Đế giáp thần uy, ngọc bội cửu long, vũ khí rực lửa/phong lôi chấn động thiên địa",
+      "aura": "Trận đồ Bát Quái xoay quanh chân, cột sáng thông thiên khi tung đòn",
+      "ui_crest": "👑"
+    }
+  }
+}

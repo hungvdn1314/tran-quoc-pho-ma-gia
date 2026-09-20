@@ -1,0 +1,91 @@
+{
+  "$schema": "https://design-tokens.github.io/community-group/format/",
+  "name": "The Imperial UI Design System Tokens",
+  "version": "1.0.0",
+  "color": {
+    "background": {
+      "deep": { "value": "#080a0d", "type": "color" },
+      "surface": { "value": "#10141b", "type": "color" },
+      "card": { "value": "#161b24", "type": "color" },
+      "cardElevated": { "value": "#1f2633", "type": "color" },
+      "dialogueModal": { "value": "rgba(16, 20, 27, 0.88)", "type": "color" }
+    },
+    "gold": {
+      "primary": { "value": "#fbbf24", "type": "color" },
+      "deep": { "value": "#d97706", "type": "color" },
+      "molten": { "value": "#f59e0b", "type": "color" },
+      "glow": { "value": "rgba(245, 158, 11, 0.4)", "type": "color" },
+      "glowIntense": { "value": "rgba(251, 191, 36, 0.6)", "type": "color" }
+    },
+    "cinnabar": {
+      "primary": { "value": "#dc2626", "type": "color" },
+      "imperial": { "value": "#991b1b", "type": "color" },
+      "glow": { "value": "rgba(220, 38, 38, 0.5)", "type": "color" }
+    },
+    "jade": {
+      "primary": { "value": "#10b981", "type": "color" },
+      "deep": { "value": "#065f46", "type": "color" }
+    },
+    "cyan": {
+      "ice": { "value": "#06b6d4", "type": "color" },
+      "spirit": { "value": "#38bdf8", "type": "color" }
+    },
+    "text": {
+      "primary": { "value": "#ffffff", "type": "color" },
+      "steel": { "value": "#e2e8f0", "type": "color" },
+      "muted": { "value": "#94a3b8", "type": "color" },
+      "dim": { "value": "#64748b", "type": "color" }
+    },
+    "border": {
+      "subtle": { "value": "rgba(255, 255, 255, 0.08)", "type": "color" },
+      "kintsugi": { "value": "#d97706", "type": "color" },
+      "goldBright": { "value": "#fbbf24", "type": "color" }
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "title": { "value": "'Cinzel', serif", "type": "fontFamily" },
+      "text": { "value": "'Be Vietnam Pro', sans-serif", "type": "fontFamily" },
+      "serif": { "value": "'Noto Serif', serif", "type": "fontFamily" }
+    },
+    "fontSize": {
+      "xs": { "value": "11px", "type": "fontSize" },
+      "sm": { "value": "13px", "type": "fontSize" },
+      "base": { "value": "14px", "type": "fontSize" },
+      "md": { "value": "16px", "type": "fontSize" },
+      "lg": { "value": "20px", "type": "fontSize" },
+      "xl": { "value": "24px", "type": "fontSize" },
+      "title": { "value": "28px", "type": "fontSize" }
+    },
+    "lineHeight": {
+      "tight": { "value": "1.2", "type": "lineHeight" },
+      "normal": { "value": "1.5", "type": "lineHeight" },
+      "relaxed": { "value": "1.65", "type": "lineHeight" }
+    }
+  },
+  "spacing": {
+    "1": { "value": "4px", "type": "spacing" },
+    "2": { "value": "8px", "type": "spacing" },
+    "3": { "value": "12px", "type": "spacing" },
+    "4": { "value": "16px", "type": "spacing" },
+    "6": { "value": "24px", "type": "spacing" },
+    "8": { "value": "32px", "type": "spacing" }
+  },
+  "borderRadius": {
+    "sm": { "value": "4px", "type": "borderRadius" },
+    "md": { "value": "8px", "type": "borderRadius" },
+    "lg": { "value": "14px", "type": "borderRadius" },
+    "full": { "value": "9999px", "type": "borderRadius" }
+  },
+  "elevation": {
+    "card": { "value": "0 8px 24px rgba(0, 0, 0, 0.6)", "type": "boxShadow" },
+    "heavy": { "value": "0 16px 40px rgba(0, 0, 0, 0.85)", "type": "boxShadow" },
+    "goldGlow": { "value": "0 0 15px rgba(251, 191, 36, 0.35)", "type": "boxShadow" },
+    "cinnabarGlow": { "value": "0 0 15px rgba(220, 38, 38, 0.5)", "type": "boxShadow" }
+  },
+  "transition": {
+    "fast": { "value": "150ms cubic-bezier(0.4, 0, 0.2, 1)", "type": "time" },
+    "normal": { "value": "250ms cubic-bezier(0.4, 0, 0.2, 1)", "type": "time" },
+    "slow": { "value": "400ms ease", "type": "time" }
+  }
+}

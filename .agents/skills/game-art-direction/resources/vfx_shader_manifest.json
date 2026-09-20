@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Game Art Direction - VFX & Shader Manifest",
+  "version": "1.0.0",
+  "shaders": [
+    {
+      "id": "vfx_ink_splatter",
+      "name": "Vệt Mực Loang Thủy Mặc",
+      "type": "2D Canvas / Sprite Animation",
+      "duration_ms": 400,
+      "blend_mode": "multiply",
+      "color": "#080a0d",
+      "triggers": ["chapter_transition", "critical_damage", "assassin_ambush"],
+      "description": "Vệt mực bắn tung ra như cọ lông gà quệt mạnh trên giấy tuyên thành, lan tỏa và hòa tan vào màn đen."
+    },
+    {
+      "id": "vfx_kintsugi_fracture",
+      "name": "Mạch Nứt Kim Kế Hoàng Kim",
+      "type": "Procedural Glow / Shader",
+      "duration_ms": 600,
+      "blend_mode": "screen",
+      "color": "#fbbf24",
+      "glow_color": "rgba(245, 158, 11, 0.6)",
+      "triggers": ["gacha_card_reveal", "hero_skill_active", "wall_breach"],
+      "description": "Các đường nứt phát sáng rực rỡ lan nhanh như dòng dung nham vàng ròng kết dính lại vết thương."
+    },
+    {
+      "id": "vfx_screen_shake",
+      "name": "Rung Chấn Vật Lý Động Học",
+      "type": "CSS Animation / Transform Matrix",
+      "duration_ms": 350,
+      "decay": "exponential",
+      "amplitude_px": 6,
+      "triggers": ["battering_ram_impact", "flood_release", "spear_strike"],
+      "description": "Rung lắc màn hình với tần số cao và suy giảm nhanh, tạo cảm giác va chạm nặng nề của binh khí và công thành xa."
+    },
+    {
+      "id": "vfx_imperial_seal",
+      "name": "Ấn Chương Chu Sa Hoàng Đế",
+      "type": "DOM Stamp / Scale-Down",
+      "duration_ms": 500,
+      "color": "#dc2626",
+      "triggers": ["imperial_decree", "story_choice_committed", "feature_unlocked"],
+      "description": "Con dấu rồng vuông vức đập xuống mặt giấy với làn khói mờ đỏ chu sa và tiếng mộc nặng nề."
+    },
+    {
+      "id": "vfx_flood_rush",
+      "name": "Sóng Thần Thủy Công Thanh Thủy",
+      "type": "Layered Wave Particles",
+      "duration_ms": 1200,
+      "color": "#06b6d4",
+      "foam_color": "#ffffff",
+      "triggers": ["play_card_flood"],
+      "description": "Dòng nước xả lũ từ đập thượng nguồn tràn qua toàn bộ màn hình cuốn sạch xe đục thành của địch."
+    }
+  ]
+}

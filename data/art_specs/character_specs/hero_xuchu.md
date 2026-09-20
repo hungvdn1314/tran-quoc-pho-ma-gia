@@ -1,0 +1,44 @@
+# HỒ SƠ TẠO HÌNH: HỨA CHỬ
+- **Mã Định Danh (ID)**: `hero_xuchu`
+- **Danh Xưng / Tự**: Xu Chu, Hứa Trọng Khang, Hổ Si
+- **Phẩm Chất (Rarity)**: [SSR]
+- **Binh Chủng**: Hổ Vệ Doanh
+- **Cảnh Giới Võ Học**: Hoàng Cảnh Trung Kỳ
+- **Chỉ Số Tứ Duy**: Võ 98 · Thống 65 · Trí 36 · Chính 20
+
+---
+
+## 1. Dáng Vóc & Tỷ Lệ Cơ Thể (Silhouette & Proportions)
+- **Tỷ lệ đầu**: 8.0 đầu (Võ tướng dũng mãnh)
+- **Dáng đứng đặc trưng**: Tư thế chiến đấu uy nghi, trọng tâm vững chắc, tay cầm vũ khí toát lên khí chất bậc danh tướng.
+- **Silhouette Marker**: Mũi vũ khí vút cao hoặc vạt áo choàng tung bay tạo bóng đen nhận diện độc nhất.
+
+---
+
+## 2. Bảng Phối Màu Trang Phục (60 - 30 - 10 Rule)
+- **60% Nền Tảng Giáp Thân**: Giáp sắt tôi lạnh hoặc hắc bào sơn mài.
+- **30% Bản Sắc Binh Chủng**: dark steel, crimson, antique gold.
+- **10% Điểm Nhấn Kintsugi**: Viền chỉ vàng nóng chảy và hộ tâm phiến hoàng kim.
+
+---
+
+## 3. Khí Giới & Tuyệt Kỹ
+- **Khỏa Mã Quyết Đấu** (Tuyệt Kỹ Chủ Động): Cởi giáp xông vào một mất một còn với chủ tướng địch.
+
+---
+
+## 4. Danh Mục Xuất Asset Đa Tầng (5-Layer Export Manifest)
+- [x] Layer 1: Splash Art Full-body (2048 × 2732 px, 3:4) — Bái Tướng Đài Reveal & Inspector
+- [x] Layer 2: Half-body VN Cut-in (1024 × 1536 px, 2:3) — Visual Novel Dialogue (4 biểu cảm)
+- [x] Layer 3: Tactical Battle Card Art (512 × 768 px, 2:3) — Sa Trường 3 Làn
+- [x] Layer 4: Circular Avatar (256 × 256 px, 1:1) — Top HUD & Turn Order
+- [x] Layer 5: Grand Strategy Map Token (128 × 128 px, 1:1) — Sa Bàn Điều Binh
+
+---
+
+## 5. Bộ Prompt AI Master (Chuẩn Đồng Nhất Phong Cách)
+- **Positive Prompt**:
+  `masterpiece, high-end 2D game concept art, traditional Chinese ink-wash painting style blended with dark fantasy realism, authentic Eastern Han Dynasty armor, cold-forged iron lamellar plates, flowing black calligraphy brushstrokes, subtle molten gold kintsugi cracks along weapon edge, cinematic chiaroscuro rim lighting, highly detailed textures, muted historical earth tones with rich cinnabar and antique gold highlights, 8k resolution, artstation trending, Chinese historical warrior general, Hứa Chử, Hổ Vệ Doanh commander, armored in Han Dynasty style, epic heroic composition`
+- **Identity Seed**: `8890460`
+- **Negative Prompt**:
+  `(worst quality, low quality:1.4), (deformed, distorted, disfigured:1.3), (extra fingers, missing fingers, fused fingers:1.4), poorly drawn hands, poorly drawn face, modern clothing, cartoon, anime big eyes, 3d render, plastic skin, oversaturated, generic purple neon gradient, western medieval plate armor, fantasy elf ears, modern haircut, watermark, text, signature`

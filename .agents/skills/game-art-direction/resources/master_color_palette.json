@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Tran Quoc Pho Ma Gia - Master Color Palette",
+  "version": "1.0.0",
+  "metaphor": "Giang Sơn Rạn Nứt & Ánh Vàng Thức Tỉnh (Fractured Empire & Awakening Molten Gold)",
+  "ratios": {
+    "dominant": "60%",
+    "secondary": "30%",
+    "accent": "10%"
+  },
+  "palette": {
+    "dominant_surfaces": {
+      "obsidian_void": {
+        "hex": "#080a0d",
+        "rgb": "8, 10, 13",
+        "usage": "Nền sâu nhất toàn màn hình, không gian vô cực"
+      },
+      "ink_surface": {
+        "hex": "#10141b",
+        "rgb": "16, 20, 27",
+        "usage": "Bề mặt card, modal body, nền hộp thoại VN"
+      },
+      "card_elevated": {
+        "hex": "#161b24",
+        "rgb": "22, 27, 36",
+        "usage": "Thẻ bài nổi, popover, thanh điều hướng"
+      },
+      "slate_ash": {
+        "hex": "#1e2530",
+        "rgb": "30, 37, 48",
+        "usage": "Viền bóng đổ, đất đá sa trường"
+      }
+    },
+    "secondary_cultural": {
+      "imperial_cinnabar": {
+        "hex": "#dc2626",
+        "deep": "#991b1b",
+        "rgb": "220, 38, 38",
+        "usage": "Ấn triện hoàng đế, mức độ nguy hiểm Nghi Kỵ, cờ hiệu địch"
+      },
+      "northern_steel": {
+        "hex": "#e2e8f0",
+        "dim": "#94a3b8",
+        "rgb": "226, 232, 240",
+        "usage": "Giáp bạc Triệu Vân, khiên Hãm Trận Doanh, chữ nội dung"
+      },
+      "celadon_jade": {
+        "hex": "#10b981",
+        "deep": "#065f46",
+        "rgb": "16, 185, 129",
+        "usage": "Kim bảo, ngọc tỷ, chỉ số an toàn của Vũ Hoàng"
+      },
+      "soul_cyan": {
+        "hex": "#06b6d4",
+        "bright": "#38bdf8",
+        "rgb": "6, 182, 212",
+        "usage": "Khí giới linh hồn, bùa chú Bát Quái, thủy công sông Thanh Thủy"
+      }
+    },
+    "focal_accents": {
+      "molten_gold_primary": {
+        "hex": "#fbbf24",
+        "rgb": "251, 191, 36",
+        "usage": "Nút hành động chính (Primary CTA), phẩm chất SSR, tiêu đề hoàng gia"
+      },
+      "molten_gold_deep": {
+        "hex": "#d97706",
+        "rgb": "217, 119, 6",
+        "usage": "Đường nứt Kintsugi, viền thẻ bài gỗ sơn mài, điểm kinh nghiệm"
+      },
+      "kintsugi_glow": {
+        "hex": "rgba(245, 158, 11, 0.4)",
+        "usage": "Ánh hào quang xung quanh anh linh và hiệu ứng lật thẻ 3D"
+      }
+    }
+  },
+  "anti_patterns": [
+    "Khổng sử dụng màu tím generic (#a855f7, #8b5cf6)",
+    "Không sử dụng màu neon chói lóa",
+    "Không sử dụng độ tương phản dưới 4.5:1 đối với văn bản đọc"
+  ]
+}

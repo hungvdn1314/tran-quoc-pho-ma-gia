@@ -1,0 +1,59 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "Character Concept Pipeline - AI Prompt Engine",
+  "version": "1.0.0",
+  "master_style_prefix": "masterpiece, high-end 2D game concept art, traditional Chinese ink-wash painting style blended with dark fantasy realism, authentic Eastern Han Dynasty armor, cold-forged iron lamellar plates, flowing black calligraphy brushstrokes, subtle molten gold kintsugi cracks along weapon edge, cinematic chiaroscuro rim lighting, highly detailed textures, muted historical earth tones with rich cinnabar and antique gold highlights, 8k resolution, artstation trending",
+  "master_negative_prompt": "(worst quality, low quality:1.4), (deformed, distorted, disfigured:1.3), (extra fingers, missing fingers, fused fingers:1.4), poorly drawn hands, poorly drawn face, modern clothing, cartoon, anime big eyes, 3d render, plastic skin, oversaturated, generic purple neon gradient, western medieval plate armor, fantasy elf ears, modern haircut, watermark, text, signature",
+  "hero_identity_anchors": {
+    "hero_zhaoyun": {
+      "character_name": "Triệu Tử Long (Triệu Vân)",
+      "identity_keywords": "young handsome Chinese warrior general, sharp resolute almond eyes, straight high nose bridge, focused heroic gaze, silver headband circlet, high ponytail with silver clasp, pristine white silk war cape over silver-trimmed dark steel armor, holding iconic Long Dan silver spear with subtle golden kintsugi engravings",
+      "suggested_seed": 7720914,
+      "color_tokens": ["silver", "white", "deep cobalt blue", "dark steel", "molten gold"]
+    },
+    "hero_guanyu": {
+      "character_name": "Quan Vân Trường (Quan Vũ)",
+      "identity_keywords": "legendary imposing bearded Chinese general, magnificent long flowing black beard down to chest, intense phoenix eyes, majestic dignified expression, deep green silk battle tunic draped over heavy dark bronze dragon scale armor, wielding massive Green Dragon Crescent Blade guandao with glowing jade blade edge",
+      "suggested_seed": 8839120,
+      "color_tokens": ["deep jade green", "dark bronze", "crimson sash", "aged gold"]
+    },
+    "hero_jia_hu": {
+      "character_name": "Giả Hủ (Văn Hòa)",
+      "identity_keywords": "cunning middle-aged Chinese master strategist, calculating deep-set eyes, faint subtle knowing smirk, black hooded silk scholar robe adorned with subtle raven feather patterns, holding ancient bamboo scroll and poisoned black feather fan, shrouded in faint misty shadow",
+      "suggested_seed": 4410982,
+      "color_tokens": ["obsidian black", "ashen grey", "poison jade green", "dull gold"]
+    },
+    "hero_gao_shun": {
+      "character_name": "Cao Thuận (Thống Soái Hãm Trận Doanh)",
+      "identity_keywords": "stoic veteran Chinese commander, rugged scarred weathered face, uncompromising iron discipline gaze, heavy black-lacquered full body iron armor, reinforced steel tower shield with battle dents, holding heavy iron-headed spear, austere and resolute",
+      "suggested_seed": 5518290,
+      "color_tokens": ["black lacquer", "matte iron", "weathered leather", "blood red crest"]
+    }
+  },
+  "generation_presets": {
+    "layer1_splash_art": {
+      "aspect_ratio": "3:4",
+      "framing": "full-body dynamic combat stance, atmospheric smoke and ink splatter background, dramatic ground perspective",
+      "recommended_steps": 35,
+      "cfg_scale": 7.0
+    },
+    "layer2_vn_cutin": {
+      "aspect_ratio": "2:3",
+      "framing": "half-body waist-up portrait, clean transparent alpha background, eye-level cinematic dialogue angle",
+      "recommended_steps": 30,
+      "cfg_scale": 6.5
+    },
+    "layer3_card_portrait": {
+      "aspect_ratio": "2:3",
+      "framing": "bust-up intense portrait framed by ornate lacquer wood border, dynamic weapon crossing chest",
+      "recommended_steps": 30,
+      "cfg_scale": 7.0
+    },
+    "layer4_circular_avatar": {
+      "aspect_ratio": "1:1",
+      "framing": "extreme close-up face portrait, high contrast eyes and facial expression, circular composition",
+      "recommended_steps": 25,
+      "cfg_scale": 6.0
+    }
+  }
+}
