@@ -1,19 +1,84 @@
-# Byte-compiled / optimized / DLL files
+# ==========================================
+# 1. OS & System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# 2. Python & Byte-compiled Files
+# ==========================================
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
 
-# Caches and temporary databases
+# ==========================================
+# 3. Node & Web Caches
+# ==========================================
+node_modules/
+.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# 4. Databases & Crawler State
+# ==========================================
 data/crawler_state.db
 *.sqlite3
 *.db-journal
 
-# OS generated files
-.DS_Store
-Thumbs.db
-desktop.ini
+# ==========================================
+# 5. Environment & Secrets (NEVER COMMIT)
+# ==========================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+credentials.json
 
-# Node modules / web caches
-node_modules/
-dist/
-.cache/
+# ==========================================
+# 6. IDE & Editor Files
+# ==========================================
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+
+# ==========================================
+# 7. AI Scratch & Temporary Scripts
+# ==========================================
+scratch/
+temp/
+tmp/
+*.tmp
+.aiexclude
+.agents/scratch/
+.gemini/antigravity/brain/
