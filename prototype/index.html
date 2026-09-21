@@ -132,7 +132,11 @@
          ======================================================================= -->
     <section class="stage-view view-vn active" id="view-vn">
       <!-- Backdrop with dynamic themes (Phò Mã Phủ, Kim Loan Điện, Địa Lao, Thành Trì) -->
-      <div class="vn-stage" id="vn-stage" style="background-image: url('assets/images/bg_palace_chamber.jpg');">
+      <div class="vn-stage" id="vn-stage">
+        <!-- Dual background layers for silky smooth cross-fades -->
+        <div class="vn-bg-layer layer-a active" id="vn-bg-layer-a" style="background-image: url('assets/images/bg_palace_chamber.jpg');"></div>
+        <div class="vn-bg-layer layer-b" id="vn-bg-layer-b"></div>
+
         <!-- PixiJS Ambient & Shader Canvas -->
         <canvas id="vn-pixi-canvas" class="vn-pixi-canvas"></canvas>
 
@@ -678,70 +682,163 @@
   </div>
 
   <!-- =========================================================================
-       GACHA MODAL: BÁI TƯỚNG ĐÀI — CHIÊU MỘ ANH LINH TAM QUỐC
+       GACHA SUMMONING ALTAR: BÁI TƯỚNG ĐÀI — CHIÊU MỘ ANH LINH TAM QUỐC (DIEGETIC)
        ========================================================================= -->
-  <div class="modal-backdrop hidden" id="gacha-modal">
-    <div class="gacha-altar-container">
-      <button class="btn-close-modal" id="btn-close-gacha">✕ Đóng</button>
-      <div class="altar-header">
-        <div class="altar-crest">THẦN CẤP TRIỆU HOÁN THẦN BẢNG</div>
-        <h2 class="altar-title">BÁI TƯỚNG ĐÀI KHỞI NGUYÊN</h2>
-        <p class="altar-subtext">Hấp thu vạn kim thiên hạ, triệu hoán mãnh tướng mưu thần Tam Quốc giáng thế!</p>
-      </div>
+  <div class="modal-backdrop gacha-backdrop hidden" id="gacha-modal">
+    <div class="gacha-ritual-theater" id="gacha-ritual-theater">
+      <!-- Atmospheric Backdrop -->
+      <div class="gacha-altar-bg" style="background-image: url('assets/images/bg_summoning_altar.jpg');"></div>
+      <div class="gacha-altar-overlay"></div>
 
-      <!-- Summoning Arena -->
-      <div class="altar-core" id="altar-core">
-        <div class="bagua-ring" id="bagua-ring"></div>
-        <div class="altar-incense"></div>
-        <div class="summon-talisman" id="summon-talisman">
-          <div class="talisman-inner">
-            <span class="talisman-script">英魂敕令</span>
-            <span class="talisman-badge">SƠ CẤP</span>
+      <!-- Top Diegetic Banner / Header -->
+      <header class="gacha-header-ribbon">
+        <div class="gacha-dynasty-tag">
+          <span class="gacha-seal-stamp">將</span>
+          <div class="gacha-title-group">
+            <h2 class="gacha-main-title">BÁI TƯỚNG THẦN ĐÀN</h2>
+            <span class="gacha-sub-title">Thượng Cổ Bát Quái Cửu Cung · Chiêu Mộ Anh Linh Tam Quốc</span>
           </div>
         </div>
 
-        <!-- Summon Card Reveal Container -->
-        <div class="gacha-card-reveal hidden" id="gacha-card-reveal">
-          <div class="reveal-flash-burst"></div>
-          <div class="card-flipper" id="card-flipper">
-            <!-- Back of Card -->
-            <div class="card-face card-back">
-              <div class="card-back-seal">魂</div>
+        <div class="gacha-currency-dock">
+          <div class="gacha-token-pill">
+            <span class="token-glyph">令</span>
+            <span class="token-label">Anh Hồn Lệnh:</span>
+            <strong class="token-val" id="gacha-ticket-display">1</strong>
+          </div>
+          <div class="gacha-token-pill">
+            <span class="token-glyph">金</span>
+            <span class="token-label">Kim Bảo:</span>
+            <strong class="token-val" id="gacha-jade-display">0</strong>
+          </div>
+          <button class="gacha-seal-close" id="btn-close-gacha" title="Rời Khỏi Bái Tướng Đài">
+            <span class="close-seal-char">✕</span>
+            <span class="close-seal-txt">Đóng</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Center Altar Arena (Interactive Ritual Zone) -->
+      <div class="gacha-arena" id="gacha-arena">
+        <!-- Incense Smoke Vignette Left & Right -->
+        <div class="altar-smoke-censer left"></div>
+        <div class="altar-smoke-censer right"></div>
+
+        <!-- The Spinning Bagua Formation -->
+        <div class="bagua-formation" id="bagua-formation">
+          <div class="bagua-outer-ring" id="bagua-outer-ring">
+            <div class="trigram-rune trigram-1">☰</div>
+            <div class="trigram-rune trigram-2">☱</div>
+            <div class="trigram-rune trigram-3">☲</div>
+            <div class="trigram-rune trigram-4">☳</div>
+            <div class="trigram-rune trigram-5">☴</div>
+            <div class="trigram-rune trigram-6">☵</div>
+            <div class="trigram-rune trigram-7">☶</div>
+            <div class="trigram-rune trigram-8">☷</div>
+          </div>
+          <div class="bagua-constellation-ring" id="bagua-constellation-ring"></div>
+          <div class="bagua-inner-taiji" id="bagua-inner-taiji">
+            <div class="taiji-symbol">☯</div>
+          </div>
+        </div>
+
+        <!-- Floating Levitating Talisman (Tế Phù) -->
+        <div class="altar-talisman-pedestal" id="altar-talisman-pedestal">
+          <div class="floating-talisman" id="summon-talisman">
+            <div class="talisman-glow-core"></div>
+            <div class="talisman-body">
+              <div class="talisman-head-ring"></div>
+              <div class="talisman-seal-text">英魂敕令</div>
+              <div class="talisman-sub-seal">奉天承運</div>
             </div>
-            <!-- Front of Card (SSR Hero Reveal) -->
-            <div class="card-face card-front">
-              <div class="ssr-banner" id="reveal-card-rarity">SSR · HOÀNG KIM</div>
-              <img src="assets/images/zhaoyun.jpg" alt="Danh Tướng" class="reveal-hero-art" id="reveal-card-img">
-              <div class="reveal-hero-name" id="reveal-card-name">TRIỆU TỬ LONG</div>
-              <div class="reveal-hero-title" id="reveal-card-title">Thường Sơn Triệu Vân · Võ Lực 96</div>
-              <div class="reveal-hero-realm" id="reveal-card-realm">Cảnh giới: Hoàng Cảnh Sơ Kỳ</div>
+            <div class="talisman-tassel"></div>
+          </div>
+          <p class="talisman-invocation-hint" id="talisman-hint">Nhấp vào Thần Lệnh hoặc Phím [Tế Lệnh] để Khởi Động Trận Đồ</p>
+        </div>
+
+        <!-- Golden Kintsugi Fractures Layer (Appears during SSR/UR build-up) -->
+        <div class="kintsugi-fractures-layer hidden" id="kintsugi-fractures-layer">
+          <div class="kintsugi-crack crack-1"></div>
+          <div class="kintsugi-crack crack-2"></div>
+          <div class="kintsugi-crack crack-3"></div>
+          <div class="kintsugi-molten-core"></div>
+        </div>
+
+        <!-- Seal Shatter Shockwave & Smoke FX -->
+        <div class="seal-shatter-fx hidden" id="seal-shatter-fx">
+          <div class="ink-burst-wave"></div>
+          <div class="golden-shockwave"></div>
+        </div>
+
+        <!-- Full-Screen Grand Splash Reveal Stage (Giai đoạn Giáng Thế) -->
+        <div class="grand-hero-reveal hidden" id="gacha-grand-reveal">
+          <div class="reveal-backdrop-glow" id="reveal-backdrop-glow"></div>
+
+          <!-- Character Splash Art (Full-Bleed Center-Stage) -->
+          <div class="hero-splash-frame" id="hero-splash-frame">
+            <img src="assets/images/zhaoyun.jpg" alt="Danh Tướng" class="hero-splash-img" id="reveal-card-img">
+            <div class="hero-splash-aura" id="reveal-hero-aura"></div>
+          </div>
+
+          <!-- Vertical Calligraphy Banner (Left Side) -->
+          <div class="hero-calligraphy-banner" id="hero-calligraphy-banner">
+            <div class="calligraphy-seal-badge" id="reveal-seal-badge">趙</div>
+            <h1 class="calligraphy-hero-title" id="reveal-card-name">THƯỜNG SƠN TRIỆU TỬ LONG</h1>
+            <div class="hero-appellation-sub" id="reveal-card-title">Hổ Uy Thượng Tướng · Võ Lực 96</div>
+          </div>
+
+          <!-- Rarity Crest & Realm Badge (Top Right) -->
+          <div class="reveal-rarity-dock">
+            <div class="reveal-rarity-crest" id="reveal-card-rarity">SSR · HOÀNG KIM THƯỢNG TƯỚNG</div>
+            <div class="reveal-realm-badge" id="reveal-card-realm">Cảnh giới: Hoàng Cảnh Sơ Kỳ</div>
+          </div>
+
+          <!-- Signature Calligraphy Quote (Bottom Center) -->
+          <div class="hero-quote-ribbon" id="hero-quote-ribbon">
+            <p class="hero-quote-text" id="reveal-quote-text">"Long Đảm Nhất Xuất, Thiên Quân Vạn Mã Tẫn Đoạn Hồn!"</p>
+            <div class="hero-quick-stats-row">
+              <span class="stat-pill">Võ Lực: <strong id="reveal-stat-force">96</strong></span>
+              <span class="stat-pill">Thống Soái: <strong id="reveal-stat-cmd">91</strong></span>
+              <span class="stat-pill">Mưu Lược: <strong id="reveal-stat-int">76</strong></span>
+              <span class="stat-pill">Binh Chủng: <strong id="reveal-stat-troop">Bạch Mã Nghĩa Tòng</strong></span>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Altar Controls -->
-      <div class="altar-footer">
-        <div class="ticket-status-row">
-          <span>Sở hữu: <strong id="gacha-ticket-display">1</strong> Anh Hồn Lệnh Sơ Cấp</span>
-        </div>
-        <div class="altar-btn-row" id="altar-btn-row">
-          <button class="btn-summon-action" id="btn-do-summon">
-            <span class="summon-btn-title">KHAI MỞ CHIÊU MỘ</span>
-            <span class="summon-btn-sub">Tiêu hao 1 Anh Hồn Lệnh (Bảo Hiểm 50/50 & Pity 74-90)</span>
+      <!-- Altar Footer Controls -->
+      <footer class="gacha-footer-bar">
+        <!-- Summon Launch Buttons (Trạng thái chuẩn bị) -->
+        <div class="gacha-btn-group" id="altar-btn-row">
+          <div class="pity-astrolabe-hint">
+            <span class="pity-icon">✦</span>
+            <span class="pity-text">Thiên Mệnh Chi Tinh: <strong id="gacha-pity-counter">0 / 90</strong> (Bảo Hiểm Kim Thần)</span>
+          </div>
+          <button class="btn-diegetic-summon" id="btn-do-summon">
+            <span class="btn-seal-stamp">召</span>
+            <div class="btn-summon-txt">
+              <span class="summon-lead">TẾ LỆNH THỈNH TƯỚNG</span>
+              <span class="summon-cost">Tiêu hao 1 Anh Hồn Lệnh hoặc 160 Kim Bảo</span>
+            </div>
           </button>
         </div>
-        <div class="reveal-action-row hidden" id="reveal-action-row">
-          <button class="btn-view-hero-detail" id="btn-reveal-inspect">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            <span>XEM THUỘC TÍNH & TUYỆT KỸ</span>
+
+        <!-- Result Action Buttons (Trạng thái sau khi tướng đã giáng thế) -->
+        <div class="reveal-action-dock hidden" id="reveal-action-row">
+          <button class="btn-altar-action action-inspect" id="btn-reveal-inspect">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+            <span>BẢNG THUỘC TÍNH</span>
           </button>
-          <button class="btn-confirm-summon" id="btn-reveal-confirm">
-            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
-            <span>TIẾP NHẬN VÕ TƯỚNG VÀO HÀNG NGŨ</span>
+          <button class="btn-altar-action action-again" id="btn-reveal-again">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+            <span>THỈNH TRIỆU TIẾP</span>
+          </button>
+          <button class="btn-altar-action action-confirm primary" id="btn-reveal-confirm">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            <span>TIẾP NHẬN DANH TƯỚNG</span>
           </button>
         </div>
-      </div>
+      </footer>
     </div>
   </div>
 
