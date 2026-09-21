@@ -1968,11 +1968,24 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // VN Dialogue Controls
+    // VN Dialogue Controls: Bấm bất kỳ đâu trên màn hình hoặc khung thoại đều chuyển lời thoại
     if (ui.vnAdvance) ui.vnAdvance.addEventListener('click', advanceDialogue);
     if (ui.btnVnAdvance) ui.btnVnAdvance.addEventListener('click', advanceDialogue);
 
-    // Clicking anywhere on the dialogue panel advances dialogue (VN industry standard)
+    if (ui.viewVn) {
+      ui.viewVn.addEventListener('click', (e) => {
+        if (e.target.closest('.vn-quick-ribbon') || 
+            e.target.closest('.vn-portal-seal') || 
+            e.target.closest('.backlog-drawer') || 
+            e.target.closest('.branch-choice-modal') ||
+            e.target.closest('#choice-modal') ||
+            e.target.closest('button')) {
+          return;
+        }
+        advanceDialogue();
+      });
+    }
+
     if (ui.vnDialoguePanel) {
       ui.vnDialoguePanel.addEventListener('click', (e) => {
         if (e.target.closest('.vn-quick-ribbon')) return;
@@ -2470,6 +2483,14 @@ document.addEventListener('DOMContentLoaded', () => {
         group.add(auraMesh);
         group.userData.auraMesh = auraMesh;
 
+        // 7. Generous Invisible Hit Collider for responsive mouse click & hover
+        const hitGeo = new THREE.CylinderGeometry(baseRadius * 1.5, baseRadius * 1.5, 26, 16);
+        const hitMat = new THREE.MeshBasicMaterial({ visible: false });
+        const hitMesh = new THREE.Mesh(hitGeo, hitMat);
+        hitMesh.rotation.x = Math.PI / 2;
+        hitMesh.position.z = 12;
+        group.add(hitMesh);
+
         scene.add(group);
         tokenObjects.push(group);
       });
@@ -2496,19 +2517,60 @@ document.addEventListener('DOMContentLoaded', () => {
       const emberPoints = new THREE.Points(emberGeo, emberMat);
       scene.add(emberPoints);
 
-      // Raycaster & Mouse Interaction
+      // Raycaster & Comprehensive Mouse Controls (Drag-to-Pan, Wheel-to-Zoom, Click-to-Select)
       const raycaster = new THREE.Raycaster();
       const mouse = new THREE.Vector2();
       let hoveredToken = null;
-      let targetCameraPos = new THREE.Vector3(0, -110, 160);
-      let targetLookAt = new THREE.Vector3(0, 0, 0);
-      let currentLookAt = new THREE.Vector3(0, 0, 0);
+      const defaultCameraPos = new THREE.Vector3(0, -110, 160);
+      const defaultLookAt = new THREE.Vector3(0, 0, 0);
+      let targetCameraPos = defaultCameraPos.clone();
+      let targetLookAt = defaultLookAt.clone();
+      let currentLookAt = defaultLookAt.clone();
+
+      let isMouseDown = false;
+      let isDragging = false;
+      let dragStartX = 0;
+      let dragStartY = 0;
+      let cameraStartX = 0;
+      let cameraStartY = 0;
+      let lookAtStartX = 0;
+      let lookAtStartY = 0;
+
+      container.style.cursor = 'grab';
+
+      function onMouseDown(event) {
+        if (event.button !== 0 && event.button !== 2) return;
+        isMouseDown = true;
+        isDragging = false;
+        dragStartX = event.clientX;
+        dragStartY = event.clientY;
+        cameraStartX = targetCameraPos.x;
+        cameraStartY = targetCameraPos.y;
+        lookAtStartX = targetLookAt.x;
+        lookAtStartY = targetLookAt.y;
+      }
 
       function onMouseMove(event) {
         const rect = container.getBoundingClientRect();
         mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
         mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
 
+        if (isMouseDown) {
+          const deltaX = event.clientX - dragStartX;
+          const deltaY = event.clientY - dragStartY;
+          if (Math.abs(deltaX) > 4 || Math.abs(deltaY) > 4) {
+            isDragging = true;
+            container.style.cursor = 'grabbing';
+            const panFactor = (targetCameraPos.z / 160) * 0.22;
+            targetCameraPos.x = Math.max(-70, Math.min(70, cameraStartX - deltaX * panFactor));
+            targetCameraPos.y = Math.max(-160, Math.min(-60, cameraStartY + deltaY * panFactor));
+            targetLookAt.x = Math.max(-70, Math.min(70, lookAtStartX - deltaX * panFactor));
+            targetLookAt.y = Math.max(-40, Math.min(40, lookAtStartY + deltaY * panFactor));
+          }
+          return;
+        }
+
+        // Raycasting for token hover
         raycaster.setFromCamera(mouse, camera);
         const intersects = raycaster.intersectObjects(tokenObjects, true);
 
@@ -2519,19 +2581,30 @@ document.addEventListener('DOMContentLoaded', () => {
             if (hoveredToken !== root) {
               if (hoveredToken) hoveredToken.position.z = 0;
               hoveredToken = root;
-              container.style.cursor = 'pointer';
             }
-          }
-        } else {
-          if (hoveredToken) {
-            hoveredToken.position.z = 0;
-            hoveredToken = null;
-            container.style.cursor = 'default';
+            container.style.cursor = 'pointer';
+            return;
           }
         }
+
+        if (hoveredToken) {
+          hoveredToken.position.z = 0;
+          hoveredToken = null;
+        }
+        container.style.cursor = 'grab';
       }
 
-      function onClick(event) {
+      function onMouseUp(event) {
+        if (!isMouseDown) return;
+        isMouseDown = false;
+
+        if (isDragging) {
+          isDragging = false;
+          container.style.cursor = 'grab';
+          return;
+        }
+
+        // Treat as Click
         const rect = container.getBoundingClientRect();
         mouse.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
         mouse.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
@@ -2544,8 +2617,21 @@ document.addEventListener('DOMContentLoaded', () => {
           while (root.parent && root.parent !== scene) root = root.parent;
           if (root.userData && root.userData.key) {
             select3DToken(root.userData.key);
+            return;
           }
         }
+
+        // Clicked empty area -> smoothly reset to default overview
+        targetCameraPos.copy(defaultCameraPos);
+        targetLookAt.copy(defaultLookAt);
+      }
+
+      function onWheel(event) {
+        event.preventDefault();
+        const zoomDelta = event.deltaY * 0.12;
+        const newZ = Math.max(90, Math.min(220, targetCameraPos.z + zoomDelta));
+        targetCameraPos.z = newZ;
+        targetCameraPos.y = -newZ * 0.68;
       }
 
       function select3DToken(key) {
@@ -2560,10 +2646,14 @@ document.addEventListener('DOMContentLoaded', () => {
         showToast(`📍 Chuyển tầm mắt Sa Bàn tới: ${tok.userData.name}`);
       }
 
-      container.addEventListener('mousemove', onMouseMove);
-      container.addEventListener('click', onClick);
+      container.addEventListener('mousedown', onMouseDown);
+      window.addEventListener('mousemove', onMouseMove);
+      window.addEventListener('mouseup', onMouseUp);
+      container.addEventListener('wheel', onWheel, { passive: false });
+      container.addEventListener('contextmenu', (e) => e.preventDefault());
 
       window.selectProvinceIn3D = select3DToken;
+      window.threeCamera = camera;
 
       // Wire up Bamboo Scroll Toggle Tab
       const btnToggleBamboo = document.getElementById('btn-toggle-bamboo');
