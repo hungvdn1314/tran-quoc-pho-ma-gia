@@ -44,9 +44,10 @@
   },
   "typography": {
     "fontFamily": {
-      "title": { "value": "'Cinzel', serif", "type": "fontFamily" },
-      "text": { "value": "'Be Vietnam Pro', sans-serif", "type": "fontFamily" },
-      "serif": { "value": "'Noto Serif', serif", "type": "fontFamily" }
+      "title": { "value": "'Playfair Display', 'Cormorant Garamond', 'Lora', 'Noto Serif', serif", "type": "fontFamily" },
+      "text": { "value": "'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif", "type": "fontFamily" },
+      "serif": { "value": "'Lora', 'Noto Serif', 'Palatino Linotype', 'Times New Roman', serif", "type": "fontFamily" },
+      "seal": { "value": "'ZCOOL XiaoWei', 'Noto Serif SC', 'Songti SC', 'SimSun', 'STSong', 'KaiTi', serif", "type": "fontFamily" }
     },
     "fontSize": {
       "xs": { "value": "11px", "type": "fontSize" },

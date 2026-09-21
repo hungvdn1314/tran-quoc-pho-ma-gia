@@ -31,10 +31,15 @@ Trước khi viết bất kỳ dòng mã HTML/CSS hay tạo component UI nào, b
 
 Mọi thông số về màu sắc, kiểu chữ, khoảng cách, và hiệu ứng chuyển động được tập trung tại `.agents/skills/game-ui-ux-architect/resources/design_tokens.json`:
 
-- **Typography Stack**:
-  - `font-display`: `'Cinzel', serif` (Tiêu đề, ấn chương, tên danh tướng, số sát thương chí mạng).
-  - `font-body`: `'Be Vietnam Pro', sans-serif` (Văn bản hội thoại, mô tả kỹ năng, số liệu thống kê — line-height `1.6`).
-  - `font-lore`: `'Noto Serif', serif` (Chiếu chỉ hoàng triều, câu đối, thư pháp).
+- **Hệ Thống Typography Chuẩn Hóa 4 Tầng (Vietnamese & Seal Native)**:
+  - `font-display` / `--font-title`: `'Playfair Display', 'Cormorant Garamond', 'Lora', 'Noto Serif', serif;` (Weights: 400..900, normal & italic). Dành cho: Tiêu đề chương tiết, tên danh tướng, bảng quân cơ, danh hiệu thế lực, số sát thương chí mạng. Đảm bảo 100% không lỗi glyph tiếng Việt có dấu.
+  - `font-body` / `--font-text`: `'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif;` (Weights: 300..900). Dành cho: UI controls, buttons, tooltips, thông số tài nguyên, chỉ số quân sự — line-height `1.5 - 1.6`.
+  - `font-serif` / `--font-serif`: `'Lora', 'Noto Serif', 'Palatino Linotype', 'Times New Roman', serif;` (Weights: 400..700). Dành cho: Văn bản tự sự, lời thoại kịch bản Visual Novel, trích dẫn văn học — line-height `1.65`.
+  - `font-seal` / `--font-seal`: `'ZCOOL XiaoWei', 'Noto Serif SC', 'Songti SC', 'SimSun', 'STSong', 'KaiTi', serif;`. Dành riêng cho: Ấn triện đỏ chu sa (`[ 駙 ]`, `[ 武 ]`, `[ 青 ]`, `[ 關 ]`, `[ 殿 ]`, `[ 輿 ]`, `[ 戈 ]`, `[ 密 ]`, `[ 卷 ]`), ngọc bài, thư pháp chữ Hán.
+- **Kỷ Luật Bất Biến Về Typography**:
+  - **CẤM TUYỆT ĐỐI**: Không bao giờ đặt các font chỉ hỗ trợ Latin cơ bản (như `Cinzel`, `Trajan`, `Bebas Neue`...) vào đầu font stack của bất kỳ thành phần tiếng Việt nào. Điều này gây lỗi xẻ đôi từ (Frankenstein font: chữ không dấu dùng font này, chữ có dấu fallback sang font khác).
+  - **3D Canvas / Texture Guard**: Khi vẽ chữ tiếng Việt hoặc Hán tự lên Canvas 2D / Three.js texture, luôn lắng nghe sự kiện `document.fonts.ready` để re-render, triệt tiêu nguy cơ lưu vết font thô.
+  - **Tránh Rớt Dòng Đột Ngột**: Tiêu đề ngắn gọn và nhãn chương tiết (`.banner-chapter`) phải có `white-space: nowrap;` để tránh hiện tượng số chương bị rớt xuống dòng đơn độc.
 - **Phản Hồi Xúc Giác & Động Học (Micro-Interactions)**:
   - Thời gian chuyển động tiêu chuẩn: `180ms` đến `250ms` với `cubic-bezier(0.4, 0, 0.2, 1)`.
   - Hỗ trợ `prefers-reduced-motion` tự động tắt hiệu ứng rung màn hình cho người chơi nhạy cảm.

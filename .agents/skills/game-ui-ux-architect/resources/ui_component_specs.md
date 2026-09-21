@@ -9,8 +9,8 @@ Tài liệu đặc tả kiến trúc thành phần (Component Specifications) ch
 - **Vị trí**: Cố định trên cùng (`position: relative`, `height: 74px`, `z-index: 100`).
 - **Nền & Viền**: Gradient sơn mài đen (`#181d26` sang `#0d1117`), viền đáy gốm nung `#2d2319` dày 2px.
 - **Thành phần**:
-  1. *Seal Badge*: Khối triện vuông màu đỏ chu sa `#991b1b` viền vàng chữ "鎮" (Trấn).
-  2. *Brand Titles*: Tên game `TRẤN QUỐC PHÒ MÃ GIA` (Cinzel 16px, letter-spacing 2px) + Tên Hồi/Chương hiện tại.
+  1. *Seal Badge*: Khối triện vuông màu đỏ chu sa `#991b1b` viền vàng chữ "鎮" (Font `var(--font-seal)`: ZCOOL XiaoWei 18px).
+  2. *Brand Titles*: Tên game `TRẤN QUỐC PHÒ MÃ GIA` (Font `var(--font-title)`: Playfair Display 16px, letter-spacing 2px, 100% tiếng Việt) + Tên Hồi/Chương hiện tại.
   3. *Chapter Progression Tracker*: Badge chương hiện tại + Thanh đo mini phần trăm tiến trình 8 mốc.
   4. *Quick Reset Button*: Nút đỏ đậm `🔄 RESET` đặt góc phải trên thanh HUD để làm mới game về Ch.1.
   5. *Nav Tabs*: 3 nút chuyển tầng (VN, Sa Bàn, Sa Trường) với hiệu ứng khóa mờ (`hidden` / `locked-tab`).
@@ -34,8 +34,8 @@ Tài liệu đặc tả kiến trúc thành phần (Component Specifications) ch
      - Thẻ tên nhân vật (Nametag): Đặt dưới chân avatar, nền đen mờ viền đồng.
   2. *Dialogue Box (Hộp Thoại)*:
      - Nền: Gỗ mun sơn mài `rgba(16, 20, 27, 0.88)` với viền Kintsugi mảnh `#d97706`.
-     - Header: Tên người nói màu vàng hoàng kim `#fbbf24` (Cinzel 18px) + Danh xưng/thân phận.
-     - Body: Chữ thoại trắng sữa `#ffffff`, font `Be Vietnam Pro`, line-height 1.6, hiệu ứng máy đánh chữ (typewriter 14ms/ký tự).
+     - Header: Tên người nói màu vàng hoàng kim `#fbbf24` (Font `var(--font-title)`: Playfair Display 18px, hỗ trợ đầy đủ thanh điệu tiếng Việt) + Dấu triện Hán tự (`var(--font-seal)`: ZCOOL XiaoWei).
+     - Body: Chữ thoại trắng sữa `#ffffff`, font `Lora` (`var(--font-serif)`), line-height 1.65, hiệu ứng máy đánh chữ (typewriter 14ms/ký tự).
      - Footer Action: Nút `TIẾP TỤC ĐỐI THOẠI [Space]` màu hổ phách viền sáng nổi bật.
   3. *Branch Choice Modal*:
      - Cửa sổ bật lên trang trọng giữa màn hình khi đến điểm rẽ cốt truyện.

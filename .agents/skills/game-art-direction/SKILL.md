@@ -93,5 +93,21 @@ Trước khi nghiệm thu bất kỳ màn hình hoặc tài nguyên đồ họa 
 1. **Kiểm tra tỷ lệ màu**: Tỷ lệ nền tối (Obsidian) có chiếm ít nhất 60% diện tích không? Màu vàng có bị lạm dụng ngoài các điểm nhấn quyền lực không?
 2. **Kiểm tra chất liệu**: Các linh kiện có toát lên vẻ gỗ sơn mài, giấy xuyến, hoặc đồng cổ không? Có chi tiết nào trông như nhựa (plastic) hay kính hiện đại (glassmorphism) không?
 3. **Kiểm tra nhân vật**: Tỷ lệ cơ thể có chuẩn tả thực (7.5 - 8 đầu) không? Có bị lệch sang phong cách anime mắt to không?
-4. **Kiểm tra phông chữ**: Văn bản có đúng cặp `Cinzel` (tiêu đề) + `Be Vietnam Pro` (nội dung) không? Có bị lỗi dấu tiếng Việt không?
+4. **Kiểm tra phông chữ**: Văn bản tiêu đề có đúng bộ `Playfair Display` / `Cormorant Garamond` (100% tiếng Việt có dấu, **TUYỆT ĐỐI KHÔNG DÙNG `Cinzel`**), nội dung đọc dùng `Lora`, UI dùng `Be Vietnam Pro`, và ấn triện chu sa dùng `ZCOOL XiaoWei` không? Kiểm tra kỹ không có chữ nào bị fallback sang font hệ thống hoặc lệch nét.
 5. **Kiểm tra độ tương phản**: Độ tương phản chữ trên nền có vượt chuẩn WCAG AA (>= 4.5:1) không?
+
+---
+
+## 6. Quy Chuẩn Typography & Thư Pháp Cổ Phong (Imperial Typography Bible)
+
+| Tầng Chức Năng | Font Chỉ Định | Fallback Stack | Mục Đích Sử Dụng |
+|---|---|---|---|
+| **Đại Tự Hoàng Triều (`--font-title`)** | `Playfair Display` (400-900), `Cormorant Garamond` | `'Lora', 'Noto Serif', serif` | Tên chương tiết, tiêu đề cứ điểm sa bàn, tên tướng, danh xưng thế lực, tiêu đề modal. Đảm bảo 100% không lỗi dấu tiếng Việt. |
+| **Văn Phong Tự Sự (`--font-serif`)** | `Lora` (400-700) | `'Noto Serif', 'Times New Roman', serif` | Lời thoại kịch bản Visual Novel, văn bia, trích dẫn điển tích quân cơ. |
+| **Thông Số & Điều Khiển (`--font-text`)** | `Be Vietnam Pro` (300-900) | `'Segoe UI', -apple-system, sans-serif` | Số liệu vàng/lương/quân số, nút bấm điều khiển, tooltips, thẻ phân loại. |
+| **Ấn Triện Chu Sa (`--font-seal`)** | `ZCOOL XiaoWei` | `'Noto Serif SC', 'Songti SC', 'SimSun', serif` | Ấn chương hoàng đế, triện ngọc bội, lệnh bài (`[ 駙 ]`, `[ 武 ]`, `[ 青 ]`, `[ 關 ]`, `[ 殿 ]`, `[ 輿 ]`, `[ 戈 ]`, `[ 密 ]`, `[ 卷 ]`). |
+
+> [!CAUTION]
+> **Quy Tắc Bất Di Bất Dịch Về Typography Dự Án**:
+> - **CẤM DÙNG CINZEL**: Tuyệt đối không đưa `Cinzel` hay bất kỳ font nào không có tập ký tự tiếng Việt (thiếu dải Unicode `U+1EA0 - U+1EF9`) vào font stack.
+> - **TEXTURE CANVAS THREE.JS**: Phải luôn bọc render texture canvas trong `document.fonts.ready` để tránh lưu cache font fallback thô trên WebGL.
