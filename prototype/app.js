@@ -2280,14 +2280,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Large Chinese Calligraphic Character
         ctx.fillStyle = isEnemy ? '#fca5a5' : '#f6d89b';
-        ctx.font = 'bold 112px "Cinzel", "Songti SC", "SimSun", "Noto Serif", serif';
+        ctx.font = 'bold 112px "ZCOOL XiaoWei", "Noto Serif SC", "Songti SC", "SimSun", serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(sealChar, 256, 108);
 
         // Subtitle (Vietnamese province role)
         ctx.fillStyle = isEnemy ? '#f87171' : '#c5a059';
-        ctx.font = 'bold 36px "Cinzel", "Segoe UI", sans-serif';
+        ctx.font = 'bold 34px "Playfair Display", "Cormorant Garamond", "Lora", serif';
         ctx.fillText(subText, 256, 196);
 
         const tex = new THREE.CanvasTexture(canvas);
@@ -2312,7 +2312,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ctx.stroke();
 
         ctx.fillStyle = isEnemy ? '#fca5a5' : '#fbbf24';
-        ctx.font = 'bold 128px "Cinzel", "Songti SC", "SimSun", serif';
+        ctx.font = 'bold 128px "ZCOOL XiaoWei", "Noto Serif SC", "Songti SC", "SimSun", serif';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText(sealChar, 128, 136);
@@ -2482,6 +2482,9 @@ document.addEventListener('DOMContentLoaded', () => {
         auraMesh.position.z = 0.2;
         group.add(auraMesh);
         group.userData.auraMesh = auraMesh;
+        group.userData.flagMesh = flagMesh;
+        group.userData.plateMesh = plateMesh;
+        group.userData.cfg = cfg;
 
         // 7. Generous Invisible Hit Collider for responsive mouse click & hover
         const hitGeo = new THREE.CylinderGeometry(baseRadius * 1.5, baseRadius * 1.5, 26, 16);
@@ -2494,6 +2497,25 @@ document.addEventListener('DOMContentLoaded', () => {
         scene.add(group);
         tokenObjects.push(group);
       });
+
+      // Refresh 3D canvas textures once web fonts are fully loaded
+      if (document.fonts) {
+        document.fonts.ready.then(() => {
+          tokenObjects.forEach(grp => {
+            if (grp.userData && grp.userData.cfg) {
+              const c = grp.userData.cfg;
+              if (grp.userData.flagMesh && grp.userData.flagMesh.material) {
+                grp.userData.flagMesh.material.map = createFlagTexture(c.sealChar, c.sub, c.isEnemy, c.isSiege);
+                grp.userData.flagMesh.material.map.needsUpdate = true;
+              }
+              if (grp.userData.plateMesh && grp.userData.plateMesh.material) {
+                grp.userData.plateMesh.material.map = createSealPlateTexture(c.sealChar, c.isEnemy);
+                grp.userData.plateMesh.material.map.needsUpdate = true;
+              }
+            }
+          });
+        });
+      }
 
       // 4. Ambient Lantern Embers & Dust Specks (Diegetic Tent Lighting)
       const emberCount = 40;
