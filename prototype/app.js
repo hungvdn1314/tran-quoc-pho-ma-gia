@@ -3185,6 +3185,9 @@ document.addEventListener('DOMContentLoaded', () => {
   window.advanceChapter = advanceChapter;
   window.openFactionModal = openFactionModal;
   window.updateFactionIdentityUI = updateFactionIdentityUI;
+  window.openGachaModal = openGachaModal;
+  window.performSummon = performSummon;
+  window.openHeroInspector = openHeroInspector;
 
   // =========================================================================
   // 14. INITIAL BOOT (DEFAULT TO ZERO-HUD CINEMATIC VISUAL NOVEL)
