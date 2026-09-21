@@ -157,6 +157,9 @@ class InkEngine {
           let remainder = choiceMatch[2].trim();
           let targetKnot = null;
 
+          let choiceMutations = [];
+          let choiceTags = [];
+
           if (remainder.startsWith("->")) {
             targetKnot = remainder.substring(2).trim();
           } else {
@@ -170,7 +173,10 @@ class InkEngine {
                 if (divMatch) targetKnot = divMatch[1];
               }
               if (subLine.startsWith("~")) {
-                this.evaluateMutation(subLine.substring(1).trim());
+                choiceMutations.push(subLine.substring(1).trim());
+              }
+              if (subLine.startsWith("#")) {
+                choiceTags.push(subLine.substring(1).trim());
               }
               subBody.push(subLine);
               i++;
@@ -180,7 +186,9 @@ class InkEngine {
 
           this.currentChoices.push({
             text: choiceText,
-            targetKnot: targetKnot
+            targetKnot: targetKnot,
+            mutations: choiceMutations,
+            tags: choiceTags
           });
         }
         i++;
@@ -263,10 +271,18 @@ class InkEngine {
     }
 
     const choice = this.currentChoices[choiceIndex];
-    if (choice.targetKnot) {
-      console.log(`[InkEngine] Lựa chọn: "${choice.text}" -> Đến knot: ${choice.targetKnot}`);
-      this.start(choice.targetKnot);
-      return true;
+    if (choice) {
+      if (choice.mutations && choice.mutations.length > 0) {
+        choice.mutations.forEach(m => this.evaluateMutation(m));
+      }
+      if (choice.tags && choice.tags.length > 0) {
+        choice.tags.forEach(t => this.handleTag(t));
+      }
+      if (choice.targetKnot) {
+        console.log(`[InkEngine] Lựa chọn: "${choice.text}" -> Đến knot: ${choice.targetKnot}`);
+        this.start(choice.targetKnot);
+        return true;
+      }
     }
     return false;
   }

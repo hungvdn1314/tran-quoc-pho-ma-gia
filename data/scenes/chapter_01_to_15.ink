@@ -258,6 +258,7 @@ Bốn ngày trôi qua kể từ yến tiệc đại điện. Quý Bình An dành
   -> waiting_gacha_ritual
 
 === waiting_gacha_ritual ===
+# EFFECT: trigger_gacha|bai_tuong_dai
 // Trạng thái chờ người chơi thao tác trên Bái Tướng Đài
 Khai mở thần đàn tế tướng...
 -> END
