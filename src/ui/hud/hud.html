@@ -1,0 +1,103 @@
+<!-- TOP-LEFT: NGỌC BỘI HOÀNG TRIỀU & TÀI NGUYÊN NỘI KHỐ -->
+        <div class="hud-corner-crest" id="hud-corner-crest">
+          <!-- BẢNG TRIỆN KHẮC ĐỒNG: THẾ LỰC & ĐỊNH DANH QUÝ BÌNH AN -->
+          <div class="dynasty-seal-plate" id="dynasty-seal-plate" title="Thế lực: Phò Mã Phủ · Thân phận: Phò Mã Gia (Bấm để xem Lộ trình Khởi Nghiệp)">
+            <div class="dynasty-seal-icon" id="dynasty-seal-icon">駙</div>
+            <div class="dynasty-meta">
+              <span class="dynasty-era" id="dynasty-era">PHÒ MÃ PHỦ</span>
+              <span class="dynasty-role" id="dynasty-role">PHÒ MÃ GIA</span>
+            </div>
+          </div>
+
+          <!-- Cửu Đỉnh Long Lô (Nghi Kỵ Hoàng Đế) -->
+          <div class="suspicion-diegetic" title="Cửu Đỉnh Long Lô — Độ Nghi Kỵ của Vũ Hoàng (0 - 100%)">
+            <div class="suspicion-censer-icon" id="suspicion-censer-icon">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 2c.6 0 1 .4 1 1v1.1c3.4.5 6 3.4 6 7v1h1c.6 0 1 .4 1 1s-.4 1-1 1h-1v2.2c0 2.2-1.1 4.2-2.9 5.3l1.4 2.4c.3.5.1 1.1-.4 1.4-.5.3-1.1.1-1.4-.4L14 18.5c-.6.2-1.3.3-2 .3s-1.4-.1-2-.3l-1.7 2.9c-.3.5-.9.7-1.4.4-.5-.3-.7-.9-.4-1.4l1.4-2.4C6.1 16.9 5 14.9 5 12.7V10.5H4c-.6 0-1-.4-1-1s.4-1 1-1h1v-1c0-3.6 2.6-6.5 6-7V3c0-.6.4-1 1-1zM7 10.5v2.2c0 2.8 2.2 5 5 5s5-2.2 5-5v-2.2H7z"/></svg>
+            </div>
+            <canvas class="suspicion-smoke-canvas" id="suspicion-smoke-canvas" width="60" height="40"></canvas>
+            <div class="suspicion-data hidden">
+              <div class="suspicion-info">
+                <span class="suspicion-title">Nghi Kỵ</span>
+                <span class="suspicion-pct" id="txt-suspicion">0%</span>
+              </div>
+              <div class="suspicion-track">
+                <div class="suspicion-fill" id="bar-suspicion" style="width: 0%;"></div>
+              </div>
+              <span class="suspicion-desc" id="suspicion-status-desc">Khói Trắng · An Toàn</span>
+            </div>
+          </div>
+
+          <!-- Khay Ngọc Ngân Khố (Vàng, Lương Thảo, Hổ Phù) -->
+          <div class="hud-treasury-ribbon">
+            <!-- Vàng -->
+            <div class="treasury-item" title="Kim Nguyên Bảo">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 14c0 3 4 5 9 5s9-2 9-5l-2-6H5L3 14z"/><ellipse cx="12" cy="8" rx="7" ry="2"/></svg>
+              <span class="t-val" id="txt-gold">5.000</span>
+              <span class="t-lbl">Vàng</span>
+            </div>
+            <!-- Lương -->
+            <div class="treasury-item" title="Thạch Lương Thảo">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M7 8c1.5-2 3.5-3 5-3s3.5 1 5 3M6 13c2-2 4-2.5 6-2.5s4 .5 6 2.5M7 18c1.5-1.5 3-2 5-2s3.5.5 5 2"/></svg>
+              <span class="t-val" id="txt-food">1.000</span>
+              <span class="t-lbl">Lương</span>
+            </div>
+            <!-- Lệnh Sa Bàn -->
+            <div class="treasury-item" title="Hổ Phù Sa Bàn">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M12 4v16M4 12h16"/></svg>
+              <span class="t-val" id="txt-ap">3 / 5</span>
+              <span class="t-lbl">Lệnh</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOP-RIGHT: TRƯỚNG KỲ CHƯƠNG TIẾT & KỲ MÔN BÀN XOAY -->
+        <div class="hud-corner-system">
+          <!-- Trướng Kỳ Chương Tiết (Thánh Chỉ Lụa Treo) -->
+          <div class="hud-center-banner" id="btn-open-milestones" title="Bấm để mở Ma Trận Kỷ Niệm Cốt Truyện">
+            <div class="banner-body">
+              <div class="banner-chapter" id="hud-chapter-badge">CHƯƠNG 1</div>
+              <div class="banner-title" id="hud-chapter-title">Phá Giải Câu Đối Hoàng Cung</div>
+            </div>
+          </div>
+
+          <!-- Bái Tướng Đài Seal (Mở tại Ch.5) -->
+          <button class="seal-btn seal-gacha hidden" id="btn-hud-gacha" title="Bái Tướng Đài (Mở tại Ch.5)">
+            <span class="seal-char">令</span>
+            <span class="seal-sub">Bái Tướng</span>
+            <span class="seal-badge" id="hud-ticket-count">0</span>
+          </button>
+
+          <!-- Danh Tướng Seal (Mở tại Ch.5) -->
+          <button class="seal-btn seal-hero hidden" id="btn-hud-hero" title="Tra Cứu Danh Tướng (Mở tại Ch.5)">
+            <span class="seal-char">将</span>
+            <span class="seal-sub">Tướng Tinh</span>
+          </button>
+
+          <!-- Trùng Khởi Phù (Cinnabar Reset Seal) -->
+          <button class="seal-btn seal-reset hidden" id="btn-reset-game" title="Trùng Khởi Phù (Làm mới cốt truyện về Chương 1)">
+            <span class="seal-char">重起</span>
+            <span class="seal-sub">Trùng Khởi</span>
+          </button>
+
+          <!-- Kỳ Môn Sa Bàn (Imperial Realm Astrolabe / Mode Switcher) -->
+          <nav class="realm-astrolabe" id="realm-astrolabe" aria-label="Game Realms">
+            <button class="astrolabe-btn active" id="btn-tab-vn" data-view="vn" title="Nội Điện Hoàng Cung (Visual Novel)">
+              <span class="astrolabe-glyph">殿</span>
+              <span class="astrolabe-tip">Hồi Cung</span>
+            </button>
+
+            <button class="astrolabe-btn locked-tab hidden" id="btn-tab-map" data-view="map" disabled title="Khóa: Mở tại Chương 15 (Chinh Bắc Thánh Chỉ)">
+              <span class="astrolabe-glyph">輿</span>
+              <span class="astrolabe-tip">Sa Bàn</span>
+              <span class="tab-lock-tag" id="tab-map-lock">15</span>
+              <span class="badge-alert hidden" id="map-alert-badge">!</span>
+            </button>
+
+            <button class="astrolabe-btn locked-tab hidden" id="btn-tab-battle" data-view="battle" disabled title="Khóa: Mở tại Chương 48 (Thành Thanh Châu Đại Chiến)">
+              <span class="astrolabe-glyph">戈</span>
+              <span class="astrolabe-tip">Sa Trường</span>
+              <span class="tab-lock-tag" id="tab-battle-lock">48</span>
+              <span class="badge-live hidden" id="battle-live-badge">!</span>
+            </button>
+          </nav>
+        </div>

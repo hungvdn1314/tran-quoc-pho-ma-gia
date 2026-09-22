@@ -629,6 +629,7 @@ body {
   filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5));
   user-select: none;
   pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.25s ease;
 }
 
 /* Realistic Ground Shadow on Palace Floor */
@@ -2856,6 +2857,10 @@ body {
 /* ==========================================================================
    HERO CARD DETAIL INSPECTOR MODAL (RPG STAT SHEET)
    ========================================================================== */
+#hero-detail-modal {
+  z-index: 1500;
+}
+
 .hero-inspector-dialog {
   width: 960px;
   max-height: 90vh;
@@ -3885,9 +3890,9 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: linear-gradient(180deg, rgba(8, 10, 13, 0.98) 0%, rgba(8, 10, 13, 0.8) 60%, transparent 100%);
-  border-bottom: 1px solid rgba(251, 191, 36, 0.15);
+  padding: 16px 36px;
+  background: linear-gradient(180deg, rgba(8, 10, 13, 0.98) 0%, rgba(8, 10, 13, 0.82) 60%, transparent 100%);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
 }
 
 .gacha-dynasty-tag {
@@ -3931,6 +3936,35 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   font-size: 12px;
   color: #94a3b8;
   margin-top: 2px;
+}
+
+.gacha-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gacha-header-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 20, 27, 0.85);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-family: var(--font-text);
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.gacha-header-btn:hover {
+  background: rgba(251, 191, 36, 0.15);
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  transform: translateY(-1px);
 }
 
 .gacha-currency-dock {
@@ -3984,6 +4018,36 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   transform: translateY(-1px);
 }
 
+/* Floating Skip Button */
+.gacha-skip-btn {
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(153, 27, 27, 0.85);
+  border: 1px solid #dc2626;
+  border-radius: 20px;
+  padding: 6px 18px;
+  color: #fecaca;
+  font-family: var(--font-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  transition: all 0.2s ease;
+}
+
+.gacha-skip-btn:hover {
+  background: #dc2626;
+  color: #fff;
+  transform: scale(1.05);
+}
+
 /* Center Altar Arena */
 .gacha-arena {
   position: relative;
@@ -3994,6 +4058,15 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   justify-content: center;
   width: 100%;
   height: 100%;
+}
+
+.gacha-ember-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
 }
 
 .altar-smoke-censer {
@@ -4018,8 +4091,8 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 /* Bagua Formation */
 .bagua-formation {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 440px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -4028,52 +4101,90 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 
 .bagua-outer-ring {
   position: absolute;
-  width: 400px;
-  height: 400px;
+  width: 440px;
+  height: 440px;
   border-radius: 50%;
-  border: 2px dashed rgba(251, 191, 36, 0.45);
-  box-shadow: 0 0 40px rgba(251, 191, 36, 0.15);
-  animation: spinBaguaCW 30s linear infinite;
+  border: 3px solid rgba(251, 191, 36, 0.5);
+  box-shadow: 0 0 50px rgba(251, 191, 36, 0.25), inset 0 0 40px rgba(251, 191, 36, 0.15);
+  background: radial-gradient(circle, transparent 65%, rgba(180, 83, 9, 0.15) 100%);
+  animation: spinBaguaCW 35s linear infinite;
 }
 
 .bagua-formation.fast-spin .bagua-outer-ring {
-  animation: spinBaguaCW 1.2s linear infinite !important;
+  animation: spinBaguaCW 1.0s linear infinite !important;
   border-color: var(--gold-primary) !important;
-  box-shadow: 0 0 60px rgba(251, 191, 36, 0.8) !important;
+  box-shadow: 0 0 80px rgba(251, 191, 36, 0.9) !important;
 }
 
 .bagua-constellation-ring {
   position: absolute;
-  width: 280px;
-  height: 280px;
+  width: 310px;
+  height: 310px;
   border-radius: 50%;
-  border: 1px solid rgba(148, 163, 184, 0.25);
-  animation: spinBaguaCCW 20s linear infinite;
+  border: 2px dashed rgba(148, 163, 184, 0.35);
+  box-shadow: 0 0 25px rgba(148, 163, 184, 0.2);
+  animation: spinBaguaCCW 24s linear infinite;
 }
 
+.star-node {
+  position: absolute;
+  color: var(--gold-primary);
+  font-size: 14px;
+  text-shadow: 0 0 8px #fbbf24;
+}
+.star-node.s-1 { top: -8px; left: 50%; transform: translateX(-50%); }
+.star-node.s-2 { top: 12%; right: 12%; }
+.star-node.s-3 { top: 50%; right: -8px; transform: translateY(-50%); }
+.star-node.s-4 { bottom: 12%; right: 12%; }
+.star-node.s-5 { bottom: -8px; left: 50%; transform: translateX(-50%); }
+.star-node.s-6 { bottom: 12%; left: 12%; }
+.star-node.s-7 { top: 50%; left: -8px; transform: translateY(-50%); }
+.star-node.s-8 { top: 12%; left: 12%; }
+
 .bagua-formation.fast-spin .bagua-constellation-ring {
-  animation: spinBaguaCCW 0.8s linear infinite !important;
-  border-color: rgba(251, 191, 36, 0.6) !important;
+  animation: spinBaguaCCW 0.7s linear infinite !important;
+  border-color: rgba(251, 191, 36, 0.8) !important;
 }
 
 .bagua-inner-taiji {
   position: absolute;
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
+  border: 2px solid rgba(251, 191, 36, 0.6);
+  background: radial-gradient(circle, rgba(16, 20, 27, 0.95) 0%, rgba(8, 10, 13, 0.98) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 52px;
+  box-shadow: 0 0 35px rgba(251, 191, 36, 0.4);
+  animation: spinBaguaCW 12s linear infinite;
+}
+
+.taiji-symbol {
+  font-size: 64px;
   color: rgba(251, 191, 36, 0.85);
   text-shadow: 0 0 25px rgba(251, 191, 36, 0.8);
-  animation: spinBaguaCW 10s linear infinite;
+}
+
+.taiji-celestial-eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #fbbf24 60%, transparent 100%);
+  box-shadow: 0 0 20px #fbbf24;
+  animation: eyePulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes eyePulse {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(1.3); opacity: 1; }
 }
 
 .bagua-formation.fast-spin .bagua-inner-taiji {
-  animation: spinBaguaCW 0.5s linear infinite !important;
+  animation: spinBaguaCW 0.4s linear infinite !important;
   color: #fff !important;
-  text-shadow: 0 0 40px #fbbf24 !important;
+  text-shadow: 0 0 50px #fbbf24 !important;
 }
 
 /* 8 Trigrams positioned on the outer ring */
@@ -4103,7 +4214,7 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   to { transform: rotate(0deg); }
 }
 
-/* Floating Levitating Talisman */
+/* Floating Levitating Talisman (Cửu Long Anh Hồn Lệnh) */
 .altar-talisman-pedestal {
   position: relative;
   z-index: 10;
@@ -4114,24 +4225,26 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 
 .floating-talisman {
   position: relative;
-  width: 140px;
-  height: 220px;
-  background: linear-gradient(135deg, #78350f 0%, #991b1b 50%, #450a0a 100%);
+  width: 155px;
+  height: 250px;
+  background: linear-gradient(165deg, #2b0e0e 0%, #881337 40%, #450a0a 100%);
   border: 2px solid var(--gold-primary);
-  border-radius: 10px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 35px rgba(251, 191, 36, 0.4);
-  animation: levitateTalisman 3s ease-in-out infinite;
+  border-radius: 12px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.95), 0 0 45px rgba(251, 191, 36, 0.45);
+  animation: levitateTalisman 3.2s ease-in-out infinite;
   cursor: pointer;
-  transition: transform 0.3s ease, filter 0.3s ease;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  perspective: 800px;
 }
 
 .floating-talisman:hover {
   transform: translateY(-8px) scale(1.05);
-  filter: drop-shadow(0 0 25px rgba(251, 191, 36, 0.8));
+  filter: drop-shadow(0 0 30px rgba(251, 191, 36, 0.85));
 }
 
 .floating-talisman.talisman-sacrificed {
@@ -4146,15 +4259,39 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 @keyframes talismanPlunge {
   0% { transform: translateY(0) scale(1); opacity: 1; }
   60% { transform: translateY(-40px) scale(1.15); opacity: 1; filter: drop-shadow(0 0 40px #fbbf24); }
-  100% { transform: translateY(120px) scale(0.2); opacity: 0; filter: drop-shadow(0 0 80px #fff); }
+  100% { transform: translateY(140px) scale(0.15); opacity: 0; filter: drop-shadow(0 0 90px #fff); }
 }
 
 .talisman-glow-core {
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 10px;
   background: radial-gradient(circle at 50% 40%, rgba(251, 191, 36, 0.3) 0%, transparent 70%);
   pointer-events: none;
+}
+
+.talisman-dragon-crest {
+  position: relative;
+  width: 58px;
+  height: 22px;
+  background: linear-gradient(180deg, #d97706 0%, #78350f 100%);
+  border: 1px solid var(--gold-primary);
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.talisman-jade-ring {
+  position: absolute;
+  top: -14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #10b981;
+  background: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
 }
 
 .talisman-body {
@@ -4162,7 +4299,25 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
   z-index: 2;
+  width: 100%;
+}
+
+.talisman-edict-seal {
+  font-family: var(--font-seal);
+  font-size: 16px;
+  color: #fecaca;
+  background: #991b1b;
+  border: 1px solid #dc2626;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.6);
 }
 
 .talisman-seal-text {
@@ -4171,25 +4326,67 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   color: var(--gold-primary);
   writing-mode: vertical-rl;
   letter-spacing: 8px;
-  text-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.85);
 }
 
 .talisman-sub-seal {
   font-family: var(--font-title);
   font-size: 10px;
   color: #fecaca;
-  letter-spacing: 2px;
-  margin-top: 6px;
-  padding: 2px 6px;
-  background: rgba(0, 0, 0, 0.4);
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 3px;
+  white-space: nowrap;
+}
+
+.talisman-kintsugi-vein {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 12px;
+  background: linear-gradient(180deg, transparent, #fbbf24 30%, #fff 50%, #f59e0b 70%, transparent);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 4px #fbbf24);
+}
+
+.talisman-tassel-braid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -6px;
+}
+
+.talisman-bronze-bell {
+  width: 14px;
+  height: 12px;
+  background: linear-gradient(180deg, #d97706, #78350f);
+  border-radius: 4px 4px 1px 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.talisman-tassel-strands {
+  width: 8px;
+  height: 38px;
+  background: linear-gradient(180deg, #dc2626 0%, #7f1d1d 80%, transparent 100%);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 10px rgba(220, 38, 38, 0.5);
+  animation: tasselSway 2.5s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
+
+@keyframes tasselSway {
+  0% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
 }
 
 .talisman-invocation-hint {
   color: #94a3b8;
   font-size: 13px;
   font-family: var(--font-serif);
-  margin-top: 18px;
+  margin-top: 20px;
   text-shadow: 0 2px 4px #000;
   letter-spacing: 1px;
 }
@@ -4207,8 +4404,8 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 
 .kintsugi-molten-core {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 520px;
+  height: 520px;
   border-radius: 50%;
   background: radial-gradient(circle at center, rgba(251, 191, 36, 0.6) 0%, rgba(217, 119, 6, 0.3) 45%, transparent 70%);
   animation: moltenCorePulse 1s ease-in-out infinite alternate;
@@ -4230,6 +4427,7 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 .crack-1 { width: 380px; transform: rotate(25deg); }
 .crack-2 { width: 440px; transform: rotate(-45deg); }
 .crack-3 { width: 410px; transform: rotate(115deg); }
+.crack-4 { width: 460px; transform: rotate(-135deg); }
 
 @keyframes crackRadiate {
   0% { opacity: 0.5; filter: drop-shadow(0 0 10px #fbbf24); }
@@ -4292,7 +4490,7 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   aspect-ratio: 9/13.5;
   border-radius: 12px;
   overflow: hidden;
-  border: 2px solid var(--gold-primary);
+  border: 3px solid var(--gold-primary);
   box-shadow: 0 0 50px rgba(251, 191, 36, 0.6), 0 20px 60px rgba(0, 0, 0, 0.95);
   animation: splashCardZoom 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
@@ -4300,6 +4498,37 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
 @keyframes splashCardZoom {
   0% { transform: scale(0.85); opacity: 0; }
   100% { transform: scale(1); opacity: 1; }
+}
+
+.frame-dragon-corner {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--gold-primary);
+  pointer-events: none;
+  z-index: 4;
+}
+.frame-dragon-corner.top-left { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+.frame-dragon-corner.top-right { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+.frame-dragon-corner.bottom-left { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+.frame-dragon-corner.bottom-right { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+.golden-shimmer-sweep {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.4) 50%, rgba(251, 191, 36, 0.5) 55%, transparent 65%);
+  pointer-events: none;
+  z-index: 3;
+  animation: shimmerSweep 4s ease-in-out infinite;
+}
+
+@keyframes shimmerSweep {
+  0% { transform: translateX(-100%) translateY(-100%); }
+  35% { transform: translateX(100%) translateY(100%); }
+  100% { transform: translateX(100%) translateY(100%); }
 }
 
 .hero-splash-img {
@@ -4326,13 +4555,21 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   animation: calligraphySlideIn 0.6s ease-out forwards;
 }
 
 @keyframes calligraphySlideIn {
   0% { transform: translateX(-50px); opacity: 0; }
   100% { transform: translateX(0); opacity: 1; }
+}
+
+.hanging-scroll-dowel {
+  width: 60px;
+  height: 6px;
+  background: linear-gradient(90deg, #78350f, #d97706, #78350f);
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
 .calligraphy-seal-badge {
@@ -4455,11 +4692,19 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   font-size: 12px;
   color: #cbd5e1;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pill-seal {
+  font-family: var(--font-seal);
+  font-size: 13px;
+  color: var(--gold-primary);
 }
 
 .hero-quick-stats-row .stat-pill strong {
   color: var(--gold-primary);
-  margin-left: 4px;
 }
 
 /* Altar Footer Bar */
@@ -4541,6 +4786,132 @@ body.view-mode-battle .astrolabe-btn:hover:not(.active) {
   align-items: center;
   justify-content: center;
   flex-wrap: nowrap;
+}
+
+/* Memorial Scroll Dialog (Rules & History) */
+.memorial-scroll-dialog {
+  background: #0d1117;
+  border: 2px solid var(--gold-primary);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 640px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 40px rgba(251, 191, 36, 0.25);
+  overflow: hidden;
+  font-family: var(--font-text);
+  color: #e2e8f0;
+}
+
+.memorial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(16, 20, 27, 0.95);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.memorial-seal {
+  font-family: var(--font-seal);
+  font-size: 20px;
+  color: #fecaca;
+  background: #991b1b;
+  border: 1px solid #dc2626;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.memorial-header h3 {
+  font-family: var(--font-title);
+  font-size: 17px;
+  color: var(--gold-primary);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.memorial-content {
+  padding: 24px;
+  overflow-y: auto;
+  line-height: 1.7;
+}
+
+.rule-block {
+  margin-bottom: 20px;
+}
+
+.rule-block h4 {
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+
+.rate-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge-rate {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.badge-rate.ur { background: #7f1d1d; color: #fecaca; border: 1px solid #ef4444; }
+.badge-rate.ssr { background: #78350f; color: #fef08a; border: 1px solid #fbbf24; }
+.badge-rate.sr { background: #1e1b4b; color: #c7d2fe; border: 1px solid #818cf8; }
+.badge-rate.r { background: #1f2937; color: #9ca3af; border: 1px solid #4b5563; }
+
+.history-list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty-history-hint {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.history-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(16, 20, 27, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+.history-entry .hero-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-entry .hero-name {
+  font-weight: 700;
+  color: #fff;
+}
+
+.history-entry .hero-time {
+  font-size: 12px;
+  color: #94a3b8;
 }
 
 .btn-altar-action {

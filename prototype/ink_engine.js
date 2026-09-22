@@ -226,7 +226,6 @@ class InkEngine {
       const v = addMatch[1];
       const val = Number(addMatch[2]);
       if (!isNaN(val)) this.variables[v] = (this.variables[v] || 0) + val;
-      console.log(`[InkEngine] Biến '${v}' +${val} = ${this.variables[v]}`);
       return;
     }
 
@@ -235,7 +234,6 @@ class InkEngine {
       const v = subMatch[1];
       const val = Number(subMatch[2]);
       if (!isNaN(val)) this.variables[v] = Math.max(0, (this.variables[v] || 0) - val);
-      console.log(`[InkEngine] Biến '${v}' -${val} = ${this.variables[v]}`);
       return;
     }
 
@@ -247,7 +245,6 @@ class InkEngine {
       else if (val === "false") val = false;
       else if (!isNaN(val)) val = Number(val);
       this.variables[v] = val;
-      console.log(`[InkEngine] Biến '${v}' = ${val}`);
       return;
     }
   }
@@ -279,7 +276,6 @@ class InkEngine {
         choice.tags.forEach(t => this.handleTag(t));
       }
       if (choice.targetKnot) {
-        console.log(`[InkEngine] Lựa chọn: "${choice.text}" -> Đến knot: ${choice.targetKnot}`);
         this.start(choice.targetKnot);
         return true;
       }

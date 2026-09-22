@@ -1,0 +1,113 @@
+<div class="vn-stage" id="vn-stage">
+          <!-- Dual background layers for silky smooth cross-fades -->
+          <div class="vn-bg-layer layer-a active" id="vn-bg-layer-a" style="background-image: url('assets/images/bg_palace_chamber.jpg');"></div>
+          <div class="vn-bg-layer layer-b" id="vn-bg-layer-b"></div>
+
+          <!-- PixiJS Ambient & Shader Canvas -->
+          <canvas id="vn-pixi-canvas" class="vn-pixi-canvas"></canvas>
+
+          <!-- Subtle Imperial Realm Portal Seal (Mở Sa Bàn xem tình hình triều chính) -->
+          <button class="vn-portal-seal" id="btn-vn-to-saban" title="Đế Nghiệp Sa Bàn (Mở Bản Đồ Quân Sự & Triều Chính)">
+            <span class="portal-seal-char">輿</span>
+            <span class="portal-seal-label">Sa Bàn</span>
+          </button>
+
+          <div class="vn-ambient-fx" id="vn-ambient">
+            <div class="rain-canvas"></div>
+            <div class="lightning-flash" id="lightning-flash"></div>
+            <div class="vignette-overlay"></div>
+          </div>
+
+          <!-- Character Stage: Dual Cast Standees (Trực tiếp trên sàn tẩm thất, không đóng khung card) -->
+          <div class="cast-stage" id="cast-stage">
+            <!-- Left Character Standee (Ẩn mặc định khi bắt đầu tại tẩm thất, chỉ hiện khi gặp NPC) -->
+            <div class="actor-slot actor-left listening hidden" id="actor-left-slot">
+              <div class="standee-wrapper" id="actor-left-card">
+                <img src="assets/images/actor_to_kien_phong.png" alt="Tô Kiến Phong" class="standee-img" id="actor-left-img">
+                <div class="standee-floor-shadow"></div>
+                <div class="actor-nametag" id="actor-left-nametag">Tô Kiến Phong</div>
+              </div>
+            </div>
+
+            <!-- Right Character Standee (Quý Bình An / Phò Mã Gia) -->
+            <div class="actor-slot actor-right hidden" id="actor-right-slot">
+              <div class="standee-wrapper" id="actor-right-card">
+                <img src="assets/images/actor_quy_binh_an.png" alt="Quý Bình An" class="standee-img" id="actor-right-img">
+                <div class="standee-floor-shadow"></div>
+                <div class="actor-nametag" id="actor-right-nametag">Quý Bình An</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Novel Dialogue Box (Gỗ Sơn Mài Đen Nẹp Chỉ Vàng Kintsugi) -->
+          <div class="vn-dialogue-panel" id="vn-dialogue-panel" title="Nhấp chuột hoặc bấm [Space] để đọc tiếp câu thoại">
+            <!-- Diegetic Speaker Seal Plate -->
+            <div class="vn-speaker-plate" id="vn-speaker-plate">
+              <div class="speaker-seal-stamp" id="vn-speaker-seal">史</div>
+              <div class="speaker-titles">
+                <span class="speaker-name" id="vn-speaker">Người Dẫn Truyện</span>
+                <span class="speaker-sub" id="vn-speaker-sub">Hồi 1 · Phò Mã Phủ Thức Tỉnh</span>
+              </div>
+            </div>
+
+            <!-- Mini Quick Utility Ribbon -->
+            <div class="vn-quick-ribbon" onclick="event.stopPropagation()">
+              <button class="vn-ctrl-btn" id="btn-vn-log" title="Lịch Sử Thoại (Lăn chuột lên)">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                <span>Sử Ký</span>
+              </button>
+              <button class="vn-ctrl-btn" id="btn-vn-auto" title="Tự Động Đọc">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                <span>Tự Động</span>
+              </button>
+              <button class="vn-ctrl-btn" id="btn-vn-hide" title="Ẩn Giao Diện (Chuột phải)">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Ẩn UI</span>
+              </button>
+            </div>
+
+            <!-- Text Presentation Area -->
+            <div class="dialogue-text-area" id="vn-text-area">
+              <p class="dialogue-line" id="vn-dialogue-text">
+                Hắn mở mắt.
+              </p>
+            </div>
+
+            <!-- Footer Bar: Branch Indicator & Pulsing Golden CTAC glyph -->
+            <div class="dialogue-action-row">
+              <div class="branch-indicator" id="vn-branch-indicator">
+                Tuyến Chính: Phò Mã Phủ Thức Tỉnh (Hồi 1 · Cảnh 1)
+              </div>
+              <div class="vn-ctac" id="btn-vn-advance" title="Bấm [Space] hoặc nhấp chuột để tiếp tục">
+                <span class="ctac-glyph">▼</span>
+                <span class="ctac-hint">Tiếp Tục [Space]</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating VN Dialogue Choices Layer (Nổi trực tiếp trên nền cảnh — Không làm mờ background) -->
+          <div class="branch-choice-modal hidden" id="branch-choice-modal">
+            <div class="choice-container">
+              <div class="choice-seal">MƯU QUỐC CHI ĐẠO</div>
+              <div class="choice-question" id="choice-question">Quý Bình An quyết định ứng phó ra sao?</div>
+              <div class="choice-grid" id="choice-grid">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Dialogue Backlog Drawer (Sử Ký Thoại Lục Trục Cuộn) -->
+          <div class="backlog-drawer hidden" id="backlog-drawer">
+            <div class="backlog-header">
+              <div class="backlog-title-box">
+                <span class="backlog-seal-char">史</span>
+                <span class="backlog-title-text">QUÂN CƠ SỬ KÝ · TIỀN SỰ THOẠI LỤC</span>
+              </div>
+              <button class="scroll-close-seal" id="btn-close-log" title="Thu Thư">
+                <span class="close-seal-char">卷</span>
+                <span class="close-seal-text">Thu Thư</span>
+              </button>
+            </div>
+            <div class="backlog-body" id="backlog-body"></div>
+          </div>
+        </div>

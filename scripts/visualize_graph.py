@@ -1,16 +1,15 @@
-import json
+import subprocess
 import sys
 from pathlib import Path
-from pyvis.network import Network
 
 sys.stdout.reconfigure(encoding='utf-8')
 
-data_dir = Path(__file__).resolve().parent.parent / "data"
-graph_file = data_dir / "character_graph" / "character_graph.json"
-html_out = data_dir / "character_graph" / "index.html"
+print("ℹ️ [THÔNG BÁO] Hệ thống đồ thị đã được nâng cấp lên Character Graph V2 (120 nhân vật, PyVis tương tác cao cấp).")
+print("ℹ️ Đang kích hoạt scripts/build_character_graph_v2.py...")
 
-with open(graph_file, "r", encoding="utf-8") as f:
-    data = json.load(f)
+script_v2 = Path(__file__).resolve().parent / "build_character_graph_v2.py"
+subprocess.run([sys.executable, str(script_v2)], check=True)
+sys.exit(0)
 
 net = Network(height="750px", width="100%", bgcolor="#1a1a2e", font_color="white", directed=True)
 

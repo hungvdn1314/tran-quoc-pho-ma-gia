@@ -1,0 +1,320 @@
+<!-- =========================================================================
+     KHẢI HOÀN TIỆP BÁO (IMPERIAL VICTORY DISPATCH SCROLL MODAL)
+     ========================================================================= -->
+<div class="modal-backdrop hidden" id="victory-modal">
+  <div class="imperial-triumph-scroll-frame">
+    <!-- Trục Cuộn Gỗ Mun Bịt Đồng (Left Roller) -->
+    <div class="scroll-roller left-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+
+    <!-- Thân Tiệp Báo Lụa Gấm -->
+    <div class="scroll-parchment-body triumph-body">
+      <!-- Đỉnh Tiệp Báo: Đại Thắng Ấn & Phẩm Cấp -->
+      <div class="triumph-header-row">
+        <div class="triumph-cinnabar-seal">捷</div>
+        <div class="triumph-heading-meta">
+          <span class="triumph-era-crest">❖ BẮC CẢNH QUÂN CƠ XỨ · KHẢI HOÀN TIỆP BÁO ❖</span>
+          <h2 class="triumph-calligraphy-title">BẮT SỐNG TIÊN PHONG ĐỊCH HỎA</h2>
+          <span class="triumph-grade-badge">KỲ CÔNG THƯỢNG ĐẲNG · GIÁP ĐẲNG ĐẠI TIỆP</span>
+        </div>
+        <div class="triumph-imperial-stamp">大捷</div>
+      </div>
+
+      <div class="triumph-divider-vein"></div>
+
+      <!-- Quân Tình Tường Thuật (Battle Chronicle) -->
+      <p class="triumph-lore-text">
+        Nước lũ sông Thanh Thủy kết hợp thần uy vô song của Triệu Tử Long đã đánh tan tành 2 vạn thiết kỵ Nam Ly. Cửa ải Bắc Cảnh sừng sững như bàn thạch, uy chấn thiên hạ!
+      </p>
+
+      <!-- Sổ Cái Chiến Lợi Khải Hoàn (Spoils Ledger Docket) -->
+      <div class="triumph-spoils-ledger">
+        <div class="ledger-header">
+          <span class="ledger-seal">簿</span>
+          <span class="ledger-title">CHIẾN LỢI KHẢI HOÀN ĐĂNG LỤC</span>
+        </div>
+        <div class="spoils-grid">
+          <div class="spoil-item">
+            <span class="spoil-glyph gold">錠</span>
+            <div class="spoil-meta">
+              <span class="spoil-label">Quân Ngân Tịch Thu</span>
+              <span class="spoil-val">+20.000 Lượng Vàng</span>
+            </div>
+          </div>
+          <div class="spoil-item">
+            <span class="spoil-glyph food">糧</span>
+            <div class="spoil-meta">
+              <span class="spoil-label">Quân Lương Chiếm Đoạt</span>
+              <span class="spoil-val">+50.000 Thạch Lương</span>
+            </div>
+          </div>
+          <div class="spoil-item">
+            <span class="spoil-glyph hero">将</span>
+            <div class="spoil-meta">
+              <span class="spoil-label">Tướng Tinh Quy Phục</span>
+              <span class="spoil-val text-gold">Mở Khóa: Điển Vi & Lý Nho</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thao Tác: Thượng Tấu Tiệp Báo -->
+      <div class="triumph-action-footer">
+        <button class="btn-triumph-dispatch" id="btn-triumph-next">
+          <span class="btn-seal-icon">奏</span>
+          <div class="btn-dispatch-meta">
+            <span class="dispatch-primary">THƯỢNG TẤU BÁO CÔNG</span>
+            <span class="dispatch-sub">Khoái mã phi báo kinh sư · Tiếp tục đại nghiệp</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Trục Cuộn Gỗ Mun Bịt Đồng (Right Roller) -->
+    <div class="scroll-roller right-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================
+     BẠI TRẬN QUÂN THƯ (DEFEAT DISPATCH SCROLL MODAL)
+     ========================================================================= -->
+<div class="modal-backdrop hidden" id="defeat-modal">
+  <div class="imperial-defeat-scroll-frame">
+    <div class="scroll-roller left-roller defeat-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+    </div>
+
+    <div class="scroll-parchment-body defeat-body">
+      <div class="defeat-header-row">
+        <div class="defeat-soot-seal">敗</div>
+        <div class="defeat-heading-meta">
+          <span class="defeat-era-crest">❖ BẮC CẢNH PHÒNG TUYẾN · NGUY CẤP QUÂN THƯ ❖</span>
+          <h2 class="defeat-calligraphy-title">THÀNH THANH CHÂU THẤT THỦ</h2>
+          <span class="defeat-grade-badge">TƯỜNG THÀNH VỠ NÁT · CHIẾN TUYẾN NGUY NAN</span>
+        </div>
+        <div class="defeat-soot-stamp">告急</div>
+      </div>
+
+      <div class="defeat-divider-vein"></div>
+
+      <p class="defeat-lore-text">
+        Xe đục thành của Địch Hỏa đã phá vỡ đại môn Thanh Châu. Nước sông chưa kịp trút xuống, phòng tuyến tiền tiêu Bắc Cảnh lâm vào thế ngàn cân treo sợi tóc! Phò Mã Gia hãy tái lập trận hình, tính toán lại sách lược đắp đê ngăn sông!
+      </p>
+
+      <div class="defeat-actions-row">
+        <button class="btn-defeat-act retry" id="btn-defeat-retry">
+          <span class="btn-seal-icon">重</span>
+          <div class="btn-defeat-meta">
+            <span class="defeat-act-title">TRÙNG CHỈNH KỲ CỔ</span>
+            <span class="defeat-act-sub">Làm mới binh lực · Tái khởi chiến cuộc</span>
+          </div>
+        </button>
+        <button class="btn-defeat-act retreat" id="btn-defeat-retreat">
+          <span class="btn-seal-icon">撤</span>
+          <div class="btn-defeat-meta">
+            <span class="defeat-act-title">LÙI VỀ SA BÀN</span>
+            <span class="defeat-act-sub">Thoái thủ quân cơ · Nghiên cứu lại thế trận</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <div class="scroll-roller right-roller defeat-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================
+     HERO CARD DETAIL INSPECTOR: BẢNG TRA CỨU THUỘC TÍNH & TRANH CUỘN LỤA THỦY MẶC
+     ========================================================================= -->
+<div id="hero-inspector-modal" class="hero-scroll-overlay hidden">
+  <!-- Rendered dynamically by HeroInspectorScroll.ts as a pure Silk Ink-Wash Scroll -->
+</div>
+
+<!-- =========================================================================
+     CHAPTER MILESTONE PROGRESSION: ĐẾ NGHIỆP NIÊN BIỂU THƯ TRỤC
+     ========================================================================= -->
+<div class="modal-backdrop hidden" id="milestone-matrix-modal">
+  <div class="imperial-chronology-scroll-frame">
+    <div class="scroll-roller left-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+
+    <div class="scroll-parchment-body chronology-body">
+      <div class="chronology-imperial-header">
+        <div class="chronology-seal-col">
+          <span class="chronology-header-seal">紀</span>
+        </div>
+        <div class="chronology-title-col">
+          <span class="chronology-top-crest">❖ ĐẾ NGHIỆP SỬ SÁCH · QUÂN CƠ NIÊN BIỂU ❖</span>
+          <h2 class="chronology-main-title">MA TRẬN MỞ KHÓA TÍNH NĂNG THEO CHƯƠNG</h2>
+          <p class="chronology-subtitle">Mỗi bước đi của Phò Mã Gia đều định hình giang sơn xã tắc</p>
+        </div>
+        <button class="scroll-close-seal" id="btn-close-matrix" title="Thu Hồi Niên Biểu">
+          <span class="close-seal-icon">卷</span>
+          <span class="close-seal-text">Thu Thư</span>
+        </button>
+      </div>
+
+      <div class="chronology-divider-vein"></div>
+
+      <!-- Golden Thread Timeline List -->
+      <div class="chronology-timeline-container" id="matrix-timeline-list">
+        <!-- Populated dynamically via silk nodes -->
+      </div>
+    </div>
+
+    <div class="scroll-roller right-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================
+     FACTION & IDENTITY PROGRESSION: ĐẾ NGHIỆP PHONG VƯƠNG THẦN BẢNG
+     ========================================================================= -->
+<div class="modal-backdrop hidden" id="faction-progression-modal">
+  <div class="imperial-faction-scroll-frame">
+    <div class="scroll-roller left-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+
+    <div class="scroll-parchment-body faction-body">
+      <div class="faction-imperial-header">
+        <div class="faction-seal-col">
+          <span class="faction-header-seal">封</span>
+        </div>
+        <div class="faction-title-col">
+          <span class="faction-top-crest">❖ CỬU TRỌNG THẾ LỰC · PHONG VƯƠNG BẢNG ❖</span>
+          <h2 class="faction-main-title">LỘ TRÌNH ĐẾ NGHIỆP QUÝ BÌNH AN</h2>
+          <p class="faction-subtitle">Từ Phò Mã Hàn Vi đến Trấn Bắc Thống Soái, Chúa Tể Ba Châu và Định Quốc Hoàng Đế</p>
+        </div>
+        <button class="scroll-close-seal" id="btn-close-faction" title="Thu Hồi Phong Vương Bảng">
+          <span class="close-seal-icon">歸</span>
+          <span class="close-seal-text">Quy Hồi</span>
+        </button>
+      </div>
+
+      <div class="faction-divider-vein"></div>
+
+      <!-- Bệ Ngọc Thân Phận Đương Thời -->
+      <div class="faction-current-card" id="faction-current-card"></div>
+
+      <!-- 5 Đạo Phù Tiết Hoàng Triều -->
+      <div class="faction-stages-list" id="faction-stages-list"></div>
+    </div>
+
+    <div class="scroll-roller right-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================================
+     THÁNH CHỈ HOÀNG TRIỀU / THƯ TRỤC THIÊN CƠ (IMPERIAL DECREE SCROLL MODAL)
+     ========================================================================= -->
+<div class="modal-backdrop hidden" id="unlock-event-modal">
+  <div class="imperial-decree-scroll-frame" id="imperial-decree-frame">
+    <!-- Trục Gỗ Mun Nẹp Đồng Bịt Vàng (Left Roller) -->
+    <div class="decree-roller left-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+
+    <!-- Thân Chiếu Chỉ Lụa Gấm Hoàng Gia (Decree Silk Parchment Body) -->
+    <div class="decree-parchment-body">
+      <!-- Dải Ruy Băng Chu Sa Triện Ấn -->
+      <div class="decree-imperial-top">
+        <div class="decree-vermilion-seal" id="unlock-modal-seal">勅</div>
+        <div class="decree-decree-heading">
+          <span class="decree-origin-tag" id="unlock-modal-origin">THIÊN CƠ HỆ THỐNG · THÁNH DỤ BAN THƯỞNG</span>
+          <h2 class="decree-proclamation-title" id="unlock-modal-title">PHỤNG THIÊN THỪA VẬN BAN THƯỞNG</h2>
+        </div>
+        <div class="decree-cinnabar-stamp">欽此</div>
+      </div>
+
+      <div class="decree-divider-vein"></div>
+
+      <!-- Khu Vực Hiện Thị Bảo Vật / Lệnh Bài (Diegetic Token Showcase) -->
+      <div class="decree-artifact-stage">
+        <div class="decree-talisman-halo">
+          <div class="decree-bronze-medallion" id="unlock-modal-icon">
+            <span class="medallion-seal">令</span>
+          </div>
+        </div>
+        <div class="decree-item-naming">
+          <h3 class="decree-item-title" id="unlock-modal-name">THƯỢNG CỔ ANH HỒN LỆNH</h3>
+          <span class="decree-rarity-seal">THIÊN CƠ BẢO VẬT</span>
+        </div>
+      </div>
+
+      <!-- Lời Chiếu Chỉ Cổ Phong (Parchment Lore) -->
+      <div class="decree-decree-text">
+        <p class="decree-lore-paragraph" id="unlock-modal-lore">
+          Hoàng kim xé toạc hư không, Thượng Cổ Anh Hồn Lệnh ngưng tụ chân long chi khí. Tín vật tối thượng câu thông thiên cơ, thức tỉnh danh tướng Tam Quốc tại Bái Tướng Thần Đàn!
+        </p>
+      </div>
+
+      <!-- Tác Dụng Uy Lực (Sacred Inscription Effect) -->
+      <div class="decree-sacred-effect" id="unlock-modal-effect">
+        <span class="effect-seal-icon">✦</span>
+        <span class="effect-text-body">Tác dụng: Tiêu hao tại Bái Tướng Thần Đàn để triệu hoán thần tướng Tam Quốc!</span>
+      </div>
+
+      <!-- Thao Tác Phụng Chỉ Khâm Thử (Imperial Seal Acceptance Button) -->
+      <div class="decree-action-footer">
+        <button class="btn-decree-accept" id="btn-close-unlock">
+          <span class="btn-cinnabar-seal">欽</span>
+          <div class="btn-accept-text">
+            <span class="accept-primary">PHỤNG CHỈ TIẾP NHẬN</span>
+            <span class="accept-sub">Khâm thử sắc phong · Tiếp tục đại nghiệp</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Trục Gỗ Mun Nẹp Đồng Bịt Vàng (Right Roller) -->
+    <div class="decree-roller right-roller">
+      <div class="roller-cap top"></div>
+      <div class="roller-tassel top"></div>
+      <div class="roller-shaft"></div>
+      <div class="roller-cap bottom"></div>
+      <div class="roller-tassel bottom"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1475 @@
+/* ==========================================================================
+   GACHA ALTAR MODAL (BÁI TƯỚNG ĐÀI)
+   ========================================================================== */
+.gacha-altar-container {
+  width: 620px;
+  background: radial-gradient(circle at 50% 30%, #201a13 0%, #0d0b09 85%, #050403 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-lg);
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 0 80px rgba(245, 158, 11, 0.4), 0 25px 70px rgba(0, 0, 0, 0.95);
+  position: relative;
+  animation: modalScale 0.35s ease;
+}
+
+.altar-header {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.altar-crest {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  margin-bottom: 4px;
+}
+
+.altar-title {
+  font-family: var(--font-title);
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.altar-subtext {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.btn-close-modal {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-muted);
+  padding: 4px 12px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+
+.btn-close-modal:hover {
+  border-color: var(--red-cinnabar);
+  color: #fff;
+  background: rgba(220, 38, 38, 0.4);
+}
+
+.altar-core {
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.bagua-ring {
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  border: 2px dashed rgba(245, 158, 11, 0.5);
+  border-radius: 50%;
+  animation: baguaRotate 20s linear infinite;
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.2), inset 0 0 35px rgba(245, 158, 11, 0.2);
+}
+
+@keyframes baguaRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.summon-talisman {
+  width: 140px;
+  height: 210px;
+  background: linear-gradient(180deg, #991b1b 0%, #450a0a 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 30px rgba(185, 28, 28, 0.7);
+  z-index: 5;
+  transition: transform 0.4s ease;
+}
+
+.summon-talisman.active-pulse {
+  animation: talismanPulse 0.8s infinite alternate;
+}
+
+@keyframes talismanPulse {
+  0% { transform: scale(1); filter: drop-shadow(0 0 10px #dc2626); }
+  100% { transform: scale(1.08); filter: drop-shadow(0 0 30px #f59e0b); }
+}
+
+.talisman-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.talisman-script {
+  font-family: var(--font-seal);
+  font-size: 26px;
+  color: var(--gold-primary);
+  writing-mode: vertical-rl;
+  letter-spacing: 6px;
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.8);
+}
+
+.talisman-badge {
+  font-size: 10px;
+  font-weight: 800;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid var(--gold-primary);
+}
+
+/* 3D Card Reveal in Gacha */
+.gacha-card-reveal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  perspective: 1000px;
+}
+
+.card-flipper {
+  width: 210px;
+  height: 300px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card-flipper.flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--gold-primary);
+  box-shadow: 0 0 35px rgba(245, 158, 11, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.card-back {
+  background: linear-gradient(135deg, #1c150e 0%, #2f2114 50%, #0d0a07 100%);
+}
+
+.card-back-seal {
+  font-family: var(--font-seal);
+  font-size: 72px;
+  color: var(--gold-primary);
+  text-shadow: 0 0 25px var(--gold-glow);
+}
+
+.card-front {
+  background: linear-gradient(180deg, #1b2432 0%, #0c1017 100%);
+  transform: rotateY(180deg);
+  padding: 14px;
+}
+
+.ssr-banner {
+  position: absolute;
+  top: 10px;
+  left: -24px;
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  color: #fff;
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 900;
+  padding: 2px 30px;
+  transform: rotate(-30deg);
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.8);
+}
+
+.reveal-hero-art {
+  width: 140px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-kintsugi);
+  margin-bottom: 8px;
+}
+
+.reveal-hero-name {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  color: var(--gold-primary);
+  text-shadow: 0 0 10px var(--gold-glow);
+}
+
+.reveal-hero-title {
+  font-size: 11px;
+  color: #cbd5e1;
+}
+
+.reveal-hero-realm {
+  font-size: 10px;
+  color: #38bdf8;
+  margin-top: 2px;
+}
+
+.altar-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ticket-status-row {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.btn-summon-action {
+  width: 100%;
+  background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+  border: 2px solid var(--gold-primary);
+  color: #fff;
+  padding: 14px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(180, 83, 9, 0.6);
+  transition: all 0.2s ease;
+}
+
+.btn-summon-action:hover {
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+  transform: scale(1.02);
+  box-shadow: 0 6px 28px rgba(217, 119, 6, 0.85);
+}
+
+.summon-btn-title {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.summon-btn-sub {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.reveal-action-row {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-view-hero-detail {
+  flex: 1;
+  background: #1e293b;
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-view-hero-detail:hover {
+  background: rgba(245, 158, 11, 0.15);
+}
+
+.btn-confirm-summon {
+  flex: 1.2;
+  background: linear-gradient(180deg, #dc2626 0%, #991b1b 100%);
+  border: 1px solid #f87171;
+  color: #fff;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  font-weight: 800;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-confirm-summon:hover {
+  background: linear-gradient(180deg, #ef4444 0%, #b91c1c 100%);
+}
+
+
+/* --- FULL-SCREEN DIEGETIC GACHA THEATER & GRAND REVEAL --- */
+/* ==========================================================================
+   BÁI TƯỚNG THẦN ĐÀN (GACHA SUMMONING ALTAR — FULL-SCREEN DIEGETIC THEATER)
+   ========================================================================== */
+.gacha-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(12px);
+  overflow: hidden;
+}
+
+.gacha-ritual-theater {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #080a0d;
+  font-family: var(--font-text);
+  color: #e2e8f0;
+}
+
+.gacha-altar-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6) contrast(1.15);
+  animation: altarSlowZoom 30s infinite alternate ease-in-out;
+  z-index: 1;
+}
+
+@keyframes altarSlowZoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.06); }
+}
+
+.gacha-altar-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, transparent 20%, rgba(8, 10, 13, 0.65) 55%, #080a0d 95%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top Diegetic Ribbon */
+.gacha-header-ribbon {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 36px;
+  background: linear-gradient(180deg, rgba(8, 10, 13, 0.98) 0%, rgba(8, 10, 13, 0.82) 60%, transparent 100%);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.gacha-dynasty-tag {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.gacha-seal-stamp {
+  font-family: var(--font-seal);
+  font-size: 24px;
+  color: #fecaca;
+  background: #991b1b;
+  border: 2px solid #dc2626;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
+}
+
+.gacha-title-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.gacha-main-title {
+  font-family: var(--font-title);
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: var(--gold-primary);
+  margin: 0;
+  text-shadow: 0 0 15px rgba(251, 191, 36, 0.4);
+}
+
+.gacha-sub-title {
+  font-family: var(--font-serif);
+  font-size: 12px;
+  color: #94a3b8;
+  margin-top: 2px;
+}
+
+.gacha-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gacha-header-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(16, 20, 27, 0.85);
+  border: 1px solid rgba(251, 191, 36, 0.35);
+  border-radius: 6px;
+  padding: 6px 14px;
+  color: #e2e8f0;
+  cursor: pointer;
+  font-family: var(--font-text);
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.gacha-header-btn:hover {
+  background: rgba(251, 191, 36, 0.15);
+  border-color: var(--gold-primary);
+  color: var(--gold-primary);
+  transform: translateY(-1px);
+}
+
+.gacha-currency-dock {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.gacha-token-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 20, 27, 0.85);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+.token-glyph {
+  font-family: var(--font-seal);
+  font-size: 16px;
+  color: var(--gold-primary);
+}
+
+.token-val {
+  color: var(--gold-primary);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.gacha-seal-close {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(153, 27, 27, 0.25);
+  border: 1px solid #dc2626;
+  color: #fecaca;
+  border-radius: 6px;
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  transition: all 0.2s ease;
+}
+
+.gacha-seal-close:hover {
+  background: #991b1b;
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+/* Floating Skip Button */
+.gacha-skip-btn {
+  position: absolute;
+  top: 85px;
+  right: 40px;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(153, 27, 27, 0.85);
+  border: 1px solid #dc2626;
+  border-radius: 20px;
+  padding: 6px 18px;
+  color: #fecaca;
+  font-family: var(--font-text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  transition: all 0.2s ease;
+}
+
+.gacha-skip-btn:hover {
+  background: #dc2626;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Center Altar Arena */
+.gacha-arena {
+  position: relative;
+  z-index: 5;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.gacha-ember-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.altar-smoke-censer {
+  position: absolute;
+  top: 15%;
+  width: 260px;
+  height: 380px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.altar-smoke-censer.left {
+  left: 5%;
+  background: radial-gradient(ellipse at center, rgba(148, 163, 184, 0.15) 0%, transparent 70%);
+}
+
+.altar-smoke-censer.right {
+  right: 5%;
+  background: radial-gradient(ellipse at center, rgba(148, 163, 184, 0.15) 0%, transparent 70%);
+}
+
+/* Bagua Formation */
+.bagua-formation {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.bagua-outer-ring {
+  position: absolute;
+  width: 440px;
+  height: 440px;
+  border-radius: 50%;
+  border: 3px solid rgba(251, 191, 36, 0.5);
+  box-shadow: 0 0 50px rgba(251, 191, 36, 0.25), inset 0 0 40px rgba(251, 191, 36, 0.15);
+  background: radial-gradient(circle, transparent 65%, rgba(180, 83, 9, 0.15) 100%);
+  animation: spinBaguaCW 35s linear infinite;
+}
+
+.bagua-formation.fast-spin .bagua-outer-ring {
+  animation: spinBaguaCW 1.0s linear infinite !important;
+  border-color: var(--gold-primary) !important;
+  box-shadow: 0 0 80px rgba(251, 191, 36, 0.9) !important;
+}
+
+.bagua-constellation-ring {
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  border: 2px dashed rgba(148, 163, 184, 0.35);
+  box-shadow: 0 0 25px rgba(148, 163, 184, 0.2);
+  animation: spinBaguaCCW 24s linear infinite;
+}
+
+.star-node {
+  position: absolute;
+  color: var(--gold-primary);
+  font-size: 14px;
+  text-shadow: 0 0 8px #fbbf24;
+}
+.star-node.s-1 { top: -8px; left: 50%; transform: translateX(-50%); }
+.star-node.s-2 { top: 12%; right: 12%; }
+.star-node.s-3 { top: 50%; right: -8px; transform: translateY(-50%); }
+.star-node.s-4 { bottom: 12%; right: 12%; }
+.star-node.s-5 { bottom: -8px; left: 50%; transform: translateX(-50%); }
+.star-node.s-6 { bottom: 12%; left: 12%; }
+.star-node.s-7 { top: 50%; left: -8px; transform: translateY(-50%); }
+.star-node.s-8 { top: 12%; left: 12%; }
+
+.bagua-formation.fast-spin .bagua-constellation-ring {
+  animation: spinBaguaCCW 0.7s linear infinite !important;
+  border-color: rgba(251, 191, 36, 0.8) !important;
+}
+
+.bagua-inner-taiji {
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid rgba(251, 191, 36, 0.6);
+  background: radial-gradient(circle, rgba(16, 20, 27, 0.95) 0%, rgba(8, 10, 13, 0.98) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 35px rgba(251, 191, 36, 0.4);
+  animation: spinBaguaCW 12s linear infinite;
+}
+
+.taiji-symbol {
+  font-size: 64px;
+  color: rgba(251, 191, 36, 0.85);
+  text-shadow: 0 0 25px rgba(251, 191, 36, 0.8);
+}
+
+.taiji-celestial-eye {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff 0%, #fbbf24 60%, transparent 100%);
+  box-shadow: 0 0 20px #fbbf24;
+  animation: eyePulse 2s ease-in-out infinite alternate;
+}
+
+@keyframes eyePulse {
+  0% { transform: scale(0.8); opacity: 0.6; }
+  100% { transform: scale(1.3); opacity: 1; }
+}
+
+.bagua-formation.fast-spin .bagua-inner-taiji {
+  animation: spinBaguaCW 0.4s linear infinite !important;
+  color: #fff !important;
+  text-shadow: 0 0 50px #fbbf24 !important;
+}
+
+/* 8 Trigrams positioned on the outer ring */
+.trigram-rune {
+  position: absolute;
+  font-size: 24px;
+  color: var(--gold-primary);
+  text-shadow: 0 0 10px rgba(251, 191, 36, 0.8);
+}
+
+.trigram-1 { top: 8px; left: 50%; transform: translateX(-50%); }
+.trigram-2 { top: 18%; right: 18%; }
+.trigram-3 { top: 50%; right: 8px; transform: translateY(-50%); }
+.trigram-4 { bottom: 18%; right: 18%; }
+.trigram-5 { bottom: 8px; left: 50%; transform: translateX(-50%); }
+.trigram-6 { bottom: 18%; left: 18%; }
+.trigram-7 { top: 50%; left: 8px; transform: translateY(-50%); }
+.trigram-8 { top: 18%; left: 18%; }
+
+@keyframes spinBaguaCW {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinBaguaCCW {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+/* Floating Levitating Talisman (Cửu Long Anh Hồn Lệnh) */
+.altar-talisman-pedestal {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.floating-talisman {
+  position: relative;
+  width: 155px;
+  height: 250px;
+  background: linear-gradient(165deg, #2b0e0e 0%, #881337 40%, #450a0a 100%);
+  border: 2px solid var(--gold-primary);
+  border-radius: 12px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.95), 0 0 45px rgba(251, 191, 36, 0.45);
+  animation: levitateTalisman 3.2s ease-in-out infinite;
+  cursor: pointer;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  perspective: 800px;
+}
+
+.floating-talisman:hover {
+  transform: translateY(-8px) scale(1.05);
+  filter: drop-shadow(0 0 30px rgba(251, 191, 36, 0.85));
+}
+
+.floating-talisman.talisman-sacrificed {
+  animation: talismanPlunge 0.7s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards !important;
+}
+
+@keyframes levitateTalisman {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes talismanPlunge {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  60% { transform: translateY(-40px) scale(1.15); opacity: 1; filter: drop-shadow(0 0 40px #fbbf24); }
+  100% { transform: translateY(140px) scale(0.15); opacity: 0; filter: drop-shadow(0 0 90px #fff); }
+}
+
+.talisman-glow-core {
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: radial-gradient(circle at 50% 40%, rgba(251, 191, 36, 0.3) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.talisman-dragon-crest {
+  position: relative;
+  width: 58px;
+  height: 22px;
+  background: linear-gradient(180deg, #d97706 0%, #78350f 100%);
+  border: 1px solid var(--gold-primary);
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.talisman-jade-ring {
+  position: absolute;
+  top: -14px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 3px solid #10b981;
+  background: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 0 12px rgba(16, 185, 129, 0.6);
+}
+
+.talisman-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.talisman-edict-seal {
+  font-family: var(--font-seal);
+  font-size: 16px;
+  color: #fecaca;
+  background: #991b1b;
+  border: 1px solid #dc2626;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.6);
+}
+
+.talisman-seal-text {
+  font-family: var(--font-seal);
+  font-size: 30px;
+  color: var(--gold-primary);
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+  text-shadow: 0 0 12px rgba(251, 191, 36, 0.85);
+}
+
+.talisman-sub-seal {
+  font-family: var(--font-title);
+  font-size: 10px;
+  color: #fecaca;
+  letter-spacing: 1.5px;
+  margin-top: 8px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.talisman-kintsugi-vein {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  right: 12px;
+  background: linear-gradient(180deg, transparent, #fbbf24 30%, #fff 50%, #f59e0b 70%, transparent);
+  opacity: 0.75;
+  filter: drop-shadow(0 0 4px #fbbf24);
+}
+
+.talisman-tassel-braid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -6px;
+}
+
+.talisman-bronze-bell {
+  width: 14px;
+  height: 12px;
+  background: linear-gradient(180deg, #d97706, #78350f);
+  border-radius: 4px 4px 1px 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.talisman-tassel-strands {
+  width: 8px;
+  height: 38px;
+  background: linear-gradient(180deg, #dc2626 0%, #7f1d1d 80%, transparent 100%);
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 10px rgba(220, 38, 38, 0.5);
+  animation: tasselSway 2.5s ease-in-out infinite alternate;
+  transform-origin: top center;
+}
+
+@keyframes tasselSway {
+  0% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+
+.talisman-invocation-hint {
+  color: #94a3b8;
+  font-size: 13px;
+  font-family: var(--font-serif);
+  margin-top: 20px;
+  text-shadow: 0 2px 4px #000;
+  letter-spacing: 1px;
+}
+
+/* Golden Kintsugi Fractures Layer */
+.kintsugi-fractures-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kintsugi-molten-core {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle at center, rgba(251, 191, 36, 0.6) 0%, rgba(217, 119, 6, 0.3) 45%, transparent 70%);
+  animation: moltenCorePulse 1s ease-in-out infinite alternate;
+}
+
+@keyframes moltenCorePulse {
+  0% { transform: scale(0.85); opacity: 0.6; }
+  100% { transform: scale(1.15); opacity: 1; }
+}
+
+.kintsugi-crack {
+  position: absolute;
+  background: linear-gradient(90deg, transparent, #fbbf24, #fff, #fbbf24, transparent);
+  height: 3px;
+  box-shadow: 0 0 20px #fbbf24, 0 0 40px #f59e0b;
+  animation: crackRadiate 0.8s ease-out infinite alternate;
+}
+
+.crack-1 { width: 380px; transform: rotate(25deg); }
+.crack-2 { width: 440px; transform: rotate(-45deg); }
+.crack-3 { width: 410px; transform: rotate(115deg); }
+.crack-4 { width: 460px; transform: rotate(-135deg); }
+
+@keyframes crackRadiate {
+  0% { opacity: 0.5; filter: drop-shadow(0 0 10px #fbbf24); }
+  100% { opacity: 1; filter: drop-shadow(0 0 25px #fff); }
+}
+
+/* Seal Shatter FX */
+.seal-shatter-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 15;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.golden-shockwave {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 0 50px #fbbf24, inset 0 0 50px #fbbf24;
+  animation: shockwaveExpand 0.6s ease-out forwards;
+}
+
+@keyframes shockwaveExpand {
+  0% { transform: scale(0.2); opacity: 1; }
+  100% { transform: scale(12); opacity: 0; }
+}
+
+/* Full-Screen Grand Splash Reveal Stage */
+.grand-hero-reveal {
+  position: absolute;
+  inset: 0;
+  z-index: 25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: revealHeroEntry 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes revealHeroEntry {
+  0% { opacity: 0; transform: scale(0.92); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+.reveal-backdrop-glow {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.25) 0%, rgba(153, 27, 27, 0.35) 45%, rgba(8, 10, 13, 0.95) 85%);
+  z-index: 1;
+}
+
+.hero-splash-frame {
+  position: relative;
+  z-index: 2;
+  height: 72vh;
+  max-height: 660px;
+  aspect-ratio: 9/13.5;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 3px solid var(--gold-primary);
+  box-shadow: 0 0 50px rgba(251, 191, 36, 0.6), 0 20px 60px rgba(0, 0, 0, 0.95);
+  animation: splashCardZoom 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes splashCardZoom {
+  0% { transform: scale(0.85); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.frame-dragon-corner {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--gold-primary);
+  pointer-events: none;
+  z-index: 4;
+}
+.frame-dragon-corner.top-left { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+.frame-dragon-corner.top-right { top: 8px; right: 8px; border-left: none; border-bottom: none; }
+.frame-dragon-corner.bottom-left { bottom: 8px; left: 8px; border-right: none; border-top: none; }
+.frame-dragon-corner.bottom-right { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+.golden-shimmer-sweep {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent 40%, rgba(255, 255, 255, 0.4) 50%, rgba(251, 191, 36, 0.5) 55%, transparent 65%);
+  pointer-events: none;
+  z-index: 3;
+  animation: shimmerSweep 4s ease-in-out infinite;
+}
+
+@keyframes shimmerSweep {
+  0% { transform: translateX(-100%) translateY(-100%); }
+  35% { transform: translateX(100%) translateY(100%); }
+  100% { transform: translateX(100%) translateY(100%); }
+}
+
+.hero-splash-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+.hero-splash-aura {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 40%, rgba(8, 10, 13, 0.85) 100%);
+  pointer-events: none;
+}
+
+/* Calligraphy Banner (Left) */
+.hero-calligraphy-banner {
+  position: absolute;
+  left: 45px;
+  top: 14%;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  animation: calligraphySlideIn 0.6s ease-out forwards;
+}
+
+@keyframes calligraphySlideIn {
+  0% { transform: translateX(-50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.hanging-scroll-dowel {
+  width: 60px;
+  height: 6px;
+  background: linear-gradient(90deg, #78350f, #d97706, #78350f);
+  border-radius: 3px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+.calligraphy-seal-badge {
+  width: 52px;
+  height: 52px;
+  background: #991b1b;
+  border: 2px solid #dc2626;
+  color: #fecaca;
+  font-family: var(--font-seal);
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.6);
+  border-radius: 4px;
+}
+
+.calligraphy-hero-title {
+  font-family: var(--font-title);
+  font-size: 30px;
+  font-weight: 900;
+  color: var(--gold-primary);
+  writing-mode: vertical-rl;
+  letter-spacing: 8px;
+  margin: 0;
+  text-shadow: 0 0 20px rgba(251, 191, 36, 0.6), 2px 2px 4px #000;
+}
+
+.hero-appellation-sub {
+  writing-mode: vertical-rl;
+  font-size: 13px;
+  color: #cbd5e1;
+  letter-spacing: 3px;
+  font-family: var(--font-serif);
+}
+
+/* Rarity Dock (Right) */
+.reveal-rarity-dock {
+  position: absolute;
+  right: 45px;
+  top: 14%;
+  z-index: 5;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: raritySlideIn 0.6s ease-out forwards;
+}
+
+@keyframes raritySlideIn {
+  0% { transform: translateX(50px); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+.reveal-rarity-crest {
+  font-family: var(--font-title);
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(90deg, #b45309, #d97706);
+  padding: 8px 18px;
+  border-radius: 6px;
+  border: 1px solid var(--gold-primary);
+  box-shadow: 0 0 25px rgba(245, 158, 11, 0.6);
+  letter-spacing: 2px;
+}
+
+.reveal-realm-badge {
+  font-size: 13px;
+  color: #93c5fd;
+  background: rgba(30, 41, 59, 0.9);
+  padding: 5px 14px;
+  border-radius: 4px;
+  border: 1px solid rgba(147, 197, 253, 0.3);
+}
+
+/* Signature Quote Ribbon (Bottom) */
+.hero-quote-ribbon {
+  position: absolute;
+  bottom: 80px;
+  z-index: 5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 850px;
+  animation: quoteFadeUp 0.8s ease-out forwards;
+}
+
+@keyframes quoteFadeUp {
+  0% { transform: translateY(30px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+.hero-quote-text {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 20px;
+  color: var(--gold-primary);
+  text-shadow: 0 2px 10px #000, 0 0 20px rgba(251, 191, 36, 0.4);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.hero-quick-stats-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+.hero-quick-stats-row .stat-pill {
+  background: rgba(16, 20, 27, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 4px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #cbd5e1;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pill-seal {
+  font-family: var(--font-seal);
+  font-size: 13px;
+  color: var(--gold-primary);
+}
+
+.hero-quick-stats-row .stat-pill strong {
+  color: var(--gold-primary);
+}
+
+/* Altar Footer Bar */
+.gacha-footer-bar {
+  position: relative;
+  z-index: 10;
+  padding: 16px 40px;
+  background: linear-gradient(0deg, rgba(8, 10, 13, 0.98) 0%, rgba(8, 10, 13, 0.85) 60%, transparent 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(251, 191, 36, 0.15);
+}
+
+.gacha-btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.pity-astrolabe-hint {
+  font-size: 12px;
+  color: #94a3b8;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pity-astrolabe-hint strong {
+  color: var(--gold-primary);
+}
+
+.btn-diegetic-summon {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+  border: 2px solid var(--gold-primary);
+  padding: 12px 36px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  box-shadow: 0 6px 30px rgba(180, 83, 9, 0.6);
+  transition: all 0.2s ease;
+}
+
+.btn-diegetic-summon:hover {
+  background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 40px rgba(217, 119, 6, 0.8);
+}
+
+.btn-diegetic-summon .btn-seal-stamp {
+  font-family: var(--font-seal);
+  font-size: 26px;
+  color: var(--gold-primary);
+}
+
+.summon-lead {
+  font-family: var(--font-title);
+  font-size: 17px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  display: block;
+}
+
+.summon-cost {
+  font-size: 11px;
+  color: #fde68a;
+  display: block;
+  margin-top: 2px;
+}
+
+/* Reveal Action Dock */
+.reveal-action-dock {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+
+/* Memorial Scroll Dialog (Rules & History) */
+.memorial-scroll-dialog {
+  background: #0d1117;
+  border: 2px solid var(--gold-primary);
+  border-radius: 8px;
+  width: 90%;
+  max-width: 640px;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.95), 0 0 40px rgba(251, 191, 36, 0.25);
+  overflow: hidden;
+  font-family: var(--font-text);
+  color: #e2e8f0;
+}
+
+.memorial-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  background: rgba(16, 20, 27, 0.95);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.memorial-seal {
+  font-family: var(--font-seal);
+  font-size: 20px;
+  color: #fecaca;
+  background: #991b1b;
+  border: 1px solid #dc2626;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.memorial-header h3 {
+  font-family: var(--font-title);
+  font-size: 17px;
+  color: var(--gold-primary);
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.memorial-content {
+  padding: 24px;
+  overflow-y: auto;
+  line-height: 1.7;
+}
+
+.rule-block {
+  margin-bottom: 20px;
+}
+
+.rule-block h4 {
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  margin: 0 0 8px 0;
+  font-size: 15px;
+}
+
+.rate-list {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.badge-rate {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.badge-rate.ur { background: #7f1d1d; color: #fecaca; border: 1px solid #ef4444; }
+.badge-rate.ssr { background: #78350f; color: #fef08a; border: 1px solid #fbbf24; }
+.badge-rate.sr { background: #1e1b4b; color: #c7d2fe; border: 1px solid #818cf8; }
+.badge-rate.r { background: #1f2937; color: #9ca3af; border: 1px solid #4b5563; }
+
+.history-list-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.empty-history-hint {
+  color: #94a3b8;
+  font-style: italic;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.history-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(16, 20, 27, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+}
+
+.history-entry .hero-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.history-entry .hero-name {
+  font-weight: 700;
+  color: #fff;
+}
+
+.history-entry .hero-time {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.btn-altar-action {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  white-space: nowrap;
+  font-family: var(--font-text);
+  letter-spacing: 0.8px;
+  position: relative;
+}
+
+.btn-seal-mini {
+  font-family: var(--font-seal);
+  font-size: 15px;
+  line-height: 1;
+  background: rgba(153, 27, 27, 0.9);
+  color: #fef08a;
+  border: 1px solid rgba(251, 191, 36, 0.6);
+  border-radius: 3px;
+  padding: 3px 6px;
+  box-shadow: 0 0 10px rgba(220, 38, 38, 0.5);
+}
+
+.action-inspect {
+  background: linear-gradient(180deg, #1e293b 0%, #0f172a 100%);
+  border: 1px solid rgba(203, 213, 225, 0.3);
+  color: #e2e8f0;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.action-inspect:hover {
+  background: linear-gradient(180deg, #334155 0%, #1e293b 100%);
+  border-color: var(--gold-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+}
+
+.action-again {
+  background: linear-gradient(180deg, #2a1b0c 0%, #170f07 100%);
+  border: 1px solid var(--gold-primary);
+  color: var(--gold-primary);
+  box-shadow: inset 0 1px 0 rgba(251, 191, 36, 0.2), 0 4px 20px rgba(245, 158, 11, 0.25);
+}
+
+.action-again:hover {
+  background: linear-gradient(180deg, #451a03 0%, #291003 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(245, 158, 11, 0.5);
+}
+
+.action-confirm.primary {
+  background: linear-gradient(180deg, #991b1b 0%, #450a0a 100%);
+  border: 1.5px solid #ef4444;
+  color: #fef08a;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 0 25px rgba(220, 38, 38, 0.6);
+  font-family: var(--font-title);
+  letter-spacing: 1px;
+}
+
+.action-confirm.primary:hover {
+  background: linear-gradient(180deg, #b91c1c 0%, #5b0d0d 100%);
+  border-color: #f87171;
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 0 35px rgba(239, 68, 68, 0.8), 0 6px 20px rgba(0, 0, 0, 0.8);
+}

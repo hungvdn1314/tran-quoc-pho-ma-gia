@@ -128,8 +128,11 @@
       "id": "CHAR_TRIEU_VAN",
       "canonical_name": "Triệu Vân",
       "aliases": [
-        "Triệu Tử Long",
+        "Hổ Uy Tướng Quân",
         "Thường Sơn Triệu Tử Long",
+        "Thường Thắng Tướng Quân",
+        "Triệu Tử Long",
+        "Triệu Vân Tử Long",
         "Tử Long"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -155,7 +158,9 @@
       "id": "CHAR_GIA_HU",
       "canonical_name": "Giả Hủ",
       "aliases": [
+        "Giả Hủ Văn Hòa",
         "Giả Văn Hòa",
+        "Văn Hòa",
         "Độc Sĩ"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -180,7 +185,8 @@
       "canonical_name": "Điển Vi",
       "aliases": [
         "Cổ Chi Ác Lai",
-        "Ác Lai"
+        "Ác Lai",
+        "Điển Vi Cổ Chi Ác Lai"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Quý Gia / Quý Bình An",
@@ -297,6 +303,8 @@
       "canonical_name": "Chu Du",
       "aliases": [
         "Chu Công Cẩn",
+        "Chu Du Công Cẩn",
+        "Công Cẩn",
         "Mỹ Chu Lang",
         "Đại Đô Đốc"
       ],
@@ -324,7 +332,10 @@
       "canonical_name": "Hoàng Trung",
       "aliases": [
         "Hoàng Hán Thăng",
-        "Lão Tướng Thần Tiễn"
+        "Hoàng Trung Hán Thăng",
+        "Hán Thăng",
+        "Lão Tướng Thần Tiễn",
+        "Thần Xạ Lão Tướng"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Quý Gia / Quý Bình An",
@@ -983,10 +994,13 @@
       "id": "CHAR_QUAN_VU",
       "canonical_name": "Quan Vũ",
       "aliases": [
-        "Quan Vân Trường",
+        "Hán Thọ Đình Hầu",
         "Mỹ Nhiệm Công",
-        "Võ Thánh",
-        "Thiên Mệnh Võ Tướng"
+        "Quan Vân Trường",
+        "Quan Vũ Vân Trường",
+        "Thiên Mệnh Võ Tướng",
+        "Vân Trường",
+        "Võ Thánh"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Đại Hán Hoàng Triều",
@@ -1010,9 +1024,11 @@
       "id": "CHAR_TRUONG_PHI",
       "canonical_name": "Trương Phi",
       "aliases": [
+        "Dực Đức",
         "Trương Dực Đức",
-        "Vạn Nhân Địch",
-        "Tuyệt Thế Võ Tướng"
+        "Trương Phi Dực Đức",
+        "Tuyệt Thế Võ Tướng",
+        "Vạn Nhân Địch"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Đại Hán",
@@ -1034,8 +1050,11 @@
       "id": "CHAR_MA_SIEU",
       "canonical_name": "Mã Siêu",
       "aliases": [
-        "Mã Mạnh Khởi",
         "Cẩm Mã Siêu",
+        "Mã Mạnh Khởi",
+        "Mã Siêu Mạnh Khởi",
+        "Mạnh Khởi",
+        "Thần Uy Thiên Tướng Quân",
         "Tây Lương Mã Siêu"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -1085,6 +1104,8 @@
       "canonical_name": "Hoa Đà",
       "aliases": [
         "Hoa Nguyên Hóa",
+        "Hoa Đà Nguyên Hóa",
+        "Nguyên Hóa",
         "Thần Y",
         "Đặc Thù Tuyệt Thế Anh Linh"
       ],
@@ -1133,8 +1154,10 @@
       "id": "CHAR_HUA_CHU",
       "canonical_name": "Hứa Chử",
       "aliases": [
-        "Hứa Trọng Khang",
         "Hổ Si",
+        "Hứa Chử Trọng Khang",
+        "Hứa Trọng Khang",
+        "Trọng Khang",
         "Tuyệt Thế Võ Tướng"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -1157,7 +1180,9 @@
       "canonical_name": "Cam Ninh",
       "aliases": [
         "Cam Hưng Bá",
+        "Cam Ninh Hưng Bá",
         "Cẩm Phàm Tặc",
+        "Hưng Bá",
         "Tuyệt Thế Võ Tướng"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -1650,8 +1675,12 @@
       "canonical_name": "Lữ Bố",
       "aliases": [
         "Chiến Thần",
-        "Phi Tướng Lữ Bố",
+        "Chiến Thần Vô Song",
+        "Lữ Bố Phụng Tiên",
         "Lữ Phụng Tiên",
+        "Phi Tướng",
+        "Phi Tướng Lữ Bố",
+        "Phụng Tiên",
         "Vô Song Chiến Thần"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -1675,7 +1704,9 @@
       "id": "CHAR_GIA_CAT_LUONG",
       "canonical_name": "Gia Cát Lượng",
       "aliases": [
+        "Gia Cát Lượng Khổng Minh",
         "Khổng Minh",
+        "Ngọa Long",
         "Ngọa Long Tiên Sinh",
         "Thừa Tướng"
       ],
@@ -1700,8 +1731,10 @@
       "id": "CHAR_TU_MA_Y",
       "canonical_name": "Tư Mã Ý",
       "aliases": [
+        "Trọng Đạt",
         "Trủng Hổ",
-        "Tư Mã Trọng Đạt"
+        "Tư Mã Trọng Đạt",
+        "Tư Mã Ý Trọng Đạt"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Đại Hán Hoàng Triều",
@@ -1723,8 +1756,11 @@
       "id": "CHAR_BANG_THONG",
       "canonical_name": "Bàng Thống",
       "aliases": [
+        "Bàng Sĩ Nguyên",
+        "Bàng Thống Sĩ Nguyên",
         "Phượng Sồ",
-        "Bàng Sĩ Nguyên"
+        "Phụng Sồ",
+        "Sĩ Nguyên"
       ],
       "faction_group": "Đại Hán / Quý gia",
       "faction_raw": "Đại Hán Hoàng Triều",
@@ -2422,9 +2458,11 @@
       "id": "CHAR_TA_TU",
       "canonical_name": "Tả Từ",
       "aliases": [
-        "Tả Nguyên Phóng",
         "Nguyên Phóng",
+        "Tả Nguyên Phóng",
+        "Tả Từ Nguyên Phóng",
         "Ô Giác Tiên Sinh",
+        "Đạo Môn Địa Tiên",
         "Đạo Tiên"
       ],
       "faction_group": "Đại Hán / Quý gia",
@@ -3744,9 +3782,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_HE_NHAN_CONG_CHUA",
+      "target": "CHAR_HE_NHAN",
       "source_name": "Quý Bình An",
-      "target_name": "Hề Nhan Công Chúa",
+      "target_name": "Hề Nhan",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
@@ -3756,9 +3794,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_HE_NHAN",
+      "target": "CHAR_HE_NHAN_CONG_CHUA",
       "source_name": "Quý Bình An",
-      "target_name": "Hề Nhan",
+      "target_name": "Hề Nhan Công Chúa",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
@@ -3804,9 +3842,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CUNG_SINH",
       "source_name": "Quý Bình An",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -3816,9 +3854,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Quý Bình An",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -3840,9 +3878,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_AN_VU_HI",
+      "target": "CHAR_TRIEU_VAN_DU",
       "source_name": "Quý Bình An",
-      "target_name": "An Vũ Hi",
+      "target_name": "Triệu Văn Dụ",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -3852,9 +3890,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_AN",
-      "target": "CHAR_TRIEU_VAN_DU",
+      "target": "CHAR_AN_VU_HI",
       "source_name": "Quý Bình An",
-      "target_name": "Triệu Văn Dụ",
+      "target_name": "An Vũ Hi",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -3996,18 +4034,6 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_QUY_BINH_XUYEN",
-      "source_name": "Triệu Vân",
-      "target_name": "Quý Bình Xuyên",
-      "relation_type": "allies",
-      "relation_label": "Đồng Minh",
-      "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Chiến Bắc Cảnh Tam Châu Lần Thứ Nhất (Xả Lũ Diệt Địch Hỏa)",
-      "color": "#27AE60",
-      "width": 2.0,
-      "weight": 2
-    },
-    {
-      "source": "CHAR_TRIEU_VAN",
       "target": "CHAR_GIA_HU",
       "source_name": "Triệu Vân",
       "target_name": "Giả Hủ",
@@ -4020,12 +4046,12 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_CO_VO_THIEN",
+      "target": "CHAR_QUY_BINH_XUYEN",
       "source_name": "Triệu Vân",
-      "target_name": "Cơ Vô Thiên",
+      "target_name": "Quý Bình Xuyên",
       "relation_type": "allies",
       "relation_label": "Đồng Minh",
-      "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Náo Đình Úy Phủ Giải Cứu Điển Vi Và Cơ Vô Pháp",
+      "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Chiến Bắc Cảnh Tam Châu Lần Thứ Nhất (Xả Lũ Diệt Địch Hỏa)",
       "color": "#27AE60",
       "width": 2.0,
       "weight": 2
@@ -4044,9 +4070,21 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CO_VO_THIEN",
       "source_name": "Triệu Vân",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cơ Vô Thiên",
+      "relation_type": "allies",
+      "relation_label": "Đồng Minh",
+      "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Náo Đình Úy Phủ Giải Cứu Điển Vi Và Cơ Vô Pháp",
+      "color": "#27AE60",
+      "width": 2.0,
+      "weight": 2
+    },
+    {
+      "source": "CHAR_TRIEU_VAN",
+      "target": "CHAR_CUNG_SINH",
+      "source_name": "Triệu Vân",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4056,9 +4094,9 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Triệu Vân",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4104,24 +4142,24 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_TU_NGOC_TRACH",
-      "source_name": "Triệu Vân",
-      "target_name": "Tử Ngọc Trạch",
-      "relation_type": "enemies",
-      "relation_label": "Kình Địch",
-      "relation_desc": "Đối đầu trực tiếp trong trận chiến: Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long)",
-      "color": "#E74C3C",
-      "width": 2.5,
-      "weight": 4
-    },
-    {
-      "source": "CHAR_TRIEU_VAN",
       "target": "CHAR_TU_TRIEU_PHONG",
       "source_name": "Triệu Vân",
       "target_name": "Tử Triệu Phong",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long); Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
+      "color": "#E74C3C",
+      "width": 2.5,
+      "weight": 4
+    },
+    {
+      "source": "CHAR_TRIEU_VAN",
+      "target": "CHAR_TU_NGOC_TRACH",
+      "source_name": "Triệu Vân",
+      "target_name": "Tử Ngọc Trạch",
+      "relation_type": "enemies",
+      "relation_label": "Kình Địch",
+      "relation_desc": "Đối đầu trực tiếp trong trận chiến: Huyết Chiến Cần Chính Điện (Tam Đế vây công Triệu Tử Long)",
       "color": "#E74C3C",
       "width": 2.5,
       "weight": 4
@@ -4152,9 +4190,9 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_AN_VU_HI",
+      "target": "CHAR_TRIEU_VAN_DU",
       "source_name": "Triệu Vân",
-      "target_name": "An Vũ Hi",
+      "target_name": "Triệu Văn Dụ",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4164,9 +4202,9 @@
     },
     {
       "source": "CHAR_TRIEU_VAN",
-      "target": "CHAR_TRIEU_VAN_DU",
+      "target": "CHAR_AN_VU_HI",
       "source_name": "Triệu Vân",
-      "target_name": "Triệu Văn Dụ",
+      "target_name": "An Vũ Hi",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4248,9 +4286,9 @@
     },
     {
       "source": "CHAR_GIA_HU",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CUNG_SINH",
       "source_name": "Giả Hủ",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4260,9 +4298,9 @@
     },
     {
       "source": "CHAR_GIA_HU",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Giả Hủ",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4344,9 +4382,9 @@
     },
     {
       "source": "CHAR_DIEN_VI",
-      "target": "CHAR_HE_NHAN_CONG_CHUA",
+      "target": "CHAR_PHO_DINH_THANG",
       "source_name": "Điển Vi",
-      "target_name": "Hề Nhan Công Chúa",
+      "target_name": "Phó Dĩnh Thăng",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
@@ -4368,9 +4406,9 @@
     },
     {
       "source": "CHAR_DIEN_VI",
-      "target": "CHAR_PHO_DINH_THANG",
+      "target": "CHAR_HE_NHAN_CONG_CHUA",
       "source_name": "Điển Vi",
-      "target_name": "Phó Dĩnh Thăng",
+      "target_name": "Hề Nhan Công Chúa",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Võ Đài Diễn Võ Tam Quan Với Sứ Đoàn Tây Lăng",
@@ -4404,9 +4442,9 @@
     },
     {
       "source": "CHAR_DIEN_VI",
-      "target": "CHAR_QUY_BINH_SINH",
+      "target": "CHAR_VU_HOANG",
       "source_name": "Điển Vi",
-      "target_name": "Quý Bình Sinh",
+      "target_name": "Vũ Hoàng",
       "relation_type": "allies",
       "relation_label": "Đồng Minh",
       "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Biến Cung Đình: Dẹp Loạn Cấm Vệ Quân Tô Kiến Phong",
@@ -4416,9 +4454,9 @@
     },
     {
       "source": "CHAR_DIEN_VI",
-      "target": "CHAR_VU_HOANG",
+      "target": "CHAR_QUY_BINH_SINH",
       "source_name": "Điển Vi",
-      "target_name": "Vũ Hoàng",
+      "target_name": "Quý Bình Sinh",
       "relation_type": "allies",
       "relation_label": "Đồng Minh",
       "relation_desc": "Chiến hữu cùng tham chiến tại: Đại Biến Cung Đình: Dẹp Loạn Cấm Vệ Quân Tô Kiến Phong",
@@ -4524,9 +4562,9 @@
     },
     {
       "source": "CHAR_LY_NHO",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CUNG_SINH",
       "source_name": "Lý Nho",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4536,9 +4574,9 @@
     },
     {
       "source": "CHAR_LY_NHO",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Lý Nho",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4584,9 +4622,9 @@
     },
     {
       "source": "CHAR_LY_NHO",
-      "target": "CHAR_AN_VU_HI",
+      "target": "CHAR_TRIEU_VAN_DU",
       "source_name": "Lý Nho",
-      "target_name": "An Vũ Hi",
+      "target_name": "Triệu Văn Dụ",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4596,9 +4634,9 @@
     },
     {
       "source": "CHAR_LY_NHO",
-      "target": "CHAR_TRIEU_VAN_DU",
+      "target": "CHAR_AN_VU_HI",
       "source_name": "Lý Nho",
-      "target_name": "Triệu Văn Dụ",
+      "target_name": "An Vũ Hi",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4716,9 +4754,9 @@
     },
     {
       "source": "CHAR_TRUONG_LIEU",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CUNG_SINH",
       "source_name": "Trương Liêu",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4728,9 +4766,9 @@
     },
     {
       "source": "CHAR_TRUONG_LIEU",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Trương Liêu",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4920,9 +4958,9 @@
     },
     {
       "source": "CHAR_HOANG_TRUNG",
-      "target": "CHAR_AN_VU_HI",
+      "target": "CHAR_TRIEU_VAN_DU",
       "source_name": "Hoàng Trung",
-      "target_name": "An Vũ Hi",
+      "target_name": "Triệu Văn Dụ",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4932,9 +4970,9 @@
     },
     {
       "source": "CHAR_HOANG_TRUNG",
-      "target": "CHAR_TRIEU_VAN_DU",
+      "target": "CHAR_AN_VU_HI",
       "source_name": "Hoàng Trung",
-      "target_name": "Triệu Văn Dụ",
+      "target_name": "An Vũ Hi",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -4980,9 +5018,9 @@
     },
     {
       "source": "CHAR_CAO_THUAN",
-      "target": "CHAR_CHU_BAT_NINH",
+      "target": "CHAR_CUNG_SINH",
       "source_name": "Cao Thuận",
-      "target_name": "Chu Bất Ninh",
+      "target_name": "Cung Sinh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -4992,9 +5030,9 @@
     },
     {
       "source": "CHAR_CAO_THUAN",
-      "target": "CHAR_CUNG_SINH",
+      "target": "CHAR_CHU_BAT_NINH",
       "source_name": "Cao Thuận",
-      "target_name": "Cung Sinh",
+      "target_name": "Chu Bất Ninh",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Đại Chiến Bắc Cảnh Lần Hai: Hỏa Công Bắc Cô Sơn Đại Phá Cung Sinh",
@@ -5208,24 +5246,24 @@
     },
     {
       "source": "CHAR_QUY_VO_SONG",
-      "target": "CHAR_QUY_DUONG",
-      "source_name": "Quý Vô Song",
-      "target_name": "Quý Dương",
-      "relation_type": "lord-vassal",
-      "relation_label": "Quân - Thần",
-      "relation_desc": "Thủ lĩnh & thành viên tổ chức Quý Gia Cổ Tộc (Thủ Hộ Gia Tộc Đại La)",
-      "color": "#2980B9",
-      "width": 2.5,
-      "weight": 3
-    },
-    {
-      "source": "CHAR_QUY_VO_SONG",
       "target": "CHAR_QUY_VO_SINH",
       "source_name": "Quý Vô Song",
       "target_name": "Quý Vô Sinh",
       "relation_type": "lord-vassal",
       "relation_label": "Quân - Thần",
       "relation_desc": "Thủ lĩnh & thành viên tổ chức Quý Gia Cổ Tộc (Thủ Hộ Gia Tộc Đại La); Đồng lãnh đạo tổ chức Quý Gia Cổ Tộc (Thủ Hộ Gia Tộc Đại La)",
+      "color": "#2980B9",
+      "width": 2.5,
+      "weight": 3
+    },
+    {
+      "source": "CHAR_QUY_VO_SONG",
+      "target": "CHAR_QUY_DUONG",
+      "source_name": "Quý Vô Song",
+      "target_name": "Quý Dương",
+      "relation_type": "lord-vassal",
+      "relation_label": "Quân - Thần",
+      "relation_desc": "Thủ lĩnh & thành viên tổ chức Quý Gia Cổ Tộc (Thủ Hộ Gia Tộc Đại La)",
       "color": "#2980B9",
       "width": 2.5,
       "weight": 3
@@ -5292,9 +5330,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_SINH",
-      "target": "CHAR_AN_VU_HI",
+      "target": "CHAR_TRIEU_VAN_DU",
       "source_name": "Quý Bình Sinh",
-      "target_name": "An Vũ Hi",
+      "target_name": "Triệu Văn Dụ",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -5304,9 +5342,9 @@
     },
     {
       "source": "CHAR_QUY_BINH_SINH",
-      "target": "CHAR_TRIEU_VAN_DU",
+      "target": "CHAR_AN_VU_HI",
       "source_name": "Quý Bình Sinh",
-      "target_name": "Triệu Văn Dụ",
+      "target_name": "An Vũ Hi",
       "relation_type": "enemies",
       "relation_label": "Kình Địch",
       "relation_desc": "Đối đầu trực tiếp trong trận chiến: Chiến Dịch Hồn Huyết Sơn & Trảm Khai Sơn Vương",
@@ -5652,24 +5690,24 @@
     },
     {
       "source": "CHAR_DAO_NHA",
-      "target": "CHAR_TRAM_CAN",
-      "source_name": "Đào Nhã",
-      "target_name": "Trầm Căn",
-      "relation_type": "lord-vassal",
-      "relation_label": "Quân - Thần",
-      "relation_desc": "Thủ lĩnh & thành viên tổ chức Thiên Cung Học Viện & Hoa Đà Y Quán",
-      "color": "#2980B9",
-      "width": 2.5,
-      "weight": 3
-    },
-    {
-      "source": "CHAR_DAO_NHA",
       "target": "CHAR_HOA_DA",
       "source_name": "Đào Nhã",
       "target_name": "Hoa Đà",
       "relation_type": "lord-vassal",
       "relation_label": "Quân - Thần",
       "relation_desc": "Thủ lĩnh & thành viên tổ chức Thiên Cung Học Viện & Hoa Đà Y Quán; Đồng lãnh đạo tổ chức Thiên Cung Học Viện & Hoa Đà Y Quán",
+      "color": "#2980B9",
+      "width": 2.5,
+      "weight": 3
+    },
+    {
+      "source": "CHAR_DAO_NHA",
+      "target": "CHAR_TRAM_CAN",
+      "source_name": "Đào Nhã",
+      "target_name": "Trầm Căn",
+      "relation_type": "lord-vassal",
+      "relation_label": "Quân - Thần",
+      "relation_desc": "Thủ lĩnh & thành viên tổ chức Thiên Cung Học Viện & Hoa Đà Y Quán",
       "color": "#2980B9",
       "width": 2.5,
       "weight": 3

@@ -9,12 +9,11 @@ import networkx as nx
 sys.stdout.reconfigure(encoding='utf-8')
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-RAW_DIR = DATA_DIR / "raw_chapters"
-BIBLE_DIR = DATA_DIR / "game_bible"
-GRAPH_DIR = DATA_DIR / "character_graph"
 
-BIBLE_DIR.mkdir(parents=True, exist_ok=True)
-GRAPH_DIR.mkdir(parents=True, exist_ok=True)
+if __name__ == "__main__":
+    print("⚠️ [DEPRECATED] Script 'batch_extractor.py' đã lỗi thời.")
+    print("⚠️ Dữ liệu Game Bible chính thức được xử lý bởi 'scripts/merge_game_bible.py' -> 'data/game_bible_v2/'.")
+    sys.exit(0)
 
 # Canonical Summoned Heroes in the Three Kingdoms Spirit System
 KNOWN_SUMMONED_HEROES = {

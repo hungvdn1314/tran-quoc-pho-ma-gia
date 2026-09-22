@@ -81,6 +81,20 @@ Mọi thông số về màu sắc, kiểu chữ, khoảng cách, và hiệu ứn
   - Vòng xoay Bát Quái trận đồ làm trung tâm, bùa lệnh phù chú lơ lửng phát xung động.
   - Hoạt ảnh lật thẻ 3D (`3D Card Flip`) lật chậm trong 700ms, rực sáng hào quang khi chạm ngưỡng SSR/UR.
 
+### Hero Inspector & Martial Progression (Trục Cuộn Phong Thần Bảng & Ngũ Trọng Khắc Minh)
+- **Mục tiêu**: Tuyệt đối xóa bỏ cảm giác Web Dashboard / E-Commerce / SaaS. Tạo trải nghiệm như đang mở một bức tranh cuộn xuyến chỉ hoàng gia trong mật thất.
+- **Quy tắc Diegetic bắt buộc**:
+  - Không dùng card chữ nhật với số to kiểu Google Analytics (Stat/KPI cards).
+  - Tài nguyên và võ lực tích hợp vào chữ khắc triện chu sa `[ 駙 ]` (Phò Mã ấn) và `[ 金 ]` (Kim khố ấn) chìm vào lụa cổ.
+  - Duyệt danh tướng bằng hàng Trúc Điệp / Ngọc Bài cổ phong có khắc triện (`[ 武 ]`, `[ 謀 ]`, `[ 巾 ]`, `[ 異 ]`), không dùng tab lọc hay scrollbar web.
+  - 5 Lối nâng cấp Vàng phải thể hiện dưới dạng **Ngũ Trọng Khắc Minh (Five Sacred Ritual Inscriptions)**:
+    1. *Thần Binh Khắc Minh Đài*: Đóng dấu triện chu sa / khắc vàng thần binh.
+    2. *Bổn Mệnh Thư Giản*: Hai thẻ tre ghi chép chân kinh công pháp.
+    3. *Thiên Phú Tinh Đồ*: Nốt sao thiên cơ hoàng kim phá trần.
+    4. *Mã Phù Tiết*: Hổ phù / Mã phù đồng thau khớp nối.
+    5. *Cửu Đỉnh Luyện Khí*: Đỉnh đồng cổ tỏa chân khí tôi luyện.
+  - Không dùng nút đỏ mua hàng kiểu Shopify; sử dụng con dấu triện chu sa và mộc bài đóng ấn.
+
 ---
 
 ## 4. Danh Mục Kiểm Thử UI/UX (UI/UX QA Matrix)

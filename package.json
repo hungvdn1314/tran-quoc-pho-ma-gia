@@ -8,7 +8,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build && node scripts/sync-dist-assets.js",
+    "preview": "vite preview",
+    "test:narrative": "python scripts/narrative_validator.py",
+    "compress": "python scripts/compress_assets.py"
   },
   "repository": {
     "type": "git",
@@ -17,7 +21,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/hungvdn1314/tran-quoc-pho-ma-gia/issues"
   },
@@ -26,5 +30,12 @@
     "phaser": "^4.2.1",
     "pixi.js": "^8.21.0",
     "three": "^0.186.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "@types/three": "^0.164.0",
+    "terser": "^5.31.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
   }
 }

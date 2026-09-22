@@ -237,6 +237,77 @@
       "novel_first_appearance": 27
     },
     {
+      "id": "hero_matac",
+      "name": "Mã Tắc",
+      "aliases": [
+        "Ma Su",
+        "Mã Ấu Thường"
+      ],
+      "rarity": "SR",
+      "faction": "Quý Gia / Quý Bình An",
+      "realm": "Phàm Nhân",
+      "base_stats": {
+        "force": 50,
+        "command": 70,
+        "intelligence": 82,
+        "politics": 74,
+        "charisma": 65
+      },
+      "hp": 900,
+      "atk": 85,
+      "troop_type": "Trung Quân Binh",
+      "cost": 4.5,
+      "troop_affinity": {
+        "Trung Quân Binh": "A"
+      },
+      "equipment": [
+        {
+          "id": "eq_thuthich",
+          "name": "Thư Sinh Thiết Kiếm",
+          "type": "weapon",
+          "stat_bonus": {
+            "force": 3
+          },
+          "description": "Binh thư thao lược."
+        }
+      ],
+      "skills": [
+        {
+          "id": "sk_binh_thu",
+          "name": "Binh Thư Giảng Luận",
+          "type": "active",
+          "mana_cost": 2,
+          "damage": 120,
+          "effects": [
+            "Buff ally"
+          ],
+          "description": "Đàm luận thao lược binh thư, tăng sát thương cho toàn quân."
+        },
+        {
+          "id": "sk_tu_bo_thanh",
+          "name": "Tu Bổ Thành Phòng",
+          "type": "passive",
+          "effects": [
+            "Add shield"
+          ],
+          "description": "Gia cố và tu bổ thành phòng vững chắc, tăng giáp cho thành trì."
+        }
+      ],
+      "bonds": [
+        {
+          "id": "bnd_muu_than",
+          "name": "Vạn Kim Mưu Sĩ",
+          "required_heroes": [],
+          "bonus": {
+            "int_pct": 10.0
+          },
+          "is_active": false
+        }
+      ],
+      "summon_chapter": 17,
+      "novel_first_appearance": 17
+    },
+    {
       "id": "hero_gaoshun",
       "name": "Cao Thuận",
       "aliases": [
@@ -306,8 +377,8 @@
           "is_active": false
         }
       ],
-      "summon_chapter": 20,
-      "novel_first_appearance": 20
+      "summon_chapter": 200,
+      "novel_first_appearance": 200
     },
     {
       "id": "hero_liru",
@@ -2107,6 +2178,41 @@
       "hero_required": "hero_zhaoyun"
     },
     {
+      "id": "c_huyet_y_doanh",
+      "name": "Huyết Y Doanh",
+      "type": "unit",
+      "rarity": "SR",
+      "mana_cost": 4,
+      "damage": 55,
+      "shield": 25,
+      "heal": 0,
+      "target": "lane",
+      "effects": [
+        "Counter-attack",
+        "Bleed"
+      ],
+      "description": "Tử sĩ áo máu Bắc Cương trung thành tuyệt đối, xung kích cảm tử.",
+      "unlock_chapter": 27
+    },
+    {
+      "id": "c_binh_thu_thao_luoc",
+      "name": "Binh Thư Thao Lược",
+      "type": "tactic",
+      "rarity": "SR",
+      "mana_cost": 3,
+      "damage": 40,
+      "shield": 30,
+      "heal": 0,
+      "target": "lane",
+      "effects": [
+        "Fortify",
+        "Confuse"
+      ],
+      "description": "Mưu kế thao lược của Mã Tắc, gia cố thành phòng và làm rối loạn tiền quân địch.",
+      "unlock_chapter": 17,
+      "hero_required": "hero_matac"
+    },
+    {
       "id": "c_ham_tran",
       "name": "Hãm Trận Doanh",
       "type": "unit",
@@ -2119,8 +2225,8 @@
       "effects": [
         "Break shield"
       ],
-      "description": "Lực lượng tử sĩ.",
-      "unlock_chapter": 20,
+      "description": "Lực lượng tử sĩ thép của Cao Thuận.",
+      "unlock_chapter": 200,
       "hero_required": "hero_gaoshun"
     },
     {
@@ -2523,115 +2629,268 @@
   "milestones": [
     {
       "chapter": 1,
-      "title": "Xuyên Không",
-      "scene_name": "Phò Mã Phủ",
+      "title": "Xuyên Không Kim Loan Điện",
+      "scene_name": "Kim Loan Điện",
       "unlocks": [
-        "feature_basic_battle"
+        "feature_basic_battle",
+        "feature_anh_hon_lenh"
       ],
-      "rewards": {},
-      "narrative_summary": "Bắt đầu cuộc hành trình.",
+      "rewards": {
+        "gold": 100,
+        "item": "anh_hon_lenh"
+      },
+      "narrative_summary": "Đối thơ chấn động Kim Loan Điện, hóa giải mối nhục thể diện quốc gia, nhận thưởng Thượng Cổ Anh Hồn Lệnh.",
       "prerequisites": []
     },
     {
       "chapter": 5,
-      "title": "Bái Tướng Đài",
+      "title": "Bái Tướng Thần Đàn",
       "scene_name": "Bái Tướng Đài",
       "unlocks": [
-        "feature_gacha"
+        "feature_gacha",
+        "feature_bai_tuong_dai"
       ],
-      "rewards": {},
-      "narrative_summary": "Chiêu mộ Triệu Vân.",
+      "rewards": {
+        "hero": "trieu_van"
+      },
+      "narrative_summary": "Khai mở Bái Tướng Thần Đàn, tiêu hao Anh Hồn Lệnh triệu hoán Thường Sơn Triệu Tử Long SSR xuất thế.",
       "prerequisites": [
         1
       ]
     },
     {
-      "chapter": 10,
-      "title": "Ám Sát",
-      "scene_name": "Phò Mã Phủ",
+      "chapter": 8,
+      "title": "Kinh Doanh Thấu Hoa Cao",
+      "scene_name": "Thiên Kim Lâu",
       "unlocks": [
-        "feature_defense"
+        "feature_commerce_soap"
       ],
-      "rewards": {},
-      "narrative_summary": "Chống lại sát thủ.",
+      "rewards": {
+        "gold_income": 3000
+      },
+      "narrative_summary": "Phát minh xà phòng Thấu Hoa Cao từ mỡ cừu, liên thủ Lâu chủ Vệ Ti Vũ gây dựng ngân quỹ bí mật.",
       "prerequisites": [
         5
       ]
     },
     {
-      "chapter": 15,
-      "title": "Điển Vi",
-      "scene_name": "Doanh Trại",
+      "chapter": 10,
+      "title": "Ám Sát Đêm Trăng",
+      "scene_name": "Phò Mã Phủ",
       "unlocks": [
-        "feature_barracks"
+        "feature_defense"
       ],
       "rewards": {},
-      "narrative_summary": "Thu phục Điển Vi.",
+      "narrative_summary": "Tử sĩ Nam Ly đột kích phủ đệ trong đêm mưa, Triệu Vân một thương quét sạch phản tặc.",
+      "prerequisites": [
+        8
+      ]
+    },
+    {
+      "chapter": 15,
+      "title": "Thánh Chỉ Bắc Chinh",
+      "scene_name": "Sơn Hà Sa Bàn",
+      "unlocks": [
+        "feature_strategy_map",
+        "feature_ap_system"
+      ],
+      "rewards": {
+        "gold": 5000,
+        "ap": 3
+      },
+      "narrative_summary": "Vũ Hoàng hạ chỉ phong làm Chinh Bắc Tiền Phong Tướng Quân, mở khóa Tầng 2 Sơn Hà Sa Bàn và Hổ Phù Lệnh (AP).",
       "prerequisites": [
         10
       ]
     },
     {
       "chapter": 20,
-      "title": "Cao Thuận",
-      "scene_name": "Biên Cương",
+      "title": "Vạn Kim Mưu Sĩ Mã Tắc",
+      "scene_name": "Doanh Trại Bắc Cương",
       "unlocks": [
-        "feature_border"
+        "feature_ma_tac",
+        "feature_binh_thu"
       ],
-      "rewards": {},
-      "narrative_summary": "Gặp gỡ Cao Thuận.",
+      "rewards": {
+        "hero": "ma_tac"
+      },
+      "narrative_summary": "Triệu hoán Vạn Kim Mưu Sĩ Mã Tắc, thi triển diệu kế 'Cao Nâng Mã Tắc' gài sang phe Tô Vân, nắm toàn quyền kiểm soát Bắc Cảnh.",
       "prerequisites": [
         15
       ]
     },
     {
       "chapter": 27,
-      "title": "Độc Sĩ",
+      "title": "Độc Sĩ Giả Hủ",
       "scene_name": "Mưu Khách Phủ",
       "unlocks": [
-        "feature_strategy"
+        "feature_strategy_cards"
       ],
-      "rewards": {},
-      "narrative_summary": "Giả Hủ hiến kế.",
+      "rewards": {
+        "hero": "gia_hu"
+      },
+      "narrative_summary": "Hố 20 vạn vàng triều đình, tế 10 vạn vàng triệu hoán Độc Sĩ Giả Hủ từ Bái Tướng Thần Đàn định độc kế.",
       "prerequisites": [
         20
       ]
     },
     {
       "chapter": 35,
-      "title": "Thủy Công",
-      "scene_name": "Bờ Sông",
+      "title": "Đại Kế Thủy Công",
+      "scene_name": "Thượng Nguồn Bờ Sông",
       "unlocks": [
-        "feature_naval"
+        "feature_water_stratagem"
       ],
       "rewards": {},
-      "narrative_summary": "Trận chiến trên sông.",
+      "narrative_summary": "Đắp đập ngăn sông Thanh Thủy thượng nguồn, chuẩn bị kế sách thủy công nhấn chìm quân địch.",
       "prerequisites": [
         27
       ]
     },
     {
-      "chapter": 48,
-      "title": "Đại Chiến",
-      "scene_name": "Thanh Châu",
+      "chapter": 43,
+      "title": "Kho Lương Khai Nguyên",
+      "scene_name": "Hậu Cần Doanh",
       "unlocks": [
-        "feature_thanh_chau"
+        "feature_grain_depot"
       ],
-      "rewards": {},
-      "narrative_summary": "Chiến đấu sinh tử ở Thanh Châu.",
+      "rewards": {
+        "grain": 50000
+      },
+      "narrative_summary": "Bí mật thu mua và vận chuyển 5 vạn thạch quân lương, sĩ khí ba quân đạt mức tối đa.",
       "prerequisites": [
         35
       ]
     },
     {
-      "chapter": 53,
-      "title": "Kỷ Nguyên Mới",
-      "scene_name": "Kinh Đô",
-      "unlocks": [],
+      "chapter": 48,
+      "title": "Đại Chiến Thanh Châu",
+      "scene_name": "Chiến Thành Thanh Châu",
+      "unlocks": [
+        "feature_thanh_chau_battle"
+      ],
       "rewards": {},
-      "narrative_summary": "Chương mới bắt đầu. (Tới 386)",
+      "narrative_summary": "2 vạn thiết kỵ Nam Ly của Địch Hỏa vây hãm thành trì, bước vào trận đại chiến thủ thành 3 làn.",
+      "prerequisites": [
+        43
+      ]
+    },
+    {
+      "chapter": 52,
+      "title": "Đại Thắng Khải Hoàn",
+      "scene_name": "Thanh Châu Soái Phủ",
+      "unlocks": [
+        "feature_chinh_bac_dai_tuong_quan"
+      ],
+      "rewards": {
+        "title": "Chinh Bắc Đại Tướng Quân"
+      },
+      "narrative_summary": "Xả lũ sông Thanh Thủy, Triệu Vân bắt sống Địch Hỏa; Vũ Hoàng ban phong Chinh Bắc Đại Tướng Quân, nắm trọn 3 châu Bắc Cảnh.",
       "prerequisites": [
         48
+      ]
+    },
+    {
+      "chapter": 63,
+      "title": "Cổ Chi Ác Lai Điển Vi",
+      "scene_name": "Đế Đô Kim Loan",
+      "unlocks": [
+        "feature_dian_wei"
+      ],
+      "rewards": {
+        "hero": "dien_vi"
+      },
+      "narrative_summary": "Khải hoàn về kinh kỳ, triệu hoán Cổ Chi Ác Lai Điển Vi bảo vệ phủ đệ, chuẩn bị dẹp loạn binh biến Tô Kiến Phong (Ch.109).",
+      "prerequisites": [
+        52
+      ]
+    },
+    {
+      "chapter": 114,
+      "title": "Vũ Hoàng Băng Hà",
+      "scene_name": "Cung Đình Đại Vũ",
+      "unlocks": [
+        "feature_tan_hoang_era"
+      ],
+      "rewards": {},
+      "narrative_summary": "Vũ Hoàng băng hà, Tân Hoàng Tử Ngọc Trạch kế vị, hoàng triều sóng ngầm cuộn trào tranh giành đại quyền.",
+      "prerequisites": [
+        63
+      ]
+    },
+    {
+      "chapter": 200,
+      "title": "Đại Quân Hãm Trận",
+      "scene_name": "Bắc Cương Soái Doanh",
+      "unlocks": [
+        "feature_ham_tran_doanh"
+      ],
+      "rewards": {
+        "hero": "cao_thuan"
+      },
+      "narrative_summary": "Triệu hoán dũng tướng Cao Thuận và sáng lập 800 dũng sĩ Hãm Trận Doanh mình mặc giáp thép tôi, công phá thiên hạ.",
+      "prerequisites": [
+        114
+      ]
+    },
+    {
+      "chapter": 255,
+      "title": "Trấn Quốc Phong Công",
+      "scene_name": "Kim Loan Triều Đình",
+      "unlocks": [
+        "feature_tran_quoc_cong"
+      ],
+      "rewards": {
+        "title": "Trấn Quốc Công"
+      },
+      "narrative_summary": "Dẹp yên giặc giã bốn cõi, Quý Bình An được sắc phong Trấn Quốc Công, uy chấn thiên hạ.",
+      "prerequisites": [
+        114
+      ]
+    },
+    {
+      "chapter": 303,
+      "title": "Tịnh Kiên Phong Vương",
+      "scene_name": "Vương Phủ Điện",
+      "unlocks": [
+        "feature_tinh_kien_vuong"
+      ],
+      "rewards": {
+        "title": "Tịnh Kiên Vương"
+      },
+      "narrative_summary": "Tấn phong Tịnh Kiên Vương: Nhất ngôn nhi vi thiên hạ pháp, quyền lực chí cao vô thượng.",
+      "prerequisites": [
+        255
+      ]
+    },
+    {
+      "chapter": 386,
+      "title": "Đăng Cơ Hoàng Đế",
+      "scene_name": "Điện Kim Loan",
+      "unlocks": [
+        "feature_emperor_dai_vu"
+      ],
+      "rewards": {
+        "title": "Hoàng Đế Đại Vũ"
+      },
+      "narrative_summary": "Muôn dân cầu xin, sau Tam Nhượng Đế Vị đăng cơ Hoàng Đế tại điện Kim Loan, chấm dứt loạn thế.",
+      "prerequisites": [
+        303
+      ]
+    },
+    {
+      "chapter": 411,
+      "title": "Đại Hán Khai Quốc",
+      "scene_name": "Đế Đô Tân Triều",
+      "unlocks": [
+        "feature_dai_han_dynasty"
+      ],
+      "rewards": {
+        "era": "Định Quốc Năm Đầu"
+      },
+      "narrative_summary": "Cải quốc hiệu ĐẠI HÁN, niên hiệu Định Quốc năm đầu, mở ra thiên thu thịnh thế.",
+      "prerequisites": [
+        386
       ]
     }
   ],
@@ -2779,15 +3038,15 @@
     }
   ],
   "ink_stories": {
-    "ch01_15": "// ============================================================\n// Trấn Quốc Phò Mã Gia — Ink Scene Script\n// Chương 1 - 15: Khởi Đầu Hàn Vi & Phong Vân Kinh Đô\n// ============================================================\n\n// === GLOBAL VARIABLES ===\nVAR gold = 0\nVAR jade = 0\nVAR suspicion = 0\nVAR has_anh_hon_lenh = false\nVAR system_awakened = false\nVAR poetry_duel_won = false\nVAR imperial_prestige = 0\nVAR chapter = 1\n\n// Feature unlock flags\nVAR unlocked_gacha = false\nVAR unlocked_soap = false\nVAR unlocked_map = false\nVAR unlocked_flood = false\nVAR unlocked_granary = false\nVAR unlocked_battle = false\n\n// Affinity scores\nVAR affinity_trieu_van = 0\nVAR affinity_gia_hu = 0\nVAR affinity_dieu_thuyen = 0\n\n// NPC relationship flags\nVAR met_vu_hoang = false\nVAR met_to_kien_phong = false\nVAR met_ve_ti_vu = false\n\n// Branch memory\nVAR ch10_method = \"none\"\n\n// ============================================================\n// CHƯƠNG 1: XUYÊN KHÔNG & ĐỐI THƠ ĐẠI ĐIỆN\n// ============================================================\n\n=== chapter_1_start ===\n# BACKGROUND: bg_darkness\n# MUSIC: bgm_ethereal_void\n# CHAPTER_TITLE: Hồi 1 · Chương 1: Phò Mã Hàn Vi Nơm Nớp Lo Sợ\n\nHắn mở mắt.\n\nKhông phải bóng tối hư vô của kiếp trước. Trước mắt hắn là tấm trướng lụa màu tím than thêu chỉ vàng đã sờn rách, thoang thoảng mùi trầm hương mục nát pha lẫn u uất.\n\nĐầu đau như búa bổ. Vô số mảnh vỡ ký ức xa lạ cuộn trào như thủy triều — hắn tên là Quý Bình An, đích tử thứ ba của phủ Trấn Quốc Công, cũng chính là kẻ phò mã hàn vi nức tiếng bất tài vô dụng của Đại Vũ Hoàng Triều.\n\nPhụ thân Quý Trọng Dung vừa bị tước đoạt binh quyền, gièm pha khắp kinh thành. Thê tử là Ninh An công chúa cao quý lạnh lùng chưa từng một lần ghé mắt. Còn bản thân hắn thì vừa trúng kỳ độc mê man ba ngày ba đêm, suýt nữa đã mất mạng trong âm thầm...\n\n# BACKGROUND: bg_pho_ma_phu_bedroom\n# ACTORS: qui_binh_an|right|worried\n\nHắn... đã nhập thể trùng sinh vào tử cục ngập tràn hiểm nguy này. Muốn sinh tồn nơi triều chính, trước hết phải nhìn thấu cục diện, giấu kín phong mang.\n\nCánh cửa gỗ sơn mài đột ngột bật mở. Tỳ nữ thân cận Tiểu Thúy vội vã chạy vào, gương mặt tái nhợt không còn giọt máu:\n\n# ACTORS: qui_binh_an|right|neutral, servant|left|respectful\n\n\"Phò mã gia! Ngài rốt cuộc đã tỉnh lại rồi! Vũ Hoàng bệ hạ truyền khẩu dụ khẩn, yến tiệc tiếp đón sứ đoàn Nam Ly Quốc sắp sửa khai yến tại Kim Loan Điện! Ngài... ngài phải lập tức nhập cung ngay!\"\n\nQuý Bình An cất giọng trầm tĩnh: \"Bình tĩnh lại. Sứ đoàn Nam Ly mang theo điều gì đến yến tiệc mà khiến cả triều đình đại loạn?\"\n\nTiểu Thúy run giọng bẩm báo: \"Dạ bẩm... Nam Ly phái sứ thần đệ nhất học sĩ đến, mang theo một vế đối tuyệt đỉnh thách thức sĩ tử Đại Vũ. Nghe nói cả Hàn Lâm Viện lẫn các vị đại học sĩ đều câm nín, Vũ Hoàng nổi lôi đình lôi cả hoàng thân quốc thích và phò mã vào cung!\"\n\nQuý Bình An khẽ cười lạnh: \"Xem ra Vũ Hoàng không phải cần ta đối đáp, mà là muốn tìm một kẻ gánh tội thay khi triều đình mất mặt. Được, vậy để ta vào hoàng cung xem bọn họ muốn diễn vở kịch gì.\"\n\n-> travel_to_palace\n\n=== travel_to_palace ===\n# BACKGROUND: bg_imperial_road\n# AMBIENT: rain\n# MUSIC: bgm_imperial_procession\n\nCỗ xe ngựa lăn bánh trên đường đá hoa cương kinh đô, tiếng vó ngựa gõ dồn dập giữa màn mưa đêm lạnh buốt.\n\nĐại Vũ Hoàng Triều ba trăm năm định đô, bề ngoài phồn hoa tựa gấm, nhưng bên trong thì cửu vương đoạt đích, phiên trấn rục rịch binh đao, phương Bắc có Thác Bạt thiết kỵ rình rập, phương Nam có Nam Ly mưu toan cắn nuốt Trung Nguyên.\n\nCòn Quý gia — từng là danh môn khai quốc — nay chịu đủ mọi nghi kỵ của Vũ Hoàng, phụ thân Quý Trọng Dung bị phế chức, huynh trưởng trấn giữ biên thùy cô độc.\n\n\"Nếu đã bước vào ván cờ này... thì ta sẽ là người nắm giữ quân cờ.\"\n\n-> imperial_banquet\n\n=== imperial_banquet ===\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_court_tension\n# ACTORS: qui_binh_an|right|nervous, vu_hoang|center|stern, nam_ly_envoy|left|arrogant\n\n~ met_vu_hoang = true\n\nĐại điện Kim Loan nguy nga tráng lệ, ngai vàng Cửu Long tỏa ánh kim quang thâm nghiêm, nhưng sát khí và sự ngột ngạt bao trùm từng tấc không khí.\n\nVũ Hoàng ngự trên bảo tọa, sắc mặt âm trầm như mây đen trước cơn bão. Hai bên bá quan văn võ cúi gầm mặt, không một ai dám ngẩng đầu thở mạnh.\n\nChính giữa đại điện, sứ thần Nam Ly Quốc khoác cẩm bào xanh thẫm ngạo nghễ vuốt râu, cất giọng sang sảng đầy vẻ khinh miệt:\n\n\"Bệ hạ Đại Vũ, vế đối này chỉ là chút thi tài tầm thường của phương Nam ta. Nếu vương triều trăm vạn sĩ tử mà không ai đối nổi, thì danh xưng 'Văn hiến thiên bang' từ nay xin giao lại cho Nam Ly ta vậy!\"\n\nSứ thần Nam Ly dõng dạc đọc vế đối vách đá:\n\n\"「天当棋盘星作子，谁人敢下？」\"\n\n\"Thiên đương kỳ bàn tinh tác tử, thùy nhân cảm hạ?\"\n(Trời làm bàn cờ sao làm quân, ai dám hạ cờ?)\n\nCả đại điện xôn xao. Quan văn nhìn nhau, lắc đầu. Quan võ im phắc. Một vế đối ngập tràn sát khí và cuồng vọng — lấy trời đất làm bàn cờ, biến nhật nguyệt tinh tú thành con tốt!\n\nVũ Hoàng nhíu mày, ánh mắt quét qua triều thần rồi dừng lại ở Quý Bình An — phò mã đứng cuối hàng:\n\n\"Quý Bình An! Ngươi dù sao cũng là con em Quý gia, đọc qua thi thư. Ngươi đối cho trẫm!\"\n\n-> poetry_choice\n\n=== poetry_choice ===\n# SCENE_TYPE: choice\n\nTrước mắt hắn là vận mệnh của cả một triều đại. Nếu vương triều chịu nhục, lửa chiến tranh sẽ thiêu rụi phương Nam. Quý Bình An quyết định xuất thế:\n\n* [Hoành Đao · Đối vế nghịch thiên: \"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?\"]\n  -> poetry_triumph\n\n* [Khiêm Cung · Đối vế mực thước: Giữ thể diện triều đình, giấu kín phong mang]\n  -> poetry_mediocre\n\n* [Quyền Mưu · Vạch trần dã tâm: Đanh thép chất vấn sứ thần Nam Ly trước điện Kim Loan]\n  -> poetry_silence\n\n=== poetry_triumph ===\n# EFFECT: camera_shake|0.8\n# EFFECT: screen_flash|#FFD700|500\n# EFFECT: sfx_thunder_dramatic\n# ACTORS: qui_binh_an|right|confident, nam_ly_envoy|left|shocked\n\n~ gold += 100\n~ poetry_duel_won = true\n~ suspicion += 10\n~ imperial_prestige += 1\n\nQuý Bình An tiến lên một bước, tà áo hắc bào tung bay giữa đại điện. Tiếng cười khẽ của hắn vang vọng khắp Kim Loan:\n\n\"Sứ thần Nam Ly ếch ngồi đáy giếng, cũng dám đem chút tài mọn ra bêu rếu trước mặt Hoàng thượng?\"\n\nHắn ngẩng đầu, ánh mắt uy nghiêm như sấm sét:\n\n\"「地作琵琶路作弦，盖世谁弹？」\"\n\n\"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?\"\n(Đất làm đàn tỳ bà đường làm dây, bậc cái thế nào dám gảy?)\n\nMột câu xuất khẩu, sấm rền giữa trời quang! Trời làm bàn cờ — Đất làm tỳ bà. Sao làm quân cờ — Đường thiên lý làm dây đàn!\n\nKhí phách ngút trời, nuốt trọn càn khôn, biến cả non sông gấm vóc thành khúc đàn của bậc đế vương! Sứ thần Nam Ly lùi liền ba bước, sắc mặt trắng bệch không thốt nên lời.\n\nVũ Hoàng chấn động đứng phắt dậy khỏi long ngai, vỗ mạnh lên án thư: \"HẢO! HẢO MỘT CÂU CÁI THẾ THÙY ĐẠN!\"\n\n\"Quý gia quả nhiên không hổ danh Trấn Quốc hổ môn! Ban thưởng phò mã Quý Bình An một trăm lượng hoàng kim!\"\n\n# EFFECT: show_toast|+100 Hoàng Kim Thưởng Kim Loan Điện|reward\n\n-> system_awakening\n\n=== poetry_mediocre ===\n# ACTORS: qui_binh_an|right|neutral, vu_hoang|center|disappointed\n~ suspicion -= 5\n~ gold += 10\n\nQuý Bình An chắp tay hành lễ, từ tốn đọc một vế đối thanh nhã, vừa đủ giải vây cho triều đình mà không bộc lộ quá nhiều tài năng kinh thế hãi tục. Vũ Hoàng khẽ gật đầu, ban thưởng mười lượng bạc khích lệ.\n\n-> system_awakening\n\n=== poetry_silence ===\n# ACTORS: qui_binh_an|right|head_down, vu_hoang|center|contemptuous\n~ suspicion += 5\n~ imperial_prestige += 2\n~ gold += 50\n\nQuý Bình An cất giọng đanh thép vạch trần dã tâm mượn văn thăm dò quân sự của Nam Ly khiến sứ thần tái mặt, Vũ Hoàng thầm khen ngợi sự nhạy bén chính trị.\n\n-> system_awakening\n\n=== system_awakening ===\n# BACKGROUND: bg_void_golden\n# MUSIC: bgm_system_activation\n# EFFECT: screen_flash|#FFD700|1000\n# EFFECT: sfx_system_chime\n\n~ system_awakened = true\n~ has_anh_hon_lenh = true\n\n【 CÀN KHÔN ĐẢO CHUYỂN · THIÊN CƠ KÍCH HOẠT 】\n\n⟨ Cảm ứng: Hùng tài đại lược · Trí tuệ thấu suốt càn khôn ⟩\n⟨ Khởi động: Thượng Cổ Bái Tướng Thần Đàn ⟩\n⟨ Ban tặng vật phẩm: Thượng Cổ Anh Hồn Lệnh × 1 ⟩\n\n# EFFECT: show_toast|🎉 THỨC TỈNH THIÊN CƠ: Tiếp nhận Thượng Cổ Anh Hồn Lệnh|system\n# EFFECT: grant_ticket|1\n\nMột cỗ hàn khí hùng hồn hòa cùng kim quang chói lòa tràn vào đan điền Quý Bình An. Trong lòng bàn tay hắn, phiến Thượng Cổ Anh Hồn Lệnh bằng đồng khắc long phụng ngưng tụ thành thực thể, tỏa ra uy áp ngập tràn.\n\n[THIÊN CƠ HỆ THỐNG]: Ký chủ đã bước qua ngưỡng cửa sinh tử, đoạt lấy thiên mệnh. Kể từ giờ phút này, có thể chiêu mộ chiến thần, mưu sĩ ngàn năm về dưới trướng!\n\n-> chapter_1_aftermath\n\n=== chapter_1_aftermath ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_night_contemplation\n# ACTORS: qui_binh_an|right|determined\n\n~ chapter = 1\n~ met_to_kien_phong = true\n\nĐêm khuya tẩm thất phò mã phủ. Ánh trăng lạnh rọi qua song cửa sổ, chiếu lên phiến Thượng Cổ Anh Hồn Lệnh nằm trên bàn gỗ đàn hương.\n\nQuý Bình An đứng chắp tay nhìn ra màn đêm kinh đô mịt mùng:\n\n\"Vũ Hoàng ngoài mặt khen thưởng nhưng ánh mắt đầy vẻ thăm dò kiêng kỵ. Còn Nam Ly chịu nhục tại điện tiền ắt sẽ giở thủ đoạn ám sát hoặc gây hấn biên cương...\"\n\n\"Không thể chần chừ thêm nữa. Phải mau chóng khởi động Bái Tướng Thần Đàn, chiêu mộ võ tướng trấn giữ cơ đồ!\"\n\n# EFFECT: show_toast|📜 HOÀN TẤT HỒI 1: Phò Mã Thức Tỉnh & Đối Thơ Chấn Kinh Đô|milestone\n# EFFECT: chapter_complete|1\n\n-> chapter_5_transition\n\n// ============================================================\n// CHƯƠNG 5: MẬT THẤT PHÒ MÃ PHỦ & BÁI TƯỚNG ĐÀI\n// ============================================================\n\n=== chapter_5_transition ===\n# CHAPTER_TITLE: Hồi 2 · Chương 5: Bái Tướng Đài Khai Mở\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_mystical_summoning\n\n~ chapter = 5\n\nBốn ngày trôi qua kể từ yến tiệc đại điện. Quý Bình An dành trọn thời gian nắm bắt tình thế — Đại Vũ Hoàng Triều thù trong giặc ngoài, và sức mạnh bí ẩn của Thượng Cổ Bái Tướng Đàn.\n\nĐêm nay, trong mật thất sâu nhất của Phò Mã Phủ, phiến Anh Hồn Lệnh bỗng rung lên từng hồi chuông trầm hùng.\n\n[THIÊN CƠ HỆ THỐNG]: Địa mạch quy tụ. Thượng Cổ Bái Tướng Thần Đàn — Khai Mở!\n\n# EFFECT: screen_flash|#FFD700|800\n# EFFECT: sfx_gong_ancient\n\n~ unlocked_gacha = true\n# EFFECT: show_toast|🎉 KHAI MỞ: Bái Tướng Thần Đàn (Chiêu Mộ Danh Tướng)|unlock\n# EFFECT: unlock_feature|bai_tuong_dai\n\n[THIÊN CƠ HỆ THỐNG]: Ký chủ có thể tế xuất Anh Hồn Lệnh để thỉnh triệu anh linh danh tướng thời Tam Quốc quy vị.\n\n* [Thiên Cơ · Khởi Động Bái Tướng Thần Đàn: \"Thượng Cổ Bái Tướng Đài, phụng mệnh ta triệu hoán danh tướng ngàn năm quy vị!\"]\n  # EFFECT: trigger_gacha|bai_tuong_dai\n  -> waiting_gacha_ritual\n\n=== waiting_gacha_ritual ===\n# EFFECT: trigger_gacha|bai_tuong_dai\n// Trạng thái chờ người chơi thao tác trên Bái Tướng Đài\nKhai mở thần đàn tế tướng...\n-> END\n\n=== trieu_van_arrival ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# ACTORS: qui_binh_an|right|amazed, trieu_van|left|noble\n# MUSIC: bgm_hero_theme\n\n~ affinity_trieu_van = 50\n\nÁnh sáng bạc ngân lóe lên rực rỡ, sương khói ngưng tụ thành thân ảnh một vị dũng tướng oai phong lẫm liệt.\n\nGiáp bạc sáng loáng, bạch bào tung bay, tay cầm Long Đảm Lượng Ngân Thương tỏa ra chiến ý ngút trời.\n\nTriệu Tử Long — Thường Sơn Triệu Vân — quỳ một gối, thương cắm thẳng xuống sàn đá, giọng nói sang sảng chấn động mật thất:\n\n\"Triệu Vân, Triệu Tử Long, bái kiến Chúa Công!\"\n\nQuý Bình An xúc động tiến lên đỡ lấy hai tay Tử Long: \"Tử Long mau bình thân! Có ngươi bên cạnh, Quý Bình An ta hà tất phải sợ chông gai nghịch cảnh!\"\n\nTriệu Vân ngẩng đầu, ánh mắt kiên định như thiết thạch: \"Tử Long nguyện đem Long Đảm Thương bảo hộ Chúa Công, dù đối mặt vạn mã thiên quân cũng quyết không lùi nửa bước!\"\n\nMũi thương khẽ rung — bảy đạo thương ảnh hóa thành hàn quang xé toang hư không, xuyên qua bảy trụ đá mật thất trong chớp mắt mà không làm vỡ một viên ngói. Đó chính là Thất Thám Bàn Xà Thương Pháp cái thế vô song!\n\nQuý Bình An nhìn Triệu Tử Long đứng sừng sững trong phò mã phủ, trung trinh và sẵn sàng đẫm máu sa trường: \"Tử Long, muốn nuôi quân đúc giáp thì ngân quỹ phải dồi dào. Ngày mai đến Thiên Kim Lâu bàn chuyện làm ăn!\"\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Thường Sơn Triệu Tử Long SSR|milestone\n# EFFECT: chapter_complete|5\n\n-> chapter_8_transition\n\n// ============================================================\n// CHƯƠNG 8: THIÊN KIM LÂU & THẤU HOA CAO\n// ============================================================\n\n=== chapter_8_transition ===\n# CHAPTER_TITLE: Hồi 3 · Chương 8: Phát Minh Thấu Hoa Cao\n# BACKGROUND: bg_thien_kim_lau\n# MUSIC: bgm_marketplace\n# ACTORS: qui_binh_an|right|clever, ve_ti_vu|left|curious\n\n~ chapter = 8\n~ met_ve_ti_vu = true\n\nBa ngày sau khi chiêu mộ Triệu Vân.\n\nQuý Bình An ngồi trên lầu cao nhất của Thiên Kim Lâu — tửu lâu lớn nhất kinh đô, do lâu chủ Vệ Ti Vũ phong hoa tuyệt đại điều hành.\n\nHắn đặt lên bàn một chiếc hộp sơn mài — bên trong là thanh xà phòng ngát hương hoa nhài, mịn màng như ngọc thạch — bảo vật hắn đã bí mật điều chế từ nguyên liệu thảo dược tự nhiên.\n\n\"Vệ lâu chủ, thương phẩm này... sẽ khiến cả kinh đô điên đảo.\"\n\nVệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng rực: \"Hương thơm thoát tục, trơn láng như mỡ đông. Phò mã gia, đây là kỳ trân dị bảo gì?\"\n\n\"Thấu Hoa Cao. Rửa sạch bụi trần, lưu hương bảy ngày, dưỡng nhan tuyệt phẩm. Mỗi bánh giá mười lượng bạc dành riêng cho vương tôn quý tộc.\"\n\n* [Hợp Tác Toàn Diện · Bắt tay cùng Vệ Ti Vũ: \"Ta xuất bí phương độc quyền, lâu chủ lo mạng lưới phân phối, lợi nhuận chia đôi!\"]\n  ~ gold += 3000\n  ~ unlocked_soap = true\n  \"Ta cung cấp công thức độc quyền, Thiên Kim Lâu lo vận chuyển và tiêu thụ. Lợi nhuận chia đều.\"\n  Vệ Ti Vũ khẽ cười quyến rũ, nâng chén rượu chúc mừng: \"Phò mã gia quả là bậc kỳ tài ẩn nhẫn. Thương vụ này, tiện thiếp nhận!\"\n  # EFFECT: show_toast|🎉 MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt Sa Bàn)|unlock\n  # EFFECT: unlock_feature|thau_hoa_cao\n  -> chapter_8_aftermath\n\n* [Ẩn Nhẫn Tự Chủ · Lập xưởng chế tạo riêng: \"Bí phương chưa thể để lộ ra ngoài, tạm thời sản xuất quy mô nhỏ tích lũy thực lực.\"]\n  ~ gold += 1000\n  ~ unlocked_soap = true\n  \"Chưa vội khuếch trương. Ta sẽ thăm dò thị trường trước, từng bước tích súc ngân quỹ.\"\n  # EFFECT: show_toast|🎉 MỞ KHÓA: Phường Đúc Thấu Hoa Cao (+1.000 Vàng mỗi lượt)|unlock\n  # EFFECT: unlock_feature|thau_hoa_cao\n  -> chapter_8_aftermath\n\n=== chapter_8_aftermath ===\n# ACTORS: qui_binh_an|right|satisfied\n\nNguồn hoàng kim ròng rã bắt đầu chảy vào túi phò mã phủ. Có tiền, có tướng — Quý Bình An đã đặt viên đá tảng đầu tiên cho đại nghiệp tranh bá. Hắn âm thầm mở rộng tai mắt khắp các ngõ ngách kinh thành.\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao Kinh Doanh|milestone\n# EFFECT: chapter_complete|8\n\n-> chapter_10_transition\n\n// ============================================================\n// CHƯƠNG 10: THÍCH KHÁCH ĐÊM TRĂNG\n// ============================================================\n\n=== chapter_10_transition ===\n# CHAPTER_TITLE: Hồi 4 · Chương 10: Thích Khách Đêm Trăng\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_suspense_night\n# ACTORS: qui_binh_an|right|alarmed\n\n~ chapter = 10\n\nĐêm rằm gió lộng. Phò Mã Phủ tịch mịch như tờ.\n\nQuý Bình An đang nghiên cứu bản đồ địa hình trong thư phòng thì một luồng sát khí lạnh buốt gáy ập tới! Ba đạo bóng đen xé gió lao xuống từ xà nhà — lưỡi đoản đao tẩm độc xanh biếc nhằm thẳng yếu huyệt của hắn!\n\n* [Sát Phạt · Hét gọi Triệu Vân: \"Tử Long, lưu lại kẻ sống!\"]\n  -> assassin_zhao_yun_saves\n\n* [Quyền Mưu · Lâm nguy không loạn: Phán đoán phương vị mũi đao, né tránh hiểm cảnh tìm chỗ sơ hở!]\n  -> assassin_self_dodge\n\n=== assassin_zhao_yun_saves ===\n# EFFECT: sfx_spear_whoosh\n# EFFECT: screen_flash|#C0C0C0|300\n# EFFECT: camera_shake|0.5\n# ACTORS: trieu_van|left|battle_stance, assassin|center|attacking\n\n\"TỬ LONG!\"\n\nThanh âm chưa dứt, một dải ngân hà rực sáng đã xé toang màn đêm — Long Đảm Thương xuất kích!\n\nTriệu Vân tựa như thần phong giáng thế. Ba mũi thương điểm chuẩn xác vào cổ tay thích khách, đánh bay binh khí, đá văng bọn chúng xuống sàn đá!\n\n\"Chúa Công, bọn chúng là tử sĩ chuyên nghiệp!\"\n\n~ affinity_trieu_van += 15\n-> assassin_aftermath\n\n=== assassin_self_dodge ===\n# ACTORS: qui_binh_an|right|rolling, assassin|center|attacking\n# EFFECT: camera_shake|0.3\n\nQuý Bình An xoay người ngã nhào ra sau bức bình phong gỗ lim, lưỡi đao độc chém toạc vạt áo!\n\nThích khách thứ hai vừa vung đao bồi tiếp thì hàn quang lóe lên! Long Đảm Thương của Triệu Vân quét ngang, đánh gãy xương sườn thích khách hất văng ra sân!\n\n~ affinity_trieu_van += 10\n-> assassin_aftermath\n\n=== assassin_aftermath ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_investigation\n# ACTORS: qui_binh_an|right|serious, trieu_van|left|reporting\n\nTriệu Vân xốc ngược cánh tay thích khách: \"Bọn chúng đều cắn vỡ độc hoàn tự sát. Nhưng trên cổ tay có ấn triện hình đầu sói — đây là mật vụ thuộc Phi Báo Quân của Bắc Cương!\"\n\nHắn nhìn Quý Bình An trầm trọng: \"Chúa Công, có kẻ trong triều cấu kết với phiên trấn phương Bắc muốn trừ khử ngài.\"\n\n* [Ẩn Nhẫn · Xóa sạch dấu vết: \"Bí mật chôn xác, dĩ bất biến ứng vạn biến, âm thầm truy vết kẻ chủ mưu.\"]\n  ~ suspicion -= 10\n  ~ gold += 2000\n  ch10_method = \"hide\"\n  -> chapter_10_complete\n\n* [Hoành Đao · Đối chất triều đình: \"Đem xác ném trước mặt trăm quan, bức kẻ giấu mặt phải lộ sơ hở!\"]\n  ~ suspicion += 20\n  ~ gold += 5000\n  ch10_method = \"confront\"\n  -> chapter_10_complete\n\n* [Quân Cơ · Thám thính biên cương: \"Sát thủ mang dấu vết phương Bắc, lập tức sai thám mã cấp báo tiền tuyến!\"]\n  ~ suspicion += 5\n  ch10_method = \"investigate\"\n  -> chapter_10_complete\n\n=== chapter_10_complete ===\nQuý Bình An nhìn dấu ấn đầu sói trên cổ tay tử sĩ, ánh mắt lạnh như băng. Kinh đô đã là lò lửa, chỉ có nắm lấy binh quyền mới mong bảo toàn gia tộc và xoay chuyển càn khôn!\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 10: Thích Khách Đêm Trăng|milestone\n# EFFECT: chapter_complete|10\n\n-> chapter_15_transition\n\n// ============================================================\n// CHƯƠNG 15: VŨ HOÀNG HẠ CHỈ BẮC CHINH\n// ============================================================\n\n=== chapter_15_transition ===\n# CHAPTER_TITLE: Hồi 5 · Chương 15: Chinh Phạt Bắc Cảnh\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_imperial_decree\n# ACTORS: vu_hoang|center|commanding, qui_binh_an|right|kneeling\n\n~ chapter = 15\n\nĐại điện Kim Loan sớm hôm sau. Vũ Hoàng ngự trên ngai vàng, sắc diện ngập tràn phẫn nộ:\n\n\"Bắc Cương phản nghịch! Phi Báo Quân liên kết với nghịch tặc Địch Hỏa công hãm ba huyện, chém chết quan trấn thủ, uy hiếp kinh kỳ!\"\n\nVũ Hoàng rút ra Thượng Phương Bảo Kiếm, ánh mắt dừng lại trên người Quý Bình An:\n\n\"Quý Bình An! Phụ thân ngươi từng trấn thủ phương Bắc, ngươi lại có dũng khí phi thường. Trẫm lệnh ngươi tiếp nhận chức Chinh Bắc Tiền Phong Tướng Quân, lập tức xuất chinh dẹp loạn!\"\n\n# EFFECT: screen_flash|#FFD700|500\n# EFFECT: sfx_imperial_decree\n\n~ unlocked_map = true\n~ imperial_prestige += 1\n~ gold += 5000\n~ jade += 20\n~ suspicion += 5\n~ affinity_trieu_van += 5\n\n# EFFECT: show_toast|🎉 KHAI MỞ: Tầng 2 — Sơn Hà Sa Bàn (Grand Strategy)|unlock\n# EFFECT: unlock_feature|de_nghiep_sa_ban\n\n[THIÊN CƠ HỆ THỐNG]: Khai mở Tầng 2 — Sơn Hà Sa Bàn! Cho phép điều binh khiển tướng, bố trí quân lương và tuần tra các cứ điểm trọng yếu.\n\nQuý Bình An quỳ nhận Hổ Phù bằng đồng, ánh mắt sáng rực. Bên cạnh hắn, Triệu Tử Long nắm chặt chuôi thương — đại thời đại tranh bá chính thức bắt đầu!\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 15: Tiếp Nhận Thánh Chỉ Bắc Chinh|milestone\n# EFFECT: chapter_complete|15\n\n-> chapter_20_start\n",
-    "ch16_52": "// ============================================================\n// Trấn Quốc Phò Mã Gia — Ink Scene Script\n// Phần 2: Từ Chương 16 đến Chương 52 (Hồi 1 Hoàn Tất)\n// ============================================================\n\n// ============================================================\n// CHƯƠNG 20: BIÊN CƯƠNG TUYẾN ĐẦU & HÃM TRẬN DOANH (CAO THUẬN)\n// ============================================================\n\n=== chapter_20_start ===\n# CHAPTER_TITLE: Hồi 6 · Chương 20: Hãm Trận Dũng Sĩ Biên Cương\n# BACKGROUND: bg_northern_border_camp\n# MUSIC: bgm_military_march\n# ACTORS: qui_binh_an|right|armored, trieu_van|right|standing_guard, gao_shun|left|stern\n\n~ chapter = 20\n\nGió lạnh phương Bắc gào thét qua ải Nhạn Môn, cuốn theo cát bụi sương mù mịt mù.\n\nQuý Bình An khoác chiến bào đứng trên vọng lâu tiền tiêu quân doanh Bắc Cương. Sau lưng hắn, Triệu Tử Long uy dũng khôi giáp, Long Đảm Thương cắm thẳng bên bàn cờ sa bàn.\n\nPhía đối diện, một vị chiến tướng khoác hắc giáp nặng trĩu, phong trần sương gió, nét mặt nghiêm cẩn tựa như tảng đá ngàn năm, hai tay ôm quyền thi lễ:\n\n\"Bắc Cương tiền phong thống lĩnh Cao Thuận, bái kiến Phò mã đại tướng quân!\"\n\nCao Thuận — thống soái Hãm Trận Doanh nức tiếng Tam Quốc, tám trăm dũng sĩ cảm tử trang bị giáp trụ tinh lương, mỗi trận xông pha đều bạt núi phá lũy, tính tình trầm mặc thanh liêm, tuyệt đối không vướng bụi trần.\n\n\"Bẩm Phò mã, chiến giáp hư hại bốn phần, lương thảo triều đình cấp phát trễ hai tháng. Nhưng tám trăm huynh đệ Hãm Trận Doanh thề chết giữ vững cửa ải, quyết không lùi nửa bước!\"\n\n-> gao_shun_decision\n\n=== gao_shun_decision ===\n# SCENE_TYPE: choice\n\nQuý Bình An mở rương bạc vàng — đây chính là nguồn lợi nhuận kếch xù thu hoạch từ việc kinh doanh Thấu Hoa Cao tại kinh thành:\n\n* [Kinh Tài · Dốc 5.000 Vàng rèn đúc chiến giáp: \"Xuất ngân quỹ cá nhân, mở lò rèn đúc giáp khiên thép tôi tốt nhất cho Hãm Trận Doanh!\"]\n  ~ gold -= 5000\n  ~ affinity_gaoshun += 25\n  ~ unlocked_granary = true\n  Quý Bình An vung tay hạ lệnh: \"Mở lò rèn suốt ngày đêm! Tám trăm dũng sĩ Hãm Trận Doanh phải được trang bị hắc giáp và thuẫn thép cứng cáp nhất!\"\n  Cao Thuận quỳ rạp xuống nền đá, giọng nói nghẹn ngào chấn động: \"Mạt tướng thay mặt tám trăm huynh đệ, thề đem tính mạng báo đáp ân tri ngộ của Phò mã gia!\"\n  # EFFECT: show_toast|🎉 MỞ KHÓA THẺ BÀI: Hãm Trận Doanh (SSR Thuẫn Vệ)|unlock\n  # EFFECT: unlock_feature|feature_ham_tran_doanh\n  -> chapter_20_complete\n\n* [Quân Cơ · Kết hợp chiến thuật Kỵ - Bộ: \"Triệu Tử Long dẫn Bạch Mã Kỵ phối hợp Hãm Trận Doanh luyện thế bọc sườn chặn đầu!\"]\n  ~ affinity_gaoshun += 15\n  ~ affinity_trieu_van += 15\n  Triệu Vân tuốt gươm hưởng ứng: \"Chúa Công nhìn xa trông rộng! Kỵ binh tập kích mạn sườn, bộ binh thiết giáp chặn đầu, kẻ địch ắt tan như tro bụi!\"\n  # EFFECT: show_toast|⚔️ Sĩ Khí Ba Quân Tăng Cao (+20% Uy Lực Bộ Kỵ)|buff\n  -> chapter_20_complete\n\n=== chapter_20_complete ===\nThiết giáp Hãm Trận và kỵ binh Tử Long đã hợp nhất, Quý Bình An hạ lệnh nhổ trại tiến quân về thung lũng Hắc Phong!\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 20: Thu Phục Cao Thuận & Hãm Trận Doanh|milestone\n# EFFECT: chapter_complete|20\n\n-> chapter_27_transition\n\n// ============================================================\n// CHƯƠNG 27: ĐỘC SĨ GIẢ HỦ XUẤT THẾ (MƯU KHÁCH PHỦ)\n// ============================================================\n\n=== chapter_27_transition ===\n# CHAPTER_TITLE: Hồi 7 · Chương 27: Độc Sĩ Giả Hủ Hiến Kế\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_dark_schemes\n# ACTORS: qui_binh_an|right|thoughtful, jia_xu|left|mysterious\n\n~ chapter = 27\n\nĐêm khuya tại mật trướng soái phủ. Ánh đuốc bập bùng soi rọi tấm địa đồ sông Hoài Hà và Thanh Thủy.\n\nMột bóng người trung niên khoác trường bào màu xám tro chậm rãi bước vào. Đôi mắt thâm sâu như đầm lầy vạn trượng, nụ cười nửa miệng như thấu suốt mọi mưu mô nhân gian:\n\n\"Thảo dân Giả Hủ, tự Văn Hòa, bái kiến Phò mã gia.\"\n\n~ met_gia_hu = true\n\nQuý Bình An khẽ chấn động: \"Giả Hủ? Độc Sĩ Giả Hủ mưu định Tam Quốc?!\"\n\nGiả Hủ bước tới bên sa bàn, ngón tay gầy gò điểm thẳng vào khúc quanh hiểm trở của sông Thanh Thủy:\n\n\"Nghịch tặc Địch Hỏa đã bí mật liên kết thổ phỉ Bắc Cương, toan tính nội trong ba ngày sẽ vây khốn quân doanh Phò mã tại hẻm núi Hắc Phong. Kế sách có ba đường, tùy Phò mã định đoạt.\"\n\n-> jia_xu_stratagem_choice\n\n=== jia_xu_stratagem_choice ===\n# SCENE_TYPE: choice\n\nGiả Hủ từ tốn mở tấm lụa mật đồ:\n\n* [Độc Kế · Nhử địch vào tử địa hẻm núi, dùng hỏa dược và tên độc tiêu diệt hoàn toàn]\n  ~ suspicion += 15\n  ~ affinity_gia_hu += 25\n  ~ gold += 20000\n  Quý Bình An ánh mắt sắc lạnh: \"Dùng độc kế! Trong chiến trận, nhân từ với kẻ địch chính là tàn nhẫn với tướng sĩ của mình!\"\n  Giả Hủ khen ngợi: \"Quyết đoán phi thường! Giả vờ vứt bỏ doanh trại, nhử năm vạn quân địch chen chúc vào hẻm núi rồi chặn hai đầu phóng hỏa!\"\n  # EFFECT: show_toast|🔥 MỞ KHÓA MƯU KẾ: Hỏa Công Bẫy Độc (Giả Hủ)|unlock\n  # EFFECT: unlock_feature|feature_poison_stratagem\n  -> chapter_27_complete\n\n* [Phản Gián · Tung mật thư giả ly gián tướng soái địch tự sát hại lẫn nhau]\n  ~ gold -= 3000\n  ~ affinity_gia_hu += 20\n  ~ suspicion -= 5\n  \"Dùng mưu phản gián, cho nội gián mang mật thư giả mua chuộc phó tướng Nam Ly, khiến chúng nghi kỵ tương tàn.\"\n  Giả Hủ vuốt râu: \"Mượn đao giết người không dính máu, bảo toàn sinh lực ba quân.\"\n  # EFFECT: show_toast|📜 MỞ KHÓA THẺ BÀI: Phản Gián Kế & Ly Gián Kế|unlock\n  # EFFECT: unlock_feature|feature_counter_espionage\n  -> chapter_27_complete\n\n* [Vương Đạo · Đích thân dẫn chủ lực tập kích chính diện bắt sống tướng địch]\n  ~ affinity_trieu_van += 20\n  ~ affinity_gia_hu += 5\n  ~ suspicion -= 10\n  \"Tử Long xông pha bắt sống đầu sỏ, phân hóa quân giặc, khoan dung cho hàng binh.\"\n  Triệu Vân từ ngoài bước vào, hào khí ngút trời: \"Chúa Công nhân đức, Tử Long nguyện đạp bằng vạn quân bắt sống Địch Hỏa!\"\n  -> chapter_27_complete\n\n=== chapter_27_complete ===\nLệnh cho toàn quân tuyệt đối giữ bí mật, đêm nay lập tức di chuyển trận địa theo mưu kế!\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 27: Độc Sĩ Giả Hủ Hiến Kế|milestone\n# EFFECT: chapter_complete|27\n\n-> chapter_35_transition\n\n// ============================================================\n// CHƯƠNG 35: ĐẠI KẾ THỦY CÔNG DÒNG THANH THỦY\n// ============================================================\n\n=== chapter_35_transition ===\n# CHAPTER_TITLE: Hồi 8 · Chương 35: Đại Kế Thủy Công Dòng Thanh Thủy\n# BACKGROUND: bg_thanh_thuy_river_dam\n# AMBIENT: rain\n# MUSIC: bgm_river_roaring\n# ACTORS: qui_binh_an|right|observing, jia_xu|left|pointing, trieu_van|right|standing_guard\n\n~ chapter = 35\n\nMùa mưa phương Bắc trút nước như thác đổ. Dòng sông Thanh Thủy đỏ ngầu phù sa cuộn sóng gầm thét như rồng lội.\n\nQuý Bình An cùng Giả Hủ đứng trên đỉnh đập đất thượng nguồn ngắm nhìn hạ lưu. Ba mươi dặm phía trước chính là sào huyệt kiên cố nhất của năm vạn phản quân do Địch Hỏa trấn giữ.\n\nGiả Hủ chỉ xuống dòng nước xiết: \"Chúa Công, nếu ta đắp đập ngăn sông bảy ngày, đợi lũ thượng nguồn dâng cao rồi bất thần xả đập, toàn bộ chiến xa và thành lũy của Địch Hỏa sẽ chìm trong biển nước. Một trận định càn khôn!\"\n\n-> flood_preparation_choice\n\n=== flood_preparation_choice ===\n# SCENE_TYPE: choice\n\n* [Nhân Nghĩa · Bí mật di tản dân lành hạ lưu trước ba ngày: \"Muốn thắng giặc nhưng không giẫm lên xương máu bách tính vô tội!\"]\n  ~ gold -= 3000\n  ~ affinity_trieu_van += 25\n  ~ suspicion -= 10\n  ~ unlocked_flood = true\n  Quý Bình An quả quyết: \"Ta muốn lập công, nhưng tuyệt đối không biến vạn dân vô tội thành mồi cho cá bèo! Xuất 3.000 Vàng, lệnh cho Tử Long âm thầm di dời toàn bộ thôn làng hạ lưu lên gò cao!\"\n  Triệu Vân xúc động ôm quyền: \"Chúa Công lấy đức phục nhân, Tử Long dù thức trắng ba đêm cũng quyết hộ tống bá tánh an toàn!\"\n  # EFFECT: show_toast|🌊 MỞ KHÓA THỦY CÔNG: Xả Lũ Sông Thanh Thủy (Tầng 3 Combat)|unlock\n  # EFFECT: unlock_feature|feature_water_stratagem\n  -> chapter_35_complete\n\n* [Bá Đạo · Bất ngờ xả lũ ngay trong đêm mưa bão: \"Binh quý thần tốc! Đập vỡ thác tràn, hủy diệt toàn bộ chiến xa của địch!\"]\n  ~ suspicion += 20\n  ~ affinity_gia_hu += 20\n  ~ unlocked_flood = true\n  \"Địch Hỏa quỷ quyệt, nếu sơ hở ắt mất đại cục. Khóa chặt mọi ngả đường, đúng giờ Tý phá đập!\"\n  # EFFECT: show_toast|🌊 MỞ KHÓA THỦY CÔNG: Bạo Lũ Phá Đập (Sát Thương Chí Mạng)|unlock\n  # EFFECT: unlock_feature|feature_water_stratagem\n  -> chapter_35_complete\n\n=== chapter_35_complete ===\nBố trí tử sĩ canh giữ van xả lũ thượng nguồn, chờ thời khắc quyết chiến phát lệnh công thành!\n\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 35: Đại Kế Thủy Công Dòng Thanh Thủy|milestone\n# EFFECT: chapter_complete|35\n\n-> chapter_43_transition\n\n// ============================================================\n// CHƯƠNG 43: VẠN THẠCH QUÂN LƯƠNG TIỀN TUYẾN\n// ============================================================\n\n=== chapter_43_transition ===\n# CHAPTER_TITLE: Hồi 9 · Chương 43: Vạn Thạch Quân Lương Tiền Tuyến\n# BACKGROUND: bg_northern_border_camp\n# MUSIC: bgm_logistics_busy\n# ACTORS: qui_binh_an|right|armored, gao_shun|left|reporting\n\n~ chapter = 43\n\nHàng trăm cỗ xe ngựa chở đầy bao tải quân lương nối đuôi nhau rầm rộ tiến vào tổng hành dinh Bắc Cương.\n\nCao Thuận cầm thẻ trúc kiểm kê, ánh mắt lộ vẻ hân hoan hiếm thấy: \"Khởi bẩm Phò mã gia! Toàn bộ năm vạn hộc lương thực đã vận chuyển nhập kho an toàn. Kho lương hiện tại đủ cung ứng cho mười vạn quân trong suốt một năm!\"\n\n~ rations += 50000\n~ jade += 10\n~ gold -= 2000\n~ affinity_gaoshun += 15\n~ affinity_trieu_van += 15\n\nQuý Bình An ban thưởng rượu thịt cho toàn quân, trích năm ngàn hộc lương cứu đói cho bá tánh chạy loạn. Tiếng tung hô của vạn quân vang dội núi rừng, sĩ khí đạt mức cực hạn!\n\n# EFFECT: show_toast|🌾 QUÂN LƯƠNG ĐẠT 50.000 HỘC — Sĩ Khí Ba Quân Cực Hạn|reward\n# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 43: Vạn Thạch Quân Lương Tiền Tuyến|milestone\n# EFFECT: chapter_complete|43\n\n-> chapter_48_transition\n\n// ============================================================\n// CHƯƠNG 48-52: ĐẠI CHIẾN THANH CHÂU & KHẢI HOÀN HỒI TRIỀU\n// ============================================================\n\n=== chapter_48_transition ===\n# CHAPTER_TITLE: Hồi 10 · Chương 48-52: Khúc Tráng Ca Thanh Châu — Đại Phá Địch Hỏa\n# BACKGROUND: bg_fortress_battle\n# MUSIC: bgm_epic_final_battle\n# ACTORS: qui_binh_an|right|battle_armor, trieu_van|right|spear_ready, gao_shun|left|shield_wall, jia_xu|left|observing\n\n~ chapter = 48\n\nThành Thanh Châu rung chuyển dữ dội dưới làn mưa tên bốc lửa và đá tảng ném công thành. Dưới chân thành, năm vạn phản quân do dũng tướng Địch Hỏa chỉ huy dàn trận đen kịt như sóng thần. Mười cỗ Xe Đục Thành bọc thép dày ầm ầm húc thẳng vào cổng thành chính!\n\n# EFFECT: camera_shake|0.9\n# EFFECT: sfx_siege_ram_hit\n# EFFECT: screen_flash|#FFD700|600\n\nĐịch Hỏa vung thanh Bạo Liệt Đao gầm vang: \"Quý Bình An! Hôm nay ta sẽ san phẳng Thanh Châu, lấy đầu ngươi tế cờ!\"\n\nQuý Bình An đứng uy nghiêm trên đỉnh thành, áo choàng đỏ tung bay trong bão gió: \"Tướng sĩ Đại Vũ! Hôm nay là ngày định đoạt vận mệnh non sông! Giương cờ phát lệnh quyết chiến!\"\n\n# EFFECT: trigger_battle|battle_ch48_thanh_chau\n\n-> thanh_chau_epic_battle\n\n=== thanh_chau_epic_battle ===\n# BACKGROUND: bg_fortress_battle\n# MUSIC: bgm_triumph_sunrise\n# ACTORS: qui_binh_an|right|triumphant, trieu_van|right|bowing, gao_shun|left|kneeling, jia_xu|left|satisfied\n\nĐúng thời khắc nguy nan, cờ hiệu xả lũ phất lên!\n\nNước sông Thanh Thủy như ngàn con rồng cuộn trào ập xuống thung lũng, nhấn chìm toàn bộ chiến xa đục thành của địch! Triệu Tử Long tung người xuống ngựa, đơn thương độc mã xông thẳng vào vòng vây bắt sống Địch Hỏa giữa dòng nước xiết!\n\n# EFFECT: sfx_victory_fanfare\n# EFFECT: screen_flash|#FFFFFF|1000\n\nNăm vạn phản quân tan rã hoàn toàn. Chiến kỳ Đại Vũ bay ngạo nghễ trên đỉnh ải Thanh Châu!\n\n~ gold += 20000\n~ rations += 50000\n~ imperial_prestige += 2\n~ suspicion -= 15\n\nBắc Cương đại định, khói lửa tan biến! Toàn quân khải hoàn trở về kinh kỳ báo công!\n\n-> season_1_finale\n\n=== season_1_finale ===\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_imperial_grandeur\n# ACTORS: vu_hoang|center|impressed, qui_binh_an|right|kneeling_hero\n\nKinh đô Kim Loan Điện rợp cờ hoa gấm vóc đón mừng đoàn quân Chinh Bắc khải hoàn.\n\nVũ Hoàng đích thân rời khỏi Cửu Long Bảo Tọa, bước xuống thềm ngọc đỡ lấy hai tay Quý Bình An:\n\n\"Trẫm quả nhiên không nhìn lầm ngươi! Từ một phò mã hàn vi, ngươi đã lập nên chiến công cái thế ngút trời cho Đại Vũ triều!\"\n\n\"Truyền chỉ trẫm! Thăng phong Quý Bình An làm CHINH BẮC ĐẠI TƯỚNG QUÂN, ban kim ấn tử thụ, thống lĩnh mười vạn cấm quân!\"\n\n# EFFECT: screen_flash|#FFD700|1200\n# EFFECT: sfx_gong_ancient\n\n[THIÊN CƠ HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ! Hoàn thành toàn vẹn HỒI 1 (Chương 1 ➔ Chương 52)!\n[THIÊN CƠ HỆ THỐNG]: Mở khóa tôn hiệu: Chinh Bắc Đại Tướng Quân. Uy danh triều đình đạt Cấp 4!\n\nĐây chỉ là khởi đầu của con đường định đoạt giang sơn thiên hạ!\n\n# EFFECT: show_toast|🏆 TOÀN BỘ HỒI 1 ĐẠI KHẢI HOÀN (CHƯƠNG 1 - 52)!|triumph\n# EFFECT: chapter_complete|52\n\n-> END\n"
+    "ch01_15": "// ============================================================\n// Trấn Quốc Phò Mã Gia — Ink Scene Script\n// Chương 1 - 15: Khởi Đầu Hàn Vi & Phong Vân Kinh Đô\n// ============================================================\n\n// === GLOBAL VARIABLES ===\nVAR gold = 0\nVAR jade = 0\nVAR suspicion = 0\nVAR has_anh_hon_lenh = false\nVAR system_awakened = false\nVAR poetry_duel_won = false\nVAR imperial_prestige = 0\nVAR chapter = 1\n\n// Feature unlock flags\nVAR unlocked_gacha = false\nVAR unlocked_soap = false\nVAR unlocked_map = false\nVAR unlocked_flood = false\nVAR unlocked_granary = false\nVAR unlocked_battle = false\n\n// Affinity scores\nVAR affinity_trieu_van = 0\nVAR affinity_gia_hu = 0\nVAR affinity_dieu_thuyen = 0\n\n// NPC relationship flags\nVAR met_vu_hoang = false\nVAR met_to_kien_phong = false\nVAR met_ve_ti_vu = false\n\n// Branch memory\nVAR ch10_method = \"none\"\n\n// ============================================================\n// CHƯƠNG 1: XUYÊN KHÔNG & ĐỐI THƠ ĐẠI ĐIỆN\n// ============================================================\n\n=== chapter_1_start ===\n# BACKGROUND: bg_darkness\n# MUSIC: bgm_ethereal_void\n# CHAPTER_TITLE: Hồi 1 · Chương 1: Phò Mã Hàn Vi Nơm Nớp Lo Sợ\n\nHắn mở mắt.\n\nKhông phải bóng tối hư vô của kiếp trước. Trước mắt hắn là tấm trướng lụa màu tím than thêu chỉ vàng đã sờn rách, thoang thoảng mùi trầm hương mục nát pha lẫn u uất.\n\nĐầu đau như búa bổ. Vô số mảnh vỡ ký ức xa lạ cuộn trào như thủy triều — hắn tên là Quý Bình An, đích tử thứ ba của phủ Trấn Quốc Công, cũng chính là kẻ phò mã hàn vi nức tiếng bất tài vô dụng của Đại Vũ Hoàng Triều.\n\nPhụ thân Quý Trọng Dung vừa bị tước đoạt binh quyền, gièm pha khắp kinh thành. Thê tử là Ninh An công chúa cao quý lạnh lùng chưa từng một lần ghé mắt. Còn bản thân hắn thì vừa trúng kỳ độc mê man ba ngày ba đêm, suýt nữa đã mất mạng trong âm thầm...\n\n# BACKGROUND: bg_pho_ma_phu_bedroom\n# ACTORS: qui_binh_an|right|worried\n\nHắn... đã nhập thể trùng sinh vào tử cục ngập tràn hiểm nguy này. Muốn sinh tồn nơi triều chính, trước hết phải nhìn thấu cục diện, giấu kín phong mang.\n\nCánh cửa gỗ sơn mài đột ngột bật mở. Tỳ nữ thân cận Tiểu Thúy vội vã chạy vào, gương mặt tái nhợt không còn giọt máu:\n\n# ACTORS: qui_binh_an|right|neutral, servant|left|respectful\n\n\"Phò mã gia! Ngài rốt cuộc đã tỉnh lại rồi! Vũ Hoàng bệ hạ truyền khẩu dụ khẩn, yến tiệc tiếp đón sứ đoàn Nam Ly Quốc sắp sửa khai yến tại Kim Loan Điện! Ngài... ngài phải lập tức nhập cung ngay!\"\n\nQuý Bình An cất giọng trầm tĩnh: \"Bình tĩnh lại. Sứ đoàn Nam Ly mang theo điều gì đến yến tiệc mà khiến cả triều đình đại loạn?\"\n\nTiểu Thúy run giọng bẩm báo: \"Dạ bẩm... Nam Ly phái sứ thần đệ nhất học sĩ đến, mang theo một vế đối tuyệt đỉnh thách thức sĩ tử Đại Vũ. Nghe nói cả Hàn Lâm Viện lẫn các vị đại học sĩ đều câm nín, Vũ Hoàng nổi lôi đình lôi cả hoàng thân quốc thích và phò mã vào cung!\"\n\nQuý Bình An khẽ cười lạnh: \"Xem ra Vũ Hoàng không phải cần ta đối đáp, mà là muốn tìm một kẻ gánh tội thay khi triều đình mất mặt. Được, vậy để ta vào hoàng cung xem bọn họ muốn diễn vở kịch gì.\"\n\n-> travel_to_palace\n\n=== travel_to_palace ===\n# BACKGROUND: bg_imperial_road\n# AMBIENT: rain\n# MUSIC: bgm_imperial_procession\n\nCỗ xe ngựa lăn bánh trên đường đá hoa cương kinh đô, tiếng vó ngựa gõ dồn dập giữa màn mưa đêm lạnh buốt.\n\nĐại Vũ Hoàng Triều ba trăm năm định đô, bề ngoài phồn hoa tựa gấm, nhưng bên trong thì cửu vương đoạt đích, phiên trấn rục rịch binh đao, phương Bắc có Thác Bạt thiết kỵ rình rập, phương Nam có Nam Ly mưu toan cắn nuốt Trung Nguyên.\n\nCòn Quý gia — từng là danh môn khai quốc — nay chịu đủ mọi nghi kỵ của Vũ Hoàng, phụ thân Quý Trọng Dung bị phế chức, huynh trưởng trấn giữ biên thùy cô độc.\n\n\"Nếu đã bước vào ván cờ này... thì ta sẽ là người nắm giữ quân cờ.\"\n\n-> imperial_banquet\n\n=== imperial_banquet ===\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_court_tension\n# ACTORS: qui_binh_an|right|nervous, vu_hoang|center|stern, nam_ly_envoy|left|arrogant\n\n~ met_vu_hoang = true\n\nĐại điện Kim Loan nguy nga tráng lệ, ngai vàng Cửu Long tỏa ánh kim quang thâm nghiêm, nhưng sát khí và sự ngột ngạt bao trùm từng tấc không khí.\n\nVũ Hoàng ngự trên bảo tọa, sắc mặt âm trầm như mây đen trước cơn bão. Hai bên bá quan văn võ cúi gầm mặt, không một ai dám ngẩng đầu thở mạnh.\n\nChính giữa đại điện, sứ thần Nam Ly Quốc khoác cẩm bào xanh thẫm ngạo nghễ vuốt râu, cất giọng sang sảng đầy vẻ khinh miệt:\n\n\"Bệ hạ Đại Vũ, vế đối này chỉ là chút thi tài tầm thường của phương Nam ta. Nếu vương triều trăm vạn sĩ tử mà không ai đối nổi, thì danh xưng 'Văn hiến thiên bang' từ nay xin giao lại cho Nam Ly ta vậy!\"\n\nSứ thần Nam Ly dõng dạc đọc vế đối vách đá:\n\n\"「天当棋盘星作子，谁人敢下？」\"\n\n\"Thiên đương kỳ bàn tinh tác tử, thùy nhân cảm hạ?\"\n(Trời làm bàn cờ sao làm quân, ai dám hạ cờ?)\n\nCả đại điện xôn xao. Quan văn nhìn nhau, lắc đầu. Quan võ im phắc. Một vế đối ngập tràn sát khí và cuồng vọng — lấy trời đất làm bàn cờ, biến nhật nguyệt tinh tú thành con tốt!\n\nVũ Hoàng nhíu mày, ánh mắt quét qua triều thần rồi dừng lại ở Quý Bình An — phò mã đứng cuối hàng:\n\n\"Quý Bình An! Ngươi dù sao cũng là con em Quý gia, đọc qua thi thư. Ngươi đối cho trẫm!\"\n\n-> poetry_choice\n\n=== poetry_choice ===\n# SCENE_TYPE: choice\n\nTrước mắt hắn là vận mệnh của cả một triều đại. Nếu vương triều chịu nhục, lửa chiến tranh sẽ thiêu rụi phương Nam. Quý Bình An quyết định xuất thế:\n\n* [Hoành Đao · Đối vế nghịch thiên: \"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?\"]\n  -> poetry_triumph\n\n* [Khiêm Cung · Đối vế mực thước: Giữ thể diện triều đình, giấu kín phong mang]\n  -> poetry_mediocre\n\n* [Quyền Mưu · Vạch trần dã tâm: Đanh thép chất vấn sứ thần Nam Ly trước điện Kim Loan]\n  -> poetry_silence\n\n=== poetry_triumph ===\n# EFFECT: camera_shake|0.8\n# EFFECT: screen_flash|#FFD700|500\n# EFFECT: sfx_thunder_dramatic\n# ACTORS: qui_binh_an|right|confident, nam_ly_envoy|left|shocked\n\n~ gold += 100\n~ poetry_duel_won = true\n~ suspicion += 10\n~ imperial_prestige += 1\n\nQuý Bình An tiến lên một bước, tà áo hắc bào tung bay giữa đại điện. Tiếng cười khẽ của hắn vang vọng khắp Kim Loan:\n\n\"Sứ thần Nam Ly ếch ngồi đáy giếng, cũng dám đem chút tài mọn ra bêu rếu trước mặt Hoàng thượng?\"\n\nHắn ngẩng đầu, ánh mắt uy nghiêm như sấm sét:\n\n\"「地作琵琶路作弦，盖世谁弹？」\"\n\n\"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?\"\n(Đất làm đàn tỳ bà đường làm dây, bậc cái thế nào dám gảy?)\n\nMột câu xuất khẩu, sấm rền giữa trời quang! Trời làm bàn cờ — Đất làm tỳ bà. Sao làm quân cờ — Đường thiên lý làm dây đàn!\n\nKhí phách ngút trời, nuốt trọn càn khôn, biến cả non sông gấm vóc thành khúc đàn của bậc đế vương! Sứ thần Nam Ly lùi liền ba bước, sắc mặt trắng bệch không thốt nên lời.\n\nVũ Hoàng chấn động đứng phắt dậy khỏi long ngai, vỗ mạnh lên án thư: \"HẢO! HẢO MỘT CÂU CÁI THẾ THÙY ĐẠN!\"\n\n\"Quý gia quả nhiên không hổ danh Trấn Quốc hổ môn! Ban thưởng phò mã Quý Bình An một trăm lượng hoàng kim!\"\n\n# EFFECT: show_toast|[ 賜 ] +100 Hoàng Kim Thưởng Kim Loan Điện|reward\n\n-> system_awakening\n\n=== poetry_mediocre ===\n# ACTORS: qui_binh_an|right|neutral, vu_hoang|center|disappointed\n~ suspicion -= 5\n~ gold += 10\n\nQuý Bình An chắp tay hành lễ, từ tốn đọc một vế đối thanh nhã, vừa đủ giải vây cho triều đình mà không bộc lộ quá nhiều tài năng kinh thế hãi tục. Vũ Hoàng khẽ gật đầu, ban thưởng mười lượng bạc khích lệ.\n\n-> system_awakening\n\n=== poetry_silence ===\n# ACTORS: qui_binh_an|right|head_down, vu_hoang|center|contemptuous\n~ suspicion += 5\n~ imperial_prestige += 2\n~ gold += 50\n\nQuý Bình An cất giọng đanh thép vạch trần dã tâm mượn văn thăm dò quân sự của Nam Ly khiến sứ thần tái mặt, Vũ Hoàng thầm khen ngợi sự nhạy bén chính trị.\n\n-> system_awakening\n\n=== system_awakening ===\n# BACKGROUND: bg_void_golden\n# MUSIC: bgm_system_activation\n# EFFECT: screen_flash|#FFD700|1000\n# EFFECT: sfx_system_chime\n\n~ system_awakened = true\n~ has_anh_hon_lenh = true\n\n【 CÀN KHÔN ĐẢO CHUYỂN · THIÊN CƠ KÍCH HOẠT 】\n\n⟨ Cảm ứng: Hùng tài đại lược · Trí tuệ thấu suốt càn khôn ⟩\n⟨ Khởi động: Thượng Cổ Bái Tướng Thần Đàn ⟩\n⟨ Ban tặng vật phẩm: Thượng Cổ Anh Hồn Lệnh × 1 ⟩\n\n# EFFECT: show_toast|[ 賜 ] THỨC TỈNH THIÊN CƠ: Tiếp nhận Thượng Cổ Anh Hồn Lệnh|system\n# EFFECT: grant_ticket|1\n\nMột cỗ hàn khí hùng hồn hòa cùng kim quang chói lòa tràn vào đan điền Quý Bình An. Trong lòng bàn tay hắn, phiến Thượng Cổ Anh Hồn Lệnh bằng đồng khắc long phụng ngưng tụ thành thực thể, tỏa ra uy áp ngập tràn.\n\n[THIÊN CƠ HỆ THỐNG]: Ký chủ đã bước qua ngưỡng cửa sinh tử, đoạt lấy thiên mệnh. Kể từ giờ phút này, có thể chiêu mộ chiến thần, mưu sĩ ngàn năm về dưới trướng!\n\n-> chapter_1_aftermath\n\n=== chapter_1_aftermath ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_night_contemplation\n# ACTORS: qui_binh_an|right|determined\n\n~ chapter = 1\n~ met_to_kien_phong = true\n\nĐêm khuya tẩm thất phò mã phủ. Ánh trăng lạnh rọi qua song cửa sổ, chiếu lên phiến Thượng Cổ Anh Hồn Lệnh nằm trên bàn gỗ đàn hương.\n\nQuý Bình An đứng chắp tay nhìn ra màn đêm kinh đô mịt mùng:\n\n\"Vũ Hoàng ngoài mặt khen thưởng nhưng ánh mắt đầy vẻ thăm dò kiêng kỵ. Còn Nam Ly chịu nhục tại điện tiền ắt sẽ giở thủ đoạn ám sát hoặc gây hấn biên cương...\"\n\n\"Không thể chần chừ thêm nữa. Phải mau chóng khởi động Bái Tướng Thần Đàn, chiêu mộ võ tướng trấn giữ cơ đồ!\"\n\n# EFFECT: show_toast|[ 卷 ] HOÀN TẤT HỒI 1: Phò Mã Thức Tỉnh & Đối Thơ Chấn Kinh Đô|milestone\n# EFFECT: chapter_complete|1\n\n-> chapter_5_transition\n\n// ============================================================\n// CHƯƠNG 5: MẬT THẤT PHÒ MÃ PHỦ & BÁI TƯỚNG ĐÀI\n// ============================================================\n\n=== chapter_5_transition ===\n# CHAPTER_TITLE: Hồi 2 · Chương 5: Bái Tướng Đài Khai Mở\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_mystical_summoning\n\n~ chapter = 5\n\nBốn ngày trôi qua kể từ yến tiệc đại điện. Quý Bình An dành trọn thời gian nắm bắt tình thế — Đại Vũ Hoàng Triều thù trong giặc ngoài, và sức mạnh bí ẩn của Thượng Cổ Bái Tướng Đàn.\n\nĐêm nay, trong mật thất sâu nhất của Phò Mã Phủ, phiến Anh Hồn Lệnh bỗng rung lên từng hồi chuông trầm hùng.\n\n[THIÊN CƠ HỆ THỐNG]: Địa mạch quy tụ. Thượng Cổ Bái Tướng Thần Đàn — Khai Mở!\n\n# EFFECT: screen_flash|#FFD700|800\n# EFFECT: sfx_gong_ancient\n\n~ unlocked_gacha = true\n# EFFECT: show_toast|[ 壇 ] KHAI MỞ: Bái Tướng Thần Đàn (Chiêu Mộ Danh Tướng)|unlock\n# EFFECT: unlock_feature|bai_tuong_dai\n\n[THIÊN CƠ HỆ THỐNG]: Ký chủ có thể tế xuất Anh Hồn Lệnh để thỉnh triệu anh linh danh tướng thời Tam Quốc quy vị.\n\n* [Thiên Cơ · Khởi Động Bái Tướng Thần Đàn: \"Thượng Cổ Bái Tướng Đài, phụng mệnh ta triệu hoán danh tướng ngàn năm quy vị!\"]\n  # EFFECT: trigger_gacha|bai_tuong_dai\n  -> waiting_gacha_ritual\n\n=== waiting_gacha_ritual ===\n# EFFECT: trigger_gacha|bai_tuong_dai\n// Trạng thái chờ người chơi thao tác trên Bái Tướng Đài\nKhai mở thần đàn tế tướng...\n-> END\n\n=== trieu_van_arrival ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# ACTORS: qui_binh_an|right|amazed, trieu_van|left|noble\n# MUSIC: bgm_hero_theme\n\n~ affinity_trieu_van = 50\n\nÁnh sáng bạc ngân lóe lên rực rỡ, sương khói ngưng tụ thành thân ảnh một vị dũng tướng oai phong lẫm liệt.\n\nGiáp bạc sáng loáng, bạch bào tung bay, tay cầm Long Đảm Lượng Ngân Thương tỏa ra chiến ý ngút trời.\n\nTriệu Tử Long — Thường Sơn Triệu Vân — quỳ một gối, thương cắm thẳng xuống sàn đá, giọng nói sang sảng chấn động mật thất:\n\n\"Triệu Vân, Triệu Tử Long, bái kiến Chúa Công!\"\n\nQuý Bình An xúc động tiến lên đỡ lấy hai tay Tử Long: \"Tử Long mau bình thân! Có ngươi bên cạnh, Quý Bình An ta hà tất phải sợ chông gai nghịch cảnh!\"\n\nTriệu Vân ngẩng đầu, ánh mắt kiên định như thiết thạch: \"Tử Long nguyện đem Long Đảm Thương bảo hộ Chúa Công, dù đối mặt vạn mã thiên quân cũng quyết không lùi nửa bước!\"\n\nMũi thương khẽ rung — bảy đạo thương ảnh hóa thành hàn quang xé toang hư không, xuyên qua bảy trụ đá mật thất trong chớp mắt mà không làm vỡ một viên ngói. Đó chính là Thất Thám Bàn Xà Thương Pháp cái thế vô song!\n\nQuý Bình An nhìn Triệu Tử Long đứng sừng sững trong phò mã phủ, trung trinh và sẵn sàng đẫm máu sa trường: \"Tử Long, muốn nuôi quân đúc giáp thì ngân quỹ phải dồi dào. Ngày mai đến Thiên Kim Lâu bàn chuyện làm ăn!\"\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Thường Sơn Triệu Tử Long SSR|milestone\n# EFFECT: chapter_complete|5\n\n-> chapter_8_transition\n\n// ============================================================\n// CHƯƠNG 8: THIÊN KIM LÂU & THẤU HOA CAO\n// ============================================================\n\n=== chapter_8_transition ===\n# CHAPTER_TITLE: Hồi 3 · Chương 8: Phát Minh Thấu Hoa Cao\n# BACKGROUND: bg_thien_kim_lau\n# MUSIC: bgm_marketplace\n# ACTORS: qui_binh_an|right|clever, ve_ti_vu|left|curious\n\n~ chapter = 8\n~ met_ve_ti_vu = true\n\nBa ngày sau khi chiêu mộ Triệu Vân.\n\nQuý Bình An ngồi trên lầu cao nhất của Thiên Kim Lâu — tửu lâu lớn nhất kinh đô, do lâu chủ Vệ Ti Vũ phong hoa tuyệt đại điều hành.\n\nHắn đặt lên bàn một chiếc hộp sơn mài — bên trong là thanh xà phòng ngát hương hoa nhài, mịn màng như ngọc thạch — bảo vật hắn đã bí mật điều chế từ nguyên liệu thảo dược tự nhiên.\n\n\"Vệ lâu chủ, thương phẩm này... sẽ khiến cả kinh đô điên đảo.\"\n\nVệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng rực: \"Hương thơm thoát tục, trơn láng như mỡ đông. Phò mã gia, đây là kỳ trân dị bảo gì?\"\n\n\"Thấu Hoa Cao. Rửa sạch bụi trần, lưu hương bảy ngày, dưỡng nhan tuyệt phẩm. Mỗi bánh giá mười lượng bạc dành riêng cho vương tôn quý tộc.\"\n\n* [Hợp Tác Toàn Diện · Bắt tay cùng Vệ Ti Vũ: \"Ta xuất bí phương độc quyền, lâu chủ lo mạng lưới phân phối, lợi nhuận chia đôi!\"]\n  ~ gold += 3000\n  ~ unlocked_soap = true\n  \"Ta cung cấp công thức độc quyền, Thiên Kim Lâu lo vận chuyển và tiêu thụ. Lợi nhuận chia đều.\"\n  Vệ Ti Vũ khẽ cười quyến rũ, nâng chén rượu chúc mừng: \"Phò mã gia quả là bậc kỳ tài ẩn nhẫn. Thương vụ này, tiện thiếp nhận!\"\n  # EFFECT: show_toast|[ 商 ] MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt Sa Bàn)|unlock\n  # EFFECT: unlock_feature|thau_hoa_cao\n  -> chapter_8_aftermath\n\n* [Ẩn Nhẫn Tự Chủ · Lập xưởng chế tạo riêng: \"Bí phương chưa thể để lộ ra ngoài, tạm thời sản xuất quy mô nhỏ tích lũy thực lực.\"]\n  ~ gold += 1000\n  ~ unlocked_soap = true\n  \"Chưa vội khuếch trương. Ta sẽ thăm dò thị trường trước, từng bước tích súc ngân quỹ.\"\n  # EFFECT: show_toast|[ 商 ] MỞ KHÓA: Phường Đúc Thấu Hoa Cao (+1.000 Vàng mỗi lượt)|unlock\n  # EFFECT: unlock_feature|thau_hoa_cao\n  -> chapter_8_aftermath\n\n=== chapter_8_aftermath ===\n# ACTORS: qui_binh_an|right|satisfied\n\nNguồn hoàng kim ròng rã bắt đầu chảy vào túi phò mã phủ. Có tiền, có tướng — Quý Bình An đã đặt viên đá tảng đầu tiên cho đại nghiệp tranh bá. Hắn âm thầm mở rộng tai mắt khắp các ngõ ngách kinh thành.\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao Kinh Doanh|milestone\n# EFFECT: chapter_complete|8\n\n-> chapter_10_transition\n\n// ============================================================\n// CHƯƠNG 10: THÍCH KHÁCH ĐÊM TRĂNG\n// ============================================================\n\n=== chapter_10_transition ===\n# CHAPTER_TITLE: Hồi 4 · Chương 10: Thích Khách Đêm Trăng\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_suspense_night\n# ACTORS: qui_binh_an|right|alarmed\n\n~ chapter = 10\n\nĐêm rằm gió lộng. Phò Mã Phủ tịch mịch như tờ.\n\nQuý Bình An đang nghiên cứu bản đồ địa hình trong thư phòng thì một luồng sát khí lạnh buốt gáy ập tới! Ba đạo bóng đen xé gió lao xuống từ xà nhà — lưỡi đoản đao tẩm độc xanh biếc nhằm thẳng yếu huyệt của hắn!\n\n* [Sát Phạt · Hét gọi Triệu Vân: \"Tử Long, lưu lại kẻ sống!\"]\n  -> assassin_zhao_yun_saves\n\n* [Quyền Mưu · Lâm nguy không loạn: Phán đoán phương vị mũi đao, né tránh hiểm cảnh tìm chỗ sơ hở!]\n  -> assassin_self_dodge\n\n=== assassin_zhao_yun_saves ===\n# EFFECT: sfx_spear_whoosh\n# EFFECT: screen_flash|#C0C0C0|300\n# EFFECT: camera_shake|0.5\n# ACTORS: trieu_van|left|battle_stance, assassin|center|attacking\n\n\"TỬ LONG!\"\n\nThanh âm chưa dứt, một dải ngân hà rực sáng đã xé toang màn đêm — Long Đảm Thương xuất kích!\n\nTriệu Vân tựa như thần phong giáng thế. Ba mũi thương điểm chuẩn xác vào cổ tay thích khách, đánh bay binh khí, đá văng bọn chúng xuống sàn đá!\n\n\"Chúa Công, bọn chúng là tử sĩ chuyên nghiệp!\"\n\n~ affinity_trieu_van += 15\n-> assassin_aftermath\n\n=== assassin_self_dodge ===\n# ACTORS: qui_binh_an|right|rolling, assassin|center|attacking\n# EFFECT: camera_shake|0.3\n\nQuý Bình An xoay người ngã nhào ra sau bức bình phong gỗ lim, lưỡi đao độc chém toạc vạt áo!\n\nThích khách thứ hai vừa vung đao bồi tiếp thì hàn quang lóe lên! Long Đảm Thương của Triệu Vân quét ngang, đánh gãy xương sườn thích khách hất văng ra sân!\n\n~ affinity_trieu_van += 10\n-> assassin_aftermath\n\n=== assassin_aftermath ===\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_investigation\n# ACTORS: qui_binh_an|right|serious, trieu_van|left|reporting\n\nTriệu Vân xốc ngược cánh tay thích khách: \"Bọn chúng đều cắn vỡ độc hoàn tự sát. Nhưng trên cổ tay có ấn triện hình đầu sói — đây là mật vụ thuộc Phi Báo Quân của Bắc Cương!\"\n\nHắn nhìn Quý Bình An trầm trọng: \"Chúa Công, có kẻ trong triều cấu kết với phiên trấn phương Bắc muốn trừ khử ngài.\"\n\n* [Ẩn Nhẫn · Xóa sạch dấu vết: \"Bí mật chôn xác, dĩ bất biến ứng vạn biến, âm thầm truy vết kẻ chủ mưu.\"]\n  ~ suspicion -= 10\n  ~ gold += 2000\n  ch10_method = \"hide\"\n  -> chapter_10_complete\n\n* [Hoành Đao · Đối chất triều đình: \"Đem xác ném trước mặt trăm quan, bức kẻ giấu mặt phải lộ sơ hở!\"]\n  ~ suspicion += 20\n  ~ gold += 5000\n  ch10_method = \"confront\"\n  -> chapter_10_complete\n\n* [Quân Cơ · Thám thính biên cương: \"Sát thủ mang dấu vết phương Bắc, lập tức sai thám mã cấp báo tiền tuyến!\"]\n  ~ suspicion += 5\n  ch10_method = \"investigate\"\n  -> chapter_10_complete\n\n=== chapter_10_complete ===\nQuý Bình An nhìn dấu ấn đầu sói trên cổ tay tử sĩ, ánh mắt lạnh như băng. Kinh đô đã là lò lửa, chỉ có nắm lấy binh quyền mới mong bảo toàn gia tộc và xoay chuyển càn khôn!\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 10: Thích Khách Đêm Trăng|milestone\n# EFFECT: chapter_complete|10\n\n-> chapter_15_transition\n\n// ============================================================\n// CHƯƠNG 15: VŨ HOÀNG HẠ CHỈ BẮC CHINH\n// ============================================================\n\n=== chapter_15_transition ===\n# CHAPTER_TITLE: Hồi 5 · Chương 15: Chinh Phạt Bắc Cảnh\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_imperial_decree\n# ACTORS: vu_hoang|center|commanding, qui_binh_an|right|kneeling\n\n~ chapter = 15\n\nĐại điện Kim Loan sớm hôm sau. Vũ Hoàng ngự trên ngai vàng, sắc diện ngập tràn phẫn nộ:\n\n\"Bắc Cương phản nghịch! Phi Báo Quân liên kết với nghịch tặc Địch Hỏa công hãm ba huyện, chém chết quan trấn thủ, uy hiếp kinh kỳ!\"\n\nVũ Hoàng rút ra Thượng Phương Bảo Kiếm, ánh mắt dừng lại trên người Quý Bình An:\n\n\"Quý Bình An! Phụ thân ngươi từng trấn thủ phương Bắc, ngươi lại có dũng khí phi thường. Trẫm lệnh ngươi tiếp nhận chức Chinh Bắc Tiền Phong Tướng Quân, lập tức xuất chinh dẹp loạn!\"\n\n# EFFECT: screen_flash|#FFD700|500\n# EFFECT: sfx_imperial_decree\n\n~ unlocked_map = true\n~ imperial_prestige += 1\n~ gold += 5000\n~ jade += 20\n~ suspicion += 5\n~ affinity_trieu_van += 5\n\n# EFFECT: show_toast|[ 輿 ] KHAI MỞ: Tầng 2 — Sơn Hà Sa Bàn (Grand Strategy)|unlock\n# EFFECT: unlock_feature|de_nghiep_sa_ban\n\n[THIÊN CƠ HỆ THỐNG]: Khai mở Tầng 2 — Sơn Hà Sa Bàn! Cho phép điều binh khiển tướng, bố trí quân lương và tuần tra các cứ điểm trọng yếu.\n\nQuý Bình An quỳ nhận Hổ Phù bằng đồng, ánh mắt sáng rực. Bên cạnh hắn, Triệu Tử Long nắm chặt chuôi thương — đại thời đại tranh bá chính thức bắt đầu!\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 15: Tiếp Nhận Thánh Chỉ Bắc Chinh|milestone\n# EFFECT: chapter_complete|15\n\n-> chapter_20_start\n\n",
+    "ch16_52": "// ============================================================\n// Trấn Quốc Phò Mã Gia — Ink Scene Script\n// Phần 2: Từ Chương 16 đến Chương 52 (Hồi 1 Hoàn Tất)\n// ============================================================\n\n// ============================================================\n// CHƯƠNG 17-21: VẠN KIM MƯU SĨ MÃ TẮC & CAO NÂNG MÃ TẮC\n// ============================================================\n\n=== chapter_20_start ===\n# CHAPTER_TITLE: Hồi 6 · Chương 17-21: Vạn Kim Mưu Sĩ Mã Tắc\n# BACKGROUND: bg_northern_border_camp\n# MUSIC: bgm_military_march\n# ACTORS: qui_binh_an|right|armored, trieu_van|right|standing_guard\n\n~ chapter = 20\n\nGió lạnh phương Bắc gào thét qua ải Nhạn Môn, cuốn theo cát bụi mịt mù ngoài quan ải.\n\nQuý Bình An khoác chiến bào đứng trong soái trướng tiền tiêu Bắc Cương. Sau lưng hắn, Triệu Tử Long uy dũng khôi giáp, Long Đảm Thương cắm thẳng bên bàn sa bàn.\n\nNguồn hoàng kim thu hoạch từ việc kinh doanh Thấu Hoa Cao tại Thiên Kim Lâu nay đã tích lũy hơn một vạn lượng!\n\nQuý Bình An lập tức câu thông Thiên Cơ:\n\n[THIÊN CƠ HỆ THỐNG]: Khởi động Bái Tướng Thần Đàn — Tiêu hao 1 Vạn Kim triệu hoán Mưu Thần!\n\n# EFFECT: screen_flash|#FFD700|700\n# EFFECT: sfx_gong_ancient\n# EFFECT: camera_shake|0.6\n\nKim quang vạn đạo rực sáng giữa soái trướng! Trận đồ Bát Quái bốc lên từng hồi linh khí chấn động càn khôn!\n\n[THIÊN CƠ HỆ THỐNG]: Chúc mừng ký chủ thành công triệu hoán Vạn Kim Mưu Sĩ: Mã Tắc (Mã Ấu Thường)!\n\n# EFFECT: summon_grand_reveal|hero_matac\n\n# ACTORS: qui_binh_an|right|armored, trieu_van|right|standing_guard, ma_tac|left|scholarly\n\nKim quang tan biến, một vị thanh niên văn sĩ tuấn tú, mình khoác thanh bào nho nhã, tay ôm thẻ tre binh thư bước ra từ trận đồ linh khí, khom mình hành lễ:\n\n\"Thuộc hạ Mã Tắc, tự Ấu Thường, bái kiến Chúa Công!\"\n\n~ affinity_matac = 50\n\nQuý Bình An bước tới đỡ Mã Tắc dậy, ôn tồn hỏi: \"Ấu Thường tinh thông binh thư, nay Bắc Cương khói lửa, ngươi có mưu kế gì phá địch?\"\n\nMã Tắc mở tung thẻ tre, ánh mắt sáng rực, đàm luận thao thao bất tuyệt:\n\n\"Khởi bẩm Chúa Công! Binh pháp có vân: 'Dĩ địa hình vi phụ, liêu địch chế thắng'. Bắc Cương núi non hiểm trở, nếu ta dẫn đại quân đóng trại trên đỉnh núi cô lập cao nhất, mượn thế trên cao nhìn xuống, địch quân ắt không dám tiến, khi chúng mỏi mệt ta ùa xuống tất đại thắng!\"\n\nTriệu Vân khẽ nhíu mày. Quý Bình An nghe xong thầm rùng mình trong bụng:\n\n'Quả nhiên là Mã Tắc! Lý thuyết binh pháp đầy ắp trong đầu, nhưng nếu thực sự giao binh quyền cho hắn lâm trận, e rằng lại tái hiện thảm cảnh Nhai Đình năm xưa!'\n\nĐúng lúc này, thám mã phi vào cấp báo: \"Báo! Vũ Hoàng ban chỉ phong Tô Vân làm Bắc Chinh Tướng Quân mang theo 3 vạn quân cùng tiến về phương Bắc, danh nghĩa phối hợp nhưng thực chất là giám sát và tranh đoạt quân công của Chúa Công!\"\n\nÁnh mắt Quý Bình An bỗng lóe lên tia sáng giảo hoạt — kế sách 'Cao Nâng Mã Tắc' lập tức thành hình!\n\n-> ma_tac_decision\n\n=== ma_tac_decision ===\n# SCENE_TYPE: choice\n\n* [Quyền Mưu · Kế Sách \"Cao Nâng Mã Tắc\": Khen Mã Tắc lên mây, xin Miễn Tử Lệnh và gài sang làm quân sư cho Tô Vân!]\n  ~ suspicion -= 5\n  ~ gold += 5000\n  Quý Bình An vỗ tay cười lớn: \"Ấu Thường quả là bậc kỳ tài kinh thiên vĩ địa! Mưu kế đóng quân trên núi này quá đỗi siêu phàm!\"\n  Hắn lập tức viết tấu chương dâng lên Vũ Hoàng khen ngợi Mã Tắc hết lời, xin ban Miễn Tử Lệnh cho Mã Tắc, rồi nhiệt tình tiến cử Mã Tắc sang làm đại quân sư bên cạnh Tô Vân!\n  Tô Vân mừng rỡ thu nạp, răm rắp làm theo mưu kế 'đóng quân trên cao' của Mã Tắc. Quả nhiên quân Tô Vân bị phản quân Nam Ly cắt đứt đường nước bao vây sa lầy, hoàn toàn mất đi thế chủ động!\n  Quý Bình An ung dung nắm toàn bộ thế cờ Bắc Cương mà không tốn nửa mũi tên!\n  # EFFECT: show_toast|[ 策 ] MỞ KHÓA MƯU KẾ: Cao Nâng Mã Tắc & Phản Gián Tô Vân|unlock\n  # EFFECT: unlock_feature|feature_ma_tac\n  -> chapter_20_complete\n\n* [Nội Chính · Khai Thác Sở Trường: Giao cho Mã Tắc phụ trách tu bổ và củng cố thành phòng Liễu Châu!]\n  ~ gold -= 2000\n  ~ rations += 10000\n  Quý Bình An biết Mã Tắc rất giỏi tính toán công sự và kiến trúc quân sự, liền hạ lệnh:\n  \"Ấu Thường, Liễu Châu là yết hầu hậu phương của đại quân. Ta giao cho ngươi toàn quyền đốc thúc đào hào, đắp lũy kiên cố, biến Liễu Châu thành pháo đài thép bất khả xâm phạm!\"\n  Mã Tắc cảm kích dốc hết tâm lực ngày đêm, hoàn thành xuất sắc công tác phòng ngự vững chắc thành trì hậu phương!\n  # EFFECT: show_toast|[ 策 ] MỞ KHÓA THẺ BÀI: Binh Thư Thao Lược & Tu Bổ Thành Phòng|unlock\n  # EFFECT: unlock_feature|feature_ma_tac\n  -> chapter_20_complete\n\n=== chapter_20_complete ===\nThế cờ phân hóa đã định, Quý Bình An nắm trọn quyền chủ động tiến quân về Bắc Cảnh, chuẩn bị tuyển mộ tân binh trung thành!\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 17-21: Vạn Kim Mưu Sĩ Mã Tắc|milestone\n# EFFECT: chapter_complete|20\n\n-> chapter_27_transition\n\n// ============================================================\n// CHƯƠNG 27: HỐ VŨ HOÀNG 20 VẠN VÀNG & TRIỆU HOÁN ĐỘC SĨ GIẢ HỦ\n// ============================================================\n\n=== chapter_27_transition ===\n# CHAPTER_TITLE: Hồi 7 · Chương 27: Triệu Hoán Độc Sĩ Giả Hủ\n# BACKGROUND: bg_pho_ma_phu_secret_room\n# MUSIC: bgm_dark_schemes\n# ACTORS: qui_binh_an|right|thoughtful, trieu_van|right|standing_guard\n\n~ chapter = 27\n\nĐêm khuya tại mật thất phò mã phủ.\n\nQuý Bình An vừa hoàn tất một vố lừa ngoạn mục hố Vũ Hoàng và triều đình chi trọn 20 vạn lượng hoàng kim (200.000 Vàng) để chuộc lấy quân công cho Thập Tam Hoàng Tử và tiếp quản Huyết Y Doanh.\n\nTrước mắt hắn, đống vàng rực rỡ xếp cao như núi.\n\nQuý Bình An xuất 10 vạn kim kích hoạt thiên phú đặc thù \"Dũng Giả Vô Sợ\" cho Triệu Vân, tăng thêm mười điểm chiến lực vượt ngưỡng trăm, đạt tới Hoàng Cảnh đỉnh phong!\n\nHắn nhìn số hoàng kim còn lại, trong mắt ánh lên tia sáng dã tâm:\n\n\"Tử Long, canh giữ ngoài cửa phòng! Tuyệt đối không cho phép bất kỳ ai bước vào!\"\n\nTriệu Vân nghiêm cẩn chắp tay: \"Mạt tướng tuân mệnh!\"\n\nQuý Bình An một mình trong phòng kín, ấn mở Bái Tướng Thần Đàn, chọn mục [TRIỆU HOÁN TUYỆT THẾ MƯU THẦN - 10 VẠN KIM]!\n\n# EFFECT: screen_flash|#FFD700|1000\n# EFFECT: sfx_gong_ancient\n# EFFECT: camera_shake|0.7\n\n[THIÊN CƠ HỆ THỐNG]: Tiêu hao 10 vạn lượng hoàng kim! Địa mạch chấn động, Càn Khôn nghịch chuyển!\n[THIÊN CƠ HỆ THỐNG]: Chúc mừng ký chủ triệu hoán Tuyệt Thế Mưu Thần thành công — Độc Sĩ Giả Hủ (Cổ Hủ)!\n\n# EFFECT: summon_grand_reveal|hero_jiaxu\n\n# ACTORS: qui_binh_an|right|thoughtful, jia_xu|left|mysterious\n\n[THIÊN CƠ BẢNG]: Mưu Thần: Giả Hủ (Văn Hòa) · Trí Lực: 92 · Độ Trung Thành: 80 · Kỹ Năng: Độc Tâm (Kế càng độc xác suất thành công càng cao) · Ẩn chứa Phản Cốt!\n\nGiữa luồng khói đen pha lẫn ánh kim quang, một bóng người trung niên khoác trường bào màu xám tro chậm rãi ngưng hình. Diện mạo bình dị tựa như một hàn nho tay trói gà không chặt, nhưng đôi mắt thâm sâu như đầm lầy vạn trượng, lạnh lẽo đến thấu tận tim gan.\n\nGiả Hủ khom mình thi lễ:\n\n\"Thuộc hạ Cổ Hủ, bái kiến Chúa Công!\"\n\n~ met_gia_hu = true\n~ affinity_gia_hu = 40\n\nQuý Bình An đáy lòng chấn động: \"Độc Sĩ Giả Hủ! Kẻ tính toán không bỏ sót một nước cờ thời loạn thế!\"\n\nHắn tiến lên đỡ Giả Hủ: \"Được Văn Hòa tương trợ, bình sinh đại nghiệp của ta ắt thành!\"\n\nQuý Bình An mở tác chiến đồ Bắc Cương và khúc quanh sông Thanh Thủy: \"Văn Hòa, nghịch tặc Địch Hỏa liên kết năm vạn phản quân toan tính vây khốn ba châu, ngươi xem trận này nên phá thế nào?\"\n\nGiả Hủ khẽ vuốt chòm râu ngắn, ánh mắt lạnh lùng nhìn vào khúc quanh sông Thanh Thủy:\n\n\"Chúa Công, đã là chiến trận thì không có chỗ cho nhân từ. Mưu kế có ba đường, tùy Chúa Công định đoạt.\"\n\n-> jia_xu_stratagem_choice\n\n=== jia_xu_stratagem_choice ===\n# SCENE_TYPE: choice\n\nGiả Hủ từ tốn mở tấm lụa mật đồ:\n\n* [Độc Kế · Nhử địch vào tử địa hẻm núi, dùng hỏa dược và tên độc tiêu diệt hoàn toàn]\n  ~ suspicion += 15\n  ~ affinity_gia_hu += 25\n  ~ gold += 20000\n  Quý Bình An ánh mắt sắc lạnh: \"Dùng độc kế! Trong chiến trận, nhân từ với kẻ địch chính là tàn nhẫn với tướng sĩ của mình!\"\n  Giả Hủ khen ngợi: \"Quyết đoán phi thường! Giả vờ vứt bỏ doanh trại, nhử năm vạn quân địch chen chúc vào hẻm núi rồi chặn hai đầu phóng hỏa!\"\n  # EFFECT: show_toast|[ 炎 ] MỞ KHÓA MƯU KẾ: Hỏa Công Bẫy Độc (Giả Hủ)|unlock\n  # EFFECT: unlock_feature|feature_poison_stratagem\n  -> chapter_27_complete\n\n* [Phản Gián · Tung mật thư giả ly gián tướng soái địch tự sát hại lẫn nhau]\n  ~ gold -= 3000\n  ~ affinity_gia_hu += 20\n  ~ suspicion -= 5\n  \"Dùng mưu phản gián, cho nội gián mang mật thư giả mua chuộc phó tướng Nam Ly, khiến chúng nghi kỵ tương tàn.\"\n  Giả Hủ vuốt râu: \"Mượn đao giết người không dính máu, bảo toàn sinh lực ba quân.\"\n  # EFFECT: show_toast|[ 策 ] MỞ KHÓA THẺ BÀI: Phản Gián Kế & Ly Gián Kế|unlock\n  # EFFECT: unlock_feature|feature_counter_espionage\n  -> chapter_27_complete\n\n* [Vương Đạo · Đích thân dẫn chủ lực tập kích chính diện bắt sống tướng địch]\n  ~ affinity_trieu_van += 20\n  ~ affinity_gia_hu += 5\n  ~ suspicion -= 10\n  \"Tử Long xông pha bắt sống đầu sỏ, phân hóa quân giặc, khoan dung cho hàng binh.\"\n  Triệu Vân từ ngoài bước vào, hào khí ngút trời: \"Chúa Công nhân đức, Tử Long nguyện đạp bằng vạn quân bắt sống Địch Hỏa!\"\n  -> chapter_27_complete\n\n=== chapter_27_complete ===\nGiả Hủ khẽ ghé tai Quý Bình An hiến kế: \"Chúa Công, quân chính quy triều đình đầy rẫy tai mắt Tô gia, khó lòng phó thác sinh tử. Xin Chúa Công tiếp quản toàn bộ tử tù và tân binh nghèo khó ở Bắc Cương, tự tay tôi luyện thành quân đoàn trung thành tuyệt đối!\"\n\nQuý Bình An tiếp nhận tân binh, tự tay ban phát áo máu và quân nhu: \"Kể từ hôm nay, các ngươi chính là HUYẾT Y DOANH! Theo ta định đoạt càn khôn!\"\n\n# EFFECT: show_toast|[ 血 ] SÁNG LẬP QUÂN ĐOÀN: Huyết Y Doanh (Tử Sĩ Áo Máu)|unlock\n# EFFECT: unlock_feature|feature_huyet_y_doanh\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 27-30: Triệu Hoán Giả Hủ & Huyết Y Doanh|milestone\n# EFFECT: chapter_complete|27\n\n-> chapter_35_transition\n\n// ============================================================\n// CHƯƠNG 35: ĐẠI KẾ THỦY CÔNG DÒNG THANH THỦY\n// ============================================================\n\n=== chapter_35_transition ===\n# CHAPTER_TITLE: Hồi 8 · Chương 35: Đại Kế Thủy Công Dòng Thanh Thủy\n# BACKGROUND: bg_thanh_thuy_river_dam\n# AMBIENT: rain\n# MUSIC: bgm_river_roaring\n# ACTORS: qui_binh_an|right|observing, jia_xu|left|pointing, trieu_van|right|standing_guard\n\n~ chapter = 35\n\nMùa mưa phương Bắc trút nước như thác đổ. Dòng sông Thanh Thủy đỏ ngầu phù sa cuộn sóng gầm thét như rồng lội.\n\nQuý Bình An cùng Giả Hủ đứng trên đỉnh đập đất thượng nguồn ngắm nhìn hạ lưu. Ba mươi dặm phía trước chính là sào huyệt kiên cố nhất của năm vạn phản quân do Địch Hỏa trấn giữ.\n\nGiả Hủ chỉ xuống dòng nước xiết: \"Chúa Công, nếu ta đắp đập ngăn sông bảy ngày, đợi lũ thượng nguồn dâng cao rồi bất thần xả đập, toàn bộ chiến xa và thành lũy của Địch Hỏa sẽ chìm trong biển nước. Một trận định càn khôn!\"\n\n-> flood_preparation_choice\n\n=== flood_preparation_choice ===\n# SCENE_TYPE: choice\n\n* [Nhân Nghĩa · Bí mật di tản dân lành hạ lưu trước ba ngày: \"Muốn thắng giặc nhưng không giẫm lên xương máu bách tính vô tội!\"]\n  ~ gold -= 3000\n  ~ affinity_trieu_van += 25\n  ~ suspicion -= 10\n  ~ unlocked_flood = true\n  Quý Bình An quả quyết: \"Ta muốn lập công, nhưng tuyệt đối không biến vạn dân vô tội thành mồi cho cá bèo! Xuất 3.000 Vàng, lệnh cho Tử Long âm thầm di dời toàn bộ thôn làng hạ lưu lên gò cao!\"\n  Triệu Vân xúc động ôm quyền: \"Chúa Công lấy đức phục nhân, Tử Long dù thức trắng ba đêm cũng quyết hộ tống bá tánh an toàn!\"\n  # EFFECT: show_toast|[ 潮 ] MỞ KHÓA THỦY CÔNG: Xả Lũ Sông Thanh Thủy (Tầng 3 Combat)|unlock\n  # EFFECT: unlock_feature|feature_water_stratagem\n  -> chapter_35_complete\n\n* [Bá Đạo · Bất ngờ xả lũ ngay trong đêm mưa bão: \"Binh quý thần tốc! Đập vỡ thác tràn, hủy diệt toàn bộ chiến xa của địch!\"]\n  ~ suspicion += 20\n  ~ affinity_gia_hu += 20\n  ~ unlocked_flood = true\n  \"Địch Hỏa quỷ quyệt, nếu sơ hở ắt mất đại cục. Khóa chặt mọi ngả đường, đúng giờ Tý phá đập!\"\n  # EFFECT: show_toast|[ 潮 ] MỞ KHÓA THỦY CÔNG: Bạo Lũ Phá Đập (Sát Thương Chí Mạng)|unlock\n  # EFFECT: unlock_feature|feature_water_stratagem\n  -> chapter_35_complete\n\n=== chapter_35_complete ===\nBố trí tử sĩ canh giữ van xả lũ thượng nguồn, chờ thời khắc quyết chiến phát lệnh công thành!\n\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 35: Đại Kế Thủy Công Dòng Thanh Thủy|milestone\n# EFFECT: chapter_complete|35\n\n-> chapter_43_transition\n\n// ============================================================\n// CHƯƠNG 43: VẠN THẠCH QUÂN LƯƠNG TIỀN TUYẾN\n// ============================================================\n\n=== chapter_43_transition ===\n# CHAPTER_TITLE: Hồi 9 · Chương 43: Vạn Thạch Quân Lương Tiền Tuyến\n# BACKGROUND: bg_northern_border_camp\n# MUSIC: bgm_logistics_busy\n# ACTORS: qui_binh_an|right|armored, ma_tac|left|reporting\n\n~ chapter = 43\n\nHàng trăm cỗ xe ngựa chở đầy bao tải quân lương nối đuôi nhau rầm rộ tiến vào tổng hành dinh Bắc Cương.\n\nMã Tắc cầm thẻ trúc kiểm kê, ánh mắt lộ vẻ hân hoan hiếm thấy: \"Khởi bẩm Chúa Công! Toàn bộ năm vạn hộc lương thực từ Khai Nguyên và hậu phương Liễu Châu đã vận chuyển nhập kho an toàn. Kho lương hiện tại đủ cung ứng cho mười vạn quân trong suốt một năm!\"\n\n~ rations += 50000\n~ jade += 10\n~ gold -= 2000\n~ affinity_matac += 15\n~ affinity_trieu_van += 15\n\nQuý Bình An ban thưởng rượu thịt cho toàn quân, trích năm ngàn hộc lương cứu đói cho bá tánh chạy loạn. Tiếng tung hô của vạn quân vang dội núi rừng, sĩ khí đạt mức cực hạn!\n\n# EFFECT: show_toast|[ 糧 ] QUÂN LƯƠNG ĐẠT 50.000 HỘC — Sĩ Khí Ba Quân Cực Hạn|reward\n# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 43: Vạn Thạch Quân Lương Tiền Tuyến|milestone\n# EFFECT: chapter_complete|43\n\n-> chapter_48_transition\n\n// ============================================================\n// CHƯƠNG 48-52: ĐẠI CHIẾN THANH CHÂU & KHẢI HOÀN HỒI TRIỀU\n// ============================================================\n\n=== chapter_48_transition ===\n# CHAPTER_TITLE: Hồi 10 · Chương 48-52: Khúc Tráng Ca Thanh Châu — Đại Phá Địch Hỏa\n# BACKGROUND: bg_fortress_battle\n# MUSIC: bgm_epic_final_battle\n# ACTORS: qui_binh_an|right|battle_armor, trieu_van|right|spear_ready, jia_xu|left|observing\n\n~ chapter = 48\n\nThành Thanh Châu rung chuyển dữ dội dưới làn mưa tên bốc lửa và đá tảng ném công thành. Dưới chân thành, năm vạn phản quân do dũng tướng Địch Hỏa chỉ huy dàn trận đen kịt như sóng thần. Mười cỗ Xe Đục Thành bọc thép dày ầm ầm húc thẳng vào cổng thành chính!\n\n# EFFECT: camera_shake|0.9\n# EFFECT: sfx_siege_ram_hit\n# EFFECT: screen_flash|#FFD700|600\n\nĐịch Hỏa vung thanh Bạo Liệt Đao gầm vang: \"Quý Bình An! Hôm nay ta sẽ san phẳng Thanh Châu, lấy đầu ngươi tế cờ!\"\n\nQuý Bình An đứng uy nghiêm trên đỉnh thành, áo choàng đỏ tung bay trong bão gió: \"Tướng sĩ Huyết Y Doanh! Đại quân Đại Vũ! Hôm nay là ngày định đoạt vận mệnh non sông! Giương cờ phát lệnh quyết chiến!\"\n\n# EFFECT: trigger_battle|battle_ch48_thanh_chau\n\n-> thanh_chau_epic_battle\n\n=== thanh_chau_epic_battle ===\n# BACKGROUND: bg_fortress_battle\n# MUSIC: bgm_triumph_sunrise\n# ACTORS: qui_binh_an|right|triumphant, trieu_van|right|bowing, jia_xu|left|satisfied\n\nĐúng thời khắc nguy nan, dũng sĩ Huyết Y Doanh kết trận liều chết cản phá quân địch trên mặt thành, cờ hiệu xả lũ phất lên!\n\nNước sông Thanh Thủy như ngàn con rồng cuộn trào ập xuống thung lũng, nhấn chìm toàn bộ chiến xa đục thành của địch! Triệu Tử Long tung người xuống ngựa, đơn thương độc mã xông thẳng vào vòng vây bắt sống Địch Hỏa giữa dòng nước xiết!\n\n# EFFECT: sfx_victory_fanfare\n# EFFECT: screen_flash|#FFFFFF|1000\n\nNăm vạn phản quân tan rã hoàn toàn. Chiến kỳ Đại Vũ bay ngạo nghễ trên đỉnh ải Thanh Châu!\n\n~ gold += 20000\n~ rations += 50000\n~ imperial_prestige += 2\n~ suspicion -= 15\n\nBắc Cương đại định, khói lửa tan biến! Toàn quân khải hoàn trở về kinh kỳ báo công!\n\n-> season_1_finale\n\n=== season_1_finale ===\n# BACKGROUND: bg_imperial_hall\n# MUSIC: bgm_imperial_grandeur\n# ACTORS: vu_hoang|center|impressed, qui_binh_an|right|kneeling_hero\n\nKinh đô Kim Loan Điện rợp cờ hoa gấm vóc đón mừng đoàn quân Chinh Bắc khải hoàn.\n\nVũ Hoàng đích thân rời khỏi Cửu Long Bảo Tọa, bước xuống thềm ngọc đỡ lấy hai tay Quý Bình An:\n\n\"Trẫm quả nhiên không nhìn lầm ngươi! Từ một phò mã hàn vi, ngươi đã lập nên chiến công cái thế ngút trời cho Đại Vũ triều!\"\n\n\"Truyền chỉ trẫm! Thăng phong Quý Bình An làm CHINH BẮC ĐẠI TƯỚNG QUÂN, ban kim ấn tử thụ, thống lĩnh mười vạn cấm quân!\"\n\n# EFFECT: screen_flash|#FFD700|1200\n# EFFECT: sfx_gong_ancient\n\n[THIÊN CƠ HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ! Hoàn thành toàn vẹn HỒI 1 (Chương 1 ➔ Chương 52)!\n[THIÊN CƠ HỆ THỐNG]: Mở khóa tôn hiệu: Chinh Bắc Đại Tướng Quân. Uy danh triều đình đạt Cấp 4!\n\nĐây chỉ là khởi đầu của con đường định đoạt giang sơn thiên hạ!\n\n# EFFECT: show_toast|[ 捷 ] TOÀN BỘ HỒI 1 ĐẠI KHẢI HOÀN (CHƯƠNG 1 - 52)!|triumph\n# EFFECT: chapter_complete|52\n\n-> END\n"
   },
   "meta": {
     "version": "3.0.0",
-    "hero_count": 28,
-    "card_count": 15,
+    "hero_count": 29,
+    "card_count": 17,
     "battle_count": 3,
-    "milestone_count": 9,
+    "milestone_count": 18,
     "generated_at": "2026-09-20"
   }
 };

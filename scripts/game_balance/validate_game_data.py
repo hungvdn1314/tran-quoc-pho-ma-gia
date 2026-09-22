@@ -11,6 +11,9 @@ import json
 import os
 import sys
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+
 def load_json(filepath):
     if not os.path.exists(filepath):
         print(f"[CẢNH BÁO] Không tìm thấy tệp: {filepath}")

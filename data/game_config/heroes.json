@@ -230,6 +230,77 @@
         "novel_first_appearance": 27
     },
     {
+        "id": "hero_matac",
+        "name": "Mã Tắc",
+        "aliases": [
+            "Ma Su",
+            "Mã Ấu Thường"
+        ],
+        "rarity": "SR",
+        "faction": "Quý Gia / Quý Bình An",
+        "realm": "Phàm Nhân",
+        "base_stats": {
+            "force": 50,
+            "command": 70,
+            "intelligence": 82,
+            "politics": 74,
+            "charisma": 65
+        },
+        "hp": 900,
+        "atk": 85,
+        "troop_type": "Trung Quân Binh",
+        "cost": 4.5,
+        "troop_affinity": {
+            "Trung Quân Binh": "A"
+        },
+        "equipment": [
+            {
+                "id": "eq_thuthich",
+                "name": "Thư Sinh Thiết Kiếm",
+                "type": "weapon",
+                "stat_bonus": {
+                    "force": 3
+                },
+                "description": "Binh thư thao lược."
+            }
+        ],
+        "skills": [
+            {
+                "id": "sk_binh_thu",
+                "name": "Binh Thư Giảng Luận",
+                "type": "active",
+                "mana_cost": 2,
+                "damage": 120,
+                "effects": [
+                    "Buff ally"
+                ],
+                "description": "Đàm luận thao lược binh thư, tăng sát thương cho toàn quân."
+            },
+            {
+                "id": "sk_tu_bo_thanh",
+                "name": "Tu Bổ Thành Phòng",
+                "type": "passive",
+                "effects": [
+                    "Add shield"
+                ],
+                "description": "Gia cố và tu bổ thành phòng vững chắc, tăng giáp cho thành trì."
+            }
+        ],
+        "bonds": [
+            {
+                "id": "bnd_muu_than",
+                "name": "Vạn Kim Mưu Sĩ",
+                "required_heroes": [],
+                "bonus": {
+                    "int_pct": 10.0
+                },
+                "is_active": false
+            }
+        ],
+        "summon_chapter": 17,
+        "novel_first_appearance": 17
+    },
+    {
         "id": "hero_gaoshun",
         "name": "Cao Thuận",
         "aliases": [
@@ -299,8 +370,8 @@
                 "is_active": false
             }
         ],
-        "summon_chapter": 20,
-        "novel_first_appearance": 20
+        "summon_chapter": 200,
+        "novel_first_appearance": 200
     },
     {
         "id": "hero_liru",

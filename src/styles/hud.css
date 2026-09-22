@@ -1,0 +1,651 @@
+/* ==========================================================================
+   DIEGETIC GAME HUD FRAME (KHUNG GIAO DIỆN HOÀNG TRIỀU)
+   ========================================================================== */
+.game-hud-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  pointer-events: none;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 12px 16px;
+  gap: 12px;
+}
+
+/* TOP-LEFT: NGỌC BỘI HOÀNG TRIỀU */
+.hud-corner-crest {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(135deg, rgba(24, 18, 13, 0.92) 0%, rgba(12, 9, 6, 0.96) 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.45);
+  border-radius: var(--radius-sm);
+  padding: 6px 14px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.9), inset 0 0 15px rgba(212, 175, 55, 0.08);
+  pointer-events: auto;
+  backdrop-filter: blur(8px);
+}
+
+.dynasty-seal-plate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
+}
+
+.dynasty-seal-plate:hover {
+  filter: brightness(1.15);
+}
+
+.dynasty-seal-icon {
+  width: 36px;
+  height: 36px;
+  background: #991b1b;
+  color: var(--gold-primary);
+  border: 1.5px solid var(--gold-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-seal);
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 0 10px rgba(185, 28, 28, 0.7);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.dynasty-meta {
+  display: none;
+}
+
+.dynasty-era {
+  display: none;
+}
+
+.dynasty-role {
+  display: none;
+}
+
+/* Suspicion Diegetic (Cửu Đỉnh Long Lô — Diegetic Censer) */
+.suspicion-diegetic {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: auto;
+  padding: 4px;
+  flex-shrink: 0;
+  cursor: help;
+}
+
+.suspicion-censer-icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #94a3b8;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.suspicion-censer-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Smoke Canvas (particle system draws here) */
+.suspicion-smoke-canvas {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 40px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Tier: Safe (0-30%) — faint silvery wisps */
+.suspicion-diegetic.tier-safe .suspicion-censer-icon {
+  color: #94a3b8;
+  filter: drop-shadow(0 0 4px rgba(148, 163, 184, 0.3));
+}
+
+/* Tier: Caution (31-60%) — golden smoke, pulsing */
+.suspicion-diegetic.tier-caution .suspicion-censer-icon {
+  color: #fbbf24;
+  filter: drop-shadow(0 0 10px rgba(251, 191, 36, 0.6));
+  animation: censerPulse 2s infinite ease-in-out;
+}
+
+/* Tier: Danger (61-100%) — fiery red, fast pulse, danger border */
+.suspicion-diegetic.tier-danger .suspicion-censer-icon {
+  color: #ef4444;
+  filter: drop-shadow(0 0 16px rgba(239, 68, 68, 0.8));
+  animation: censerPulse 0.8s infinite ease-in-out;
+}
+
+.suspicion-diegetic.tier-danger::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 2px solid rgba(220, 38, 38, 0.3);
+  border-radius: 6px;
+  animation: dangerPulse 1.2s infinite;
+  pointer-events: none;
+}
+
+@keyframes censerPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+@keyframes dangerPulse {
+  0%, 100% { border-color: rgba(220, 38, 38, 0.2); }
+  50% { border-color: rgba(220, 38, 38, 0.6); }
+}
+
+/* Legacy suspicion data elements — hidden in favor of diegetic smoke */
+.suspicion-data,
+.suspicion-info,
+.suspicion-pct,
+.suspicion-track,
+.suspicion-fill,
+.suspicion-desc {
+  display: none;
+}
+
+/* Treasury Ribbon (Vàng, Lương, Lệnh) */
+.hud-treasury-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.treasury-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--gold-primary);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.treasury-item .t-val {
+  font-family: var(--font-title);
+  font-weight: 900;
+  color: #fff;
+  font-size: 11px;
+}
+
+.treasury-item .t-lbl {
+  display: none;
+}
+
+/* TOP-CENTER: TRƯỚNG KỲ CHƯƠNG TIẾT */
+.hud-center-banner {
+  background: linear-gradient(180deg, #22180f 0%, #100b07 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 4px 12px 6px 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), 0 0 15px rgba(212, 175, 55, 0.15);
+  pointer-events: auto;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  transition: all 0.25s ease;
+}
+
+.hud-center-banner:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.95), 0 0 22px rgba(251, 191, 36, 0.35);
+  transform: translateY(2px);
+}
+
+.banner-chapter {
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: var(--gold-primary);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.banner-title {
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+}
+
+.banner-progress-cord {
+  display: none;
+}
+
+.cord-fill {
+  display: none;
+}
+
+/* TOP-RIGHT: ẤN GIÁM HỆ THỐNG & KỲ MÔN BÀN XOAY */
+.hud-corner-system {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  pointer-events: auto;
+}
+
+.seal-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #261e16 0%, #110d09 100%);
+  border: 1.5px solid rgba(212, 175, 55, 0.4);
+  color: var(--gold-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.7);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.seal-btn:hover {
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 16px rgba(251, 191, 36, 0.4);
+  transform: translateY(-2px) scale(1.05);
+}
+
+.seal-char {
+  font-family: var(--font-seal);
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.seal-sub {
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--text-dim);
+  margin-top: 1px;
+}
+
+.seal-badge {
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  background: rgba(30, 20, 12, 0.95);
+  color: var(--gold-primary);
+  font-size: 8px;
+  font-weight: 900;
+  font-family: var(--font-title);
+  border-radius: 2px;
+  border: 1px solid rgba(138, 115, 75, 0.6);
+  padding: 0px 3px;
+  min-width: 14px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.seal-reset {
+  display: none;
+}
+
+/* Kỳ Môn Sa Bàn Astrolabe */
+.realm-astrolabe {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: linear-gradient(180deg, rgba(30, 23, 16, 0.95) 0%, rgba(14, 10, 7, 0.98) 100%);
+  border: 1.5px solid rgba(138, 115, 75, 0.5);
+  border-radius: 4px;
+  padding: 4px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.85), inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.astrolabe-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--text-dim);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
+}
+
+.astrolabe-glyph {
+  font-family: var(--font-seal);
+}
+
+.astrolabe-btn:hover:not(:disabled) {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.astrolabe-btn.locked-tab {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.tab-lock-tag {
+  font-size: 9px;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--gold-molten);
+  padding: 1px 5px;
+  border-radius: 4px;
+  margin-left: 4px;
+}
+
+
+/* --- HUD ADVANCED EXTENSIONS (ZERO-HUD & SA BAN 3D FRAME) --- */
+/* ==========================================================================
+   VISUAL NOVEL: ZERO-HUD CINEMATIC MODE & REALM PORTAL SEAL
+   ========================================================================== */
+/* Trong chế độ Visual Novel: Ẩn 100% Top HUD để không gian hoàn toàn điện ảnh */
+body.view-mode-vn .game-hud-frame,
+body:not(.view-mode-map):not(.view-mode-battle) .game-hud-frame {
+  display: none !important;
+}
+
+/* Ấn Triện Chuyển Cõi (Subtle Diegetic Portal Seal) — Góc trên bên phải Visual Novel */
+.vn-portal-seal {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(22, 17, 13, 0.62);
+  border: 1px solid rgba(180, 140, 88, 0.45);
+  border-radius: 4px;
+  padding: 6px 14px;
+  color: #fef3c7;
+  font-family: var(--font-title);
+  cursor: pointer;
+  opacity: 0.42;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+}
+
+.vn-portal-seal:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  border-color: var(--gold-primary);
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.45), 0 4px 16px rgba(0, 0, 0, 0.85);
+  background: rgba(36, 26, 18, 0.92);
+}
+
+.portal-seal-char {
+  width: 22px;
+  height: 22px;
+  background: var(--red-imperial);
+  color: var(--gold-primary);
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-seal);
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 0 6px rgba(185, 28, 28, 0.6);
+}
+
+.portal-seal-label {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* ==========================================================================
+   TẦNG 2 & 3: KHUNG QUÂN CƠ THƯỢNG THƯ (UNIFIED SA BÀN 3D HUD)
+   Đồng nhất UI/UX theo chất liệu gỗ gụ sẫm màu, nẹp đồng đúc và hoa văn cổ
+   ========================================================================== */
+body.view-mode-map .game-hud-frame,
+body.view-mode-battle .game-hud-frame {
+  display: flex !important;
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: auto;
+  background: transparent !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding: 12px 16px !important;
+  align-items: flex-start;
+  justify-content: space-between;
+  z-index: 50;
+  pointer-events: none;
+}
+
+/* Nẹp góc đồng đúc cổ kính của Khung Quân Cơ Thượng Thư */
+body.view-mode-map .game-hud-frame::before,
+body.view-mode-battle .game-hud-frame::before {
+  display: none !important;
+}
+
+body.view-mode-map .game-hud-frame::after,
+body.view-mode-battle .game-hud-frame::after {
+  display: none !important;
+}
+
+/* Cụm Trái: Thao Thiết Ngọc Bội & Quân Cơ Án Bản (Single Unified Diegetic Desk Plate) */
+body.view-mode-map .hud-corner-crest,
+body.view-mode-battle .hud-corner-crest {
+  display: flex !important;
+  align-items: center;
+  gap: 12px;
+  background: linear-gradient(180deg, #261b12 0%, #150e09 100%) !important;
+  border: 1.5px solid #9c7b45 !important;
+  border-top: 2px solid #c8a25c !important;
+  border-bottom: 2px solid #4a2f15 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.95), inset 0 1px 0 rgba(255, 255, 255, 0.12), inset 0 0 20px rgba(0, 0, 0, 0.8) !important;
+  padding: 5px 14px !important;
+  pointer-events: auto;
+}
+
+/* Ấn Triện Thế Lực: Không đóng hộp lồng hộp, ngồi trực tiếp trên Án Bản */
+body.view-mode-map .dynasty-seal-plate,
+body.view-mode-battle .dynasty-seal-plate {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  width: auto !important;
+  min-width: auto;
+  transition: transform 0.2s ease, filter 0.2s ease !important;
+}
+
+body.view-mode-map .dynasty-seal-plate:hover,
+body.view-mode-battle .dynasty-seal-plate:hover {
+  transform: scale(1.06) !important;
+  filter: drop-shadow(0 0 8px rgba(251, 191, 36, 0.6)) !important;
+}
+
+body.view-mode-map .dynasty-seal-icon,
+body.view-mode-battle .dynasty-seal-icon {
+  width: 36px;
+  height: 36px;
+  background: linear-gradient(135deg, #991b1b 0%, #5c1010 100%) !important;
+  color: #fef08a !important;
+  border: 1.5px solid #d4af37 !important;
+  border-radius: 3px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8), inset 0 0 6px rgba(251, 191, 36, 0.3) !important;
+}
+
+/* Cửu Đỉnh Long Lô: Tọa trên Án Bản, có vạch ngăn đồng mảnh */
+body.view-mode-map .suspicion-diegetic,
+body.view-mode-battle .suspicion-diegetic {
+  width: auto !important;
+  min-width: auto !important;
+  flex-shrink: 0 !important;
+  white-space: nowrap !important;
+  background: transparent !important;
+  border: none !important;
+  border-left: 1px solid rgba(156, 123, 69, 0.35) !important;
+  border-right: 1px solid rgba(156, 123, 69, 0.35) !important;
+  box-shadow: none !important;
+  padding: 2px 10px !important;
+}
+
+/* Khay Tài Nguyên Nội Khố: Điêu khắc trực tiếp trên Án Bản */
+body.view-mode-map .hud-treasury-ribbon,
+body.view-mode-battle .hud-treasury-ribbon {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  gap: 14px !important;
+}
+
+body.view-mode-map .treasury-item,
+body.view-mode-battle .treasury-item {
+  color: #fef3c7 !important;
+  font-size: 13px;
+  gap: 5px;
+}
+
+body.view-mode-map .treasury-item svg,
+body.view-mode-battle .treasury-item svg {
+  color: #d4af37;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.8));
+}
+
+body.view-mode-map .t-val,
+body.view-mode-battle .t-val {
+  color: #fbbf24 !important;
+  font-family: var(--font-title);
+  font-weight: 800;
+  font-size: 12px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.9);
+}
+
+/* Cụm Phải: Trướng Kỳ Mốc Chương & Bàn Xoay Chuyển Cõi */
+body.view-mode-map .hud-corner-system,
+body.view-mode-battle .hud-corner-system {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+/* Trướng Kỳ Mốc Chương (Thánh Chỉ Lụa Treo Cổ Kính) */
+body.view-mode-map .hud-center-banner,
+body.view-mode-battle .hud-center-banner {
+  background: linear-gradient(180deg, #2e1515 0%, #180a0a 100%) !important;
+  border: 1.5px solid #a37f48 !important;
+  border-top: 2px solid #d4af37 !important;
+  border-radius: 0 0 6px 6px !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.9), inset 0 0 12px rgba(0, 0, 0, 0.8) !important;
+  padding: 5px 16px 7px 16px !important;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+body.view-mode-map .hud-center-banner:hover,
+body.view-mode-battle .hud-center-banner:hover {
+  border-color: #fbbf24 !important;
+  box-shadow: 0 8px 30px rgba(251, 191, 36, 0.35), inset 0 0 16px rgba(212, 175, 55, 0.2) !important;
+  transform: translateY(2px);
+}
+
+body.view-mode-map .banner-chapter,
+body.view-mode-battle .banner-chapter {
+  font-family: var(--font-title);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #f59e0b;
+  white-space: nowrap;
+}
+
+body.view-mode-map .banner-title,
+body.view-mode-battle .banner-title {
+  font-family: var(--font-title);
+  font-size: 11px;
+  font-weight: 800;
+  color: #fff;
+  white-space: nowrap;
+  letter-spacing: 0.8px;
+}
+
+/* Bàn Xoay Chuyển Cõi: Thẻ Lệnh Đồng Khắc Chìm */
+body.view-mode-map .realm-astrolabe,
+body.view-mode-battle .realm-astrolabe {
+  background: linear-gradient(180deg, #241b12 0%, #130d08 100%) !important;
+  border: 1.5px solid #9c7b45 !important;
+  border-radius: 4px !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.9), inset 0 0 10px rgba(0, 0, 0, 0.8) !important;
+  padding: 3px !important;
+}
+
+body.view-mode-map .astrolabe-btn,
+body.view-mode-battle .astrolabe-btn {
+  width: 42px !important;
+  height: 42px !important;
+  border-radius: 3px !important;
+  border: 1px solid transparent !important;
+  color: #bfa682 !important;
+  transition: all 0.2s ease;
+}
+
+body.view-mode-map .astrolabe-btn .astrolabe-glyph,
+body.view-mode-battle .astrolabe-btn .astrolabe-glyph {
+  font-family: var(--font-seal);
+  font-size: 15px;
+  font-weight: 900;
+}
+
+body.view-mode-map .astrolabe-btn .astrolabe-tip,
+body.view-mode-battle .astrolabe-btn .astrolabe-tip {
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #c5a059;
+  margin-top: 1px;
+}
+
+body.view-mode-map .astrolabe-btn.active,
+body.view-mode-battle .astrolabe-btn.active {
+  background: linear-gradient(135deg, #8b1a1a 0%, #520e0e 100%) !important;
+  border: 1.5px solid #d4af37 !important;
+  color: #ffffff !important;
+  box-shadow: 0 0 12px rgba(220, 38, 38, 0.6), inset 0 0 8px rgba(251, 191, 36, 0.25) !important;
+}
+
+body.view-mode-map .astrolabe-btn:hover:not(.active),
+body.view-mode-battle .astrolabe-btn:hover:not(.active) {
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: #fef08a !important;
+}
+

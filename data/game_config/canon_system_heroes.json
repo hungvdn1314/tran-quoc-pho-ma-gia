@@ -1,0 +1,1418 @@
+[
+  {
+    "id": "trieu_van",
+    "name": "Triệu Vân",
+    "courtesyName": "Tử Long",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Tuyệt Thế Tiên Phong",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 1,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 85,
+      "command": 92,
+      "intelligence": 76,
+      "politics": 65
+    },
+    "weapon": {
+      "name": "Long Đảm Lượng Ngân Thương",
+      "costGold": 10000,
+      "forceBonus": 7,
+      "specialEffect": "Kích hoạt Thương Nhân Hợp Nhất (+2 Võ Lực vĩnh viễn)"
+    },
+    "skills": [
+      {
+        "name": "Bách Điểu Triều Phượng Thương",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Thất Thám Bàn Xà Thương",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Dũng Giả Không Sợ",
+      "costGold": 100000,
+      "forceBonus": 12,
+      "description": "Gan góc phi thường, không sợ sinh tử. Đối mặt tuyệt cảnh tăng gấp đôi chiến lực! Phá trần võ lực lên Đế Cấp."
+    },
+    "mount": {
+      "name": "Dạ Chiếu Ngọc Sư Tử (Ngọc Lan Bạch Long Câu)",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 8,
+      "description": "Mang dòng máu Long Huyết (Long Mã), đầu sừng dài, bụng sinh vảy rồng."
+    },
+    "troopType": "Bạch Mã Nghĩa Tòng (3.000 Bạch Kỵ)",
+    "quote": "Long Đảm Nhất Xuất, Thiên Quân Vạn Mã Tẫn Đoạn Hồn!",
+    "lore": "Danh tướng đầu tiên được Quý Bình An triệu hoán từ Anh Hồn Lệnh lúc giải câu đối cứu nguy tại Đại Vũ Hoàng Cung.",
+    "hostReturnForce": 12
+  },
+  {
+    "id": "ma_tac",
+    "name": "Mã Tắc",
+    "courtesyName": "Ấu Thường",
+    "primaryClass": "Mưu Thần",
+    "role": "Quân Sư",
+    "classRoleBadge": "Mưu Thần • Tham Mưu Lược Sĩ",
+    "summonTier": "Vạn Kim",
+    "chapterSummon": 17,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 50,
+      "command": 70,
+      "intelligence": 82,
+      "politics": 74
+    },
+    "weapon": {
+      "name": "Thư Sinh Thiết Kiếm",
+      "costGold": 10000,
+      "forceBonus": 3
+    },
+    "skills": [
+      {
+        "name": "Binh Thư Giảng Luận",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Tập Kích Doanh Trại",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Cố Thủ Nhai Đình",
+      "costGold": 100000,
+      "forceBonus": 4,
+      "description": "Tăng cường khả năng bố trí doanh trại trên cao điểm, tăng sát thương tiễn trận."
+    },
+    "mount": {
+      "name": "Khoái Mã Tây Vực",
+      "costGold": 30000,
+      "percentBonus": 5,
+      "forceBonus": 2
+    },
+    "troopType": "Trung Quân Trụ Trát Binh",
+    "quote": "Ấu Thường nguyện vì chúa công mưu tính quân cơ!",
+    "lore": "Mưu sĩ Vạn Kim đầu tiên, được phái đi tiếp quản Bắc cảnh tam châu trước khi Quý Bình An xuất chinh.",
+    "hostReturnForce": 2
+  },
+  {
+    "id": "co_hu",
+    "name": "Cổ Hủ (Giả Hủ)",
+    "courtesyName": "Văn Hòa",
+    "primaryClass": "Mưu Thần",
+    "role": "Độc Sĩ",
+    "classRoleBadge": "Mưu Thần • Độc Sĩ Vô Song",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 27,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 40,
+      "command": 86,
+      "intelligence": 98,
+      "politics": 90
+    },
+    "weapon": {
+      "name": "Độc Sĩ Hắc Vũ Phiến",
+      "costGold": 10000,
+      "forceBonus": 3
+    },
+    "skills": [
+      {
+        "name": "Mưu Lợi Đoạt Tâm",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Loạn Vũ Thiên Hạ",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Toán Vô Di Sách",
+      "costGold": 100000,
+      "forceBonus": 5,
+      "description": "Bày mưu độc tuyệt đối không sai sót, địch nhân hỗn loạn mất sĩ khí, bản thân bất bại."
+    },
+    "mount": {
+      "name": "Hắc Ô Mã",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Hắc Dạ Điệp Vệ",
+    "quote": "Mưu sĩ mưu lợi, Độc Sĩ mưu thân. Kế độc nhất là kế bảo toàn tính mạng Chúa Công!",
+    "lore": "Đệ nhất Độc Sĩ Tam Quốc, được triệu hoán bằng 10 vạn kim từ tiền Thiên Kim Lâu.",
+    "hostReturnForce": 5
+  },
+  {
+    "id": "dien_vi",
+    "name": "Điển Vi",
+    "courtesyName": "Cổ Chi Ác Lai",
+    "primaryClass": "Võ Tướng",
+    "role": "Thiết Vệ",
+    "classRoleBadge": "Võ Tướng • Cổ Chi Ác Lai",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 63,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 88,
+      "command": 68,
+      "intelligence": 38,
+      "politics": 25
+    },
+    "weapon": {
+      "name": "Tấn Thiết Song Kích",
+      "costGold": 10000,
+      "forceBonus": 6,
+      "description": "Tay trái nặng 39 cân, tay phải nặng 41 cân (tổng 80 cân)."
+    },
+    "skills": [
+      {
+        "name": "Khu Hổ Quyền",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Ác Lai Bạo Kích",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Cổ Chi Ác Lai / Tử Thủ Hộ Chủ",
+      "costGold": 100000,
+      "forceBonus": 12,
+      "description": "Khi bảo vệ Chúa Công, lực chiến bùng nổ, miễn nhiễm đòn chí mạng, cản phá vạn quân."
+    },
+    "mount": {
+      "name": "Đại Uyển Mã (Hãn Huyết Bảo Mã)",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 7,
+      "description": "Tính dịu dàng ngoan ngoãn, thể lực bền bỉ vô song."
+    },
+    "troopType": "Huyết Y Doanh Trọng Giáp Hộ Vệ",
+    "quote": "Có Cổ Chi Ác Lai ở đây, đừng hòng ai chạm tới nửa sợi tóc của Chúa Công!",
+    "lore": "Mãnh tướng sức mạnh hộ vệ đệ nhất, thân hình khôi ngô dã tính phi thường.",
+    "hostReturnForce": 7
+  },
+  {
+    "id": "ly_nho",
+    "name": "Lý Nho",
+    "courtesyName": "Văn Ưu",
+    "primaryClass": "Mưu Thần",
+    "role": "Độc Kế",
+    "classRoleBadge": "Mưu Thần • Độc Kế Phụ Quốc",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 97,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 42,
+      "command": 82,
+      "intelligence": 96,
+      "politics": 91
+    },
+    "weapon": {
+      "name": "Hắc Ngọc Trượng",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Phần Thành Tuyệt Kế",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Mật Độc Đoạt Hồn",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Tuyệt Mệnh Độc Kế",
+      "costGold": 100000,
+      "forceBonus": 4,
+      "description": "Đoán trước thời cuộc, huấn luyện ngầm quân đội, thi triển mỹ nhân kế và mưu hại đối thủ triều đình."
+    },
+    "mount": {
+      "name": "Thanh Phong Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Huyết Y Doanh Ám Vệ",
+    "quote": "Văn Ưu nguyện vì bá nghiệp của Chúa Công dọn sạch mọi chông gai nơi đế đô!",
+    "lore": "Ngoan nhân từng độc sát Thiếu Đế, hỏa thiêu Lạc Dương; quân sư phụ trách huấn luyện ngầm Huyết Y Doanh.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "dieu_thuyen",
+    "name": "Điêu Thuyền",
+    "courtesyName": "Hồng Nhan",
+    "primaryClass": "Tuyệt Thế Nữ Thần",
+    "role": "Mật Thám",
+    "classRoleBadge": "Tuyệt Thế Nữ Thần • Mật Thám Chủ Quản",
+    "summonTier": "Sử Thi Tuyệt Thế Mỹ Nhân",
+    "chapterSummon": 140,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 35,
+      "command": 80,
+      "intelligence": 92,
+      "politics": 86
+    },
+    "weapon": {
+      "name": "Bế Nguyệt Song Kiếm",
+      "costGold": 10000,
+      "forceBonus": 4
+    },
+    "skills": [
+      {
+        "name": "Bế Nguyệt Vũ Khúc",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Liên Hoàn Điệp Báo",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Khuynh Quốc Khuynh Thành",
+      "costGold": 100000,
+      "forceBonus": 5,
+      "description": "Thống lĩnh mạng lưới tình báo Hồng Nhan, thu thập tin tức lục quốc, mê hoặc gián điệp địch."
+    },
+    "mount": {
+      "name": "Tuyết Lạc Bạch Câu",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Hồng Nhan Mật Thám Tiệp Báo Doanh",
+    "quote": "Gia từng nói, tỉnh chưởng quyền thiên hạ, túy ngọa mỹ nhân đùi... Nô tỳ nguyện đời đời hầu hạ Gia.",
+    "lore": "Thiên hạ đệ nhất mỹ nhân, người phụ nữ đầu tiên chính thức thuộc về Quý Bình An, trung thành tuyệt đối.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "hoa_hung",
+    "name": "Hoa Hùng",
+    "courtesyName": "Mãnh Tướng",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Quan Ngoại Mãnh Tướng",
+    "summonTier": "Vạn Kim",
+    "chapterSummon": 149,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 84,
+      "command": 78,
+      "intelligence": 45,
+      "politics": 35
+    },
+    "weapon": {
+      "name": "Trảm Mã Đại Đao",
+      "costGold": 10000,
+      "forceBonus": 5
+    },
+    "skills": [
+      {
+        "name": "Phách Sơn Đao Pháp",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Quan Tiền Uy Chấn",
+      "costGold": 100000,
+      "forceBonus": 6,
+      "description": "Tăng uy áp khi trấn giữ ải môn, trảm sát tướng lĩnh tiền tiêu."
+    },
+    "mount": {
+      "name": "Thiết Giáp Chiến Mã",
+      "costGold": 30000,
+      "percentBonus": 5,
+      "forceBonus": 4
+    },
+    "troopType": "Thiết Kỵ Trảm Doanh",
+    "quote": "Chủ công an tâm, có Hoa Hùng ở đây, ai dám xông qua quan môn!",
+    "lore": "Mãnh tướng Vạn Kim thân hình cao lớn, cùng Khúc Nghĩa làm hộ vệ đêm trước khi rời đế đô.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "khuc_nghia",
+    "name": "Khúc Nghĩa",
+    "courtesyName": "Tiên Đăng",
+    "primaryClass": "Võ Tướng",
+    "role": "Hãm Trận",
+    "classRoleBadge": "Võ Tướng • Tiên Đăng Tử Sĩ Thống Lĩnh",
+    "summonTier": "Vạn Kim",
+    "chapterSummon": 149,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 82,
+      "command": 88,
+      "intelligence": 65,
+      "politics": 40
+    },
+    "weapon": {
+      "name": "Tiên Đăng Trọng Cung & Trường Kích",
+      "costGold": 10000,
+      "forceBonus": 5
+    },
+    "skills": [
+      {
+        "name": "Cường Nỗ Phá Trận",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Tiên Đăng Thần Dũng",
+      "costGold": 100000,
+      "forceBonus": 6,
+      "description": "Khắc chế hoàn toàn kỵ binh, lấy ít địch nhiều phá vỡ đội hình thiết kỵ."
+    },
+    "mount": {
+      "name": "Bắc Lương Chiến Câu",
+      "costGold": 30000,
+      "percentBonus": 5,
+      "forceBonus": 4
+    },
+    "troopType": "Tiên Đăng Tử Sĩ (800 Cường Nỗ Trọng Giáp)",
+    "quote": "Tiên Đăng giành trước, phá kỵ diệt trận!",
+    "lore": "Thống lĩnh Tiên Đăng Tử Sĩ lừng danh trận Giới Kiều, phá 20 vạn quân Công Tôn Toản.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "truong_lieu",
+    "name": "Trương Liêu",
+    "courtesyName": "Văn Viễn",
+    "primaryClass": "Võ Tướng",
+    "role": "Thống Soái",
+    "classRoleBadge": "Võ Tướng • Trời Sinh Thống Soái",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 150,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 80,
+      "command": 96,
+      "intelligence": 84,
+      "politics": 72
+    },
+    "weapon": {
+      "name": "Nguyệt Nha Kích",
+      "costGold": 10000,
+      "forceBonus": 7,
+      "specialEffect": "Mở khóa vũ khí thứ hai Vấn Thiên Đao (+3 Võ Lực)"
+    },
+    "skills": [
+      {
+        "name": "Nguyệt Nha Kích Pháp",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Hoành Tảo Bát Phương",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Huyết Chiến Thiên Lý",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Thống Ngự Chi Tài",
+      "costGold": 100000,
+      "forceBonus": 10,
+      "description": "Tướng sĩ dưới trướng chiến lực +30%, không sợ sinh tử, tuyệt đối phục tùng mệnh lệnh."
+    },
+    "mount": {
+      "name": "Bóng Xám (Hôi Ảnh) / Lô Mã",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 6,
+      "description": "Phụ Vấn Thiên, vượt Bóng Xám, uy chấn bến Tiêu Diêu."
+    },
+    "troopType": "Tiêu Diêu Tân Tinh Kỵ (800 Phá Vạn)",
+    "quote": "Trương Văn Viễn ở đây! Giang Đông tiểu nhi dạ bất cảm đề!",
+    "lore": "Cổ kim 64 danh tướng, trời sinh thống soái, trăm kế Trương Liêu được Quý Bình An triệu hoán bằng 10 vạn kim.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "cao_thuan",
+    "name": "Cao Thuận",
+    "courtesyName": "Hãm Trận",
+    "primaryClass": "Võ Tướng",
+    "role": "Hãm Trận",
+    "classRoleBadge": "Võ Tướng • Hãm Trận Doanh Chủ",
+    "summonTier": "Vạn Kim",
+    "chapterSummon": 200,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 78,
+      "command": 90,
+      "intelligence": 68,
+      "politics": 45
+    },
+    "weapon": {
+      "name": "Hãm Trận Trọng Khiên & Đại Mâu",
+      "costGold": 10000,
+      "forceBonus": 5
+    },
+    "skills": [
+      {
+        "name": "Hãm Trận Trọng Kích",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Bất Động Trận Đồ",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Hãm Trận Chi Chí",
+      "costGold": 100000,
+      "forceBonus": 8,
+      "description": "Hãm Trận chi chí, hữu tử vô sinh! Toàn quân giảm 50% sát thương nhận vào, thiết giáp cối xay thịt."
+    },
+    "mount": {
+      "name": "Hắc Giáp Trọng Kỵ Mã",
+      "costGold": 30000,
+      "percentBonus": 5,
+      "forceBonus": 4
+    },
+    "troopType": "Hãm Trận Doanh (1.200 Trọng Giáp Tử Sĩ)",
+    "quote": "Hãm Trận chi chí, hữu tử vô sinh! Xông pha không lùi!",
+    "lore": "Người sáng lập chi bộ đội đặc chủng đệ nhất Hoa Hạ, quân lệnh như sơn, thương lính như con.",
+    "hostReturnForce": 5
+  },
+  {
+    "id": "tuan_uc",
+    "name": "Tuân Úc",
+    "courtesyName": "Văn Nhược",
+    "primaryClass": "Năng Thần",
+    "role": "Nội Chính",
+    "classRoleBadge": "Tuyệt Thế Năng Thần • Vương Tá Chi Tài",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 201,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 38,
+      "command": 85,
+      "intelligence": 96,
+      "politics": 99
+    },
+    "weapon": {
+      "name": "Vương Tá Trầm Hương Trượng",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Điều Hòa Lương Thảo",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "An Dân Trị Quốc",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Vương Tá Hộ Quốc",
+      "costGold": 100000,
+      "forceBonus": 4,
+      "description": "Quản lý kinh tế nội chính hoàn mỹ, sản lượng vàng và lương tăng 50%, hậu cần vô tận."
+    },
+    "mount": {
+      "name": "Bạch Mã Thanh Kiệu",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Đại Hán Hộ Quốc Vệ",
+    "quote": "Tuân Văn Nhược nguyện vì Chúa Công dốc lòng trị an thiên hạ!",
+    "lore": "Vương tá chi tài đứng đầu hàng văn thần nội chính của Tào Tháo, rường cột phát triển lãnh địa cho Quý Bình An.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "chu_du",
+    "name": "Chu Du",
+    "courtesyName": "Công Cẩn",
+    "primaryClass": "Võ Tướng",
+    "role": "Thống Soái",
+    "classRoleBadge": "Võ Tướng • Đại Đô Đốc Thống Soái",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 219,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 76,
+      "command": 98,
+      "intelligence": 96,
+      "politics": 88
+    },
+    "weapon": {
+      "name": "Cổ Đĩnh Kiếm",
+      "costGold": 10000,
+      "forceBonus": 6
+    },
+    "skills": [
+      {
+        "name": "Đàm Tiếu Can Qua",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Hỏa Vũ Thủy Thiên",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Hỏa Thiêu Xích Bích",
+      "costGold": 100000,
+      "forceBonus": 10,
+      "description": "Chỉ huy thủy lục tam quân, phóng hỏa thiêu rụi chiến thuyền và đại quân đối phương."
+    },
+    "mount": {
+      "name": "Bạch Lãng Câu",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 5
+    },
+    "troopType": "Giang Đông Lâu Thuyền Thủy Quân",
+    "quote": "Hỏa thiêu Xích Bích, đàm tiếu gian can qua giai tẫn!",
+    "lore": "Đại Đô Đốc Đông Ngô khôi ngô tuấn tú, kỳ tài thao lược quân sự thủy bộ.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "hoang_trung",
+    "name": "Hoàng Trung",
+    "courtesyName": "Hán Thăng",
+    "primaryClass": "Võ Tướng",
+    "role": "Thần Xạ",
+    "classRoleBadge": "Võ Tướng • Tuyệt Thế Thần Xạ",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 220,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 86,
+      "command": 89,
+      "intelligence": 65,
+      "politics": 52
+    },
+    "weapon": {
+      "name": "Bát Bảo Kỳ Lân Cung & Xích Huyết Đao",
+      "costGold": 10000,
+      "forceBonus": 7
+    },
+    "skills": [
+      {
+        "name": "Bách Bộ Xuyên Dương",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Kỳ Lân Xạ Nguyệt",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Càng Già Càng Dẻo Dai (Lão Đương Ích Tráng)",
+      "costGold": 100000,
+      "forceBonus": 15,
+      "description": "Từ 30 tuổi mỗi năm +1 võ lực, từ 50 tuổi mỗi năm +2 võ lực, tuổi tác càng cao võ lực càng khủng khiếp vượt 140!"
+    },
+    "mount": {
+      "name": "Liêu Nguyên Hỏa",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 7
+    },
+    "troopType": "Thần Xạ Cung Nỗ Doanh",
+    "quote": "Lão tướng Hoàng Hán Thăng giương cung chưa từng trượt phát nào!",
+    "lore": "Thần xạ thủ lừng danh trảm Hạ Hầu Uyên tại Định Quân Sơn, đặc thù thiên phú tăng võ lực theo tuổi tác độc nhất vô nhị.",
+    "hostReturnForce": 8
+  },
+  {
+    "id": "hi_chi_tai",
+    "name": "Hí Chí Tài",
+    "courtesyName": "Chí Tài",
+    "primaryClass": "Mưu Thần",
+    "role": "Quân Sư",
+    "classRoleBadge": "Mưu Thần • Tuệ Nhãn Kỳ Tài",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 288,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 36,
+      "command": 80,
+      "intelligence": 95,
+      "politics": 86
+    },
+    "weapon": {
+      "name": "Tuệ Mộc Trượng",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Minh Sát Thu Hào",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Biết Nhìn Người (Độc Tâm Tuệ Nhãn)",
+      "costGold": 100000,
+      "forceBonus": 4,
+      "description": "Khi thấu hiểu 75% đối phương liền nhìn thấu mọi tâm cơ và bố trận của địch nhân."
+    },
+    "mount": {
+      "name": "Hắc Phong Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Quân Cơ Mật Sĩ",
+    "quote": "Tuệ nhãn nhìn thấu lòng người, mưu tính không kẽ hở.",
+    "lore": "Mưu sĩ kỳ tài thời đầu của Tào Tháo trước khi Quách Gia xuất thế.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "ma_sieu",
+    "name": "Mã Siêu",
+    "courtesyName": "Mạnh Khởi (Cẩm Mã Siêu)",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Tây Lương Thần Kỵ",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 350,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 87,
+      "command": 88,
+      "intelligence": 58,
+      "politics": 42
+    },
+    "weapon": {
+      "name": "Hổ Đầu Trạm Kim Thương",
+      "costGold": 10000,
+      "forceBonus": 7
+    },
+    "skills": [
+      {
+        "name": "Tây Lương Thương Pháp",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Đột Khởi Phong Lôi",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Sát Thần Tây Lương",
+      "costGold": 100000,
+      "forceBonus": 12,
+      "description": "Tây Lương kỵ binh xung phong tăng gấp đôi tốc độ, uy áp khiến kẻ địch cắt râu vứt áo tháo chạy."
+    },
+    "mount": {
+      "name": "Lý Tuyết Bác Hoa (Bạch Long Câu)",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 8,
+      "description": "Ngựa trắng như tuyết, chạy như bay trên băng tuyết Tây Lương."
+    },
+    "troopType": "Thiết Kỵ Tây Lương (10.000 Thiết Kỵ)",
+    "quote": "Tây Lương Cẩm Mã Siêu ở đây, ai dám quyết tử chiến?!",
+    "lore": "Thống lĩnh Thiết Kỵ Tây Lương tung hoành thiên hạ, từng truy sát Tào Tháo.",
+    "hostReturnForce": 8
+  },
+  {
+    "id": "hoa_da",
+    "name": "Hoa Đà",
+    "courtesyName": "Nguyên Hóa",
+    "primaryClass": "Kỳ Nhân Dị Sĩ",
+    "role": "Thần Y",
+    "classRoleBadge": "Kỳ Nhân Dị Sĩ • Tuyệt Thế Thần Y",
+    "summonTier": "Đặc Thù Loại Tuyệt Thế",
+    "chapterSummon": 361,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 40,
+      "command": 60,
+      "intelligence": 96,
+      "politics": 80
+    },
+    "weapon": {
+      "name": "Thanh Nang Thần Châm & Đao Mổ",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Ma Phí Tán",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Thần Y Khởi Tử Hồi Sinh",
+      "costGold": 100000,
+      "forceBonus": 5,
+      "description": "Chữa lành mọi trọng thương cho tướng sĩ, giảm 90% tổn thất binh lực sau đại chiến."
+    },
+    "mount": {
+      "name": "Thanh Ngưu Tiên Thú",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Cứu Thương Quân Y Doanh",
+    "quote": "Bàn tay vàng cứu nhân độ thế, hồi sinh vạn quân.",
+    "lore": "Thần y lừng danh Hoa Hạ, sáng tạo Ma Phí Tán và Ngũ Cầm Hí.",
+    "hostReturnForce": 4
+  },
+  {
+    "id": "quach_gia",
+    "name": "Quách Gia",
+    "courtesyName": "Phụng Hiếu",
+    "primaryClass": "Mưu Thần",
+    "role": "Thiên Mệnh Quỷ Tài",
+    "classRoleBadge": "Mưu Thần • Thiên Mệnh Nghịch Cải",
+    "summonTier": "Thiên Mệnh Mưu Thần (50 Vạn Kim)",
+    "chapterSummon": 382,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 35,
+      "command": 90,
+      "intelligence": 100,
+      "politics": 95
+    },
+    "weapon": {
+      "name": "Quỷ Tài Huyền Thiên Phiến",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Thập Thắng Thập Bại Luận",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Di Kế Định Liêu Đông",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Thiên Mệnh Nghịch Cải (Quỷ Tài Thần Toán)",
+      "costGold": 100000,
+      "forceBonus": 6,
+      "description": "Thân phụ thiên mệnh, phá giải phong thủy và trận pháp, liệu việc như thần, định đoạt đại cục."
+    },
+    "mount": {
+      "name": "Ngọc Phong Câu",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Thiên Mệnh Thần Cơ Vệ",
+    "quote": "Trời sinh Quách Phụng Hiếu, quỷ tài định càn khôn!",
+    "lore": "Đệ nhất thiên tài yểu mệnh được hồi sinh dưới thân phận Thiên Mệnh Mưu Thần (Nghịch thiên cải mệnh).",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "hac_chieu",
+    "name": "Hác Chiêu",
+    "courtesyName": "Bá Đạo",
+    "primaryClass": "Võ Tướng",
+    "role": "Hộ Vệ",
+    "classRoleBadge": "Võ Tướng • Thủ Thành Thần Tướng",
+    "summonTier": "50 Ngàn Kim",
+    "chapterSummon": 409,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 82,
+      "command": 94,
+      "intelligence": 78,
+      "politics": 60
+    },
+    "weapon": {
+      "name": "Cố Thành Đại Thương",
+      "costGold": 10000,
+      "forceBonus": 5
+    },
+    "skills": [
+      {
+        "name": "Kim Thành Thang Trì",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Tuyệt Đối Cố Thủ",
+      "costGold": 100000,
+      "forceBonus": 8,
+      "description": "Thủ thành lực tăng 100%, ngăn chặn địch đông gấp chục lần vây công suốt nhiều tháng."
+    },
+    "mount": {
+      "name": "Thiết Kỵ Trụ",
+      "costGold": 30000,
+      "percentBonus": 5,
+      "forceBonus": 4
+    },
+    "troopType": "Thủ Thành Cự Nỗ Doanh",
+    "quote": "Có Hác Chiêu ở đây, thành trì quyết không thể phá!",
+    "lore": "Thần tướng phòng ngự từng dùng 1.000 quân cản phá 10 vạn quân Gia Cát Lượng tại Trần Thương.",
+    "hostReturnForce": 5
+  },
+  {
+    "id": "truong_phi",
+    "name": "Trương Phi",
+    "courtesyName": "Dực Đức",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Vạn Nhân Địch",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 443,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 89,
+      "command": 86,
+      "intelligence": 52,
+      "politics": 35
+    },
+    "weapon": {
+      "name": "Trượng Bát Xà Mâu",
+      "costGold": 10000,
+      "forceBonus": 7
+    },
+    "skills": [
+      {
+        "name": "Xà Mâu Bạo Kích",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Trường Bản Lôi Hống",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Trường Bản Nhất Hống (Vạn Nhân Địch)",
+      "costGold": 100000,
+      "forceBonus": 12,
+      "description": "Tiếng thét làm vỡ mật kẻ địch, đảo ngược dòng nước, phá vỡ dũng khí đối phương."
+    },
+    "mount": {
+      "name": "Ô Chức Mã (Vương Truy)",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 8
+    },
+    "troopType": "U Châu Đột Kỵ",
+    "quote": "Ta là Yên Nhân Trương Dực Đức! Ai dám cùng ta quyết tử chiến?!",
+    "lore": "Vạn nhân địch mãnh tướng, một tiếng thét đoạn cầu Trường Bản.",
+    "hostReturnForce": 8
+  },
+  {
+    "id": "hua_chu",
+    "name": "Hứa Chử",
+    "courtesyName": "Trọng Khang (Hổ Si)",
+    "primaryClass": "Võ Tướng",
+    "role": "Thiết Vệ",
+    "classRoleBadge": "Võ Tướng • Hổ Si Thiết Vệ",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 554,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 88,
+      "command": 72,
+      "intelligence": 40,
+      "politics": 28
+    },
+    "weapon": {
+      "name": "Cửu Hợp Đại Đao",
+      "costGold": 10000,
+      "forceBonus": 6
+    },
+    "skills": [
+      {
+        "name": "Kéo Trâu Đổi Ngựa",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Hổ Si Cuồng Bạo",
+      "costGold": 100000,
+      "forceBonus": 11,
+      "description": "Cởi giáp đực đấu, chiến lực tăng cuồng bạo, miễn nhiễm giảm công kích."
+    },
+    "mount": {
+      "name": "Đại Hổ Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 7
+    },
+    "troopType": "Hổ Vệ Quân",
+    "quote": "Hổ Si Hứa Chử liều mạng bảo vệ Chúa Công!",
+    "lore": "Hổ tướng cận vệ của Tào Tháo, từng tay không kéo đuôi trâu ngược dòng.",
+    "hostReturnForce": 7
+  },
+  {
+    "id": "cam_ninh",
+    "name": "Cam Ninh",
+    "courtesyName": "Hưng Bá",
+    "primaryClass": "Võ Tướng",
+    "role": "Thủy Quân",
+    "classRoleBadge": "Võ Tướng • Cẩm Phàm Thủy Bá",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 555,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 86,
+      "command": 88,
+      "intelligence": 72,
+      "politics": 45
+    },
+    "weapon": {
+      "name": "Bá Vương Song Kích & Cẩm Phàm Linh Đao",
+      "costGold": 10000,
+      "forceBonus": 6
+    },
+    "skills": [
+      {
+        "name": "Bách Kỵ Kiếp Doanh",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Bách Kỵ Kiếp Ngụy Doanh",
+      "costGold": 100000,
+      "forceBonus": 10,
+      "description": "Ban đêm tập kích doanh trại địch, không tổn thất một người, làm kinh hoàng toàn quân địch."
+    },
+    "mount": {
+      "name": "Phi Yến Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 6
+    },
+    "troopType": "Cẩm Phàm Thủy Quân",
+    "quote": "Đeo chuông giong buồm gấm, trăm kỵ cướp trại Tào!",
+    "lore": "Đại tướng dũng liệt Đông Ngô, chiến công trăm kỵ cướp trại Ngụy lừng danh sử sách.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "quan_vu",
+    "name": "Quan Vũ",
+    "courtesyName": "Vân Trường",
+    "primaryClass": "Võ Tướng",
+    "role": "Thiên Mệnh Võ Thánh",
+    "classRoleBadge": "Võ Tướng • Thiên Mệnh Võ Thánh",
+    "summonTier": "Thiên Mệnh Võ Tướng (50 Vạn Kim)",
+    "chapterSummon": 598,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 92,
+      "command": 96,
+      "intelligence": 80,
+      "politics": 65
+    },
+    "weapon": {
+      "name": "Thanh Long Yển Nguyệt Đao (82 Cân)",
+      "costGold": 10000,
+      "forceBonus": 8,
+      "specialEffect": "Trảm tướng đoạt kỳ (+3 Võ Lực khi đối đầu chủ tướng địch)"
+    },
+    "skills": [
+      {
+        "name": "Thanh Long Trảm",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Yển Nguyệt Bạt Đao Trảm",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Dâng Nước Ngập Bảy Quân",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Uy Chấn Hoa Hạ (Võ Thánh Thiên Mệnh)",
+      "costGold": 100000,
+      "forceBonus": 14,
+      "description": "Khí phách Võ Thánh áp chế toàn bộ chiến trường, đòn đầu tiên có xác suất trảm sát ngay tướng địch."
+    },
+    "mount": {
+      "name": "Xích Thố Mã (Bản Mệnh Lương Câu)",
+      "costGold": 50000,
+      "percentBonus": 10,
+      "forceBonus": 10,
+      "description": "Ngựa đỏ như lửa, vượt núi lội nước như đi trên đất bằng."
+    },
+    "troopType": "Kinh Châu Hiệu Đao Thủ",
+    "quote": "Quan Vân Trường trảm Nhan Lương Văn Xú như thò tay vào túi lấy đồ!",
+    "lore": "Thiên Mệnh Võ Thánh đứng đầu Ngũ Hổ Tướng, được triệu hoán với chi phí 500 ngàn kim.",
+    "hostReturnForce": 14
+  },
+  {
+    "id": "gia_cat_luong",
+    "name": "Gia Cát Lượng",
+    "courtesyName": "Khổng Minh (Ngọa Long)",
+    "primaryClass": "Mưu Thần",
+    "role": "Thiên Mệnh Thần Cơ",
+    "classRoleBadge": "Mưu Thần • Thiên Mệnh Ngọa Long",
+    "summonTier": "Thiên Mệnh Mưu Thần (50 Vạn Kim)",
+    "chapterSummon": 725,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 38,
+      "command": 98,
+      "intelligence": 100,
+      "politics": 100
+    },
+    "weapon": {
+      "name": "Bạch Hạc Vũ Phiến",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Bát Trận Đồ",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Mượn Gió Đông",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Thiên Mệnh Thuận Hành (Thần Cơ Diệu Toán)",
+      "costGold": 100000,
+      "forceBonus": 6,
+      "description": "Bát Trận Đồ vây nhốt trăm vạn quân, cải tạo cơ quan trâu gỗ ngựa máy, kinh tế quốc lực đỉnh phong."
+    },
+    "mount": {
+      "name": "Tứ Lôn Xa",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Gia Cát Liên Nỗ Binh",
+    "quote": "Cúc cung tận tụy, đến chết mới thôi!",
+    "lore": "Ngọa Long Tiên Sinh đệ nhất thừa tướng muôn đời tôn kính, thân phụ thiên mệnh thuận hành.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "bang_duc",
+    "name": "Bàng Đức",
+    "courtesyName": "Lệnh Minh",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Khiêng Hòm Quyết Tử",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 730,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 87,
+      "command": 84,
+      "intelligence": 60,
+      "politics": 40
+    },
+    "weapon": {
+      "name": "Trọng Cương Đại Đao",
+      "costGold": 10000,
+      "forceBonus": 6
+    },
+    "skills": [
+      {
+        "name": "Hòm Gỗ Tử Chiến",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Khiêng Hòm Trảm Tướng",
+      "costGold": 100000,
+      "forceBonus": 10,
+      "description": "Khiêng quan tài ra trận, ý chí quyết tử chiến đấu đến giọt máu cuối cùng."
+    },
+    "mount": {
+      "name": "Bạch Trạch Mã",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 6
+    },
+    "troopType": "Tây Lương Tử Sĩ",
+    "quote": "Hôm nay nếu ta không g·iết được địch, thì cái hòm này là mộ của ta!",
+    "lore": "Dũng tướng Tây Lương lừng danh khiêng hòm quyết chiến Quan Vũ.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "thai_su_tu",
+    "name": "Thái Sử Từ",
+    "courtesyName": "Tử Nghĩa",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Đông Ngô Mãnh Thần",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 785,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 88,
+      "command": 85,
+      "intelligence": 68,
+      "politics": 50
+    },
+    "weapon": {
+      "name": "Cuồng Ca Song Kích",
+      "costGold": 10000,
+      "forceBonus": 6
+    },
+    "skills": [
+      {
+        "name": "Xạ Tiễn Đoạt Kỳ",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Trượng Kiếm Lập Công",
+      "costGold": 100000,
+      "forceBonus": 10,
+      "description": "Xung phong phá trận, đơn thương độc mã đấu Tôn Sách."
+    },
+    "mount": {
+      "name": "Giang Đông Liệp Mã",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 6
+    },
+    "troopType": "Đông Ngô Cung Kích Kỵ",
+    "quote": "Đại trượng phu sinh ở đời, nên mang thước gươm lập công bất hủ!",
+    "lore": "Danh tướng trung nghĩa Đông Ngô văn võ toàn tài.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "lu_bo",
+    "name": "Lữ Bố",
+    "courtesyName": "Phụng Tiên",
+    "primaryClass": "Võ Tướng",
+    "role": "Thiên Mệnh Chiến Thần",
+    "classRoleBadge": "Võ Tướng • Vạn Thế Vô Song Chiến Thần",
+    "summonTier": "Thiên Mệnh Võ Tướng (50 Vạn Kim)",
+    "chapterSummon": 817,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 96,
+      "command": 94,
+      "intelligence": 50,
+      "politics": 30
+    },
+    "weapon": {
+      "name": "Phương Thiên Họa Kích",
+      "costGold": 10000,
+      "forceBonus": 10,
+      "specialEffect": "Bá Vương Diệt Thế (+5 Võ Lực khi quần chiến)"
+    },
+    "skills": [
+      {
+        "name": "Họa Kích Bát Thức",
+        "costGold": 1000,
+        "forceBonus": 2
+      },
+      {
+        "name": "Viên Môn Xạ Kích",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Chiến Thần Vô Song (Vô Địch Thiên Hạ)",
+      "costGold": 100000,
+      "forceBonus": 18,
+      "description": "Chiến lực trần nhà Tam Quốc, võ lực bứt phá lên 159-160 đỉnh phong, một mình đực đấu tam đại thần tướng."
+    },
+    "mount": {
+      "name": "Xích Thố Mã (Nhân Trung Lữ Bố, Mã Trung Xích Thố)",
+      "costGold": 50000,
+      "percentBonus": 10,
+      "forceBonus": 12,
+      "description": "Chiến mã vô địch thiên hạ, tốc độ và sức bật tuyệt đối."
+    },
+    "troopType": "Tinh Châu Thiết Kỵ (Thiết Kỵ Chiến Thần)",
+    "quote": "Có ta Lữ Phụng Tiên ở đây, ai dám xưng đệ nhất thiên hạ?!",
+    "lore": "Vạn thế lưu truyền chi Thiên Mệnh Võ Tướng, chiến thần võ lực trần nhà tối thượng.",
+    "hostReturnForce": 18
+  },
+  {
+    "id": "bang_thong",
+    "name": "Bàng Thống",
+    "courtesyName": "Sĩ Nguyên (Phượng Sồ)",
+    "primaryClass": "Mưu Thần",
+    "role": "Quân Sư",
+    "classRoleBadge": "Mưu Thần • Phượng Sồ Niết Bàn",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 824,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 38,
+      "command": 88,
+      "intelligence": 98,
+      "politics": 90
+    },
+    "weapon": {
+      "name": "Phượng Vũ Cầm",
+      "costGold": 10000,
+      "forceBonus": 2
+    },
+    "skills": [
+      {
+        "name": "Liên Hoàn Kế",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Phượng Hoàng Niết Bàn",
+      "costGold": 100000,
+      "forceBonus": 5,
+      "description": "Kích hoạt thiên phú Phượng Hoàng Niết Bàn, khi ngã xuống có thể niết bàn trùng sinh!"
+    },
+    "mount": {
+      "name": "Bạch Hạc Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 3
+    },
+    "troopType": "Liên Hoàn Mưu Sĩ Vệ",
+    "quote": "Ngọa Long Phượng Sồ, được một trong hai có thể an thiên hạ!",
+    "lore": "Phượng Sồ tiên sinh hiến liên hoàn kế tại Xích Bích, sở hữu thiên phú Niết Bàn trùng sinh.",
+    "hostReturnForce": 5
+  },
+  {
+    "id": "tu_ma_y",
+    "name": "Tư Mã Ý",
+    "courtesyName": "Trọng Đạt (Trủng Hổ)",
+    "primaryClass": "Mưu Thần",
+    "role": "Thiên Mệnh Trủng Hổ",
+    "classRoleBadge": "Mưu Thần • Thiên Mệnh Tụ Về",
+    "summonTier": "Thiên Mệnh Mưu Thần (50 Vạn Kim)",
+    "chapterSummon": 885,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 52,
+      "command": 98,
+      "intelligence": 99,
+      "politics": 98
+    },
+    "weapon": {
+      "name": "Ưng Thị Lang Kiếm",
+      "costGold": 10000,
+      "forceBonus": 3
+    },
+    "skills": [
+      {
+        "name": "Nhẫn Nhục Chờ Thời",
+        "costGold": 1000,
+        "forceBonus": 1
+      },
+      {
+        "name": "Trủng Hổ Thao Lược",
+        "costGold": 1000,
+        "forceBonus": 1
+      }
+    ],
+    "specialTalent": {
+      "name": "Thiên Mệnh Tụ Về (Ưng Thị Lang Cố)",
+      "costGold": 100000,
+      "forceBonus": 6,
+      "description": "Ưng thị lang cố, tề tụ ba vị thiên mệnh mưu thần độc chiếm một phần khí vận trời đất."
+    },
+    "mount": {
+      "name": "Hắc Lang Kỵ",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 4
+    },
+    "troopType": "Trủng Hổ Tinh Nhuệ Thần Vệ",
+    "quote": "Ta vung kiếm chỉ một lần, nhưng đã mài kiếm suốt mấy chục năm!",
+    "lore": "Trủng Hổ Tư Mã Ý, thiên mệnh mưu thần thứ ba hoàn thiện bộ ba Thiên Mệnh Mưu Thần cùng Quách Gia và Gia Cát Lượng.",
+    "hostReturnForce": 6
+  },
+  {
+    "id": "van_uong",
+    "name": "Văn Ương",
+    "courtesyName": "Thứ Khiên",
+    "primaryClass": "Võ Tướng",
+    "role": "Tiên Phong",
+    "classRoleBadge": "Võ Tướng • Tiểu Triệu Vân Mãnh Tướng",
+    "summonTier": "10 Vạn Kim",
+    "chapterSummon": 1089,
+    "loyalty": 100,
+    "baseStats": {
+      "force": 89,
+      "command": 82,
+      "intelligence": 60,
+      "politics": 38
+    },
+    "weapon": {
+      "name": "Điểm Cương Thương & Trọng Thiết Tiết",
+      "costGold": 10000,
+      "forceBonus": 7
+    },
+    "skills": [
+      {
+        "name": "Đột Phá Trùng Vây",
+        "costGold": 1000,
+        "forceBonus": 2
+      }
+    ],
+    "specialTalent": {
+      "name": "Đơn Kỵ Thoái Binh",
+      "costGold": 100000,
+      "forceBonus": 12,
+      "description": "Một ngựa xông pha giết lùi ngàn quân truy kích, dũng khí sánh ngang Triệu Tử Long."
+    },
+    "mount": {
+      "name": "Phi Hồng Mã",
+      "costGold": 50000,
+      "percentBonus": 7,
+      "forceBonus": 7
+    },
+    "troopType": "Đột Khích Tiên Phong Doanh",
+    "quote": "Một kích một thương, quét sạch quân thù!",
+    "lore": "Mãnh tướng hậu Tam Quốc được xưng tụng là Tiểu Triệu Vân, đơn thương độc mã làm khiếp sợ toàn quân Tư Mã.",
+    "hostReturnForce": 8
+  }
+]

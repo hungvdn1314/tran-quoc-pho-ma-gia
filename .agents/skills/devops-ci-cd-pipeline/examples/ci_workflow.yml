@@ -1,0 +1,30 @@
+name: CI Quality Gate
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Python Tools
+        run: pip install pydantic networkx pillow numpy
+
+      - name: Validate Game Data
+        run: python scripts/game_balance/validate_game_data.py
+
+      - name: Validate Ink Narrative
+        run: python scripts/narrative_validator.py
+
+      - name: Headless Combat Simulation
+        run: python scripts/combat_headless_sim.py

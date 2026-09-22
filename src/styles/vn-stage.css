@@ -1,0 +1,699 @@
+/* ==========================================================================
+   TẦNG 1: VISUAL NOVEL THEATER
+   ========================================================================== */
+.view-vn {
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.view-vn button,
+.view-vn .vn-quick-ribbon,
+.view-vn .vn-portal-seal,
+.view-vn .choice-btn,
+.view-vn .vn-dialogue-panel {
+  cursor: pointer;
+}
+
+.vn-stage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: #080a0d;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+/* Dual Background Layers for Silky Smooth Cross-Fades */
+.vn-bg-layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.vn-bg-layer.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.vn-ambient-fx {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.rain-canvas {
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cline x1='0' y1='0' x2='15' y2='80' stroke='rgba(255,255,255,0.06)' stroke-width='1'/%3E%3C/svg%3E");
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+.ambient-rain .rain-canvas {
+  opacity: 0.85;
+}
+
+.lightning-flash {
+  position: absolute;
+  inset: 0;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+.lightning-flash.flash-anim {
+  opacity: 0.35;
+}
+
+.vignette-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+/* Scoped Screen Shake (Subtle Tension vs Real Physical Impact) */
+.shake-subtle {
+  animation: shakeSubtleFx 0.18s cubic-bezier(0.25, 1, 0.5, 1) both;
+}
+
+@keyframes shakeSubtleFx {
+  0%, 100% { transform: translate3d(0, 0, 0); }
+  25% { transform: translate3d(-2px, 1px, 0); }
+  75% { transform: translate3d(2px, -1px, 0); }
+}
+
+.shake-impact {
+  animation: shakeImpactFx 0.35s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+@keyframes shakeImpactFx {
+  10%, 90% { transform: translate3d(-3px, 2px, 0); }
+  20%, 80% { transform: translate3d(4px, -3px, 0); }
+  30%, 50%, 70% { transform: translate3d(-5px, 3px, 0); }
+  40%, 60% { transform: translate3d(5px, -2px, 0); }
+  100% { transform: translate3d(0, 0, 0); }
+}
+
+/* ==========================================================================
+   TẦNG 1: CANVAS SHADERS & DIEGETIC VN THEATER
+   ========================================================================== */
+.vn-pixi-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Cast Stage: Dual Standees Anchored to Floor (Không đóng khung card) */
+.cast-stage {
+  position: absolute;
+  inset: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 100px;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.actor-slot {
+  height: 82vh;
+  max-height: 780px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform, filter, opacity;
+}
+
+/* Active Speaker: 100% Brightness, Scale 1.02, 6px subtle float */
+.actor-slot.speaking {
+  opacity: 1;
+  filter: brightness(1.02) saturate(1.08) drop-shadow(0 0 18px rgba(251, 191, 36, 0.25));
+  transform: translateY(-6px) scale(1.02);
+  z-index: 6;
+}
+
+/* Inactive Listener: Dimmed 72% Brightness, Saturation 85%, Scale 0.98 */
+.actor-slot.listening {
+  opacity: 0.72;
+  filter: brightness(0.72) saturate(0.85);
+  transform: translateY(6px) scale(0.98);
+  z-index: 5;
+}
+
+.actor-slot.hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(20px) scale(0.95);
+}
+
+.standee-wrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.standee-img {
+  max-height: 88%;
+  width: auto;
+  max-width: 440px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.5));
+  user-select: none;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.25s ease;
+}
+
+/* Realistic Ground Shadow on Palace Floor */
+.standee-floor-shadow {
+  position: absolute;
+  bottom: 8px;
+  width: 280px;
+  height: 26px;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0.3) 50%, transparent 75%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Nametag: Imperial Cinnabar Seal Plate (Handled cleanly in dialogue box) */
+.actor-nametag {
+  display: none;
+}
+
+/* ==========================================================================
+   VISUAL NOVEL DIALOGUE BOX (GỖ SƠN MÀI ĐEN NẸP CHỈ VÀNG KINTSUGI)
+   ========================================================================== */
+.vn-dialogue-panel {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  min-height: 250px;
+  background: linear-gradient(180deg, transparent 0%, rgba(5, 7, 10, 0.4) 22%, rgba(4, 5, 8, 0.92) 60%, #030406 100%);
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 36px 84px 32px 84px;
+  z-index: 25;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.25s ease;
+}
+
+.vn-dialogue-panel:hover {
+  /* Zero glowing border or layout jump */
+}
+
+/* Kintsugi Metallic Corner Brackets - Disabled for clean cinematic look */
+.vn-dialogue-panel::before,
+.vn-dialogue-panel::after {
+  display: none !important;
+}
+
+/* Speaker Plate: Diegetic Vermilion Seal & Gold Titles */
+.vn-speaker-plate {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.speaker-seal-stamp {
+  width: 22px;
+  height: 22px;
+  background: #e11d48;
+  color: #ffffff;
+  border: none;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-seal);
+  font-size: 12px;
+  font-weight: 900;
+  box-shadow: 0 2px 8px rgba(225, 29, 72, 0.5);
+}
+
+.speaker-titles {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.speaker-name {
+  font-family: var(--font-title);
+  font-size: 21px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 1.5px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.95);
+}
+
+.speaker-sub {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.65);
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Mini Quick Utility Ribbon */
+.vn-quick-ribbon {
+  position: absolute;
+  top: 36px;
+  right: 84px;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+  opacity: 0.4;
+  transition: opacity 0.2s ease;
+}
+
+.vn-quick-ribbon:hover {
+  opacity: 1;
+}
+
+.vn-ctrl-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 4px 6px;
+  font-size: 11px;
+  font-family: var(--font-title);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+  box-shadow: none;
+}
+
+.vn-ctrl-btn:hover {
+  background: transparent;
+  color: #fbbf24;
+  transform: translateY(-1px);
+}
+
+/* Dialogue Text Presentation Area */
+.dialogue-text-area {
+  min-height: 64px;
+  padding: 4px 0;
+}
+
+.dialogue-line {
+  font-family: var(--font-serif);
+  font-size: 19px;
+  line-height: 1.95;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9), 0 4px 16px rgba(0, 0, 0, 0.85);
+  user-select: text;
+}
+
+/* Footer Action Row & Pulsing Golden CTAC Glyph */
+.dialogue-action-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.branch-indicator {
+  font-size: 12px;
+  color: var(--gold-molten);
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Pulsing Golden CTAC Glyph (Thay thế cho nút bấm form to tướng) */
+.vn-ctac {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: var(--gold-primary);
+  transition: all 0.2s ease;
+}
+
+.vn-ctac:hover {
+  transform: translateX(4px);
+  color: #fff;
+}
+
+.ctac-glyph {
+  font-size: 13px;
+  animation: ctacPulse 1.4s ease-in-out infinite;
+  display: inline-block;
+  color: var(--gold-primary);
+  filter: drop-shadow(0 0 6px rgba(251, 191, 36, 0.8));
+}
+
+@keyframes ctacPulse {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50% { transform: translateY(4px); opacity: 1; filter: drop-shadow(0 0 10px rgba(251, 191, 36, 1)); }
+}
+
+.ctac-hint {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   FLOATING VN DIALOGUE CHOICES (HIỂN THỊ NỔI TRỰC TIẾP TRÊN NỀN CẢNH — ZERO BLUR)
+   Chuẩn Visual Novel thương mại cao cấp (Tsukihime / Fate / Persona)
+   ========================================================================== */
+.branch-choice-modal {
+  position: absolute;
+  bottom: 255px; /* Nằm lơ lửng ngay phía trên hộp thoại ADV, tạo khoảng cách thoáng đãng */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 760px;
+  max-width: 92vw;
+  background: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 45;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1), transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.branch-choice-modal.hidden {
+  opacity: 0;
+  transform: translateX(-50%) translateY(14px);
+  pointer-events: none;
+  display: none !important;
+}
+
+.choice-container {
+  width: 100%;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.choice-seal {
+  display: inline-flex;
+  align-items: center;
+  background: transparent !important;
+  color: #f43f5e !important;
+  border: none !important;
+  padding: 0 !important;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  box-shadow: none !important;
+  pointer-events: none;
+}
+
+.choice-question {
+  font-family: var(--font-title);
+  font-size: 14.5px;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.9);
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  margin-bottom: 4px;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  pointer-events: none;
+}
+
+.choice-subtext {
+  display: none !important;
+}
+
+.choice-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Từng thẻ lựa chọn: Phiến kính thủy mặc gạch chân mực cổ */
+.choice-card-btn {
+  pointer-events: auto;
+  width: 100%;
+  background: rgba(8, 8, 10, 0.72) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  border: none !important;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.28) !important;
+  border-radius: 0 !important;
+  padding: 14px 24px !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.7) !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.choice-card-btn::before {
+  display: none !important;
+}
+
+.choice-card-btn:hover {
+  transform: translateX(10px) !important;
+  background: linear-gradient(90deg, rgba(225, 29, 72, 0.25) 0%, rgba(10, 10, 12, 0.88) 100%) !important;
+  border-bottom-color: #f43f5e !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.85), 0 0 20px rgba(244, 63, 94, 0.35) !important;
+}
+
+.choice-left-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.choice-num-badge {
+  width: 24px;
+  height: 24px;
+  border-radius: 2px !important;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.4) !important;
+  color: #fbbf24 !important;
+  font-family: var(--font-title);
+  font-size: 13px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice-card-title {
+  font-family: var(--font-serif) !important;
+  font-size: 16px;
+  color: #ffffff;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+}
+
+.choice-right-tag {
+  font-family: var(--font-title);
+  font-size: 10px;
+  font-weight: 800;
+  color: var(--gold-primary);
+  background: rgba(245, 158, 11, 0.18);
+  border: 1px solid rgba(245, 158, 11, 0.45);
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.choice-right-tag.tag-crimson {
+  color: #fca5a5;
+  background: rgba(220, 38, 38, 0.25);
+  border-color: rgba(220, 38, 38, 0.55);
+}
+
+.choice-right-tag.tag-cyan {
+  color: #67e8f9;
+  background: rgba(6, 182, 212, 0.2);
+  border-color: rgba(6, 182, 212, 0.5);
+}
+
+.choice-right-tag.tag-emerald {
+  color: #86efac;
+  background: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.5);
+}
+
+.choice-right-tag.tag-amber {
+  color: #fde047;
+  background: rgba(234, 179, 8, 0.2);
+  border-color: rgba(234, 179, 8, 0.5);
+}
+
+/* Backlog Drawer - Imperial Chronicle Silk Scroll */
+.backlog-drawer {
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  max-width: 92vw;
+  background: linear-gradient(180deg, #10141b 0%, #080a0d 100%);
+  border: 1.5px solid var(--border-kintsugi);
+  border-radius: 6px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.95), 0 0 30px rgba(217, 119, 6, 0.15);
+  z-index: 60;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 24px;
+}
+
+.backlog-drawer.hidden { display: none; }
+
+.backlog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid rgba(217, 119, 6, 0.3);
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.backlog-title-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.backlog-seal-char {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--cinnabar-deep);
+  border: 1px solid var(--cinnabar-primary);
+  color: #fff;
+  font-family: var(--font-seal);
+  font-size: 16px;
+  border-radius: 3px;
+  box-shadow: 0 0 8px rgba(220, 38, 38, 0.4);
+}
+
+.backlog-title-text {
+  font-family: var(--font-title);
+  color: var(--gold-primary);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.backlog-drawer .scroll-close-seal {
+  background: rgba(69, 10, 10, 0.9);
+  border: 1.5px solid var(--cinnabar-primary);
+  color: #f1f5f9;
+  padding: 5px 14px;
+  border-radius: 4px;
+  font-family: var(--font-title);
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all var(--anim-fast) ease;
+}
+
+.backlog-drawer .scroll-close-seal:hover {
+  background: #dc2626;
+  color: #ffffff;
+  box-shadow: 0 0 14px rgba(220, 38, 38, 0.7);
+  transform: translateY(-1px);
+}
+
+.backlog-body {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-right: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.backlog-body::-webkit-scrollbar {
+  display: none;
+}
+
+.log-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 14px;
+  background: rgba(255, 255, 255, 0.02);
+  border-left: 2px solid rgba(217, 119, 6, 0.35);
+  border-radius: 0 4px 4px 0;
+}
+
+.log-speaker {
+  font-family: var(--font-title);
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--gold-molten);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.log-text {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+

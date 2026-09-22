@@ -7,11 +7,12 @@ import networkx as nx
 sys.stdout.reconfigure(encoding='utf-8')
 
 DATA_DIR = Path(__file__).resolve().parent.parent / "data"
-BIBLE_DIR = DATA_DIR / "game_bible"
-GRAPH_DIR = DATA_DIR / "character_graph"
 
-BIBLE_DIR.mkdir(parents=True, exist_ok=True)
-GRAPH_DIR.mkdir(parents=True, exist_ok=True)
+if __name__ == "__main__":
+    print("⚠️ [DEPRECATED] Script 'build_complete_game_bible.py' chứa dữ liệu sơ khai (22 tướng) đã lỗi thời.")
+    print("⚠️ Dữ liệu chính thức hiện tại là 'data/game_bible_v2/' (490 thực thể, 247 nhân vật) và 'data/character_graph_v2/'.")
+    print("⚠️ Vui lòng sử dụng 'scripts/merge_game_bible.py' và 'scripts/build_character_graph_v2.py'.")
+    sys.exit(0)
 
 # 1. COMPLETE HEROES ROSTER
 HEROES_ROSTER = {

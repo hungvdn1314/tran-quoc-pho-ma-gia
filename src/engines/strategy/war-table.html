@@ -1,0 +1,90 @@
+<!-- Fullscreen Three.js 3D Tactical Sand-Table Viewport -->
+        <div id="saban-threejs-container" class="saban-threejs-container"></div>
+
+        <!-- Diegetic Table Engraving Hint (Khắc chìm mép bàn gỗ cổ) -->
+        <div class="saban-table-engraving">
+          <span class="engraving-seal">密</span>
+          <span class="engraving-text">Nhấp vào Quân Tiêu Sa Bàn để thám sát quân tình & hạ chỉ xuất chinh</span>
+        </div>
+
+        <!-- Trúc Giản Quân Cơ (Diegetic Military Bamboo Slips Briefing) -->
+        <aside class="bamboo-scroll-panel" id="bamboo-scroll-panel">
+          <button class="bamboo-toggle-tab" id="btn-toggle-bamboo" title="Thu gọn / Mở rộng Trúc Giản Quân Cơ">
+            <span class="bamboo-tab-seal">卷</span>
+            <span class="bamboo-tab-lbl">Quân Cơ</span>
+          </button>
+          <div class="scroll-wood-roller top-roller"></div>
+          <div class="scroll-slips-body">
+            <div class="scroll-header">
+              <span class="scroll-seal-tag" id="panel-city-badge">TIỀN TUYẾN</span>
+              <h3 class="scroll-city-title" id="panel-city-name">THÀNH THANH CHÂU</h3>
+              <div class="scroll-threat-line" id="panel-city-threat">
+                <span>Báo Động: Quân Nam Ly đang áp sát chân thành!</span>
+              </div>
+            </div>
+
+            <div class="scroll-content">
+              <!-- Strategic Lore Brief -->
+              <div class="slip-section">
+                <div class="slip-section-title">QUÂN CƠ MẬT BÁO</div>
+                <p class="slip-text" id="panel-city-desc">
+                  Cửa ải yết hầu che chở toàn bộ 3 châu Bắc Cảnh. Giả Hủ đã bí mật đắp đê ngăn dòng thượng nguồn sông Thanh Thủy. Tường thành bền vững 500 HP trước các đợt công kích đầu tiên.
+                </p>
+              </div>
+
+              <!-- Military Numbers -->
+              <div class="slip-numbers-grid">
+                <div class="slip-num-box">
+                  <span class="sn-lbl">Thủ Binh</span>
+                  <span class="sn-val text-gold" id="panel-garrison">Triệu Vân + 1.000</span>
+                </div>
+                <div class="slip-num-box">
+                  <span class="sn-lbl">Kho Lương</span>
+                  <span class="sn-val text-green" id="panel-food">15.000 Thạch</span>
+                </div>
+                <div class="slip-num-box">
+                  <span class="sn-lbl">Đến Đế Đô</span>
+                  <span class="sn-val" id="panel-dist">3 Ngày Đường</span>
+                </div>
+                <div class="slip-num-box">
+                  <span class="sn-lbl">Thám Báo</span>
+                  <span class="sn-val text-cyan" id="panel-intel">Hồng Nhan Mật Thám</span>
+                </div>
+              </div>
+
+              <!-- Military Actions (Thao Thiết Lệnh Bài) -->
+              <div class="slip-actions-group">
+                <button class="slip-act-btn btn-enter-battle" id="btn-action-battle">
+                  <span class="act-tally-notch"></span>
+                  <span class="act-seal-char">戈</span>
+                  <div class="act-meta">
+                    <span class="act-name">Thống Lãnh Xuất Chinh</span>
+                    <span class="act-desc">Sa Trường Thẻ Bài · Không tốn Lệnh</span>
+                  </div>
+                  <span class="act-cost-badge free">XUẤT TRẬN</span>
+                </button>
+
+                <button class="slip-act-btn" id="btn-action-soap">
+                  <span class="act-tally-notch"></span>
+                  <span class="act-seal-char">商</span>
+                  <div class="act-meta">
+                    <span class="act-name">Mở Rộng Thấu Hoa Cao</span>
+                    <span class="act-desc">Kinh doanh xà phòng Bắc Cảnh</span>
+                  </div>
+                  <span class="act-cost-badge cost-ap">1 Lệnh <small>+3k Vàng</small></span>
+                </button>
+
+                <button class="slip-act-btn" id="btn-action-tribute">
+                  <span class="act-tally-notch"></span>
+                  <span class="act-seal-char">奉</span>
+                  <div class="act-meta">
+                    <span class="act-name">Cống Nạp Triều Đình</span>
+                    <span class="act-desc">Dâng biểu xoa dịu lòng ngờ vực</span>
+                  </div>
+                  <span class="act-cost-badge cost-gold">-1.5k Vàng <small>-15% Nghi Kỵ</small></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="scroll-wood-roller bottom-roller"></div>
+        </aside>

@@ -1,0 +1,245 @@
+<div class="modal-backdrop gacha-backdrop hidden" id="gacha-modal">
+    <div class="gacha-ritual-theater" id="gacha-ritual-theater">
+      <!-- Atmospheric Backdrop -->
+      <div class="gacha-altar-bg" style="background-image: url('assets/images/bg_summoning_altar.jpg');"></div>
+      <div class="gacha-altar-overlay"></div>
+      <canvas id="gacha-ember-canvas" class="gacha-ember-canvas"></canvas>
+
+      <!-- Top Diegetic Banner / Header -->
+      <header class="gacha-header-ribbon">
+        <div class="gacha-dynasty-tag">
+          <span class="gacha-seal-stamp">壇</span>
+          <div class="gacha-title-group">
+            <h2 class="gacha-main-title">BÁI TƯỚNG THẦN ĐÀN</h2>
+            <span class="gacha-sub-title">Thượng Cổ Hỗn Thiên Trận · Tế Lệnh Chiêu Mộ Anh Linh Tam Quốc</span>
+          </div>
+        </div>
+
+        <div class="gacha-header-actions">
+          <button class="gacha-header-btn" id="btn-gacha-rules" title="Quy Tắc Thiên Mệnh & Tỷ Lệ">
+            <span class="btn-glyph">卷</span>
+            <span class="btn-txt">Quy Tắc</span>
+          </button>
+          <button class="gacha-header-btn" id="btn-gacha-history" title="Thiên Mệnh Sử Ký">
+            <span class="btn-glyph">史</span>
+            <span class="btn-txt">Sử Ký</span>
+          </button>
+        </div>
+
+        <div class="gacha-currency-dock">
+          <div class="gacha-token-pill">
+            <span class="token-glyph">符</span>
+            <span class="token-label">Anh Hồn Lệnh:</span>
+            <strong class="token-val" id="gacha-ticket-display">1</strong>
+          </div>
+          <div class="gacha-token-pill">
+            <span class="token-glyph">錠</span>
+            <span class="token-label">Kim Bảo:</span>
+            <strong class="token-val" id="gacha-jade-display">0</strong>
+          </div>
+          <button class="gacha-seal-close" id="btn-close-gacha" title="Bái Biệt Thần Đàn · Quy Hồi Phò Mã Phủ">
+            <span class="close-seal-char">歸</span>
+            <span class="close-seal-txt">Quy Hồi</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Skip Button -->
+      <button class="gacha-skip-btn hidden" id="btn-gacha-skip" title="Bỏ qua hoạt cảnh tế lễ">
+        <span>BỎ QUA</span>
+        <span class="skip-arrow">⏭</span>
+      </button>
+
+      <!-- Center Altar Arena -->
+      <div class="gacha-arena" id="gacha-arena">
+        <div class="altar-smoke-censer left"></div>
+        <div class="altar-smoke-censer right"></div>
+
+        <!-- The Spinning Bagua Astrolabe Formation -->
+        <div class="bagua-formation" id="bagua-formation">
+          <div class="bagua-outer-ring" id="bagua-outer-ring">
+            <div class="trigram-rune trigram-1" title="Càn (Trời)">☰</div>
+            <div class="trigram-rune trigram-2" title="Đoài (Đầm)">☱</div>
+            <div class="trigram-rune trigram-3" title="Ly (Lửa)">☲</div>
+            <div class="trigram-rune trigram-4" title="Chấn (Sấm)">☳</div>
+            <div class="trigram-rune trigram-5" title="Tốn (Gió)">☴</div>
+            <div class="trigram-rune trigram-6" title="Khảm (Nước)">☵</div>
+            <div class="trigram-rune trigram-7" title="Cấn (Núi)">☶</div>
+            <div class="trigram-rune trigram-8" title="Khôn (Đất)">☷</div>
+          </div>
+          <div class="bagua-constellation-ring" id="bagua-constellation-ring">
+            <span class="star-node s-1">✦</span>
+            <span class="star-node s-2">✦</span>
+            <span class="star-node s-3">✦</span>
+            <span class="star-node s-4">✦</span>
+            <span class="star-node s-5">✦</span>
+            <span class="star-node s-6">✦</span>
+            <span class="star-node s-7">✦</span>
+            <span class="star-node s-8">✦</span>
+          </div>
+          <div class="bagua-inner-taiji" id="bagua-inner-taiji">
+            <div class="taiji-symbol">☯</div>
+            <div class="taiji-celestial-eye"></div>
+          </div>
+        </div>
+
+        <!-- Floating Levitating Talisman -->
+        <div class="altar-talisman-pedestal" id="altar-talisman-pedestal">
+          <div class="floating-talisman" id="summon-talisman" title="Nhấp hoặc kéo Thần Lệnh để Tế Tướng">
+            <div class="talisman-glow-core"></div>
+            <div class="talisman-dragon-crest">
+              <div class="talisman-jade-ring"></div>
+            </div>
+            <div class="talisman-body">
+              <div class="talisman-edict-seal">敕</div>
+              <div class="talisman-seal-text">英魂敕令</div>
+              <div class="talisman-sub-seal">奉天承運 · 召喚英靈</div>
+              <div class="talisman-kintsugi-vein"></div>
+            </div>
+            <div class="talisman-tassel-braid">
+              <div class="talisman-bronze-bell"></div>
+              <div class="talisman-tassel-strands"></div>
+            </div>
+          </div>
+          <p class="talisman-invocation-hint" id="talisman-hint">Nhấp vào Cửu Long Thần Lệnh hoặc Phím [Tế Lệnh] để Khởi Động Trận Đồ</p>
+        </div>
+
+        <!-- Golden Kintsugi Fractures Layer -->
+        <div class="kintsugi-fractures-layer hidden" id="kintsugi-fractures-layer">
+          <div class="kintsugi-crack crack-1"></div>
+          <div class="kintsugi-crack crack-2"></div>
+          <div class="kintsugi-crack crack-3"></div>
+          <div class="kintsugi-crack crack-4"></div>
+          <div class="kintsugi-molten-core"></div>
+        </div>
+
+        <!-- Seal Shatter Shockwave & Smoke FX -->
+        <div class="seal-shatter-fx hidden" id="seal-shatter-fx">
+          <div class="ink-burst-wave"></div>
+          <div class="golden-shockwave"></div>
+        </div>
+
+        <!-- Full-Screen Grand Splash Reveal Stage -->
+        <div class="grand-hero-reveal hidden" id="gacha-grand-reveal">
+          <div class="reveal-backdrop-glow" id="reveal-backdrop-glow"></div>
+
+          <div class="hero-splash-frame" id="hero-splash-frame">
+            <div class="frame-dragon-corner top-left"></div>
+            <div class="frame-dragon-corner top-right"></div>
+            <div class="frame-dragon-corner bottom-left"></div>
+            <div class="frame-dragon-corner bottom-right"></div>
+            <div class="golden-shimmer-sweep"></div>
+            <img src="assets/images/zhaoyun.jpg" alt="Danh Tướng" class="hero-splash-img" id="reveal-card-img">
+            <div class="hero-splash-aura" id="reveal-hero-aura"></div>
+          </div>
+
+          <div class="hero-calligraphy-banner" id="hero-calligraphy-banner">
+            <div class="hanging-scroll-dowel top"></div>
+            <div class="calligraphy-seal-badge" id="reveal-seal-badge">趙</div>
+            <h1 class="calligraphy-hero-title" id="reveal-card-name">THƯỜNG SƠN TRIỆU TỬ LONG</h1>
+            <div class="hero-appellation-sub" id="reveal-card-title">Hổ Uy Thượng Tướng · Võ Lực 96</div>
+            <div class="hanging-scroll-dowel bottom"></div>
+          </div>
+
+          <div class="reveal-rarity-dock">
+            <div class="reveal-rarity-crest" id="reveal-card-rarity">SSR · HOÀNG KIM THƯỢNG TƯỚNG</div>
+            <div class="reveal-realm-badge" id="reveal-card-realm">Cảnh giới: Hoàng Giả Cảnh Sơ Kỳ</div>
+          </div>
+
+          <div class="hero-quote-ribbon" id="hero-quote-ribbon">
+            <p class="hero-quote-text" id="reveal-quote-text">"Long Đảm Nhất Xuất, Thiên Quân Vạn Mã Tẫn Đoạn Hồn!"</p>
+            <div class="hero-quick-stats-row">
+              <span class="stat-pill"><span class="pill-seal">武</span> Võ Lực: <strong id="reveal-stat-force">96</strong></span>
+              <span class="stat-pill"><span class="pill-seal">統</span> Thống Soái: <strong id="reveal-stat-cmd">91</strong></span>
+              <span class="stat-pill"><span class="pill-seal">謀</span> Mưu Lược: <strong id="reveal-stat-int">76</strong></span>
+              <span class="stat-pill"><span class="pill-seal">軍</span> Binh Chủng: <strong id="reveal-stat-troop">Bạch Mã Nghĩa Tòng</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Altar Footer Controls -->
+      <footer class="gacha-footer-bar">
+        <div class="gacha-btn-group" id="altar-btn-row">
+          <div class="pity-astrolabe-hint">
+            <span class="pity-icon">✦</span>
+            <span class="pity-text">Thiên Mệnh Quỹ Đạo: <strong id="gacha-pity-counter">0 / 90</strong> · Kim Thần Bảo Hiểm</span>
+          </div>
+          <button class="btn-diegetic-summon" id="btn-do-summon">
+            <span class="btn-seal-stamp">祭</span>
+            <div class="btn-summon-txt">
+              <span class="summon-lead">TẾ LỆNH THỈNH TƯỚNG</span>
+              <span class="summon-cost">Tế 1 Đạo Thần Lệnh · Khởi Động Hỗn Thiên Trận</span>
+            </div>
+          </button>
+        </div>
+
+        <div class="reveal-action-dock hidden" id="reveal-action-row">
+          <button class="btn-altar-action action-inspect" id="btn-reveal-inspect">
+            <span class="btn-seal-mini">簡</span>
+            <span>BỔN MỆNH GIẢN</span>
+          </button>
+          <button class="btn-altar-action action-again" id="btn-reveal-again">
+            <span class="btn-seal-mini">祭</span>
+            <span>TIẾP TỤC TẾ LỆNH</span>
+          </button>
+          <button class="btn-altar-action action-confirm primary" id="btn-reveal-confirm">
+            <span class="btn-seal-mini">領</span>
+            <span>PHỤNG LỆNH QUY VỊ</span>
+          </button>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- Gacha Rules Modal -->
+  <div class="modal-backdrop hidden" id="gacha-rules-modal" style="z-index: 1300;">
+    <div class="memorial-scroll-dialog">
+      <header class="memorial-header">
+        <span class="memorial-seal">敕</span>
+        <h3>QUY TẮC THIÊN MỆNH & TỶ LỆ THỈNH TƯỚNG</h3>
+        <button class="scroll-close-seal" id="btn-close-gacha-rules" title="Thu Thư">
+          <span class="close-seal-char">卷</span>
+          <span class="close-seal-text">Thu Thư</span>
+        </button>
+      </header>
+      <div class="memorial-content">
+        <section class="rule-block">
+          <h4>1. Nghi Thức Thỉnh Tướng Đơn Triệu</h4>
+          <p>Mỗi lần khởi động Bái Tướng Thần Đàn tiêu hao <strong>1 Anh Hồn Lệnh</strong> hoặc <strong>160 Kim Bảo</strong> để thỉnh triệu 1 Danh Tướng Tam Quốc từ thiên ngoại hà giang.</p>
+        </section>
+        <section class="rule-block">
+          <h4>2. Bảng Xác Suất Phẩm Cấp</h4>
+          <ul class="rate-list">
+            <li><span class="badge-rate ur">UR · CHIẾN THẦN VÔ SONG</span>: <strong>0.6%</strong> (Lữ Bố, Gia Cát Lượng, Điêu Thuyền...)</li>
+            <li><span class="badge-rate ssr">SSR · HOÀNG KIM THƯỢNG TƯỚNG</span>: <strong>1.6%</strong> (Triệu Vân, Quan Vũ, Giả Hủ, Điển Vi...)</li>
+            <li><span class="badge-rate sr">SR · VẠN KIM VÕ TƯỚNG</span>: <strong>13.0%</strong> (Cao Thuận, Nhan Lương, Văn Xú...)</li>
+            <li><span class="badge-rate r">R · ANH HÙNG HÀN VI</span>: <strong>84.8%</strong> (Mảnh Anh Hồn & Quân Sĩ Tinh Nhuệ)</li>
+          </ul>
+        </section>
+        <section class="rule-block">
+          <h4>3. Cơ Chế Bảo Hiểm Thiên Mệnh (Pity System)</h4>
+          <p>Tối đa <strong>90 lần thỉnh tướng</strong> chắc chắn xuất thế Danh Tướng <strong>SSR trở lên</strong>. Khi nhận được tướng SSR, bộ đếm Thiên Mệnh Chi Tinh sẽ tự động quy hồi 0/90.</p>
+          <p>Áp dụng quy tắc <strong>Thiên Cơ 50/50</strong>: Nếu lần đầu không nhận được tướng mục tiêu trên lệnh bài, lần SSR kế tiếp chắc chắn là tướng chỉ định.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gacha History Modal -->
+  <div class="modal-backdrop hidden" id="gacha-history-modal" style="z-index: 1300;">
+    <div class="memorial-scroll-dialog">
+      <header class="memorial-header">
+        <span class="memorial-seal">史</span>
+        <h3>NHẬT KÝ CHIÊU MỘ ANH LINH</h3>
+        <button class="scroll-close-seal" id="btn-close-gacha-history" title="Thu Thư">
+          <span class="close-seal-char">卷</span>
+          <span class="close-seal-text">Thu Thư</span>
+        </button>
+      </header>
+      <div class="memorial-content">
+        <div id="gacha-history-list" class="history-list-box">
+          <p class="empty-history-hint">Chưa có ghi chép chiêu mộ nào trong thiên thư.</p>
+        </div>
+      </div>
+    </div>

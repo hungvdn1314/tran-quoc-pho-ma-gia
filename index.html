@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trấn Quốc Phò Mã Gia — 镇国驸马爷</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+  <!-- Master Diegetic HUD Container -->
+  <header class="game-hud-frame" id="top-hud"></header>
+
+  <!-- Viewport Container (3 Tầng Liên Hoàn) -->
+  <main class="game-viewport">
+    <!-- Stage 1: Visual Novel Theater Stage -->
+    <section class="stage-view view-vn active" id="view-vn"></section>
+
+    <!-- Stage 2: 3D Tactical War Relief Sand-Table -->
+    <section class="stage-view view-map" id="view-map"></section>
+
+    <!-- Stage 3: Tactical 3-Lane Card Battlefield -->
+    <section class="stage-view view-battle" id="view-battle"></section>
+  </main>
+
+  <!-- Gacha Altar Sacred Chamber Mount Point -->
+  <div id="gacha-mount-point"></div>
+
+  <!-- Diegetic Modals Mount Point -->
+  <div id="modals-mount-point"></div>
+
+  <!-- Local Vendored Trio Engines (100% Offline) -->
+  <script src="/prototype/lib/pixi.min.js"></script>
+  <script src="/prototype/lib/three.min.js"></script>
+  <script src="/prototype/lib/phaser.min.js"></script>
+
+  <!-- Data Bundle (100% Offline Game Lore, Chapters & Ink Story) -->
+  <script src="/prototype/game_data.js"></script>
+
+  <!-- Modular Application Entry Point -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

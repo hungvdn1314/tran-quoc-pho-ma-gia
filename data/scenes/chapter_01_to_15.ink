@@ -159,7 +159,7 @@ Vũ Hoàng chấn động đứng phắt dậy khỏi long ngai, vỗ mạnh lê
 
 "Quý gia quả nhiên không hổ danh Trấn Quốc hổ môn! Ban thưởng phò mã Quý Bình An một trăm lượng hoàng kim!"
 
-# EFFECT: show_toast|+100 Hoàng Kim Thưởng Kim Loan Điện|reward
+# EFFECT: show_toast|[ 賜 ] +100 Hoàng Kim Thưởng Kim Loan Điện|reward
 
 -> system_awakening
 
@@ -197,7 +197,7 @@ Quý Bình An cất giọng đanh thép vạch trần dã tâm mượn văn thă
 ⟨ Khởi động: Thượng Cổ Bái Tướng Thần Đàn ⟩
 ⟨ Ban tặng vật phẩm: Thượng Cổ Anh Hồn Lệnh × 1 ⟩
 
-# EFFECT: show_toast|🎉 THỨC TỈNH THIÊN CƠ: Tiếp nhận Thượng Cổ Anh Hồn Lệnh|system
+# EFFECT: show_toast|[ 賜 ] THỨC TỈNH THIÊN CƠ: Tiếp nhận Thượng Cổ Anh Hồn Lệnh|system
 # EFFECT: grant_ticket|1
 
 Một cỗ hàn khí hùng hồn hòa cùng kim quang chói lòa tràn vào đan điền Quý Bình An. Trong lòng bàn tay hắn, phiến Thượng Cổ Anh Hồn Lệnh bằng đồng khắc long phụng ngưng tụ thành thực thể, tỏa ra uy áp ngập tràn.
@@ -222,7 +222,7 @@ Quý Bình An đứng chắp tay nhìn ra màn đêm kinh đô mịt mùng:
 
 "Không thể chần chừ thêm nữa. Phải mau chóng khởi động Bái Tướng Thần Đàn, chiêu mộ võ tướng trấn giữ cơ đồ!"
 
-# EFFECT: show_toast|📜 HOÀN TẤT HỒI 1: Phò Mã Thức Tỉnh & Đối Thơ Chấn Kinh Đô|milestone
+# EFFECT: show_toast|[ 卷 ] HOÀN TẤT HỒI 1: Phò Mã Thức Tỉnh & Đối Thơ Chấn Kinh Đô|milestone
 # EFFECT: chapter_complete|1
 
 -> chapter_5_transition
@@ -248,7 +248,7 @@ Bốn ngày trôi qua kể từ yến tiệc đại điện. Quý Bình An dành
 # EFFECT: sfx_gong_ancient
 
 ~ unlocked_gacha = true
-# EFFECT: show_toast|🎉 KHAI MỞ: Bái Tướng Thần Đàn (Chiêu Mộ Danh Tướng)|unlock
+# EFFECT: show_toast|[ 壇 ] KHAI MỞ: Bái Tướng Thần Đàn (Chiêu Mộ Danh Tướng)|unlock
 # EFFECT: unlock_feature|bai_tuong_dai
 
 [THIÊN CƠ HỆ THỐNG]: Ký chủ có thể tế xuất Anh Hồn Lệnh để thỉnh triệu anh linh danh tướng thời Tam Quốc quy vị.
@@ -286,7 +286,7 @@ Mũi thương khẽ rung — bảy đạo thương ảnh hóa thành hàn quang 
 
 Quý Bình An nhìn Triệu Tử Long đứng sừng sững trong phò mã phủ, trung trinh và sẵn sàng đẫm máu sa trường: "Tử Long, muốn nuôi quân đúc giáp thì ngân quỹ phải dồi dào. Ngày mai đến Thiên Kim Lâu bàn chuyện làm ăn!"
 
-# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Thường Sơn Triệu Tử Long SSR|milestone
+# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 5: Chiêu Mộ Thường Sơn Triệu Tử Long SSR|milestone
 # EFFECT: chapter_complete|5
 
 -> chapter_8_transition
@@ -321,7 +321,7 @@ Vệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng
   ~ unlocked_soap = true
   "Ta cung cấp công thức độc quyền, Thiên Kim Lâu lo vận chuyển và tiêu thụ. Lợi nhuận chia đều."
   Vệ Ti Vũ khẽ cười quyến rũ, nâng chén rượu chúc mừng: "Phò mã gia quả là bậc kỳ tài ẩn nhẫn. Thương vụ này, tiện thiếp nhận!"
-  # EFFECT: show_toast|🎉 MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt Sa Bàn)|unlock
+  # EFFECT: show_toast|[ 商 ] MỞ KHÓA: Kinh Doanh Thấu Hoa Cao (+3.000 Vàng mỗi lượt Sa Bàn)|unlock
   # EFFECT: unlock_feature|thau_hoa_cao
   -> chapter_8_aftermath
 
@@ -329,7 +329,7 @@ Vệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng
   ~ gold += 1000
   ~ unlocked_soap = true
   "Chưa vội khuếch trương. Ta sẽ thăm dò thị trường trước, từng bước tích súc ngân quỹ."
-  # EFFECT: show_toast|🎉 MỞ KHÓA: Phường Đúc Thấu Hoa Cao (+1.000 Vàng mỗi lượt)|unlock
+  # EFFECT: show_toast|[ 商 ] MỞ KHÓA: Phường Đúc Thấu Hoa Cao (+1.000 Vàng mỗi lượt)|unlock
   # EFFECT: unlock_feature|thau_hoa_cao
   -> chapter_8_aftermath
 
@@ -338,7 +338,7 @@ Vệ Ti Vũ khẽ ngửi làn hương thanh khiết, đôi mắt phượng sáng
 
 Nguồn hoàng kim ròng rã bắt đầu chảy vào túi phò mã phủ. Có tiền, có tướng — Quý Bình An đã đặt viên đá tảng đầu tiên cho đại nghiệp tranh bá. Hắn âm thầm mở rộng tai mắt khắp các ngõ ngách kinh thành.
 
-# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao Kinh Doanh|milestone
+# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 8: Phát Minh Thấu Hoa Cao Kinh Doanh|milestone
 # EFFECT: chapter_complete|8
 
 -> chapter_10_transition
@@ -422,7 +422,7 @@ Hắn nhìn Quý Bình An trầm trọng: "Chúa Công, có kẻ trong triều c
 === chapter_10_complete ===
 Quý Bình An nhìn dấu ấn đầu sói trên cổ tay tử sĩ, ánh mắt lạnh như băng. Kinh đô đã là lò lửa, chỉ có nắm lấy binh quyền mới mong bảo toàn gia tộc và xoay chuyển càn khôn!
 
-# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 10: Thích Khách Đêm Trăng|milestone
+# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 10: Thích Khách Đêm Trăng|milestone
 # EFFECT: chapter_complete|10
 
 -> chapter_15_transition
@@ -457,14 +457,15 @@ Vũ Hoàng rút ra Thượng Phương Bảo Kiếm, ánh mắt dừng lại trê
 ~ suspicion += 5
 ~ affinity_trieu_van += 5
 
-# EFFECT: show_toast|🎉 KHAI MỞ: Tầng 2 — Sơn Hà Sa Bàn (Grand Strategy)|unlock
+# EFFECT: show_toast|[ 輿 ] KHAI MỞ: Tầng 2 — Sơn Hà Sa Bàn (Grand Strategy)|unlock
 # EFFECT: unlock_feature|de_nghiep_sa_ban
 
 [THIÊN CƠ HỆ THỐNG]: Khai mở Tầng 2 — Sơn Hà Sa Bàn! Cho phép điều binh khiển tướng, bố trí quân lương và tuần tra các cứ điểm trọng yếu.
 
 Quý Bình An quỳ nhận Hổ Phù bằng đồng, ánh mắt sáng rực. Bên cạnh hắn, Triệu Tử Long nắm chặt chuôi thương — đại thời đại tranh bá chính thức bắt đầu!
 
-# EFFECT: show_toast|📜 HOÀN THÀNH CHƯƠNG 15: Tiếp Nhận Thánh Chỉ Bắc Chinh|milestone
+# EFFECT: show_toast|[ 卷 ] HOÀN THÀNH CHƯƠNG 15: Tiếp Nhận Thánh Chỉ Bắc Chinh|milestone
 # EFFECT: chapter_complete|15
 
 -> chapter_20_start
+

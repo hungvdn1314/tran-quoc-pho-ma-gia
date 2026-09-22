@@ -82,3 +82,12 @@ tmp/
 .aiexclude
 .agents/scratch/
 .gemini/antigravity/brain/
+
+# ==========================================
+# 8. Local Dev Junctions & Temporary Files
+# ==========================================
+/assets
+prototype/assets/images/temp_*
+prototype/assets/images/test_*
+prototype/assets/images/cluster_*
+prototype/assets/images/*_raw.jpg

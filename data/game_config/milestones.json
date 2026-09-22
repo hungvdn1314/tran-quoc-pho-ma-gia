@@ -1,115 +1,268 @@
 [
-    {
-        "chapter": 1,
-        "title": "Xuyên Không",
-        "scene_name": "Phò Mã Phủ",
-        "unlocks": [
-            "feature_basic_battle"
-        ],
-        "rewards": {},
-        "narrative_summary": "Bắt đầu cuộc hành trình.",
-        "prerequisites": []
+  {
+    "chapter": 1,
+    "title": "Xuyên Không Kim Loan Điện",
+    "scene_name": "Kim Loan Điện",
+    "unlocks": [
+      "feature_basic_battle",
+      "feature_anh_hon_lenh"
+    ],
+    "rewards": {
+      "gold": 100,
+      "item": "anh_hon_lenh"
     },
-    {
-        "chapter": 5,
-        "title": "Bái Tướng Đài",
-        "scene_name": "Bái Tướng Đài",
-        "unlocks": [
-            "feature_gacha"
-        ],
-        "rewards": {},
-        "narrative_summary": "Chiêu mộ Triệu Vân.",
-        "prerequisites": [
-            1
-        ]
+    "narrative_summary": "Đối thơ chấn động Kim Loan Điện, hóa giải mối nhục thể diện quốc gia, nhận thưởng Thượng Cổ Anh Hồn Lệnh.",
+    "prerequisites": []
+  },
+  {
+    "chapter": 5,
+    "title": "Bái Tướng Thần Đàn",
+    "scene_name": "Bái Tướng Đài",
+    "unlocks": [
+      "feature_gacha",
+      "feature_bai_tuong_dai"
+    ],
+    "rewards": {
+      "hero": "trieu_van"
     },
-    {
-        "chapter": 10,
-        "title": "Ám Sát",
-        "scene_name": "Phò Mã Phủ",
-        "unlocks": [
-            "feature_defense"
-        ],
-        "rewards": {},
-        "narrative_summary": "Chống lại sát thủ.",
-        "prerequisites": [
-            5
-        ]
+    "narrative_summary": "Khai mở Bái Tướng Thần Đàn, tiêu hao Anh Hồn Lệnh triệu hoán Thường Sơn Triệu Tử Long SSR xuất thế.",
+    "prerequisites": [
+      1
+    ]
+  },
+  {
+    "chapter": 8,
+    "title": "Kinh Doanh Thấu Hoa Cao",
+    "scene_name": "Thiên Kim Lâu",
+    "unlocks": [
+      "feature_commerce_soap"
+    ],
+    "rewards": {
+      "gold_income": 3000
     },
-    {
-        "chapter": 15,
-        "title": "Điển Vi",
-        "scene_name": "Doanh Trại",
-        "unlocks": [
-            "feature_barracks"
-        ],
-        "rewards": {},
-        "narrative_summary": "Thu phục Điển Vi.",
-        "prerequisites": [
-            10
-        ]
+    "narrative_summary": "Phát minh xà phòng Thấu Hoa Cao từ mỡ cừu, liên thủ Lâu chủ Vệ Ti Vũ gây dựng ngân quỹ bí mật.",
+    "prerequisites": [
+      5
+    ]
+  },
+  {
+    "chapter": 10,
+    "title": "Ám Sát Đêm Trăng",
+    "scene_name": "Phò Mã Phủ",
+    "unlocks": [
+      "feature_defense"
+    ],
+    "rewards": {},
+    "narrative_summary": "Tử sĩ Nam Ly đột kích phủ đệ trong đêm mưa, Triệu Vân một thương quét sạch phản tặc.",
+    "prerequisites": [
+      8
+    ]
+  },
+  {
+    "chapter": 15,
+    "title": "Thánh Chỉ Bắc Chinh",
+    "scene_name": "Sơn Hà Sa Bàn",
+    "unlocks": [
+      "feature_strategy_map",
+      "feature_ap_system"
+    ],
+    "rewards": {
+      "gold": 5000,
+      "ap": 3
     },
-    {
-        "chapter": 20,
-        "title": "Cao Thuận",
-        "scene_name": "Biên Cương",
-        "unlocks": [
-            "feature_border"
-        ],
-        "rewards": {},
-        "narrative_summary": "Gặp gỡ Cao Thuận.",
-        "prerequisites": [
-            15
-        ]
+    "narrative_summary": "Vũ Hoàng hạ chỉ phong làm Chinh Bắc Tiền Phong Tướng Quân, mở khóa Tầng 2 Sơn Hà Sa Bàn và Hổ Phù Lệnh (AP).",
+    "prerequisites": [
+      10
+    ]
+  },
+  {
+    "chapter": 20,
+    "title": "Vạn Kim Mưu Sĩ Mã Tắc",
+    "scene_name": "Doanh Trại Bắc Cương",
+    "unlocks": [
+      "feature_ma_tac",
+      "feature_binh_thu"
+    ],
+    "rewards": {
+      "hero": "ma_tac"
     },
-    {
-        "chapter": 27,
-        "title": "Độc Sĩ",
-        "scene_name": "Mưu Khách Phủ",
-        "unlocks": [
-            "feature_strategy"
-        ],
-        "rewards": {},
-        "narrative_summary": "Giả Hủ hiến kế.",
-        "prerequisites": [
-            20
-        ]
+    "narrative_summary": "Triệu hoán Vạn Kim Mưu Sĩ Mã Tắc, thi triển diệu kế 'Cao Nâng Mã Tắc' gài sang phe Tô Vân, nắm toàn quyền kiểm soát Bắc Cảnh.",
+    "prerequisites": [
+      15
+    ]
+  },
+  {
+    "chapter": 27,
+    "title": "Độc Sĩ Giả Hủ",
+    "scene_name": "Mưu Khách Phủ",
+    "unlocks": [
+      "feature_strategy_cards"
+    ],
+    "rewards": {
+      "hero": "gia_hu"
     },
-    {
-        "chapter": 35,
-        "title": "Thủy Công",
-        "scene_name": "Bờ Sông",
-        "unlocks": [
-            "feature_naval"
-        ],
-        "rewards": {},
-        "narrative_summary": "Trận chiến trên sông.",
-        "prerequisites": [
-            27
-        ]
+    "narrative_summary": "Hố 20 vạn vàng triều đình, tế 10 vạn vàng triệu hoán Độc Sĩ Giả Hủ từ Bái Tướng Thần Đàn định độc kế.",
+    "prerequisites": [
+      20
+    ]
+  },
+  {
+    "chapter": 35,
+    "title": "Đại Kế Thủy Công",
+    "scene_name": "Thượng Nguồn Bờ Sông",
+    "unlocks": [
+      "feature_water_stratagem"
+    ],
+    "rewards": {},
+    "narrative_summary": "Đắp đập ngăn sông Thanh Thủy thượng nguồn, chuẩn bị kế sách thủy công nhấn chìm quân địch.",
+    "prerequisites": [
+      27
+    ]
+  },
+  {
+    "chapter": 43,
+    "title": "Kho Lương Khai Nguyên",
+    "scene_name": "Hậu Cần Doanh",
+    "unlocks": [
+      "feature_grain_depot"
+    ],
+    "rewards": {
+      "grain": 50000
     },
-    {
-        "chapter": 48,
-        "title": "Đại Chiến",
-        "scene_name": "Thanh Châu",
-        "unlocks": [
-            "feature_thanh_chau"
-        ],
-        "rewards": {},
-        "narrative_summary": "Chiến đấu sinh tử ở Thanh Châu.",
-        "prerequisites": [
-            35
-        ]
+    "narrative_summary": "Bí mật thu mua và vận chuyển 5 vạn thạch quân lương, sĩ khí ba quân đạt mức tối đa.",
+    "prerequisites": [
+      35
+    ]
+  },
+  {
+    "chapter": 48,
+    "title": "Đại Chiến Thanh Châu",
+    "scene_name": "Chiến Thành Thanh Châu",
+    "unlocks": [
+      "feature_thanh_chau_battle"
+    ],
+    "rewards": {},
+    "narrative_summary": "2 vạn thiết kỵ Nam Ly của Địch Hỏa vây hãm thành trì, bước vào trận đại chiến thủ thành 3 làn.",
+    "prerequisites": [
+      43
+    ]
+  },
+  {
+    "chapter": 52,
+    "title": "Đại Thắng Khải Hoàn",
+    "scene_name": "Thanh Châu Soái Phủ",
+    "unlocks": [
+      "feature_chinh_bac_dai_tuong_quan"
+    ],
+    "rewards": {
+      "title": "Chinh Bắc Đại Tướng Quân"
     },
-    {
-        "chapter": 53,
-        "title": "Kỷ Nguyên Mới",
-        "scene_name": "Kinh Đô",
-        "unlocks": [],
-        "rewards": {},
-        "narrative_summary": "Chương mới bắt đầu. (Tới 386)",
-        "prerequisites": [
-            48
-        ]
-    }
+    "narrative_summary": "Xả lũ sông Thanh Thủy, Triệu Vân bắt sống Địch Hỏa; Vũ Hoàng ban phong Chinh Bắc Đại Tướng Quân, nắm trọn 3 châu Bắc Cảnh.",
+    "prerequisites": [
+      48
+    ]
+  },
+  {
+    "chapter": 63,
+    "title": "Cổ Chi Ác Lai Điển Vi",
+    "scene_name": "Đế Đô Kim Loan",
+    "unlocks": [
+      "feature_dian_wei"
+    ],
+    "rewards": {
+      "hero": "dien_vi"
+    },
+    "narrative_summary": "Khải hoàn về kinh kỳ, triệu hoán Cổ Chi Ác Lai Điển Vi bảo vệ phủ đệ, chuẩn bị dẹp loạn binh biến Tô Kiến Phong (Ch.109).",
+    "prerequisites": [
+      52
+    ]
+  },
+  {
+    "chapter": 114,
+    "title": "Vũ Hoàng Băng Hà",
+    "scene_name": "Cung Đình Đại Vũ",
+    "unlocks": [
+      "feature_tan_hoang_era"
+    ],
+    "rewards": {},
+    "narrative_summary": "Vũ Hoàng băng hà, Tân Hoàng Tử Ngọc Trạch kế vị, hoàng triều sóng ngầm cuộn trào tranh giành đại quyền.",
+    "prerequisites": [
+      63
+    ]
+  },
+  {
+    "chapter": 200,
+    "title": "Đại Quân Hãm Trận",
+    "scene_name": "Bắc Cương Soái Doanh",
+    "unlocks": [
+      "feature_ham_tran_doanh"
+    ],
+    "rewards": {
+      "hero": "cao_thuan"
+    },
+    "narrative_summary": "Triệu hoán dũng tướng Cao Thuận và sáng lập 800 dũng sĩ Hãm Trận Doanh mình mặc giáp thép tôi, công phá thiên hạ.",
+    "prerequisites": [
+      114
+    ]
+  },
+  {
+    "chapter": 255,
+    "title": "Trấn Quốc Phong Công",
+    "scene_name": "Kim Loan Triều Đình",
+    "unlocks": [
+      "feature_tran_quoc_cong"
+    ],
+    "rewards": {
+      "title": "Trấn Quốc Công"
+    },
+    "narrative_summary": "Dẹp yên giặc giã bốn cõi, Quý Bình An được sắc phong Trấn Quốc Công, uy chấn thiên hạ.",
+    "prerequisites": [
+      114
+    ]
+  },
+  {
+    "chapter": 303,
+    "title": "Tịnh Kiên Phong Vương",
+    "scene_name": "Vương Phủ Điện",
+    "unlocks": [
+      "feature_tinh_kien_vuong"
+    ],
+    "rewards": {
+      "title": "Tịnh Kiên Vương"
+    },
+    "narrative_summary": "Tấn phong Tịnh Kiên Vương: Nhất ngôn nhi vi thiên hạ pháp, quyền lực chí cao vô thượng.",
+    "prerequisites": [
+      255
+    ]
+  },
+  {
+    "chapter": 386,
+    "title": "Đăng Cơ Hoàng Đế",
+    "scene_name": "Điện Kim Loan",
+    "unlocks": [
+      "feature_emperor_dai_vu"
+    ],
+    "rewards": {
+      "title": "Hoàng Đế Đại Vũ"
+    },
+    "narrative_summary": "Muôn dân cầu xin, sau Tam Nhượng Đế Vị đăng cơ Hoàng Đế tại điện Kim Loan, chấm dứt loạn thế.",
+    "prerequisites": [
+      303
+    ]
+  },
+  {
+    "chapter": 411,
+    "title": "Đại Hán Khai Quốc",
+    "scene_name": "Đế Đô Tân Triều",
+    "unlocks": [
+      "feature_dai_han_dynasty"
+    ],
+    "rewards": {
+      "era": "Định Quốc Năm Đầu"
+    },
+    "narrative_summary": "Cải quốc hiệu ĐẠI HÁN, niên hiệu Định Quốc năm đầu, mở ra thiên thu thịnh thế.",
+    "prerequisites": [
+      386
+    ]
+  }
 ]

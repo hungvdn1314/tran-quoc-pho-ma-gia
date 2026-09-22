@@ -1,0 +1,78 @@
+/* ==========================================================================
+   TRẤN QUỐC PHÒ MÃ GIA — ADVANCED STRATEGY & VN STYLESHEET
+   Aesthetic: Tả Thực Cổ Phong Thủy Mặc & Kim Kế Rực Rỡ (Kintsugi Molten Gold)
+   ========================================================================== */
+
+:root {
+  /* Obsidian & Iron Foundations */
+  --bg-deep: #080a0d;
+  --bg-surface: #10141b;
+  --bg-card: #161b24;
+  --bg-card-elevated: #1f2633;
+
+  /* Imperial & Metallic Accents */
+  --gold-primary: #fbbf24;
+  --gold-deep: #d97706;
+  --gold-molten: #f59e0b;
+  --gold-glow: rgba(245, 158, 11, 0.4);
+
+  --red-cinnabar: #dc2626;
+  --red-imperial: #991b1b;
+  --red-glow: rgba(220, 38, 38, 0.5);
+
+  --cyan-ice: #06b6d4;
+  --cyan-spirit: #38bdf8;
+  --jade-green: #10b981;
+  --silver-steel: #e2e8f0;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  /* Borders & Shadows */
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-kintsugi: #d97706;
+  --border-gold-bright: #fbbf24;
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.6);
+  --shadow-heavy: 0 16px 40px rgba(0, 0, 0, 0.85);
+  --shadow-gold-glow: 0 0 15px rgba(251, 191, 36, 0.35);
+  --shadow-cinnabar-glow: 0 0 15px rgba(220, 38, 38, 0.5);
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms ease;
+
+  /* Typography: Chuẩn hóa 100% tiếng Việt & Hán tự ấn triện, hoàn toàn không bị lỗi glyph/fallback */
+  --font-title: 'Playfair Display', 'Cormorant Garamond', 'Lora', 'Noto Serif', serif;
+  --font-text: 'Be Vietnam Pro', 'Segoe UI', -apple-system, sans-serif;
+  --font-serif: 'Lora', 'Noto Serif', 'Palatino Linotype', 'Times New Roman', serif;
+  --font-seal: 'ZCOOL XiaoWei', 'Noto Serif SC', 'Songti SC', 'SimSun', 'STSong', 'KaiTi', serif;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-full: 9999px;
+}
+
+/* Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: var(--bg-deep);
+  color: #fff;
+  font-family: var(--font-text);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none !important;
+}
+

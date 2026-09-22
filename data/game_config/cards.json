@@ -15,6 +15,41 @@
         "hero_required": "hero_zhaoyun"
     },
     {
+        "id": "c_huyet_y_doanh",
+        "name": "Huyết Y Doanh",
+        "type": "unit",
+        "rarity": "SR",
+        "mana_cost": 4,
+        "damage": 55,
+        "shield": 25,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Counter-attack",
+            "Bleed"
+        ],
+        "description": "Tử sĩ áo máu Bắc Cương trung thành tuyệt đối, xung kích cảm tử.",
+        "unlock_chapter": 27
+    },
+    {
+        "id": "c_binh_thu_thao_luoc",
+        "name": "Binh Thư Thao Lược",
+        "type": "tactic",
+        "rarity": "SR",
+        "mana_cost": 3,
+        "damage": 40,
+        "shield": 30,
+        "heal": 0,
+        "target": "lane",
+        "effects": [
+            "Fortify",
+            "Confuse"
+        ],
+        "description": "Mưu kế thao lược của Mã Tắc, gia cố thành phòng và làm rối loạn tiền quân địch.",
+        "unlock_chapter": 17,
+        "hero_required": "hero_matac"
+    },
+    {
         "id": "c_ham_tran",
         "name": "Hãm Trận Doanh",
         "type": "unit",
@@ -27,8 +62,8 @@
         "effects": [
             "Break shield"
         ],
-        "description": "Lực lượng tử sĩ.",
-        "unlock_chapter": 20,
+        "description": "Lực lượng tử sĩ thép của Cao Thuận.",
+        "unlock_chapter": 200,
         "hero_required": "hero_gaoshun"
     },
     {

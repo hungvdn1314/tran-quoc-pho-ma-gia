@@ -1,0 +1,308 @@
+<div class="tactical-arena" style="background-image: url('assets/images/bg_fortress_battle.jpg');">
+          <!-- Phaser Combat Particle & Battlefield Canvas -->
+          <div id="battle-phaser-container" class="battle-phaser-container"></div>
+
+          <!-- TOP COMBAT BAR: TƯỜNG THÀNH 500HP & BOSS Ý ĐỒ -->
+          <div class="battlefield-header">
+            <!-- Fortress Wall Entity (Khắc Chìm Bờ Đá Tường Thành Kintsugi) -->
+            <div class="wall-entity-card">
+              <div class="wall-top-row">
+                <div class="wall-badge">
+                  <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  <span>THỦ THÀNH</span>
+                </div>
+                <div class="wall-name">TƯỜNG THÀNH THANH CHÂU</div>
+                <div class="wall-buff-tag">CAO LÂM HẠ: Hàng sau +30% Tầm xa</div>
+                <div class="wall-durability">
+                  ĐỘ BỀN: <strong id="wall-hp-val">500</strong> / 500 HP
+                </div>
+              </div>
+              <div class="wall-hp-track">
+                <div class="wall-hp-fill" id="wall-hp-bar" style="width: 100%;"></div>
+              </div>
+            </div>
+
+            <!-- Flood Reservoir Level (Thủy Ách Sông Thanh Thủy) -->
+            <div class="reservoir-card" id="reservoir-card">
+              <div class="reservoir-label">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                <span>THỦY ÁCH THANH THỦY</span>
+              </div>
+              <div class="reservoir-stages">
+                <span class="stage-dot active" id="stage-1">Cấp 1: Đắp Đê</span>
+                <span class="stage-dot" id="stage-2">Cấp 2: Nước Dâng</span>
+                <span class="stage-dot" id="stage-3">Cấp 3: Đại Hồng Thủy</span>
+              </div>
+              <div class="reservoir-bar">
+                <div class="reservoir-fill" id="reservoir-fill" style="width: 33%;"></div>
+              </div>
+            </div>
+
+            <!-- Enemy Commander Status & Morale (Soái Kỳ Địch Hỏa) -->
+            <div class="enemy-boss-card">
+              <div class="boss-avatar">炎</div>
+              <div class="boss-info">
+                <div class="boss-name">Địch Hỏa (Tiên Phong Nam Ly)</div>
+                <div class="boss-intent" id="boss-intent-display">
+                  <span class="intent-icon">
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  </span>
+                  <span class="intent-text" id="boss-intent-desc">Ý Đồ: Chuẩn bị phát động Bạo Liệt Đao Pháp (90 Sát Thương Tường)</span>
+                </div>
+                <div class="boss-hp-track">
+                  <div class="boss-hp-fill" id="enemy-hp-bar" style="width: 100%;"></div>
+                </div>
+                <div class="boss-stats-row">
+                  <span>HP: <strong id="enemy-hp-val">250</strong> / 250</span>
+                  <span>Sĩ Khí Nam Ly: <strong id="enemy-morale-val">100%</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3-LANE CLASH BATTLEFIELD (DIEGETIC DROP SECTORS) -->
+          <div class="lanes-board">
+            <!-- LANE 1: TẢ DỰC (LEFT FLANK) -->
+            <div class="battle-lane" id="lane-left">
+              <div class="lane-title-bar">TẢ DỰC: BỘ BINH TRẬN ĐỊA</div>
+
+              <!-- Enemy Side (Top) -->
+              <div class="lane-half enemy-half" id="enemy-zone-left">
+                <div class="card-unit enemy-card" id="card-enemy-left">
+                  <div class="unit-intent-tag" title="Ý đồ: Bắn mưa tên">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                    <span>Mưa Tên: 35 Sát thương</span>
+                  </div>
+                  <div class="unit-type-tag">Cung Nỗ Nam Ly</div>
+                  <div class="unit-name">Hỏa Tiễn Doanh</div>
+                  <div class="unit-bars">
+                    <div class="stat-tally martial">
+                      <span class="tally-glyph">武</span>
+                      <span>35</span>
+                    </div>
+                    <div class="stat-tally troop" id="hp-enemy-left">
+                      <span class="tally-glyph">兵</span>
+                      <span>100</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clash Gutter -->
+              <div class="clash-gutter">
+                <div class="gutter-sword">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                </div>
+              </div>
+
+              <!-- Player Side (Bottom) -->
+              <div class="lane-half player-half drop-zone" id="player-zone-left" data-lane="left">
+                <div class="deploy-placeholder">
+                  <span>Kéo thả thẻ bài hoặc bấm vào để triển khai quân</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- LANE 2: TRUNG QUÂN (CENTER GATE & TRIỆU VÂN) -->
+            <div class="battle-lane lane-center" id="lane-center">
+              <div class="lane-title-bar text-gold">TRUNG QUÂN TIÊN PHONG: THÀNH MÔN QUYẾT CHIẾN</div>
+
+              <!-- Enemy Side: Xe Đục Thành -->
+              <div class="lane-half enemy-half" id="enemy-zone-center">
+                <div class="card-unit enemy-card siege-engine" id="card-enemy-center">
+                  <div class="unit-intent-tag intent-siege" title="Ý đồ: Húc sập tường thành!">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h12M14 9l3 3-3 3"/></svg>
+                    <span>Húc Thành: 80 Sát thương</span>
+                  </div>
+                  <div class="unit-type-tag">Khí Giới Phá Thành</div>
+                  <div class="unit-name">Xe Đục Thành Nam Ly</div>
+                  <div class="unit-bars">
+                    <div class="stat-tally martial">
+                      <span class="tally-glyph">武</span>
+                      <span>80</span>
+                    </div>
+                    <div class="stat-tally troop" id="hp-enemy-center">
+                      <span class="tally-glyph">兵</span>
+                      <span>150</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clash Gutter -->
+              <div class="clash-gutter">
+                <div class="gutter-sword text-gold">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                  <span>CHÍNH DIỆN</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                </div>
+              </div>
+
+              <!-- Player Side: Triệu Vân Preset -->
+              <div class="lane-half player-half" id="player-zone-center" data-lane="center">
+                <div class="card-unit hero-card" id="card-zhaoyun-entity">
+                  <div class="hero-crest">HỔ TƯỚNG</div>
+                  <img src="assets/images/zhaoyun.jpg" alt="Triệu Vân" class="hero-mini-art">
+                  <div class="hero-details">
+                    <div class="hero-name">Triệu Tử Long</div>
+                    <div class="hero-title">Long Đảm Lượng Ngân Thương</div>
+                    <div class="hero-skill-passive">Phản kích cận chiến 100%</div>
+                    <div class="unit-bars">
+                      <div class="stat-tally martial">
+                        <span class="tally-glyph">武</span>
+                        <span>102</span>
+                      </div>
+                      <div class="stat-tally troop" id="hp-zhaoyun">
+                        <span class="tally-glyph">兵</span>
+                        <span>180</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- LANE 3: HỮU DỰC (RIGHT FLANK) -->
+            <div class="battle-lane" id="lane-right">
+              <div class="lane-title-bar">HỮU DỰC: KỴ BINH TRẬN ĐỊA</div>
+
+              <!-- Enemy Side: Kỵ Binh Khởi Đột -->
+              <div class="lane-half enemy-half" id="enemy-zone-right">
+                <div class="card-unit enemy-card" id="card-enemy-right">
+                  <div class="unit-intent-tag" title="Ý đồ: Xung kích chém lính">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <span>Đột Kích: 45 Sát thương</span>
+                  </div>
+                  <div class="unit-type-tag">Kỵ Binh Nam Ly</div>
+                  <div class="unit-name">Kỵ Binh Khởi Đột</div>
+                  <div class="unit-bars">
+                    <div class="stat-tally martial">
+                      <span class="tally-glyph">武</span>
+                      <span>45</span>
+                    </div>
+                    <div class="stat-tally troop" id="hp-enemy-right">
+                      <span class="tally-glyph">兵</span>
+                      <span>120</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Clash Gutter -->
+              <div class="clash-gutter">
+                <div class="gutter-sword">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
+                </div>
+              </div>
+
+              <!-- Player Side (Bottom) -->
+              <div class="lane-half player-half drop-zone" id="player-zone-right" data-lane="right">
+                <div class="deploy-placeholder">
+                  <span>Kéo thả thẻ bài hoặc bấm vào để triển khai quân</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- BÀN CHỈ HUY SOÁI TỌA (COMMANDER DAIS) -->
+          <footer class="player-command-dock">
+            <!-- Ấn Ngọc Hổ Phù (Command Mana Tally) -->
+            <div class="mana-panel">
+              <div class="mana-dial">
+                <span class="mana-title">HỔ PHÙ CHIẾN LỆNH</span>
+                <span class="mana-value" id="txt-mana">6 / 10 Phù</span>
+              </div>
+              <div class="mana-gem-track" id="mana-gem-track"></div>
+              <div class="morale-bar-box">
+                <span class="morale-lbl">Sĩ Khí Ba Quân</span>
+                <div class="morale-track">
+                  <div class="morale-fill" id="player-morale-bar" style="width: 100%;"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bộ Bài Chiến Lược Xòe Quạt (Fan Arc Deck) -->
+            <div class="hand-deck" id="hand-deck">
+              <!-- Card 1: Hãm Trận Doanh -->
+              <div class="hand-card card-unit-playable" data-card="hamtran" data-cost="3">
+                <div class="card-cost-gem">3</div>
+                <div class="card-art-preview unit-art-1"></div>
+                <div class="card-meta">
+                  <span class="c-name">Hãm Trận Doanh</span>
+                  <span class="c-type">Bộ Binh · Cao Thuận</span>
+                  <p class="c-effect">Trọng giáp tinh luyện. Giảm 50% sát thương từ cung tiễn. Bảo vệ các đơn vị cùng cánh.</p>
+                  <div class="c-stats">
+                    <span class="c-atk">
+                      <em class="tally-glyph">武</em>
+                      <span>65</span>
+                    </span>
+                    <span class="c-hp">
+                      <em class="tally-glyph">兵</em>
+                      <span>140</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 2: Bạch Mã Nghĩa Tòng -->
+              <div class="hand-card card-unit-playable" data-card="bachma" data-cost="4">
+                <div class="card-cost-gem">4</div>
+                <div class="card-art-preview unit-art-2"></div>
+                <div class="card-meta">
+                  <span class="c-name">Bạch Mã Nghĩa Tòng</span>
+                  <span class="c-type">Kỵ Binh · Triệu Vân</span>
+                  <p class="c-effect">Xung kích thần tốc. Tấn công trực tiếp bỏ qua phòng tuyến tiền tiêu của kẻ địch.</p>
+                  <div class="c-stats">
+                    <span class="c-atk">
+                      <em class="tally-glyph">武</em>
+                      <span>80</span>
+                    </span>
+                    <span class="c-hp">
+                      <em class="tally-glyph">兵</em>
+                      <span>110</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Card 3: Xả Lũ Thanh Thủy (Giả Hủ Tactic) -->
+              <div class="hand-card card-tactic-legendary" data-card="flood" data-cost="5" id="card-flood">
+                <div class="card-cost-gem gold-gem">5</div>
+                <div class="card-art-preview tactic-art-flood"></div>
+                <div class="card-meta">
+                  <span class="c-name gold-glow">XẢ LŨ THANH THỦY</span>
+                  <span class="c-type text-gold">Độc Sĩ Mưu Lược · Giả Hủ</span>
+                  <p class="c-effect">Phá đê trút lũ! Quét sạch Xe Đục Thành của địch và gây 130 Sát thương AoE toàn quân!</p>
+                  <span class="c-requirement text-cyan">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+                    <span>Cần Trữ Nước Cấp 2+</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card 4: Thất Thám Bàn Xà (Triệu Vân Skill) -->
+              <div class="hand-card card-skill-playable" data-card="seventh-spear" data-cost="2">
+                <div class="card-cost-gem">2</div>
+                <div class="card-art-preview skill-art-spear"></div>
+                <div class="card-meta">
+                  <span class="c-name">Thất Thám Bàn Xà</span>
+                  <span class="c-type">Tuyệt Kỹ Thương Pháp</span>
+                  <p class="c-effect">Triệu Vân đâm liên tiếp 7 thương chí mạng, gây 120 Bạo Kích lên Địch Hỏa!</p>
+                  <span class="c-bonus text-gold">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+                    <span>Ngắt Ý Đồ Kẻ Địch</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Chiêng Đồng Khởi Chiến (Minh Kim Thu Quân) -->
+            <div class="action-dock">
+              <button class="btn-execute-turn" id="btn-execute-turn" title="Gõ Chiêng Đồng Chiến Trận Khởi Lệnh Quyết Toán">
+                <div class="seal-ring"></div>
+                <span class="btn-primary-txt">KHỞI CHIẾN!</span>
+                <span class="btn-sub-txt">Minh Kim Thu Quân</span>
+              </button>
+            </div>
+          </footer>
+        </div>

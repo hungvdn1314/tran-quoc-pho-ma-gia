@@ -27,8 +27,8 @@ document.addEventListener('DOMContentLoaded', () => {
     { id: 8, badge: "CHƯƠNG 8", title: "Phát Minh Thấu Hoa Cao", knot: "chapter_8_transition", featureUnlocked: "Kinh Doanh Xà Phòng (+3.000 Vàng/Lượt)", lore: "Quý Bình An chế tạo xà phòng thơm từ mỡ cừu, hợp tác cùng Thiên Kim Lâu của Vệ Ti Vũ.", unlocked: false, active: false },
     { id: 10, badge: "CHƯƠNG 10", title: "Trận Thích Sát Phò Mã Phủ", knot: "chapter_10_transition", featureUnlocked: "Điều Tra & Phân Nhánh Thích Khách", lore: "Sát thủ đột kích phủ đệ trong đêm mưa, Triệu Vân một thương quét sạch.", unlocked: false, active: false },
     { id: 15, badge: "CHƯƠNG 15", title: "Vũ Hoàng Hạ Chỉ Bắc Chinh", knot: "chapter_15_transition", featureUnlocked: "TẦNG 2: Đế Nghiệp Sa Bàn & Lệnh Sa Bàn (AP)", lore: "Vũ Hoàng phong Quý Bình An làm Chinh Bắc Đại Tướng Quân, mở khóa bản đồ quân sự 4 phương.", unlocked: false, active: false },
-    { id: 20, badge: "CHƯƠNG 20", title: "Biên Cương & Hãm Trận Doanh", knot: "chapter_20_start", featureUnlocked: "Danh Tướng Cao Thuận & Thẻ Hãm Trận Doanh", lore: "Thu phục Cao Thuận nghiêm cẩn, trang bị giáp trụ thép cho 800 dũng sĩ Hãm Trận Doanh.", unlocked: false, active: false },
-    { id: 27, badge: "CHƯƠNG 27", title: "Độc Sĩ Giả Hủ Hiến Kế", knot: "chapter_27_transition", featureUnlocked: "Mưu Sĩ Giả Hủ & Thẻ Phản Gián Ly Gián", lore: "Hố 2 vạn vàng từ triều đình, thu phục Độc Sĩ Giả Hủ, định ra kế sách phục kích quân Nam Ly.", unlocked: false, active: false },
+    { id: 20, badge: "CHƯƠNG 20", title: "Triệu Hoán Cao Thuận & Hãm Trận Doanh", knot: "chapter_20_start", featureUnlocked: "Triệu Hoán Cao Thuận & Khởi Tạo Hãm Trận Doanh", lore: "Dùng vạn lượng hoàng kim kích hoạt Bái Tướng Đài triệu hoán Cao Thuận, sáng lập quân đoàn thiết giáp Hãm Trận Doanh.", unlocked: false, active: false },
+    { id: 27, badge: "CHƯƠNG 27", title: "Hố Vũ Hoàng & Triệu Hoán Giả Hủ", knot: "chapter_27_transition", featureUnlocked: "Triệu Hoán Độc Sĩ Giả Hủ & Mưu Kế Độc Tâm", lore: "Hố 20 vạn vàng từ triều đình, tế 10 vạn vàng triệu hoán Độc Sĩ Giả Hủ từ Bái Tướng Thần Đàn, định độc kế hủy diệt địch quân.", unlocked: false, active: false },
     { id: 35, badge: "CHƯƠNG 35", title: "Đại Kế Thủy Công Thanh Thủy", knot: "chapter_35_transition", featureUnlocked: "Siêu Thẻ Bài: Xả Lũ Sông Thanh Thủy", lore: "Đắp đập ngăn sông Thanh Thủy thượng nguồn, chuẩn bị xả lũ nhấn chìm chiến thành địch.", unlocked: false, active: false },
     { id: 43, badge: "CHƯƠNG 43", title: "Vạn Thạch Quân Lương Tiền Tuyến", knot: "chapter_43_transition", featureUnlocked: "Kho Lương Hậu Cần (+50.000 Thạch Lương)", lore: "Bí mật thu mua quân lương từ thương đoàn Giang Đông, sĩ khí ba quân đạt mức tối đa.", unlocked: false, active: false },
     { id: 52, badge: "CHƯƠNG 48-52", title: "Đại Chiến Thành Thanh Châu", knot: "chapter_48_transition", featureUnlocked: "TẦNG 3: Sa Trường Thẻ Bài 3 Làn & Quyết Chiến Địch Hỏa", lore: "5 vạn quân Địch Hỏa vây hãm, dùng thủy kế Giả Hủ và Triệu Vân đại phá quân Nam Ly khải hoàn.", unlocked: false, active: false }
@@ -133,6 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
     ownedHeroIds: [],     // Trống rỗng! Chiêu mộ Triệu Vân tại Ch.5
     selectedInspectorHeroId: null,
     lastSummonedHero: null,
+    summonHistory: [],
 
     // VN Dialogue State (Ink Engine Driven)
     dialogueHistory: [],
@@ -265,6 +266,15 @@ document.addEventListener('DOMContentLoaded', () => {
     // Gacha Summoning Altar Modal (Diegetic Theater)
     gachaModal: document.getElementById('gacha-modal'),
     btnCloseGacha: document.getElementById('btn-close-gacha'),
+    gachaEmberCanvas: document.getElementById('gacha-ember-canvas'),
+    btnGachaRules: document.getElementById('btn-gacha-rules'),
+    gachaRulesModal: document.getElementById('gacha-rules-modal'),
+    btnCloseGachaRules: document.getElementById('btn-close-gacha-rules'),
+    btnGachaHistory: document.getElementById('btn-gacha-history'),
+    gachaHistoryModal: document.getElementById('gacha-history-modal'),
+    btnCloseGachaHistory: document.getElementById('btn-close-gacha-history'),
+    gachaHistoryList: document.getElementById('gacha-history-list'),
+    btnGachaSkip: document.getElementById('btn-gacha-skip'),
     gachaTicketDisplay: document.getElementById('gacha-ticket-display'),
     gachaJadeDisplay: document.getElementById('gacha-jade-display'),
     gachaPityCounter: document.getElementById('gacha-pity-counter'),
@@ -490,7 +500,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Hook Ink Effects & Visual Directives
   ink.setEffectHandler((tag) => {
-    console.log("[InkEffect Tag]", tag);
     if (!tag) return;
 
     // 1. Scene Background Transitions
@@ -527,8 +536,39 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    // 4. Standee Actor & Audio Directives (Music handled by ambient/audio system)
-    if (tag.startsWith("ACTORS:") || tag.startsWith("MUSIC:")) {
+    // 4. Standee Actor Directives (Dynamic Cast Placement)
+    if (tag.startsWith("ACTORS:")) {
+      const actorsStr = tag.replace(/^ACTORS:\s*/, '').trim();
+      const actorTokens = actorsStr.split(",").map(t => t.trim());
+      const ACTOR_STANDY_TAG_MAP = {
+        'qui_binh_an': 'assets/images/actor_quy_binh_an.png',
+        'trieu_van': 'assets/images/actor_trieu_van.png',
+        'gao_shun': 'assets/images/actor_cao_thuan.png',
+        'jia_xu': 'assets/images/actor_gia_hu.png',
+        'dien_vi': 'assets/images/actor_dien_vi.png',
+        'vu_hoang': 'assets/images/actor_vu_hoang.png',
+        'to_kien_phong': 'assets/images/actor_to_kien_phong.png',
+        'nam_ly_envoy': 'assets/images/actor_nam_ly_envoy.png',
+        'servant': 'assets/images/actor_servant.png',
+        'assassin': 'assets/images/actor_assassin.png',
+        've_ti_vu': 'assets/images/actor_ve_ti_vu.png'
+      };
+      actorTokens.forEach(token => {
+        const parts = token.split("|").map(t => t.trim());
+        const charId = parts[0];
+        const pos = parts[1] || 'left';
+        const path = ACTOR_STANDY_TAG_MAP[charId];
+        if (path) {
+          if (pos === 'left' || pos === 'center') {
+            if (ui.actorLeftImg) ui.actorLeftImg.src = path;
+          } else if (pos === 'right') {
+            if (ui.actorRightImg) ui.actorRightImg.src = path;
+          }
+        }
+      });
+      return;
+    }
+    if (tag.startsWith("MUSIC:")) {
       return;
     }
 
@@ -556,6 +596,12 @@ document.addEventListener('DOMContentLoaded', () => {
       if (feat) triggerUnlockNotification(feat.trim());
     } else if (action === "trigger_gacha") {
       setTimeout(() => openGachaModal({ mode: 'story', returnKnot: 'trieu_van_arrival' }), 600);
+    } else if (action === "summon_grand_reveal") {
+      const heroId = parts[1] || 'hero_zhaoyun';
+      triggerHeroGrandReveal(heroId, () => {
+        advanceDialogue();
+      });
+      return;
     } else if (action === "trigger_battle") {
       switchView('battle');
     } else if (action === "chapter_complete") {
@@ -890,14 +936,239 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // 6. GACHA SUMMONING ENGINE (BÁI TƯỚNG THẦN ĐÀN) — 5-PHASE DIEGETIC THEATER
+  // 6. GACHA SUMMONING ENGINE (BÁI TƯỚNG THẦN ĐÀN) — DIEGETIC THEATER
   // =========================================================================
   let gachaContext = {
     mode: 'normal', // 'normal' | 'story'
     returnKnot: null
   };
   let isSummoning = false;
+  let summonTimers = [];
+  let pendingGrandRevealFn = null;
 
+  // -------------------------------------------------------------
+  // PROCEDURAL AUDIO SYNTHESIZER (WEB AUDIO API)
+  // -------------------------------------------------------------
+  let gachaAudioCtx = null;
+  function getGachaAudioCtx() {
+    if (!gachaAudioCtx) {
+      const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+      if (AudioContextClass) gachaAudioCtx = new AudioContextClass();
+    }
+    if (gachaAudioCtx && gachaAudioCtx.state === 'suspended') {
+      gachaAudioCtx.resume().catch(() => {});
+    }
+    return gachaAudioCtx;
+  }
+
+  function playBellChime() {
+    try {
+      const ctx = getGachaAudioCtx();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const freqs = [440, 880, 1320, 1760];
+      const gains = [0.22, 0.11, 0.05, 0.02];
+
+      freqs.forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = idx % 2 === 0 ? 'sine' : 'triangle';
+        osc.frequency.setValueAtTime(freq, now);
+
+        gain.gain.setValueAtTime(gains[idx], now);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.8 + idx * 0.2);
+
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(now);
+        osc.stop(now + 2.2);
+      });
+    } catch (e) {}
+  }
+
+  function playVortexWhoosh() {
+    try {
+      const ctx = getGachaAudioCtx();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const bufferSize = Math.floor(ctx.sampleRate * 1.1);
+      const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        data[i] = Math.random() * 2 - 1;
+      }
+
+      const noise = ctx.createBufferSource();
+      noise.buffer = buffer;
+
+      const filter = ctx.createBiquadFilter();
+      filter.type = 'bandpass';
+      filter.frequency.setValueAtTime(220, now);
+      filter.frequency.exponentialRampToValueAtTime(1300, now + 0.6);
+      filter.frequency.exponentialRampToValueAtTime(280, now + 1.1);
+      filter.Q.setValueAtTime(3.2, now);
+
+      const gain = ctx.createGain();
+      gain.gain.setValueAtTime(0.01, now);
+      gain.gain.linearRampToValueAtTime(0.18, now + 0.45);
+      gain.gain.exponentialRampToValueAtTime(0.001, now + 1.1);
+
+      noise.connect(filter);
+      filter.connect(gain);
+      gain.connect(ctx.destination);
+      noise.start(now);
+      noise.stop(now + 1.1);
+    } catch (e) {}
+  }
+
+  function playThunderCrack() {
+    try {
+      const ctx = getGachaAudioCtx();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+
+      const osc = ctx.createOscillator();
+      const oscGain = ctx.createGain();
+      osc.type = 'sine';
+      osc.frequency.setValueAtTime(130, now);
+      osc.frequency.exponentialRampToValueAtTime(36, now + 0.65);
+      oscGain.gain.setValueAtTime(0.35, now);
+      oscGain.gain.exponentialRampToValueAtTime(0.001, now + 0.65);
+      osc.connect(oscGain);
+      oscGain.connect(ctx.destination);
+      osc.start(now);
+      osc.stop(now + 0.7);
+
+      const bufferSize = Math.floor(ctx.sampleRate * 0.35);
+      const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+      const data = buffer.getChannelData(0);
+      for (let i = 0; i < bufferSize; i++) {
+        data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (ctx.sampleRate * 0.07));
+      }
+      const noise = ctx.createBufferSource();
+      noise.buffer = buffer;
+      const noiseGain = ctx.createGain();
+      noiseGain.gain.setValueAtTime(0.28, now);
+      noiseGain.gain.exponentialRampToValueAtTime(0.001, now + 0.35);
+      noise.connect(noiseGain);
+      noiseGain.connect(ctx.destination);
+      noise.start(now);
+      noise.stop(now + 0.35);
+    } catch (e) {}
+  }
+
+  function playGrandFanfare() {
+    try {
+      const ctx = getGachaAudioCtx();
+      if (!ctx) return;
+      const now = ctx.currentTime;
+      const notes = [261.63, 392.00, 523.25, 659.25, 783.99];
+      notes.forEach((freq, idx) => {
+        const osc = ctx.createOscillator();
+        const gain = ctx.createGain();
+        osc.type = 'triangle';
+        const start = now + idx * 0.05;
+        osc.frequency.setValueAtTime(freq, start);
+        gain.gain.setValueAtTime(0.16, start);
+        gain.gain.exponentialRampToValueAtTime(0.001, start + 2.3);
+        osc.connect(gain);
+        gain.connect(ctx.destination);
+        osc.start(start);
+        osc.stop(start + 2.4);
+      });
+    } catch (e) {}
+  }
+
+  // -------------------------------------------------------------
+  // EMBER CANVAS PARTICLES
+  // -------------------------------------------------------------
+  let emberInitialized = false;
+  let emberAnimId = null;
+  function initGachaEmbers() {
+    if (emberInitialized) return;
+    const canvas = ui.gachaEmberCanvas;
+    if (!canvas) return;
+    emberInitialized = true;
+    const ctx = canvas.getContext('2d');
+
+    function resizeCanvas() {
+      if (!canvas.parentElement) return;
+      canvas.width = canvas.parentElement.clientWidth;
+      canvas.height = canvas.parentElement.clientHeight;
+    }
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const particles = [];
+    const count = 40;
+    for (let i = 0; i < count; i++) {
+      particles.push(makeParticle(true));
+    }
+
+    function makeParticle(randomY = false) {
+      return {
+        x: Math.random() * (canvas.width || 800),
+        y: randomY ? Math.random() * (canvas.height || 600) : (canvas.height || 600) + 10,
+        size: Math.random() * 2.6 + 1.0,
+        speedY: Math.random() * 0.7 + 0.35,
+        speedX: (Math.random() - 0.5) * 0.5,
+        opacity: Math.random() * 0.65 + 0.25,
+        fadeSpeed: Math.random() * 0.004 + 0.002,
+        color: Math.random() > 0.35 ? '251, 191, 36' : '239, 68, 68',
+        pulse: Math.random() * Math.PI * 2
+      };
+    }
+
+    function renderLoop() {
+      if (!ui.gachaModal || ui.gachaModal.classList.contains('hidden')) {
+        emberAnimId = requestAnimationFrame(renderLoop);
+        return;
+      }
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      for (let i = 0; i < particles.length; i++) {
+        let p = particles[i];
+        p.y -= p.speedY;
+        p.x += p.speedX + Math.sin(p.pulse) * 0.25;
+        p.pulse += 0.025;
+        p.opacity -= p.fadeSpeed;
+        if (p.opacity <= 0 || p.y < -15) {
+          particles[i] = makeParticle(false);
+          p = particles[i];
+        }
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${p.color}, ${p.opacity})`;
+        ctx.shadowColor = `rgba(${p.color}, 0.7)`;
+        ctx.shadowBlur = 6;
+        ctx.fill();
+        ctx.restore();
+      }
+      emberAnimId = requestAnimationFrame(renderLoop);
+    }
+    renderLoop();
+  }
+
+  // -------------------------------------------------------------
+  // TIMERS & SKIP CONTROLLER
+  // -------------------------------------------------------------
+  function clearSummonTimers() {
+    summonTimers.forEach(id => clearTimeout(id));
+    summonTimers = [];
+  }
+
+  function skipSummonRitual() {
+    if (!pendingGrandRevealFn) return;
+    clearSummonTimers();
+    if (ui.btnGachaSkip) ui.btnGachaSkip.classList.add('hidden');
+    const fn = pendingGrandRevealFn;
+    pendingGrandRevealFn = null;
+    fn();
+  }
+
+  // -------------------------------------------------------------
+  // MODALS & ALTAR STATE
+  // -------------------------------------------------------------
   function openGachaModal(options = {}) {
     gachaContext = {
       mode: options.mode || 'normal',
@@ -910,6 +1181,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     resetGachaAltarState();
+    initGachaEmbers();
 
     if (ui.gachaTicketDisplay) ui.gachaTicketDisplay.textContent = state.ticketCount;
     if (ui.gachaJadeDisplay) ui.gachaJadeDisplay.textContent = state.jade;
@@ -920,6 +1192,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function resetGachaAltarState() {
     isSummoning = false;
+    clearSummonTimers();
+    pendingGrandRevealFn = null;
+
+    if (ui.btnGachaSkip) ui.btnGachaSkip.classList.add('hidden');
     if (ui.altarBtnRow) ui.altarBtnRow.classList.remove('hidden');
     if (ui.revealActionRow) ui.revealActionRow.classList.add('hidden');
     if (ui.btnDoSummon) ui.btnDoSummon.disabled = false;
@@ -953,6 +1229,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  function renderSummonHistory() {
+    if (!ui.gachaHistoryList) return;
+    ui.gachaHistoryList.innerHTML = '';
+
+    if (!state.summonHistory || state.summonHistory.length === 0) {
+      ui.gachaHistoryList.innerHTML = `
+        <div style="text-align: center; color: var(--stone-warm); padding: 28px; font-style: italic; font-family: var(--font-serif);">
+          Chưa có điển tích thỉnh triệu nào được ghi chép vào Thiên Mệnh Giản.
+        </div>
+      `;
+    } else {
+      const reversed = [...state.summonHistory].reverse();
+      reversed.forEach((item) => {
+        const hero = item.hero;
+        const isHigh = hero.rarity === 'UR' || hero.rarity === 'SSR';
+        const badgeClass = hero.rarity === 'UR' ? 'tag-gold' : (hero.rarity === 'SSR' ? 'tag-amber' : 'tag-slate');
+
+        const row = document.createElement('div');
+        row.className = `history-item ${isHigh ? 'highlight-gold' : ''}`;
+        row.style.cssText = `
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 14px;
+          background: rgba(16, 20, 27, 0.7);
+          border: 1px solid ${isHigh ? 'rgba(251, 191, 36, 0.4)' : 'rgba(148, 163, 184, 0.15)'};
+          border-radius: 4px;
+          margin-bottom: 8px;
+          box-shadow: ${isHigh ? '0 0 10px rgba(251, 191, 36, 0.15)' : 'none'};
+        `;
+        row.innerHTML = `
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span class="tag-badge ${badgeClass}" style="font-weight: 700; padding: 2px 7px;">${hero.rarity}</span>
+            <strong style="color: ${isHigh ? '#fbbf24' : '#e2e8f0'}; font-family: var(--font-title); font-size: 1.05rem;">${hero.name}</strong>
+            <span style="color: var(--stone-warm); font-size: 0.8rem;">(${hero.troop_type || 'Binh Chủng'})</span>
+          </div>
+          <div style="text-align: right; font-size: 0.8rem; color: var(--stone-warm);">
+            <div>Thiên mệnh: <strong style="color: #38bdf8;">${item.pity}</strong>/90</div>
+            <div style="font-size: 0.72rem; opacity: 0.7;">${item.timestamp}</div>
+          </div>
+        `;
+        ui.gachaHistoryList.appendChild(row);
+      });
+    }
+
+    if (ui.gachaHistoryModal) ui.gachaHistoryModal.classList.remove('hidden');
+  }
+
   function performSummon() {
     if (isSummoning) return;
 
@@ -972,7 +1296,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.gachaJadeDisplay) ui.gachaJadeDisplay.textContent = state.jade;
 
     isSummoning = true;
+    clearSummonTimers();
     if (ui.btnDoSummon) ui.btnDoSummon.disabled = true;
+    if (ui.btnGachaSkip) ui.btnGachaSkip.classList.remove('hidden');
 
     // Pity & Hero Selection Math
     state.pityCount++;
@@ -1007,54 +1333,62 @@ document.addEventListener('DOMContentLoaded', () => {
       state.ownedHeroIds.push(pulledHero.id);
     }
 
+    // Record into summon history
+    const historyRecord = {
+      hero: pulledHero,
+      pity: state.pityCount,
+      timestamp: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    };
+    if (!state.summonHistory) state.summonHistory = [];
+    state.summonHistory.push(historyRecord);
+
     const isHighRarity = pulledHero.rarity === 'SSR' || pulledHero.rarity === 'UR';
 
     // -------------------------------------------------------------
     // PHASE 1: TẾ PHÙ (Talisman Plunges into Bagua Core)
     // -------------------------------------------------------------
+    playBellChime();
     if (ui.summonTalisman) ui.summonTalisman.classList.add('talisman-sacrificed');
     if (ui.talismanHint) ui.talismanHint.textContent = "Đang Tế Phù... Linh khí Thượng Cổ khởi phát!";
 
-    // -------------------------------------------------------------
-    // PHASE 2: TỤ KHÍ BÁT QUÁI & KINTSUGI RESONANCE
-    // -------------------------------------------------------------
-    setTimeout(() => {
-      if (ui.baguaFormation) ui.baguaFormation.classList.add('fast-spin');
-
-      if (isHighRarity) {
-        if (ui.kintsugiFracturesLayer) ui.kintsugiFracturesLayer.classList.remove('hidden');
-        triggerLightning('#FFD700');
-        triggerShake('subtle');
-        if (ui.talismanHint) ui.talismanHint.textContent = "Thiên cơ chấn động! Kim quang vạn trượng tụ hội!";
-      } else {
-        triggerLightning('#38bdf8');
-        if (ui.talismanHint) ui.talismanHint.textContent = "Linh khí tụ hội!";
-      }
-    }, 550);
-
-    // -------------------------------------------------------------
-    // PHASE 3: PHÁ ẤN (Seal Shatter Shockwave)
-    // -------------------------------------------------------------
-    setTimeout(() => {
-      if (ui.sealShatterFx) ui.sealShatterFx.classList.remove('hidden');
-      triggerShake('impact');
-    }, 1450);
-
-    // -------------------------------------------------------------
-    // PHASE 4: GIÁNG THẾ (Grand Full-Screen Hero Reveal)
-    // -------------------------------------------------------------
-    setTimeout(() => {
-      // Clear buildup animations
+    // Grand reveal action closure
+    const executeGrandReveal = () => {
+      clearSummonTimers();
+      if (ui.btnGachaSkip) ui.btnGachaSkip.classList.add('hidden');
       if (ui.kintsugiFracturesLayer) ui.kintsugiFracturesLayer.classList.add('hidden');
       if (ui.sealShatterFx) ui.sealShatterFx.classList.add('hidden');
       if (ui.baguaFormation) ui.baguaFormation.classList.remove('fast-spin');
 
+      playGrandFanfare();
+
       // Populate hero data
+      const HERO_IMAGE_MAP = {
+        'hero_zhaoyun': 'assets/images/zhaoyun.jpg',
+        'hero_gaoshun': 'assets/images/caoshun.jpg',
+        'hero_jiaxu': 'assets/images/giahu.jpg',
+        'hero_dianwei': 'assets/images/dianwei.jpg'
+      };
       if (ui.revealCardImg) {
-        ui.revealCardImg.src = (pulledHero.id === 'hero_zhaoyun') ? 'assets/images/zhaoyun.jpg' : (pulledHero.avatar || 'assets/images/actor_quy_binh_an.png');
+        ui.revealCardImg.src = HERO_IMAGE_MAP[pulledHero.id] || pulledHero.avatar || 'assets/images/caoshun.jpg';
       }
       if (ui.revealSealBadge) {
-        ui.revealSealBadge.textContent = pulledHero.name ? pulledHero.name[0] : '將';
+        const HERO_SEAL_MAP = {
+          'hero_zhaoyun': '趙',
+          'hero_gaoshun': '高',
+          'hero_jiaxu': '賈',
+          'hero_guojia': '郭',
+          'hero_dianwei': '典',
+          'hero_lvbu': '呂',
+          'hero_guan_yu': '關',
+          'hero_zhang_fei': '張',
+          'hero_zhuge_liang': '諸',
+          'hero_zhou_yu': '周',
+          'hero_diaochan': '貂',
+          'hero_machao': '馬',
+          'hero_huangzhong': '黃',
+          'hero_zhangliao': '張'
+        };
+        ui.revealSealBadge.textContent = HERO_SEAL_MAP[pulledHero.id] || '將';
       }
       if (ui.revealCardName) {
         ui.revealCardName.textContent = pulledHero.name.toUpperCase();
@@ -1064,7 +1398,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.revealCardTitle.textContent = `${alias ? alias + ' · ' : ''}Võ Lực ${pulledHero.base_stats ? pulledHero.base_stats.force : 90}`;
       }
       if (ui.revealCardRarity) {
-        const rarityText = pulledHero.rarity === 'UR' ? 'CHIẾN THẦN TRUYỀN THUYẾT' : (pulledHero.rarity === 'SSR' ? 'HOÀNG KIM THƯỢNG TƯỚNG' : 'DANH TƯỚNG PHƯƠNG BẮC');
+        const rarityText = pulledHero.rarity === 'UR' ? 'CHIẾN THẦN TRUYỀN THUYẾT' : (pulledHero.rarity === 'SSR' ? 'HOÀNG KIM THƯỢNG TƯỚNG' : 'VẠN KIM VÕ TƯỚNG');
         ui.revealCardRarity.textContent = `${pulledHero.rarity} · ${rarityText}`;
       }
       if (ui.revealCardRealm) {
@@ -1074,7 +1408,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const quotes = {
           'hero_zhaoyun': '“Long Đảm Nhất Xuất, Thiên Quân Vạn Mã Tẫn Đoạn Hồn!”',
           'hero_gaoshun': '“Hãm Trận Dũng Sĩ, Hữu Tử Vô Sinh, Quyết Bất Thối Bộ!”',
-          'hero_jiaxu': '“Trời Đất Là Cờ, Nhân Tâm Là Mồi, Mưu Định Giang Sơn!”'
+          'hero_jiaxu': '“Trời Đất Là Cờ, Nhân Tâm Là Mồi, Mưu Định Giang Sơn!”',
+          'hero_dianwei': '“Chúa Công Tại Đâu, Thiết Kích Điển Vi Trấn Sát Tại Đó!”'
         };
         ui.revealQuoteText.textContent = quotes[pulledHero.id] || `“${pulledHero.name} phụng mệnh quy vị, vì Chúa Công bình định thiên hạ!”`;
       }
@@ -1093,14 +1428,53 @@ document.addEventListener('DOMContentLoaded', () => {
       showToast(`🌟 THỈNH TRIỆU THÀNH CÔNG: [${pulledHero.rarity}] ${pulledHero.name}!`, true);
 
       // State progression
-      if (pulledHero.id === 'hero_zhaoyun') {
-        state.unlocked.zhaoyun = true;
-      }
+      if (pulledHero.id === 'hero_zhaoyun') state.unlocked.zhaoyun = true;
+      if (pulledHero.id === 'hero_gaoshun') state.unlocked.gaoshun = true;
+      if (pulledHero.id === 'hero_jiaxu') state.unlocked.giaHu = true;
       state.unlocked.gacha = true;
       updateProgressTrackerUI();
 
       isSummoning = false;
+    };
+
+    pendingGrandRevealFn = executeGrandReveal;
+
+    // -------------------------------------------------------------
+    // PHASE 2: TỤ KHÍ BÁT QUÁI & KINTSUGI RESONANCE
+    // -------------------------------------------------------------
+    const t1 = setTimeout(() => {
+      if (ui.baguaFormation) ui.baguaFormation.classList.add('fast-spin');
+      playVortexWhoosh();
+
+      if (isHighRarity) {
+        if (ui.kintsugiFracturesLayer) ui.kintsugiFracturesLayer.classList.remove('hidden');
+        triggerLightning('#FFD700');
+        triggerShake('subtle');
+        if (ui.talismanHint) ui.talismanHint.textContent = "Thiên cơ chấn động! Kim quang vạn trượng tụ hội!";
+      } else {
+        triggerLightning('#38bdf8');
+        if (ui.talismanHint) ui.talismanHint.textContent = "Linh khí tụ hội!";
+      }
+    }, 550);
+    summonTimers.push(t1);
+
+    // -------------------------------------------------------------
+    // PHASE 3: PHÁ ẤN (Seal Shatter Shockwave)
+    // -------------------------------------------------------------
+    const t2 = setTimeout(() => {
+      if (ui.sealShatterFx) ui.sealShatterFx.classList.remove('hidden');
+      playThunderCrack();
+      triggerShake('impact');
+    }, 1450);
+    summonTimers.push(t2);
+
+    // -------------------------------------------------------------
+    // PHASE 4: GIÁNG THẾ (Grand Full-Screen Hero Reveal)
+    // -------------------------------------------------------------
+    const t3 = setTimeout(() => {
+      executeGrandReveal();
     }, 2050);
+    summonTimers.push(t3);
   }
 
   function handleConfirmSummon() {
@@ -1129,6 +1503,150 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     resetGachaAltarState();
     performSummon();
+  }
+
+  // =========================================================================
+  // 6B. UNIVERSAL SYSTEM HERO GRAND REVEAL (IN-STORY DIEGETIC RITUAL)
+  // =========================================================================
+  function triggerHeroGrandReveal(heroId, onComplete) {
+    const hero = allHeroes.find(h => h.id === heroId) || allHeroes[0];
+    if (!hero) return;
+
+    state.lastSummonedHero = hero;
+    if (!state.ownedHeroIds.includes(hero.id)) {
+      state.ownedHeroIds.push(hero.id);
+    }
+    if (hero.id === 'hero_zhaoyun') state.unlocked.zhaoyun = true;
+    if (hero.id === 'hero_gaoshun') state.unlocked.gaoshun = true;
+    if (hero.id === 'hero_jiaxu') state.unlocked.giaHu = true;
+    state.unlocked.gacha = true;
+    updateProgressTrackerUI();
+
+    // Record into summon history
+    const historyRecord = {
+      hero: hero,
+      pity: state.pityCount,
+      timestamp: new Date().toLocaleTimeString('vi-VN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+    };
+    if (!state.summonHistory) state.summonHistory = [];
+    state.summonHistory.push(historyRecord);
+
+    resetGachaAltarState();
+    isSummoning = true;
+    initGachaEmbers();
+    clearSummonTimers();
+
+    if (ui.gachaModal) ui.gachaModal.classList.remove('hidden');
+    if (ui.altarBtnRow) ui.altarBtnRow.classList.add('hidden');
+    if (ui.summonTalisman) ui.summonTalisman.classList.add('talisman-sacrificed');
+    if (ui.btnGachaSkip) ui.btnGachaSkip.classList.remove('hidden');
+
+    playBellChime();
+
+    // 1. Fast spin & Kintsugi fractures
+    if (ui.baguaFormation) ui.baguaFormation.classList.add('fast-spin');
+    if (ui.kintsugiFracturesLayer) ui.kintsugiFracturesLayer.classList.remove('hidden');
+    triggerLightning('#FFD700');
+    triggerShake('subtle');
+
+    const executeReveal = () => {
+      clearSummonTimers();
+      if (ui.btnGachaSkip) ui.btnGachaSkip.classList.add('hidden');
+      if (ui.kintsugiFracturesLayer) ui.kintsugiFracturesLayer.classList.add('hidden');
+      if (ui.sealShatterFx) ui.sealShatterFx.classList.add('hidden');
+      if (ui.baguaFormation) ui.baguaFormation.classList.remove('fast-spin');
+
+      playGrandFanfare();
+
+      const HERO_IMAGE_MAP = {
+        'hero_zhaoyun': 'assets/images/zhaoyun.jpg',
+        'hero_gaoshun': 'assets/images/caoshun.jpg',
+        'hero_jiaxu': 'assets/images/giahu.jpg',
+        'hero_dianwei': 'assets/images/dianwei.jpg'
+      };
+      const HERO_SEAL_MAP = {
+        'hero_zhaoyun': '趙',
+        'hero_gaoshun': '高',
+        'hero_jiaxu': '賈',
+        'hero_guojia': '郭',
+        'hero_dianwei': '典',
+        'hero_lvbu': '呂',
+        'hero_guan_yu': '關',
+        'hero_zhang_fei': '張',
+        'hero_zhuge_liang': '諸',
+        'hero_zhou_yu': '周',
+        'hero_diaochan': '貂',
+        'hero_machao': '馬',
+        'hero_huangzhong': '黃',
+        'hero_zhangliao': '張'
+      };
+
+      if (ui.revealCardImg) {
+        ui.revealCardImg.src = HERO_IMAGE_MAP[hero.id] || hero.avatar || 'assets/images/caoshun.jpg';
+      }
+      if (ui.revealSealBadge) {
+        ui.revealSealBadge.textContent = HERO_SEAL_MAP[hero.id] || '將';
+      }
+      if (ui.revealCardName) {
+        ui.revealCardName.textContent = hero.name.toUpperCase();
+      }
+      if (ui.revealCardTitle) {
+        const alias = (hero.aliases && hero.aliases[0]) ? hero.aliases[0] : '';
+        ui.revealCardTitle.textContent = `${alias ? alias + ' · ' : ''}Võ Lực ${hero.base_stats ? hero.base_stats.force : 90}`;
+      }
+      if (ui.revealCardRarity) {
+        const rarityText = hero.rarity === 'UR' ? 'CHIẾN THẦN TRUYỀN THUYẾT' : (hero.rarity === 'SSR' ? 'HOÀNG KIM THƯỢNG TƯỚNG' : 'VẠN KIM VÕ TƯỚNG');
+        ui.revealCardRarity.textContent = `${hero.rarity} · ${rarityText}`;
+      }
+      if (ui.revealCardRealm) {
+        ui.revealCardRealm.textContent = `Cảnh giới: ${hero.realm || 'Hóa Cảnh Đỉnh Phong'}`;
+      }
+      if (ui.revealQuoteText) {
+        const quotes = {
+          'hero_zhaoyun': '“Long Đảm Nhất Xuất, Thiên Quân Vạn Mã Tẫn Đoạn Hồn!”',
+          'hero_gaoshun': '“Hãm Trận Dũng Sĩ, Hữu Tử Vô Sinh, Quyết Bất Thối Bộ!”',
+          'hero_jiaxu': '“Trời Đất Là Cờ, Nhân Tâm Là Mồi, Mưu Định Giang Sơn!”',
+          'hero_dianwei': '“Chúa Công Tại Đâu, Thiết Kích Điển Vi Trấn Sát Tại Đó!”'
+        };
+        ui.revealQuoteText.textContent = quotes[hero.id] || `“${hero.name} phụng mệnh quy vị, vì Chúa Công bình định thiên hạ!”`;
+      }
+      if (ui.revealStatForce) ui.revealStatForce.textContent = hero.base_stats ? hero.base_stats.force : 90;
+      if (ui.revealStatCmd) ui.revealStatCmd.textContent = hero.base_stats ? hero.base_stats.command : 85;
+      if (ui.revealStatInt) ui.revealStatInt.textContent = hero.base_stats ? hero.base_stats.intelligence : 75;
+      if (ui.revealStatTroop) ui.revealStatTroop.textContent = hero.troop_type || 'Bạch Mã Nghĩa Tòng';
+
+      if (ui.gachaGrandReveal) ui.gachaGrandReveal.classList.remove('hidden');
+      if (ui.revealActionRow) ui.revealActionRow.classList.remove('hidden');
+
+      showToast(`🌟 THỈNH TRIỆU THÀNH CÔNG: [${hero.rarity}] ${hero.name}!`, true);
+
+      // Temporary override for confirm button
+      const onStoryConfirm = () => {
+        if (ui.gachaModal) ui.gachaModal.classList.add('hidden');
+        resetGachaAltarState();
+        showToast(`⚔️ Đã tiếp nhận danh tướng! ${hero.name} đã quy vị dưới trướng.`);
+        ui.btnRevealConfirm.removeEventListener('click', onStoryConfirm);
+        ui.btnRevealConfirm.addEventListener('click', handleConfirmSummon);
+        if (onComplete) onComplete();
+      };
+      ui.btnRevealConfirm.removeEventListener('click', handleConfirmSummon);
+      ui.btnRevealConfirm.addEventListener('click', onStoryConfirm);
+    };
+
+    pendingGrandRevealFn = executeReveal;
+
+    const t1 = setTimeout(() => {
+      // 2. Shockwave shatter
+      if (ui.sealShatterFx) ui.sealShatterFx.classList.remove('hidden');
+      playThunderCrack();
+      triggerShake('impact');
+    }, 700);
+    summonTimers.push(t1);
+
+    const t2 = setTimeout(() => {
+      executeReveal();
+    }, 1400);
+    summonTimers.push(t2);
   }
 
   function handleInspectHero() {
@@ -1170,6 +1688,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Left Column
+    const HERO_SPLASH_MAP = {
+      'hero_zhaoyun': 'assets/images/zhaoyun.jpg',
+      'hero_gaoshun': 'assets/images/caoshun.jpg',
+      'hero_jiaxu': 'assets/images/giahu.jpg',
+      'hero_dianwei': 'assets/images/dianwei.jpg'
+    };
+    if (ui.inspectorHeroImg) {
+      ui.inspectorHeroImg.src = HERO_SPLASH_MAP[hero.id] || hero.avatar || 'assets/images/zhaoyun.jpg';
+    }
     ui.inspectorRarityCrest.textContent = `${hero.rarity} · ${hero.rarity === 'UR' ? 'CHIẾN THẦN VÔ SONG' : hero.rarity === 'SSR' ? 'HOÀNG KIM THƯỢNG TƯỚNG' : 'TINH ANH TIÊN PHONG'}`;
     ui.inspectorHeroName.textContent = hero.name.toUpperCase();
     ui.inspectorHeroEpithet.textContent = `${hero.aliases[0] || hero.name} · ${hero.troop_type}`;
@@ -1233,6 +1760,11 @@ document.addEventListener('DOMContentLoaded', () => {
   let typewriterTimer = null;
 
   function renderCurrentDialogue() {
+    // Hide choice modal whenever dialogue starts or is not at choice point
+    if (ui.choiceModal && (!ink.hasChoices() || state.currentTextIndex < ink.currentText.length - 1)) {
+      ui.choiceModal.classList.add('hidden');
+    }
+
     // If ink engine has text, display it
     if (ink.currentText && ink.currentText.length > 0) {
       if (state.currentTextIndex >= ink.currentText.length) {
@@ -1248,32 +1780,44 @@ document.addEventListener('DOMContentLoaded', () => {
       const isQuoted = trimmedLine.startsWith('"') || trimmedLine.startsWith('“') || trimmedLine.startsWith("'") || trimmedLine.startsWith('「');
       const hasSpeakerColon = trimmedLine.includes(': "') || trimmedLine.includes(': “') || trimmedLine.includes('：');
 
+      // Check if previous line introduced the speaker
+      const prevLine = state.currentTextIndex > 0 ? (ink.currentText[state.currentTextIndex - 1] || "") : "";
+
       if (isQuoted || hasSpeakerColon) {
-        if (line.includes("Mạt tướng") || line.includes("Tử Long") || line.includes("Triệu Vân")) {
-          speakerName = "Triệu Tử Long";
-          speakerSub = "Thường Sơn Hổ Tướng · Hoàng Cảnh Sơ Kỳ";
-        } else if (line.includes("Phò mã gia!") || line.includes("bệ hạ triệu kiến") || line.includes("Tỳ nữ")) {
-          speakerName = "Tỳ Nữ Phò Mã Phủ";
-          speakerSub = "Cung Nhân Hầu Cận";
-        } else if (line.includes("Bệ hạ Đại Vũ") || line.includes("Lễ nghĩa chi bang") || line.includes("Thiên đương kỳ bàn") || line.includes("Địa tác tỳ bà")) {
+        if (prevLine.includes("Vũ Hoàng") || line.includes("trẫm") || line.includes("Trẫm") || line.includes("HAY! HAY LẮM!") || line.includes("Ban thưởng")) {
+          speakerName = "Vũ Hoàng";
+          speakerSub = "Đại Vũ Hoàng Đế · Cửu Ngũ Chí Tôn";
+        } else if (prevLine.includes("Sứ thần") || prevLine.includes("Nam Ly") || line.includes("Bệ hạ Đại Vũ") || line.includes("Thiên đương kỳ bàn") || line.includes("Nam Ly ta")) {
           speakerName = "Sứ Thần Nam Ly";
           speakerSub = "Sứ Đoàn Phương Nam";
-        } else if (line.includes("HAY! HAY LẮM!") || line.includes("Trẫm không ngờ") || line.includes("Đối đi.") || line.includes("Ban thưởng phò mã")) {
-          speakerName = "Vũ Hoàng";
-          speakerSub = "Đại Vũ Đế Vương";
-        } else if (line.includes("Cao Thuận") || line.includes("Hãm Trận Doanh")) {
+        } else if (prevLine.includes("Tỳ nữ") || prevLine.includes("Tiểu Thúy") || line.includes("Phò mã gia!") || line.includes("bệ hạ triệu kiến") || line.includes("Tỳ nữ")) {
+          speakerName = "Tỳ Nữ Cung Đình";
+          speakerSub = "Cung Nhân Hầu Cận";
+        } else if (prevLine.includes("Triệu Vân") || prevLine.includes("Tử Long") || line.includes("Mạt tướng") || line.includes("Tử Long") || line.includes("Triệu Tử Long")) {
+          speakerName = "Triệu Tử Long";
+          speakerSub = "Thường Sơn Hổ Tướng · Hoàng Cảnh Sơ Kỳ";
+        } else if (prevLine.includes("Cao Thuận") || line.includes("Cao Thuận") || line.includes("Hãm Trận Doanh") || line.includes("Hãm Trận")) {
           speakerName = "Cao Thuận";
-          speakerSub = "Thống Soái Hãm Trận Doanh";
-        } else if (line.includes("Văn Hòa") || line.includes("Độc kế")) {
+          speakerSub = "Thống Soái Hãm Trận Doanh · Vạn Kim Võ Tướng";
+        } else if (prevLine.includes("Giả Hủ") || prevLine.includes("Cổ Hủ") || line.includes("Cổ Hủ") || line.includes("Giả Hủ") || line.includes("Văn Hòa") || line.includes("Độc kế")) {
           speakerName = "Giả Hủ (Văn Hòa)";
-          speakerSub = "Tuyệt Thế Độc Sĩ";
+          speakerSub = "Tuyệt Thế Độc Sĩ · Mưu Định Tam Quốc";
+        } else if (prevLine.includes("Điển Vi") || line.includes("Điển Vi") || line.includes("Ác Lai")) {
+          speakerName = "Điển Vi";
+          speakerSub = "Cổ Chi Ác Lai · Hộ Pháp Hùng Tướng";
+        } else if (prevLine.includes("Tô Kiến Phong") || line.includes("Tô tướng quân")) {
+          speakerName = "Tô Kiến Phong";
+          speakerSub = "Chấn Uy Tướng Quân Đại Vũ";
+        } else if (prevLine.includes("Thích khách") || line.includes("Nạp mạng đi") || line.includes("Chết đi")) {
+          speakerName = "Hắc Y Thích Khách";
+          speakerSub = "Dạ Hành Sát Thủ";
         } else {
           speakerName = "Quý Bình An";
           speakerSub = "Phò Mã Gia";
         }
-      } else if (trimmedLine.startsWith("[HỆ THỐNG]") || trimmedLine.includes("[HỆ THỐNG]")) {
-        speakerName = "Hệ Thống Tam Quốc";
-        speakerSub = "Trí Huệ Xuyên Không";
+      } else if (trimmedLine.startsWith("[HỆ THỐNG]") || trimmedLine.includes("[HỆ THỐNG]") || trimmedLine.startsWith("[THIÊN CƠ") || trimmedLine.includes("[THIÊN CƠ")) {
+        speakerName = "Thiên Cơ Hệ Thống";
+        speakerSub = "Trí Huệ Tam Quốc Xuyên Không";
       } else {
         // Pure narration: ALWAYS "Người Dẫn Truyện"
         speakerName = "Người Dẫn Truyện";
@@ -1286,7 +1830,63 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const speakerSeal = document.getElementById('vn-speaker-seal');
       if (speakerSeal) {
-        speakerSeal.textContent = isNarrator ? "史" : (speakerName[0] || "鎮");
+        let sealGlyph = "史";
+        if (isNarrator) {
+          sealGlyph = "史";
+        } else if (speakerName.includes("Triệu") || speakerName.includes("Tử Long")) {
+          sealGlyph = "趙";
+        } else if (speakerName.includes("Quý Bình An") || speakerName.includes("Phò Mã")) {
+          sealGlyph = "駙";
+        } else if (speakerName.includes("Vũ Hoàng") || speakerName.includes("Hoàng")) {
+          sealGlyph = "武";
+        } else if (speakerName.includes("Cao Thuận")) {
+          sealGlyph = "高";
+        } else if (speakerName.includes("Giả Hủ") || speakerName.includes("Cổ Hủ")) {
+          sealGlyph = "賈";
+        } else if (speakerName.includes("Điển Vi")) {
+          sealGlyph = "典";
+        } else if (speakerName.includes("Tô")) {
+          sealGlyph = "蘇";
+        } else if (speakerName.includes("Vệ")) {
+          sealGlyph = "衛";
+        } else if (speakerName.includes("Sứ Thần")) {
+          sealGlyph = "使";
+        } else if (speakerName.includes("Tỳ Nữ") || speakerName.includes("Nha Hoàn")) {
+          sealGlyph = "侍";
+        } else if (speakerName.includes("Thích Khách") || speakerName.includes("Hắc Y")) {
+          sealGlyph = "刺";
+        } else if (speakerName.includes("Hệ Thống")) {
+          sealGlyph = "天";
+        } else {
+          sealGlyph = "鎮";
+        }
+        speakerSeal.textContent = sealGlyph;
+      }
+
+      // Dynamic Standee Character Resolution (Zero Asset Sharing)
+      let leftStandeePath = 'assets/images/actor_to_kien_phong.png';
+      const speakerLower = speakerName.toLowerCase();
+
+      if (speakerLower.includes("triệu vân") || speakerLower.includes("tử long")) {
+        leftStandeePath = 'assets/images/actor_trieu_van.png';
+      } else if (speakerLower.includes("cao thuận")) {
+        leftStandeePath = 'assets/images/actor_cao_thuan.png';
+      } else if (speakerLower.includes("giả hủ") || speakerLower.includes("cổ hủ") || speakerLower.includes("văn hòa")) {
+        leftStandeePath = 'assets/images/actor_gia_hu.png';
+      } else if (speakerLower.includes("điển vi") || speakerLower.includes("ác lai")) {
+        leftStandeePath = 'assets/images/actor_dien_vi.png';
+      } else if (speakerLower.includes("vũ hoàng") || speakerLower.includes("hoàng đế") || speakerLower.includes("bệ hạ")) {
+        leftStandeePath = 'assets/images/actor_vu_hoang.png';
+      } else if (speakerLower.includes("sứ thần") || speakerLower.includes("nam ly")) {
+        leftStandeePath = 'assets/images/actor_nam_ly_envoy.png';
+      } else if (speakerLower.includes("vệ tí vũ") || speakerLower.includes("thị vệ") || speakerLower.includes("vệ tướng")) {
+        leftStandeePath = 'assets/images/actor_ve_ti_vu.png';
+      } else if (speakerLower.includes("tỳ nữ") || speakerLower.includes("nha hoàn") || speakerLower.includes("cung tỳ")) {
+        leftStandeePath = 'assets/images/actor_servant.png';
+      } else if (speakerLower.includes("thích khách") || speakerLower.includes("hắc y") || speakerLower.includes("sát thủ")) {
+        leftStandeePath = 'assets/images/actor_assassin.png';
+      } else if (speakerLower.includes("tô kiến phong") || speakerLower.includes("tô tướng")) {
+        leftStandeePath = 'assets/images/actor_to_kien_phong.png';
       }
 
       // Update Standee Speaking / Listening Focus (Dynamic VN Depth)
@@ -1305,6 +1905,12 @@ document.addEventListener('DOMContentLoaded', () => {
           ui.actorLeftSlot.classList.add('speaking');
           ui.actorLeftSlot.classList.remove('listening');
           if (ui.actorLeftNametag) ui.actorLeftNametag.textContent = speakerName;
+          if (ui.actorLeftImg && leftStandeePath) {
+            if (!ui.actorLeftImg.src.endsWith(leftStandeePath)) {
+              ui.actorLeftImg.src = leftStandeePath;
+              ui.actorLeftImg.alt = speakerName;
+            }
+          }
         }
         if (ui.actorRightSlot) {
           ui.actorRightSlot.classList.add('listening');
@@ -1794,7 +2400,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ui.playerZoneCenter.innerHTML = `
         <div class="card-unit hero-card" id="card-hero-center">
           <div class="hero-crest">DANH TƯỚNG</div>
-          <img src="assets/images/actor_to_kien_phong.png" alt="Triệu Vân" class="hero-mini-art">
+          <img src="assets/images/actor_trieu_van.png" alt="Triệu Vân" class="hero-mini-art">
           <div class="hero-details">
             <div class="hero-name">Triệu Tử Long</div>
             <div class="hero-title">Thường Sơn Triệu Tử Long</div>
@@ -2193,6 +2799,21 @@ document.addEventListener('DOMContentLoaded', () => {
         ui.gachaModal.classList.add('hidden');
         resetGachaAltarState();
       });
+    }
+    if (ui.btnGachaRules && ui.gachaRulesModal) {
+      ui.btnGachaRules.addEventListener('click', () => ui.gachaRulesModal.classList.remove('hidden'));
+    }
+    if (ui.btnCloseGachaRules && ui.gachaRulesModal) {
+      ui.btnCloseGachaRules.addEventListener('click', () => ui.gachaRulesModal.classList.add('hidden'));
+    }
+    if (ui.btnGachaHistory && ui.gachaHistoryModal) {
+      ui.btnGachaHistory.addEventListener('click', renderSummonHistory);
+    }
+    if (ui.btnCloseGachaHistory && ui.gachaHistoryModal) {
+      ui.btnCloseGachaHistory.addEventListener('click', () => ui.gachaHistoryModal.classList.add('hidden'));
+    }
+    if (ui.btnGachaSkip) {
+      ui.btnGachaSkip.addEventListener('click', skipSummonRitual);
     }
     if (ui.btnDoSummon) ui.btnDoSummon.addEventListener('click', performSummon);
     if (ui.summonTalisman) ui.summonTalisman.addEventListener('click', performSummon);
@@ -3187,6 +3808,8 @@ document.addEventListener('DOMContentLoaded', () => {
   window.updateFactionIdentityUI = updateFactionIdentityUI;
   window.openGachaModal = openGachaModal;
   window.performSummon = performSummon;
+  window.skipSummonRitual = skipSummonRitual;
+  window.renderSummonHistory = renderSummonHistory;
   window.openHeroInspector = openHeroInspector;
 
   // =========================================================================
@@ -3198,6 +3821,25 @@ document.addEventListener('DOMContentLoaded', () => {
   updateProgressTrackerUI();
   updateHudResources();
   initEvents();
+  window.game = {
+    ink,
+    state,
+    switchView,
+    renderCurrentDialogue,
+    advanceDialogue,
+    openGachaModal,
+    performSummon,
+    skipSummonRitual,
+    renderSummonHistory,
+    triggerHeroGrandReveal,
+    advanceChapter,
+    jumpToKnot: (knot) => {
+      ink.start(knot);
+      state.currentTextIndex = 0;
+      switchView('vn');
+      renderCurrentDialogue();
+    }
+  };
   renderCurrentDialogue();
 
   // Initialize Trio Techstack
