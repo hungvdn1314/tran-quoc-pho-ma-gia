@@ -1,199 +1,195 @@
-# 📜 Trấn Quốc Phò Mã Gia (鎮國駙馬爺)
-### Grand Strategy Campaign & Tactical Card Battler Game Adaptation
+# 📜 Trấn Quốc Phò Mã Gia (镇国驸马爷)
+### Grand Strategy Campaign, Tactical Card Battler & Branching Visual Novel Engine
 
-> **Chuyển thể từ nguyên tác**: Tiểu thuyết mạng lịch sử / quân sự / huyền huyễn *Trấn Quốc Phò Mã Gia* của tác giả Hiên Chí (轩轾)  
+> **Chuyển thể từ nguyên tác**: Tiểu thuyết mạng lịch sử / quân sự / quyền mưu *Trấn Quốc Phò Mã Gia* của tác giả Hiên Chí (轩轾)  
 > **Quy mô nguyên tác**: 1.509 chương · 2.470.000 từ · 100% tiếng Việt  
 > **Định hướng gameplay**: Chiến lược sa bàn mô phỏng lịch sử (Grand Strategy Campaign) kết hợp thẻ bài sa trường chiến thuật (Tactical Card Battler) & Visual Novel đa nhánh (Branching Narrative)  
-> **Phạm vi Season 1**: Từ Chương 1 (*Phò Mã hàn vi nơm nớp lo sợ*) đến Chương 386 (*Đăng cơ Hoàng đế lập ra Đại Hán, ban bố Bốn Đại Chính Lệnh*)
+> **Phạm vi Season 1**: Từ Chương 1 (*Phò Mã hàn vi nơm nớp lo sợ*) đến Chương 386 (*Đăng cơ Hoàng đế lập ra Đại Hán, ban bố Bốn Đại Chính Lệnh*)  
+> **Tiêu chuẩn nghệ thuật**: Tả Thực Cổ Phong Thủy Mặc & Kim Kế Hắc Ám (Eastern Grimdark Realism + Ink Wash Aesthetics + Kintsugi Molten Gold)
 
 ---
 
 ## 🌟 ĐIỂM NỔI BẬT CỦA DỰ ÁN
 
-1. **Bộ Dữ Liệu Kịch Bản Toàn Diện (Game Bible V2)**:
-   - Bóc tách sâu từ 1.509 chương truyện với **490 phần tử chuẩn hóa**:
-     - 👥 **120 Nhân Vật** (Thuộc tính võ lực, cảnh giới võ đạo từ Vương Cảnh đến Nhân Tiên, vũ khí thần binh, thú cưỡi, tuyệt kỹ Tam Quốc chuẩn xác).
-     - ⚔️ **68 Trận Đánh & Chiến Dịch Lớn** (Hỏa công Bắc Cô Sơn, Đại chiến Thanh Châu, Thủy chiến Hoài Hà, Hồn Huyết Sơn, Phi Mã Thành, Thiên Băng Địa Liệt...).
-     - 📜 **116 Sự Kiện Cốt Truyện Trọng Điểm** (Tứ phương hội ngộ, Lấy nước đổi nước, Chân tướng Quý Vô Song, Bí mật Song Sinh Ngũ Thân của A Bố...).
-     - 🏛️ **42 Tổ Chức & Lực Lượng** (Mạng lưới sát thủ Hồng Nhan, Cẩm Y Mật Thám, An Tức Vệ, Huyết Y Các, Thiên Cơ Lâu, Quốc Giáo Đại La...).
-     - 🗺️ **63 Địa Danh Chiến Lược** (Đế Đô, Khai Nguyên, 3 châu Bắc Cảnh, Lâm Quan Thành, Ca Bỉ Hoàng Thành...).
-     - 🔧 **37 Phát Minh & Công Nghệ** (Xà phòng Thấu Hoa Cao, Lưu Hỏa, Móng ngựa sắt, Cơ quan nỏ liên hoàn, Phẫu thuật mổ sọ Hoa Đà...).
-     - ⚖️ **44 Biến Cố Chính Trị** (Bức cung phong vương, Bốn Đại Chính Lệnh, Tam nhượng đế vị...).
+### 1. 📜 Bám Sát 100% Cốt Truyện Nguyên Tác Canon (1.509 Chương)
+- **Chuẩn hóa Timeline Lịch Sử Tuyệt Đối**:
+  - **Chương 1 – 14**: *Phò Mã Phủ Hàn Vi* — Giải vế đối Nam Ly tại Kim Loan Điện, thức tỉnh Thiên Cơ Hệ Thống (Ch.5), giải độc mật thất, phát minh xà phòng Thấu Hoa Cao (Ch.8).
+  - **Chương 17 – 21**: *Vạn Kim Mưu Sĩ Mã Tắc (Ấu Thường)* — Tích đủ 10.000 kim triệu hoán Mã Tắc. Nhận thấy tật "chỉ thượng đàm binh", Quý Bình An lập kế **"Cao Nâng Mã Tắc"**: dâng biểu xin Vũ Hoàng ban Miễn Tử Lệnh cho Mã Tắc, rồi tiến cử sang làm quân sư cho đối thủ Tô Vân khiến phe Tô Vân sa lầy; đồng thời giao Mã Tắc củng cố thành phòng Liễu Châu.
+  - **Chương 27 – 30**: *Độc Sĩ Giả Hủ & Huyết Y Doanh* — Hố 20 vạn kim từ Vũ Hoàng, triệu hoán Giả Hủ; chiêu mộ toàn bộ tử tù lập nên **Huyết Y Doanh** (đội quân cảm tử áo máu).
+  - **Chương 48 – 52**: *Đại Chiến Thanh Châu* — Triệu Vân dẫn Huyết Y Doanh hiệp đồng Giả Hủ phá đê xả lũ sông Thanh Thủy, dìm chết quân Nam Ly.
+  - **Chương 63**: Triệu hoán Cổ Chi Ác Lai **Điển Vi** bảo vệ soái trướng.
+  - **Chương 200**: Triệu hoán **Cao Thuận** & xây dựng thiết giáp bộ binh **Hãm Trận Doanh** (Hồi 4: *Trấn Quốc Khởi Vân*).
+  - **Chương 201 – 386**: Triệu hoán Tuân Úc (Ch.201), phong Trấn Quốc Công (Ch.255), thăng Tịnh Kiên Vương (Ch.303), Tam Nhượng Đế Vị & Đăng cơ Hoàng Đế Đại Hán (Ch.386).
 
-2. **Mô Hình Kiến Trúc "Tam Đại Tầng" (3-Tier Gameplay Architecture)**:
-   - **TẦNG 1: Visual Novel Theater**: Dẫn dắt cốt truyện, tương tác nhân vật, lựa chọn quyền mưu với hệ thống đa kết cục (*True Ending, Bad Endings, What-If Endings*).
-   - **TẦNG 2: Đế Nghiệp Sa Bàn (Grand Strategy Node Map)**: Quản lý bản đồ cứ điểm theo lượt (Turn-based Node Map), sử dụng điểm Hành Động (AP), điều phối quân lương, nâng cấp xưởng Thấu Hoa Cao và phái thám báo Hồng Nhan.
-   - **TẦNG 3: Sa Trường Thẻ Bài (Tactical Card Battler)**: Giải quyết các chiến dịch công/thủ thành với thực thể **Tường Thành (Fortress Wall: 500 HP)** hưởng buff *Cao Lâm Hạ*, kết hợp độc kế Giả Hủ, dũng uy Triệu Vân và khí giới Mã Quân.
+### 2. 🛡️ Quy Chuẩn Canon Bất Khả Xâm Phạm (Inviolable Canon Rules)
+- **100% Nghi Thức Bái Tướng Thần Đàn (Mandatory Summoning Ritual)**:
+  - Mọi tướng triệu hoán (Triệu Vân, Mã Tắc, Giả Hủ, Điển Vi, Cao Thuận...) bắt buộc kích hoạt toàn diện nghi thức cổ phong: Bát Quái phá ấn, rạn nứt Kintsugi hoàng kim, sấm chớp giáng lâm, Splash Art toàn màn hình, Bảng chỉ số Tứ Duy, Danh xưng võ học và Ấn triện chu sa.
+- **Không Dùng Chung Tài Nguyên (Zero Asset Sharing)**:
+  - 100% nhân vật xuất hiện trong kịch bản Visual Novel (kể cả Vũ Hoàng, Tô Kiến Phong, Sứ Thần Nam Ly, Vệ Ti Vũ, Tỳ Nữ, Thích Khách...) đều sở hữu Standee PNG/WebP độc bản bóc nền trong suốt RGBA.
+- **Triệt Tiêu Hoàn Toàn Bệnh "Web Dashboard / SaaS / E-Commerce"**:
+  - 🚫 Tuyệt đối cấm card thống kê hình chữ nhật kiểu KPI/Google Analytics.
+  - 🚫 Tuyệt đối cấm hàng nút bấm mua hàng kiểu giỏ hàng Shopify (`.upgrade-tray`).
+  - 🚫 Tuyệt đối cấm tab lọc dẹt văn phòng và thanh cuộn xám native của trình duyệt.
+  - ✅ **100% Thành Phần Nhập Vai Diegetic Cổ Phong**:
+    - **Thư Trục Xuyến Chỉ (Silk Parchment)**: Mở bảng tra cứu dưới dạng Trục Cuộn Phong Thần Bảng hai đầu nẹp gỗ mun bịt đồng.
+    - **Bổn Mệnh Thư Giản (Bamboo Slips)**: Duyệt danh sách tướng bằng hàng thẻ tre khắc tên và ấn triện phân loại (`[ 武 ]`, `[ 謀 ]`, `[ 巾 ]`, `[ 異 ]`).
+    - **Ngũ Trọng Trận Đồ Khắc Minh**: Nâng cấp tướng qua 5 vòng pháp trận Bát Quái & Cửu Đỉnh Luyện Khí bằng thao tác ấn triện chu sa và khớp nối phù tiết thay cho nút mua hàng.
+    - **Chữ Hán Đại Tả & Ấn Triện Chu Sa**: Số thứ tự chương và tài nguyên thể hiện qua chữ Hán cổ (`壹`, `伍`, `拾`, `贰拾`, `佰`...) và ấn triện (`[ 駙 ]`, `[ 策 ]`, `[ 血 ]`, `[ 壇 ]`, `[ 戈 ]`, `[ 卷 ]`).
 
-3. **Thanh Nghi Kỵ Của Vũ Hoàng (Emperor's Suspicion Meter: 0 - 100%)**:
-   - Cơ chế độc nhất vô nhị phản ánh đúng bản chất chính trị của tác phẩm: Mọi hành động bành trướng quân sự đều đẩy mức nghi kỵ của hoàng đế lên cao. Người chơi phải dùng lợi nhuận từ *Thấu Hoa Cao* để đút lót và dâng nạp cống phẩm nhằm giữ chỉ số an toàn (< 60%) cho tới ngày Đăng Cơ Xưng Đế (Chương 386).
-
-4. **Aesthetic Chủ Đạo: "Bạch Ngân Cổ Phong x Kim Kế Thủy Mặc" (Kintsugi Ink)**:
-   - Giữ **100% nhận diện kinh điển** của từng anh linh Tam Quốc (Triệu Vân ngân giáp bạch bào, Quan Vũ lục bào thanh long đao...).
-   - Điểm xuyết tinh tế **đường nứt dát vàng nóng chảy (Kintsugi Molten Gold)** tượng trưng cho *Anh Linh được đúc kết từ Vạn Kim của Quý Bình An*.
-   - Khung nền hòa quyện giữa **thủy mặc đen (Sumi-e)**, tàn tro vàng và khói bụi chiến trường bi tráng.
-
----
-
-## 🎮 BẢN MẪU WEB CHƠI THỬ (PLAYABLE WEB PROTOTYPE V2)
-
-Dự án sở hữu một bản **Playable Web Prototype V2** được nâng cấp toàn diện với chiều sâu cơ chế thương mại, chạy độc lập không cần cài đặt môi trường:
-
-```
-prototype/
-├── index.html                  # Giao diện chính 3 tầng + Bái Tướng Đài Gacha + Bảng Tướng + Ma Trận Tiến Trình
-├── styles.css                  # Thiết kế Kintsugi Molten Gold x Obsidian Ink, 3D Card Flip & Bát Quái trận
-├── app.js                      # Động cơ tương tác: Typewriter, Quản lý Mở khóa theo chương, Gacha, Sa Bàn, Sa Trường
-└── assets/
-    ├── images/zhaoyun.jpg      # Concept Art chuẩn duyệt: Triệu Tử Long (Bạch Ngân x Kim Kế)
-    └── screenshots/            # Ảnh chụp trực tiếp gameplay
-        ├── milestone_matrix.png     # Ma trận tiến trình mở khóa theo từng chương (Ch.1 - Ch.52)
-        ├── gacha_altar.png          # Bái Tướng Đài chiêu mộ Anh Linh Tam Quốc (Bát Quái Kintsugi)
-        ├── gacha_card_reveal.png    # Hiệu ứng lật thẻ 3D Card Flip & triệu hoán Triệu Vân SSR
-        ├── hero_card_inspector.png  # Bảng soi chi tiết Tứ Duy, Cảnh giới, Thần Binh, Tuyệt Kỹ & Duyên Phận
-        ├── feature_unlock_modal.png # Thánh chỉ thông báo mở khóa tính năng theo mốc chương
-        ├── tier1_vn.png             # Tầng 1: Visual Novel Theater đối thơ đại điện & phân nhánh
-        ├── tier2_map.png            # Tầng 2: Sa bàn địa lý 4 phương, thủy lộ Hoài Hà & phòng tuyến
-        ├── tier3_battle.png         # Tầng 3: Đấu thẻ bài 3 làn, ý đồ kẻ địch (Enemy Intent) & Tường Thành
-        └── tier3_victory.png        # Tầng 3: Màn hình quyết toán Đại Thắng S-Rank
-```
-
-### 📸 Gameplay Screenshots & Tính Năng Trọng Tâm:
-
-#### 1. Bái Tướng Đài (Gacha Summoning Altar & 3D Card Reveal)
-- **Chuẩn phong cách game thẻ bài Tam Quốc thương mại**: Tái hiện nghi thức chiêu mộ anh linh trang nghiêm với Trận pháp Bát Quái dát vàng Kintsugi xoay vần (`baguaRotate`), bùa chú chu sa và hào quang sấm sét giáng lâm.
-- **Hiệu ứng lật mở thẻ bài 3D (3D Card Flip & Molten Gold Particles)**: Lật mở chân dung Thần Tướng Triệu Tử Long (SSR) uy phong lẫm liệt, kích hoạt hiệu ứng sương khói và ngân quang chấn động.
-- **Tích hợp vào mạch truyện nguyên tác**: Mở khóa tại **Chương 5 (Phò Mã Phủ)** sau khi hoàn thành đối thơ và thức tỉnh Hệ Thống.
-
-![Bái Tướng Đài Chiêu Mộ Gacha](prototype/assets/screenshots/gacha_altar.png)
-![Hiệu Ứng Lật Thẻ Bài 3D SSR Triệu Vân](prototype/assets/screenshots/gacha_card_reveal.png)
-
-#### 2. Bảng Soi Thuộc Tính Danh Tướng (Hero Card Detail Inspector)
-- **Hệ Thống Tứ Duy RPG Tam Quốc**:
-  - ⚔️ **Võ Lực: 96/100** | 🛡️ **Thống Soái: 91/100** | 🧠 **Trí Lực: 76/100** | 📜 **Chính Trị: 65/100**
-- **Cảnh Giới Võ Đạo & Chỉ Số Sinh Tồn**:
-  - Cảnh giới: **Hoàng Cảnh Sơ Kỳ** (Bám sát thiết lập huyền huyễn nguyên tác).
-  - Sinh lực: **180 HP** · Sát thương: **102 ATK** · Binh chủng: **Bạch Mã Nghĩa Tòng**.
-- **Thần Binh & Thú Cưỡi Truyền Thuyết**:
-  - Vũ khí: **Long Đảm Lượng Ngân Thương** (+25 Võ Lực, Đâm Xuyên Giáp).
-  - Thú cưỡi: **Chiếu Dạ Ngọc Sư Tử** (+15 Thống Soái, Khởi Đầu Tăng Tốc).
-- **Tuyệt Kỹ Sa Trường**:
-  - *Thất Thám Bàn Xà* (Tuyệt kỹ chủ động: 120 ST, ngắt hoàn toàn đòn đánh của tướng địch).
-  - *Long Đảm* (Bị động: Dưới 30% HP tăng 40% Né Tránh & Miễn Khống).
-  - *Thường Sơn Hổ Tướng* (Bị động: Phản kích 50% sát thương khi bị tấn công cận chiến).
-- **Hệ Thống Duyên Phận (Bonds Activation)**:
-  - *Ngũ Hổ Thượng Tướng* (Cùng Quan Vũ, Trương Phi, Mã Siêu, Hoàng Trung): +25% Toàn Thuộc Tính.
-  - *Thân Vệ Song Bích* (Cùng Điển Vi bảo vệ Quý Bình An): +20% Miễn Thương.
-  - *Ngọa Long Phụ Tá* (Cùng Gia Cát Lượng): Khởi đầu trận đấu đầy 100% Nộ Khí.
-
-![Bảng Soi Thuộc Tính Danh Tướng](prototype/assets/screenshots/hero_card_inspector.png)
-
-#### 3. Ma Trận Mở Khóa Tính Năng Theo Từng Chương (Chapter Unlock Matrix)
-Tuân thủ nguyên tắc thiết kế **Progressive Feature Unlock**: Người chơi không thể sử dụng bừa bãi mọi tính năng ngay từ đầu. Tất cả tính năng đều khóa chặt (🔒) và chỉ mở khóa khi người chơi đạt đúng mốc chương tương ứng trong cốt truyện:
-
-| Chương Mốc | Tên Phân Cảnh Cốt Truyện | Tính Năng Được Khai Mở (Unlock) | Hiệu Quả Chiến Lược |
-| :---: | :--- | :--- | :--- |
-| **Chương 1** | Xuyên Không & Yến Tiệc Hoàng Cung | Thức Tỉnh Hệ Thống Anh Linh | Nhận 100 Vàng + 1 Anh Hồn Lệnh Sơ Cấp |
-| **Chương 5** | Mật Thất Phò Mã Phủ | Mở khóa **Bái Tướng Đài Gacha** | Chiêu mộ Triệu Tử Long SSR & Mở Bảng Tướng |
-| **Chương 8** | Thiên Kim Lâu & Lâu Chủ Vệ Ti Vũ | Mở khóa **Kinh Doanh Thấu Hoa Cao** | Sản xuất xà phòng tinh chế (+3.000 Vàng mỗi lượt) |
-| **Chương 10** | Ám Sát Tại Sân Viện Phò Mã Phủ | Triệu Vân thi triển uy lực Hoàng Cảnh | Đập tan sát thủ, rẽ nhánh điều tra mật mưu |
-| **Chương 15** | Vũ Hoàng Hạ Chỉ Chinh Phạt Bắc Cảnh | Mở khóa **Tầng 2: Đế Nghiệp Sa Bàn** | Bản đồ 4 vùng chiến lược, Thủy lộ Hoài Hà & Điểm AP |
-| **Chương 27** | Hố Vàng Vũ Hoàng & Triệu Hoán Giả Hủ | Mở khóa **Siêu Thẻ Thủy Công Giả Hủ** | Kích hoạt Độc Kế Xả Lũ Sông Thanh Thủy |
-| **Chương 43** | Bắt Sống Tri Huyện Lưu Nguyên | Mở khóa **Kho Lương Khai Nguyên** | Tiếp tế quân lương đại quân (+50.000 Thạch Lương) |
-| **Chương 48-52** | Đại Quân Địch Hỏa Vây Thành Thanh Châu | Mở khóa **Tầng 3: Sa Trường Thẻ Bài** | Giao chiến thủ thành 3 làn, Tường thành 500 HP |
-
-![Ma Trận Mở Khóa Tính Năng Theo Chương](prototype/assets/screenshots/milestone_matrix.png)
-![Thánh Chỉ Mở Khóa Tính Năng Mới](prototype/assets/screenshots/feature_unlock_modal.png)
-
-#### 4. Tầng 1: Visual Novel Theater (Đối Thoại Kép & Rẽ Nhánh Chuẩn Cốt Truyện)
-- **Mở đầu bằng vế đối chấn động triều đình**: Sứ thần Nam Ly ngạo mạn ra vế đối *"Thiên đương kỳ bàn tinh tác tử, thùy nhân cảm hạ?"*, Quý Bình An đối lại vế câu thần sầu *"Địa tác tỳ bà lộ tác huyền, cái thế thùy đạn?"* chấn động văn võ bá quan.
-- **Sân khấu hai nhân vật (Dual-Actor Stage)**: Quý Bình An / Triệu Vân đối đầu Tô Kiến Phong / Vũ Hoàng / Cổ Hủ với hiệu ứng rọi sáng chủ thể đang nói.
-- **Phân nhánh kịch bản thực sự**: Lựa chọn chiến lược ảnh hưởng trực tiếp đến thanh *Nghi Kỵ Vũ Hoàng* và ngân khố.
-
-![Tầng 1: Visual Novel Theater](prototype/assets/screenshots/tier1_vn.png)
-
-#### 5. Tầng 2: Đế Nghiệp Sa Bàn (Bản Đồ Địa Lý 4 Vùng Chiến Lược)
-- **Địa lý 4 phương rõ ràng**: Phân định trực quan 4 vùng lãnh thổ (Đại Vũ Hoàng Triều, Căn Cứ Bắc Cảnh, Nam Ly Xâm Lăng, Tây Lăng Thiết Kỵ).
-- **Hệ thống sông ngòi & quan ải hiểm trở**: Thủy lộ Sông Hoài Hà, Sông Thanh Thủy và Dãy Núi Bắc Cô Sơn.
-- **Bảng điều lệnh quân cơ**: Chi tiêu Điểm Hành Động (AP), Mở rộng xưởng xà phòng *Thấu Hoa Cao* (+3.000 Vàng), Cống nạp mua chuộc hoạn quan (-15% Nghi Kỵ).
-
-![Tầng 2: Đế Nghiệp Sa Bàn](prototype/assets/screenshots/tier2_map.png)
-
-#### 6. Tầng 3: Sa Trường Thẻ Bài Chiến Thuật (Enemy Intent & Tường Thành)
-- **Cơ chế Ý Đồ Kẻ Địch (Enemy Intent System)**: Hiển thị minh bạch hành động sắp tới của quân Nam Ly mỗi hiệp (Công thành 80 HP, Bắn cung 35 HP, Bạo Liệt Đao Pháp của Địch Hỏa 90 HP).
-- **Thực thể Tường Thành (Fortress Wall: 500 HP)**: Buff *Cao Lâm Hạ* che chắn hàng sau, hứng chịu sát thương từ Xe Đục Thành.
-- **Độc Kế Giả Hủ — Trữ Lượng Nước Sông Thanh Thủy**: Tích lũy 3 cấp độ (Cấp 1: Đắp Đê -> Cấp 2: Nước Dâng -> Cấp 3: Đại Hồng Thủy), kích hoạt thẻ *Xả Lũ Thanh Thủy*.
-- **Tuyệt Kỹ Thất Thám Bàn Xà của Triệu Vân**: Đâm liên hoàn 7 thương ngắt hoàn toàn ý đồ nguy hiểm của Tướng địch.
-- **Đại Thắng S-Rank**: Màn hình vinh danh chiến tích với phần thưởng vàng, quân lương và mở khóa danh tướng tiếp theo (Điển Vi & Lý Nho).
-
-![Tầng 3: Sa Trường Thẻ Bài](prototype/assets/screenshots/tier3_battle.png)
-![Tầng 3: Màn Hình Đại Thắng S-Rank](prototype/assets/screenshots/tier3_victory.png)
-
-### Cách trải nghiệm ngay:
-* **Cách 1**: Nhấp đúp chuột mở trực tiếp tệp `prototype/index.html` trên bất kỳ trình duyệt nào (Chrome, Edge, Firefox, Brave).
-* **Cách 2**: Chạy máy chủ tĩnh local:
-  ```bash
-  cd prototype
-  python -m http.server 8080
-  # Truy cập http://localhost:8080 trên trình duyệt
-  ```
+### 3. 🎨 Hệ Thống Nghệ Thuật & Âm Thanh Diegetic
+- **Kiến Trúc Typography 4 Lớp Tiếng Việt An Toàn**:
+  - `--font-title`: *Playfair Display*, *Cormorant Garamond*, *Noto Serif* (Tiêu đề, địa danh, sát thương).
+  - `--font-text`: *Be Vietnam Pro* (Giao diện, nhãn số, thông số).
+  - `--font-serif`: *Lora*, *Noto Serif* (Lời thoại văn học Visual Novel).
+  - `--font-seal`: *ZCOOL XiaoWei*, *Noto Serif SC* (Ấn triện khắc chu sa cổ phong).
+- **Âm Thanh Tổng Hợp Web Audio API**:
+  - Nhạc nền Ambient thủ tục thích ứng theo phân cảnh (phòng kín, đại điện, sa trường).
+  - Hiệu ứng âm thanh diegetic: tiếng mộc bản lật mở, bút lông quét mực, tiếng đóng triện chu sa đanh gọn, tiếng sấm sét phá ấn Bát Quái.
 
 ---
 
-## 🕸️ ĐỒ THỊ QUAN HỆ NHÂN VẬT TƯƠNG TÁC (CHARACTER GRAPH V2)
+## 🏗️ KIẾN TRÚC MÃ NGUỒN HIỆN ĐẠI (ES6 MODULES & TYPESCRIPT)
 
-Dự án sở hữu mạng lưới quan hệ 120 nhân vật tương tác độc lập dựng bằng NetworkX & PyVis:
-* **Địa chỉ truy cập**: Mở tệp `data/character_graph_v2/index.html` trên trình duyệt.
-* **Quy mô**: 120 Nodes, 356 Mối quan hệ đa chiều (Đồng minh, Kình địch, Quân thần, Gia tộc, Hôn nhân).
-* **Tính năng**: Tìm kiếm nhân vật thời gian thực, bảng chú thích màu sắc 11 phe phái, click xem thẻ chi tiết thuộc tính từng nhân vật.
-
----
-
-## 📁 CẤU TRÚC DỰ ÁN (PROJECT DIRECTORY)
+Dự án đã được hiện đại hóa toàn diện từ mã nguồn nguyên khối sang kiến trúc module hướng đối tượng, tách bạch rõ ràng giữa State, Engine, UI và Audio:
 
 ```
 tran-quoc-pho-ma-gia/
-├── data/
-│   ├── game_bible_v2/                 # Master Game Bible (490 elements)
-│   │   ├── characters.json            # 120 nhân vật chuẩn hóa Tam Quốc
-│   │   ├── battles.json               # 68 trận đánh lớn
-│   │   ├── key_plot_events.json       # 116 sự kiện then chốt
-│   │   ├── organizations.json         # 42 thế lực & tổ chức
-│   │   ├── locations.json             # 63 địa danh chiến lược
-│   │   ├── technologies.json          # 37 phát minh khoa kỹ
-│   │   ├── political_events.json      # 44 biến cố chính trị
-│   │   └── game_bible_v2_master.json  # Toàn bộ dữ liệu tổng hợp (463 KB)
-│   ├── character_graph_v2/            # Đồ thị mạng lưới quan hệ nhân vật (HTML + JSON)
-│   ├── chapter_feature_unlock_matrix.json # Ma trận mở khóa tính năng Ch.1-386 (Season 1)
-│   ├── story_timeline.json            # Dòng thời gian 1.509 chương
-│   └── tran_quoc_pho_ma_gia_full.json # Toàn văn 1.509 chương tiểu thuyết crawl
-├── prototype/                         # Mã nguồn Bản Mẫu Web chơi thử nghiệm
-│   ├── index.html
-│   ├── styles.css
-│   ├── app.js
-│   └── assets/images/
-├── scripts/                           # Bộ công cụ bóc tách, audit & xử lý dữ liệu
-│   ├── crawler.py                     # Pipeline cào truyện bất đồng bộ
-│   ├── deep_scan.py                   # Quét từ khóa toàn văn 1.509 chương
-│   ├── merge_game_bible.py            # Hợp nhất và loại trùng Game Bible
-│   ├── audit_and_fix_tam_quoc.py      # Chuẩn hóa danh xưng & thuật ngữ Tam Quốc
-│   └── build_character_graph_v2.py    # Dựng đồ thị quan hệ PyVis
-├── historical_strategy_game_design.md # Tài liệu thiết kế game chính thức (GDD)
-└── README.md                          # Tài liệu giới thiệu dự án
+├── src/                               # Toàn bộ mã nguồn TypeScript hiện đại
+│   ├── main.ts                        # Điểm khởi động ứng dụng
+│   ├── bridge.ts                      # Cầu nối tương thích giữa mã nguồn cũ và hệ thống module mới
+│   ├── core/                          # Quản lý Trạng Thái & Logic Tiến Trình
+│   │   ├── DataLoader.ts              # Nạp dữ liệu cấu hình game & kịch bản Ink
+│   │   ├── EventBus.ts                # Bus sự kiện trung tâm (Decoupled pub/sub)
+│   │   ├── GameCoordinator.ts         # Điều phối luồng chuyển đổi giữa 3 tầng chơi
+│   │   ├── GameStateStore.ts          # Store trạng thái tập trung phản ứng nhanh
+│   │   ├── ProgressionEngine.ts       # Quản lý 5 tầng thế lực & mở khóa tính năng
+│   │   ├── canonHeroesData.ts         # Database 29 danh tướng Canon 1.509 chương
+│   │   └── types.ts                   # Định nghĩa kiểu dữ liệu chuẩn TypeScript
+│   ├── engines/                       # Bộ Ba Động Cơ Trò Chơi
+│   │   ├── narrative/                 # TẦNG 1: Visual Novel Theater & Pixi sương mù
+│   │   │   ├── InkEngine.ts           # Trình thông dịch kịch bản Ink phân nhánh
+│   │   │   ├── VisualNovelEngine.ts   # Điều khiển sân khấu, thoại kép & Standee
+│   │   │   └── PixiMistAtmosphere.ts  # Hiệu ứng khí quyển sương mù thủy mặc
+│   │   ├── strategy/                  # TẦNG 2: Sa Bàn 3D Three.js
+│   │   │   └── ThreeWarTable.ts       # Bàn cát chiến lược 3D mô phỏng địa hình
+│   │   ├── combat/                    # TẦNG 3: Sa Trường Thẻ Bài 3 Làn
+│   │   │   ├── TacticalBattleEngine.ts # Logic giao tranh thẻ bài & Tường thành
+│   │   │   └── PhaserCombatFx.ts      # Hiệu ứng chém kích, hỏa tiễn, lôi đòn Phaser
+│   │   └── gacha/                     # Hệ Thống Triệu Hoán Bái Tướng Thần Đàn
+│   │       ├── GachaEngine.ts         # Nghi thức phá ấn Kintsugi & Splash Art
+│   │       └── PityCalculator.ts      # Tính toán xác suất & cơ chế bảo hiểm Pity
+│   ├── ui/                            # Giao Diện Cổ Phong Diegetic
+│   │   ├── ViewportScaler.ts          # Co giãn chuẩn tỷ lệ 16:9 responsive không méo
+│   │   ├── hud/DiegeticHud.ts         # Khung tài nguyên ngọc ấn & điểm AP sa bàn
+│   │   └── modals/                    # Bảng Tra Cứu Cổ Phong
+│   │       ├── ModalsManager.ts       # Quản lý cửa sổ mở cuộn & phím tắt Escape
+│   │       ├── BambooSlips.ts         # Thẻ tre duyệt danh tướng
+│   │       └── HeroInspectorScroll.ts # Thư trục xuyến chỉ & Ngũ Trọng Trận Đồ
+│   ├── audio/                         # Động Cơ Âm Thanh Web Audio
+│   │   ├── AudioSynthesizer.ts        # Bộ tổng hợp âm thanh thủ tục (SFX)
+│   │   └── ProceduralAmbientBgm.ts    # Nhạc nền ambient thích ứng
+│   └── styles/                        # Hệ thống CSS module cổ phong không CSS-in-JS
+│       ├── base.css, hud.css, modals.css, diegetic-modals.css...
+├── data/                              # Dữ liệu kịch bản & cấu hình game
+│   ├── game_config/                   # Cấu hình JSON (heroes, cards, milestones...)
+│   ├── scenes/                        # Kịch bản phân nhánh Ink (ch01-15, ch16-52)
+│   ├── game_bible_v2/                 # Master Game Bible bóc tách từ 1.509 chương
+│   └── character_graph_v2/            # Đồ thị quan hệ 120 nhân vật tương tác PyVis
+├── prototype/                         # Bản chạy thử nghiệm độc lập & tài nguyên đồ họa
+│   ├── assets/images/                 # Toàn bộ Standee PNG/WebP độc bản & Bối cảnh
+│   └── game_data.js                   # Bundle dữ liệu offline cho client
+├── scripts/                           # Bộ công cụ tự động hóa, kiểm thử & build
+│   ├── bundle_game_data.py            # Đóng gói dữ liệu cấu hình sang JS bundle
+│   ├── narrative_validator.py         # Kiểm thử tự động kịch bản Ink (Pathfinding QA)
+│   ├── sync-dist-assets.js            # Đồng bộ tài nguyên sang dist/ khi build
+│   └── game_balance/                  # Kiểm tra cân bằng & toàn vẹn dữ liệu
+├── dist/                              # Bản build production tối ưu hóa
+├── vite.config.ts                     # Cấu hình Vite bundler
+├── tsconfig.json                      # Cấu hình TypeScript nghiêm ngặt
+└── package.json
 ```
 
 ---
 
-## 🗺️ LỘ TRÌNH PHÁT TRIỂN (ROADMAP)
+## 🚀 HƯỚNG DẪN CÀI ĐẶT & CHẠY ỨNG DỤNG
 
-- [x] **Phase 1**: Thu thập & làm sạch dữ liệu toàn bộ 1.509 chương tiểu thuyết.
-- [x] **Phase 2**: Trích xuất sâu kịch bản Game Bible V2 (490 elements, 120 nhân vật, 68 trận đánh).
-- [x] **Phase 3**: Dựng đồ thị quan hệ tương tác PyVis & chuẩn hóa thuật ngữ Tam Quốc.
-- [x] **Phase 4**: Xây dựng Game Design Document (GDD) theo chuẩn Grand Strategy Campaign Tam Đại Tầng.
-- [x] **Phase 5**: Định hình Aesthetic "Kim Kế Thủy Mặc" & xây dựng Playable Web Prototype.
-- [ ] **Phase 6**: Mở rộng toàn bộ 6 Acts của Season 1 lên Web Engine (Phaser 3 / PixiJS).
-- [ ] **Phase 7**: Tích hợp hệ thống Lưu Trữ / Checkpoint & triển khai bản thử nghiệm cộng đồng.
+### 1. Yêu Cầu Môi Trường
+- **Node.js**: Phiên bản 18+ trở lên.
+- **Python**: Phiên bản 3.9+ (để chạy các script bóc tách và đóng gói dữ liệu).
+
+### 2. Cài Đặt Gói Phụ Thuộc
+```bash
+# Cài đặt dependencies (Vite, TypeScript, Pixi, Three, Phaser...)
+npm install
+```
+
+### 3. Chạy Môi Trường Phát Triển (Development Server)
+```bash
+# Khởi chạy Vite dev server với Hot Module Replacement (HMR)
+npm run dev
+# Mở trình duyệt truy cập: http://localhost:5173/
+```
+
+### 4. Đóng Gói Bản Sản Phẩm (Production Build)
+```bash
+# Biên dịch TypeScript, đóng gói mã nguồn và đồng bộ assets vào thư mục dist/
+npm run build
+
+# Xem thử bản đóng gói production
+npm run preview
+```
+
+### 5. Chạy Bộ Kiểm Thử Tự Động (Automated QA Suites)
+```bash
+# 1. Kiểm tra toàn vẹn kịch bản phân nhánh Ink (Narrative Pathfinding QA)
+npm run test:narrative
+
+# 2. Kiểm tra chéo toàn vẹn dữ liệu Game Config
+python scripts/game_balance/validate_game_data.py
+
+# 3. Kiểm tra 29 Danh Tướng Canon bám sát 1.509 chương
+python scripts/game_balance/validate_canon_heroes.py
+
+# 4. Đóng gói lại bundle dữ liệu game
+python scripts/bundle_game_data.py
+```
 
 ---
 
-*Dự án phát triển vì niềm đam mê với tác phẩm Trấn Quốc Phò Mã Gia và dòng game chiến thuật sa bàn lịch sử.*
+## 🎮 HỆ THỐNG GAMEPLAY "TAM ĐẠI TẦNG" (3-TIER GAMEPLAY)
+
+```mermaid
+graph TD
+    A["📜 TẦNG 1: Visual Novel Theater<br/>(Đối thoại kịch bản Ink, Quyền mưu, Rẽ nhánh)"] -->|Mở khóa tính năng & Giao nhiệm vụ| B["🗺️ TẦNG 2: Đế Nghiệp Sa Bàn<br/>(Bản đồ 3D Three.js, Quản lý lãnh thổ, Tiêu AP)"]
+    B -->|Hành quân chạm trán thế lực địch| C["⚔️ TẦNG 3: Sa Trường Thẻ Bài<br/>(Giao tranh 3 làn, Tường thành 500HP, Ý đồ địch)"]
+    C -->|Đại Thắng S-Rank, Thu phục tướng| D["🏛️ Bái Tướng Thần Đàn<br/>(Phá ấn Kintsugi, Thỉnh anh linh Tam Quốc)"]
+    D -->|Phản hồi võ lực Quý Bình An & Thuộc tính| A
+```
+
+1. **TẦNG 1 — Visual Novel Theater**:
+   - Đối thơ triều đình, mật thất mưu sự, lựa chọn giữa lòng trung và dã tâm.
+   - Quản lý **Thanh Nghi Kỵ Vũ Hoàng (0 - 100%)**: Cần khéo léo dùng xà phòng Thấu Hoa Cao và cống phẩm để giảm nghi kỵ, bảo toàn tính mạng trước khi đủ lông đủ cánh.
+2. **TẦNG 2 — Đế Nghiệp Sa Bàn**:
+   - Sa bàn 3D thể hiện địa thế hiểm trở: Đế Đô, 3 châu Bắc Cảnh, Hoài Hà, sông Thanh Thủy, quan ải Bắc Cô Sơn.
+   - Quản lý Điểm Hành Động (AP), lương thảo, tuyển mộ binh lực và điều tra mật báo Hồng Nhan.
+3. **TẦNG 3 — Sa Trường Thẻ Bài Chiến Thuật**:
+   - Cơ chế giao chiến 3 làn (Tiền duyên, Trung quân, Hậu tập).
+   - Thực thể **Tường Thành (Fortress Wall: 500 HP)** hưởng buff *Cao Lâm Hạ*.
+   - Khắc chế binh chủng: Kỵ binh > Cung thủ > Bộ binh giáo dài > Kỵ binh.
+   - Thẻ mưu lược đỉnh cao: *Thất Thám Bàn Xà* (Triệu Vân), *Đắp Đê Xả Lũ Hồng Thủy* (Giả Hủ), *Kỷ Luật Thiết Thạch* (Cao Thuận).
+
+---
+
+## 📜 KẾT QUẢ KIỂM ĐỊNH CHẤT LƯỢNG (QA METRICS)
+
+| Hạng Mục Kiểm Tra | Công Cụ / Kịch Bản | Trạng Thái | Kết Quả Đạt Được |
+| :--- | :--- | :---: | :--- |
+| **Type Check** | `tsc --noEmit` | ✅ PASS | 0 lỗi TypeScript |
+| **Kịch Bản Ink** | `narrative_validator.py` | ✅ PASS | 33 Knots, 31 Diverts, 0 Unresolved Diverts |
+| **Dữ Liệu Tướng** | `validate_canon_heroes.py` | ✅ PASS | 29 Danh tướng khớp 100% 8 tầng cảnh giới |
+| **Tính Cân Bằng** | `validate_game_data.py` | ✅ PASS | 17 thẻ bài, 3 chiến dịch, 18 mốc niên biểu |
+| **Đóng Gói Static** | `npm run build` | ✅ PASS | Xuất dist/ hoàn chỉnh, zero broken links |
+
+---
+
+*Dự án được xây dựng với sự tôn trọng tuyệt đối dành cho nguyên tác văn học Trấn Quốc Phò Mã Gia, mang đến trải nghiệm nhập vai chiến thuật lịch sử cổ phong chuẩn mực nhất.*
