@@ -345,7 +345,7 @@ Vũ Hoàng đích thân rời khỏi Cửu Long Bảo Tọa, bước xuống th�
 # EFFECT: screen_flash|#FFD700|1200
 # EFFECT: sfx_gong_ancient
 
-[THIÊN CƠ HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ! Hoàn thành toàn vẹn HỒI 1 (Chương 1 ➔ Chương 52)!
+[THIÊN CƠ HỆ THỐNG]: CHÚC MỪNG KÝ CHỦ! Hoàn thành toàn vẹn HỒI 1 (Chương 1 → Chương 52)!
 [THIÊN CƠ HỆ THỐNG]: Mở khóa tôn hiệu: Chinh Bắc Đại Tướng Quân. Uy danh triều đình đạt Cấp 4!
 
 Đây chỉ là khởi đầu của con đường định đoạt giang sơn thiên hạ!
@@ -353,4 +353,4 @@ Vũ Hoàng đích thân rời khỏi Cửu Long Bảo Tọa, bước xuống th�
 # EFFECT: show_toast|[ 捷 ] TOÀN BỘ HỒI 1 ĐẠI KHẢI HOÀN (CHƯƠNG 1 - 52)!|triumph
 # EFFECT: chapter_complete|52
 
--> END
+-> chapter_53_start

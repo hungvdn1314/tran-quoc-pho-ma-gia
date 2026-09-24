@@ -431,7 +431,7 @@ export class GachaEngine {
       this.audio.playGrandFanfare();
 
       if (this.revealCardImg) {
-        this.revealCardImg.src = pulledHero.splashUrl || pulledHero.avatarUrl || 'assets/images/zhaoyun.jpg';
+        this.revealCardImg.src = pulledHero.splashUrl || pulledHero.avatarUrl || 'assets/images/seal_placeholder.png';
       }
       if (this.revealSealBadge) {
         this.revealSealBadge.textContent = pulledHero.sealGlyph || pulledHero.name[0] || '將';
@@ -529,7 +529,7 @@ export class GachaEngine {
 
       this.audio.playGrandFanfare();
 
-      if (this.revealCardImg) this.revealCardImg.src = hero.splashUrl || hero.avatarUrl || 'assets/images/zhaoyun.jpg';
+      if (this.revealCardImg) this.revealCardImg.src = hero.splashUrl || hero.avatarUrl || 'assets/images/seal_placeholder.png';
       if (this.revealSealBadge) this.revealSealBadge.textContent = hero.sealGlyph || hero.name[0] || '將';
       if (this.revealCardName) this.revealCardName.textContent = hero.name.toUpperCase();
       if (this.revealCardTitle) this.revealCardTitle.textContent = `${hero.title || 'Võ Tướng'} · Võ Lực ${hero.baseForce || 90}`;

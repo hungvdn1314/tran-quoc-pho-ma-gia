@@ -126,6 +126,9 @@ document.addEventListener('DOMContentLoaded', () => {
     food: 0,              // Lương thảo (Chưa có quân đội)
     ap: 0,                // Điểm Hành Động (Mở tại Ch.15)
     maxAp: 3,
+    hostForce: 5,         // Chân Khí Bổn Thể Quý Bình An
+    heroProgression: {},  // heroId -> 5 Trọng Trận Khắc Minh
+    activeInspectorCategory: 'all',
 
     // Gacha & Roster State (Chưa chiêu mộ anh linh nào)
     pityCount: 0,
@@ -302,28 +305,18 @@ document.addEventListener('DOMContentLoaded', () => {
     revealStatInt: document.getElementById('reveal-stat-int'),
     revealStatTroop: document.getElementById('reveal-stat-troop'),
 
-    // Hero Detail Inspector Modal
+    // Hero Card Inspector: Tranh Cuộn Thủy Mặc & Trúc Giản Quân Cơ
     heroDetailModal: document.getElementById('hero-detail-modal'),
+    scrollHostForce: document.getElementById('scroll-host-force'),
+    scrollGoldDisplay: document.getElementById('scroll-gold-display'),
     btnCloseHeroDetail: document.getElementById('btn-close-hero-detail'),
-    inspectorHeroSelector: document.getElementById('inspector-hero-selector'),
-    inspectorRarityCrest: document.getElementById('inspector-rarity-crest'),
-    inspectorHeroImg: document.getElementById('inspector-hero-img'),
-    inspectorHeroName: document.getElementById('inspector-hero-name'),
-    inspectorHeroEpithet: document.getElementById('inspector-hero-epithet'),
-    inspectorRealmVal: document.getElementById('inspector-realm-val'),
-    qsValForce: document.getElementById('qs-val-force'),
-    qsBarForce: document.getElementById('qs-bar-force'),
-    qsValCommand: document.getElementById('qs-val-command'),
-    qsBarCommand: document.getElementById('qs-bar-command'),
-    qsValIntel: document.getElementById('qs-val-intel'),
-    qsBarIntel: document.getElementById('qs-bar-intel'),
-    qsValPol: document.getElementById('qs-val-pol'),
-    qsBarPol: document.getElementById('qs-bar-pol'),
-    csValHp: document.getElementById('cs-val-hp'),
-    csValAtk: document.getElementById('cs-val-atk'),
-    csValCost: document.getElementById('cs-val-cost'),
-    csValTroop: document.getElementById('cs-val-troop'),
-    inspectorSkillsList: document.getElementById('inspector-skills-list'),
+    bambooTalliesRow: document.getElementById('bamboo-tallies-row'),
+    bambooTalliesViewport: document.getElementById('bamboo-tallies-viewport'),
+    scrollHeroContent: document.getElementById('scroll-hero-content'),
+    scrollNoticeBanner: document.getElementById('scroll-notice-banner'),
+    defeatModal: document.getElementById('defeat-modal'),
+    btnDefeatRetry: document.getElementById('btn-defeat-retry'),
+    btnDefeatRetreat: document.getElementById('btn-defeat-retreat'),
 
     // Feature Unlock Modal
     unlockEventModal: document.getElementById('unlock-event-modal'),
@@ -454,8 +447,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   const ink = new (window.InkEngine || function() {})();
   if (GD.ink_stories) {
-    if (GD.ink_stories.ch01_15) ink.loadStoryScript(GD.ink_stories.ch01_15);
-    if (GD.ink_stories.ch16_52) ink.loadStoryScript(GD.ink_stories.ch16_52);
+    for (const key of Object.keys(GD.ink_stories)) {
+      if (typeof GD.ink_stories[key] === 'string') {
+        ink.loadStoryScript(GD.ink_stories[key]);
+      }
+    }
   }
 
   // Dynamic Multi-Scene Background Engine (Cross-Fade Layering)
@@ -590,7 +586,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const count = Number(parts[1] || 1);
       state.ticketCount += count;
       updateProgressTrackerUI();
-      showToast(`🎫 Nhận được Anh Hồn Lệnh × ${count}!`, true);
+      showToast(`[ 令 ] Nhận được Anh Hồn Lệnh × ${count}!`, true);
     } else if (action === "unlock_feature") {
       const feat = parts[1] || action;
       if (feat) triggerUnlockNotification(feat.trim());
@@ -686,7 +682,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cardFlood.title = "Siêu thẻ Giả Hủ: Trữ Nước Cấp 2+";
       } else {
         cardFlood.classList.add('locked-feature');
-        cardFlood.title = "🔒 Khóa: Cần hoàn thành Chương 27-35 (Kế sách Thủy Công)";
+        cardFlood.title = "[ 封 ] Khóa: Cần hoàn thành Chương 27-35 (Kế sách Thủy Công)";
       }
     }
   }
@@ -752,7 +748,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="f-current-info">
         <div class="f-current-tag">THẾ LỰC & THÂN PHẬN HIỆN THỜI (HỒI 1 · CHƯƠNG ${ch})</div>
         <div class="f-current-name">${current.factionName}</div>
-        <div class="f-current-role">👑 ${current.identityTitle} — ${current.fullTitle}</div>
+        <div class="f-current-role"><span class="f-crown-seal">璽</span> ${current.identityTitle} — ${current.fullTitle}</div>
         <div class="f-current-desc">${current.description}</div>
       </div>
     `;
@@ -764,13 +760,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isCompleted = s.id < current.id;
 
       let statusClass = 'stage-locked';
-      let statusBadge = '<span class="f-stage-badge badge-locked">CHƯA ĐẠT ĐẾN 🔒</span>';
+      let statusBadge = '<span class="f-stage-badge badge-locked">CHƯA ĐẠT ĐẾN [ 封 ]</span>';
       if (isCurrent) {
         statusClass = 'stage-active';
-        statusBadge = '<span class="f-stage-badge badge-active">HIỆN THỜI ⚡</span>';
+        statusBadge = '<span class="f-stage-badge badge-active">HIỆN THỜI [ 領 ]</span>';
       } else if (isCompleted) {
         statusClass = 'stage-completed';
-        statusBadge = '<span class="f-stage-badge badge-completed">ĐÃ VƯỢT QUA ✓</span>';
+        statusBadge = '<span class="f-stage-badge badge-completed">ĐÃ VƯỢT QUA [ 畢 ]</span>';
       }
 
       const stageEl = document.createElement('div');
@@ -784,7 +780,7 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div style="font-size: 11px; font-weight: 700; color: #c5a059;">Chương ${s.minChapter} - ${s.maxChapter === 999 ? 'Về Sau' : s.maxChapter} · ${s.fullTitle}</div>
           <p class="f-stage-desc">${s.description}</p>
-          <div class="f-stage-buff">✨ Mở rộng: ${s.buffSummary}</div>
+          <div class="f-stage-buff"><span class="buff-seal">詔</span> Khế ước: ${s.buffSummary}</div>
         </div>
       `;
       ui.factionStagesList.appendChild(stageEl);
@@ -813,83 +809,107 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const unlockDetails = {
       soap: {
-        icon: "🧼",
-        title: "MỞ KHÓA KINH DOANH!",
-        name: "XÀ PHÒNG THẤU HOA CAO (CHƯƠNG 8)",
-        lore: "Quý Bình An bắt tay cùng Lâu chủ Vệ Ti Vũ (Thiên Kim Lâu) phân phối xà phòng thơm độc quyền.",
-        effect: "⚡ Tác dụng: Cho phép thực hiện lệnh 'Mở Rộng Xưởng' thu hoạch +3.000 Vàng mỗi đợt!"
+        seal: "商",
+        origin: "PHÒ MÃ NỘI PHỦ · THƯƠNG HỘI QUY HOẠCH",
+        title: "KHỞI ĐỘNG ĐẾ NGHIỆP TÀI PHÚ",
+        name: "XÀ PHÒNG THƯƠNG NGHIỆP TRẤN BẮC",
+        lore: "Quý Bình An bắt tay cùng Lâu chủ Vệ Ti Vũ (Thiên Kim Lâu) sản xuất xà phòng Thấu Hoa Cao, mở đường tích lũy quân tư tự chủ.",
+        effect: "Tác dụng: Khai mở lệnh bồi thực xưởng thủ công, mỗi đợt tích lũy +3.000 Vàng ròng."
       },
       bai_tuong_dai: {
-        icon: "⛩️",
-        title: "MỞ KHÓA BÁI TƯỚNG ĐÀI!",
-        name: "ĐÀI CHIÊU MỘ ANH LINH TAM QUỐC (CHƯƠNG 5)",
-        lore: "Kích hoạt pháp trận Bát Quái thời thượng cổ, dùng Anh Hồn Lệnh triệu hoán anh linh Tam Quốc.",
-        effect: "⚡ Tác dụng: Cho phép Chiêu Mộ Danh Tướng và kiểm tra Bảng Tra Cứu Tứ Duy!"
+        seal: "壇",
+        origin: "THIÊN CƠ HỆ THỐNG · BÁI TƯỚNG DIỆC CƠ",
+        title: "KHAI MỞ BÁI TƯỚNG THẦN ĐÀN",
+        name: "THƯỢNG CỔ ANH HỒN LỆNH",
+        lore: "Khai mở pháp trận Bát Quái thời thượng cổ, nối liền thiên ngoại hà giang để triệu hoán thần tướng Tam Quốc nhập thế quy vị.",
+        effect: "Tác dụng: Sử dụng Anh Hồn Lệnh tế đàn chiêu mộ danh tướng và mở Thư Trục Phong Thần Bảng."
       },
       strategyMap: {
-        icon: "🗺️",
-        title: "MỞ KHÓA TẦNG 2 ĐẾ NGHIỆP!",
-        name: "ĐẾ NGHIỆP SA BÀN & LỆNH AP (CHƯƠNG 15)",
-        lore: "Vũ Hoàng sắc phong Chinh Bắc Đại Tướng Quân, ban cờ lệnh điều động binh mã 4 phương.",
-        effect: "⚡ Tác dụng: Khai thông giao diện Sa Bàn Quân Sự và tiêu hao Điểm Hành Động (AP)!"
+        seal: "輿",
+        origin: "TRIỀU ĐÌNH BAN PHONG · SOÁI ẤN BẮC CẢNH",
+        title: "TIẾP NHẬN BẮC CẢNH QUÂN CƠ SA BÀN",
+        name: "CHINH BẮC ĐẠI TƯỚNG QUÂN SOÁI KỲ",
+        lore: "Vũ Hoàng hạ chiếu ban soái kỳ cùng cờ lệnh Chinh Bắc, giao quyền quản thúc và tuần tra tuyến phòng thủ 4 phương.",
+        effect: "Tác dụng: Khai thông Sa Bàn Quân Sự 3D, ban bố 3 Điểm Hành Động (AP) mỗi lượt xoay vần."
       },
       de_nghiep_sa_ban: {
-        icon: "🗺️",
-        title: "MỞ KHÓA TẦNG 2 ĐẾ NGHIỆP!",
-        name: "ĐẾ NGHIỆP SA BÀN & LỆNH AP (CHƯƠNG 15)",
-        lore: "Vũ Hoàng sắc phong Chinh Bắc Đại Tướng Quân, ban cờ lệnh điều động binh mã 4 phương.",
-        effect: "⚡ Tác dụng: Khai thông giao diện Sa Bàn Quân Sự và tiêu hao Điểm Hành Động (AP)!"
+        seal: "輿",
+        origin: "TRIỀU ĐÌNH BAN PHONG · SOÁI ẤN BẮC CẢNH",
+        title: "TIẾP NHẬN BẮC CẢNH QUÂN CƠ SA BÀN",
+        name: "CHINH BẮC ĐẠI TƯỚNG QUÂN SOÁI KỲ",
+        lore: "Vũ Hoàng hạ chiếu ban soái kỳ cùng cờ lệnh Chinh Bắc, giao quyền quản thúc và tuần tra tuyến phòng thủ 4 phương.",
+        effect: "Tác dụng: Khai thông Sa Bàn Quân Sự 3D, ban bố 3 Điểm Hành Động (AP) mỗi lượt xoay vần."
       },
       feature_ham_tran_doanh: {
-        icon: "🛡️",
-        title: "MỞ KHÓA DANH TƯỚNG!",
-        name: "CAO THUẬN & HÃM TRẬN DOANH (CHƯƠNG 20)",
-        lore: "800 dũng sĩ cảm tử Hãm Trận Doanh mình mặc giáp thép tôi, xung phong hãm trận vô địch.",
-        effect: "⚡ Tác dụng: Bổ sung thẻ bài phòng ngự siêu việt Hãm Trận Doanh vào bộ bài!"
+        seal: "陣",
+        origin: "THIÊN CƠ TRIỆU HOÁN · DANH TƯỚNG TÙY TÙNG",
+        title: "DANH TƯỚNG CAO THUẬN QUY THUẬN",
+        name: "HÃM TRẬN DOANH THIẾT QUÂN PHÙ",
+        lore: "800 tử sĩ áo giáp sáng ngời, xung phong hãm trận chưa từng lùi bước. Thiết quân phù đúc bằng thép lạnh phương Bắc.",
+        effect: "Tác dụng: Bổ sung thẻ bài phòng ngự Thần Cấp Hãm Trận Doanh vào bộ bài thủ thành."
       },
       giaHu: {
-        icon: "🌊",
-        title: "MỞ KHÓA MƯU THẦN TAM QUỐC!",
-        name: "ĐỘC SĨ GIẢ HỦ & THỦY CÔNG (CHƯƠNG 27)",
-        lore: "Hố 20 vạn lượng vàng từ triều đình, thu phục mưu sĩ Giả Hủ phụ trách mưu kế diệt quân Nam Ly.",
-        effect: "⚡ Tác dụng: Mở khóa các thẻ bài mưu lược phản gián và độc kế!"
+        seal: "謀",
+        origin: "THIÊN CƠ HỆ THỐNG · MƯU THẦN TẠI VỊ",
+        title: "ĐỘC SĨ GIẢ HỦ NHẬP MẠC",
+        name: "LOẠN THẾ QUÂN CƠ MẬT QUYỂN",
+        lore: "Mưu sĩ Giả Hủ xuất thế, kế sách liên hoàn giấu kín trong bóng tối, sẵn sàng xoay chuyển càn khôn đại chiến.",
+        effect: "Tác dụng: Khai thông các thẻ bài mưu lược Đoạt Hồn, Ly Gián và Độc Kế trên sa trường."
       },
       feature_water_stratagem: {
-        icon: "🌊",
-        title: "MỞ KHÓA KẾ SÁCH THỦY CÔNG!",
-        name: "XẢ LŨ DÒNG THANH THỦY (CHƯƠNG 35)",
-        lore: "Đắp đê thượng nguồn sông Thanh Thủy tích nước 3 tầng, chuẩn bị nhấn chìm quân địch.",
-        effect: "⚡ Tác dụng: Mở khóa siêu kỹ năng Xả Lũ Sông Thanh Thủy trong trận chiến!"
+        seal: "水",
+        origin: "BẮC CẢNH ĐỊA LÝ · QUÂN CƠ DIỆU TOÁN",
+        title: "QUY HOẠCH CHIẾN THUẬT ĐẮP ĐÊ",
+        name: "THANH THỦY THỦY CÔNG BÍ THƯ",
+        lore: "Quan sát địa hình sông Thanh Thủy, xây dựng 3 tầng đê trữ nước thượng nguồn, chờ thời cơ nhấn chìm 2 vạn thiết kỵ.",
+        effect: "Tác dụng: Mở khóa chiến thuật Xả Lũ Sông Thanh Thủy, càn quét toàn bộ chiến tuyến kẻ địch."
       },
       khaiNguyen: {
-        icon: "🌾",
-        title: "MỞ KHÓA HẬU CẦN QUÂN LƯƠNG!",
-        name: "CĂN CỨ KHO LƯƠNG KHAI NGUYÊN (CHƯƠNG 43)",
-        lore: "Tích trữ 50.000 thạch lương thảo, đảm bảo hậu cần vững chắc cho đại quân.",
-        effect: "⚡ Tác dụng: Kho lương tăng thêm +50.000 Thạch phục vụ nuôi quân và hành quân!"
+        seal: "糧",
+        origin: "BẮC THÀNH THƯƠNG QUÂN · HẬU CẦN KHO BẢO",
+        title: "TIẾP QUẢN KHO LƯƠNG KHAI NGUYÊN",
+        name: "KHAI NGUYÊN THƯƠNG ĐẠO KHỐ PHÙ",
+        lore: "Chiếm cứ huyết mạch lương thảo phương Bắc, tích trữ 50.000 thạch quân lương, bảo đảm hậu cần vững như bàn thạch.",
+        effect: "Tác dụng: Dung lượng quân lương tăng thêm +50.000 Thạch, sẵn sàng nghênh tiếp đại quân."
       },
       battleFront: {
-        icon: "⚔️",
-        title: "MỞ KHÓA TẦNG 3 CHIẾN TRƯỜNG!",
-        name: "SA TRƯỜNG THẺ BÀI CHIẾN THUẬT (CHƯƠNG 48-52)",
-        lore: "2 vạn thiết kỵ Nam Ly của Địch Hỏa vây hãm thành trì, bước vào trận đại chiến thủ thành 3 làn.",
-        effect: "⚡ Tác dụng: Trực tiếp điều binh thủ thành, đối phó Ý Đồ Kẻ Địch và quyết toán đại thắng!"
+        seal: "戈",
+        origin: "BẮC THÀNH HUYẾT CHIẾN · NGUY CƠ TIỀN TUYẾN",
+        title: "KHỞI ĐỘNG SA TRƯỜNG THỦ THÀNH",
+        name: "THANH CHÂU THÀNH PHÒNG CHIẾN THỦY",
+        lore: "Đại quân Nam Ly ập tới chân thành Thanh Châu. Tiếng tù và rền vang, ba đạo phòng tuyến chính thức bước vào tử chiến.",
+        effect: "Tác dụng: Khai thông Sa Trường Thẻ Bài 3 làn, trực tiếp chỉ huy tướng sĩ tử thủ giữ thành."
       }
     };
 
     const info = unlockDetails[featureKey] || {
-      icon: "✨",
-      title: "MỞ KHÓA TÍNH NĂNG MỚI!",
+      seal: "令",
+      origin: "THIÊN CƠ HỆ THỐNG · THÁNH DỤ BAN THƯỞNG",
+      title: "PHỤNG THIÊN THỪA VẬN BAN THƯỞNG",
       name: featureKey.toUpperCase(),
-      lore: "Ký chủ đã đạt mốc sự kiện quan trọng trong cốt truyện.",
-      effect: "⚡ Đã cập nhật trạng thái mới cho toàn bộ hệ thống!"
+      lore: "Ký chủ đã đạt mốc sự kiện quan trọng trong thiên cơ đế nghiệp.",
+      effect: "Tác dụng: Đã cập nhật trạng thái mới cho toàn bộ hệ thống đại nghiệp!"
     };
 
-    ui.unlockModalIcon.textContent = info.icon;
-    ui.unlockModalTitle.textContent = info.title;
-    ui.unlockModalName.textContent = info.name;
-    ui.unlockModalLore.textContent = info.lore;
-    ui.unlockModalEffect.textContent = info.effect;
+    const sealEl = document.getElementById('unlock-modal-seal');
+    const originEl = document.getElementById('unlock-modal-origin');
+    const titleEl = document.getElementById('unlock-modal-title');
+    const nameEl = document.getElementById('unlock-modal-name');
+    const loreEl = document.getElementById('unlock-modal-lore');
+    const effectEl = document.getElementById('unlock-modal-effect');
+    const iconEl = document.getElementById('unlock-modal-icon');
+
+    if (sealEl) sealEl.textContent = info.seal;
+    if (originEl) originEl.textContent = info.origin;
+    if (titleEl) titleEl.textContent = info.title;
+    if (nameEl) nameEl.textContent = info.name;
+    if (loreEl) loreEl.textContent = info.lore;
+    if (effectEl) {
+      effectEl.innerHTML = `<span class="effect-seal-icon">※</span> <span class="effect-text-body">${info.effect}</span>`;
+    }
+    if (iconEl) {
+      iconEl.innerHTML = `<span class="medallion-seal">${info.seal}</span>`;
+    }
 
     triggerLightning();
     ui.unlockEventModal.classList.remove('hidden');
@@ -899,26 +919,28 @@ document.addEventListener('DOMContentLoaded', () => {
     ui.matrixTimelineList.innerHTML = '';
     chapterMatrix.forEach(c => {
       const item = document.createElement('div');
-      item.className = `milestone-item ${c.unlocked ? 'ms-unlocked' : 'ms-locked'} ${c.active ? 'ms-current' : ''}`;
-      if (!c.unlocked) {
-        item.style.cursor = 'not-allowed';
-        item.style.opacity = '0.55';
-      } else {
-        item.style.cursor = 'pointer';
-      }
+      const statusClass = c.active ? 'current' : (c.unlocked ? 'unlocked' : 'locked');
+      item.className = `chrono-node ${statusClass}`;
+
+      const sealChar = c.active ? '今' : (c.unlocked ? '啓' : '封');
+      const tagText = c.active ? 'HIỆN THỜI [ 今 ]' : (c.unlocked ? 'ĐÃ KHAI MỞ [ 啓 ]' : 'PHONG ẤN [ 封 ]');
+      const tagClass = c.active ? 'seal-current' : (c.unlocked ? 'seal-unlocked' : 'seal-locked');
+
       item.innerHTML = `
-        <div class="ms-badge">${c.badge}</div>
-        <div class="ms-body">
-          <div class="ms-title">${c.title}</div>
-          <div class="ms-feature-tag">🎁 ${c.featureUnlocked}</div>
-          <p style="font-size: 11px; color: #94a3b8; margin-top: 2px;">${c.lore}</p>
+        <div class="chrono-tally-seal">${sealChar}</div>
+        <div class="chrono-meta-col">
+          <div class="chrono-title-row">
+            <span class="chrono-title">${c.badge} · ${c.title}</span>
+            <span class="chrono-seal-tag ${tagClass}">${tagText}</span>
+          </div>
+          <div class="chrono-reward-seal"><span class="chrono-reward-glyph">賜</span> ${c.featureUnlocked}</div>
+          <p class="chrono-lore">${c.lore}</p>
         </div>
-        <div class="ms-status-label">${c.unlocked ? 'ĐÃ MỞ KHÓA ▶' : 'KHÓA 🔒'}</div>
       `;
-      // Click on unlocked milestone to replay/jump story knot!
+
       item.addEventListener('click', () => {
         if (!c.unlocked) {
-          showToast(`🔒 ${c.badge} chưa mở khóa! Hãy hoàn thành cốt truyện để tiến tới.`);
+          showToast(`[ 封 ] ${c.badge} chưa mở khóa! Hãy hoàn thành cốt truyện để tiến tới.`);
           return;
         }
         if (c.knot && ink.knots.has(c.knot)) {
@@ -928,7 +950,7 @@ document.addEventListener('DOMContentLoaded', () => {
           ui.milestoneMatrixModal.classList.add('hidden');
           switchView('vn');
           renderCurrentDialogue();
-          showToast(`Chuyển đến: ${c.badge} - ${c.title}`);
+          showToast(`[ 啓 ] Chuyển đến: ${c.badge} - ${c.title}`);
         }
       });
       ui.matrixTimelineList.appendChild(item);
@@ -1176,7 +1198,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     if (!state.unlocked.gacha && gachaContext.mode !== 'story') {
-      showToast("🔒 Bái Tướng Đài chưa được khai mở! Cần tiến tới Chương 5 trong kịch bản.");
+      showToast("[ 封 ] Bái Tướng Thần Đàn chưa khai mở! Cần tiến tới Chương 5 trong kịch bản.");
       return;
     }
 
@@ -1281,7 +1303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isSummoning) return;
 
     if (state.ticketCount < 1 && state.jade < 160) {
-      showToast("⚠️ Không có Anh Hồn Lệnh hoặc đủ 160 Kim Bảo!");
+      showToast("[ 儆 ] Không có Anh Hồn Lệnh hoặc không đủ 160 Kim Bảo!");
       return;
     }
 
@@ -1425,7 +1447,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ui.altarBtnRow) ui.altarBtnRow.classList.add('hidden');
       if (ui.revealActionRow) ui.revealActionRow.classList.remove('hidden');
 
-      showToast(`🌟 THỈNH TRIỆU THÀNH CÔNG: [${pulledHero.rarity}] ${pulledHero.name}!`, true);
+      showToast(`[ 靈 ] THỈNH TRIỆU THÀNH CÔNG: [${pulledHero.rarity}] ${pulledHero.name}!`, true);
 
       // State progression
       if (pulledHero.id === 'hero_zhaoyun') state.unlocked.zhaoyun = true;
@@ -1482,7 +1504,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resetGachaAltarState();
 
     const heroName = state.lastSummonedHero ? state.lastSummonedHero.name : "Triệu Tử Long";
-    showToast(`⚔️ Đã tiếp nhận danh tướng! ${heroName} đã quy vị dưới trướng.`);
+    showToast(`[ 將 ] Đã tiếp nhận danh tướng! ${heroName} đã quy vị dưới trướng.`);
 
     // If triggered from Ink story flow (e.g. Chapter 5)
     if (gachaContext.mode === 'story' || gachaContext.returnKnot) {
@@ -1498,7 +1520,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleSummonAgain() {
     if (state.ticketCount < 1 && state.jade < 160) {
-      showToast("⚠️ Không có Anh Hồn Lệnh hoặc đủ 160 Kim Bảo để thỉnh triệu tiếp!");
+      showToast("[ 儆 ] Không có Anh Hồn Lệnh hoặc không đủ 160 Kim Bảo để thỉnh triệu tiếp!");
       return;
     }
     resetGachaAltarState();
@@ -1618,13 +1640,13 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ui.gachaGrandReveal) ui.gachaGrandReveal.classList.remove('hidden');
       if (ui.revealActionRow) ui.revealActionRow.classList.remove('hidden');
 
-      showToast(`🌟 THỈNH TRIỆU THÀNH CÔNG: [${hero.rarity}] ${hero.name}!`, true);
+      showToast(`[ 靈 ] THỈNH TRIỆU THÀNH CÔNG: [${hero.rarity}] ${hero.name}!`, true);
 
       // Temporary override for confirm button
       const onStoryConfirm = () => {
         if (ui.gachaModal) ui.gachaModal.classList.add('hidden');
         resetGachaAltarState();
-        showToast(`⚔️ Đã tiếp nhận danh tướng! ${hero.name} đã quy vị dưới trướng.`);
+        showToast(`[ 將 ] Đã tiếp nhận danh tướng! ${hero.name} đã quy vị dưới trướng.`);
         ui.btnRevealConfirm.removeEventListener('click', onStoryConfirm);
         ui.btnRevealConfirm.addEventListener('click', handleConfirmSummon);
         if (onComplete) onComplete();
@@ -1656,102 +1678,588 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // =========================================================================
-  // 7. HERO DETAIL INSPECTOR (RPG STAT SHEET — 28 HEROES)
+  // 7. HERO DETAIL INSPECTOR: BẢNG TRA CỨU TRANH CUỘN LỤA & NGŨ TRỌNG KHẮC MINH
   // =========================================================================
-  function renderHeroInspector(heroId) {
-    const hero = allHeroes.find(h => h.id === heroId) || allHeroes[0];
-    if (!hero) return;
+  const allCanonHeroes = (window.GAME_DATA && window.GAME_DATA.canon_heroes) || [];
 
-    state.selectedInspectorHeroId = hero.id;
+  const HERO_ID_MAP = {
+    'hero_zhaoyun': 'trieu_van',
+    'hero_gaoshun': 'cao_thuan',
+    'hero_jiaxu': 'co_hu',
+    'hero_dianwei': 'dien_vi',
+    'hero_matac': 'ma_tac',
+    'hero_liru': 'ly_nho',
+    'hero_diaochan': 'dieu_thuyen',
+    'hero_machao': 'ma_sieu',
+    'hero_zhangliao': 'truong_lieu',
+    'hero_guojia': 'quach_gia',
+    'hero_xunyu': 'tuan_uc',
+    'hero_huatuo': 'hoa_da',
+    'hero_huangzhong': 'hoang_trung',
+    'hero_zhouyu': 'chu_du',
+    'hero_xizhicai': 'hi_chi_tai',
+    'hero_huaxiong': 'hoa_hung',
+    'hero_quyi': 'khuc_nghia'
+  };
 
-    // Roster Switcher Bar
-    ui.inspectorHeroSelector.innerHTML = '';
-    allHeroes.forEach(h => {
-      const chip = document.createElement('button');
-      const isSelected = h.id === hero.id;
-      const isOwned = state.ownedHeroIds.includes(h.id);
-      chip.className = `hero-chip ${isSelected ? 'active' : ''}`;
-      chip.style.padding = '4px 10px';
-      chip.style.borderRadius = '6px';
-      chip.style.border = isSelected ? '1px solid var(--gold-primary)' : '1px solid rgba(255,255,255,0.15)';
-      chip.style.background = isSelected ? 'rgba(212,175,55,0.25)' : 'rgba(0,0,0,0.4)';
-      chip.style.color = isSelected ? 'var(--gold-primary)' : '#cbd5e1';
-      chip.style.fontSize = '11px';
-      chip.style.fontWeight = '700';
-      chip.style.cursor = 'pointer';
-      chip.style.whiteSpace = 'nowrap';
-      const glyph = h.rarity === 'UR' ? '[ 帝 ]' : (h.rarity === 'SSR' ? '[ 神 ]' : '[ 將 ]');
-      const lockGlyph = !isOwned ? ' [ 鎖 ]' : '';
-      chip.innerHTML = `<span style="font-family: var(--font-seal); font-size: 13px; margin-right: 4px;">${glyph}</span> ${h.name}${lockGlyph}`;
-      chip.addEventListener('click', () => renderHeroInspector(h.id));
-      ui.inspectorHeroSelector.appendChild(chip);
-    });
+  const HERO_SEAL_GLYPHS = {
+    trieu_van: '趙', ma_tac: '馬', co_hu: '賈', dien_vi: '典',
+    ly_nho: '李', dieu_thuyen: '貂', hoa_hung: '華', khuc_nghia: '麴',
+    truong_lieu: '張', cao_thuan: '高', tuan_uc: '荀', chu_du: '周',
+    hoang_trung: '黃', hi_chi_tai: '戲', ma_sieu: '馬', hoa_da: '華',
+    quach_gia: '郭', hac_chieu: '郝', truong_phi: '張', hua_chu: '許',
+    cam_ninh: '甘', quan_vu: '關', gia_cat_luong: '諸', bang_duc: '龐',
+    thai_su_tu: '太', lu_bo: '呂', bang_thong: '龐', tu_ma_y: '司',
+    van_uong: '文'
+  };
 
-    // Left Column
-    const HERO_SPLASH_MAP = {
-      'hero_zhaoyun': 'assets/images/zhaoyun.jpg',
-      'hero_gaoshun': 'assets/images/caoshun.jpg',
-      'hero_jiaxu': 'assets/images/giahu.jpg',
-      'hero_dianwei': 'assets/images/dianwei.jpg'
-    };
-    if (ui.inspectorHeroImg) {
-      ui.inspectorHeroImg.src = HERO_SPLASH_MAP[hero.id] || hero.avatar || 'assets/images/zhaoyun.jpg';
+  const HERO_PORTRAIT_MAP = {
+    'trieu_van': 'assets/images/actor_trieu_van.webp',
+    'hero_zhaoyun': 'assets/images/actor_trieu_van.webp',
+    'cao_thuan': 'assets/images/actor_cao_thuan.webp',
+    'hero_gaoshun': 'assets/images/actor_cao_thuan.webp',
+    'dien_vi': 'assets/images/actor_dien_vi.webp',
+    'hero_dianwei': 'assets/images/actor_dien_vi.webp',
+    'co_hu': 'assets/images/actor_gia_hu.webp',
+    'hero_jiaxu': 'assets/images/actor_gia_hu.webp',
+    'ma_tac': 'assets/images/actor_ma_tac.webp',
+    'hero_matac': 'assets/images/actor_ma_tac.webp',
+    'ly_nho': 'assets/images/actor_ly_nho.webp',
+    'hero_liru': 'assets/images/actor_ly_nho.webp',
+    'dieu_thuyen': 'assets/images/actor_dieu_thuyen.webp',
+    'hero_diaochan': 'assets/images/actor_dieu_thuyen.webp',
+    'hoa_hung': 'assets/images/actor_hoa_hung.webp',
+    'hero_huaxiong': 'assets/images/actor_hoa_hung.webp',
+    'khuc_nghia': 'assets/images/actor_khuc_nghia.webp',
+    'hero_quyi': 'assets/images/actor_khuc_nghia.webp',
+    'truong_lieu': 'assets/images/actor_truong_lieu.webp',
+    'hero_zhangliao': 'assets/images/actor_truong_lieu.webp',
+    'tuan_uc': 'assets/images/actor_tuan_uc.webp',
+    'hero_xunyu': 'assets/images/actor_tuan_uc.webp',
+    'chu_du': 'assets/images/actor_chu_du.webp',
+    'hero_zhouyu': 'assets/images/actor_chu_du.webp',
+    'hoang_trung': 'assets/images/actor_hoang_trung.webp',
+    'hero_huangzhong': 'assets/images/actor_hoang_trung.webp',
+    'hi_chi_tai': 'assets/images/actor_hi_chi_tai.webp',
+    'hero_xizhicai': 'assets/images/actor_hi_chi_tai.webp',
+    'ma_sieu': 'assets/images/actor_ma_sieu.webp',
+    'hero_machao': 'assets/images/actor_ma_sieu.webp',
+    'hoa_da': 'assets/images/actor_hoa_da.webp',
+    'hero_huatuo': 'assets/images/actor_hoa_da.webp',
+    'quach_gia': 'assets/images/actor_quach_gia.webp',
+    'hero_guojia': 'assets/images/actor_quach_gia.webp'
+  };
+
+  function resolveHero(id) {
+    const canonId = HERO_ID_MAP[id] || id;
+    let found = allCanonHeroes.find(h => h.id === canonId || h.id === id);
+    if (found) return found;
+    const legacy = allHeroes.find(h => h.id === id);
+    if (legacy) {
+      return {
+        id: legacy.id,
+        name: legacy.name,
+        courtesyName: (legacy.aliases && legacy.aliases[0]) || '',
+        primaryClass: legacy.faction || 'Võ Tướng',
+        role: legacy.troop_type || 'Tiên Phong',
+        classRoleBadge: `${legacy.faction || 'Võ Tướng'} • ${legacy.troop_type || 'Tiên Phong'}`,
+        summonTier: '10 Vạn Kim',
+        chapterSummon: legacy.summon_chapter || 1,
+        loyalty: 100,
+        baseStats: legacy.base_stats || { force: 85, command: 85, intelligence: 75, politics: 60 },
+        weapon: {
+          name: (legacy.equipment && legacy.equipment[0] && legacy.equipment[0].name) || 'Bản Mệnh Thần Binh',
+          costGold: 10000,
+          forceBonus: 7,
+          specialEffect: 'Khắc minh thần binh tăng uy áp sa trường'
+        },
+        skills: (legacy.skills || []).map(s => ({ name: s.name, costGold: 1000, forceBonus: 2 })),
+        specialTalent: {
+          name: 'Võ Hồn Bộc Phát',
+          costGold: 100000,
+          forceBonus: 12,
+          description: 'Phá vỡ phong ấn thần cấp, giải phóng uy áp chí tôn!'
+        },
+        mount: {
+          name: 'Hãn Huyết Thần Câu',
+          costGold: 50000,
+          forceBonus: 5,
+          description: 'Thiên lý lương câu thần dũng vô song'
+        },
+        troopType: legacy.troop_type || 'Thiết Kỵ',
+        quote: 'Tuyệt thế vô song, phụng mệnh xuất chinh!',
+        lore: 'Danh tướng Tam Quốc mang hào khí ngất trời giáng thế trợ giúp Phò Mã Gia định quốc an dân.'
+      };
     }
-    ui.inspectorRarityCrest.textContent = `${hero.rarity} · ${hero.rarity === 'UR' ? 'CHIẾN THẦN VÔ SONG' : hero.rarity === 'SSR' ? 'HOÀNG KIM THƯỢNG TƯỚNG' : 'TINH ANH TIÊN PHONG'}`;
-    ui.inspectorHeroName.textContent = hero.name.toUpperCase();
-    ui.inspectorHeroEpithet.textContent = `${hero.aliases[0] || hero.name} · ${hero.troop_type}`;
-    ui.inspectorRealmVal.textContent = hero.realm.toUpperCase();
+    return allCanonHeroes[0] || {};
+  }
 
-    // Four Dimensions Grid (Tứ Duy Tam Quốc)
-    const st = hero.base_stats;
-    ui.qsValForce.textContent = st.force;
-    ui.qsBarForce.style.width = `${Math.min(100, (st.force / 120) * 100)}%`;
+  function getHeroProgression(heroId) {
+    if (!state.heroProgression[heroId]) {
+      const hero = resolveHero(heroId);
+      const baseF = (hero.baseStats && hero.baseStats.force) || 80;
+      state.heroProgression[heroId] = {
+        baseForce: baseF,
+        currentForce: baseF,
+        martialRealm: getMartialRealmName(baseF),
+        loyalty: 100,
+        hasWeapon: false,
+        weaponForceBonus: 0,
+        unlockedSkillNames: [],
+        skillForceBonus: 0,
+        hasSpecialTalent: false,
+        talentForceBonus: 0,
+        hasMount: false,
+        mountForceBonus: 0,
+        directForceUpgrades: 0,
+        hostForceGiven: 0
+      };
+    }
+    return state.heroProgression[heroId];
+  }
 
-    ui.qsValCommand.textContent = st.command;
-    ui.qsBarCommand.style.width = `${Math.min(100, (st.command / 120) * 100)}%`;
+  function getMartialRealmName(force) {
+    if (force < 80) return 'Vương Giả Cảnh Sơ Kỳ';
+    if (force < 85) return 'Vương Giả Cảnh Trung Kỳ';
+    if (force < 90) return 'Vương Giả Cảnh Đỉnh Phong';
+    if (force < 95) return 'Hoàng Giả Cảnh Sơ Kỳ';
+    if (force < 100) return 'Hoàng Giả Cảnh Đỉnh Phong';
+    if (force < 120) return 'Đế Cấp Sơ Kỳ';
+    if (force < 150) return 'Đế Cấp Viên Mãn';
+    return 'Bán Thánh Xuất Thế';
+  }
 
-    ui.qsValIntel.textContent = st.intelligence;
-    ui.qsBarIntel.style.width = `${Math.min(100, (st.intelligence / 120) * 100)}%`;
+  function showScrollNotice(message, isSuccess) {
+    const noticeEl = document.getElementById('scroll-notice-banner');
+    if (!noticeEl) return;
+    noticeEl.textContent = message;
+    noticeEl.className = `scroll-notice-banner ${isSuccess ? 'notice-success' : 'notice-warning'}`;
+    noticeEl.classList.remove('hidden');
+    setTimeout(() => {
+      noticeEl.classList.add('hidden');
+    }, 3500);
+  }
 
-    ui.qsValPol.textContent = st.politics;
-    ui.qsBarPol.style.width = `${Math.min(100, (st.politics / 120) * 100)}%`;
+  function updateScrollHeaderStats() {
+    const hostForceEl = document.getElementById('scroll-host-force');
+    const goldEl = document.getElementById('scroll-gold-display');
+    if (hostForceEl) hostForceEl.textContent = `${state.hostForce || 5}`;
+    if (goldEl) goldEl.textContent = (state.gold || 0).toLocaleString();
+  }
 
-    // Direct Combat stats
-    ui.csValHp.textContent = hero.hp;
-    ui.csValAtk.textContent = hero.atk;
-    ui.csValCost.textContent = hero.cost || 6.0;
-    ui.csValTroop.textContent = hero.troop_type;
+  function renderBambooTallies() {
+    const row = document.getElementById('bamboo-tallies-row');
+    if (!row) return;
 
-    // Skills List
-    ui.inspectorSkillsList.innerHTML = '';
-    (hero.skills || []).forEach(sk => {
-      const entry = document.createElement('div');
-      entry.className = `skill-entry ${sk.type === 'active' ? 'skill-active' : ''}`;
-      const typeGlyph = sk.type === 'active' ? '技' : '禦';
-      entry.innerHTML = `
-        <div class="sk-icon" style="font-family: var(--font-seal); font-size: 16px; color: var(--gold-primary);">${typeGlyph}</div>
-        <div class="sk-info">
-          <div class="sk-name-row">
-            <span class="sk-name">${sk.name}</span>
-            <span class="sk-tag ${sk.type === 'active' ? 'active-tag' : 'passive-tag'}">
-              ${sk.type === 'active' ? `Tuyệt Kỹ · ${sk.mana_cost} Mana` : 'Bị Động'}
-            </span>
-          </div>
-          <p class="sk-desc">${sk.description} ${sk.damage > 0 ? `(Sát thương: ${sk.damage})` : ''}</p>
+    const roster = allCanonHeroes.length > 0 ? allCanonHeroes : allHeroes;
+    const cat = state.activeInspectorCategory || 'all';
+
+    let filtered = roster;
+    if (cat === 'vo') {
+      filtered = roster.filter(h => (h.primaryClass === 'Võ Tướng' || (!h.primaryClass && h.base_stats && h.base_stats.force >= 85)));
+    } else if (cat === 'muu') {
+      filtered = roster.filter(h => (h.primaryClass === 'Mưu Thần' || (!h.primaryClass && h.base_stats && h.base_stats.intelligence >= 85)));
+    } else if (cat === 'nu_khac') {
+      filtered = roster.filter(h => (h.primaryClass !== 'Võ Tướng' && h.primaryClass !== 'Mưu Thần'));
+    }
+
+    const currentId = state.selectedInspectorHeroId || (roster[0] && roster[0].id) || 'trieu_van';
+
+    row.innerHTML = filtered.map(h => {
+      const canonId = HERO_ID_MAP[h.id] || h.id;
+      const isActive = (h.id === currentId || canonId === currentId) ? 'active' : '';
+      const sealChar = HERO_SEAL_GLYPHS[canonId] || (h.primaryClass === 'Mưu Thần' ? '謀' : '武');
+      const isOwned = state.ownedHeroIds.includes(h.id) || state.ownedHeroIds.includes(canonId);
+      const lockGlyph = !isOwned ? ' <span class="tally-lock">[ 封 ]</span>' : '';
+
+      return `
+        <div class="bamboo-tally ${isActive}" data-hero-id="${h.id}" title="${h.name}: ${h.classRoleBadge || h.name}">
+          <div class="tally-cord-hole"></div>
+          <span class="tally-seal-glyph">${sealChar}</span>
+          <span class="tally-hero-name">${h.name}${lockGlyph}</span>
+          <span class="tally-role-badge">${h.role || (h.base_stats ? 'Hổ Tướng' : 'Tiên Phong')}</span>
         </div>
       `;
-      ui.inspectorSkillsList.appendChild(entry);
+    }).join('');
+
+    row.querySelectorAll('.bamboo-tally').forEach(tally => {
+      tally.addEventListener('click', (e) => {
+        const id = e.currentTarget.getAttribute('data-hero-id');
+        if (id) {
+          renderHeroInspector(id);
+        }
+      });
     });
   }
 
+  function renderHeroInspector(heroId) {
+    const hero = resolveHero(heroId);
+    if (!hero || !hero.id) return;
+
+    state.selectedInspectorHeroId = hero.id;
+    updateScrollHeaderStats();
+    renderBambooTallies();
+
+    const contentEl = document.getElementById('scroll-hero-content');
+    if (!contentEl) return;
+
+    const prog = getHeroProgression(hero.id);
+    const gold = state.gold || 0;
+
+    const totalForce = prog.currentForce;
+    const totalCmd = (hero.baseStats && hero.baseStats.command) || 85;
+    const totalInt = (hero.baseStats && hero.baseStats.intelligence) || 75;
+    const totalPol = (hero.baseStats && hero.baseStats.politics) || 60;
+
+    const isUR = (hero.role && hero.role.includes('Thiên Mệnh')) || totalForce >= 98;
+    const rarityLabel = isUR ? 'CHÍ TÔN [UR]' : 'TUYỆT THẾ [SSR]';
+    const rarityClass = isUR ? 'ur' : 'ssr';
+
+    const archetypeClass = hero.primaryClass === 'Mưu Thần' ? 'archetype-muu-than' :
+                           hero.primaryClass === 'Tuyệt Thế Nữ Thần' ? 'archetype-hong-nhan' : 'archetype-vo-tuong';
+
+    const portraitUrl = HERO_PORTRAIT_MAP[hero.id] || hero.avatar || 'assets/images/actor_trieu_van.webp';
+    const sealChar = HERO_SEAL_GLYPHS[HERO_ID_MAP[hero.id] || hero.id] || '武';
+
+    const weaponCost = (hero.weapon && hero.weapon.costGold) || 10000;
+    const talentCost = (hero.specialTalent && hero.specialTalent.costGold) || 100000;
+    const mountCost = (hero.mount && hero.mount.costGold) || 50000;
+    const trainCost = 5000;
+
+    const canBuyWeapon = !prog.hasWeapon && gold >= weaponCost;
+    const canUnlockTalent = !prog.hasSpecialTalent && gold >= talentCost;
+    const canBuyMount = !prog.hasMount && gold >= mountCost;
+    const canTrainMartial = gold >= trainCost;
+
+    contentEl.innerHTML = `
+      <div class="scroll-hero-grid">
+        <!-- CỘT 1: HỌA ẢNH THỦY MẶC LIỀN KHỐI & TRIỆN CHU SA -->
+        <div class="scroll-portrait-col">
+          <div class="scroll-silk-portrait">
+            <img src="${portraitUrl}" alt="${hero.name}" class="scroll-silk-img" id="hero-portrait-img">
+            <div class="scroll-cinnabar-seal-stamp">
+              <span class="seal-char">${sealChar}</span>
+            </div>
+            <div class="scroll-rarity-silk-badge ${rarityClass}">
+              <span>${rarityLabel}</span>
+            </div>
+          </div>
+
+          <!-- THÁNH CHỈ CẢNH GIỚI VÕ ĐẠO -->
+          <div class="scroll-realm-decree">
+            <div class="decree-header">
+              <span class="decree-seal">敕</span>
+              <span class="decree-lbl">VÕ ĐẠO CẢNH GIỚI:</span>
+              <span class="decree-realm">${prog.martialRealm}</span>
+            </div>
+            <span class="decree-force-summary">Tổng Uy Áp Sa Trường: <strong>${totalForce}</strong> Điểm Võ Lực</span>
+          </div>
+
+          <!-- CÂU TUYÊN THỆ XUẤT THẾ -->
+          <div class="scroll-silk-calligraphy">
+            <span>『${hero.quote || 'Trấn Quốc An Dân, Phò Mã Xuất Chinh!'}』</span>
+          </div>
+        </div>
+
+        <!-- CỘT 2: LÝ LỊCH, THẠCH BIA TỨ DUY & NGŨ TRỌNG KHẮC MINH -->
+        <div class="scroll-info-col">
+          <div class="scroll-header-area">
+            <div class="scroll-tags-row">
+              <span class="scroll-dynasty-tag">ĐẠI HÁN · QUÝ GIA</span>
+              <div class="hero-archetype-badge ${archetypeClass}">
+                ${hero.classRoleBadge || hero.primaryClass || 'Võ Tướng'}
+              </div>
+              <span class="scroll-summon-tier-badge">Triệu hoán: ${hero.summonTier || '10 Vạn Kim'}</span>
+            </div>
+
+            <div class="scroll-name-row">
+              <h2 class="scroll-hero-name">${hero.name}</h2>
+              <span class="scroll-hero-courtesy">(${hero.courtesyName || '—'})</span>
+            </div>
+          </div>
+
+          <p class="scroll-hero-lore">${hero.lore || ''}</p>
+
+          <!-- THẠCH BIA BÁT QUÁI TỨ DUY -->
+          <div class="scroll-calligraphic-stele">
+            <div class="stele-header">
+              <span class="stele-seal">卦</span>
+              <span class="stele-title">TỨ ĐẠI CHỈ SỐ TAM QUỐC · CHÂN KHÍ THỜI GIAN THỰC</span>
+            </div>
+            <div class="stele-grid">
+              <div class="stele-stat vo">
+                <span class="stat-seal">武</span>
+                <div class="stat-info">
+                  <span class="stat-name">VÕ LỰC BỘC PHÁT</span>
+                  <span class="stat-value">${totalForce}</span>
+                  <span class="stat-note">Gốc ${(hero.baseStats && hero.baseStats.force) || 80}${prog.weaponForceBonus > 0 ? ` +${prog.weaponForceBonus} Binh` : ''}${prog.skillForceBonus > 0 ? ` +${prog.skillForceBonus} Kỹ` : ''}${prog.talentForceBonus > 0 ? ` +${prog.talentForceBonus} Phú` : ''}${prog.mountForceBonus > 0 ? ` +${prog.mountForceBonus} Mã` : ''}${prog.directForceUpgrades > 0 ? ` +${prog.directForceUpgrades} Đỉnh` : ''}</span>
+                </div>
+              </div>
+              <div class="stele-stat thong">
+                <span class="stat-seal">統</span>
+                <div class="stat-info">
+                  <span class="stat-name">THỐNG SOÁI CHỈ HUY</span>
+                  <span class="stat-value">${totalCmd}</span>
+                  <span class="stat-note">${hero.troopType || 'Thiết Kỵ'}</span>
+                </div>
+              </div>
+              <div class="stele-stat muu">
+                <span class="stat-seal">謀</span>
+                <div class="stat-info">
+                  <span class="stat-name">MƯU LƯỢC QUÂN CƠ</span>
+                  <span class="stat-value">${totalInt}</span>
+                  <span class="stat-note">${hero.primaryClass || 'Võ Tướng'}</span>
+                </div>
+              </div>
+              <div class="stele-stat tri">
+                <span class="stat-seal">政</span>
+                <div class="stat-info">
+                  <span class="stat-name">TRỊ QUỐC AN DÂN</span>
+                  <span class="stat-value">${totalPol}</span>
+                  <span class="stat-note">${hero.role || 'Tiên Phong'}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- NGŨ TRỌNG TRẬN ĐỒ KHẮC MINH -->
+          <div class="ngu-trong-khac-minh-panel">
+            <div class="khac-minh-title">
+              <span class="title-glyph">璽</span>
+              NGŨ TRỌNG TRẬN ĐỒ KHẮC MINH · ANH LINH THẦN ĐÀI BỒI DƯỠNG
+            </div>
+
+            <!-- 1. TRỌNG 1: THẦN BINH KHẮC MINH ĐÀI -->
+            <div class="inscribed-seal-card ${prog.hasWeapon ? 'inscribed' : ''}">
+              <div class="inscribe-card-info">
+                <span class="inscribe-badge">TRỌNG 1: THẦN BINH TRUYỀN THẾ</span>
+                <strong class="inscribe-name">${(hero.weapon && hero.weapon.name) || 'Bản Mệnh Thần Binh'}</strong>
+                <span class="inscribe-lore">Tăng +${(hero.weapon && hero.weapon.forceBonus) || 7} Võ Lực. ${(hero.weapon && hero.weapon.specialEffect) || ''}</span>
+                <span class="inscribe-feedback">Phản chủ Quý Bình An +2 Võ Lực vĩnh viễn.</span>
+              </div>
+              <div class="inscribe-stamp-action">
+                ${prog.hasWeapon ? 
+                  `<div class="completed-cinnabar-seal">
+                    <span class="seal-glyph">銘</span>
+                    <span class="seal-text">ĐÃ KHẮC MINH</span>
+                  </div>` :
+                  `<button class="diegetic-seal-stamp-btn" id="btn-unlock-weapon" ${!canBuyWeapon ? 'disabled' : ''}>
+                    <span class="stamp-char">銘</span>
+                    <span class="stamp-action">Khắc Triện</span>
+                    <span class="stamp-cost">${weaponCost.toLocaleString()} Vàng</span>
+                  </button>`
+                }
+              </div>
+            </div>
+
+            <!-- 2. TRỌNG 2: BỔN MỆNH THƯ GIẢN (CÔNG PHÁP) -->
+            <div class="inscribed-seal-card">
+              <div class="inscribe-card-info">
+                <span class="inscribe-badge">TRỌNG 2: BỔN MỆNH THƯ GIẢN</span>
+                <strong class="inscribe-name">Vũ Kỹ & Tuyệt Học Bản Mệnh</strong>
+                <span class="inscribe-lore">Lĩnh ngộ chiêu thức tăng +2 Võ Lực mỗi kỹ năng:</span>
+                <div style="display: flex; gap: 8px; margin-top: 4px; flex-wrap: wrap;">
+                  ${((hero.skills && hero.skills.length > 0) ? hero.skills : [{ name: 'Bản Mệnh Trảm', costGold: 1000, forceBonus: 2 }]).map(s => {
+                    const isLearned = prog.unlockedSkillNames.includes(s.name);
+                    const canLearn = !isLearned && gold >= (s.costGold || 1000);
+                    return isLearned ?
+                      `<span class="completed-cinnabar-seal" style="padding: 2px 8px; font-size: 11px;">
+                        <span class="seal-glyph" style="font-size: 14px;">悟</span> ${s.name} (+${s.forceBonus || 2})
+                      </span>` :
+                      `<button class="diegetic-seal-stamp-btn btn-learn-skill" data-skill-name="${s.name}" ${!canLearn ? 'disabled' : ''} style="padding: 3px 8px;">
+                        <span class="stamp-char" style="font-size: 14px;">悟</span> ${s.name} (${(s.costGold || 1000).toLocaleString()}V)
+                      </button>`;
+                  }).join('')}
+                </div>
+              </div>
+            </div>
+
+            <!-- 3. TRỌNG 3: THIÊN PHÚ TINH ĐỒ (BÁT QUÁI PHÁ GIỚI) -->
+            <div class="inscribed-seal-card ${prog.hasSpecialTalent ? 'inscribed' : ''}">
+              <div class="inscribe-card-info">
+                <span class="inscribe-badge">TRỌNG 3: THIÊN PHÚ TINH ĐỒ</span>
+                <strong class="inscribe-name">${(hero.specialTalent && hero.specialTalent.name) || 'Võ Hồn Bộc Phát'}</strong>
+                <span class="inscribe-lore">${(hero.specialTalent && hero.specialTalent.description) || ''} (+${(hero.specialTalent && hero.specialTalent.forceBonus) || 12} Võ Lực).</span>
+                <span class="inscribe-feedback">Phá vỡ phong ấn thần cấp! Phản chủ Quý Bình An +5 Võ Lực!</span>
+              </div>
+              <div class="inscribe-stamp-action">
+                ${prog.hasSpecialTalent ? 
+                  `<div class="completed-cinnabar-seal gold-glow">
+                    <span class="seal-glyph">破</span>
+                    <span class="seal-text">ĐÃ PHÁ GIỚI</span>
+                  </div>` :
+                  `<button class="diegetic-seal-stamp-btn" id="btn-unlock-talent" ${!canUnlockTalent ? 'disabled' : ''}>
+                    <span class="stamp-char">破</span>
+                    <span class="stamp-action">Phá Ấn</span>
+                    <span class="stamp-cost">${talentCost.toLocaleString()} Vàng</span>
+                  </button>`
+                }
+              </div>
+            </div>
+
+            <!-- 4. TRỌNG 4: MÃ PHÙ TIẾT (LƯƠNG CÂU HỘ CHỦ) -->
+            <div class="inscribed-seal-card ${prog.hasMount ? 'inscribed' : ''}">
+              <div class="inscribe-card-info">
+                <span class="inscribe-badge">TRỌNG 4: MÃ PHÙ TIẾT</span>
+                <strong class="inscribe-name">${(hero.mount && hero.mount.name) || 'Hãn Huyết Thần Câu'}</strong>
+                <span class="inscribe-lore">${(hero.mount && hero.mount.description) || 'Lương câu thần dũng'} (+${(hero.mount && hero.mount.forceBonus) || 5} Võ Lực).</span>
+                <span class="inscribe-feedback">Phản chủ Quý Bình An +3 Võ Lực.</span>
+              </div>
+              <div class="inscribe-stamp-action">
+                ${prog.hasMount ? 
+                  `<div class="completed-cinnabar-seal blue-glow">
+                    <span class="seal-glyph">驥</span>
+                    <span class="seal-text">ĐÃ KHỚP NỐI</span>
+                  </div>` :
+                  `<button class="diegetic-seal-stamp-btn" id="btn-unlock-mount" ${!canBuyMount ? 'disabled' : ''}>
+                    <span class="stamp-char">勒</span>
+                    <span class="stamp-action">Khớp Nối</span>
+                    <span class="stamp-cost">${mountCost.toLocaleString()} Vàng</span>
+                  </button>`
+                }
+              </div>
+            </div>
+
+            <!-- 5. TRỌNG 5: CỬU ĐỈNH LUYỆN KHÍ -->
+            <div class="inscribed-seal-card">
+              <div class="inscribe-card-info">
+                <span class="inscribe-badge">TRỌNG 5: CỬU ĐỈNH LUYỆN KHÍ</span>
+                <strong class="inscribe-name">Tôi Thể Chân Khí (${prog.directForceUpgrades} Chu Thiên)</strong>
+                <span class="inscribe-lore">Đã hun đúc: +${prog.directForceUpgrades} Võ Lực. Cứ mỗi 3 chu thiên → Quý Bình An hấp thu +1 Võ Lực!</span>
+              </div>
+              <div class="inscribe-stamp-action">
+                <button class="diegetic-seal-stamp-btn" id="btn-train-martial" ${!canTrainMartial ? 'disabled' : ''}>
+                  <span class="stamp-char">煉</span>
+                  <span class="stamp-action">Đốt Đỉnh</span>
+                  <span class="stamp-cost">${trainCost.toLocaleString()} Vàng (+1 Võ Lực)</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    bindHeroScrollActions(hero, prog);
+  }
+
+  function bindHeroScrollActions(hero, prog) {
+    const btnWeapon = document.getElementById('btn-unlock-weapon');
+    if (btnWeapon) {
+      btnWeapon.addEventListener('click', () => {
+        const cost = (hero.weapon && hero.weapon.costGold) || 10000;
+        if (state.gold < cost) {
+          showScrollNotice(`[ 儆 ] Không đủ ${cost.toLocaleString()} Vàng để khắc minh Thần Binh!`, false);
+          return;
+        }
+        state.gold -= cost;
+        prog.hasWeapon = true;
+        prog.weaponForceBonus = (hero.weapon && hero.weapon.forceBonus) || 7;
+        prog.currentForce += prog.weaponForceBonus;
+        prog.martialRealm = getMartialRealmName(prog.currentForce);
+        state.hostForce = (state.hostForce || 5) + 2;
+        updateHudResources();
+        showScrollNotice(`[ 銘 ] Khắc minh thành công Thần Binh ${hero.weapon.name}! Quý Bình An +2 Võ Lực.`, true);
+        renderHeroInspector(hero.id);
+      });
+    }
+
+    document.querySelectorAll('.btn-learn-skill').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const skillName = e.currentTarget.getAttribute('data-skill-name');
+        if (!skillName) return;
+        const skill = (hero.skills || []).find(s => s.name === skillName) || { costGold: 1000, forceBonus: 2 };
+        const cost = skill.costGold || 1000;
+        if (state.gold < cost) {
+          showScrollNotice(`[ 儆 ] Không đủ ${cost.toLocaleString()} Vàng để lĩnh ngộ bí pháp!`, false);
+          return;
+        }
+        state.gold -= cost;
+        prog.unlockedSkillNames.push(skillName);
+        prog.skillForceBonus += (skill.forceBonus || 2);
+        prog.currentForce += (skill.forceBonus || 2);
+        prog.martialRealm = getMartialRealmName(prog.currentForce);
+        state.hostForce = (state.hostForce || 5) + 1;
+        updateHudResources();
+        showScrollNotice(`[ 悟 ] Lĩnh ngộ thành công bí pháp ${skillName}! Võ lực +${skill.forceBonus || 2}.`, true);
+        renderHeroInspector(hero.id);
+      });
+    });
+
+    const btnTalent = document.getElementById('btn-unlock-talent');
+    if (btnTalent) {
+      btnTalent.addEventListener('click', () => {
+        const cost = (hero.specialTalent && hero.specialTalent.costGold) || 100000;
+        if (state.gold < cost) {
+          showScrollNotice(`[ 儆 ] Không đủ ${cost.toLocaleString()} Vàng để phá vỡ phong ấn Thiên Phú!`, false);
+          return;
+        }
+        state.gold -= cost;
+        prog.hasSpecialTalent = true;
+        prog.talentForceBonus = (hero.specialTalent && hero.specialTalent.forceBonus) || 12;
+        prog.currentForce += prog.talentForceBonus;
+        prog.martialRealm = getMartialRealmName(prog.currentForce);
+        state.hostForce = (state.hostForce || 5) + 5;
+        triggerLightning();
+        updateHudResources();
+        showScrollNotice(`[ 破 ] Phá ấn thành công Thiên Phú ${hero.specialTalent.name}! Quý Bình An +5 Võ Lực!`, true);
+        renderHeroInspector(hero.id);
+      });
+    }
+
+    const btnMount = document.getElementById('btn-unlock-mount');
+    if (btnMount) {
+      btnMount.addEventListener('click', () => {
+        const cost = (hero.mount && hero.mount.costGold) || 50000;
+        if (state.gold < cost) {
+          showScrollNotice(`[ 儆 ] Không đủ ${cost.toLocaleString()} Vàng để khớp nối Mã Phù!`, false);
+          return;
+        }
+        state.gold -= cost;
+        prog.hasMount = true;
+        prog.mountForceBonus = (hero.mount && hero.mount.forceBonus) || 5;
+        prog.currentForce += prog.mountForceBonus;
+        prog.martialRealm = getMartialRealmName(prog.currentForce);
+        state.hostForce = (state.hostForce || 5) + 3;
+        updateHudResources();
+        showScrollNotice(`[ 驥 ] Khớp nối thành công Lương Câu ${hero.mount.name}! Quý Bình An +3 Võ Lực.`, true);
+        renderHeroInspector(hero.id);
+      });
+    }
+
+    const btnTrain = document.getElementById('btn-train-martial');
+    if (btnTrain) {
+      btnTrain.addEventListener('click', () => {
+        const cost = 5000;
+        if (state.gold < cost) {
+          showScrollNotice(`[ 儆 ] Không đủ 5.000 Vàng để đốt đỉnh tôi luyện chân khí!`, false);
+          return;
+        }
+        state.gold -= cost;
+        prog.directForceUpgrades += 1;
+        prog.currentForce += 1;
+        prog.martialRealm = getMartialRealmName(prog.currentForce);
+        if (prog.directForceUpgrades % 3 === 0) {
+          state.hostForce = (state.hostForce || 5) + 1;
+          showScrollNotice(`[ 煉 ] Đốt đỉnh hoàn thành chu thiên thứ ${prog.directForceUpgrades}! Quý Bình An hấp thu +1 Võ Lực.`, true);
+        } else {
+          showScrollNotice(`[ 煉 ] Đốt đỉnh hoàn thành chu thiên thứ ${prog.directForceUpgrades}! ${hero.name} +1 Võ Lực.`, true);
+        }
+        updateHudResources();
+        renderHeroInspector(hero.id);
+      });
+    }
+  }
+
+  function handleInspectHero() {
+    const heroId = state.lastSummonedHero ? state.lastSummonedHero.id : 'hero_zhaoyun';
+    openHeroInspector(heroId);
+  }
 
   function openHeroInspector(heroId) {
-    if (state.ownedHeroIds.length === 0) {
-      showToast("🔒 Chưa có danh tướng nào quy thuận! Hãy hoàn thành triệu hoán tại Bái Tướng Đài trước.");
-      return;
-    }
-    renderHeroInspector(heroId || state.selectedInspectorHeroId || state.ownedHeroIds[0]);
-    ui.heroDetailModal.classList.remove('hidden');
+    const targetHeroId = heroId || state.selectedInspectorHeroId || (state.ownedHeroIds[0] ? (HERO_ID_MAP[state.ownedHeroIds[0]] || state.ownedHeroIds[0]) : 'trieu_van');
+    renderHeroInspector(targetHeroId);
+    if (ui.heroDetailModal) ui.heroDetailModal.classList.remove('hidden');
   }
 
   // =========================================================================
@@ -1864,11 +2372,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Dynamic Standee Character Resolution (Zero Asset Sharing)
-      let leftStandeePath = 'assets/images/actor_to_kien_phong.png';
+      let leftStandeePath = null;
       const speakerLower = speakerName.toLowerCase();
 
       if (speakerLower.includes("triệu vân") || speakerLower.includes("tử long")) {
         leftStandeePath = 'assets/images/actor_trieu_van.png';
+      } else if (speakerLower.includes("mã tắc") || speakerLower.includes("ấu thường")) {
+        leftStandeePath = 'assets/images/actor_ma_tac.png';
       } else if (speakerLower.includes("cao thuận")) {
         leftStandeePath = 'assets/images/actor_cao_thuan.png';
       } else if (speakerLower.includes("giả hủ") || speakerLower.includes("cổ hủ") || speakerLower.includes("văn hòa")) {
@@ -1879,14 +2389,76 @@ document.addEventListener('DOMContentLoaded', () => {
         leftStandeePath = 'assets/images/actor_vu_hoang.png';
       } else if (speakerLower.includes("sứ thần") || speakerLower.includes("nam ly")) {
         leftStandeePath = 'assets/images/actor_nam_ly_envoy.png';
-      } else if (speakerLower.includes("vệ tí vũ") || speakerLower.includes("thị vệ") || speakerLower.includes("vệ tướng")) {
+      } else if (speakerLower.includes("vệ tí vũ") || speakerLower.includes("vệ ti vũ") || speakerLower.includes("vệ lâu chủ")) {
         leftStandeePath = 'assets/images/actor_ve_ti_vu.png';
-      } else if (speakerLower.includes("tỳ nữ") || speakerLower.includes("nha hoàn") || speakerLower.includes("cung tỳ")) {
+      } else if (speakerLower.includes("tỳ nữ") || speakerLower.includes("nha hoàn") || speakerLower.includes("cung tỳ") || speakerLower.includes("tiểu thúy")) {
         leftStandeePath = 'assets/images/actor_servant.png';
       } else if (speakerLower.includes("thích khách") || speakerLower.includes("hắc y") || speakerLower.includes("sát thủ")) {
         leftStandeePath = 'assets/images/actor_assassin.png';
       } else if (speakerLower.includes("tô kiến phong") || speakerLower.includes("tô tướng")) {
         leftStandeePath = 'assets/images/actor_to_kien_phong.png';
+      } else if (speakerLower.includes("lý nho") || speakerLower.includes("văn ưu")) {
+        leftStandeePath = 'assets/images/actor_ly_nho.png';
+      } else if (speakerLower.includes("điêu thuyền")) {
+        leftStandeePath = 'assets/images/actor_dieu_thuyen.png';
+      } else if (speakerLower.includes("hoa hùng")) {
+        leftStandeePath = 'assets/images/actor_hoa_hung.png';
+      } else if (speakerLower.includes("khúc nghĩa")) {
+        leftStandeePath = 'assets/images/actor_khuc_nghia.png';
+      } else if (speakerLower.includes("trương liêu") || speakerLower.includes("văn viễn")) {
+        leftStandeePath = 'assets/images/actor_truong_lieu.png';
+      } else if (speakerLower.includes("tuân úc") || speakerLower.includes("văn nhược")) {
+        leftStandeePath = 'assets/images/actor_tuan_uc.png';
+      } else if (speakerLower.includes("chu du") || speakerLower.includes("công cẩn")) {
+        leftStandeePath = 'assets/images/actor_chu_du.png';
+      } else if (speakerLower.includes("hoàng trung") || speakerLower.includes("hán thăng")) {
+        leftStandeePath = 'assets/images/actor_hoang_trung.png';
+      } else if (speakerLower.includes("hí chí tài")) {
+        leftStandeePath = 'assets/images/actor_hi_chi_tai.png';
+      } else if (speakerLower.includes("mã siêu") || speakerLower.includes("mạnh khởi")) {
+        leftStandeePath = 'assets/images/actor_ma_sieu.png';
+      } else if (speakerLower.includes("hoa đà") || speakerLower.includes("nguyên hóa")) {
+        leftStandeePath = 'assets/images/actor_hoa_da.png';
+      } else if (speakerLower.includes("quách gia") || speakerLower.includes("phụng hiếu")) {
+        leftStandeePath = 'assets/images/actor_quach_gia.png';
+      } else if (speakerLower.includes("an hoàng hậu") || speakerLower.includes("thái hậu")) {
+        leftStandeePath = 'assets/images/actor_an_hoang_hau.png';
+      } else if (speakerLower.includes("ninh an")) {
+        leftStandeePath = 'assets/images/actor_ninh_an_cong_chua.png';
+      } else if (speakerLower.includes("hứa hòa lâm")) {
+        leftStandeePath = 'assets/images/actor_hua_hoa_lam.png';
+      } else if (speakerLower.includes("tần tứ nghiệp")) {
+        leftStandeePath = 'assets/images/actor_tan_tu_nghiep.png';
+      } else if (speakerLower.includes("tử triệu phong") || speakerLower.includes("khai sơn vương")) {
+        leftStandeePath = 'assets/images/actor_tu_trieu_phong.png';
+      } else if (speakerLower.includes("tử ngọc trạch") || speakerLower.includes("tân hoàng")) {
+        leftStandeePath = 'assets/images/actor_tu_ngoc_trach.png';
+      } else if (speakerLower.includes("địch hỏa")) {
+        leftStandeePath = 'assets/images/actor_dich_hoa.png';
+      } else if (speakerLower.includes("quý bình sinh")) {
+        leftStandeePath = 'assets/images/actor_quy_binh_sinh.png';
+      } else if (speakerLower.includes("tử ngọc hằng") || speakerLower.includes("tứ hoàng tử")) {
+        leftStandeePath = 'assets/images/actor_tu_ngoc_hang.png';
+      } else if (speakerLower.includes("cung sinh") || speakerLower.includes("quân thần")) {
+        leftStandeePath = 'assets/images/actor_cung_sinh.png';
+      } else if (speakerLower.includes("chu bất ninh")) {
+        leftStandeePath = 'assets/images/actor_chu_bat_ninh.png';
+      } else if (speakerLower.includes("cơ vô pháp")) {
+        leftStandeePath = 'assets/images/actor_co_vo_phap.png';
+      } else if (speakerLower.includes("cơ vô thiên")) {
+        leftStandeePath = 'assets/images/actor_co_vo_thien.png';
+      } else if (speakerLower.includes("hề nhan")) {
+        leftStandeePath = 'assets/images/actor_he_nhan_cong_chua.png';
+      } else if (speakerLower.includes("triệu văn dụ")) {
+        leftStandeePath = 'assets/images/actor_trieu_van_du.png';
+      } else if (speakerLower.includes("vu văn châu")) {
+        leftStandeePath = 'assets/images/actor_vu_van_chau.png';
+      } else if (speakerLower.includes("trầm hạo")) {
+        leftStandeePath = 'assets/images/actor_tram_hao.png';
+      } else if (speakerLower.includes("quý bình xuyên")) {
+        leftStandeePath = 'assets/images/actor_quy_binh_xuyen.png';
+      } else {
+        leftStandeePath = 'assets/images/seal_placeholder.png';
       }
 
       // Update Standee Speaking / Listening Focus (Dynamic VN Depth)
@@ -1993,7 +2565,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state.currentTextIndex = 0;
         renderCurrentDialogue();
       } else {
-        showToast("📜 Tiết tấu tạm lắng. Hãy thẩm định Sa Bàn Quân Cơ hoặc Ma Trận Chương để tiếp nối đại nghiệp.");
+        showToast("[ 簡 ] Tiết tấu tạm lắng. Hãy thẩm định Sa Bàn Quân Cơ hoặc Ma Trận Chương để tiếp nối đại nghiệp.");
       }
     }
   }
@@ -2315,29 +2887,29 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function handleSoapCommand() {
     if (!state.unlocked.soap) {
-      showToast("🔒 Tính năng Kinh Doanh Xà Phòng bị khóa! Cần Chương 8.");
+      showToast("[ 封 ] Tính năng Kinh Doanh Xà Phòng bị khóa! Cần Chương 8.");
       return;
     }
     if (state.ap < 1) {
-      showToast("⚠️ Hết Điểm Hành Động (AP) trong lượt!");
+      showToast("[ 儆 ] Hết Điểm Hành Động (AP) trong lượt!");
       return;
     }
     state.ap -= 1;
     state.gold += 3000;
     updateHudResources();
-    showToast("💰 Xưởng Thấu Hoa Cao vận hành! +3.000 Vàng ròng thu hoạch!", true);
+    showToast("[ 金 ] Xưởng Thấu Hoa Cao vận hành! +3.000 Vàng ròng thu hoạch!", true);
   }
 
   function handleBribeCommand() {
     if (state.gold < 1500) {
-      showToast("⚠️ Không đủ 1.500 Vàng để đút lót triều thần!");
+      showToast("[ 儆 ] Không đủ 1.500 Vàng để đút lót triều thần!");
       return;
     }
     state.gold -= 1500;
     state.suspicion = Math.max(0, state.suspicion - 15);
     updateHudResources();
     triggerLightning();
-    showToast("🕊️ Đút lót hoạn quan thành công! Giảm 15% Nghi Kỵ của Vũ Hoàng.", true);
+    showToast("[ 賂 ] Đút lót hoạn quan thành công! Giảm 15% Nghi Kỵ của Vũ Hoàng.", true);
   }
 
   // =========================================================================
@@ -2429,7 +3001,7 @@ document.addEventListener('DOMContentLoaded', () => {
   function playCard(cardType) {
     if (cardType === 'seventh-spear') {
       if (state.mana < 2) {
-        showToast("⚠️ Không đủ 2 Mana!");
+        showToast("[ 儆 ] Không đủ 2 Mana!");
         return;
       }
       state.mana -= 2;
@@ -2476,7 +3048,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (cardType === 'hamtran') {
       if (state.mana < 3) {
-        showToast("⚠️ Cần 3 Mana để triển khai Hãm Trận Doanh!");
+        showToast("[ 儆 ] Cần 3 Mana để triển khai Hãm Trận Doanh!");
         return;
       }
       if (!state.lanes.left.player) {
@@ -2490,17 +3062,17 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="sc-atk" style="color: #f87171;">ATK: 65</div>
           </div>
         `;
-        showToast("🛡️ Đã bố trí Hãm Trận Doanh án ngữ Tả Dực!");
+        showToast("[ 陣 ] Đã bố trí Hãm Trận Doanh án ngữ Tả Dực!");
         renderBattlefield();
       } else {
-        showToast("⚠️ Tả Dực đã có quân phòng thủ!");
+        showToast("[ 儆 ] Tả Dực đã có quân phòng thủ!");
       }
       return;
     }
 
     if (cardType === 'bachma') {
       if (state.mana < 4) {
-        showToast("⚠️ Cần 4 Mana để triển khai Bạch Mã Nghĩa Tòng!");
+        showToast("[ 儆 ] Cần 4 Mana để triển khai Bạch Mã Nghĩa Tòng!");
         return;
       }
       if (!state.lanes.right.player) {
@@ -2514,10 +3086,10 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="sc-atk" style="color: #f87171;">ATK: 80</div>
           </div>
         `;
-        showToast("🐎 Bạch Mã Nghĩa Tòng xuất kích tại Hữu Dực!");
+        showToast("[ 騎 ] Bạch Mã Nghĩa Tòng xuất kích tại Hữu Dực!");
         renderBattlefield();
       } else {
-        showToast("⚠️ Hữu Dực đã có kỵ binh phong tỏa!");
+        showToast("[ 儆 ] Hữu Dực đã có kỵ binh phong tỏa!");
       }
       return;
     }
@@ -2593,7 +3165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     state.mana = Math.min(state.maxMana, state.mana + 4);
     if (state.reservoirStage < 3) {
       state.reservoirStage++;
-      showToast(`💧 Trữ lượng nước sông Thanh Thủy tăng lên Cấp ${state.reservoirStage}!`);
+      showToast(`[ 水 ] Trữ lượng nước sông Thanh Thủy tăng lên Cấp ${state.reservoirStage}!`);
     }
 
     renderBattlefield();
@@ -2610,8 +3182,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (state.wallHp <= 0) {
-      alert("⚠️ Thành Thanh Châu thất thủ! Nam Ly phá vỡ phòng tuyến. Hãy thử lại sách lược đắp đê!");
-      location.reload();
+      setTimeout(() => {
+        if (ui.defeatModal) ui.defeatModal.classList.remove('hidden');
+      }, 500);
     }
   }
 
@@ -2620,7 +3193,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // =========================================================================
   function switchView(viewName) {
     if (viewName === 'battle' && !state.unlocked.battleFront) {
-      showToast("🔒 Tầng 3: Sa Trường Thẻ Bài bị khóa! Cần tiến tới Chương 48 (Đại Chiến Thanh Châu).");
+      showToast("[ 封 ] Tầng 3: Sa Trường Thẻ Bài bị khóa! Cần tiến tới Chương 48 (Đại Chiến Thanh Châu).");
       return;
     }
 
@@ -2640,7 +3213,7 @@ document.addEventListener('DOMContentLoaded', () => {
       renderMapNodeDetails(state.selectedNode);
       updateHudResources();
       if (!state.unlocked.strategyMap) {
-        showToast("📜 Đang thám sát Sa Bàn Quân Cơ — Hoàn thành Ch.15 để mở quyền điều binh!");
+        showToast("[ 輿 ] Đang thám sát Sa Bàn Quân Cơ — Hoàn thành Ch.15 để mở quyền điều binh!");
       }
     } else if (viewName === 'battle') {
       ui.btnTabBattle?.classList.add('active');
@@ -2775,7 +3348,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btnVnToSaban.addEventListener('click', (e) => {
         e.stopPropagation();
         switchView('map');
-        showToast("🗺️ Mở Đế Nghiệp Sa Bàn — Tham kiến thế cục hoàng triều & 4 phương", true);
+        showToast("[ 輿 ] Mở Đế Nghiệp Sa Bàn — Tham kiến thế cục hoàng triều & 4 phương", true);
       });
     }
 
@@ -2821,8 +3394,49 @@ document.addEventListener('DOMContentLoaded', () => {
     if (ui.btnRevealAgain) ui.btnRevealAgain.addEventListener('click', handleSummonAgain);
     if (ui.btnRevealConfirm) ui.btnRevealConfirm.addEventListener('click', handleConfirmSummon);
 
-    // Hero Detail Inspector
-    if (ui.btnHudHero) ui.btnHudHero.addEventListener('click', () => openHeroInspector('hero_zhaoyun'));
+    // Hero Detail Inspector & Bamboo Tallies Category Filtering
+    if (ui.btnHudHero) ui.btnHudHero.addEventListener('click', () => openHeroInspector('trieu_van'));
+    if (ui.btnCloseHeroDetail && ui.heroDetailModal) {
+      ui.btnCloseHeroDetail.addEventListener('click', () => {
+        ui.heroDetailModal.classList.add('hidden');
+      });
+    }
+    if (ui.heroDetailModal) {
+      ui.heroDetailModal.addEventListener('click', (e) => {
+        if (e.target === ui.heroDetailModal) {
+          ui.heroDetailModal.classList.add('hidden');
+        }
+      });
+    }
+    document.querySelectorAll('.tally-tag').forEach(tag => {
+      tag.addEventListener('click', (e) => {
+        const cat = e.currentTarget.getAttribute('data-cat') || 'all';
+        state.activeInspectorCategory = cat;
+        document.querySelectorAll('.tally-tag').forEach(t => t.classList.remove('active'));
+        e.currentTarget.classList.add('active');
+        renderBambooTallies();
+      });
+    });
+
+    // Defeat Modal Action Buttons
+    if (ui.btnDefeatRetry) {
+      ui.btnDefeatRetry.addEventListener('click', () => {
+        if (ui.defeatModal) ui.defeatModal.classList.add('hidden');
+        state.wallHp = state.maxWallHp || 500;
+        state.bossHp = state.maxBossHp || 250;
+        state.mana = 6;
+        state.reservoirStage = 1;
+        updateBattleUI();
+        showToast("[ 重 ] Tái khởi chiến cuộc! Chấn chỉnh hàng ngũ thủ thành.");
+      });
+    }
+    if (ui.btnDefeatRetreat) {
+      ui.btnDefeatRetreat.addEventListener('click', () => {
+        if (ui.defeatModal) ui.defeatModal.classList.add('hidden');
+        switchView('map');
+        showToast("[ 撤 ] Thoái thủ Sa Bàn Quân Cơ, tái thẩm định thế trận.");
+      });
+    }
     if (ui.btnCloseHeroDetail && ui.heroDetailModal) {
       ui.btnCloseHeroDetail.addEventListener('click', () => {
         ui.heroDetailModal.classList.add('hidden');
@@ -2891,7 +3505,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           }, 3200);
         } else {
-          showToast("⏹ Chế độ tự động đọc: TẮT");
+          showToast("[ 靜 ] Chế độ tự động đọc: TẮT");
           clearInterval(state.autoTimer);
         }
       });
@@ -2927,7 +3541,7 @@ document.addEventListener('DOMContentLoaded', () => {
         state.gold += 20000;
         state.food += 50000;
         updateHudResources();
-        showToast("🎉 Đại thắng! Đã nhận 20.000 Vàng & 50.000 Thạch Lương.", true);
+        showToast("[ 捷 ] Đại thắng! Đã nhận 20.000 Vàng & 50.000 Thạch Lương.", true);
         switchView('vn');
       });
     }
@@ -3026,7 +3640,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       window.pixiApp = app;
-      console.log("⚡ [PixiJS] WebGL atmospheric ink-mist active");
+      console.log("[ 印 ] [PixiJS] WebGL atmospheric ink-mist active");
     } catch (err) {
       console.warn("PixiJS init error:", err);
     }
@@ -3533,7 +4147,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         renderMapNodeDetails(key);
         triggerLightning();
-        showToast(`📍 Chuyển tầm mắt Sa Bàn tới: ${tok.userData.name}`);
+        showToast(`[ 標 ] Chuyển tầm mắt Sa Bàn tới: ${tok.userData.name}`);
       }
 
       container.addEventListener('mousedown', onMouseDown);
@@ -3603,7 +4217,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
       window.threeScene = scene;
-      console.log("⚡ [Three.js] 3D tactical relief war sand-table active with real texture and 3D tokens");
+      console.log("[ 輿 ] [Three.js] 3D tactical relief war sand-table active with real texture and 3D tokens");
     } catch (err) {
       console.warn("Three.js init error:", err);
     }
@@ -3792,7 +4406,7 @@ document.addEventListener('DOMContentLoaded', () => {
       };
 
       window.phaserGame = phaserGame;
-      console.log("⚡ [Phaser 3] Full tactical card battler battlefield engine active");
+      console.log("[ 陣 ] [Phaser 3] Full tactical card battler battlefield engine active");
     } catch (err) {
       console.warn("Phaser 3 init error:", err);
     }
@@ -3850,5 +4464,5 @@ document.addEventListener('DOMContentLoaded', () => {
     censerSmokeSystem.init();
   }, 100);
 
-  console.log("⚡ [Prototype V3] Khởi động thành công với Trio (Phaser/Three/Pixi), 28 danh tướng và Ink Engine!");
+  console.log("[ 鑑 ] [Prototype V3] Khởi động thành công với Trio (Phaser/Three/Pixi), 29 danh tướng và Ink Engine!");
 });

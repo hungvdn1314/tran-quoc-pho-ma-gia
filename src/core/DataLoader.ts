@@ -26,13 +26,24 @@ export class DataLoader {
 
       const actorMap: Record<string, string> = {
         trieu_van: 'assets/images/actor_trieu_van.webp',
-        truong_lieu: 'assets/images/actor_to_kien_phong.webp',
         cao_thuan: 'assets/images/actor_cao_thuan.webp',
         dien_vi: 'assets/images/actor_dien_vi.webp',
         co_hu: 'assets/images/actor_gia_hu.webp',
-        dieu_thuyen: 'assets/images/actor_assassin.webp'
+        ma_tac: 'assets/images/actor_ma_tac.webp',
+        ly_nho: 'assets/images/actor_ly_nho.webp',
+        dieu_thuyen: 'assets/images/actor_dieu_thuyen.webp',
+        hoa_hung: 'assets/images/actor_hoa_hung.webp',
+        khuc_nghia: 'assets/images/actor_khuc_nghia.webp',
+        truong_lieu: 'assets/images/actor_truong_lieu.webp',
+        tuan_uc: 'assets/images/actor_tuan_uc.webp',
+        chu_du: 'assets/images/actor_chu_du.webp',
+        hoang_trung: 'assets/images/actor_hoang_trung.webp',
+        hi_chi_tai: 'assets/images/actor_hi_chi_tai.webp',
+        ma_sieu: 'assets/images/actor_ma_sieu.webp',
+        hoa_da: 'assets/images/actor_hoa_da.webp',
+        quach_gia: 'assets/images/actor_quach_gia.webp'
       };
-      const splashUrl = actorMap[h.id] || `assets/images/actor_${h.id}.webp`;
+      const splashUrl = actorMap[h.id] || (h.splashUrl ? h.splashUrl : 'assets/images/seal_placeholder.webp');
 
       return {
         id: h.id,

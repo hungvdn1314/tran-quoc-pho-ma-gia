@@ -1514,15 +1514,67 @@ export const HERO_ASSET_LOOKUP: Record<string, { avatarUrl: string; splashUrl: s
   },
   cao_thuan: {
     avatarUrl: 'assets/images/actor_cao_thuan.png',
-    splashUrl: 'assets/images/actor_cao_thuan.png'
+    splashUrl: 'assets/images/caoshun.jpg'
   },
   co_hu: {
     avatarUrl: 'assets/images/actor_gia_hu.png',
-    splashUrl: 'assets/images/actor_gia_hu.png'
+    splashUrl: 'assets/images/giahu.jpg'
   },
   dien_vi: {
     avatarUrl: 'assets/images/actor_dien_vi.png',
-    splashUrl: 'assets/images/actor_dien_vi.png'
+    splashUrl: 'assets/images/dianwei.jpg'
+  },
+  ma_tac: {
+    avatarUrl: 'assets/images/actor_ma_tac.png',
+    splashUrl: 'assets/images/matac.jpg'
+  },
+  ly_nho: {
+    avatarUrl: 'assets/images/actor_ly_nho.png',
+    splashUrl: 'assets/images/lynho.jpg'
+  },
+  dieu_thuyen: {
+    avatarUrl: 'assets/images/actor_dieu_thuyen.png',
+    splashUrl: 'assets/images/dieuthuyen.jpg'
+  },
+  hoa_hung: {
+    avatarUrl: 'assets/images/actor_hoa_hung.png',
+    splashUrl: 'assets/images/hoahung.jpg'
+  },
+  khuc_nghia: {
+    avatarUrl: 'assets/images/actor_khuc_nghia.png',
+    splashUrl: 'assets/images/khucnghia.jpg'
+  },
+  truong_lieu: {
+    avatarUrl: 'assets/images/actor_truong_lieu.png',
+    splashUrl: 'assets/images/truonglieu.jpg'
+  },
+  tuan_uc: {
+    avatarUrl: 'assets/images/actor_tuan_uc.png',
+    splashUrl: 'assets/images/tuanuc.jpg'
+  },
+  chu_du: {
+    avatarUrl: 'assets/images/actor_chu_du.png',
+    splashUrl: 'assets/images/chudu.jpg'
+  },
+  hoang_trung: {
+    avatarUrl: 'assets/images/actor_hoang_trung.png',
+    splashUrl: 'assets/images/hoangtrung.jpg'
+  },
+  hi_chi_tai: {
+    avatarUrl: 'assets/images/actor_hi_chi_tai.png',
+    splashUrl: 'assets/images/hichitai.jpg'
+  },
+  ma_sieu: {
+    avatarUrl: 'assets/images/actor_ma_sieu.png',
+    splashUrl: 'assets/images/masieu.jpg'
+  },
+  hoa_da: {
+    avatarUrl: 'assets/images/actor_hoa_da.png',
+    splashUrl: 'assets/images/hoada.jpg'
+  },
+  quach_gia: {
+    avatarUrl: 'assets/images/actor_quach_gia.png',
+    splashUrl: 'assets/images/quachgia.jpg'
   }
 };
 
@@ -1540,8 +1592,8 @@ for (const h of CANON_HEROES) {
     }
   }
   const assets = HERO_ASSET_LOOKUP[h.id] || {
-    avatarUrl: 'assets/images/actor_trieu_van.png',
-    splashUrl: 'assets/images/zhaoyun.jpg'
+    avatarUrl: 'assets/images/seal_placeholder.png',
+    splashUrl: 'assets/images/seal_placeholder.png'
   };
   h.avatarUrl = h.avatarUrl || assets.avatarUrl;
   h.splashUrl = h.splashUrl || assets.splashUrl;

@@ -38,25 +38,27 @@ def bundle():
     with open(os.path.join(config_dir, "gacha_banners.json"), "r", encoding="utf-8") as f:
         gacha_banners = json.load(f)
 
-    # 2. Read Ink scenes
-    with open(os.path.join(scenes_dir, "chapter_01_to_15.ink"), "r", encoding="utf-8") as f:
-        ink_ch01_15 = f.read()
+    with open(os.path.join(config_dir, "canon_system_heroes.json"), "r", encoding="utf-8") as f:
+        canon_heroes = json.load(f)
 
-    with open(os.path.join(scenes_dir, "chapter_16_to_52.ink"), "r", encoding="utf-8") as f:
-        ink_ch16_52 = f.read()
+    # 2. Read all Ink scenes dynamically
+    ink_stories = {}
+    for filename in sorted(os.listdir(scenes_dir)):
+        if filename.endswith(".ink"):
+            story_key = filename.replace(".ink", "")
+            with open(os.path.join(scenes_dir, filename), "r", encoding="utf-8") as f:
+                ink_stories[story_key] = f.read()
 
     # 3. Build JS content
     bundle_data = {
         "heroes": heroes,
+        "canon_heroes": canon_heroes,
         "cards": cards,
         "battles": battles,
         "milestones": milestones,
         "economy": economy,
         "gacha_banners": gacha_banners,
-        "ink_stories": {
-            "ch01_15": ink_ch01_15,
-            "ch16_52": ink_ch16_52
-        },
+        "ink_stories": ink_stories,
         "meta": {
             "version": "3.0.0",
             "hero_count": len(heroes),
@@ -74,7 +76,7 @@ def bundle():
  */
 (function() {{
   window.GAME_DATA = {json.dumps(bundle_data, ensure_ascii=False, indent=2)};
-  console.log("⚡ [GAME_DATA] Đã nạp thành công:", window.GAME_DATA.meta);
+  console.log("[ 天 ] [GAME_DATA] Đã nạp thành công:", window.GAME_DATA.meta);
 }})();
 """
 

@@ -68,4 +68,18 @@ if (fs.existsSync(srcApp)) {
   console.log(`Synced app.js -> dist/prototype/app.js`);
 }
 
+// 7. Copy prototype/diegetic-modals.css -> dist/prototype/diegetic-modals.css
+const srcDiegetic = path.join(rootDir, 'prototype', 'diegetic-modals.css');
+if (fs.existsSync(srcDiegetic)) {
+  fs.copyFileSync(srcDiegetic, path.join(distProtoDir, 'diegetic-modals.css'));
+  console.log(`Synced diegetic-modals.css -> dist/prototype/diegetic-modals.css`);
+}
+
+// 8. Copy prototype/index.html -> dist/prototype/index.html
+const srcProtoHtml = path.join(rootDir, 'prototype', 'index.html');
+if (fs.existsSync(srcProtoHtml)) {
+  fs.copyFileSync(srcProtoHtml, path.join(distProtoDir, 'index.html'));
+  console.log(`Synced prototype/index.html -> dist/prototype/index.html`);
+}
+
 console.log('Dist assets synced successfully.');

@@ -58,7 +58,37 @@ const ACTOR_STANDY_TAG_MAP: Record<string, string> = {
   'servant': 'assets/images/actor_servant.png',
   'tieu_thuy': 'assets/images/actor_servant.png',
   'assassin': 'assets/images/actor_assassin.png',
-  've_ti_vu': 'assets/images/actor_ve_ti_vu.png'
+  've_ti_vu': 'assets/images/actor_ve_ti_vu.png',
+  'ly_nho': 'assets/images/actor_ly_nho.png',
+  'dieu_thuyen': 'assets/images/actor_dieu_thuyen.png',
+  'hoa_hung': 'assets/images/actor_hoa_hung.png',
+  'khuc_nghia': 'assets/images/actor_khuc_nghia.png',
+  'truong_lieu': 'assets/images/actor_truong_lieu.png',
+  'tuan_uc': 'assets/images/actor_tuan_uc.png',
+  'chu_du': 'assets/images/actor_chu_du.png',
+  'hoang_trung': 'assets/images/actor_hoang_trung.png',
+  'hi_chi_tai': 'assets/images/actor_hi_chi_tai.png',
+  'ma_sieu': 'assets/images/actor_ma_sieu.png',
+  'hoa_da': 'assets/images/actor_hoa_da.png',
+  'quach_gia': 'assets/images/actor_quach_gia.png',
+  'an_hoang_hau': 'assets/images/actor_an_hoang_hau.png',
+  'ninh_an_cong_chua': 'assets/images/actor_ninh_an_cong_chua.png',
+  'hua_hoa_lam': 'assets/images/actor_hua_hoa_lam.png',
+  'tan_tu_nghiep': 'assets/images/actor_tan_tu_nghiep.png',
+  'tu_trieu_phong': 'assets/images/actor_tu_trieu_phong.png',
+  'tu_ngoc_trach': 'assets/images/actor_tu_ngoc_trach.png',
+  'dich_hoa': 'assets/images/actor_dich_hoa.png',
+  'quy_binh_sinh': 'assets/images/actor_quy_binh_sinh.png',
+  'tu_ngoc_hang': 'assets/images/actor_tu_ngoc_hang.png',
+  'cung_sinh': 'assets/images/actor_cung_sinh.png',
+  'chu_bat_ninh': 'assets/images/actor_chu_bat_ninh.png',
+  'co_vo_phap': 'assets/images/actor_co_vo_phap.png',
+  'co_vo_thien': 'assets/images/actor_co_vo_thien.png',
+  'he_nhan_cong_chua': 'assets/images/actor_he_nhan_cong_chua.png',
+  'trieu_van_du': 'assets/images/actor_trieu_van_du.png',
+  'vu_van_chau': 'assets/images/actor_vu_van_chau.png',
+  'tram_hao': 'assets/images/actor_tram_hao.png',
+  'quy_binh_xuyen': 'assets/images/actor_quy_binh_xuyen.png'
 };
 
 export class VisualNovelEngine {
@@ -232,8 +262,12 @@ export class VisualNovelEngine {
   private loadInkScripts(): void {
     const GD = (window as any).GAME_DATA || {};
     if (GD.ink_stories) {
-      if (GD.ink_stories.ch01_15) this.ink.loadStoryScript(GD.ink_stories.ch01_15);
-      if (GD.ink_stories.ch16_52) this.ink.loadStoryScript(GD.ink_stories.ch16_52);
+      for (const key of Object.keys(GD.ink_stories)) {
+        const script = GD.ink_stories[key];
+        if (typeof script === 'string') {
+          this.ink.loadStoryScript(script);
+        }
+      }
     }
   }
 
@@ -402,7 +436,37 @@ export class VisualNovelEngine {
       'co_hu': 'Giả Hủ (Văn Hòa)',
       'dien_vi': 'Điển Vi',
       'to_kien_phong': 'Tô Kiến Phong',
-      'assassin': 'Hắc Y Thích Khách'
+      'assassin': 'Hắc Y Thích Khách',
+      'ly_nho': 'Lý Nho (Văn Ưu)',
+      'dieu_thuyen': 'Điêu Thuyền',
+      'hoa_hung': 'Hoa Hùng',
+      'khuc_nghia': 'Khúc Nghĩa',
+      'truong_lieu': 'Trương Liêu (Văn Viễn)',
+      'tuan_uc': 'Tuân Úc (Văn Nhược)',
+      'chu_du': 'Chu Du (Công Cẩn)',
+      'hoang_trung': 'Hoàng Trung (Hán Thăng)',
+      'hi_chi_tai': 'Hí Chí Tài',
+      'ma_sieu': 'Mã Siêu (Mạnh Khởi)',
+      'hoa_da': 'Hoa Đà (Nguyên Hóa)',
+      'quach_gia': 'Quách Gia (Phụng Hiếu)',
+      'an_hoang_hau': 'An Thái Hậu',
+      'ninh_an_cong_chua': 'Ninh An Công Chúa',
+      'hua_hoa_lam': 'Hứa Hòa Lâm',
+      'tan_tu_nghiep': 'Tần Tứ Nghiệp',
+      'tu_trieu_phong': 'Khai Sơn Vương (Tử Triệu Phong)',
+      'tu_ngoc_trach': 'Tân Hoàng (Tử Ngọc Trạch)',
+      'dich_hoa': 'Địch Hỏa',
+      'quy_binh_sinh': 'Quý Bình Sinh',
+      'tu_ngoc_hang': 'Tứ Hoàng Tử (Tử Ngọc Hằng)',
+      'cung_sinh': 'Quân Thần Cung Sinh',
+      'chu_bat_ninh': 'Chu Bất Ninh',
+      'co_vo_phap': 'Quỷ Y Cơ Vô Pháp',
+      'co_vo_thien': 'Cơ Vô Thiên',
+      'he_nhan_cong_chua': 'Hề Nhan Công Chúa',
+      'trieu_van_du': 'Triệu Văn Dụ',
+      'vu_van_chau': 'Vu Văn Châu',
+      'tram_hao': 'Trầm Hạo',
+      'quy_binh_xuyen': 'Quý Bình Xuyên'
     };
     return map[charId] || 'Nhân Vật';
   }

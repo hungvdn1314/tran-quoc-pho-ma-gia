@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600;1,700&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="diegetic-modals.css">
 </head>
 <body>
   <!-- =========================================================================
@@ -157,9 +158,9 @@
           <!-- Left Character Standee (Ẩn mặc định khi bắt đầu tại tẩm thất, chỉ hiện khi gặp NPC) -->
           <div class="actor-slot actor-left listening hidden" id="actor-left-slot">
             <div class="standee-wrapper" id="actor-left-card">
-              <img src="assets/images/actor_to_kien_phong.png" alt="Tô Kiến Phong" class="standee-img" id="actor-left-img">
+              <img src="assets/images/seal_placeholder.png" alt="Nhân vật" class="standee-img" id="actor-left-img">
               <div class="standee-floor-shadow"></div>
-              <div class="actor-nametag" id="actor-left-nametag">Tô Kiến Phong</div>
+              <div class="actor-nametag" id="actor-left-nametag"></div>
             </div>
           </div>
 
@@ -234,7 +235,7 @@
         <div class="backlog-drawer hidden" id="backlog-drawer">
           <div class="backlog-header">
             <h3>LỊCH SỬ HỘI THOẠI</h3>
-            <button class="btn-close-log" id="btn-close-log">✕ Đóng</button>
+            <button class="btn-close-log" id="btn-close-log"><span class="close-seal-char">卷</span> Thu Thư</button>
           </div>
           <div class="backlog-body" id="backlog-body"></div>
         </div>
@@ -658,32 +659,147 @@
   </main>
 
   <!-- =========================================================================
-       POPUP CHIẾN THẮNG S-RANK & THUẬCH KẾ HOẠCH
+       KHẢI HOÀN TIỆP BÁO (IMPERIAL VICTORY DISPATCH SCROLL MODAL)
        ========================================================================= -->
   <div class="modal-backdrop hidden" id="victory-modal">
-    <div class="triumph-modal">
-      <div class="triumph-crest">ĐẠI THẮNG QUÂN NAM LY</div>
-      <div class="triumph-rank">S-RANK</div>
-      <h3 class="triumph-title">BẮT SỐNG TIÊN PHONG ĐỊCH HỎA!</h3>
-      <p class="triumph-lore">
-        Nước lũ sông Thanh Thủy kết hợp thần uy vô song của Triệu Tử Long đã đánh tan tành 2 vạn thiết kỵ Nam Ly. Cửa ải Bắc Cảnh giữ vững như bàn thạch!
-      </p>
-
-      <div class="triumph-rewards">
-        <div class="reward-pill">+20.000 Lượng Vàng Khởi Nghiệp</div>
-        <div class="reward-pill">+50.000 Thạch Quân Lương Tịch Thu</div>
-        <div class="reward-pill text-gold">Mở Khóa Anh Linh Mới: Điển Vi & Lý Nho</div>
+    <div class="imperial-triumph-scroll-frame">
+      <!-- Trục Cuộn Gỗ Mun Bịt Đồng (Left Roller) -->
+      <div class="scroll-roller left-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
 
-      <button class="btn-triumph-next" id="btn-triumph-next">
-        BÁO CÔNG LÊN HOÀNG ĐẾ & TIẾP TỤC ĐẠI NGHIỆP
-      </button>
+      <!-- Thân Tiệp Báo Lụa Gấm -->
+      <div class="scroll-parchment-body triumph-body">
+        <!-- Đỉnh Tiệp Báo: Đại Thắng Ấn & Phẩm Cấp -->
+        <div class="triumph-header-row">
+          <div class="triumph-cinnabar-seal">捷</div>
+          <div class="triumph-heading-meta">
+            <span class="triumph-era-crest">❖ BẮC CẢNH QUÂN CƠ XỨ · KHẢI HOÀN TIỆP BÁO ❖</span>
+            <h2 class="triumph-calligraphy-title">BẮT SỐNG TIÊN PHONG ĐỊCH HỎA</h2>
+            <span class="triumph-grade-badge">KỲ CÔNG THƯỢNG ĐẲNG · GIÁP ĐẲNG ĐẠI TIỆP</span>
+          </div>
+          <div class="triumph-imperial-stamp">大捷</div>
+        </div>
+
+        <div class="triumph-divider-vein"></div>
+
+        <!-- Quân Tình Tường Thuật (Battle Chronicle) -->
+        <p class="triumph-lore-text">
+          Nước lũ sông Thanh Thủy kết hợp thần uy vô song của Triệu Tử Long đã đánh tan tành 2 vạn thiết kỵ Nam Ly. Cửa ải Bắc Cảnh sừng sững như bàn thạch, uy chấn thiên hạ!
+        </p>
+
+        <!-- Sổ Cái Chiến Lợi Khải Hoàn (Spoils Ledger Docket) -->
+        <div class="triumph-spoils-ledger">
+          <div class="ledger-header">
+            <span class="ledger-seal">簿</span>
+            <span class="ledger-title">CHIẾN LỢI KHẢI HOÀN ĐĂNG LỤC</span>
+          </div>
+          <div class="spoils-grid">
+            <div class="spoil-item">
+              <span class="spoil-glyph gold">錠</span>
+              <div class="spoil-meta">
+                <span class="spoil-label">Quân Ngân Tịch Thu</span>
+                <span class="spoil-val">+20.000 Lượng Vàng</span>
+              </div>
+            </div>
+            <div class="spoil-item">
+              <span class="spoil-glyph food">糧</span>
+              <div class="spoil-meta">
+                <span class="spoil-label">Quân Lương Chiếm Đoạt</span>
+                <span class="spoil-val">+50.000 Thạch Lương</span>
+              </div>
+            </div>
+            <div class="spoil-item">
+              <span class="spoil-glyph hero">将</span>
+              <div class="spoil-meta">
+                <span class="spoil-label">Tướng Tinh Quy Phục</span>
+                <span class="spoil-val text-gold">Mở Khóa: Điển Vi & Lý Nho</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thao Tác: Thượng Tấu Tiệp Báo -->
+        <div class="triumph-action-footer">
+          <button class="btn-triumph-dispatch" id="btn-triumph-next">
+            <span class="btn-seal-icon">奏</span>
+            <div class="btn-dispatch-meta">
+              <span class="dispatch-primary">THƯỢNG TẤU BÁO CÔNG</span>
+              <span class="dispatch-sub">Khoái mã phi báo kinh sư · Tiếp tục đại nghiệp</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Trục Cuộn Gỗ Mun Bịt Đồng (Right Roller) -->
+      <div class="scroll-roller right-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
+      </div>
     </div>
   </div>
 
   <!-- =========================================================================
-       GACHA SUMMONING ALTAR: BÁI TƯỚNG ĐÀI — CHIÊU MỘ ANH LINH TAM QUỐC (DIEGETIC)
+       BẠI TRẬN QUÂN THƯ (DEFEAT DISPATCH SCROLL MODAL)
        ========================================================================= -->
+  <div class="modal-backdrop hidden" id="defeat-modal">
+    <div class="imperial-defeat-scroll-frame">
+      <div class="scroll-roller left-roller defeat-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+      </div>
+
+      <div class="scroll-parchment-body defeat-body">
+        <div class="defeat-header-row">
+          <div class="defeat-soot-seal">敗</div>
+          <div class="defeat-heading-meta">
+            <span class="defeat-era-crest">❖ BẮC CẢNH PHÒNG TUYẾN · NGUY CẤP QUÂN THƯ ❖</span>
+            <h2 class="defeat-calligraphy-title">THÀNH THANH CHÂU THẤT THỦ</h2>
+            <span class="defeat-grade-badge">TƯỜNG THÀNH VỠ NÁT · CHIẾN TUYẾN NGUY NAN</span>
+          </div>
+          <div class="defeat-soot-stamp">告急</div>
+        </div>
+
+        <div class="defeat-divider-vein"></div>
+
+        <p class="defeat-lore-text">
+          Xe đục thành của Địch Hỏa đã phá vỡ đại môn Thanh Châu. Nước sông chưa kịp trút xuống, phòng tuyến tiền tiêu Bắc Cảnh lâm vào thế ngàn cân treo sợi tóc! Phò Mã Gia hãy tái lập trận hình, tính toán lại sách lược đắp đê ngăn sông!
+        </p>
+
+        <div class="defeat-actions-row">
+          <button class="btn-defeat-act retry" id="btn-defeat-retry">
+            <span class="btn-seal-icon">重</span>
+            <div class="btn-defeat-meta">
+              <span class="defeat-act-title">TRÙNG CHỈNH KỲ CỔ</span>
+              <span class="defeat-act-sub">Làm mới binh lực · Tái khởi chiến cuộc</span>
+            </div>
+          </button>
+          <button class="btn-defeat-act retreat" id="btn-defeat-retreat">
+            <span class="btn-seal-icon">撤</span>
+            <div class="btn-defeat-meta">
+              <span class="defeat-act-title">LÙI VỀ SA BÀN</span>
+              <span class="defeat-act-sub">Thoái thủ quân cơ · Nghiên cứu lại thế trận</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <div class="scroll-roller right-roller defeat-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+      </div>
+    </div>
+  </div>
+
   <!-- =========================================================================
        GACHA SUMMONING ALTAR: BÁI TƯỚNG THẦN ĐÀN — CHIÊU MỘ ANH LINH TAM QUỐC (DIEGETIC AAA)
        ========================================================================= -->
@@ -697,7 +813,7 @@
       <!-- Top Diegetic Banner / Header -->
       <header class="gacha-header-ribbon">
         <div class="gacha-dynasty-tag">
-          <span class="gacha-seal-stamp">將</span>
+          <span class="gacha-seal-stamp">壇</span>
           <div class="gacha-title-group">
             <h2 class="gacha-main-title">BÁI TƯỚNG THẦN ĐÀN</h2>
             <span class="gacha-sub-title">Thượng Cổ Hỗn Thiên Trận · Tế Lệnh Chiêu Mộ Anh Linh Tam Quốc</span>
@@ -706,29 +822,29 @@
 
         <div class="gacha-header-actions">
           <button class="gacha-header-btn" id="btn-gacha-rules" title="Quy Tắc Thiên Mệnh & Tỷ Lệ">
-            <span class="btn-glyph">📜</span>
+            <span class="btn-glyph">卷</span>
             <span class="btn-txt">Quy Tắc</span>
           </button>
-          <button class="gacha-header-btn" id="btn-gacha-history" title="Lịch Sử Thỉnh Tướng">
-            <span class="btn-glyph">🗎</span>
-            <span class="btn-txt">Lịch Sử</span>
+          <button class="gacha-header-btn" id="btn-gacha-history" title="Thiên Mệnh Sử Ký">
+            <span class="btn-glyph">史</span>
+            <span class="btn-txt">Sử Ký</span>
           </button>
         </div>
 
         <div class="gacha-currency-dock">
           <div class="gacha-token-pill">
-            <span class="token-glyph">令</span>
+            <span class="token-glyph">符</span>
             <span class="token-label">Anh Hồn Lệnh:</span>
             <strong class="token-val" id="gacha-ticket-display">1</strong>
           </div>
           <div class="gacha-token-pill">
-            <span class="token-glyph">金</span>
+            <span class="token-glyph">錠</span>
             <span class="token-label">Kim Bảo:</span>
             <strong class="token-val" id="gacha-jade-display">0</strong>
           </div>
-          <button class="gacha-seal-close" id="btn-close-gacha" title="Rời Khỏi Bái Tướng Đài">
-            <span class="close-seal-char">✕</span>
-            <span class="close-seal-txt">Đóng</span>
+          <button class="gacha-seal-close" id="btn-close-gacha" title="Bái Biệt Thần Đàn · Quy Hồi Phò Mã Phủ">
+            <span class="close-seal-char">歸</span>
+            <span class="close-seal-txt">Quy Hồi</span>
           </button>
         </div>
       </header>
@@ -736,7 +852,7 @@
       <!-- Skip Button (Floating in top right during ritual) -->
       <button class="gacha-skip-btn hidden" id="btn-gacha-skip" title="Bỏ qua hoạt cảnh tế lễ">
         <span>BỎ QUA</span>
-        <span class="skip-arrow">⏭</span>
+        <span class="skip-arrow">略</span>
       </button>
 
       <!-- Center Altar Arena (Interactive Ritual Zone) -->
@@ -875,16 +991,16 @@
         <!-- Result Action Buttons (Trạng thái sau khi tướng đã giáng thế) -->
         <div class="reveal-action-dock hidden" id="reveal-action-row">
           <button class="btn-altar-action action-inspect" id="btn-reveal-inspect">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-            <span>TRA CỨU THUỘC TÍNH</span>
+            <span class="btn-seal-mini">簡</span>
+            <span>BỔN MỆNH GIẢN</span>
           </button>
           <button class="btn-altar-action action-again" id="btn-reveal-again">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
-            <span>THỈNH TRIỆU TIẾP</span>
+            <span class="btn-seal-mini">祭</span>
+            <span>TIẾP TỤC TẾ LỆNH</span>
           </button>
           <button class="btn-altar-action action-confirm primary" id="btn-reveal-confirm">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <span>TIẾP NHẬN QUY VỊ</span>
+            <span class="btn-seal-mini">領</span>
+            <span>PHỤNG LỆNH QUY VỊ</span>
           </button>
         </div>
       </footer>
@@ -897,7 +1013,10 @@
       <header class="memorial-header">
         <span class="memorial-seal">敕</span>
         <h3>QUY TẮC THIÊN MỆNH & TỶ LỆ THỈNH TƯỚNG</h3>
-        <button class="btn-close-modal" id="btn-close-gacha-rules">✕ Đóng</button>
+        <button class="scroll-close-seal" id="btn-close-gacha-rules" title="Thu Thư">
+          <span class="close-seal-char">卷</span>
+          <span class="close-seal-text">Thu Thư</span>
+        </button>
       </header>
       <div class="memorial-content">
         <section class="rule-block">
@@ -928,7 +1047,10 @@
       <header class="memorial-header">
         <span class="memorial-seal">史</span>
         <h3>NHẬT KÝ CHIÊU MỘ ANH LINH</h3>
-        <button class="btn-close-modal" id="btn-close-gacha-history">✕ Đóng</button>
+        <button class="scroll-close-seal" id="btn-close-gacha-history" title="Thu Thư">
+          <span class="close-seal-char">卷</span>
+          <span class="close-seal-text">Thu Thư</span>
+        </button>
       </header>
       <div class="memorial-content">
         <div id="gacha-history-list" class="history-list-box">
@@ -939,255 +1061,253 @@
   </div>
 
   <!-- =========================================================================
-       HERO CARD DETAIL INSPECTOR: BẢNG TRA CỨU THUỘC TÍNH TƯỚNG (RPG STAT SHEET)
+       HERO CARD DETAIL INSPECTOR: BẢNG TRA CỨU THUỘC TÍNH & TRANH CUỘN LỤA THỦY MẶC
        ========================================================================= -->
-  <div class="modal-backdrop hidden" id="hero-detail-modal">
-    <div class="hero-inspector-dialog">
-      <button class="btn-close-modal" id="btn-close-hero-detail">✕ Đóng</button>
-      
-      <!-- Quick Roster Switcher Bar -->
-      <div class="hero-roster-bar" id="inspector-hero-selector" style="display: flex; gap: 8px; overflow-x: auto; padding: 6px 12px; margin-bottom: 12px; background: rgba(0,0,0,0.4); border-radius: 8px; border: 1px solid rgba(212,175,55,0.2);">
-        <!-- Populated dynamically by app.js -->
-      </div>
+  <div class="hero-scroll-overlay hidden" id="hero-detail-modal">
+    <div class="ancient-scroll-frame" id="ancient-scroll-frame">
+      <!-- Trục gỗ cuộn tranh hai bên -->
+      <div class="scroll-roller left-roller"></div>
 
-      <div class="inspector-layout">
-        <!-- Left: Full Portrait & Badges -->
-        <div class="inspector-art-col">
-          <div class="rarity-crest" id="inspector-rarity-crest">SSR HOÀNG KIM</div>
-          <div class="hero-art-frame">
-            <img src="assets/images/zhaoyun.jpg" alt="Triệu Tử Long" class="hero-full-art" id="inspector-hero-img">
+      <!-- Thân tranh lụa xuyến chỉ -->
+      <div class="scroll-parchment">
+        <!-- 1. TIÊU ĐỀ THƯ TRỤC HOÀNG GIA & ẤN TRIỆN CHU SA -->
+        <div class="scroll-imperial-header">
+          <div class="imperial-charter-title">
+            <span class="imperial-seal-dragonglyph">❖</span>
+            <span class="imperial-title-text">PHÒ MÃ PHỦ · TAM QUỐC ANH LINH PHONG THẦN BẢNG</span>
+            <span class="imperial-seal-dragonglyph">❖</span>
           </div>
-          <div class="hero-appellation">
-            <h3 id="inspector-hero-name">TRIỆU TỬ LONG</h3>
-            <span class="hero-epithet" id="inspector-hero-epithet">Thường Sơn Hổ Tướng · Long Đảm Ngân Thương</span>
+
+          <div class="imperial-calligraphy-stats">
+            <!-- Triện Chu Sa: Quý Bình An -->
+            <div class="imperial-stamp-unit host-unit" title="Võ lực bản thân Quý Bình An (Hấp thu chân khí từ Anh Linh)">
+              <span class="seal-box-cinnabar">駙</span>
+              <div class="stamp-meta">
+                <span class="stamp-label">Phò Mã Quý Bình An · Chân Khí Bổn Thể</span>
+                <span class="stamp-value"><strong id="scroll-host-force">5</strong> <em class="stat-unit">Điểm</em></span>
+              </div>
+            </div>
+
+            <!-- Triện Hoàng Kim: Ngân Khố Quốc Gia -->
+            <div class="imperial-stamp-unit treasury-unit" title="Ngân khố vàng dùng bồi dưỡng và mở phong ấn anh linh">
+              <span class="seal-box-gold">金</span>
+              <div class="stamp-meta">
+                <span class="stamp-label">Ngân Khố Triều Đình</span>
+                <span class="stamp-value"><strong id="scroll-gold-display">0</strong> <em class="stat-unit">Lượng Vàng</em></span>
+              </div>
+            </div>
           </div>
-          <div class="hero-realm-pill">
-            <span class="realm-lbl">CẢNH GIỚI VÕ ĐẠO:</span>
-            <span class="realm-val" id="inspector-realm-val">HOÀNG CẢNH SƠ KỲ</span>
+
+          <!-- Nút Thu Hồi Tranh Cuộn (Dấu Ấn Triện Đóng Lại) -->
+          <button class="scroll-close-seal" id="btn-close-hero-detail" title="Thu Hồi Tranh Cuộn">
+            <span class="close-seal-icon">收</span>
+            <span class="close-seal-text">Thu Hồi</span>
+          </button>
+        </div>
+
+        <!-- 2. GIÁ TRÚC PHÙ DUYỆT TƯỚNG (BAMBOO TALLY RACK) -->
+        <div class="bamboo-rack-section">
+          <div class="tally-category-tags">
+            <button class="tally-tag active" data-cat="all">
+              <span class="tag-glyph">皆</span> Toàn Bộ (29)
+            </button>
+            <button class="tally-tag" data-cat="vo">
+              <span class="tag-glyph">武</span> Võ Tướng (18)
+            </button>
+            <button class="tally-tag" data-cat="muu">
+              <span class="tag-glyph">謀</span> Mưu Thần (8)
+            </button>
+            <button class="tally-tag" data-cat="nu_khac">
+              <span class="tag-glyph">巾</span> Nữ Thần & Dị Sĩ (3)
+            </button>
+          </div>
+
+          <!-- Thanh thẻ tre trượt êm không lộ scrollbar thô -->
+          <div class="bamboo-tallies-viewport" id="bamboo-tallies-viewport">
+            <div class="bamboo-tallies-row" id="bamboo-tallies-row"></div>
           </div>
         </div>
 
-        <!-- Right: Tabs & Deep Stats -->
-        <div class="inspector-meta-col">
-          <!-- Four Dimensions Grid (Tứ Duy Tam Quốc) -->
-          <div class="sheet-section">
-            <div class="section-badge">TỨ ĐẠI CHỈ SỐ TAM QUỐC</div>
-            <div class="stats-quad-grid">
-              <div class="quad-stat-item">
-                <div class="qs-header">
-                  <span class="qs-name">
-                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
-                    <span>VÕ LỰC</span>
-                  </span>
-                  <span class="qs-val" id="qs-val-force">96</span>
-                </div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-force" style="width: 96%; background: #ef4444;"></div></div>
-                <span class="qs-desc">Tấn công bộc phát, uy áp sa trường</span>
-              </div>
-              <div class="quad-stat-item">
-                <div class="qs-header">
-                  <span class="qs-name">
-                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                    <span>THỐNG SOÁI</span>
-                  </span>
-                  <span class="qs-val" id="qs-val-command">91</span>
-                </div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-command" style="width: 91%; background: #06b6d4;"></div></div>
-                <span class="qs-desc">Dẫn dắt quân đoàn, chỉ huy kỵ binh</span>
-              </div>
-              <div class="quad-stat-item">
-                <div class="qs-header">
-                  <span class="qs-name">
-                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                    <span>TRÍ LỰC</span>
-                  </span>
-                  <span class="qs-val" id="qs-val-intel">76</span>
-                </div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-intel" style="width: 76%; background: #3b82f6;"></div></div>
-                <span class="qs-desc">Kháng mưu lược, phòng thủ kế sách</span>
-              </div>
-              <div class="quad-stat-item">
-                <div class="qs-header">
-                  <span class="qs-name">
-                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V10h14v11M12 3l9 7H3l9-7z"/></svg>
-                    <span>CHÍNH TRỊ</span>
-                  </span>
-                  <span class="qs-val" id="qs-val-pol">65</span>
-                </div>
-                <div class="qs-bar-track"><div class="qs-bar-fill" id="qs-bar-pol" style="width: 65%; background: #10b981;"></div></div>
-                <span class="qs-desc">An dân trị quốc, tuần tra kinh kỳ</span>
-              </div>
-            </div>
-          </div>
+        <!-- Thông báo chấn động (Diegetic Notice) -->
+        <div class="scroll-notice-banner hidden" id="scroll-notice-banner"></div>
 
-          <!-- Combat Ratings -->
-          <div class="sheet-section">
-            <div class="section-badge">CHỈ SỐ CHIẾN TRẬN TRỰC TIẾP</div>
-            <div class="combat-stats-row">
-              <div class="cs-pill"><span class="cs-lbl">SINH MỆNH:</span><span class="cs-val text-green" id="cs-val-hp">180</span></div>
-              <div class="cs-pill"><span class="cs-lbl">TẤN CÔNG:</span><span class="cs-val text-red" id="cs-val-atk">102</span></div>
-              <div class="cs-pill"><span class="cs-lbl">CHI PHÍ COST:</span><span class="cs-val text-blue" id="cs-val-cost">6.5</span></div>
-              <div class="cs-pill"><span class="cs-lbl">BINH CHỦNG:</span><span class="cs-val text-gold" id="cs-val-troop">Bạch Mã Nghĩa Tòng</span></div>
-            </div>
-          </div>
-
-          <!-- Skills System -->
-          <div class="sheet-section">
-            <div class="section-badge">BỘ KỸ NĂNG VÕ ĐẠO</div>
-            <div class="skills-list" id="inspector-skills-list">
-              <div class="skill-entry skill-active">
-                <div class="sk-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-                </div>
-                <div class="sk-info">
-                  <div class="sk-name-row"><span class="sk-name">Thất Thám Bàn Xà</span><span class="sk-tag active-tag">Tuyệt Kỹ Chủ Động · 2 Mana</span></div>
-                  <p class="sk-desc">Đâm liên tiếp 7 thương chí mạng, gây 120 Bạo Kích lên Tướng địch và <strong>Ngắt hoàn toàn Ý Đồ</strong> sắp sửa phát động!</p>
-                </div>
-              </div>
-              <div class="skill-entry">
-                <div class="sk-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div class="sk-info">
-                  <div class="sk-name-row"><span class="sk-name">Long Đảm Bất Khuất</span><span class="sk-tag passive-tag">Bị Động 1</span></div>
-                  <p class="sk-desc">Khi HP giảm xuống dưới 50%, né tránh tăng 30%, sát thương gây ra tăng 25%.</p>
-                </div>
-              </div>
-              <div class="skill-entry">
-                <div class="sk-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 17.5L3 6V3h3l11.5 11.5M13 19l6 2 2-6-4.5-4.5M9.5 6.5L19 16"/></svg>
-                </div>
-                <div class="sk-info">
-                  <div class="sk-name-row"><span class="sk-name">Thường Sơn Hổ Tướng</span><span class="sk-tag passive-tag">Bị Động 2</span></div>
-                  <p class="sk-desc">Tự động phản kích 100% sát thương đối với mọi đòn tấn công cận chiến của kẻ địch cùng cánh.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Divine Equipment & Mount -->
-          <div class="sheet-section">
-            <div class="section-badge">THẦN BINH & THÚ CƯỠI TRẤN THÂN</div>
-            <div class="equip-row">
-              <div class="equip-card">
-                <div class="eq-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
-                </div>
-                <div class="eq-meta">
-                  <span class="eq-name">Long Đảm Lượng Ngân Thương</span>
-                  <span class="eq-stat">+25 Công Kích · +15% Tỷ Lệ Bạo Kích</span>
-                </div>
-              </div>
-              <div class="equip-card">
-                <div class="eq-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
-                </div>
-                <div class="eq-meta">
-                  <span class="eq-name">Chiếu Dạ Ngọc Sư Tử</span>
-                  <span class="eq-stat">+20 Tốc Độ Hành Quân · +10% Né Tránh</span>
-                </div>
-              </div>
-              <div class="equip-card">
-                <div class="eq-icon">
-                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                </div>
-                <div class="eq-meta">
-                  <span class="eq-name">Bạch Ngân Ngân Long Giáp</span>
-                  <span class="eq-stat">+30 Phòng Ngự · Kháng Khí Giới 15%</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bonds & Synergy -->
-          <div class="sheet-section">
-            <div class="section-badge">DUYÊN PHẬN ANH LINH (KÍCH DUYÊN)</div>
-            <div class="bonds-grid">
-              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Quan Vũ, Trương Phi, Mã Siêu, Hoàng Trung">
-                <span class="bond-title">
-                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  <span>Ngũ Hổ Thượng Tướng</span>
-                </span>
-                <span class="bond-effect">Công kích toàn đội ngũ +25% (Chưa kích hoạt)</span>
-              </div>
-              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Cổ Chi Ác Lai Điển Vi (Chương 63)">
-                <span class="bond-title">
-                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  <span>Thân Vệ Song Bích</span>
-                </span>
-                <span class="bond-effect">Quý Bình An giảm 20% sát thương nhận vào (Chưa kích hoạt)</span>
-              </div>
-              <div class="bond-card bond-inactive" title="Cần chiêu mộ: Gia Cát Lượng, Bàng Thống (Chương 1015)">
-                <span class="bond-title">
-                  <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
-                  <span>Ngọa Long Phượng Sồ</span>
-                </span>
-                <span class="bond-effect">Khởi đầu trận đấu đầy 100% nộ khí (Chưa kích hoạt)</span>
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- 3. NỘI DUNG DANH TƯỚNG & NGŨ TRỌNG KHẮC MINH -->
+        <div class="scroll-hero-body" id="scroll-hero-content"></div>
       </div>
+
+      <div class="scroll-roller right-roller"></div>
     </div>
   </div>
 
   <!-- =========================================================================
-       CHAPTER MILESTONE PROGRESSION MATRIX MODAL
+       CHAPTER MILESTONE PROGRESSION: ĐẾ NGHIỆP NIÊN BIỂU THƯ TRỤC
        ========================================================================= -->
   <div class="modal-backdrop hidden" id="milestone-matrix-modal">
-    <div class="matrix-dialog">
-      <div class="matrix-header">
-        <div class="matrix-crest">ĐẾ NGHIỆP THỜI GIAN TUYẾN</div>
-        <h2 class="matrix-title">MA TRẬN MỞ KHÓA TÍNH NĂNG THEO CHƯƠNG</h2>
-        <p class="matrix-sub">Toàn bộ tính năng mở khóa tuần tự theo đúng tiến trình nguyên tác tiểu thuyết</p>
-        <button class="btn-close-modal" id="btn-close-matrix">✕ Đóng</button>
+    <div class="imperial-chronology-scroll-frame">
+      <div class="scroll-roller left-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
-      <div class="matrix-timeline" id="matrix-timeline-list">
-        <!-- Rendered dynamically by app.js -->
+
+      <div class="scroll-parchment-body chronology-body">
+        <div class="chronology-imperial-header">
+          <div class="chronology-seal-col">
+            <span class="chronology-header-seal">紀</span>
+          </div>
+          <div class="chronology-title-col">
+            <span class="chronology-top-crest">❖ ĐẾ NGHIỆP SỬ SÁCH · QUÂN CƠ NIÊN BIỂU ❖</span>
+            <h2 class="chronology-main-title">MA TRẬN MỞ KHÓA TÍNH NĂNG THEO CHƯƠNG</h2>
+            <p class="chronology-subtitle">Mỗi bước đi của Phò Mã Gia đều định hình giang sơn xã tắc</p>
+          </div>
+          <button class="scroll-close-seal" id="btn-close-matrix" title="Thu Hồi Niên Biểu">
+            <span class="close-seal-icon">卷</span>
+            <span class="close-seal-text">Thu Thư</span>
+          </button>
+        </div>
+
+        <div class="chronology-divider-vein"></div>
+
+        <!-- Golden Thread Timeline List -->
+        <div class="chronology-timeline-container" id="matrix-timeline-list">
+          <!-- Populated dynamically via silk nodes -->
+        </div>
+      </div>
+
+      <div class="scroll-roller right-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
     </div>
   </div>
 
   <!-- =========================================================================
-       FACTION & IDENTITY PROGRESSION MODAL (LỘ TRÌNH ĐẾ NGHIỆP QUÝ BÌNH AN)
+       FACTION & IDENTITY PROGRESSION: ĐẾ NGHIỆP PHONG VƯƠNG THẦN BẢNG
        ========================================================================= -->
   <div class="modal-backdrop hidden" id="faction-progression-modal">
-    <div class="matrix-dialog faction-dialog">
-      <div class="matrix-header">
-        <div class="matrix-crest">ĐẾ NGHIỆP TẦNG THỨ · THẾ LỰC KHỞI NGUYÊN</div>
-        <h2 class="matrix-title">TIẾN TRÌNH THẾ LỰC & ĐỊNH DANH QUÝ BÌNH AN</h2>
-        <p class="matrix-sub">Từ Phò Mã Hàn Vi đến Trấn Bắc Thống Soái, Chúa Tể Ba Châu Bắc Cảnh và Định Quốc Hoàng Đế</p>
-        <button class="btn-close-modal" id="btn-close-faction">✕ Đóng</button>
+    <div class="imperial-faction-scroll-frame">
+      <div class="scroll-roller left-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
-      <div class="faction-current-card" id="faction-current-card">
-        <!-- Rendered dynamically -->
+
+      <div class="scroll-parchment-body faction-body">
+        <div class="faction-imperial-header">
+          <div class="faction-seal-col">
+            <span class="faction-header-seal">封</span>
+          </div>
+          <div class="faction-title-col">
+            <span class="faction-top-crest">❖ CỬU TRỌNG THẾ LỰC · PHONG VƯƠNG BẢNG ❖</span>
+            <h2 class="faction-main-title">LỘ TRÌNH ĐẾ NGHIỆP QUÝ BÌNH AN</h2>
+            <p class="faction-subtitle">Từ Phò Mã Hàn Vi đến Trấn Bắc Thống Soái, Chúa Tể Ba Châu và Định Quốc Hoàng Đế</p>
+          </div>
+          <button class="scroll-close-seal" id="btn-close-faction" title="Thu Hồi Phong Vương Bảng">
+            <span class="close-seal-icon">歸</span>
+            <span class="close-seal-text">Quy Hồi</span>
+          </button>
+        </div>
+
+        <div class="faction-divider-vein"></div>
+
+        <!-- Bệ Ngọc Thân Phận Đương Thời -->
+        <div class="faction-current-card" id="faction-current-card"></div>
+
+        <!-- 5 Đạo Phù Tiết Hoàng Triều -->
+        <div class="faction-stages-list" id="faction-stages-list"></div>
       </div>
-      <div class="faction-stages-list" id="faction-stages-list">
-        <!-- Rendered dynamically -->
+
+      <div class="scroll-roller right-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
     </div>
   </div>
 
   <!-- =========================================================================
-       FEATURE UNLOCK EVENT NOTIFICATION MODAL
+       THÁNH CHỈ HOÀNG TRIỀU / THƯ TRỤC THIÊN CƠ (IMPERIAL DECREE SCROLL MODAL)
        ========================================================================= -->
   <div class="modal-backdrop hidden" id="unlock-event-modal">
-    <div class="unlock-dialog">
-      <div class="unlock-seal">THIÊN CƠ KHAI MỞ</div>
-      <div class="unlock-icon" id="unlock-modal-icon">
-        <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 11V7a5 5 0 0 1 9.9-1M3 11h18v11H3z"/></svg>
+    <div class="imperial-decree-scroll-frame" id="imperial-decree-frame">
+      <!-- Trục Gỗ Mun Nẹp Đồng Bịt Vàng (Left Roller) -->
+      <div class="decree-roller left-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
       </div>
-      <h3 class="unlock-title" id="unlock-modal-title">MỞ KHÓA TÍNH NĂNG MỚI!</h3>
-      <div class="unlock-name" id="unlock-modal-name">KINH DOANH THẤU HOA CAO</div>
-      <p class="unlock-lore" id="unlock-modal-lore">
-        Quý Bình An đã chế tạo thành công xà phòng thơm từ mỡ cừu và bắt tay cùng Lâu chủ Vệ Ti Vũ. Nguồn thu vàng ròng bắt đầu chảy vào túi!
-      </p>
-      <div class="unlock-reward-tag" id="unlock-modal-effect">
-        <span>Tác dụng: Cho phép Mở Rộng Xưởng tại Sa Bàn kiếm +3.000 Vàng mỗi đợt!</span>
+
+      <!-- Thân Chiếu Chỉ Lụa Gấm Hoàng Gia (Decree Silk Parchment Body) -->
+      <div class="decree-parchment-body">
+        <!-- Dải Ruy Băng Chu Sa Triện Ấn -->
+        <div class="decree-imperial-top">
+          <div class="decree-vermilion-seal" id="unlock-modal-seal">勅</div>
+          <div class="decree-decree-heading">
+            <span class="decree-origin-tag" id="unlock-modal-origin">THIÊN CƠ HỆ THỐNG · THÁNH DỤ BAN THƯỞNG</span>
+            <h2 class="decree-proclamation-title" id="unlock-modal-title">PHỤNG THIÊN THỪA VẬN BAN THƯỞNG</h2>
+          </div>
+          <div class="decree-cinnabar-stamp">欽此</div>
+        </div>
+
+        <div class="decree-divider-vein"></div>
+
+        <!-- Khu Vực Hiện Thị Bảo Vật / Lệnh Bài (Diegetic Token Showcase) -->
+        <div class="decree-artifact-stage">
+          <div class="decree-talisman-halo">
+            <div class="decree-bronze-medallion" id="unlock-modal-icon">
+              <span class="medallion-seal">令</span>
+            </div>
+          </div>
+          <div class="decree-item-naming">
+            <h3 class="decree-item-title" id="unlock-modal-name">THƯỢNG CỔ ANH HỒN LỆNH</h3>
+            <span class="decree-rarity-seal">THIÊN CƠ BẢO VẬT</span>
+          </div>
+        </div>
+
+        <!-- Lời Chiếu Chỉ Cổ Phong (Parchment Lore) -->
+        <div class="decree-decree-text">
+          <p class="decree-lore-paragraph" id="unlock-modal-lore">
+            Hoàng kim xé toạc hư không, Thượng Cổ Anh Hồn Lệnh ngưng tụ chân long chi khí. Tín vật tối thượng câu thông thiên cơ, thức tỉnh danh tướng Tam Quốc tại Bái Tướng Thần Đàn!
+          </p>
+        </div>
+
+        <!-- Tác Dụng Uy Lực (Sacred Inscription Effect) -->
+        <div class="decree-sacred-effect" id="unlock-modal-effect">
+          <span class="effect-seal-icon">※</span>
+          <span class="effect-text-body">Tác dụng: Tiêu hao tại Bái Tướng Thần Đàn để triệu hoán thần tướng Tam Quốc!</span>
+        </div>
+
+        <!-- Thao Tác Phụng Chỉ Khâm Thử (Imperial Seal Acceptance Button) -->
+        <div class="decree-action-footer">
+          <button class="btn-decree-accept" id="btn-close-unlock">
+            <span class="btn-cinnabar-seal">欽</span>
+            <div class="btn-accept-text">
+              <span class="accept-primary">PHỤNG CHỈ TIẾP NHẬN</span>
+              <span class="accept-sub">Khâm thử sắc phong · Tiếp tục đại nghiệp</span>
+            </div>
+          </button>
+        </div>
       </div>
-      <button class="btn-triumph-next" id="btn-close-unlock">
-        TIẾP NHẬN TÍNH NĂNG & TIẾP TỤC HÀNH TRÌNH
-      </button>
+
+      <!-- Trục Gỗ Mun Nẹp Đồng Bịt Vàng (Right Roller) -->
+      <div class="decree-roller right-roller">
+        <div class="roller-cap top"></div>
+        <div class="roller-tassel top"></div>
+        <div class="roller-shaft"></div>
+        <div class="roller-cap bottom"></div>
+        <div class="roller-tassel bottom"></div>
+      </div>
     </div>
   </div>
 
